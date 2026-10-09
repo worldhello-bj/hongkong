@@ -1,0 +1,2892 @@
+{
+  "kind": "SYNTHETIC_ALGORITHM_REGRESSION_NOT_HUMAN_AUDITED_OD",
+  "python": "3.12.14",
+  "model_version": "hk-631bf4bec80885fd",
+  "od_count": 60,
+  "cases": 360,
+  "p95_ms": 1.1045739993278403,
+  "max_ms": 2.3763790013617836,
+  "measurement": "In-process routing only; no network, no rendering, no empirical travel-time validation",
+  "results": [
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:hall",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.07412099876091816
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:hall",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.19287800023448654
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:hall",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.040691000322112814
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:hall",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.09408100049768109
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:hall",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.07006499981798697
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:hall",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.019720000636880286
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:paid",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 2,
+      "elapsed_ms": 0.08160199831763748
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:paid",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 2,
+      "elapsed_ms": 0.1059990008798195
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:paid",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.018979000742547214
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:paid",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 2,
+      "elapsed_ms": 0.08651999996800441
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:paid",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 2,
+      "elapsed_ms": 0.07404099960695021
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:paid",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.01701499968476128
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:L2",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 3,
+      "elapsed_ms": 0.11326999992888886
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:L2",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 3,
+      "elapsed_ms": 0.13525299982575234
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:L2",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.017435999325243756
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:L2",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 3,
+      "elapsed_ms": 0.22847199943498708
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:L2",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 3,
+      "elapsed_ms": 0.1835650000430178
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:L2",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.023815000531612895
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:L3",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 4,
+      "elapsed_ms": 0.20089099962206092
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:L3",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 4,
+      "elapsed_ms": 0.23957799930940382
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:L3",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.017235999621334486
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:L3",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 4,
+      "elapsed_ms": 0.5442800011223881
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:L3",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 4,
+      "elapsed_ms": 0.36912299947289284
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:L3",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.0376860007236246
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:L4",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 5,
+      "elapsed_ms": 0.44733000140695367
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:L4",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 5,
+      "elapsed_ms": 0.47436999921046663
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:L4",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.035603001379058696
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:L4",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 5,
+      "elapsed_ms": 0.4494029999477789
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:L4",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 5,
+      "elapsed_ms": 0.4104149993509054
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:L4",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.034510998375480995
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:L5",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 6,
+      "elapsed_ms": 0.4866580002271803
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:L5",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 6,
+      "elapsed_ms": 0.5570840003201738
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:L5",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.054891999752726406
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:L5",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 6,
+      "elapsed_ms": 0.5167129984329222
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:L5",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 6,
+      "elapsed_ms": 0.4509959999268176
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:L5",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03357999958097935
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:L6",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 7,
+      "elapsed_ms": 0.5412710015662014
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:L6",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 7,
+      "elapsed_ms": 0.6449360007536598
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:L6",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03341999945405405
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:L6",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 7,
+      "elapsed_ms": 0.578164999751607
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:L6",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 7,
+      "elapsed_ms": 0.5217610014369711
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:L6",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.038878000850672834
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P1",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 5,
+      "elapsed_ms": 0.43393899977672845
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P1",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 5,
+      "elapsed_ms": 0.4533790015557315
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P1",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03387099968676921
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P1",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 5,
+      "elapsed_ms": 0.4376249999040738
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P1",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 5,
+      "elapsed_ms": 0.37188700116530526
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P1",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.034392000088701025
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P2",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 5,
+      "elapsed_ms": 0.4188069997326238
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P2",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 5,
+      "elapsed_ms": 0.501370999700157
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P2",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03499300146359019
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P2",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 5,
+      "elapsed_ms": 0.4106149990548147
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P2",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 5,
+      "elapsed_ms": 0.3940999995393213
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P2",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.034600998333189636
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P3",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 4,
+      "elapsed_ms": 0.24086099983833265
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P3",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 4,
+      "elapsed_ms": 0.2978859993163496
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P3",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.0735100002202671
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P3",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 4,
+      "elapsed_ms": 0.2566249986557523
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P3",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 4,
+      "elapsed_ms": 0.23955799952091184
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P3",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.02988499909406528
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P4",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 4,
+      "elapsed_ms": 0.21125599960214458
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P4",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 4,
+      "elapsed_ms": 0.3251770012866473
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P4",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03208799898857251
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P4",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 4,
+      "elapsed_ms": 0.2363639996474376
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P4",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 4,
+      "elapsed_ms": 0.23957900157256518
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P4",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03816700154857244
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P7",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 7,
+      "elapsed_ms": 0.5321869994077133
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P7",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 7,
+      "elapsed_ms": 0.5691120004485128
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P7",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.065297999753966
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P7",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 7,
+      "elapsed_ms": 0.4803400006494485
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P7",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 7,
+      "elapsed_ms": 0.5247349999990547
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P7",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03770600051211659
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P8",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 7,
+      "elapsed_ms": 0.5278509997879155
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P8",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 7,
+      "elapsed_ms": 0.6603790006920462
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P8",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.034722001146292314
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P8",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 7,
+      "elapsed_ms": 0.5220219991315389
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P8",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 7,
+      "elapsed_ms": 0.5077610003354494
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P8",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.035773000490735285
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P5",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 8,
+      "elapsed_ms": 0.6109049991209758
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P5",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 8,
+      "elapsed_ms": 0.6947910005692393
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P5",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03402099900995381
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P5",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 8,
+      "elapsed_ms": 0.6517960009659873
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P5",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 8,
+      "elapsed_ms": 0.5972039998596301
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P5",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.07093699969118461
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P6",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 8,
+      "elapsed_ms": 0.5860479996044887
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P6",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 8,
+      "elapsed_ms": 0.7064879991958151
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P6",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03585299964470323
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P6",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 8,
+      "elapsed_ms": 0.589201999900979
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P6",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 8,
+      "elapsed_ms": 0.6266680011322023
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "ADM:P6",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03365100019436795
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "AUS:entry",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 13,
+      "elapsed_ms": 0.8131879985739943
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "AUS:entry",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 13,
+      "elapsed_ms": 0.8437529995717341
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "AUS:entry",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03534200004651211
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "AUS:entry",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 13,
+      "elapsed_ms": 0.7731269997748313
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "AUS:entry",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 13,
+      "elapsed_ms": 0.7111750001058681
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "AUS:entry",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.036084000385017134
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "AUS:hall",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 12,
+      "elapsed_ms": 0.7274599993252195
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "AUS:hall",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 12,
+      "elapsed_ms": 0.7885009999881731
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "AUS:hall",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03835700044874102
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "AUS:hall",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 12,
+      "elapsed_ms": 0.7015809987933608
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "AUS:hall",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 12,
+      "elapsed_ms": 0.667309999698773
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "AUS:hall",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.034050999602186494
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "AUS:paid",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 11,
+      "elapsed_ms": 0.6938789993000682
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "AUS:paid",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 11,
+      "elapsed_ms": 0.790795000284561
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "AUS:paid",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.039869000829639845
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "AUS:paid",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 11,
+      "elapsed_ms": 0.6463079989771359
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "AUS:paid",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 11,
+      "elapsed_ms": 0.7383660013147164
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "AUS:paid",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03684500006784219
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "AUS:TML:UP",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 10,
+      "elapsed_ms": 0.5701530008082045
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "AUS:TML:UP",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 10,
+      "elapsed_ms": 0.7424120012728963
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "AUS:TML:UP",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.0327990001096623
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "AUS:TML:UP",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 10,
+      "elapsed_ms": 0.6403389998013154
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "AUS:TML:UP",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 10,
+      "elapsed_ms": 0.7193470009951852
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "AUS:TML:UP",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03190700044797268
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "AUS:TML:DOWN",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 12,
+      "elapsed_ms": 0.6774140001652995
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "AUS:TML:DOWN",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 12,
+      "elapsed_ms": 0.8760019991314039
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "AUS:TML:DOWN",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03509299858706072
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "AUS:TML:DOWN",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 12,
+      "elapsed_ms": 0.728220000382862
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "AUS:TML:DOWN",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 12,
+      "elapsed_ms": 0.6685610005661147
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "AUS:TML:DOWN",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03562300116755068
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KOW:entry",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 15,
+      "elapsed_ms": 0.9446240001125261
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KOW:entry",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 15,
+      "elapsed_ms": 1.0377839989814674
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KOW:entry",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.038658001358271576
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KOW:entry",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 15,
+      "elapsed_ms": 0.9590659992682049
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KOW:entry",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 15,
+      "elapsed_ms": 0.9166520012513502
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KOW:entry",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.037956999221933074
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KOW:hall",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.0983149986714125
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KOW:hall",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.1579639995034086
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KOW:hall",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.036175000786897726
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KOW:hall",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.0102530013682554
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KOW:hall",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 0.9861260004981887
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KOW:hall",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03330999970785342
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KOW:paid",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 17,
+      "elapsed_ms": 0.973017000433174
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KOW:paid",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 17,
+      "elapsed_ms": 1.1904119983228156
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KOW:paid",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03495199962344486
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KOW:paid",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 17,
+      "elapsed_ms": 0.9800679999898421
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KOW:paid",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 17,
+      "elapsed_ms": 1.0859659996640403
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KOW:paid",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03601400021580048
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KOW:TCL:UP",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 18,
+      "elapsed_ms": 1.0171229987463448
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KOW:TCL:UP",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 18,
+      "elapsed_ms": 1.2208179996378021
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KOW:TCL:UP",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03500200000416953
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KOW:TCL:UP",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 18,
+      "elapsed_ms": 1.0572529990895418
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KOW:TCL:UP",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 18,
+      "elapsed_ms": 1.0278789995936677
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KOW:TCL:UP",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.04764100049214903
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KOW:TCL:DOWN",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 18,
+      "elapsed_ms": 1.1045739993278403
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KOW:TCL:DOWN",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 18,
+      "elapsed_ms": 1.1624910002865363
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KOW:TCL:DOWN",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03729600030055735
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KOW:TCL:DOWN",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 18,
+      "elapsed_ms": 1.082241000403883
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KOW:TCL:DOWN",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 18,
+      "elapsed_ms": 1.0466380008438136
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KOW:TCL:DOWN",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03530300091370009
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:BD9C8BC4A5FCEC12",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.120006998462486
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:BD9C8BC4A5FCEC12",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.1150199989060638
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:BD9C8BC4A5FCEC12",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.036284000088926405
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:BD9C8BC4A5FCEC12",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.0453350005263928
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:BD9C8BC4A5FCEC12",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.0807779999595368
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:BD9C8BC4A5FCEC12",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03743600063899066
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:593DE4298B444E66",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.0273290008626645
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:593DE4298B444E66",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.151313999798731
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:593DE4298B444E66",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03749600000446662
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:593DE4298B444E66",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.0285099997418001
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:593DE4298B444E66",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.0632220000843517
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:593DE4298B444E66",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.035383000067668036
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:3BEDF164D4714445",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.0572129995125579
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:3BEDF164D4714445",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.155791000201134
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:3BEDF164D4714445",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.06275399937294424
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:3BEDF164D4714445",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.0661370015441207
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:3BEDF164D4714445",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.073698000254808
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:3BEDF164D4714445",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03794599979300983
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:3007D34FB91FB27E",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.15304900080082007
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:3007D34FB91FB27E",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.1370049994875444
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:3007D34FB91FB27E",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03089600068051368
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:3007D34FB91FB27E",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.15010500101197977
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:3007D34FB91FB27E",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.1537709995318437
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:3007D34FB91FB27E",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.030125000193947926
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:7E4358262A4F586A",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.17222799942828715
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:7E4358262A4F586A",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.12393600081850309
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:7E4358262A4F586A",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.027750998924602754
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:7E4358262A4F586A",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.14948399984859861
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:7E4358262A4F586A",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.15268799870682415
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:7E4358262A4F586A",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.029364000511122867
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:7467743E276518E9",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.14766099957341794
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:7467743E276518E9",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.14188200111675542
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:7467743E276518E9",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.028873000701423734
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:7467743E276518E9",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.18185199951403774
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:7467743E276518E9",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.1502049999544397
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:7467743E276518E9",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03005500002473127
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:818CD5D5B9FD5B97",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.063251998857595
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:818CD5D5B9FD5B97",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.1712639989127638
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:818CD5D5B9FD5B97",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03675500011013355
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:818CD5D5B9FD5B97",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.0300119993189583
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:818CD5D5B9FD5B97",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.0498129995539784
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:818CD5D5B9FD5B97",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.0349020010617096
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:FF46CB6182028AC6",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.0623210000630934
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:FF46CB6182028AC6",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.1857959998451406
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:FF46CB6182028AC6",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.0396290015487466
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:FF46CB6182028AC6",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.0675290013750782
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:FF46CB6182028AC6",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.0564519998297328
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:FF46CB6182028AC6",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03717599975061603
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:68A0FA3CC69206CC",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.0868680001294706
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:68A0FA3CC69206CC",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.134558999183355
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:68A0FA3CC69206CC",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.034422000680933706
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:68A0FA3CC69206CC",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.0659960007615155
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:68A0FA3CC69206CC",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.1072390007029753
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:68A0FA3CC69206CC",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03770700095628854
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:EDE9E3D28B42969D",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.0220809999736957
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:EDE9E3D28B42969D",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.1177040014445083
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:EDE9E3D28B42969D",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.039598999137524515
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:EDE9E3D28B42969D",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.0789049993036315
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:EDE9E3D28B42969D",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.0801070002344204
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:EDE9E3D28B42969D",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.036744999306392856
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:8611CE1D516C6A6F",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.09950700061745
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:8611CE1D516C6A6F",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.1399469985917676
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:8611CE1D516C6A6F",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.0373759994545253
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:8611CE1D516C6A6F",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.7387740008416586
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:8611CE1D516C6A6F",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.0928360006801086
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:8611CE1D516C6A6F",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.0441960000898689
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:9B45E50457274D2F",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.0615589999360964
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:9B45E50457274D2F",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.5382830006274162
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:9B45E50457274D2F",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.197035000383039
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:9B45E50457274D2F",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 1.49380700167967
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:9B45E50457274D2F",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 16,
+      "elapsed_ms": 2.3763790013617836
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:9B45E50457274D2F",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.04432599962456152
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:D2F2B3C5436007C2",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.16113099991343915
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:D2F2B3C5436007C2",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.1814619990909705
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:D2F2B3C5436007C2",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03183799890393857
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:D2F2B3C5436007C2",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.1553130005049752
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:D2F2B3C5436007C2",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.15033499948913231
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:D2F2B3C5436007C2",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.027721000151359476
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:3225E407F87D904C",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.15766599972266704
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:3225E407F87D904C",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.14830200052529108
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:3225E407F87D904C",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.0294639994535828
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:3225E407F87D904C",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.18276400078320876
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:3225E407F87D904C",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.15188799989118706
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:3225E407F87D904C",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.028312999347690493
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:55371F963B58DC5B",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.13797599967801943
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:55371F963B58DC5B",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.14227300016500521
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:55371F963B58DC5B",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03182799991918728
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:55371F963B58DC5B",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.160581001182436
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:55371F963B58DC5B",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.16131199845403899
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:55371F963B58DC5B",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.028241998734301887
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:3FCC00D1D01ACD28",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.19925800006603822
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:3FCC00D1D01ACD28",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.15377999989141244
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:3FCC00D1D01ACD28",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.027882000722456723
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:3FCC00D1D01ACD28",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.15390100088552572
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:3FCC00D1D01ACD28",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.16704999870853499
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:3FCC00D1D01ACD28",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.029554999855463393
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:E30B8672A91A50B9",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.1626740013307426
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:E30B8672A91A50B9",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.15779600107634906
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:E30B8672A91A50B9",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.027861999114975333
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:E30B8672A91A50B9",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.17428099999960978
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:E30B8672A91A50B9",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.19374000112293288
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:E30B8672A91A50B9",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03266899875598028
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:B7EE8C907E1E50C0",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.16574800065427553
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:B7EE8C907E1E50C0",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.15365999934147112
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:B7EE8C907E1E50C0",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.027129999580211006
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:B7EE8C907E1E50C0",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.1647669996600598
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:B7EE8C907E1E50C0",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.19815699852188118
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:B7EE8C907E1E50C0",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.02984400089189876
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:8F5D8F5379BAD19C",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.16053100080171134
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:8F5D8F5379BAD19C",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.16156200035766233
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:8F5D8F5379BAD19C",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.029324000934138894
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:8F5D8F5379BAD19C",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.16222299927903805
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:8F5D8F5379BAD19C",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.17540299995744135
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:8F5D8F5379BAD19C",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.02847299947461579
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:EF111F2EC49F64AE",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.1499539994256338
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:EF111F2EC49F64AE",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.19029499890166335
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:EF111F2EC49F64AE",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.031727000532555394
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:EF111F2EC49F64AE",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.17292899974563625
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:EF111F2EC49F64AE",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.16792099995655008
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:EF111F2EC49F64AE",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.030005001462996006
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:8C4D4E07609BC746",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.18126200120605063
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:8C4D4E07609BC746",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.1596790007170057
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:8C4D4E07609BC746",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.027692000003298745
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:8C4D4E07609BC746",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.20094100000278559
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:8C4D4E07609BC746",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.17467200086684898
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:8C4D4E07609BC746",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03041600029973779
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:C357F03ABD5AC6AA",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.18082099995808676
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:C357F03ABD5AC6AA",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.14590899991162587
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:C357F03ABD5AC6AA",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.027610998586169444
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:C357F03ABD5AC6AA",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.16359500114049297
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:C357F03ABD5AC6AA",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.20568799845932517
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:C357F03ABD5AC6AA",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03061499955947511
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:9962A14911FC8F32",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.20947299890394788
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:9962A14911FC8F32",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.1686430005065631
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:9962A14911FC8F32",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.029673999961232767
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:9962A14911FC8F32",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.17845700131147169
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:9962A14911FC8F32",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.1701950004644459
+    },
+    {
+      "from_id": "ADM:entry",
+      "to_id": "KMB:9962A14911FC8F32",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.02875300015148241
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:entry",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.061651999203604646
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:entry",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.122282999654999
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:entry",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.024946999474195763
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:entry",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.0589379997109063
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:entry",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.05862699981662445
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:entry",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.025428000299143605
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:paid",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.041993000195361674
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:paid",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.045507998947869055
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:paid",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.02261400004499592
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:paid",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.03685500087158289
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:paid",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 1,
+      "elapsed_ms": 0.03637400004663505
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:paid",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.022973999875830486
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:L2",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 2,
+      "elapsed_ms": 0.15802699999767356
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:L2",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 2,
+      "elapsed_ms": 0.20810199930565432
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:L2",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.027371001124265604
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:L2",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 2,
+      "elapsed_ms": 0.1956430005520815
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:L2",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 2,
+      "elapsed_ms": 0.16658999993524048
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:L2",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.02779100032057613
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:L3",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 3,
+      "elapsed_ms": 0.31699500141257886
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:L3",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 3,
+      "elapsed_ms": 0.3891120013577165
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:L3",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.05937899913988076
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:L3",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 3,
+      "elapsed_ms": 0.2872600016416982
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:L3",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 3,
+      "elapsed_ms": 0.303343998893979
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:L3",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.029164000807213597
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:L4",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 4,
+      "elapsed_ms": 0.3996879986516433
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:L4",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 4,
+      "elapsed_ms": 0.534790999154211
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:L4",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.030795999919064343
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:L4",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 4,
+      "elapsed_ms": 0.3609100003814092
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:L4",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 4,
+      "elapsed_ms": 0.398797001253115
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:L4",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03199800084985327
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:L5",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 5,
+      "elapsed_ms": 0.4609600000549108
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:L5",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 5,
+      "elapsed_ms": 0.5991870002617361
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:L5",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03230800029996317
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:L5",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 5,
+      "elapsed_ms": 0.4335289995651692
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:L5",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 5,
+      "elapsed_ms": 0.48531699940213
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:L5",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03176800055371132
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:L6",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 6,
+      "elapsed_ms": 0.5798279998998623
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:L6",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 6,
+      "elapsed_ms": 0.6855369992990745
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:L6",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.036013998396811076
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:L6",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 6,
+      "elapsed_ms": 0.5858170006831642
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:L6",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 6,
+      "elapsed_ms": 0.5625730009342078
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:L6",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.0333400003000861
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:P1",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 4,
+      "elapsed_ms": 0.35870700048690196
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:P1",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 4,
+      "elapsed_ms": 0.4175359990767902
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:P1",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.027410998882260174
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:P1",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 4,
+      "elapsed_ms": 0.389172999348375
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:P1",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 4,
+      "elapsed_ms": 0.37281900040397886
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:P1",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.030626000807387754
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:P2",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 4,
+      "elapsed_ms": 0.3407709991734009
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:P2",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 4,
+      "elapsed_ms": 0.48531699940213
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:P2",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03715599996212404
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:P2",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 4,
+      "elapsed_ms": 0.3676409996842267
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:P2",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 4,
+      "elapsed_ms": 0.39292800101975445
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:P2",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.0305560006381711
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:P3",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 3,
+      "elapsed_ms": 0.2130190005118493
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:P3",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 3,
+      "elapsed_ms": 0.21560300046985503
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:P3",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.030225000955397263
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:P3",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 3,
+      "elapsed_ms": 0.20805200074391905
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:P3",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 3,
+      "elapsed_ms": 0.24090099941531662
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:P3",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.028332000510999933
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:P4",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 3,
+      "elapsed_ms": 0.2151729986508144
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:P4",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 3,
+      "elapsed_ms": 0.22849299966765102
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:P4",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.028432999897631817
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:P4",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 3,
+      "elapsed_ms": 0.21356900106184185
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:P4",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 3,
+      "elapsed_ms": 0.25093499971262645
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:P4",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.02830199991876725
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:P7",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "legs": 6,
+      "elapsed_ms": 0.4678209988924209
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:P7",
+      "scenario": "few_stairs",
+      "status": "CONDITIONAL",
+      "legs": 6,
+      "elapsed_ms": 0.6747099996573525
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:P7",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03205800021532923
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:P7",
+      "scenario": "lift_closed",
+      "status": "CONDITIONAL",
+      "legs": 6,
+      "elapsed_ms": 0.5060479998064693
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:P7",
+      "scenario": "slow_walk",
+      "status": "CONDITIONAL",
+      "legs": 6,
+      "elapsed_ms": 0.49557199963601306
+    },
+    {
+      "from_id": "ADM:hall",
+      "to_id": "ADM:P7",
+      "scenario": "strict_evidence",
+      "status": "UNVERIFIED_ACCESS",
+      "legs": 0,
+      "elapsed_ms": 0.03383999865036458
+    }
+  ]
+}

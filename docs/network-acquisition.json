@@ -1,0 +1,18 @@
+[
+  {
+    "region": "ADM",
+    "count": 1396,
+    "bbox": "114.1634,22.2768,114.1685,22.2800",
+    "completeness": "COUNT_VERIFIED_WITHIN_BBOX",
+    "floor_records": 14,
+    "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0"
+  },
+  {
+    "region": "HUB",
+    "count": 1898,
+    "bbox": "114.1598,22.3024,114.1680,22.3079",
+    "completeness": "COUNT_VERIFIED_WITHIN_BBOX",
+    "floor_records": 19,
+    "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0"
+  }
+]

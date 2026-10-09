@@ -1,0 +1,306 @@
+[
+  {
+    "stop": "BD9C8BC4A5FCEC12",
+    "name_en": "KOWLOON STATION, HIGH SPEED RAIL STATION (YT941)",
+    "name_tc": "九龍站,高鐵站 (YT941)",
+    "name_sc": "九龙站,高铁站 (YT941)",
+    "lat": "22.305079",
+    "long": "114.162604"
+  },
+  {
+    "stop": "593DE4298B444E66",
+    "name_en": "KOWLOON STATION, HIGH SPEED RAIL STATION (YT948)",
+    "name_tc": "九龍站,高鐵站 (YT948)",
+    "name_sc": "九龙站,高铁站 (YT948)",
+    "lat": "22.305079",
+    "long": "114.162604"
+  },
+  {
+    "stop": "508D1C5BF90CE574",
+    "name_en": "HIGH SPEED RAIL WEST KOWLOON STATION BUS TERMINUS",
+    "name_tc": "高鐵(西九龍站)巴士總站 (YT960)",
+    "name_sc": "高铁(西九龙站)巴士总站 (YT960)",
+    "lat": "22.307550",
+    "long": "114.164551"
+  },
+  {
+    "stop": "83C964C7AF464F05",
+    "name_en": "HIGH SPEED RAIL WEST KOWLOON STATION BUS TERMINUS",
+    "name_tc": "高鐵(西九龍站)巴士總站 (YT959)",
+    "name_sc": "高铁(西九龙站)巴士总站 (YT959)",
+    "lat": "22.307550",
+    "long": "114.164551"
+  },
+  {
+    "stop": "4E42234F86ABC6E3",
+    "name_en": "HIGH SPEED RAIL WEST KOWLOON STATION BUS TERMINUS",
+    "name_tc": "高鐵(西九龍站)巴士總站 (YT950)",
+    "name_sc": "高铁(西九龙站)巴士总站 (YT950)",
+    "lat": "22.307517",
+    "long": "114.164814"
+  },
+  {
+    "stop": "E1DA8EB2EA9A4B3C",
+    "name_en": "HIGH SPEED RAIL WEST KOWLOON STATION BUS TERMINUS",
+    "name_tc": "高鐵(西九龍站)巴士總站 (YT953)",
+    "name_sc": "高铁(西九龙站)巴士总站 (YT953)",
+    "lat": "22.307550",
+    "long": "114.164551"
+  },
+  {
+    "stop": "0C327E058835F570",
+    "name_en": "HIGH SPEED RAIL WEST KOWLOON STATION BUS TERMINUS",
+    "name_tc": "高鐵(西九龍站)巴士總站 (YT954)",
+    "name_sc": "高铁(西九龙站)巴士总站 (YT954)",
+    "lat": "22.307550",
+    "long": "114.164551"
+  },
+  {
+    "stop": "C35DF653E02636CD",
+    "name_en": "HIGH SPEED RAIL WEST KOWLOON STATION BUS TERMINUS",
+    "name_tc": "高鐵(西九龍站)巴士總站 (YT952)",
+    "name_sc": "高铁(西九龙站)巴士总站 (YT952)",
+    "lat": "22.307550",
+    "long": "114.164551"
+  },
+  {
+    "stop": "3BEDF164D4714445",
+    "name_en": "KOWLOON STATION, HIGH SPEED RAIL STATION (YT944)",
+    "name_tc": "九龍站,高鐵站 (YT944)",
+    "name_sc": "九龙站,高铁站 (YT944)",
+    "lat": "22.305069",
+    "long": "114.162672"
+  },
+  {
+    "stop": "3007D34FB91FB27E",
+    "name_en": "ADMIRALTY STATION",
+    "name_tc": "金鐘站",
+    "name_sc": "金钟站",
+    "lat": "22.278270",
+    "long": "114.165080"
+  },
+  {
+    "stop": "7E4358262A4F586A",
+    "name_en": "ADMIRALTY STATION",
+    "name_tc": "金鐘站",
+    "name_sc": "金钟站",
+    "lat": "22.278258",
+    "long": "114.165144"
+  },
+  {
+    "stop": "7467743E276518E9",
+    "name_en": "ADMIRALTY STATION",
+    "name_tc": "金鐘站",
+    "name_sc": "金钟站",
+    "lat": "22.278437",
+    "long": "114.164445"
+  },
+  {
+    "stop": "343CF2F6ADACAACC",
+    "name_en": "HIGH SPEED RAIL WEST KOWLOON STATION (YT283)",
+    "name_tc": "高鐵西九龍站 (YT283)",
+    "name_sc": "高铁西九龙站 (YT283)",
+    "lat": "22.304014",
+    "long": "114.166620"
+  },
+  {
+    "stop": "818CD5D5B9FD5B97",
+    "name_en": "KOWLOON STATION, HIGH SPEED RAIL STATION (YT940)",
+    "name_tc": "九龍站,高鐵站 (YT940)",
+    "name_sc": "九龙站,高铁站 (YT940)",
+    "lat": "22.305007",
+    "long": "114.162950"
+  },
+  {
+    "stop": "FF46CB6182028AC6",
+    "name_en": "KOWLOON STATION, HIGH SPEED RAIL STATION (YT942)",
+    "name_tc": "九龍站,高鐵站 (YT942)",
+    "name_sc": "九龙站,高铁站 (YT942)",
+    "lat": "22.305079",
+    "long": "114.162604"
+  },
+  {
+    "stop": "68A0FA3CC69206CC",
+    "name_en": "KOWLOON STATION, HIGH SPEED RAIL STATION (YT946)",
+    "name_tc": "九龍站,高鐵站 (YT946)",
+    "name_sc": "九龙站,高铁站 (YT946)",
+    "lat": "22.305015",
+    "long": "114.162893"
+  },
+  {
+    "stop": "4DB8054CDFBB9E43",
+    "name_en": "HIGH SPEED RAIL WEST KOWLOON STATION (YT280)",
+    "name_tc": "高鐵西九龍站 (YT280)",
+    "name_sc": "高铁西九龙站 (YT280)",
+    "lat": "22.304171",
+    "long": "114.166525"
+  },
+  {
+    "stop": "EDE9E3D28B42969D",
+    "name_en": "KOWLOON STATION, HIGH SPEED RAIL STATION (YT943)",
+    "name_tc": "九龍站,高鐵站 (YT943)",
+    "name_sc": "九龙站,高铁站 (YT943)",
+    "lat": "22.305051",
+    "long": "114.162734"
+  },
+  {
+    "stop": "DE620CFFEE15A211",
+    "name_en": "HIGH SPEED RAIL WEST KOWLOON STATION BUS TERMINUS",
+    "name_tc": "高鐵(西九龍站)巴士總站 (YT955)",
+    "name_sc": "高铁(西九龙站)巴士总站 (YT955)",
+    "lat": "22.307550",
+    "long": "114.164551"
+  },
+  {
+    "stop": "8611CE1D516C6A6F",
+    "name_en": "KOWLOON STATION, HIGH SPEED RAIL STATION",
+    "name_tc": "九龍站,高鐵站",
+    "name_sc": "九龙站,高铁站",
+    "lat": "22.305068",
+    "long": "114.162626"
+  },
+  {
+    "stop": "58C01C52768108CC",
+    "name_en": "HIGH SPEED RAIL WEST KOWLOON STATION BUS TERMINUS",
+    "name_tc": "高鐵(西九龍站)巴士總站 (YT951)",
+    "name_sc": "高铁(西九龙站)巴士总站 (YT951)",
+    "lat": "22.307550",
+    "long": "114.164551"
+  },
+  {
+    "stop": "01633AD5B1B978B4",
+    "name_en": "HIGH SPEED RAIL WEST KOWLOON STATION (YT281)",
+    "name_tc": "高鐵西九龍站 (YT281)",
+    "name_sc": "高铁西九龙站 (YT281)",
+    "lat": "22.304190",
+    "long": "114.166528"
+  },
+  {
+    "stop": "9B45E50457274D2F",
+    "name_en": "KOWLOON STATION, HIGH SPEED RAIL STATION (YT945)",
+    "name_tc": "九龍站,高鐵站 (YT945)",
+    "name_sc": "九龙站,高铁站 (YT945)",
+    "lat": "22.305015",
+    "long": "114.162893"
+  },
+  {
+    "stop": "D2F2B3C5436007C2",
+    "name_en": "ADMIRALTY CENTRE",
+    "name_tc": "海富中心",
+    "name_sc": "海富中心",
+    "lat": "22.279408",
+    "long": "114.165369"
+  },
+  {
+    "stop": "3225E407F87D904C",
+    "name_en": "ADMIRALTY CENTRE",
+    "name_tc": "海富中心",
+    "name_sc": "海富中心",
+    "lat": "22.279438",
+    "long": "114.165264"
+  },
+  {
+    "stop": "55371F963B58DC5B",
+    "name_en": "ADMIRALTY CENTRE (CW750)",
+    "name_tc": "海富中心 (CW750)",
+    "name_sc": "海富中心 (CW750)",
+    "lat": "22.279391",
+    "long": "114.165461"
+  },
+  {
+    "stop": "3FCC00D1D01ACD28",
+    "name_en": "ADMIRALTY STATION (CW166)",
+    "name_tc": "金鐘站 (CW166)",
+    "name_sc": "金钟站 (CW166)",
+    "lat": "22.278410",
+    "long": "114.164530"
+  },
+  {
+    "stop": "E30B8672A91A50B9",
+    "name_en": "ADMIRALTY (EAST) TERMINUS",
+    "name_tc": "金鐘(東)總站",
+    "name_sc": "金钟(东)总站",
+    "lat": "22.278511",
+    "long": "114.165291"
+  },
+  {
+    "stop": "B7EE8C907E1E50C0",
+    "name_en": "ADMIRALTY STATION",
+    "name_tc": "金鐘站",
+    "name_sc": "金钟站",
+    "lat": "22.278437",
+    "long": "114.164445"
+  },
+  {
+    "stop": "8F5D8F5379BAD19C",
+    "name_en": "ADMIRALTY (EAST) TERMINUS",
+    "name_tc": "金鐘(東)總站",
+    "name_sc": "金钟(东)总站",
+    "lat": "22.278511",
+    "long": "114.165291"
+  },
+  {
+    "stop": "EF111F2EC49F64AE",
+    "name_en": "ADMIRALTY STATION (CW165)",
+    "name_tc": "金鐘站 (CW165)",
+    "name_sc": "金钟站 (CW165)",
+    "lat": "22.278566",
+    "long": "114.164343"
+  },
+  {
+    "stop": "8C4D4E07609BC746",
+    "name_en": "ADMIRALTY (EAST) TERMINUS",
+    "name_tc": "金鐘(東)總站",
+    "name_sc": "金钟(东)总站",
+    "lat": "22.278445",
+    "long": "114.165280"
+  },
+  {
+    "stop": "C357F03ABD5AC6AA",
+    "name_en": "ADMIRALTY (EAST) TERMINUS",
+    "name_tc": "金鐘(東)總站",
+    "name_sc": "金钟(东)总站",
+    "lat": "22.278511",
+    "long": "114.165291"
+  },
+  {
+    "stop": "9962A14911FC8F32",
+    "name_en": "ADMIRALTY (PACIFIC PLACE)",
+    "name_tc": "金鐘(太古廣場)",
+    "name_sc": "金钟(太古广场)",
+    "lat": "22.277991",
+    "long": "114.165087"
+  },
+  {
+    "stop": "40D067F126426DC6",
+    "name_en": "HIGH SPEED RAIL WEST KOWLOON STATION BUS TERMINUS",
+    "name_tc": "高鐵(西九龍站)巴士總站 (YT957)",
+    "name_sc": "高铁(西九龙站)巴士总站 (YT957)",
+    "lat": "22.307550",
+    "long": "114.164551"
+  },
+  {
+    "stop": "AC8828CF13B8AA49",
+    "name_en": "HIGH SPEED RAIL WEST KOWLOON STATION (YT282)",
+    "name_tc": "高鐵西九龍站 (YT282)",
+    "name_sc": "高铁西九龙站 (YT282)",
+    "lat": "22.304014",
+    "long": "114.166620"
+  },
+  {
+    "stop": "041A140AD24C1ADB",
+    "name_en": "HIGH SPEED RAIL WEST KOWLOON STATION BUS TERMINUS",
+    "name_tc": "高鐵(西九龍站)巴士總站 (YT956)",
+    "name_sc": "高铁(西九龙站)巴士总站 (YT956)",
+    "lat": "22.307550",
+    "long": "114.164551"
+  },
+  {
+    "stop": "1A0F813116024D92",
+    "name_en": "HIGH SPEED RAIL (WEST KOWLOON STATION) (YT290)",
+    "name_tc": "高鐵(西九龍站) (YT290)",
+    "name_sc": "高铁(西九龙站) (YT290)",
+    "lat": "22.303513",
+    "long": "114.166393"
+  }
+]
