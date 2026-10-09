@@ -1,0 +1,6489 @@
+{
+  "kind": "ACTUAL_SOURCE_GRAPH_SYNTHETIC_OD_NOT_FIELD_AUDIT",
+  "od_count": 120,
+  "cases": 720,
+  "p95_ms": 4.298888999983319,
+  "max_ms": 12.811417000193615,
+  "results": [
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:b36ad31678c21a",
+      "to_node": "ADM:N:e3870649fe66f0",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 5.22,
+      "elapsed_ms": 0.7656069992663106
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:b36ad31678c21a",
+      "to_node": "ADM:N:e3870649fe66f0",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 5.22,
+      "elapsed_ms": 0.5058269998698961
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:b36ad31678c21a",
+      "to_node": "ADM:N:e3870649fe66f0",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 5.22,
+      "elapsed_ms": 0.5111859991302481
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:b36ad31678c21a",
+      "to_node": "ADM:N:e3870649fe66f0",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 0.9978340003726771
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:b36ad31678c21a",
+      "to_node": "ADM:N:e3870649fe66f0",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 5.22,
+      "elapsed_ms": 0.48015899847086985
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:b36ad31678c21a",
+      "to_node": "ADM:N:e3870649fe66f0",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 5.22,
+      "elapsed_ms": 0.511647000166704
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:57a4eae2d1c7ec",
+      "to_node": "ADM:N:229c8b9fed97bc",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 36.81,
+      "elapsed_ms": 0.987028000963619
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:57a4eae2d1c7ec",
+      "to_node": "ADM:N:229c8b9fed97bc",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 36.81,
+      "elapsed_ms": 0.8350999996764585
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:57a4eae2d1c7ec",
+      "to_node": "ADM:N:229c8b9fed97bc",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "distance_m": null,
+      "elapsed_ms": 0.5117670007166453
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:57a4eae2d1c7ec",
+      "to_node": "ADM:N:229c8b9fed97bc",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 47.25,
+      "elapsed_ms": 0.9760319990164135
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:57a4eae2d1c7ec",
+      "to_node": "ADM:N:229c8b9fed97bc",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 36.81,
+      "elapsed_ms": 0.6628629998886026
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:57a4eae2d1c7ec",
+      "to_node": "ADM:N:229c8b9fed97bc",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 36.81,
+      "elapsed_ms": 0.8794570003374247
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:b20f494bb94a40",
+      "to_node": "ADM:N:40aa1468d0250b",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 12.29,
+      "elapsed_ms": 0.5529480004042853
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:b20f494bb94a40",
+      "to_node": "ADM:N:40aa1468d0250b",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 12.29,
+      "elapsed_ms": 0.5340200004866347
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:b20f494bb94a40",
+      "to_node": "ADM:N:40aa1468d0250b",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 12.29,
+      "elapsed_ms": 0.5135089995746966
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:b20f494bb94a40",
+      "to_node": "ADM:N:40aa1468d0250b",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 96.07,
+      "elapsed_ms": 1.224804000230506
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:b20f494bb94a40",
+      "to_node": "ADM:N:40aa1468d0250b",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 12.29,
+      "elapsed_ms": 0.5617509996227454
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:b20f494bb94a40",
+      "to_node": "ADM:N:40aa1468d0250b",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 12.29,
+      "elapsed_ms": 0.4779860009875847
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:6d104d24a04c86",
+      "to_node": "ADM:N:bd9b97dbffc0d5",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 5.38,
+      "elapsed_ms": 0.5043350010964787
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:6d104d24a04c86",
+      "to_node": "ADM:N:bd9b97dbffc0d5",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 5.38,
+      "elapsed_ms": 0.4786059998878045
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:6d104d24a04c86",
+      "to_node": "ADM:N:bd9b97dbffc0d5",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "distance_m": null,
+      "elapsed_ms": 0.49529199895914644
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:6d104d24a04c86",
+      "to_node": "ADM:N:bd9b97dbffc0d5",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 0.47192700003506616
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:6d104d24a04c86",
+      "to_node": "ADM:N:bd9b97dbffc0d5",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 5.38,
+      "elapsed_ms": 0.4960629994457122
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:6d104d24a04c86",
+      "to_node": "ADM:N:bd9b97dbffc0d5",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 5.38,
+      "elapsed_ms": 0.4802790008398006
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:dcec9380edec87",
+      "to_node": "ADM:N:494b50e1336a0c",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 6.06,
+      "elapsed_ms": 0.5692720005754381
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:dcec9380edec87",
+      "to_node": "ADM:N:494b50e1336a0c",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 6.06,
+      "elapsed_ms": 0.48894199971982744
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:dcec9380edec87",
+      "to_node": "ADM:N:494b50e1336a0c",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 6.06,
+      "elapsed_ms": 0.5202489992370829
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:dcec9380edec87",
+      "to_node": "ADM:N:494b50e1336a0c",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 56.6,
+      "elapsed_ms": 0.8453560003545135
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:dcec9380edec87",
+      "to_node": "ADM:N:494b50e1336a0c",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 6.06,
+      "elapsed_ms": 0.515972998982761
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:dcec9380edec87",
+      "to_node": "ADM:N:494b50e1336a0c",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 6.06,
+      "elapsed_ms": 0.5298830001265742
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:0b31c2ed34a6c9",
+      "to_node": "ADM:N:f241e22b2ac87a",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 13.22,
+      "elapsed_ms": 0.492887998916558
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:0b31c2ed34a6c9",
+      "to_node": "ADM:N:f241e22b2ac87a",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 13.22,
+      "elapsed_ms": 0.5233440006122692
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:0b31c2ed34a6c9",
+      "to_node": "ADM:N:f241e22b2ac87a",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 13.22,
+      "elapsed_ms": 0.4818319994228659
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:0b31c2ed34a6c9",
+      "to_node": "ADM:N:f241e22b2ac87a",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 131.99,
+      "elapsed_ms": 1.506872000391013
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:0b31c2ed34a6c9",
+      "to_node": "ADM:N:f241e22b2ac87a",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 13.22,
+      "elapsed_ms": 0.398647000110941
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:0b31c2ed34a6c9",
+      "to_node": "ADM:N:f241e22b2ac87a",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 13.22,
+      "elapsed_ms": 0.3973260008933721
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:1b4fd677467207",
+      "to_node": "ADM:N:308b08a6e98ae7",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 5.35,
+      "elapsed_ms": 0.3572149998944951
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:1b4fd677467207",
+      "to_node": "ADM:N:308b08a6e98ae7",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 5.35,
+      "elapsed_ms": 0.35511200076143723
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:1b4fd677467207",
+      "to_node": "ADM:N:308b08a6e98ae7",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "distance_m": null,
+      "elapsed_ms": 0.6720470009895507
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:1b4fd677467207",
+      "to_node": "ADM:N:308b08a6e98ae7",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 0.3756520000024466
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:1b4fd677467207",
+      "to_node": "ADM:N:308b08a6e98ae7",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 5.35,
+      "elapsed_ms": 0.4277699990780093
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:1b4fd677467207",
+      "to_node": "ADM:N:308b08a6e98ae7",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 5.35,
+      "elapsed_ms": 0.3539099998306483
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:8e4655f0640aef",
+      "to_node": "ADM:N:1df7f2472bf4e9",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 12.55,
+      "elapsed_ms": 0.5094829994050087
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:8e4655f0640aef",
+      "to_node": "ADM:N:1df7f2472bf4e9",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 12.55,
+      "elapsed_ms": 0.40001999877858907
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:8e4655f0640aef",
+      "to_node": "ADM:N:1df7f2472bf4e9",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 12.55,
+      "elapsed_ms": 0.38317399958032183
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:8e4655f0640aef",
+      "to_node": "ADM:N:1df7f2472bf4e9",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 71.42,
+      "elapsed_ms": 1.1543790005816845
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:8e4655f0640aef",
+      "to_node": "ADM:N:1df7f2472bf4e9",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 12.55,
+      "elapsed_ms": 0.6963529995118733
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:8e4655f0640aef",
+      "to_node": "ADM:N:1df7f2472bf4e9",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 12.55,
+      "elapsed_ms": 0.42931299867632333
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:4e2f26e9d33e21",
+      "to_node": "ADM:N:0b62cf2edbf6bb",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 15.25,
+      "elapsed_ms": 0.3798590005317237
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:4e2f26e9d33e21",
+      "to_node": "ADM:N:0b62cf2edbf6bb",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 15.25,
+      "elapsed_ms": 0.3713059995789081
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:4e2f26e9d33e21",
+      "to_node": "ADM:N:0b62cf2edbf6bb",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 15.25,
+      "elapsed_ms": 0.46948300041549373
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:4e2f26e9d33e21",
+      "to_node": "ADM:N:0b62cf2edbf6bb",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 70.92,
+      "elapsed_ms": 0.5123079990880797
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:4e2f26e9d33e21",
+      "to_node": "ADM:N:0b62cf2edbf6bb",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 15.25,
+      "elapsed_ms": 0.40861200068320613
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:4e2f26e9d33e21",
+      "to_node": "ADM:N:0b62cf2edbf6bb",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 15.25,
+      "elapsed_ms": 0.36627800000132993
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:15a634232cad6c",
+      "to_node": "ADM:N:00de53140f5eed",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 5.41,
+      "elapsed_ms": 0.5216310000832891
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:15a634232cad6c",
+      "to_node": "ADM:N:00de53140f5eed",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 5.41,
+      "elapsed_ms": 0.38212300023587886
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:15a634232cad6c",
+      "to_node": "ADM:N:00de53140f5eed",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 5.41,
+      "elapsed_ms": 1.079227000445826
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:15a634232cad6c",
+      "to_node": "ADM:N:00de53140f5eed",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 114.31,
+      "elapsed_ms": 2.00855799994315
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:15a634232cad6c",
+      "to_node": "ADM:N:00de53140f5eed",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 5.41,
+      "elapsed_ms": 0.5660879996867152
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:15a634232cad6c",
+      "to_node": "ADM:N:00de53140f5eed",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 5.41,
+      "elapsed_ms": 0.3925080000044545
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:058b7de8118425",
+      "to_node": "ADM:N:356496b859cb00",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 18.91,
+      "elapsed_ms": 0.5369749997043982
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:058b7de8118425",
+      "to_node": "ADM:N:356496b859cb00",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 18.91,
+      "elapsed_ms": 0.44788100058212876
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:058b7de8118425",
+      "to_node": "ADM:N:356496b859cb00",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 18.91,
+      "elapsed_ms": 0.42197099901386537
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:058b7de8118425",
+      "to_node": "ADM:N:356496b859cb00",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 204.14,
+      "elapsed_ms": 5.865934999746969
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:058b7de8118425",
+      "to_node": "ADM:N:356496b859cb00",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 18.91,
+      "elapsed_ms": 1.4399470001080772
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:058b7de8118425",
+      "to_node": "ADM:N:356496b859cb00",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 18.91,
+      "elapsed_ms": 0.819716999103548
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:e9cbf662a564d6",
+      "to_node": "ADM:N:d273e3b9b533f5",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 11.14,
+      "elapsed_ms": 0.6212999996932922
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:e9cbf662a564d6",
+      "to_node": "ADM:N:d273e3b9b533f5",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 11.14,
+      "elapsed_ms": 0.5491330011864193
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:e9cbf662a564d6",
+      "to_node": "ADM:N:d273e3b9b533f5",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 11.14,
+      "elapsed_ms": 0.4560529996524565
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:e9cbf662a564d6",
+      "to_node": "ADM:N:d273e3b9b533f5",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 153.31,
+      "elapsed_ms": 4.604165998898679
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:e9cbf662a564d6",
+      "to_node": "ADM:N:d273e3b9b533f5",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 11.14,
+      "elapsed_ms": 0.4698829998233123
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:e9cbf662a564d6",
+      "to_node": "ADM:N:d273e3b9b533f5",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 11.14,
+      "elapsed_ms": 0.4325480003899429
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:8b76bb69210902",
+      "to_node": "ADM:N:e357298b6312d5",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 7.46,
+      "elapsed_ms": 0.38437599869212136
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:8b76bb69210902",
+      "to_node": "ADM:N:e357298b6312d5",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 7.46,
+      "elapsed_ms": 0.3815020008914871
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:8b76bb69210902",
+      "to_node": "ADM:N:e357298b6312d5",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 7.46,
+      "elapsed_ms": 0.36156200076220557
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:8b76bb69210902",
+      "to_node": "ADM:N:e357298b6312d5",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 76.51,
+      "elapsed_ms": 0.7682200011913665
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:8b76bb69210902",
+      "to_node": "ADM:N:e357298b6312d5",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 7.46,
+      "elapsed_ms": 0.5101139995531412
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:8b76bb69210902",
+      "to_node": "ADM:N:e357298b6312d5",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 7.46,
+      "elapsed_ms": 0.45175699960964266
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:dd529ff231f19c",
+      "to_node": "ADM:N:c44b739c07e630",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 11.44,
+      "elapsed_ms": 0.39013400055409875
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:dd529ff231f19c",
+      "to_node": "ADM:N:c44b739c07e630",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 11.44,
+      "elapsed_ms": 0.3537400007189717
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:dd529ff231f19c",
+      "to_node": "ADM:N:c44b739c07e630",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 11.44,
+      "elapsed_ms": 0.4746510003315052
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:dd529ff231f19c",
+      "to_node": "ADM:N:c44b739c07e630",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 1.4519150008709403
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:dd529ff231f19c",
+      "to_node": "ADM:N:c44b739c07e630",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 11.44,
+      "elapsed_ms": 0.45819599836249836
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:dd529ff231f19c",
+      "to_node": "ADM:N:c44b739c07e630",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 11.44,
+      "elapsed_ms": 0.39079499947547447
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:dbfb52fd868bb7",
+      "to_node": "ADM:N:0d01b7f5287360",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 6.79,
+      "elapsed_ms": 0.5383459993026918
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:dbfb52fd868bb7",
+      "to_node": "ADM:N:0d01b7f5287360",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 6.79,
+      "elapsed_ms": 0.4291419991204748
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:dbfb52fd868bb7",
+      "to_node": "ADM:N:0d01b7f5287360",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "distance_m": null,
+      "elapsed_ms": 0.383033000616706
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:dbfb52fd868bb7",
+      "to_node": "ADM:N:0d01b7f5287360",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 45.88,
+      "elapsed_ms": 0.4988170003343839
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:dbfb52fd868bb7",
+      "to_node": "ADM:N:0d01b7f5287360",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 6.79,
+      "elapsed_ms": 0.39611300053365994
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:dbfb52fd868bb7",
+      "to_node": "ADM:N:0d01b7f5287360",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 6.79,
+      "elapsed_ms": 0.4279410004528472
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:c1eab5d782cb56",
+      "to_node": "ADM:N:0ebcecf62aa332",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 17.55,
+      "elapsed_ms": 0.39592299981450196
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:c1eab5d782cb56",
+      "to_node": "ADM:N:0ebcecf62aa332",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 17.55,
+      "elapsed_ms": 0.42624799971235916
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:c1eab5d782cb56",
+      "to_node": "ADM:N:0ebcecf62aa332",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 17.55,
+      "elapsed_ms": 0.3812609993474325
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:c1eab5d782cb56",
+      "to_node": "ADM:N:0ebcecf62aa332",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 100.46,
+      "elapsed_ms": 7.000514000537805
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:c1eab5d782cb56",
+      "to_node": "ADM:N:0ebcecf62aa332",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 17.55,
+      "elapsed_ms": 0.49473100079922006
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:c1eab5d782cb56",
+      "to_node": "ADM:N:0ebcecf62aa332",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 17.55,
+      "elapsed_ms": 0.5456569997477345
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:b75f49753d4072",
+      "to_node": "ADM:N:5c5b1e77900d82",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 20.22,
+      "elapsed_ms": 0.6332079992716899
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:b75f49753d4072",
+      "to_node": "ADM:N:5c5b1e77900d82",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 20.22,
+      "elapsed_ms": 0.47209699914674275
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:b75f49753d4072",
+      "to_node": "ADM:N:5c5b1e77900d82",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "distance_m": null,
+      "elapsed_ms": 0.3891930009558564
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:b75f49753d4072",
+      "to_node": "ADM:N:5c5b1e77900d82",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 35.88,
+      "elapsed_ms": 0.59183599842072
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:b75f49753d4072",
+      "to_node": "ADM:N:5c5b1e77900d82",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 20.22,
+      "elapsed_ms": 0.44746100138581824
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:b75f49753d4072",
+      "to_node": "ADM:N:5c5b1e77900d82",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 20.22,
+      "elapsed_ms": 0.5673390005540568
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:98629a2422a7e6",
+      "to_node": "ADM:N:51e74b159121b4",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 5.09,
+      "elapsed_ms": 0.39065500095603056
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:98629a2422a7e6",
+      "to_node": "ADM:N:51e74b159121b4",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 5.09,
+      "elapsed_ms": 0.3546110001479974
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:98629a2422a7e6",
+      "to_node": "ADM:N:51e74b159121b4",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "distance_m": null,
+      "elapsed_ms": 0.3542710001056548
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:98629a2422a7e6",
+      "to_node": "ADM:N:51e74b159121b4",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 0.3869899992423598
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:98629a2422a7e6",
+      "to_node": "ADM:N:51e74b159121b4",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 5.09,
+      "elapsed_ms": 0.3484819990262622
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:98629a2422a7e6",
+      "to_node": "ADM:N:51e74b159121b4",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 5.09,
+      "elapsed_ms": 0.3486219993646955
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:ebc23eaf93fac7",
+      "to_node": "ADM:N:75990048b18d36",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 7.77,
+      "elapsed_ms": 0.39178699989861343
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:ebc23eaf93fac7",
+      "to_node": "ADM:N:75990048b18d36",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 7.77,
+      "elapsed_ms": 0.36365499909152277
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:ebc23eaf93fac7",
+      "to_node": "ADM:N:75990048b18d36",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 7.77,
+      "elapsed_ms": 0.37842699930479284
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:ebc23eaf93fac7",
+      "to_node": "ADM:N:75990048b18d36",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 132.74,
+      "elapsed_ms": 6.795055998736643
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:ebc23eaf93fac7",
+      "to_node": "ADM:N:75990048b18d36",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 7.77,
+      "elapsed_ms": 0.695431999702123
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:ebc23eaf93fac7",
+      "to_node": "ADM:N:75990048b18d36",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 7.77,
+      "elapsed_ms": 0.48738000077719335
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:3ea366f8bc36c6",
+      "to_node": "ADM:N:01d6a4bcb7037b",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 7.64,
+      "elapsed_ms": 0.47621400153730065
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:3ea366f8bc36c6",
+      "to_node": "ADM:N:01d6a4bcb7037b",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 7.64,
+      "elapsed_ms": 0.381792000553105
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:3ea366f8bc36c6",
+      "to_node": "ADM:N:01d6a4bcb7037b",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "distance_m": null,
+      "elapsed_ms": 0.4139500015298836
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:3ea366f8bc36c6",
+      "to_node": "ADM:N:01d6a4bcb7037b",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 0.3544610008248128
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:3ea366f8bc36c6",
+      "to_node": "ADM:N:01d6a4bcb7037b",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 7.64,
+      "elapsed_ms": 0.36355500014906283
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:3ea366f8bc36c6",
+      "to_node": "ADM:N:01d6a4bcb7037b",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 7.64,
+      "elapsed_ms": 0.38174200017238036
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:6df396927037cd",
+      "to_node": "ADM:N:b3bafc8b4690dd",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 5.9,
+      "elapsed_ms": 0.7630820000485983
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:6df396927037cd",
+      "to_node": "ADM:N:b3bafc8b4690dd",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 5.9,
+      "elapsed_ms": 0.3852970003208611
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:6df396927037cd",
+      "to_node": "ADM:N:b3bafc8b4690dd",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 5.9,
+      "elapsed_ms": 0.3711159988597501
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:6df396927037cd",
+      "to_node": "ADM:N:b3bafc8b4690dd",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 24.82,
+      "elapsed_ms": 0.497574999826611
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:6df396927037cd",
+      "to_node": "ADM:N:b3bafc8b4690dd",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 5.9,
+      "elapsed_ms": 0.49599299927649554
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:6df396927037cd",
+      "to_node": "ADM:N:b3bafc8b4690dd",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 5.9,
+      "elapsed_ms": 0.4703840004367521
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:0fb494f7d2a0a5",
+      "to_node": "ADM:N:4fe9f69b38e8d6",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 19.48,
+      "elapsed_ms": 0.6048160012142034
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:0fb494f7d2a0a5",
+      "to_node": "ADM:N:4fe9f69b38e8d6",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 19.48,
+      "elapsed_ms": 0.4336499987402931
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:0fb494f7d2a0a5",
+      "to_node": "ADM:N:4fe9f69b38e8d6",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 19.48,
+      "elapsed_ms": 0.3902139997080667
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:0fb494f7d2a0a5",
+      "to_node": "ADM:N:4fe9f69b38e8d6",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 123.03,
+      "elapsed_ms": 3.6663109985966003
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:0fb494f7d2a0a5",
+      "to_node": "ADM:N:4fe9f69b38e8d6",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 19.48,
+      "elapsed_ms": 0.5321869994077133
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:0fb494f7d2a0a5",
+      "to_node": "ADM:N:4fe9f69b38e8d6",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 19.48,
+      "elapsed_ms": 0.430485000833869
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:9c996fdb945a59",
+      "to_node": "ADM:N:7361b8b6a1a879",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 6.07,
+      "elapsed_ms": 0.38680899888277054
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:9c996fdb945a59",
+      "to_node": "ADM:N:7361b8b6a1a879",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 6.07,
+      "elapsed_ms": 0.5429129996628035
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:9c996fdb945a59",
+      "to_node": "ADM:N:7361b8b6a1a879",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 6.07,
+      "elapsed_ms": 0.3770439998334041
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:9c996fdb945a59",
+      "to_node": "ADM:N:7361b8b6a1a879",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 138.12,
+      "elapsed_ms": 1.5071569996507606
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:9c996fdb945a59",
+      "to_node": "ADM:N:7361b8b6a1a879",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 6.07,
+      "elapsed_ms": 0.4015609993075486
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:9c996fdb945a59",
+      "to_node": "ADM:N:7361b8b6a1a879",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 6.07,
+      "elapsed_ms": 0.47503099995083176
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:249d3528664365",
+      "to_node": "ADM:N:1f7816ee01cbb4",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 5.98,
+      "elapsed_ms": 0.3756730002351105
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:249d3528664365",
+      "to_node": "ADM:N:1f7816ee01cbb4",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 5.98,
+      "elapsed_ms": 0.3925279997929465
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:249d3528664365",
+      "to_node": "ADM:N:1f7816ee01cbb4",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 5.98,
+      "elapsed_ms": 0.6295530001807492
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:249d3528664365",
+      "to_node": "ADM:N:1f7816ee01cbb4",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 17.89,
+      "elapsed_ms": 0.5641450006805826
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:249d3528664365",
+      "to_node": "ADM:N:1f7816ee01cbb4",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 5.98,
+      "elapsed_ms": 0.3750220002984861
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:249d3528664365",
+      "to_node": "ADM:N:1f7816ee01cbb4",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 5.98,
+      "elapsed_ms": 0.36582699976861477
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:b8fa48676f444d",
+      "to_node": "ADM:N:bdd868232d8f7c",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 6.3,
+      "elapsed_ms": 0.39574199945491273
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:b8fa48676f444d",
+      "to_node": "ADM:N:bdd868232d8f7c",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 6.3,
+      "elapsed_ms": 0.5594269987341249
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:b8fa48676f444d",
+      "to_node": "ADM:N:bdd868232d8f7c",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 6.3,
+      "elapsed_ms": 0.4909449999104254
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:b8fa48676f444d",
+      "to_node": "ADM:N:bdd868232d8f7c",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 125.46,
+      "elapsed_ms": 0.8358220002264716
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:b8fa48676f444d",
+      "to_node": "ADM:N:bdd868232d8f7c",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 6.3,
+      "elapsed_ms": 0.38521699934790377
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:b8fa48676f444d",
+      "to_node": "ADM:N:bdd868232d8f7c",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 6.3,
+      "elapsed_ms": 0.35801599915430415
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:51e74b159121b4",
+      "to_node": "ADM:N:b5b71597cc07fb",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 20.22,
+      "elapsed_ms": 0.5217510006332304
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:51e74b159121b4",
+      "to_node": "ADM:N:b5b71597cc07fb",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 20.22,
+      "elapsed_ms": 0.46545700024580583
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:51e74b159121b4",
+      "to_node": "ADM:N:b5b71597cc07fb",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "distance_m": null,
+      "elapsed_ms": 0.5133189988555387
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:51e74b159121b4",
+      "to_node": "ADM:N:b5b71597cc07fb",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 35.88,
+      "elapsed_ms": 0.5098130004626
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:51e74b159121b4",
+      "to_node": "ADM:N:b5b71597cc07fb",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 20.22,
+      "elapsed_ms": 0.44961299863643944
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:51e74b159121b4",
+      "to_node": "ADM:N:b5b71597cc07fb",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 20.22,
+      "elapsed_ms": 0.4731090011773631
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:3c21386e552113",
+      "to_node": "ADM:N:7b3d2d733a1033",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 8.01,
+      "elapsed_ms": 0.3767039997910615
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:3c21386e552113",
+      "to_node": "ADM:N:7b3d2d733a1033",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 8.01,
+      "elapsed_ms": 0.4083620005985722
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:3c21386e552113",
+      "to_node": "ADM:N:7b3d2d733a1033",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "distance_m": null,
+      "elapsed_ms": 0.37953900027787313
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:3c21386e552113",
+      "to_node": "ADM:N:7b3d2d733a1033",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 0.35466100052872207
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:3c21386e552113",
+      "to_node": "ADM:N:7b3d2d733a1033",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 8.01,
+      "elapsed_ms": 0.35983900124847423
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:3c21386e552113",
+      "to_node": "ADM:N:7b3d2d733a1033",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 8.01,
+      "elapsed_ms": 0.7088319998729276
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:ca9590bae2ab56",
+      "to_node": "ADM:N:df13d3c1088eca",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 7.78,
+      "elapsed_ms": 0.363093999112607
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:ca9590bae2ab56",
+      "to_node": "ADM:N:df13d3c1088eca",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 7.78,
+      "elapsed_ms": 0.4000190001534065
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:ca9590bae2ab56",
+      "to_node": "ADM:N:df13d3c1088eca",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 7.78,
+      "elapsed_ms": 0.35298900002089795
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:ca9590bae2ab56",
+      "to_node": "ADM:N:df13d3c1088eca",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 5.857743000888149
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:ca9590bae2ab56",
+      "to_node": "ADM:N:df13d3c1088eca",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 7.78,
+      "elapsed_ms": 2.2959289999562316
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:ca9590bae2ab56",
+      "to_node": "ADM:N:df13d3c1088eca",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 7.78,
+      "elapsed_ms": 0.5336189988156548
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:9394674ef8072d",
+      "to_node": "ADM:N:13b0a3cab5eb21",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 6.26,
+      "elapsed_ms": 0.4358219994173851
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:9394674ef8072d",
+      "to_node": "ADM:N:13b0a3cab5eb21",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 6.26,
+      "elapsed_ms": 0.5752510005549993
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:9394674ef8072d",
+      "to_node": "ADM:N:13b0a3cab5eb21",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 6.26,
+      "elapsed_ms": 0.3861680015688762
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:9394674ef8072d",
+      "to_node": "ADM:N:13b0a3cab5eb21",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 26.05,
+      "elapsed_ms": 0.605786999585689
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:9394674ef8072d",
+      "to_node": "ADM:N:13b0a3cab5eb21",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 6.26,
+      "elapsed_ms": 0.3809909994743066
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:9394674ef8072d",
+      "to_node": "ADM:N:13b0a3cab5eb21",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 6.26,
+      "elapsed_ms": 0.39000399920041673
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:2ff07a117bd61b",
+      "to_node": "ADM:N:972b0d30531790",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 5.6,
+      "elapsed_ms": 0.3649670015875017
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:2ff07a117bd61b",
+      "to_node": "ADM:N:972b0d30531790",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 5.6,
+      "elapsed_ms": 0.3547119995346293
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:2ff07a117bd61b",
+      "to_node": "ADM:N:972b0d30531790",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "distance_m": null,
+      "elapsed_ms": 0.36970300061511807
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:2ff07a117bd61b",
+      "to_node": "ADM:N:972b0d30531790",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 59.88,
+      "elapsed_ms": 1.4963110006647184
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:2ff07a117bd61b",
+      "to_node": "ADM:N:972b0d30531790",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 5.6,
+      "elapsed_ms": 0.408141000661999
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:2ff07a117bd61b",
+      "to_node": "ADM:N:972b0d30531790",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 5.6,
+      "elapsed_ms": 0.38575799953832757
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:02704d9c3a9bee",
+      "to_node": "ADM:N:d525798d9b1084",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 10.85,
+      "elapsed_ms": 0.43541199920582585
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:02704d9c3a9bee",
+      "to_node": "ADM:N:d525798d9b1084",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 10.85,
+      "elapsed_ms": 0.4072800002177246
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:02704d9c3a9bee",
+      "to_node": "ADM:N:d525798d9b1084",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 10.85,
+      "elapsed_ms": 0.36451600135478657
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:02704d9c3a9bee",
+      "to_node": "ADM:N:d525798d9b1084",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 120.91,
+      "elapsed_ms": 0.7473899986507604
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:02704d9c3a9bee",
+      "to_node": "ADM:N:d525798d9b1084",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 10.85,
+      "elapsed_ms": 0.3790579994529253
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:02704d9c3a9bee",
+      "to_node": "ADM:N:d525798d9b1084",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 10.85,
+      "elapsed_ms": 0.37897799847996794
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:b8fa48676f444d",
+      "to_node": "ADM:N:a24e08ff7dd388",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 24.37,
+      "elapsed_ms": 0.3934800006391015
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:b8fa48676f444d",
+      "to_node": "ADM:N:a24e08ff7dd388",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 24.37,
+      "elapsed_ms": 0.38819099972897675
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:b8fa48676f444d",
+      "to_node": "ADM:N:a24e08ff7dd388",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 24.37,
+      "elapsed_ms": 0.4290630004106788
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:b8fa48676f444d",
+      "to_node": "ADM:N:a24e08ff7dd388",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 107.39,
+      "elapsed_ms": 0.7345200010604458
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:b8fa48676f444d",
+      "to_node": "ADM:N:a24e08ff7dd388",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 24.37,
+      "elapsed_ms": 0.4058679987792857
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:b8fa48676f444d",
+      "to_node": "ADM:N:a24e08ff7dd388",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 24.37,
+      "elapsed_ms": 0.3891630003636237
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:0335c9df452ea4",
+      "to_node": "ADM:N:f18633661f7d28",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 7.94,
+      "elapsed_ms": 0.48568800048087724
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:0335c9df452ea4",
+      "to_node": "ADM:N:f18633661f7d28",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 27.0,
+      "elapsed_ms": 0.41927799975383095
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:0335c9df452ea4",
+      "to_node": "ADM:N:f18633661f7d28",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "distance_m": null,
+      "elapsed_ms": 0.3860480010189349
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:0335c9df452ea4",
+      "to_node": "ADM:N:f18633661f7d28",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 27.0,
+      "elapsed_ms": 0.4055379995406838
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:0335c9df452ea4",
+      "to_node": "ADM:N:f18633661f7d28",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 7.94,
+      "elapsed_ms": 0.3775850000238279
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:0335c9df452ea4",
+      "to_node": "ADM:N:f18633661f7d28",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 7.94,
+      "elapsed_ms": 0.400439999793889
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:7df47606d98357",
+      "to_node": "ADM:N:d8547763915a03",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 22.18,
+      "elapsed_ms": 0.3583369998523267
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:7df47606d98357",
+      "to_node": "ADM:N:d8547763915a03",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 22.18,
+      "elapsed_ms": 0.4364830001577502
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:7df47606d98357",
+      "to_node": "ADM:N:d8547763915a03",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 22.18,
+      "elapsed_ms": 0.36555699989548884
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:7df47606d98357",
+      "to_node": "ADM:N:d8547763915a03",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 123.02,
+      "elapsed_ms": 0.7425719995808322
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:7df47606d98357",
+      "to_node": "ADM:N:d8547763915a03",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 22.18,
+      "elapsed_ms": 0.37557200084847864
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:7df47606d98357",
+      "to_node": "ADM:N:d8547763915a03",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 22.18,
+      "elapsed_ms": 0.6253670017031254
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:4c14e9f695717f",
+      "to_node": "ADM:N:41225a1c02116b",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 5.47,
+      "elapsed_ms": 0.37223700019239914
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:4c14e9f695717f",
+      "to_node": "ADM:N:41225a1c02116b",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 5.47,
+      "elapsed_ms": 0.3937189994758228
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:4c14e9f695717f",
+      "to_node": "ADM:N:41225a1c02116b",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 5.47,
+      "elapsed_ms": 0.4514859992923448
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:4c14e9f695717f",
+      "to_node": "ADM:N:41225a1c02116b",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 4.352058000222314
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:4c14e9f695717f",
+      "to_node": "ADM:N:41225a1c02116b",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 5.47,
+      "elapsed_ms": 0.46367399954760913
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:4c14e9f695717f",
+      "to_node": "ADM:N:41225a1c02116b",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 5.47,
+      "elapsed_ms": 0.3835540010186378
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:772a2daa784ad3",
+      "to_node": "ADM:N:c064fceb8f12a1",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 5.56,
+      "elapsed_ms": 0.38413500078604557
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:772a2daa784ad3",
+      "to_node": "ADM:N:c064fceb8f12a1",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 5.56,
+      "elapsed_ms": 0.3598690000217175
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:772a2daa784ad3",
+      "to_node": "ADM:N:c064fceb8f12a1",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 5.56,
+      "elapsed_ms": 0.49142600073537324
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:772a2daa784ad3",
+      "to_node": "ADM:N:c064fceb8f12a1",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 4.779357999723288
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:772a2daa784ad3",
+      "to_node": "ADM:N:c064fceb8f12a1",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 5.56,
+      "elapsed_ms": 0.43789600022137165
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:772a2daa784ad3",
+      "to_node": "ADM:N:c064fceb8f12a1",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 5.56,
+      "elapsed_ms": 0.6567029995494522
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:9e185fb256806e",
+      "to_node": "ADM:N:d1697cd135b40e",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 37.51,
+      "elapsed_ms": 8.471768000163138
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:9e185fb256806e",
+      "to_node": "ADM:N:d1697cd135b40e",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 37.51,
+      "elapsed_ms": 0.8007390006241621
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:9e185fb256806e",
+      "to_node": "ADM:N:d1697cd135b40e",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "distance_m": null,
+      "elapsed_ms": 0.4148819989495678
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:9e185fb256806e",
+      "to_node": "ADM:N:d1697cd135b40e",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 79.76,
+      "elapsed_ms": 1.8464050008333288
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:9e185fb256806e",
+      "to_node": "ADM:N:d1697cd135b40e",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 37.51,
+      "elapsed_ms": 0.7111850009096088
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:9e185fb256806e",
+      "to_node": "ADM:N:d1697cd135b40e",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 37.51,
+      "elapsed_ms": 1.1464769995654933
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:ef43ede806a255",
+      "to_node": "ADM:N:5af7f86e6ba6b4",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 5.0,
+      "elapsed_ms": 0.38486599987663794
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:ef43ede806a255",
+      "to_node": "ADM:N:5af7f86e6ba6b4",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 5.0,
+      "elapsed_ms": 0.4599780004355125
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:ef43ede806a255",
+      "to_node": "ADM:N:5af7f86e6ba6b4",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 5.0,
+      "elapsed_ms": 0.36024899964104407
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:ef43ede806a255",
+      "to_node": "ADM:N:5af7f86e6ba6b4",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 8.86,
+      "elapsed_ms": 0.6821620008850005
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:ef43ede806a255",
+      "to_node": "ADM:N:5af7f86e6ba6b4",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 5.0,
+      "elapsed_ms": 0.39840699901105836
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:ef43ede806a255",
+      "to_node": "ADM:N:5af7f86e6ba6b4",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 5.0,
+      "elapsed_ms": 0.3595789985411102
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:7692ca06df48fd",
+      "to_node": "ADM:N:3b969d61392bac",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 6.07,
+      "elapsed_ms": 0.4036640002595959
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:7692ca06df48fd",
+      "to_node": "ADM:N:3b969d61392bac",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 6.07,
+      "elapsed_ms": 0.3559930009942036
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:7692ca06df48fd",
+      "to_node": "ADM:N:3b969d61392bac",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 6.07,
+      "elapsed_ms": 0.4597790011757752
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:7692ca06df48fd",
+      "to_node": "ADM:N:3b969d61392bac",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 83.93,
+      "elapsed_ms": 0.7414609990519239
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:7692ca06df48fd",
+      "to_node": "ADM:N:3b969d61392bac",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 6.07,
+      "elapsed_ms": 0.3946010001527611
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:7692ca06df48fd",
+      "to_node": "ADM:N:3b969d61392bac",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 6.07,
+      "elapsed_ms": 0.5955619999440387
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:e3870649fe66f0",
+      "to_node": "ADM:N:8c04a19aba5da1",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 9.0,
+      "elapsed_ms": 0.4877699993812712
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:e3870649fe66f0",
+      "to_node": "ADM:N:8c04a19aba5da1",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 9.0,
+      "elapsed_ms": 0.3646459990704898
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:e3870649fe66f0",
+      "to_node": "ADM:N:8c04a19aba5da1",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 9.0,
+      "elapsed_ms": 0.44694899952446576
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:e3870649fe66f0",
+      "to_node": "ADM:N:8c04a19aba5da1",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 0.3719569995155325
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:e3870649fe66f0",
+      "to_node": "ADM:N:8c04a19aba5da1",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 9.0,
+      "elapsed_ms": 0.3577759998734109
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:e3870649fe66f0",
+      "to_node": "ADM:N:8c04a19aba5da1",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 9.0,
+      "elapsed_ms": 0.40947300112748053
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:15a634232cad6c",
+      "to_node": "ADM:N:8d211457fcb195",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 7.25,
+      "elapsed_ms": 0.36192199877405073
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:15a634232cad6c",
+      "to_node": "ADM:N:8d211457fcb195",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 7.25,
+      "elapsed_ms": 0.3712760008056648
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:15a634232cad6c",
+      "to_node": "ADM:N:8d211457fcb195",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 7.25,
+      "elapsed_ms": 0.3548619988578139
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:15a634232cad6c",
+      "to_node": "ADM:N:8d211457fcb195",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 142.72,
+      "elapsed_ms": 1.6360800000256859
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:15a634232cad6c",
+      "to_node": "ADM:N:8d211457fcb195",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 7.25,
+      "elapsed_ms": 0.4035740003018873
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:15a634232cad6c",
+      "to_node": "ADM:N:8d211457fcb195",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 7.25,
+      "elapsed_ms": 0.37073600105941296
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:ec2fcd42029581",
+      "to_node": "ADM:N:ff05e43459cd7a",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 5.38,
+      "elapsed_ms": 0.38312400101858657
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:ec2fcd42029581",
+      "to_node": "ADM:N:ff05e43459cd7a",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 5.38,
+      "elapsed_ms": 0.7123559989850037
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:ec2fcd42029581",
+      "to_node": "ADM:N:ff05e43459cd7a",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "distance_m": null,
+      "elapsed_ms": 0.4081920014868956
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:ec2fcd42029581",
+      "to_node": "ADM:N:ff05e43459cd7a",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 4.782994001288898
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:ec2fcd42029581",
+      "to_node": "ADM:N:ff05e43459cd7a",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 5.38,
+      "elapsed_ms": 0.4807900004379917
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:ec2fcd42029581",
+      "to_node": "ADM:N:ff05e43459cd7a",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 5.38,
+      "elapsed_ms": 0.3816209991782671
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:3e1b11f22a62c3",
+      "to_node": "ADM:N:19011dbd0357a1",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 11.01,
+      "elapsed_ms": 0.43705499956558924
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:3e1b11f22a62c3",
+      "to_node": "ADM:N:19011dbd0357a1",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 11.01,
+      "elapsed_ms": 0.37524199979088735
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:3e1b11f22a62c3",
+      "to_node": "ADM:N:19011dbd0357a1",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "distance_m": null,
+      "elapsed_ms": 0.3753729997697519
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:3e1b11f22a62c3",
+      "to_node": "ADM:N:19011dbd0357a1",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 0.36108099993725773
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:3e1b11f22a62c3",
+      "to_node": "ADM:N:19011dbd0357a1",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 11.01,
+      "elapsed_ms": 0.3619420003815321
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:3e1b11f22a62c3",
+      "to_node": "ADM:N:19011dbd0357a1",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 11.01,
+      "elapsed_ms": 0.381681998987915
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:a0caf49f6bb09a",
+      "to_node": "ADM:N:46aa9d9c867861",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 5.35,
+      "elapsed_ms": 0.36404499951459
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:a0caf49f6bb09a",
+      "to_node": "ADM:N:46aa9d9c867861",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 5.35,
+      "elapsed_ms": 0.3908649996446911
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:a0caf49f6bb09a",
+      "to_node": "ADM:N:46aa9d9c867861",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 5.35,
+      "elapsed_ms": 0.39699499939160887
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:a0caf49f6bb09a",
+      "to_node": "ADM:N:46aa9d9c867861",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 94.86,
+      "elapsed_ms": 1.3272680007503368
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:a0caf49f6bb09a",
+      "to_node": "ADM:N:46aa9d9c867861",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 5.35,
+      "elapsed_ms": 0.416454000514932
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:a0caf49f6bb09a",
+      "to_node": "ADM:N:46aa9d9c867861",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 5.35,
+      "elapsed_ms": 0.374190998627455
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:71425f9598d178",
+      "to_node": "ADM:N:85578238fcd5a2",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 11.21,
+      "elapsed_ms": 0.3680910012917593
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:71425f9598d178",
+      "to_node": "ADM:N:85578238fcd5a2",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 11.21,
+      "elapsed_ms": 1.4048840002942597
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:71425f9598d178",
+      "to_node": "ADM:N:85578238fcd5a2",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 11.21,
+      "elapsed_ms": 0.38172199856489897
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:71425f9598d178",
+      "to_node": "ADM:N:85578238fcd5a2",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 43.6,
+      "elapsed_ms": 0.6528080011776183
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:71425f9598d178",
+      "to_node": "ADM:N:85578238fcd5a2",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 11.21,
+      "elapsed_ms": 0.37714499922003597
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:71425f9598d178",
+      "to_node": "ADM:N:85578238fcd5a2",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 11.21,
+      "elapsed_ms": 0.38845200106152333
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:2a8deb3d4fc216",
+      "to_node": "ADM:N:a57a4d5675e436",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 10.77,
+      "elapsed_ms": 0.38687000051140785
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:2a8deb3d4fc216",
+      "to_node": "ADM:N:a57a4d5675e436",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 10.77,
+      "elapsed_ms": 0.37611299921991304
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:2a8deb3d4fc216",
+      "to_node": "ADM:N:a57a4d5675e436",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 10.77,
+      "elapsed_ms": 0.6635040008404758
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:2a8deb3d4fc216",
+      "to_node": "ADM:N:a57a4d5675e436",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 41.91,
+      "elapsed_ms": 0.9460870005568722
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:2a8deb3d4fc216",
+      "to_node": "ADM:N:a57a4d5675e436",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 10.77,
+      "elapsed_ms": 0.4078010006196564
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:2a8deb3d4fc216",
+      "to_node": "ADM:N:a57a4d5675e436",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 10.77,
+      "elapsed_ms": 0.515231999088428
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:e0c2b324e41d28",
+      "to_node": "ADM:N:8c10cb39e23d8f",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 47.73,
+      "elapsed_ms": 0.8138190005411161
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:e0c2b324e41d28",
+      "to_node": "ADM:N:8c10cb39e23d8f",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 47.73,
+      "elapsed_ms": 4.317316001106519
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:e0c2b324e41d28",
+      "to_node": "ADM:N:8c10cb39e23d8f",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "distance_m": null,
+      "elapsed_ms": 0.552347999473568
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:e0c2b324e41d28",
+      "to_node": "ADM:N:8c10cb39e23d8f",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 53.3,
+      "elapsed_ms": 1.0001770006056176
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:e0c2b324e41d28",
+      "to_node": "ADM:N:8c10cb39e23d8f",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 47.73,
+      "elapsed_ms": 0.6822710001870291
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:e0c2b324e41d28",
+      "to_node": "ADM:N:8c10cb39e23d8f",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 47.73,
+      "elapsed_ms": 0.9739790002640802
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:58b2cbb86491b8",
+      "to_node": "ADM:N:dcee6c72dd07df",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 5.63,
+      "elapsed_ms": 0.44291299855103716
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:58b2cbb86491b8",
+      "to_node": "ADM:N:dcee6c72dd07df",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 5.63,
+      "elapsed_ms": 0.3896140005963389
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:58b2cbb86491b8",
+      "to_node": "ADM:N:dcee6c72dd07df",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 5.63,
+      "elapsed_ms": 0.38344399945344776
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:58b2cbb86491b8",
+      "to_node": "ADM:N:dcee6c72dd07df",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 72.53,
+      "elapsed_ms": 0.49670400039758533
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:58b2cbb86491b8",
+      "to_node": "ADM:N:dcee6c72dd07df",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 5.63,
+      "elapsed_ms": 0.38235200008784886
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:58b2cbb86491b8",
+      "to_node": "ADM:N:dcee6c72dd07df",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 5.63,
+      "elapsed_ms": 0.71514100091008
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:cfcd2f2bc75a0c",
+      "to_node": "ADM:N:1e38f015add6e4",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 8.87,
+      "elapsed_ms": 0.70389500069723
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:cfcd2f2bc75a0c",
+      "to_node": "ADM:N:1e38f015add6e4",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 8.87,
+      "elapsed_ms": 0.41207700087397825
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:cfcd2f2bc75a0c",
+      "to_node": "ADM:N:1e38f015add6e4",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 8.87,
+      "elapsed_ms": 0.5332179989636643
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:cfcd2f2bc75a0c",
+      "to_node": "ADM:N:1e38f015add6e4",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 56.55,
+      "elapsed_ms": 2.0447419992706273
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:cfcd2f2bc75a0c",
+      "to_node": "ADM:N:1e38f015add6e4",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 8.87,
+      "elapsed_ms": 0.43861700032721274
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:cfcd2f2bc75a0c",
+      "to_node": "ADM:N:1e38f015add6e4",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 8.87,
+      "elapsed_ms": 0.4449459993338678
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:47538ad09e45cd",
+      "to_node": "ADM:N:9e185fb256806e",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 5.87,
+      "elapsed_ms": 0.36051999995834194
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:47538ad09e45cd",
+      "to_node": "ADM:N:9e185fb256806e",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 5.87,
+      "elapsed_ms": 0.34442499963915907
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:47538ad09e45cd",
+      "to_node": "ADM:N:9e185fb256806e",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "distance_m": null,
+      "elapsed_ms": 0.3712859997904161
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:47538ad09e45cd",
+      "to_node": "ADM:N:9e185fb256806e",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 0.3431739987718174
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:47538ad09e45cd",
+      "to_node": "ADM:N:9e185fb256806e",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 5.87,
+      "elapsed_ms": 0.4958120007358957
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:47538ad09e45cd",
+      "to_node": "ADM:N:9e185fb256806e",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 5.87,
+      "elapsed_ms": 0.3539199988153996
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:ba255ebd672588",
+      "to_node": "ADM:N:414b8f2cda340c",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 5.08,
+      "elapsed_ms": 0.36177200126985554
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:ba255ebd672588",
+      "to_node": "ADM:N:414b8f2cda340c",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 5.08,
+      "elapsed_ms": 0.5370240014599403
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:ba255ebd672588",
+      "to_node": "ADM:N:414b8f2cda340c",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 5.08,
+      "elapsed_ms": 0.5043249984737486
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:ba255ebd672588",
+      "to_node": "ADM:N:414b8f2cda340c",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 0.40349399932892993
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:ba255ebd672588",
+      "to_node": "ADM:N:414b8f2cda340c",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 5.08,
+      "elapsed_ms": 0.36332399940874893
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:ba255ebd672588",
+      "to_node": "ADM:N:414b8f2cda340c",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 5.08,
+      "elapsed_ms": 0.3740400006790878
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:da3dc77d220398",
+      "to_node": "ADM:N:6f7697a6512816",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 7.82,
+      "elapsed_ms": 0.4531289996521082
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:da3dc77d220398",
+      "to_node": "ADM:N:6f7697a6512816",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 7.82,
+      "elapsed_ms": 0.36484600059338845
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:da3dc77d220398",
+      "to_node": "ADM:N:6f7697a6512816",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "distance_m": null,
+      "elapsed_ms": 0.3934090000257129
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:da3dc77d220398",
+      "to_node": "ADM:N:6f7697a6512816",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 4.743454001072678
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:da3dc77d220398",
+      "to_node": "ADM:N:6f7697a6512816",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 7.82,
+      "elapsed_ms": 0.5242250008450355
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:da3dc77d220398",
+      "to_node": "ADM:N:6f7697a6512816",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 7.82,
+      "elapsed_ms": 0.5696730004274286
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:c7209a831b043a",
+      "to_node": "ADM:N:7fa8c0734bfcdb",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 6.62,
+      "elapsed_ms": 0.411687000450911
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:c7209a831b043a",
+      "to_node": "ADM:N:7fa8c0734bfcdb",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 6.62,
+      "elapsed_ms": 0.3869400006806245
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:c7209a831b043a",
+      "to_node": "ADM:N:7fa8c0734bfcdb",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 6.62,
+      "elapsed_ms": 0.3966940003010677
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:c7209a831b043a",
+      "to_node": "ADM:N:7fa8c0734bfcdb",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 93.6,
+      "elapsed_ms": 1.6201170001295395
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:c7209a831b043a",
+      "to_node": "ADM:N:7fa8c0734bfcdb",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 6.62,
+      "elapsed_ms": 0.4849359993386315
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:c7209a831b043a",
+      "to_node": "ADM:N:7fa8c0734bfcdb",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 6.62,
+      "elapsed_ms": 0.382712998543866
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:23423e18e0c490",
+      "to_node": "ADM:N:9f763a3e9dd667",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 8.97,
+      "elapsed_ms": 0.4939899990858976
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:23423e18e0c490",
+      "to_node": "ADM:N:9f763a3e9dd667",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 8.97,
+      "elapsed_ms": 0.3670899986900622
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:23423e18e0c490",
+      "to_node": "ADM:N:9f763a3e9dd667",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 8.97,
+      "elapsed_ms": 0.36176199864712544
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:23423e18e0c490",
+      "to_node": "ADM:N:9f763a3e9dd667",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 136.23,
+      "elapsed_ms": 1.501097998698242
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:23423e18e0c490",
+      "to_node": "ADM:N:9f763a3e9dd667",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 8.97,
+      "elapsed_ms": 0.3855479990306776
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:23423e18e0c490",
+      "to_node": "ADM:N:9f763a3e9dd667",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 8.97,
+      "elapsed_ms": 0.4208709997328697
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:372553b1392e44",
+      "to_node": "ADM:N:4efdf88c5405ec",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 49.51,
+      "elapsed_ms": 0.8698220008227509
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:372553b1392e44",
+      "to_node": "ADM:N:4efdf88c5405ec",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 49.51,
+      "elapsed_ms": 0.7867080003052251
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:372553b1392e44",
+      "to_node": "ADM:N:4efdf88c5405ec",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "distance_m": null,
+      "elapsed_ms": 0.40292300036526285
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:372553b1392e44",
+      "to_node": "ADM:N:4efdf88c5405ec",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 65.3,
+      "elapsed_ms": 0.8191870001610368
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:372553b1392e44",
+      "to_node": "ADM:N:4efdf88c5405ec",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 49.51,
+      "elapsed_ms": 0.9449549997953
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:372553b1392e44",
+      "to_node": "ADM:N:4efdf88c5405ec",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 49.51,
+      "elapsed_ms": 0.891514999239007
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:20d71ca2e6ac5b",
+      "to_node": "ADM:N:0228c18fc40aba",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 5.36,
+      "elapsed_ms": 0.38260300061665475
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:20d71ca2e6ac5b",
+      "to_node": "ADM:N:0228c18fc40aba",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 5.36,
+      "elapsed_ms": 8.153331000357866
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:20d71ca2e6ac5b",
+      "to_node": "ADM:N:0228c18fc40aba",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 5.36,
+      "elapsed_ms": 3.3310689996142173
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:20d71ca2e6ac5b",
+      "to_node": "ADM:N:0228c18fc40aba",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 144.61,
+      "elapsed_ms": 1.978133001102833
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:20d71ca2e6ac5b",
+      "to_node": "ADM:N:0228c18fc40aba",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 5.36,
+      "elapsed_ms": 0.7893920010246802
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:20d71ca2e6ac5b",
+      "to_node": "ADM:N:0228c18fc40aba",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 5.36,
+      "elapsed_ms": 0.6840240002929932
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:ab6242d6687ecd",
+      "to_node": "ADM:N:4a606c02fdeb90",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 7.54,
+      "elapsed_ms": 6.774224999389844
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:ab6242d6687ecd",
+      "to_node": "ADM:N:4a606c02fdeb90",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 7.54,
+      "elapsed_ms": 0.44737000098393764
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:ab6242d6687ecd",
+      "to_node": "ADM:N:4a606c02fdeb90",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 7.54,
+      "elapsed_ms": 0.39512200055469293
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:ab6242d6687ecd",
+      "to_node": "ADM:N:4a606c02fdeb90",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 0.4449860007298412
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:ab6242d6687ecd",
+      "to_node": "ADM:N:4a606c02fdeb90",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 7.54,
+      "elapsed_ms": 0.3667290002340451
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:ab6242d6687ecd",
+      "to_node": "ADM:N:4a606c02fdeb90",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 7.54,
+      "elapsed_ms": 0.3792079987761099
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:77d2cc2a58ef72",
+      "to_node": "ADM:N:d273e3b9b533f5",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 11.67,
+      "elapsed_ms": 0.39232800008903723
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:77d2cc2a58ef72",
+      "to_node": "ADM:N:d273e3b9b533f5",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 11.67,
+      "elapsed_ms": 0.5261380010779249
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:77d2cc2a58ef72",
+      "to_node": "ADM:N:d273e3b9b533f5",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 11.67,
+      "elapsed_ms": 0.3876509999827249
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:77d2cc2a58ef72",
+      "to_node": "ADM:N:d273e3b9b533f5",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 96.68,
+      "elapsed_ms": 0.6051170003047446
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:77d2cc2a58ef72",
+      "to_node": "ADM:N:d273e3b9b533f5",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 11.67,
+      "elapsed_ms": 0.4939999998896383
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:77d2cc2a58ef72",
+      "to_node": "ADM:N:d273e3b9b533f5",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 11.67,
+      "elapsed_ms": 0.3754720000870293
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:91459092d1164c",
+      "to_node": "ADM:N:2ab1161fb55f7d",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 6.17,
+      "elapsed_ms": 0.42955400022037793
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:91459092d1164c",
+      "to_node": "ADM:N:2ab1161fb55f7d",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 6.17,
+      "elapsed_ms": 0.3565839997463627
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:91459092d1164c",
+      "to_node": "ADM:N:2ab1161fb55f7d",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 6.17,
+      "elapsed_ms": 0.4376050001155818
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:91459092d1164c",
+      "to_node": "ADM:N:2ab1161fb55f7d",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 117.36,
+      "elapsed_ms": 1.3319450008566491
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:91459092d1164c",
+      "to_node": "ADM:N:2ab1161fb55f7d",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 6.17,
+      "elapsed_ms": 0.4042350010422524
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:91459092d1164c",
+      "to_node": "ADM:N:2ab1161fb55f7d",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 6.17,
+      "elapsed_ms": 0.38787099947512615
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:7d5edfbfd1bacf",
+      "to_node": "ADM:N:623c69736a33c2",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 5.1,
+      "elapsed_ms": 0.4431830002431525
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:7d5edfbfd1bacf",
+      "to_node": "ADM:N:623c69736a33c2",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 5.1,
+      "elapsed_ms": 0.3821520003839396
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:7d5edfbfd1bacf",
+      "to_node": "ADM:N:623c69736a33c2",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 5.1,
+      "elapsed_ms": 0.38242300070123747
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:7d5edfbfd1bacf",
+      "to_node": "ADM:N:623c69736a33c2",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 139.08,
+      "elapsed_ms": 1.674717999776476
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:7d5edfbfd1bacf",
+      "to_node": "ADM:N:623c69736a33c2",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 5.1,
+      "elapsed_ms": 0.40678900040802546
+    },
+    {
+      "region": "ADM",
+      "from_node": "ADM:N:7d5edfbfd1bacf",
+      "to_node": "ADM:N:623c69736a33c2",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 5.1,
+      "elapsed_ms": 0.3641149996838067
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:a4076fdf6b8a6c",
+      "to_node": "HUB:N:3154f2eb762b43",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 8.06,
+      "elapsed_ms": 1.0938279992842581
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:a4076fdf6b8a6c",
+      "to_node": "HUB:N:3154f2eb762b43",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 8.06,
+      "elapsed_ms": 0.5416309995780466
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:a4076fdf6b8a6c",
+      "to_node": "HUB:N:3154f2eb762b43",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "distance_m": null,
+      "elapsed_ms": 0.4935889992339071
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:a4076fdf6b8a6c",
+      "to_node": "HUB:N:3154f2eb762b43",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 2.704971000639489
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:a4076fdf6b8a6c",
+      "to_node": "HUB:N:3154f2eb762b43",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 8.06,
+      "elapsed_ms": 0.9627310009818757
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:a4076fdf6b8a6c",
+      "to_node": "HUB:N:3154f2eb762b43",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 8.06,
+      "elapsed_ms": 0.7200489999377169
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:34e784ac858d07",
+      "to_node": "HUB:N:ab2c07aed97151",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 6.02,
+      "elapsed_ms": 0.5972250000922941
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:34e784ac858d07",
+      "to_node": "HUB:N:ab2c07aed97151",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 6.02,
+      "elapsed_ms": 2.9225270009192172
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:34e784ac858d07",
+      "to_node": "HUB:N:ab2c07aed97151",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 6.02,
+      "elapsed_ms": 0.7200290001492249
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:34e784ac858d07",
+      "to_node": "HUB:N:ab2c07aed97151",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 132.48,
+      "elapsed_ms": 1.6821990011521848
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:34e784ac858d07",
+      "to_node": "HUB:N:ab2c07aed97151",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 6.02,
+      "elapsed_ms": 2.3950869999680435
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:34e784ac858d07",
+      "to_node": "HUB:N:ab2c07aed97151",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 6.02,
+      "elapsed_ms": 0.6891619996167719
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:30d57898f3fef6",
+      "to_node": "HUB:N:ab2c07aed97151",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 6.01,
+      "elapsed_ms": 0.7284410003194353
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:30d57898f3fef6",
+      "to_node": "HUB:N:ab2c07aed97151",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 6.01,
+      "elapsed_ms": 0.6886709998070728
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:30d57898f3fef6",
+      "to_node": "HUB:N:ab2c07aed97151",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 6.01,
+      "elapsed_ms": 0.6267389999266015
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:30d57898f3fef6",
+      "to_node": "HUB:N:ab2c07aed97151",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 116.56,
+      "elapsed_ms": 2.432232999126427
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:30d57898f3fef6",
+      "to_node": "HUB:N:ab2c07aed97151",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 6.01,
+      "elapsed_ms": 0.7387559999187943
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:30d57898f3fef6",
+      "to_node": "HUB:N:ab2c07aed97151",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 6.01,
+      "elapsed_ms": 0.6379160004144069
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:83e47bb49ac742",
+      "to_node": "HUB:N:c12f75d5a59202",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 25.92,
+      "elapsed_ms": 0.8116850003716536
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:83e47bb49ac742",
+      "to_node": "HUB:N:c12f75d5a59202",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 25.92,
+      "elapsed_ms": 0.7834230000298703
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:83e47bb49ac742",
+      "to_node": "HUB:N:c12f75d5a59202",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 25.92,
+      "elapsed_ms": 0.7520159997511655
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:83e47bb49ac742",
+      "to_node": "HUB:N:c12f75d5a59202",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 43.13,
+      "elapsed_ms": 0.9107340010814369
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:83e47bb49ac742",
+      "to_node": "HUB:N:c12f75d5a59202",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 25.92,
+      "elapsed_ms": 0.8083400007308228
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:83e47bb49ac742",
+      "to_node": "HUB:N:c12f75d5a59202",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 25.92,
+      "elapsed_ms": 0.8255669999925885
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:eb9804f6a38b80",
+      "to_node": "HUB:N:15af48495f76e8",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 7.8,
+      "elapsed_ms": 0.6752709996362682
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:eb9804f6a38b80",
+      "to_node": "HUB:N:15af48495f76e8",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 7.8,
+      "elapsed_ms": 0.645976999294362
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:eb9804f6a38b80",
+      "to_node": "HUB:N:15af48495f76e8",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 7.8,
+      "elapsed_ms": 0.7165829993027728
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:eb9804f6a38b80",
+      "to_node": "HUB:N:15af48495f76e8",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 156.34,
+      "elapsed_ms": 1.8840919983631466
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:eb9804f6a38b80",
+      "to_node": "HUB:N:15af48495f76e8",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 7.8,
+      "elapsed_ms": 0.7494719993701437
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:eb9804f6a38b80",
+      "to_node": "HUB:N:15af48495f76e8",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 7.8,
+      "elapsed_ms": 0.692687999617192
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:9cebea081f21b7",
+      "to_node": "HUB:N:e3f584a3f49b77",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 10.69,
+      "elapsed_ms": 0.7379360013146652
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:9cebea081f21b7",
+      "to_node": "HUB:N:e3f584a3f49b77",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 10.69,
+      "elapsed_ms": 0.6657370013272157
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:9cebea081f21b7",
+      "to_node": "HUB:N:e3f584a3f49b77",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 10.69,
+      "elapsed_ms": 0.6528379999508616
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:9cebea081f21b7",
+      "to_node": "HUB:N:e3f584a3f49b77",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 43.05,
+      "elapsed_ms": 0.8043950001592748
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:9cebea081f21b7",
+      "to_node": "HUB:N:e3f584a3f49b77",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 10.69,
+      "elapsed_ms": 0.6764429999748245
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:9cebea081f21b7",
+      "to_node": "HUB:N:e3f584a3f49b77",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 10.69,
+      "elapsed_ms": 0.7019420008873567
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:bf29fd609a3324",
+      "to_node": "HUB:N:1d40d5b7c360a4",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 18.33,
+      "elapsed_ms": 0.9438239994778996
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:bf29fd609a3324",
+      "to_node": "HUB:N:1d40d5b7c360a4",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 18.33,
+      "elapsed_ms": 1.2110130010114517
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:bf29fd609a3324",
+      "to_node": "HUB:N:1d40d5b7c360a4",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "distance_m": null,
+      "elapsed_ms": 0.667329999487265
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:bf29fd609a3324",
+      "to_node": "HUB:N:1d40d5b7c360a4",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 120.32,
+      "elapsed_ms": 1.6475270003866171
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:bf29fd609a3324",
+      "to_node": "HUB:N:1d40d5b7c360a4",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 18.33,
+      "elapsed_ms": 0.8334280009876238
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:bf29fd609a3324",
+      "to_node": "HUB:N:1d40d5b7c360a4",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 18.33,
+      "elapsed_ms": 8.721832000446739
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:20148492f67ea2",
+      "to_node": "HUB:N:998d657c8bcad9",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 10.38,
+      "elapsed_ms": 0.7165730003180215
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:20148492f67ea2",
+      "to_node": "HUB:N:998d657c8bcad9",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 10.38,
+      "elapsed_ms": 0.7019410004431847
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:20148492f67ea2",
+      "to_node": "HUB:N:998d657c8bcad9",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 10.38,
+      "elapsed_ms": 0.7404290008707903
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:20148492f67ea2",
+      "to_node": "HUB:N:998d657c8bcad9",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 96.91,
+      "elapsed_ms": 2.0751880001625977
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:20148492f67ea2",
+      "to_node": "HUB:N:998d657c8bcad9",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 10.38,
+      "elapsed_ms": 0.7231729996419745
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:20148492f67ea2",
+      "to_node": "HUB:N:998d657c8bcad9",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 10.38,
+      "elapsed_ms": 0.7452760000887793
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:e1748668e63046",
+      "to_node": "HUB:N:3e4ec5214b5cfd",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 5.43,
+      "elapsed_ms": 0.7747899999230867
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:e1748668e63046",
+      "to_node": "HUB:N:3e4ec5214b5cfd",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 5.43,
+      "elapsed_ms": 0.7047449998935917
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:e1748668e63046",
+      "to_node": "HUB:N:3e4ec5214b5cfd",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 5.43,
+      "elapsed_ms": 0.6899630006955704
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:e1748668e63046",
+      "to_node": "HUB:N:3e4ec5214b5cfd",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 53.4,
+      "elapsed_ms": 0.9471779994782992
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:e1748668e63046",
+      "to_node": "HUB:N:3e4ec5214b5cfd",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 5.43,
+      "elapsed_ms": 0.6627630009461427
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:e1748668e63046",
+      "to_node": "HUB:N:3e4ec5214b5cfd",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 5.43,
+      "elapsed_ms": 0.7208299994090339
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:5d038569174a59",
+      "to_node": "HUB:N:f4f62457a6a316",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 6.25,
+      "elapsed_ms": 0.6802179996157065
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:5d038569174a59",
+      "to_node": "HUB:N:f4f62457a6a316",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 6.25,
+      "elapsed_ms": 0.6337289996736217
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:5d038569174a59",
+      "to_node": "HUB:N:f4f62457a6a316",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 6.25,
+      "elapsed_ms": 0.7155419989430811
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:5d038569174a59",
+      "to_node": "HUB:N:f4f62457a6a316",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 41.48,
+      "elapsed_ms": 0.9404979991813889
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:5d038569174a59",
+      "to_node": "HUB:N:f4f62457a6a316",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 6.25,
+      "elapsed_ms": 0.6898230003571371
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:5d038569174a59",
+      "to_node": "HUB:N:f4f62457a6a316",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 6.25,
+      "elapsed_ms": 0.7112050006981008
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:53389127eafb5b",
+      "to_node": "HUB:N:257dd757a85b08",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 11.39,
+      "elapsed_ms": 0.7291020010598004
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:53389127eafb5b",
+      "to_node": "HUB:N:257dd757a85b08",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 11.39,
+      "elapsed_ms": 0.7034440004645148
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:53389127eafb5b",
+      "to_node": "HUB:N:257dd757a85b08",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 11.39,
+      "elapsed_ms": 0.6596170005650492
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:53389127eafb5b",
+      "to_node": "HUB:N:257dd757a85b08",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 44.72,
+      "elapsed_ms": 1.039095999658457
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:53389127eafb5b",
+      "to_node": "HUB:N:257dd757a85b08",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 11.39,
+      "elapsed_ms": 0.7758720003039343
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:53389127eafb5b",
+      "to_node": "HUB:N:257dd757a85b08",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 11.39,
+      "elapsed_ms": 0.739357999918866
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:eb146bd92e66da",
+      "to_node": "HUB:N:7fd96064a0fe62",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 5.11,
+      "elapsed_ms": 0.6553109997184947
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:eb146bd92e66da",
+      "to_node": "HUB:N:7fd96064a0fe62",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 5.11,
+      "elapsed_ms": 0.6496629994217074
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:eb146bd92e66da",
+      "to_node": "HUB:N:7fd96064a0fe62",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 5.11,
+      "elapsed_ms": 0.6795179997425294
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:eb146bd92e66da",
+      "to_node": "HUB:N:7fd96064a0fe62",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 75.27,
+      "elapsed_ms": 0.9444450006412808
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:eb146bd92e66da",
+      "to_node": "HUB:N:7fd96064a0fe62",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 5.11,
+      "elapsed_ms": 0.6864490005682455
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:eb146bd92e66da",
+      "to_node": "HUB:N:7fd96064a0fe62",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 5.11,
+      "elapsed_ms": 0.6575139996130019
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:f02e735f1395a9",
+      "to_node": "HUB:N:d459dfe07221e0",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 5.46,
+      "elapsed_ms": 0.719757999831927
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:f02e735f1395a9",
+      "to_node": "HUB:N:d459dfe07221e0",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 5.46,
+      "elapsed_ms": 0.6834730011178181
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:f02e735f1395a9",
+      "to_node": "HUB:N:d459dfe07221e0",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 5.46,
+      "elapsed_ms": 0.6458180014305981
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:f02e735f1395a9",
+      "to_node": "HUB:N:d459dfe07221e0",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 16.37,
+      "elapsed_ms": 0.733769000362372
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:f02e735f1395a9",
+      "to_node": "HUB:N:d459dfe07221e0",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 5.46,
+      "elapsed_ms": 0.6989070006966358
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:f02e735f1395a9",
+      "to_node": "HUB:N:d459dfe07221e0",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 5.46,
+      "elapsed_ms": 0.6776139998692088
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:283602396de781",
+      "to_node": "HUB:N:63d3f258000f32",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 7.07,
+      "elapsed_ms": 0.6747800016455585
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:283602396de781",
+      "to_node": "HUB:N:63d3f258000f32",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 7.07,
+      "elapsed_ms": 0.6832330000179354
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:283602396de781",
+      "to_node": "HUB:N:63d3f258000f32",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 7.07,
+      "elapsed_ms": 0.7198280000011437
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:283602396de781",
+      "to_node": "HUB:N:63d3f258000f32",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 236.37,
+      "elapsed_ms": 4.000251001343713
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:283602396de781",
+      "to_node": "HUB:N:63d3f258000f32",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 7.07,
+      "elapsed_ms": 0.8793159995548194
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:283602396de781",
+      "to_node": "HUB:N:63d3f258000f32",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 7.07,
+      "elapsed_ms": 0.7441950001521036
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:e18bd235d52ce7",
+      "to_node": "HUB:N:92083f9df9f69e",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 6.97,
+      "elapsed_ms": 0.7175749997259118
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:e18bd235d52ce7",
+      "to_node": "HUB:N:92083f9df9f69e",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 6.97,
+      "elapsed_ms": 0.693408999723033
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:e18bd235d52ce7",
+      "to_node": "HUB:N:92083f9df9f69e",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 6.97,
+      "elapsed_ms": 0.6620310014113784
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:e18bd235d52ce7",
+      "to_node": "HUB:N:92083f9df9f69e",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 275.64,
+      "elapsed_ms": 5.654538999806391
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:e18bd235d52ce7",
+      "to_node": "HUB:N:92083f9df9f69e",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 6.97,
+      "elapsed_ms": 0.953858998400392
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:e18bd235d52ce7",
+      "to_node": "HUB:N:92083f9df9f69e",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 6.97,
+      "elapsed_ms": 0.6849159999546828
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:bce12f60e1a7dc",
+      "to_node": "HUB:N:6ce6da9324ac42",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 7.89,
+      "elapsed_ms": 0.6571539997821674
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:bce12f60e1a7dc",
+      "to_node": "HUB:N:6ce6da9324ac42",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 7.89,
+      "elapsed_ms": 0.729422001313651
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:bce12f60e1a7dc",
+      "to_node": "HUB:N:6ce6da9324ac42",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 7.89,
+      "elapsed_ms": 0.6800589999329532
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:bce12f60e1a7dc",
+      "to_node": "HUB:N:6ce6da9324ac42",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 90.85,
+      "elapsed_ms": 1.4223700000002282
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:bce12f60e1a7dc",
+      "to_node": "HUB:N:6ce6da9324ac42",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 7.89,
+      "elapsed_ms": 0.74326300091343
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:bce12f60e1a7dc",
+      "to_node": "HUB:N:6ce6da9324ac42",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 7.89,
+      "elapsed_ms": 0.6610500004171627
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:bfb7dec3308438",
+      "to_node": "HUB:N:5668c33c55e411",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 39.07,
+      "elapsed_ms": 1.0132880015589762
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:bfb7dec3308438",
+      "to_node": "HUB:N:5668c33c55e411",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 39.07,
+      "elapsed_ms": 0.9703629984869622
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:bfb7dec3308438",
+      "to_node": "HUB:N:5668c33c55e411",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "distance_m": null,
+      "elapsed_ms": 0.684204998833593
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:bfb7dec3308438",
+      "to_node": "HUB:N:5668c33c55e411",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 86.17,
+      "elapsed_ms": 1.14633699922706
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:bfb7dec3308438",
+      "to_node": "HUB:N:5668c33c55e411",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 39.07,
+      "elapsed_ms": 0.8844749991112622
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:bfb7dec3308438",
+      "to_node": "HUB:N:5668c33c55e411",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 39.07,
+      "elapsed_ms": 1.0949389998131664
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:5668c33c55e411",
+      "to_node": "HUB:N:8bd8470b933321",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 11.19,
+      "elapsed_ms": 0.7511549993068911
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:5668c33c55e411",
+      "to_node": "HUB:N:8bd8470b933321",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 11.19,
+      "elapsed_ms": 0.6987960005062632
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:5668c33c55e411",
+      "to_node": "HUB:N:8bd8470b933321",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "distance_m": null,
+      "elapsed_ms": 0.6306039995251922
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:5668c33c55e411",
+      "to_node": "HUB:N:8bd8470b933321",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 5.550892999963253
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:5668c33c55e411",
+      "to_node": "HUB:N:8bd8470b933321",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 11.19,
+      "elapsed_ms": 10.719113999584806
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:5668c33c55e411",
+      "to_node": "HUB:N:8bd8470b933321",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 11.19,
+      "elapsed_ms": 1.9750379997276468
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:8ccc38beb12302",
+      "to_node": "HUB:N:d923f921a5c609",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 8.87,
+      "elapsed_ms": 0.6845249990874436
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:8ccc38beb12302",
+      "to_node": "HUB:N:d923f921a5c609",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 8.87,
+      "elapsed_ms": 0.7194869995146291
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:8ccc38beb12302",
+      "to_node": "HUB:N:d923f921a5c609",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 8.87,
+      "elapsed_ms": 0.7061579999572132
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:8ccc38beb12302",
+      "to_node": "HUB:N:d923f921a5c609",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 43.93,
+      "elapsed_ms": 0.9070389987755334
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:8ccc38beb12302",
+      "to_node": "HUB:N:d923f921a5c609",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 8.87,
+      "elapsed_ms": 0.6768640014342964
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:8ccc38beb12302",
+      "to_node": "HUB:N:d923f921a5c609",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 8.87,
+      "elapsed_ms": 0.7252960003825137
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:cde57028267ad0",
+      "to_node": "HUB:N:2a694acac8d25e",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 6.54,
+      "elapsed_ms": 0.7468580006388947
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:cde57028267ad0",
+      "to_node": "HUB:N:2a694acac8d25e",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 6.54,
+      "elapsed_ms": 0.7105340009729844
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:cde57028267ad0",
+      "to_node": "HUB:N:2a694acac8d25e",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "distance_m": null,
+      "elapsed_ms": 0.6827930010331329
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:cde57028267ad0",
+      "to_node": "HUB:N:2a694acac8d25e",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 9.227830998497666
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:cde57028267ad0",
+      "to_node": "HUB:N:2a694acac8d25e",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 6.54,
+      "elapsed_ms": 1.2479590004659258
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:cde57028267ad0",
+      "to_node": "HUB:N:2a694acac8d25e",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 6.54,
+      "elapsed_ms": 0.9763119996932801
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:e4cde21ed80170",
+      "to_node": "HUB:N:0f28a79c30041f",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 5.45,
+      "elapsed_ms": 0.7384060008917004
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:e4cde21ed80170",
+      "to_node": "HUB:N:0f28a79c30041f",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 5.45,
+      "elapsed_ms": 0.6523569991259137
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:e4cde21ed80170",
+      "to_node": "HUB:N:0f28a79c30041f",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 5.45,
+      "elapsed_ms": 0.7039240008452907
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:e4cde21ed80170",
+      "to_node": "HUB:N:0f28a79c30041f",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 9.59668300129124
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:e4cde21ed80170",
+      "to_node": "HUB:N:0f28a79c30041f",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 5.45,
+      "elapsed_ms": 1.3233420013420982
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:e4cde21ed80170",
+      "to_node": "HUB:N:0f28a79c30041f",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 5.45,
+      "elapsed_ms": 0.7206090012914501
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:a8b568870b66e9",
+      "to_node": "HUB:N:60c3543072bc67",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 5.44,
+      "elapsed_ms": 0.6928679995326092
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:a8b568870b66e9",
+      "to_node": "HUB:N:60c3543072bc67",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 5.44,
+      "elapsed_ms": 0.6685210009891307
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:a8b568870b66e9",
+      "to_node": "HUB:N:60c3543072bc67",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 5.44,
+      "elapsed_ms": 0.6419119999918621
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:a8b568870b66e9",
+      "to_node": "HUB:N:60c3543072bc67",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 9.388200000103097
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:a8b568870b66e9",
+      "to_node": "HUB:N:60c3543072bc67",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 5.44,
+      "elapsed_ms": 1.3143680007488001
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:a8b568870b66e9",
+      "to_node": "HUB:N:60c3543072bc67",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 5.44,
+      "elapsed_ms": 0.7296429994312348
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:efbeeffa214dfe",
+      "to_node": "HUB:N:05d38ab0f83196",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 8.47,
+      "elapsed_ms": 0.7078899998305133
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:efbeeffa214dfe",
+      "to_node": "HUB:N:05d38ab0f83196",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 8.47,
+      "elapsed_ms": 0.7202590004453668
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:efbeeffa214dfe",
+      "to_node": "HUB:N:05d38ab0f83196",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 8.47,
+      "elapsed_ms": 0.6652259999100352
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:efbeeffa214dfe",
+      "to_node": "HUB:N:05d38ab0f83196",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 3.8334520013449946
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:efbeeffa214dfe",
+      "to_node": "HUB:N:05d38ab0f83196",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 8.47,
+      "elapsed_ms": 1.0612590012897272
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:efbeeffa214dfe",
+      "to_node": "HUB:N:05d38ab0f83196",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 8.47,
+      "elapsed_ms": 0.7724560000497149
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:b56289dd8d95af",
+      "to_node": "HUB:N:1d2e172509b758",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 8.65,
+      "elapsed_ms": 0.6710750003549038
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:b56289dd8d95af",
+      "to_node": "HUB:N:1d2e172509b758",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 8.65,
+      "elapsed_ms": 0.7700540008954704
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:b56289dd8d95af",
+      "to_node": "HUB:N:1d2e172509b758",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 8.65,
+      "elapsed_ms": 0.6874789996800246
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:b56289dd8d95af",
+      "to_node": "HUB:N:1d2e172509b758",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 6.39497200063488
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:b56289dd8d95af",
+      "to_node": "HUB:N:1d2e172509b758",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 8.65,
+      "elapsed_ms": 0.7569640001747757
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:b56289dd8d95af",
+      "to_node": "HUB:N:1d2e172509b758",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 8.65,
+      "elapsed_ms": 0.5179350009711925
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:4d2eb31c0bea8c",
+      "to_node": "HUB:N:75e43f6b0cfc1b",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 11.3,
+      "elapsed_ms": 0.5110160000185715
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:4d2eb31c0bea8c",
+      "to_node": "HUB:N:75e43f6b0cfc1b",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 11.3,
+      "elapsed_ms": 0.5683909985236824
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:4d2eb31c0bea8c",
+      "to_node": "HUB:N:75e43f6b0cfc1b",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "distance_m": null,
+      "elapsed_ms": 0.5154919999768026
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:4d2eb31c0bea8c",
+      "to_node": "HUB:N:75e43f6b0cfc1b",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 0.508822000483633
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:4d2eb31c0bea8c",
+      "to_node": "HUB:N:75e43f6b0cfc1b",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 11.3,
+      "elapsed_ms": 0.48072999925352633
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:4d2eb31c0bea8c",
+      "to_node": "HUB:N:75e43f6b0cfc1b",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 11.3,
+      "elapsed_ms": 0.6733190002705669
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:5bc63ca427debc",
+      "to_node": "HUB:N:e03b1ba4899ca7",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 8.09,
+      "elapsed_ms": 0.5355419998522848
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:5bc63ca427debc",
+      "to_node": "HUB:N:e03b1ba4899ca7",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 8.09,
+      "elapsed_ms": 0.5037350001657614
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:5bc63ca427debc",
+      "to_node": "HUB:N:e03b1ba4899ca7",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 8.09,
+      "elapsed_ms": 0.8461969991913065
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:5bc63ca427debc",
+      "to_node": "HUB:N:e03b1ba4899ca7",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 6.699694000417367
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:5bc63ca427debc",
+      "to_node": "HUB:N:e03b1ba4899ca7",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 8.09,
+      "elapsed_ms": 0.9270789996662643
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:5bc63ca427debc",
+      "to_node": "HUB:N:e03b1ba4899ca7",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 8.09,
+      "elapsed_ms": 0.6198079991008854
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:632a90434d6ada",
+      "to_node": "HUB:N:d923f921a5c609",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 8.05,
+      "elapsed_ms": 0.5470799987961072
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:632a90434d6ada",
+      "to_node": "HUB:N:d923f921a5c609",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 8.05,
+      "elapsed_ms": 0.5506139987119241
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:632a90434d6ada",
+      "to_node": "HUB:N:d923f921a5c609",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 8.05,
+      "elapsed_ms": 0.5077700006950181
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:632a90434d6ada",
+      "to_node": "HUB:N:d923f921a5c609",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 72.28,
+      "elapsed_ms": 1.0108739988936577
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:632a90434d6ada",
+      "to_node": "HUB:N:d923f921a5c609",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 8.05,
+      "elapsed_ms": 0.553628999114153
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:632a90434d6ada",
+      "to_node": "HUB:N:d923f921a5c609",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 8.05,
+      "elapsed_ms": 0.521731999469921
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:07a64d0a069eb9",
+      "to_node": "HUB:N:749b5bcc2a67e5",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 5.75,
+      "elapsed_ms": 0.5365640008676564
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:07a64d0a069eb9",
+      "to_node": "HUB:N:749b5bcc2a67e5",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 5.75,
+      "elapsed_ms": 0.5439139986265218
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:07a64d0a069eb9",
+      "to_node": "HUB:N:749b5bcc2a67e5",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "distance_m": null,
+      "elapsed_ms": 0.4714659989986103
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:07a64d0a069eb9",
+      "to_node": "HUB:N:749b5bcc2a67e5",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 10.970879000524292
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:07a64d0a069eb9",
+      "to_node": "HUB:N:749b5bcc2a67e5",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 5.75,
+      "elapsed_ms": 5.094049000035739
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:07a64d0a069eb9",
+      "to_node": "HUB:N:749b5bcc2a67e5",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 5.75,
+      "elapsed_ms": 1.1221300010220148
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:96cd2b5168d65f",
+      "to_node": "HUB:N:16739dcdc23cbb",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 9.82,
+      "elapsed_ms": 10.168018001422752
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:96cd2b5168d65f",
+      "to_node": "HUB:N:16739dcdc23cbb",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 9.82,
+      "elapsed_ms": 0.716803999239346
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:96cd2b5168d65f",
+      "to_node": "HUB:N:16739dcdc23cbb",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 9.82,
+      "elapsed_ms": 0.7100330003595445
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:96cd2b5168d65f",
+      "to_node": "HUB:N:16739dcdc23cbb",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 96.71,
+      "elapsed_ms": 1.0490009990462568
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:96cd2b5168d65f",
+      "to_node": "HUB:N:16739dcdc23cbb",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 9.82,
+      "elapsed_ms": 0.6973050003580283
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:96cd2b5168d65f",
+      "to_node": "HUB:N:16739dcdc23cbb",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 9.82,
+      "elapsed_ms": 0.6512759991892381
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:9a2abe62d82b02",
+      "to_node": "HUB:N:152ea758c3b18c",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 5.21,
+      "elapsed_ms": 0.7786559999658493
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:9a2abe62d82b02",
+      "to_node": "HUB:N:152ea758c3b18c",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 5.21,
+      "elapsed_ms": 0.712076998752309
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:9a2abe62d82b02",
+      "to_node": "HUB:N:152ea758c3b18c",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 5.21,
+      "elapsed_ms": 0.6588470005226554
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:9a2abe62d82b02",
+      "to_node": "HUB:N:152ea758c3b18c",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 8.864614999765763
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:9a2abe62d82b02",
+      "to_node": "HUB:N:152ea758c3b18c",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 5.21,
+      "elapsed_ms": 0.9690620008768747
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:9a2abe62d82b02",
+      "to_node": "HUB:N:152ea758c3b18c",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 5.21,
+      "elapsed_ms": 0.7945400011521997
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:9665e59154837f",
+      "to_node": "HUB:N:32bf50c3a39a15",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 7.45,
+      "elapsed_ms": 0.7248460005939705
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:9665e59154837f",
+      "to_node": "HUB:N:32bf50c3a39a15",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 7.45,
+      "elapsed_ms": 0.6569439992745174
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:9665e59154837f",
+      "to_node": "HUB:N:32bf50c3a39a15",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 7.45,
+      "elapsed_ms": 0.6761430013284553
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:9665e59154837f",
+      "to_node": "HUB:N:32bf50c3a39a15",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 60.35,
+      "elapsed_ms": 1.4905719999660505
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:9665e59154837f",
+      "to_node": "HUB:N:32bf50c3a39a15",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 7.45,
+      "elapsed_ms": 0.692916999469162
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:9665e59154837f",
+      "to_node": "HUB:N:32bf50c3a39a15",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 7.45,
+      "elapsed_ms": 0.7376650009973673
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:cd9d2576ab37ee",
+      "to_node": "HUB:N:9170373f931148",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 8.96,
+      "elapsed_ms": 0.7089820010151016
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:cd9d2576ab37ee",
+      "to_node": "HUB:N:9170373f931148",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 8.96,
+      "elapsed_ms": 0.6677699984720675
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:cd9d2576ab37ee",
+      "to_node": "HUB:N:9170373f931148",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 8.96,
+      "elapsed_ms": 0.6999779998295708
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:cd9d2576ab37ee",
+      "to_node": "HUB:N:9170373f931148",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 92.9,
+      "elapsed_ms": 1.4168720008456148
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:cd9d2576ab37ee",
+      "to_node": "HUB:N:9170373f931148",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 8.96,
+      "elapsed_ms": 0.7503329998144181
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:cd9d2576ab37ee",
+      "to_node": "HUB:N:9170373f931148",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 8.96,
+      "elapsed_ms": 0.7201990010798909
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:023239c856a263",
+      "to_node": "HUB:N:6fe249369f5007",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 5.67,
+      "elapsed_ms": 0.6761320000805426
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:023239c856a263",
+      "to_node": "HUB:N:6fe249369f5007",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 5.67,
+      "elapsed_ms": 0.6415410007321043
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:023239c856a263",
+      "to_node": "HUB:N:6fe249369f5007",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "distance_m": null,
+      "elapsed_ms": 0.6390669987013098
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:023239c856a263",
+      "to_node": "HUB:N:6fe249369f5007",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 0.6283109996729763
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:023239c856a263",
+      "to_node": "HUB:N:6fe249369f5007",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 5.67,
+      "elapsed_ms": 0.6862979989818996
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:023239c856a263",
+      "to_node": "HUB:N:6fe249369f5007",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 5.67,
+      "elapsed_ms": 0.6969140013097785
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:9823c4abc0ad14",
+      "to_node": "HUB:N:5f2c1b114609bf",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 7.68,
+      "elapsed_ms": 0.7096030003594933
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:9823c4abc0ad14",
+      "to_node": "HUB:N:5f2c1b114609bf",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 7.68,
+      "elapsed_ms": 0.6850760000816081
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:9823c4abc0ad14",
+      "to_node": "HUB:N:5f2c1b114609bf",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 7.68,
+      "elapsed_ms": 0.7117759996617679
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:9823c4abc0ad14",
+      "to_node": "HUB:N:5f2c1b114609bf",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 99.6,
+      "elapsed_ms": 1.9296800001029624
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:9823c4abc0ad14",
+      "to_node": "HUB:N:5f2c1b114609bf",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 7.68,
+      "elapsed_ms": 0.7244049993460067
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:9823c4abc0ad14",
+      "to_node": "HUB:N:5f2c1b114609bf",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 7.68,
+      "elapsed_ms": 0.6569240013050148
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:a70651f68c936f",
+      "to_node": "HUB:N:842b884a1b4154",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 5.9,
+      "elapsed_ms": 0.6833739989815513
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:a70651f68c936f",
+      "to_node": "HUB:N:842b884a1b4154",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 5.9,
+      "elapsed_ms": 0.6915349986229558
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:a70651f68c936f",
+      "to_node": "HUB:N:842b884a1b4154",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 5.9,
+      "elapsed_ms": 0.6409100005839719
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:a70651f68c936f",
+      "to_node": "HUB:N:842b884a1b4154",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 0.6529180009238189
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:a70651f68c936f",
+      "to_node": "HUB:N:842b884a1b4154",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 5.9,
+      "elapsed_ms": 0.6563330007338664
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:a70651f68c936f",
+      "to_node": "HUB:N:842b884a1b4154",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 5.9,
+      "elapsed_ms": 0.6350309995468706
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:a510785b3c6997",
+      "to_node": "HUB:N:b2221b8c1b9ac1",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 25.21,
+      "elapsed_ms": 0.8630720003566239
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:a510785b3c6997",
+      "to_node": "HUB:N:b2221b8c1b9ac1",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 25.21,
+      "elapsed_ms": 0.8497729995724512
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:a510785b3c6997",
+      "to_node": "HUB:N:b2221b8c1b9ac1",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "distance_m": null,
+      "elapsed_ms": 0.7337990009546047
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:a510785b3c6997",
+      "to_node": "HUB:N:b2221b8c1b9ac1",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 52.27,
+      "elapsed_ms": 0.9169130007649073
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:a510785b3c6997",
+      "to_node": "HUB:N:b2221b8c1b9ac1",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 25.21,
+      "elapsed_ms": 0.7311150002351496
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:a510785b3c6997",
+      "to_node": "HUB:N:b2221b8c1b9ac1",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 25.21,
+      "elapsed_ms": 0.7897129999037134
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:17b024f6ae726a",
+      "to_node": "HUB:N:cd1e3196065323",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 10.93,
+      "elapsed_ms": 0.7240440008899895
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:17b024f6ae726a",
+      "to_node": "HUB:N:cd1e3196065323",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 10.93,
+      "elapsed_ms": 0.7023119997029426
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:17b024f6ae726a",
+      "to_node": "HUB:N:cd1e3196065323",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 10.93,
+      "elapsed_ms": 0.6609100000787294
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:17b024f6ae726a",
+      "to_node": "HUB:N:cd1e3196065323",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 45.81,
+      "elapsed_ms": 1.0693509993870975
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:17b024f6ae726a",
+      "to_node": "HUB:N:cd1e3196065323",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 10.93,
+      "elapsed_ms": 0.7032939993223408
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:17b024f6ae726a",
+      "to_node": "HUB:N:cd1e3196065323",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 10.93,
+      "elapsed_ms": 0.7195580001280177
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:c054d5cb50426a",
+      "to_node": "HUB:N:bcf3d5808831d4",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 5.96,
+      "elapsed_ms": 0.677894999171258
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:c054d5cb50426a",
+      "to_node": "HUB:N:bcf3d5808831d4",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 5.96,
+      "elapsed_ms": 0.642372000584146
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:c054d5cb50426a",
+      "to_node": "HUB:N:bcf3d5808831d4",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 5.96,
+      "elapsed_ms": 0.6968239995330805
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:c054d5cb50426a",
+      "to_node": "HUB:N:bcf3d5808831d4",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 95.9,
+      "elapsed_ms": 1.567707000504015
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:c054d5cb50426a",
+      "to_node": "HUB:N:bcf3d5808831d4",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 5.96,
+      "elapsed_ms": 0.7856969987187767
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:c054d5cb50426a",
+      "to_node": "HUB:N:bcf3d5808831d4",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 5.96,
+      "elapsed_ms": 0.7177850002335617
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:f756aca0e5ce4c",
+      "to_node": "HUB:N:b844b1568f20a6",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 12.21,
+      "elapsed_ms": 0.6903440007590689
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:f756aca0e5ce4c",
+      "to_node": "HUB:N:b844b1568f20a6",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 12.21,
+      "elapsed_ms": 0.6226230016181944
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:f756aca0e5ce4c",
+      "to_node": "HUB:N:b844b1568f20a6",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 12.21,
+      "elapsed_ms": 0.6618109982809983
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:f756aca0e5ce4c",
+      "to_node": "HUB:N:b844b1568f20a6",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 68.38,
+      "elapsed_ms": 0.8144000003085239
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:f756aca0e5ce4c",
+      "to_node": "HUB:N:b844b1568f20a6",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 12.21,
+      "elapsed_ms": 0.6465480000770185
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:f756aca0e5ce4c",
+      "to_node": "HUB:N:b844b1568f20a6",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 12.21,
+      "elapsed_ms": 9.056633000000147
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:67cc3676dd2f0c",
+      "to_node": "HUB:N:78a819b10336bc",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 7.86,
+      "elapsed_ms": 0.8194880010705674
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:67cc3676dd2f0c",
+      "to_node": "HUB:N:78a819b10336bc",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 7.86,
+      "elapsed_ms": 0.7149800003389828
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:67cc3676dd2f0c",
+      "to_node": "HUB:N:78a819b10336bc",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "distance_m": null,
+      "elapsed_ms": 0.6682109997200314
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:67cc3676dd2f0c",
+      "to_node": "HUB:N:78a819b10336bc",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 5.030995000197436
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:67cc3676dd2f0c",
+      "to_node": "HUB:N:78a819b10336bc",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 7.86,
+      "elapsed_ms": 0.8682799998496193
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:67cc3676dd2f0c",
+      "to_node": "HUB:N:78a819b10336bc",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 7.86,
+      "elapsed_ms": 0.7313959995371988
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:33c3bb816f38cb",
+      "to_node": "HUB:N:9a4f555ff7535c",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 13.25,
+      "elapsed_ms": 0.6689419988106238
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:33c3bb816f38cb",
+      "to_node": "HUB:N:9a4f555ff7535c",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 13.25,
+      "elapsed_ms": 0.677985000947956
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:33c3bb816f38cb",
+      "to_node": "HUB:N:9a4f555ff7535c",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 13.25,
+      "elapsed_ms": 0.6762130014976719
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:33c3bb816f38cb",
+      "to_node": "HUB:N:9a4f555ff7535c",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 152.82,
+      "elapsed_ms": 2.534065999498125
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:33c3bb816f38cb",
+      "to_node": "HUB:N:9a4f555ff7535c",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 13.25,
+      "elapsed_ms": 0.8091509989753831
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:33c3bb816f38cb",
+      "to_node": "HUB:N:9a4f555ff7535c",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 13.25,
+      "elapsed_ms": 0.6918760009284597
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:155868ee770302",
+      "to_node": "HUB:N:0d14e65fee1a15",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 8.24,
+      "elapsed_ms": 0.6941899991943501
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:155868ee770302",
+      "to_node": "HUB:N:0d14e65fee1a15",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 8.24,
+      "elapsed_ms": 0.7080300001689466
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:155868ee770302",
+      "to_node": "HUB:N:0d14e65fee1a15",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 8.24,
+      "elapsed_ms": 0.6928679995326092
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:155868ee770302",
+      "to_node": "HUB:N:0d14e65fee1a15",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 220.57,
+      "elapsed_ms": 4.8458679993927944
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:155868ee770302",
+      "to_node": "HUB:N:0d14e65fee1a15",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 8.24,
+      "elapsed_ms": 0.9677989983174484
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:155868ee770302",
+      "to_node": "HUB:N:0d14e65fee1a15",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 8.24,
+      "elapsed_ms": 0.7474589983758051
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:bd1e23e461c925",
+      "to_node": "HUB:N:8ac60ebed923ac",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 11.02,
+      "elapsed_ms": 0.7134580009733327
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:bd1e23e461c925",
+      "to_node": "HUB:N:8ac60ebed923ac",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 11.02,
+      "elapsed_ms": 0.6605490016227122
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:bd1e23e461c925",
+      "to_node": "HUB:N:8ac60ebed923ac",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 11.02,
+      "elapsed_ms": 0.6676499997411156
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:bd1e23e461c925",
+      "to_node": "HUB:N:8ac60ebed923ac",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 27.99,
+      "elapsed_ms": 0.8762729994487017
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:bd1e23e461c925",
+      "to_node": "HUB:N:8ac60ebed923ac",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 11.02,
+      "elapsed_ms": 0.7438030006596819
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:bd1e23e461c925",
+      "to_node": "HUB:N:8ac60ebed923ac",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 11.02,
+      "elapsed_ms": 0.7043349996820325
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:71b48b8c7a062c",
+      "to_node": "HUB:N:00b43c7976534b",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 7.5,
+      "elapsed_ms": 0.7096329991327366
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:71b48b8c7a062c",
+      "to_node": "HUB:N:00b43c7976534b",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 7.5,
+      "elapsed_ms": 0.703953999618534
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:71b48b8c7a062c",
+      "to_node": "HUB:N:00b43c7976534b",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "distance_m": null,
+      "elapsed_ms": 0.6942389991309028
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:71b48b8c7a062c",
+      "to_node": "HUB:N:00b43c7976534b",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 95.99,
+      "elapsed_ms": 1.6757400007918477
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:71b48b8c7a062c",
+      "to_node": "HUB:N:00b43c7976534b",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 7.5,
+      "elapsed_ms": 0.6939600007171975
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:71b48b8c7a062c",
+      "to_node": "HUB:N:00b43c7976534b",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 7.5,
+      "elapsed_ms": 0.6669089998467825
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:52ec21cfa8b2c6",
+      "to_node": "HUB:N:21a5bb5d5dab5d",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 20.79,
+      "elapsed_ms": 0.74496599881968
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:52ec21cfa8b2c6",
+      "to_node": "HUB:N:21a5bb5d5dab5d",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 20.79,
+      "elapsed_ms": 0.811535001048469
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:52ec21cfa8b2c6",
+      "to_node": "HUB:N:21a5bb5d5dab5d",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 20.79,
+      "elapsed_ms": 0.724675001038122
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:52ec21cfa8b2c6",
+      "to_node": "HUB:N:21a5bb5d5dab5d",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 6.235688999367994
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:52ec21cfa8b2c6",
+      "to_node": "HUB:N:21a5bb5d5dab5d",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 20.79,
+      "elapsed_ms": 0.862572000187356
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:52ec21cfa8b2c6",
+      "to_node": "HUB:N:21a5bb5d5dab5d",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 20.79,
+      "elapsed_ms": 0.6905549998919014
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:6e588cc8387ab9",
+      "to_node": "HUB:N:fbcd02ef6e0809",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 7.57,
+      "elapsed_ms": 0.5950710001343396
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:6e588cc8387ab9",
+      "to_node": "HUB:N:fbcd02ef6e0809",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 7.57,
+      "elapsed_ms": 0.5484909997903742
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:6e588cc8387ab9",
+      "to_node": "HUB:N:fbcd02ef6e0809",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "distance_m": null,
+      "elapsed_ms": 0.49527200098964386
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:6e588cc8387ab9",
+      "to_node": "HUB:N:fbcd02ef6e0809",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 6.804491000366397
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:6e588cc8387ab9",
+      "to_node": "HUB:N:fbcd02ef6e0809",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 7.57,
+      "elapsed_ms": 0.9372439999424387
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:6e588cc8387ab9",
+      "to_node": "HUB:N:fbcd02ef6e0809",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 7.57,
+      "elapsed_ms": 1.0160120000364259
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:646d8d1e7a85a9",
+      "to_node": "HUB:N:5b861410ded05a",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 9.97,
+      "elapsed_ms": 0.6923059991095215
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:646d8d1e7a85a9",
+      "to_node": "HUB:N:5b861410ded05a",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 9.97,
+      "elapsed_ms": 0.5944799995631911
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:646d8d1e7a85a9",
+      "to_node": "HUB:N:5b861410ded05a",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 9.97,
+      "elapsed_ms": 0.6147200001578312
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:646d8d1e7a85a9",
+      "to_node": "HUB:N:5b861410ded05a",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 81.05,
+      "elapsed_ms": 0.7157219988584984
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:646d8d1e7a85a9",
+      "to_node": "HUB:N:5b861410ded05a",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 9.97,
+      "elapsed_ms": 0.5187069982639514
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:646d8d1e7a85a9",
+      "to_node": "HUB:N:5b861410ded05a",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 9.97,
+      "elapsed_ms": 0.5349509992811363
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:a6000dd6a24aff",
+      "to_node": "HUB:N:7fd8d5e476ecc6",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 8.31,
+      "elapsed_ms": 0.4897439994238084
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:a6000dd6a24aff",
+      "to_node": "HUB:N:7fd8d5e476ecc6",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 8.31,
+      "elapsed_ms": 0.5239450001681689
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:a6000dd6a24aff",
+      "to_node": "HUB:N:7fd8d5e476ecc6",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 8.31,
+      "elapsed_ms": 0.5207900012464961
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:a6000dd6a24aff",
+      "to_node": "HUB:N:7fd8d5e476ecc6",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 9.999320000133594
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:a6000dd6a24aff",
+      "to_node": "HUB:N:7fd8d5e476ecc6",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 8.31,
+      "elapsed_ms": 1.1813689998234622
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:a6000dd6a24aff",
+      "to_node": "HUB:N:7fd8d5e476ecc6",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 8.31,
+      "elapsed_ms": 0.8415100001002429
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:df298dbbab4d4e",
+      "to_node": "HUB:N:63d3f258000f32",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 12.06,
+      "elapsed_ms": 0.730092999219778
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:df298dbbab4d4e",
+      "to_node": "HUB:N:63d3f258000f32",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 12.06,
+      "elapsed_ms": 0.7224119999591494
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:df298dbbab4d4e",
+      "to_node": "HUB:N:63d3f258000f32",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 12.06,
+      "elapsed_ms": 0.7313560017792042
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:df298dbbab4d4e",
+      "to_node": "HUB:N:63d3f258000f32",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 227.7,
+      "elapsed_ms": 6.093642001360422
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:df298dbbab4d4e",
+      "to_node": "HUB:N:63d3f258000f32",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 12.06,
+      "elapsed_ms": 1.730121000946383
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:df298dbbab4d4e",
+      "to_node": "HUB:N:63d3f258000f32",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 12.06,
+      "elapsed_ms": 0.779506999606383
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:283340e5c8e6c0",
+      "to_node": "HUB:N:d6a7a7a9fca2dd",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 6.26,
+      "elapsed_ms": 0.9730980000313139
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:283340e5c8e6c0",
+      "to_node": "HUB:N:d6a7a7a9fca2dd",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 6.26,
+      "elapsed_ms": 0.6673790012428071
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:283340e5c8e6c0",
+      "to_node": "HUB:N:d6a7a7a9fca2dd",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 6.26,
+      "elapsed_ms": 12.811417000193615
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:283340e5c8e6c0",
+      "to_node": "HUB:N:d6a7a7a9fca2dd",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 159.8,
+      "elapsed_ms": 2.6552669987722766
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:283340e5c8e6c0",
+      "to_node": "HUB:N:d6a7a7a9fca2dd",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 6.26,
+      "elapsed_ms": 0.8118549994833302
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:283340e5c8e6c0",
+      "to_node": "HUB:N:d6a7a7a9fca2dd",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 6.26,
+      "elapsed_ms": 1.3649239990627393
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:1ce11268bde65f",
+      "to_node": "HUB:N:991e38990dcb68",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 13.35,
+      "elapsed_ms": 2.0752279997395817
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:1ce11268bde65f",
+      "to_node": "HUB:N:991e38990dcb68",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 13.35,
+      "elapsed_ms": 0.6356020003295271
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:1ce11268bde65f",
+      "to_node": "HUB:N:991e38990dcb68",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 13.35,
+      "elapsed_ms": 0.9137079996435205
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:1ce11268bde65f",
+      "to_node": "HUB:N:991e38990dcb68",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 4.139038999710465
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:1ce11268bde65f",
+      "to_node": "HUB:N:991e38990dcb68",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 13.35,
+      "elapsed_ms": 2.1022179989813594
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:1ce11268bde65f",
+      "to_node": "HUB:N:991e38990dcb68",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 13.35,
+      "elapsed_ms": 0.6600980013899971
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:ab0569b83b9726",
+      "to_node": "HUB:N:a51dfbff39e6dd",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 7.87,
+      "elapsed_ms": 0.5529680001927773
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:ab0569b83b9726",
+      "to_node": "HUB:N:a51dfbff39e6dd",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 7.87,
+      "elapsed_ms": 0.6948310001462232
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:ab0569b83b9726",
+      "to_node": "HUB:N:a51dfbff39e6dd",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 7.87,
+      "elapsed_ms": 1.1566630000743316
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:ab0569b83b9726",
+      "to_node": "HUB:N:a51dfbff39e6dd",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 76.54,
+      "elapsed_ms": 1.2084999998478452
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:ab0569b83b9726",
+      "to_node": "HUB:N:a51dfbff39e6dd",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 7.87,
+      "elapsed_ms": 0.7606489998579491
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:ab0569b83b9726",
+      "to_node": "HUB:N:a51dfbff39e6dd",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 7.87,
+      "elapsed_ms": 0.5438340012915432
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:9e88aee5505f1b",
+      "to_node": "HUB:N:65729c603e7b7a",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 7.51,
+      "elapsed_ms": 0.633048000963754
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:9e88aee5505f1b",
+      "to_node": "HUB:N:65729c603e7b7a",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 7.51,
+      "elapsed_ms": 0.49907699940376915
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:9e88aee5505f1b",
+      "to_node": "HUB:N:65729c603e7b7a",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 7.51,
+      "elapsed_ms": 0.6749109998054337
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:9e88aee5505f1b",
+      "to_node": "HUB:N:65729c603e7b7a",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 0.7010600002104184
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:9e88aee5505f1b",
+      "to_node": "HUB:N:65729c603e7b7a",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 7.51,
+      "elapsed_ms": 0.8833829997456633
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:9e88aee5505f1b",
+      "to_node": "HUB:N:65729c603e7b7a",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 7.51,
+      "elapsed_ms": 0.6657779995293822
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:0465957cdcae7b",
+      "to_node": "HUB:N:783404c7876822",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 11.57,
+      "elapsed_ms": 0.6383569998433813
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:0465957cdcae7b",
+      "to_node": "HUB:N:783404c7876822",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 11.57,
+      "elapsed_ms": 0.542513000254985
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:0465957cdcae7b",
+      "to_node": "HUB:N:783404c7876822",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 11.57,
+      "elapsed_ms": 0.5711949997930788
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:0465957cdcae7b",
+      "to_node": "HUB:N:783404c7876822",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 586.76,
+      "elapsed_ms": 8.13162799931888
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:0465957cdcae7b",
+      "to_node": "HUB:N:783404c7876822",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 11.57,
+      "elapsed_ms": 1.111884999772883
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:0465957cdcae7b",
+      "to_node": "HUB:N:783404c7876822",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 11.57,
+      "elapsed_ms": 1.3506030009011738
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:a4076fdf6b8a6c",
+      "to_node": "HUB:N:55557aea3bc564",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 25.33,
+      "elapsed_ms": 1.0264669999742182
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:a4076fdf6b8a6c",
+      "to_node": "HUB:N:55557aea3bc564",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 25.33,
+      "elapsed_ms": 0.803433998953551
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:a4076fdf6b8a6c",
+      "to_node": "HUB:N:55557aea3bc564",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "distance_m": null,
+      "elapsed_ms": 0.8273189996543806
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:a4076fdf6b8a6c",
+      "to_node": "HUB:N:55557aea3bc564",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 2.872942999601946
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:a4076fdf6b8a6c",
+      "to_node": "HUB:N:55557aea3bc564",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 25.33,
+      "elapsed_ms": 0.9477989988226909
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:a4076fdf6b8a6c",
+      "to_node": "HUB:N:55557aea3bc564",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 25.33,
+      "elapsed_ms": 1.9529350010998314
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:6e588cc8387ab9",
+      "to_node": "HUB:N:7419e7150fb320",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 32.81,
+      "elapsed_ms": 0.6359620001603616
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:6e588cc8387ab9",
+      "to_node": "HUB:N:7419e7150fb320",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 32.81,
+      "elapsed_ms": 2.2574359991267556
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:6e588cc8387ab9",
+      "to_node": "HUB:N:7419e7150fb320",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "distance_m": null,
+      "elapsed_ms": 1.5635520012438064
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:6e588cc8387ab9",
+      "to_node": "HUB:N:7419e7150fb320",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 81.67,
+      "elapsed_ms": 1.5418790007970529
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:6e588cc8387ab9",
+      "to_node": "HUB:N:7419e7150fb320",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 32.81,
+      "elapsed_ms": 1.0370629988756264
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:6e588cc8387ab9",
+      "to_node": "HUB:N:7419e7150fb320",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 32.81,
+      "elapsed_ms": 0.9240440012945328
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:f5934686a488b5",
+      "to_node": "HUB:N:bb65ee4b9fde07",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 47.19,
+      "elapsed_ms": 0.8854159987095045
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:f5934686a488b5",
+      "to_node": "HUB:N:bb65ee4b9fde07",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 47.19,
+      "elapsed_ms": 0.7510349987569498
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:f5934686a488b5",
+      "to_node": "HUB:N:bb65ee4b9fde07",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 47.19,
+      "elapsed_ms": 0.7040049986244412
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:f5934686a488b5",
+      "to_node": "HUB:N:bb65ee4b9fde07",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 91.46,
+      "elapsed_ms": 1.206748000186053
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:f5934686a488b5",
+      "to_node": "HUB:N:bb65ee4b9fde07",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 47.19,
+      "elapsed_ms": 0.6271199999901
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:f5934686a488b5",
+      "to_node": "HUB:N:bb65ee4b9fde07",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 47.19,
+      "elapsed_ms": 0.8719060006114887
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:eccf87099f5a69",
+      "to_node": "HUB:N:36de664607246b",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 5.78,
+      "elapsed_ms": 0.5799289992864942
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:eccf87099f5a69",
+      "to_node": "HUB:N:36de664607246b",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 5.78,
+      "elapsed_ms": 0.5366939985833596
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:eccf87099f5a69",
+      "to_node": "HUB:N:36de664607246b",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 5.78,
+      "elapsed_ms": 0.48550799874647055
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:eccf87099f5a69",
+      "to_node": "HUB:N:36de664607246b",
+      "scenario": "closed",
+      "status": "CONDITIONAL",
+      "distance_m": 69.48,
+      "elapsed_ms": 1.1639330004982185
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:eccf87099f5a69",
+      "to_node": "HUB:N:36de664607246b",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 5.78,
+      "elapsed_ms": 0.5158330004633171
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:eccf87099f5a69",
+      "to_node": "HUB:N:36de664607246b",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 5.78,
+      "elapsed_ms": 0.5197580012463732
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:63d3f258000f32",
+      "to_node": "HUB:N:b0d9947131d1f1",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 5.34,
+      "elapsed_ms": 0.5143799990037223
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:63d3f258000f32",
+      "to_node": "HUB:N:b0d9947131d1f1",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 5.34,
+      "elapsed_ms": 0.6512759991892381
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:63d3f258000f32",
+      "to_node": "HUB:N:b0d9947131d1f1",
+      "scenario": "accessible",
+      "status": "CONDITIONAL",
+      "distance_m": 5.34,
+      "elapsed_ms": 0.555571999939275
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:63d3f258000f32",
+      "to_node": "HUB:N:b0d9947131d1f1",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 4.298888999983319
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:63d3f258000f32",
+      "to_node": "HUB:N:b0d9947131d1f1",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 5.34,
+      "elapsed_ms": 0.5421320001914864
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:63d3f258000f32",
+      "to_node": "HUB:N:b0d9947131d1f1",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 5.34,
+      "elapsed_ms": 0.6647259997407673
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:6997b9d6849f1e",
+      "to_node": "HUB:N:9728d0929134a7",
+      "scenario": "ordinary",
+      "status": "CONDITIONAL",
+      "distance_m": 11.5,
+      "elapsed_ms": 0.8125469994411105
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:6997b9d6849f1e",
+      "to_node": "HUB:N:9728d0929134a7",
+      "scenario": "stairs",
+      "status": "CONDITIONAL",
+      "distance_m": 11.5,
+      "elapsed_ms": 0.7110950009519001
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:6997b9d6849f1e",
+      "to_node": "HUB:N:9728d0929134a7",
+      "scenario": "accessible",
+      "status": "UNVERIFIED_ACCESS",
+      "distance_m": null,
+      "elapsed_ms": 0.9235029992851196
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:6997b9d6849f1e",
+      "to_node": "HUB:N:9728d0929134a7",
+      "scenario": "closed",
+      "status": "NO_ROUTE",
+      "distance_m": null,
+      "elapsed_ms": 4.577435000101104
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:6997b9d6849f1e",
+      "to_node": "HUB:N:9728d0929134a7",
+      "scenario": "slow",
+      "status": "CONDITIONAL",
+      "distance_m": 11.5,
+      "elapsed_ms": 0.6102139996073674
+    },
+    {
+      "region": "HUB",
+      "from_node": "HUB:N:6997b9d6849f1e",
+      "to_node": "HUB:N:9728d0929134a7",
+      "scenario": "fast",
+      "status": "CONDITIONAL",
+      "distance_m": 11.5,
+      "elapsed_ms": 0.572347000343143
+    }
+  ]
+}

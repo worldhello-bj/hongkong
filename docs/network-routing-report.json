@@ -1,0 +1,216 @@
+[
+  {
+    "region": "ADM",
+    "nodes": 1300,
+    "directed_edges": 2745,
+    "skipped": 0,
+    "sample_routes": [
+      {
+        "from_node": "ADM:N:fc33db3d109ab7",
+        "to_node": "ADM:N:d6c143654b9836",
+        "distance_m": 345.11,
+        "total_minutes": 5.75
+      },
+      {
+        "from_node": "ADM:N:fc33db3d109ab7",
+        "to_node": "ADM:N:b3acd91cb4aed9",
+        "distance_m": 295.41,
+        "total_minutes": 4.74
+      },
+      {
+        "from_node": "ADM:N:fc33db3d109ab7",
+        "to_node": "ADM:N:8f782d5f2404bb",
+        "distance_m": 232.15,
+        "total_minutes": 3.55
+      },
+      {
+        "from_node": "ADM:N:fc33db3d109ab7",
+        "to_node": "ADM:N:6b7dc170db5887",
+        "distance_m": 316.67,
+        "total_minutes": 4.72
+      },
+      {
+        "from_node": "ADM:N:fc33db3d109ab7",
+        "to_node": "ADM:N:e18d0554b3bb6c",
+        "distance_m": 191.38,
+        "total_minutes": 2.98
+      },
+      {
+        "from_node": "ADM:N:fc33db3d109ab7",
+        "to_node": "ADM:N:35362e58a66ed3",
+        "distance_m": 244.7,
+        "total_minutes": 3.72
+      },
+      {
+        "from_node": "ADM:N:fc33db3d109ab7",
+        "to_node": "ADM:N:411952ac4f5882",
+        "distance_m": 71.57,
+        "total_minutes": 1.32
+      },
+      {
+        "from_node": "ADM:N:fc33db3d109ab7",
+        "to_node": "ADM:N:69837f653c140d",
+        "distance_m": 337.83,
+        "total_minutes": 5.71
+      },
+      {
+        "from_node": "ADM:N:fc33db3d109ab7",
+        "to_node": "ADM:N:5ab613b43a815f",
+        "distance_m": 346.92,
+        "total_minutes": 5.84
+      },
+      {
+        "from_node": "ADM:N:fc33db3d109ab7",
+        "to_node": "ADM:N:3f4bd173dcf9cc",
+        "distance_m": 272.14,
+        "total_minutes": 4.34
+      },
+      {
+        "from_node": "ADM:N:fc33db3d109ab7",
+        "to_node": "ADM:N:fd06d182e2260f",
+        "distance_m": 234.32,
+        "total_minutes": 3.8
+      },
+      {
+        "from_node": "ADM:N:fc33db3d109ab7",
+        "to_node": "ADM:N:e0ed4ced238a81",
+        "distance_m": 273.92,
+        "total_minutes": 4.31
+      },
+      {
+        "from_node": "ADM:N:fc33db3d109ab7",
+        "to_node": "ADM:N:07c55b57cc933d",
+        "distance_m": 285.46,
+        "total_minutes": 4.73
+      },
+      {
+        "from_node": "ADM:N:fc33db3d109ab7",
+        "to_node": "ADM:N:a34c30589058ad",
+        "distance_m": 280.3,
+        "total_minutes": 4.64
+      },
+      {
+        "from_node": "ADM:N:fc33db3d109ab7",
+        "to_node": "ADM:N:faa6dff5965bc5",
+        "distance_m": 304.72,
+        "total_minutes": 5.75
+      },
+      {
+        "from_node": "ADM:N:fc33db3d109ab7",
+        "to_node": "ADM:N:eed0296bd1ff03",
+        "distance_m": 344.24,
+        "total_minutes": 6.01
+      },
+      {
+        "from_node": "ADM:N:fc33db3d109ab7",
+        "to_node": "ADM:N:e5885d1c829567",
+        "distance_m": 392.89,
+        "total_minutes": 6.76
+      },
+      {
+        "from_node": "ADM:N:fc33db3d109ab7",
+        "to_node": "ADM:N:b985684f4f6773",
+        "distance_m": 421.64,
+        "total_minutes": 7.11
+      },
+      {
+        "from_node": "ADM:N:fc33db3d109ab7",
+        "to_node": "ADM:N:366723db7c09f5",
+        "distance_m": 393.66,
+        "total_minutes": 6.78
+      },
+      {
+        "from_node": "ADM:N:fc33db3d109ab7",
+        "to_node": "ADM:N:3f566785b5bd28",
+        "distance_m": 435.92,
+        "total_minutes": 7.62
+      }
+    ]
+  },
+  {
+    "region": "HUB",
+    "nodes": 1777,
+    "directed_edges": 3756,
+    "skipped": 0,
+    "sample_routes": [
+      {
+        "from_node": "HUB:N:1562b03bb1458f",
+        "to_node": "HUB:N:11fa17d76ac7d8",
+        "distance_m": 264.02,
+        "total_minutes": 4.22
+      },
+      {
+        "from_node": "HUB:N:1562b03bb1458f",
+        "to_node": "HUB:N:6e9dc672797ef8",
+        "distance_m": 245.1,
+        "total_minutes": 3.66
+      },
+      {
+        "from_node": "HUB:N:1562b03bb1458f",
+        "to_node": "HUB:N:8ccc38beb12302",
+        "distance_m": 58.13,
+        "total_minutes": 1.06
+      },
+      {
+        "from_node": "HUB:N:1562b03bb1458f",
+        "to_node": "HUB:N:cb6cb5ed8154c8",
+        "distance_m": 208.15,
+        "total_minutes": 3.14
+      },
+      {
+        "from_node": "HUB:N:1562b03bb1458f",
+        "to_node": "HUB:N:278df44638ae7a",
+        "distance_m": 175.76,
+        "total_minutes": 2.69
+      },
+      {
+        "from_node": "HUB:N:1562b03bb1458f",
+        "to_node": "HUB:N:3271cb16813d9b",
+        "distance_m": 224.45,
+        "total_minutes": 3.37
+      },
+      {
+        "from_node": "HUB:N:1562b03bb1458f",
+        "to_node": "HUB:N:1c63d844516879",
+        "distance_m": 164.86,
+        "total_minutes": 2.81
+      },
+      {
+        "from_node": "HUB:N:1562b03bb1458f",
+        "to_node": "HUB:N:1d2e172509b758",
+        "distance_m": 194.49,
+        "total_minutes": 3.22
+      },
+      {
+        "from_node": "HUB:N:1562b03bb1458f",
+        "to_node": "HUB:N:4a7028880f9214",
+        "distance_m": 217.25,
+        "total_minutes": 4.33
+      },
+      {
+        "from_node": "HUB:N:1562b03bb1458f",
+        "to_node": "HUB:N:e6b32b4d5a7be0",
+        "distance_m": 307.46,
+        "total_minutes": 4.83
+      },
+      {
+        "from_node": "HUB:N:1562b03bb1458f",
+        "to_node": "HUB:N:e34cacb2cbc50d",
+        "distance_m": 225.49,
+        "total_minutes": 3.65
+      },
+      {
+        "from_node": "HUB:N:1562b03bb1458f",
+        "to_node": "HUB:N:adbf21a32cb485",
+        "distance_m": 141.15,
+        "total_minutes": 2.72
+      },
+      {
+        "from_node": "HUB:N:1562b03bb1458f",
+        "to_node": "HUB:N:a2c38983e81510",
+        "distance_m": 198.18,
+        "total_minutes": 3.55
+      }
+    ]
+  }
+]

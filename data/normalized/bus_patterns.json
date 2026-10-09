@@ -1,0 +1,2550 @@
+[
+  {
+    "provider": "KMB",
+    "route": "103",
+    "direction": "I",
+    "service_type": "1",
+    "stop_id": "3007D34FB91FB27E",
+    "name_tc": "金鐘站",
+    "name_en": "ADMIRALTY STATION",
+    "dest_tc": "竹園邨",
+    "dest_en": "CHUK YUEN ESTATE",
+    "source_id": "KMB",
+    "verified_from": "official_stop_eta",
+    "received_at": "2026-10-09T13:37:11.470329+00:00",
+    "pattern_stops": [
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "1",
+        "stop": "9C4295A3DD992F0E"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "2",
+        "stop": "8A8E1370026F639C"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "3",
+        "stop": "C904C536EC3E0827"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "4",
+        "stop": "1843FAE700FCA5AF"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "5",
+        "stop": "65523F89F26B2088"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "6",
+        "stop": "6D9F5C463D12461B"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "7",
+        "stop": "8BD7CEC6396E46F0"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "8",
+        "stop": "54F26831BD4A5EBD"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "9",
+        "stop": "65DA1259C72FD22B"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "10",
+        "stop": "7D77D56CB708BCED"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "11",
+        "stop": "2ECC1DBA0C28E93C"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "12",
+        "stop": "CAEFA7D6314535BC"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "13",
+        "stop": "D1601C6EDAB39F29"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "14",
+        "stop": "4A0CEB0807BAF9B3"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "15",
+        "stop": "3007D34FB91FB27E"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "16",
+        "stop": "1AB934EFE0E1470A"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "17",
+        "stop": "048A87496B30B946"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "18",
+        "stop": "A71457854D13E9DE"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "19",
+        "stop": "AC1E2BBDC663717F"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "20",
+        "stop": "A07CC0A6D462A579"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "21",
+        "stop": "9E25CF3DAA0BA0C4"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "22",
+        "stop": "9541036143D6CCF1"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "23",
+        "stop": "13C75FFFA2BB060D"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "24",
+        "stop": "D1D807234805DBF4"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "25",
+        "stop": "79AFB35F9DBD485A"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "26",
+        "stop": "6F755DD7C8AEB1B4"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "27",
+        "stop": "D5DB45916FCE114A"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "28",
+        "stop": "5D94D3084F0C3831"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "29",
+        "stop": "E907FA24426A9FD6"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "30",
+        "stop": "89A4D25AC31A8388"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "31",
+        "stop": "6465986EF7824816"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "32",
+        "stop": "F21DC659FA565E2F"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "33",
+        "stop": "E3EEF07674DE3B98"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "34",
+        "stop": "A96BE8855D16BCE0"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "35",
+        "stop": "F3753E60F86B0068"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "36",
+        "stop": "67C00FA00C878C1A"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "37",
+        "stop": "7A899F3009A31F68"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "38",
+        "stop": "550A2C52049679A0"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "39",
+        "stop": "CEACD1DF9F00EF44"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "40",
+        "stop": "6E410E80F8C9915B"
+      },
+      {
+        "route": "103",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "41",
+        "stop": "2BF46D2A46F5451D"
+      }
+    ],
+    "upstream_stop": {
+      "stop": "4A0CEB0807BAF9B3",
+      "name_en": "ST. JOHN'S CATHEDRAL",
+      "name_tc": "聖約翰座堂",
+      "name_sc": "圣约翰座堂",
+      "lat": "22.278354",
+      "long": "114.159801"
+    },
+    "interval_minutes": null,
+    "estimated_interval_minutes": 4,
+    "estimate_note": "Research parameter, not measured running time or official timetable",
+    "source_url": "https://data.etabus.gov.hk/v1/transport/kmb/route-stop/103/inbound/1"
+  },
+  {
+    "provider": "KMB",
+    "route": "182",
+    "direction": "I",
+    "service_type": "1",
+    "stop_id": "3007D34FB91FB27E",
+    "name_tc": "金鐘站",
+    "name_en": "ADMIRALTY STATION",
+    "dest_tc": "愉翠苑",
+    "dest_en": "YU CHUI COURT",
+    "source_id": "KMB",
+    "verified_from": "official_stop_eta",
+    "received_at": "2026-10-09T13:37:11.470329+00:00",
+    "pattern_stops": [
+      {
+        "route": "182",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "1",
+        "stop": "59013D693D2493FE"
+      },
+      {
+        "route": "182",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "2",
+        "stop": "C78818C8285315B3"
+      },
+      {
+        "route": "182",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "3",
+        "stop": "5298A15B8CCAEF42"
+      },
+      {
+        "route": "182",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "4",
+        "stop": "A9069A17B1474D76"
+      },
+      {
+        "route": "182",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "5",
+        "stop": "3007D34FB91FB27E"
+      },
+      {
+        "route": "182",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "6",
+        "stop": "1AB934EFE0E1470A"
+      },
+      {
+        "route": "182",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "7",
+        "stop": "048A87496B30B946"
+      },
+      {
+        "route": "182",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "8",
+        "stop": "FD9F24DFA3090351"
+      },
+      {
+        "route": "182",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "9",
+        "stop": "64FBF17E3209D217"
+      },
+      {
+        "route": "182",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "10",
+        "stop": "4A626ACD36F8ED7A"
+      },
+      {
+        "route": "182",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "11",
+        "stop": "79AFB35F9DBD485A"
+      },
+      {
+        "route": "182",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "12",
+        "stop": "D5DB45916FCE114A"
+      },
+      {
+        "route": "182",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "13",
+        "stop": "5D94D3084F0C3831"
+      },
+      {
+        "route": "182",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "14",
+        "stop": "89A4D25AC31A8388"
+      },
+      {
+        "route": "182",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "15",
+        "stop": "6465986EF7824816"
+      },
+      {
+        "route": "182",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "16",
+        "stop": "C53A00F15DC2DB20"
+      },
+      {
+        "route": "182",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "17",
+        "stop": "48E5A1EED91712EE"
+      },
+      {
+        "route": "182",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "18",
+        "stop": "8FE9357F36300CD7"
+      },
+      {
+        "route": "182",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "19",
+        "stop": "B8E2647E9C5019C9"
+      },
+      {
+        "route": "182",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "20",
+        "stop": "AAECA769A84E2372"
+      },
+      {
+        "route": "182",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "21",
+        "stop": "A66159E033DDEA04"
+      },
+      {
+        "route": "182",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "22",
+        "stop": "C92E80A5D7E0E8EC"
+      },
+      {
+        "route": "182",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "23",
+        "stop": "07ADFF84F3502690"
+      },
+      {
+        "route": "182",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "24",
+        "stop": "B9EE83CA8ABB578B"
+      },
+      {
+        "route": "182",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "25",
+        "stop": "50F2B96452F78F19"
+      },
+      {
+        "route": "182",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "26",
+        "stop": "1AE43A670EACECB1"
+      },
+      {
+        "route": "182",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "27",
+        "stop": "C0D515CA78A56B65"
+      },
+      {
+        "route": "182",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "28",
+        "stop": "3C624F6CB2D5BBEA"
+      },
+      {
+        "route": "182",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "29",
+        "stop": "C1E9F8237EDBBAD2"
+      },
+      {
+        "route": "182",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "30",
+        "stop": "4BFB5F2D496CDA56"
+      },
+      {
+        "route": "182",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "31",
+        "stop": "EF15FBC5E8A02ADA"
+      }
+    ],
+    "upstream_stop": {
+      "stop": "A9069A17B1474D76",
+      "name_en": "STATUE SQUARE",
+      "name_tc": "皇后像廣場",
+      "name_sc": "皇后像广场",
+      "lat": "22.280854",
+      "long": "114.159427"
+    },
+    "interval_minutes": null,
+    "estimated_interval_minutes": 4,
+    "estimate_note": "Research parameter, not measured running time or official timetable",
+    "source_url": "https://data.etabus.gov.hk/v1/transport/kmb/route-stop/182/inbound/1"
+  },
+  {
+    "provider": "KMB",
+    "route": "182X",
+    "direction": "O",
+    "service_type": "1",
+    "stop_id": "3007D34FB91FB27E",
+    "name_tc": "金鐘站",
+    "name_en": "ADMIRALTY STATION",
+    "dest_tc": "愉翠苑",
+    "dest_en": "YU CHUI COURT",
+    "source_id": "KMB",
+    "verified_from": "official_stop_eta",
+    "received_at": "2026-10-09T13:37:11.470329+00:00",
+    "pattern_stops": [
+      {
+        "route": "182X",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "1",
+        "stop": "59013D693D2493FE"
+      },
+      {
+        "route": "182X",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "2",
+        "stop": "C78818C8285315B3"
+      },
+      {
+        "route": "182X",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "3",
+        "stop": "5298A15B8CCAEF42"
+      },
+      {
+        "route": "182X",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "4",
+        "stop": "A9069A17B1474D76"
+      },
+      {
+        "route": "182X",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "5",
+        "stop": "3007D34FB91FB27E"
+      },
+      {
+        "route": "182X",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "6",
+        "stop": "1AB934EFE0E1470A"
+      },
+      {
+        "route": "182X",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "7",
+        "stop": "048A87496B30B946"
+      },
+      {
+        "route": "182X",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "8",
+        "stop": "FD9F24DFA3090351"
+      },
+      {
+        "route": "182X",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "9",
+        "stop": "64FBF17E3209D217"
+      },
+      {
+        "route": "182X",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "10",
+        "stop": "4A626ACD36F8ED7A"
+      },
+      {
+        "route": "182X",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "11",
+        "stop": "B8E2647E9C5019C9"
+      },
+      {
+        "route": "182X",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "12",
+        "stop": "AAECA769A84E2372"
+      },
+      {
+        "route": "182X",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "13",
+        "stop": "A66159E033DDEA04"
+      },
+      {
+        "route": "182X",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "14",
+        "stop": "C92E80A5D7E0E8EC"
+      },
+      {
+        "route": "182X",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "15",
+        "stop": "07ADFF84F3502690"
+      },
+      {
+        "route": "182X",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "16",
+        "stop": "B9EE83CA8ABB578B"
+      },
+      {
+        "route": "182X",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "17",
+        "stop": "B3E11B99D4E4F4AE"
+      },
+      {
+        "route": "182X",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "18",
+        "stop": "8EE5AC5D519C140E"
+      },
+      {
+        "route": "182X",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "19",
+        "stop": "944A9ADFCA286511"
+      },
+      {
+        "route": "182X",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "20",
+        "stop": "808CA5FECCC6646D"
+      },
+      {
+        "route": "182X",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "21",
+        "stop": "EF15FBC5E8A02ADA"
+      }
+    ],
+    "upstream_stop": {
+      "stop": "A9069A17B1474D76",
+      "name_en": "STATUE SQUARE",
+      "name_tc": "皇后像廣場",
+      "name_sc": "皇后像广场",
+      "lat": "22.280854",
+      "long": "114.159427"
+    },
+    "interval_minutes": null,
+    "estimated_interval_minutes": 4,
+    "estimate_note": "Research parameter, not measured running time or official timetable",
+    "source_url": "https://data.etabus.gov.hk/v1/transport/kmb/route-stop/182X/outbound/1"
+  },
+  {
+    "provider": "KMB",
+    "route": "307",
+    "direction": "I",
+    "service_type": "1",
+    "stop_id": "3007D34FB91FB27E",
+    "name_tc": "金鐘站",
+    "name_en": "ADMIRALTY STATION",
+    "dest_tc": "大埔中心",
+    "dest_en": "TAI PO CENTRAL",
+    "source_id": "KMB",
+    "verified_from": "official_stop_eta",
+    "received_at": "2026-10-09T13:37:11.470329+00:00",
+    "pattern_stops": [
+      {
+        "route": "307",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "1",
+        "stop": "C1FC4F003C9031B3"
+      },
+      {
+        "route": "307",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "2",
+        "stop": "BD9D7DAC7CD2F537"
+      },
+      {
+        "route": "307",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "3",
+        "stop": "59073C1C6D8BB1F7"
+      },
+      {
+        "route": "307",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "4",
+        "stop": "A9069A17B1474D76"
+      },
+      {
+        "route": "307",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "5",
+        "stop": "3007D34FB91FB27E"
+      },
+      {
+        "route": "307",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "6",
+        "stop": "20554F51D1E03E33"
+      },
+      {
+        "route": "307",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "7",
+        "stop": "BD0E2A233376612E"
+      },
+      {
+        "route": "307",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "8",
+        "stop": "DDEB0396969D004B"
+      },
+      {
+        "route": "307",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "9",
+        "stop": "991E47DBD416B908"
+      },
+      {
+        "route": "307",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "10",
+        "stop": "9274EF6791CA3ED8"
+      },
+      {
+        "route": "307",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "11",
+        "stop": "CDB292D507E4302D"
+      },
+      {
+        "route": "307",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "12",
+        "stop": "4EF065C6D7FCCFE7"
+      },
+      {
+        "route": "307",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "13",
+        "stop": "530F970BB56D778D"
+      },
+      {
+        "route": "307",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "14",
+        "stop": "6716018C3EE42733"
+      },
+      {
+        "route": "307",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "15",
+        "stop": "09DFD305F09C558E"
+      }
+    ],
+    "upstream_stop": {
+      "stop": "A9069A17B1474D76",
+      "name_en": "STATUE SQUARE",
+      "name_tc": "皇后像廣場",
+      "name_sc": "皇后像广场",
+      "lat": "22.280854",
+      "long": "114.159427"
+    },
+    "interval_minutes": null,
+    "estimated_interval_minutes": 4,
+    "estimate_note": "Research parameter, not measured running time or official timetable",
+    "source_url": "https://data.etabus.gov.hk/v1/transport/kmb/route-stop/307/inbound/1"
+  },
+  {
+    "provider": "KMB",
+    "route": "619",
+    "direction": "I",
+    "service_type": "1",
+    "stop_id": "3007D34FB91FB27E",
+    "name_tc": "金鐘站",
+    "name_en": "ADMIRALTY STATION",
+    "dest_tc": "順利",
+    "dest_en": "SHUN LEE",
+    "source_id": "KMB",
+    "verified_from": "official_stop_eta",
+    "received_at": "2026-10-09T13:37:11.470329+00:00",
+    "pattern_stops": [
+      {
+        "route": "619",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "1",
+        "stop": "3E2E0FF05B36999C"
+      },
+      {
+        "route": "619",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "2",
+        "stop": "89ED5D96534CED83"
+      },
+      {
+        "route": "619",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "3",
+        "stop": "5298A15B8CCAEF42"
+      },
+      {
+        "route": "619",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "4",
+        "stop": "A9069A17B1474D76"
+      },
+      {
+        "route": "619",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "5",
+        "stop": "3007D34FB91FB27E"
+      },
+      {
+        "route": "619",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "6",
+        "stop": "255401DABB64289D"
+      },
+      {
+        "route": "619",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "7",
+        "stop": "16CE9E8D17681839"
+      },
+      {
+        "route": "619",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "8",
+        "stop": "A71457854D13E9DE"
+      },
+      {
+        "route": "619",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "9",
+        "stop": "2B9DA1FE14596F2E"
+      },
+      {
+        "route": "619",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "10",
+        "stop": "A07CC0A6D462A579"
+      },
+      {
+        "route": "619",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "11",
+        "stop": "4EE6F43CF8D6217D"
+      },
+      {
+        "route": "619",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "12",
+        "stop": "9541036143D6CCF1"
+      },
+      {
+        "route": "619",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "13",
+        "stop": "1A0BCDF4BDC3E1A9"
+      },
+      {
+        "route": "619",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "14",
+        "stop": "A4EBD881BA65C831"
+      },
+      {
+        "route": "619",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "15",
+        "stop": "05C0C27B083F2C00"
+      },
+      {
+        "route": "619",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "16",
+        "stop": "322A5914FD96DE4B"
+      },
+      {
+        "route": "619",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "17",
+        "stop": "33D2B3AB9D2CCDF3"
+      },
+      {
+        "route": "619",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "18",
+        "stop": "D678B3364437D16B"
+      },
+      {
+        "route": "619",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "19",
+        "stop": "2EF9764BE18FC290"
+      },
+      {
+        "route": "619",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "20",
+        "stop": "5B04604E989BBDF0"
+      },
+      {
+        "route": "619",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "21",
+        "stop": "42B4DEF46BB30887"
+      },
+      {
+        "route": "619",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "22",
+        "stop": "DBEA3F848C7981F2"
+      },
+      {
+        "route": "619",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "23",
+        "stop": "84BACA14B0C50790"
+      },
+      {
+        "route": "619",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "24",
+        "stop": "9C4CA9F8953C0C88"
+      },
+      {
+        "route": "619",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "25",
+        "stop": "921C19F6147C74A6"
+      },
+      {
+        "route": "619",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "26",
+        "stop": "47C3597662B81B47"
+      },
+      {
+        "route": "619",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "27",
+        "stop": "7EF64469471FE344"
+      },
+      {
+        "route": "619",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "28",
+        "stop": "0A03521DFD20FEA9"
+      },
+      {
+        "route": "619",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "29",
+        "stop": "0511A6AC2CBC9A21"
+      },
+      {
+        "route": "619",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "30",
+        "stop": "6E113B962058A553"
+      },
+      {
+        "route": "619",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "31",
+        "stop": "62F953A6FC5652BE"
+      },
+      {
+        "route": "619",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "32",
+        "stop": "ECCCAB1120D6B6C6"
+      }
+    ],
+    "upstream_stop": {
+      "stop": "A9069A17B1474D76",
+      "name_en": "STATUE SQUARE",
+      "name_tc": "皇后像廣場",
+      "name_sc": "皇后像广场",
+      "lat": "22.280854",
+      "long": "114.159427"
+    },
+    "interval_minutes": null,
+    "estimated_interval_minutes": 4,
+    "estimate_note": "Research parameter, not measured running time or official timetable",
+    "source_url": "https://data.etabus.gov.hk/v1/transport/kmb/route-stop/619/inbound/1"
+  },
+  {
+    "provider": "KMB",
+    "route": "619X",
+    "direction": "I",
+    "service_type": "1",
+    "stop_id": "3007D34FB91FB27E",
+    "name_tc": "金鐘站",
+    "name_en": "ADMIRALTY STATION",
+    "dest_tc": "順利",
+    "dest_en": "SHUN LEE",
+    "source_id": "KMB",
+    "verified_from": "official_stop_eta",
+    "received_at": "2026-10-09T13:37:11.470329+00:00",
+    "pattern_stops": [
+      {
+        "route": "619X",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "1",
+        "stop": "3E2E0FF05B36999C"
+      },
+      {
+        "route": "619X",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "2",
+        "stop": "89ED5D96534CED83"
+      },
+      {
+        "route": "619X",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "3",
+        "stop": "5298A15B8CCAEF42"
+      },
+      {
+        "route": "619X",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "4",
+        "stop": "A9069A17B1474D76"
+      },
+      {
+        "route": "619X",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "5",
+        "stop": "3007D34FB91FB27E"
+      },
+      {
+        "route": "619X",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "6",
+        "stop": "255401DABB64289D"
+      },
+      {
+        "route": "619X",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "7",
+        "stop": "16CE9E8D17681839"
+      },
+      {
+        "route": "619X",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "8",
+        "stop": "A71457854D13E9DE"
+      },
+      {
+        "route": "619X",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "9",
+        "stop": "2B9DA1FE14596F2E"
+      },
+      {
+        "route": "619X",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "10",
+        "stop": "A07CC0A6D462A579"
+      },
+      {
+        "route": "619X",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "11",
+        "stop": "4EE6F43CF8D6217D"
+      },
+      {
+        "route": "619X",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "12",
+        "stop": "9541036143D6CCF1"
+      },
+      {
+        "route": "619X",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "13",
+        "stop": "1A0BCDF4BDC3E1A9"
+      },
+      {
+        "route": "619X",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "14",
+        "stop": "A4EBD881BA65C831"
+      },
+      {
+        "route": "619X",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "15",
+        "stop": "05C0C27B083F2C00"
+      },
+      {
+        "route": "619X",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "16",
+        "stop": "322A5914FD96DE4B"
+      },
+      {
+        "route": "619X",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "17",
+        "stop": "33D2B3AB9D2CCDF3"
+      },
+      {
+        "route": "619X",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "18",
+        "stop": "D678B3364437D16B"
+      },
+      {
+        "route": "619X",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "19",
+        "stop": "2EF9764BE18FC290"
+      },
+      {
+        "route": "619X",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "20",
+        "stop": "ED8812E232F6958A"
+      },
+      {
+        "route": "619X",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "21",
+        "stop": "1FBAAE29AF1CA50E"
+      },
+      {
+        "route": "619X",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "22",
+        "stop": "3C0AF6BA82588E2F"
+      },
+      {
+        "route": "619X",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "23",
+        "stop": "F8DEE1D5F9A349AD"
+      },
+      {
+        "route": "619X",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "24",
+        "stop": "0511A6AC2CBC9A21"
+      },
+      {
+        "route": "619X",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "25",
+        "stop": "6E113B962058A553"
+      },
+      {
+        "route": "619X",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "26",
+        "stop": "62F953A6FC5652BE"
+      },
+      {
+        "route": "619X",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "27",
+        "stop": "ECCCAB1120D6B6C6"
+      }
+    ],
+    "upstream_stop": {
+      "stop": "A9069A17B1474D76",
+      "name_en": "STATUE SQUARE",
+      "name_tc": "皇后像廣場",
+      "name_sc": "皇后像广场",
+      "lat": "22.280854",
+      "long": "114.159427"
+    },
+    "interval_minutes": null,
+    "estimated_interval_minutes": 4,
+    "estimate_note": "Research parameter, not measured running time or official timetable",
+    "source_url": "https://data.etabus.gov.hk/v1/transport/kmb/route-stop/619X/inbound/1"
+  },
+  {
+    "provider": "KMB",
+    "route": "8",
+    "direction": "O",
+    "service_type": "1",
+    "stop_id": "BD9C8BC4A5FCEC12",
+    "name_tc": "九龍站,高鐵站 (YT941)",
+    "name_en": "KOWLOON STATION, HIGH SPEED RAIL STATION (YT941)",
+    "dest_tc": "九龍站",
+    "dest_en": "KOWLOON STATION",
+    "source_id": "KMB",
+    "verified_from": "official_stop_eta",
+    "received_at": "2026-10-09T13:37:24.154469+00:00",
+    "pattern_stops": [
+      {
+        "route": "8",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "1",
+        "stop": "5E2EC7476D55E0BA"
+      },
+      {
+        "route": "8",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "2",
+        "stop": "5D75A800F823B45D"
+      },
+      {
+        "route": "8",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "3",
+        "stop": "C175ACB534E8C15C"
+      },
+      {
+        "route": "8",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "4",
+        "stop": "F656A38D2A40F77D"
+      },
+      {
+        "route": "8",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "5",
+        "stop": "3D040EE809057C6E"
+      },
+      {
+        "route": "8",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "6",
+        "stop": "842DB57036C4C645"
+      },
+      {
+        "route": "8",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "7",
+        "stop": "3DEB0D13043F4C17"
+      },
+      {
+        "route": "8",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "8",
+        "stop": "B0095CE9771BFC17"
+      },
+      {
+        "route": "8",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "9",
+        "stop": "CB59198C6E7D00FF"
+      },
+      {
+        "route": "8",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "10",
+        "stop": "F3DA32A55B98363F"
+      },
+      {
+        "route": "8",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "11",
+        "stop": "BC3B37FDEE7EE51B"
+      },
+      {
+        "route": "8",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "12",
+        "stop": "5CE1C1296F98C6C4"
+      },
+      {
+        "route": "8",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "13",
+        "stop": "3D403F8CF70C7FE4"
+      },
+      {
+        "route": "8",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "14",
+        "stop": "C0ACDED85452CFC8"
+      },
+      {
+        "route": "8",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "15",
+        "stop": "6E9A9467758898B7"
+      },
+      {
+        "route": "8",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "16",
+        "stop": "7E4F1063E27B47E9"
+      },
+      {
+        "route": "8",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "17",
+        "stop": "1924C09B20B8787A"
+      },
+      {
+        "route": "8",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "18",
+        "stop": "7F3A1FC5F4533B4C"
+      },
+      {
+        "route": "8",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "19",
+        "stop": "223E33F23F37B61A"
+      },
+      {
+        "route": "8",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "20",
+        "stop": "71C9731001C9C773"
+      },
+      {
+        "route": "8",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "21",
+        "stop": "F63C76EC97E38A91"
+      },
+      {
+        "route": "8",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "22",
+        "stop": "777ED0B1F3CF10DD"
+      },
+      {
+        "route": "8",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "23",
+        "stop": "25B94D808EC232D8"
+      },
+      {
+        "route": "8",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "24",
+        "stop": "2F165341B07CBDB9"
+      },
+      {
+        "route": "8",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "25",
+        "stop": "FD1B403FD4EC3E8D"
+      },
+      {
+        "route": "8",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "26",
+        "stop": "FB9FA7AAA17E9E9D"
+      },
+      {
+        "route": "8",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "27",
+        "stop": "BD9C8BC4A5FCEC12"
+      }
+    ],
+    "upstream_stop": {
+      "stop": "FB9FA7AAA17E9E9D",
+      "name_en": "WESTERN HARBOUR TUNNEL BBI - NGA CHEUNG ROAD",
+      "name_tc": "西隧轉車站 - 雅翔道 (YT300)",
+      "name_sc": "西隧转车站 - 雅翔道 (YT300)",
+      "lat": "22.304410",
+      "long": "114.160239"
+    },
+    "interval_minutes": null,
+    "estimated_interval_minutes": 4,
+    "estimate_note": "Research parameter, not measured running time or official timetable",
+    "source_url": "https://data.etabus.gov.hk/v1/transport/kmb/route-stop/8/outbound/1"
+  },
+  {
+    "provider": "KMB",
+    "route": "8",
+    "direction": "I",
+    "service_type": "1",
+    "stop_id": "BD9C8BC4A5FCEC12",
+    "name_tc": "九龍站,高鐵站 (YT941)",
+    "name_en": "KOWLOON STATION, HIGH SPEED RAIL STATION (YT941)",
+    "dest_tc": "尖沙咀碼頭",
+    "dest_en": "STAR FERRY",
+    "source_id": "KMB",
+    "verified_from": "official_stop_eta",
+    "received_at": "2026-10-09T13:37:24.154469+00:00",
+    "pattern_stops": [
+      {
+        "route": "8",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "1",
+        "stop": "BD9C8BC4A5FCEC12"
+      },
+      {
+        "route": "8",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "2",
+        "stop": "31072508CEF942C6"
+      },
+      {
+        "route": "8",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "3",
+        "stop": "4C49804674904130"
+      },
+      {
+        "route": "8",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "4",
+        "stop": "2F281B3C90B46763"
+      },
+      {
+        "route": "8",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "5",
+        "stop": "A93947027435EBAD"
+      },
+      {
+        "route": "8",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "6",
+        "stop": "2E9166ECCD0DB0E5"
+      },
+      {
+        "route": "8",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "7",
+        "stop": "4A2B9089021412CD"
+      },
+      {
+        "route": "8",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "8",
+        "stop": "051C24F9614CEDC2"
+      },
+      {
+        "route": "8",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "9",
+        "stop": "853C70D76FF68196"
+      },
+      {
+        "route": "8",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "10",
+        "stop": "EBC7FF1987F11FD2"
+      },
+      {
+        "route": "8",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "11",
+        "stop": "987B3A45E05CD6EE"
+      },
+      {
+        "route": "8",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "12",
+        "stop": "F19BBC7D6F39B210"
+      },
+      {
+        "route": "8",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "13",
+        "stop": "05AB3A2B3816CD41"
+      },
+      {
+        "route": "8",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "14",
+        "stop": "B9B0524C596DAE6F"
+      },
+      {
+        "route": "8",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "15",
+        "stop": "FACE6E102E2171B3"
+      },
+      {
+        "route": "8",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "16",
+        "stop": "A0F2A2C5182526AA"
+      },
+      {
+        "route": "8",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "17",
+        "stop": "73567AD9A1510A9B"
+      },
+      {
+        "route": "8",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "18",
+        "stop": "8D5FB973BE9429B4"
+      },
+      {
+        "route": "8",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "19",
+        "stop": "AD803E8A0ED6C3B9"
+      },
+      {
+        "route": "8",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "20",
+        "stop": "98F5ACF0CF540E7C"
+      },
+      {
+        "route": "8",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "21",
+        "stop": "505D36136FD57784"
+      },
+      {
+        "route": "8",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "22",
+        "stop": "FE2815CBCD21C57C"
+      },
+      {
+        "route": "8",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "23",
+        "stop": "BEEBDDB542A7E709"
+      },
+      {
+        "route": "8",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "24",
+        "stop": "48184733EFE9D3E3"
+      },
+      {
+        "route": "8",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "25",
+        "stop": "8E8DB91C885F1230"
+      },
+      {
+        "route": "8",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "26",
+        "stop": "DCFF4041D0C0ACF8"
+      }
+    ],
+    "upstream_stop": null,
+    "interval_minutes": null,
+    "estimated_interval_minutes": 4,
+    "estimate_note": "Research parameter, not measured running time or official timetable",
+    "source_url": "https://data.etabus.gov.hk/v1/transport/kmb/route-stop/8/inbound/1"
+  },
+  {
+    "provider": "KMB",
+    "route": "11",
+    "direction": "O",
+    "service_type": "1",
+    "stop_id": "593DE4298B444E66",
+    "name_tc": "九龍站,高鐵站 (YT948)",
+    "name_en": "KOWLOON STATION, HIGH SPEED RAIL STATION (YT948)",
+    "dest_tc": "九龍站",
+    "dest_en": "KOWLOON STATION",
+    "source_id": "KMB",
+    "verified_from": "official_stop_eta",
+    "received_at": "2026-10-09T13:37:27.496512+00:00",
+    "pattern_stops": [
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "1",
+        "stop": "CA866CBB3EC92B9F"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "2",
+        "stop": "31317843D8BA833F"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "3",
+        "stop": "FDFC87BC94515900"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "4",
+        "stop": "E778E67CBC095B0C"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "5",
+        "stop": "43EE0C39CD39BA06"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "6",
+        "stop": "EF01999C9F909553"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "7",
+        "stop": "B337148DB333E5C4"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "8",
+        "stop": "711A39D02DB2B4D8"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "9",
+        "stop": "AFB03B10416E2199"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "10",
+        "stop": "4B9D547F0F450784"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "11",
+        "stop": "7BDF3895E0BCE33B"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "12",
+        "stop": "262578A9C404DCD6"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "13",
+        "stop": "87154BA98253B43D"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "14",
+        "stop": "1C79BF0732EDBD9C"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "15",
+        "stop": "F6E296480D3481A2"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "16",
+        "stop": "225F00F550C301AE"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "17",
+        "stop": "3331EE733A2A3EBB"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "18",
+        "stop": "F5795A904B483F33"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "19",
+        "stop": "57DFE7792042405B"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "20",
+        "stop": "7CC8FC8889FF1596"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "21",
+        "stop": "DF4F6B54816F5172"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "22",
+        "stop": "190F209646059000"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "23",
+        "stop": "2F165341B07CBDB9"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "24",
+        "stop": "FD1B403FD4EC3E8D"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "25",
+        "stop": "FB9FA7AAA17E9E9D"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "1",
+        "seq": "26",
+        "stop": "593DE4298B444E66"
+      }
+    ],
+    "upstream_stop": {
+      "stop": "FB9FA7AAA17E9E9D",
+      "name_en": "WESTERN HARBOUR TUNNEL BBI - NGA CHEUNG ROAD",
+      "name_tc": "西隧轉車站 - 雅翔道 (YT300)",
+      "name_sc": "西隧转车站 - 雅翔道 (YT300)",
+      "lat": "22.304410",
+      "long": "114.160239"
+    },
+    "interval_minutes": null,
+    "estimated_interval_minutes": 4,
+    "estimate_note": "Research parameter, not measured running time or official timetable",
+    "source_url": "https://data.etabus.gov.hk/v1/transport/kmb/route-stop/11/outbound/1"
+  },
+  {
+    "provider": "KMB",
+    "route": "11",
+    "direction": "O",
+    "service_type": "2",
+    "stop_id": "593DE4298B444E66",
+    "name_tc": "九龍站,高鐵站 (YT948)",
+    "name_en": "KOWLOON STATION, HIGH SPEED RAIL STATION (YT948)",
+    "dest_tc": "九龍站",
+    "dest_en": "KOWLOON STATION",
+    "source_id": "KMB",
+    "verified_from": "official_stop_eta",
+    "received_at": "2026-10-09T13:37:27.496512+00:00",
+    "pattern_stops": [
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "2",
+        "seq": "1",
+        "stop": "6F817E994CAF7928"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "2",
+        "seq": "2",
+        "stop": "4B9D547F0F450784"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "2",
+        "seq": "3",
+        "stop": "7BDF3895E0BCE33B"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "2",
+        "seq": "4",
+        "stop": "262578A9C404DCD6"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "2",
+        "seq": "5",
+        "stop": "87154BA98253B43D"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "2",
+        "seq": "6",
+        "stop": "1C79BF0732EDBD9C"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "2",
+        "seq": "7",
+        "stop": "F6E296480D3481A2"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "2",
+        "seq": "8",
+        "stop": "225F00F550C301AE"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "2",
+        "seq": "9",
+        "stop": "3331EE733A2A3EBB"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "2",
+        "seq": "10",
+        "stop": "F5795A904B483F33"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "2",
+        "seq": "11",
+        "stop": "57DFE7792042405B"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "2",
+        "seq": "12",
+        "stop": "7CC8FC8889FF1596"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "2",
+        "seq": "13",
+        "stop": "DF4F6B54816F5172"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "2",
+        "seq": "14",
+        "stop": "190F209646059000"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "2",
+        "seq": "15",
+        "stop": "2F165341B07CBDB9"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "2",
+        "seq": "16",
+        "stop": "FD1B403FD4EC3E8D"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "2",
+        "seq": "17",
+        "stop": "FB9FA7AAA17E9E9D"
+      },
+      {
+        "route": "11",
+        "bound": "O",
+        "service_type": "2",
+        "seq": "18",
+        "stop": "593DE4298B444E66"
+      }
+    ],
+    "upstream_stop": {
+      "stop": "FB9FA7AAA17E9E9D",
+      "name_en": "WESTERN HARBOUR TUNNEL BBI - NGA CHEUNG ROAD",
+      "name_tc": "西隧轉車站 - 雅翔道 (YT300)",
+      "name_sc": "西隧转车站 - 雅翔道 (YT300)",
+      "lat": "22.304410",
+      "long": "114.160239"
+    },
+    "interval_minutes": null,
+    "estimated_interval_minutes": 4,
+    "estimate_note": "Research parameter, not measured running time or official timetable",
+    "source_url": "https://data.etabus.gov.hk/v1/transport/kmb/route-stop/11/outbound/2"
+  },
+  {
+    "provider": "KMB",
+    "route": "11",
+    "direction": "I",
+    "service_type": "1",
+    "stop_id": "593DE4298B444E66",
+    "name_tc": "九龍站,高鐵站 (YT948)",
+    "name_en": "KOWLOON STATION, HIGH SPEED RAIL STATION (YT948)",
+    "dest_tc": "慈雲山(中)",
+    "dest_en": "TSZ WAN SHAN (CENTRAL)",
+    "source_id": "KMB",
+    "verified_from": "official_stop_eta",
+    "received_at": "2026-10-09T13:37:27.496512+00:00",
+    "pattern_stops": [
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "1",
+        "stop": "593DE4298B444E66"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "2",
+        "stop": "31072508CEF942C6"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "3",
+        "stop": "4C49804674904130"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "4",
+        "stop": "8864CF7D3E4B1EF6"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "5",
+        "stop": "3CB94742E4B5E3E5"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "6",
+        "stop": "33033960343A57A8"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "7",
+        "stop": "E37FF663075361FE"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "8",
+        "stop": "4850531F57582BD9"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "9",
+        "stop": "1C02C4A92902FE95"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "10",
+        "stop": "9C1D2401E1E06544"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "11",
+        "stop": "3FB80081AB2FF6FB"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "12",
+        "stop": "BB172B3A5DAC85A4"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "13",
+        "stop": "661FEE32A0D73EB0"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "14",
+        "stop": "8815F901477E6435"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "15",
+        "stop": "20915DF05723C615"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "16",
+        "stop": "6C15579CA43DF72E"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "17",
+        "stop": "EB3A1D751C96E053"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "18",
+        "stop": "F0AC02C6C94078C4"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "19",
+        "stop": "A0FDF34B2D278750"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "20",
+        "stop": "951CE3B3EB98BA3A"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "21",
+        "stop": "DB6981B82045B45C"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "22",
+        "stop": "ACE23D880D07ABB1"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "23",
+        "stop": "1DA57A1376E99AC6"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "24",
+        "stop": "964AA1DCAAD06512"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "25",
+        "stop": "D237B30F94B6065D"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "26",
+        "stop": "7D025E77F4B35266"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "27",
+        "stop": "EE3B5ABCB87027E7"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "1",
+        "seq": "28",
+        "stop": "CA866CBB3EC92B9F"
+      }
+    ],
+    "upstream_stop": null,
+    "interval_minutes": null,
+    "estimated_interval_minutes": 4,
+    "estimate_note": "Research parameter, not measured running time or official timetable",
+    "source_url": "https://data.etabus.gov.hk/v1/transport/kmb/route-stop/11/inbound/1"
+  },
+  {
+    "provider": "KMB",
+    "route": "11",
+    "direction": "I",
+    "service_type": "2",
+    "stop_id": "593DE4298B444E66",
+    "name_tc": "九龍站,高鐵站 (YT948)",
+    "name_en": "KOWLOON STATION, HIGH SPEED RAIL STATION (YT948)",
+    "dest_tc": "慈雲山(中)",
+    "dest_en": "TSZ WAN SHAN (CENTRAL)",
+    "source_id": "KMB",
+    "verified_from": "official_stop_eta",
+    "received_at": "2026-10-09T13:37:27.496512+00:00",
+    "pattern_stops": [
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "2",
+        "seq": "1",
+        "stop": "593DE4298B444E66"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "2",
+        "seq": "2",
+        "stop": "31072508CEF942C6"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "2",
+        "seq": "3",
+        "stop": "4C49804674904130"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "2",
+        "seq": "4",
+        "stop": "8864CF7D3E4B1EF6"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "2",
+        "seq": "5",
+        "stop": "3CB94742E4B5E3E5"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "2",
+        "seq": "6",
+        "stop": "33033960343A57A8"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "2",
+        "seq": "7",
+        "stop": "E37FF663075361FE"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "2",
+        "seq": "8",
+        "stop": "4850531F57582BD9"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "2",
+        "seq": "9",
+        "stop": "1C02C4A92902FE95"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "2",
+        "seq": "10",
+        "stop": "9C1D2401E1E06544"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "2",
+        "seq": "11",
+        "stop": "3FB80081AB2FF6FB"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "2",
+        "seq": "12",
+        "stop": "BB172B3A5DAC85A4"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "2",
+        "seq": "13",
+        "stop": "661FEE32A0D73EB0"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "2",
+        "seq": "14",
+        "stop": "8815F901477E6435"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "2",
+        "seq": "15",
+        "stop": "20915DF05723C615"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "2",
+        "seq": "16",
+        "stop": "6C15579CA43DF72E"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "2",
+        "seq": "17",
+        "stop": "EB3A1D751C96E053"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "2",
+        "seq": "18",
+        "stop": "F0AC02C6C94078C4"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "2",
+        "seq": "19",
+        "stop": "A0FDF34B2D278750"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "2",
+        "seq": "20",
+        "stop": "951CE3B3EB98BA3A"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "2",
+        "seq": "21",
+        "stop": "DB6981B82045B45C"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "2",
+        "seq": "22",
+        "stop": "ACE23D880D07ABB1"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "2",
+        "seq": "23",
+        "stop": "1DA57A1376E99AC6"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "2",
+        "seq": "24",
+        "stop": "964AA1DCAAD06512"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "2",
+        "seq": "25",
+        "stop": "D237B30F94B6065D"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "2",
+        "seq": "26",
+        "stop": "7D025E77F4B35266"
+      },
+      {
+        "route": "11",
+        "bound": "I",
+        "service_type": "2",
+        "seq": "27",
+        "stop": "CA866CBB3EC92B9F"
+      }
+    ],
+    "upstream_stop": null,
+    "interval_minutes": null,
+    "estimated_interval_minutes": 4,
+    "estimate_note": "Research parameter, not measured running time or official timetable",
+    "source_url": "https://data.etabus.gov.hk/v1/transport/kmb/route-stop/11/inbound/2"
+  }
+]

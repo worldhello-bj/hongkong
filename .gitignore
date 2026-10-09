@@ -1,0 +1,15 @@
+__pycache__/
+.pytest_cache/
+.venv/
+node_modules/
+data/raw/*
+!data/raw/.gitkeep
+data/runtime/
+builds/*
+!builds/.gitkeep
+.env
+*.db
+web/dist/
+
+# Large recorded network previews are reproducible from bundled official snapshots.
+/web/public/preview/network-*.json
