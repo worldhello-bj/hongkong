@@ -1,0 +1,165 @@
+{
+  "bounds": [
+    114.14847910592809,
+    22.260135465325188,
+    114.20095724003887,
+    22.318525691699605
+  ],
+  "feature_count": 58964,
+  "acquired_at": "2026-10-11",
+  "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/0",
+  "join_rule": "Existing region + exact XYZ rounded 1e-8 degrees / 1mm; no new geometric connectors",
+  "counts": {
+    "already_present": 44660,
+    "unresolved_access_hours": 7806,
+    "self_loop": 14,
+    "added_physical": 6482,
+    "disabled": 2
+  },
+  "by_region": {
+    "ADM": 5368,
+    "AUS": 1114
+  },
+  "source_pages": [
+    {
+      "url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/0/query?where=1%3D1&geometry=114.14847910592809%2C22.260135465325188%2C114.20095724003887%2C22.318525691699605&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&f=geojson&outFields=%2A&outSR=4326&returnZ=true&resultRecordCount=3000&resultOffset=0&orderByFields=OBJECTID",
+      "bytes": 2654316,
+      "sha256": "b23624684d31f8d65caf92cc6366c0092eab8bd6f3763bb985cd5e6a9f23d370",
+      "received_at": 1791693224.9082496,
+      "filename": "page-000000.json"
+    },
+    {
+      "url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/0/query?where=1%3D1&geometry=114.14847910592809%2C22.260135465325188%2C114.20095724003887%2C22.318525691699605&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&f=geojson&outFields=%2A&outSR=4326&returnZ=true&resultRecordCount=3000&resultOffset=3000&orderByFields=OBJECTID",
+      "bytes": 2717298,
+      "sha256": "69b1ac2a81e49521b21a4146a707a057e519aec7a15f7e14ee2480bc2a6ec5fb",
+      "received_at": 1791693224.597862,
+      "filename": "page-003000.json"
+    },
+    {
+      "url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/0/query?where=1%3D1&geometry=114.14847910592809%2C22.260135465325188%2C114.20095724003887%2C22.318525691699605&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&f=geojson&outFields=%2A&outSR=4326&returnZ=true&resultRecordCount=3000&resultOffset=6000&orderByFields=OBJECTID",
+      "bytes": 2859039,
+      "sha256": "ad563d23a67a8c0588948d60ac4cd351b3623ce772a15762e6784c58d4317749",
+      "received_at": 1791693224.4251282,
+      "filename": "page-006000.json"
+    },
+    {
+      "url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/0/query?where=1%3D1&geometry=114.14847910592809%2C22.260135465325188%2C114.20095724003887%2C22.318525691699605&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&f=geojson&outFields=%2A&outSR=4326&returnZ=true&resultRecordCount=3000&resultOffset=9000&orderByFields=OBJECTID",
+      "bytes": 2712545,
+      "sha256": "680f93c0e3dc6d7f3ecd358c903f3135d7caf2ac7d1e14c2f2522d1d5601a37c",
+      "received_at": 1791693225.44727,
+      "filename": "page-009000.json"
+    },
+    {
+      "url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/0/query?where=1%3D1&geometry=114.14847910592809%2C22.260135465325188%2C114.20095724003887%2C22.318525691699605&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&f=geojson&outFields=%2A&outSR=4326&returnZ=true&resultRecordCount=3000&resultOffset=12000&orderByFields=OBJECTID",
+      "bytes": 2715499,
+      "sha256": "2ede563d20faaea1678e7c3db64d252a107bd10536f58be0a97c4f7dcb09a670",
+      "received_at": 1791693224.5407283,
+      "filename": "page-012000.json"
+    },
+    {
+      "url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/0/query?where=1%3D1&geometry=114.14847910592809%2C22.260135465325188%2C114.20095724003887%2C22.318525691699605&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&f=geojson&outFields=%2A&outSR=4326&returnZ=true&resultRecordCount=3000&resultOffset=15000&orderByFields=OBJECTID",
+      "bytes": 2692761,
+      "sha256": "b19fdb72cd0961f5da515c594a352a91155a2f5a12312379a11cfc2ec12cef56",
+      "received_at": 1791693225.1915896,
+      "filename": "page-015000.json"
+    },
+    {
+      "url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/0/query?where=1%3D1&geometry=114.14847910592809%2C22.260135465325188%2C114.20095724003887%2C22.318525691699605&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&f=geojson&outFields=%2A&outSR=4326&returnZ=true&resultRecordCount=3000&resultOffset=18000&orderByFields=OBJECTID",
+      "bytes": 2670971,
+      "sha256": "a2b9907b3f4c47e4ddc9c43849c35b4260a73e3de0fe8586a29c35dfc61998db",
+      "received_at": 1791693231.1126347,
+      "filename": "page-018000.json"
+    },
+    {
+      "url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/0/query?where=1%3D1&geometry=114.14847910592809%2C22.260135465325188%2C114.20095724003887%2C22.318525691699605&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&f=geojson&outFields=%2A&outSR=4326&returnZ=true&resultRecordCount=3000&resultOffset=21000&orderByFields=OBJECTID",
+      "bytes": 2695341,
+      "sha256": "689e7ec15682f6086854aec7f1cc8524b87ea143f2e5bff6f3cb2c5b3c012ff0",
+      "received_at": 1791693231.1102722,
+      "filename": "page-021000.json"
+    },
+    {
+      "url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/0/query?where=1%3D1&geometry=114.14847910592809%2C22.260135465325188%2C114.20095724003887%2C22.318525691699605&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&f=geojson&outFields=%2A&outSR=4326&returnZ=true&resultRecordCount=3000&resultOffset=24000&orderByFields=OBJECTID",
+      "bytes": 2693690,
+      "sha256": "be559d37c92d64784131e6688c8c1188ea6ff20c50072fc5d7a2ee450bd60137",
+      "received_at": 1791693230.7420788,
+      "filename": "page-024000.json"
+    },
+    {
+      "url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/0/query?where=1%3D1&geometry=114.14847910592809%2C22.260135465325188%2C114.20095724003887%2C22.318525691699605&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&f=geojson&outFields=%2A&outSR=4326&returnZ=true&resultRecordCount=3000&resultOffset=27000&orderByFields=OBJECTID",
+      "bytes": 2823967,
+      "sha256": "38a4d5593b0fee134fb6c429c48aad9ad5138368b8587ef4f59556fb22cda8c9",
+      "received_at": 1791693230.8378572,
+      "filename": "page-027000.json"
+    },
+    {
+      "url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/0/query?where=1%3D1&geometry=114.14847910592809%2C22.260135465325188%2C114.20095724003887%2C22.318525691699605&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&f=geojson&outFields=%2A&outSR=4326&returnZ=true&resultRecordCount=3000&resultOffset=30000&orderByFields=OBJECTID",
+      "bytes": 2794984,
+      "sha256": "731af946d5349b5e41097d5caf44208538a09256e5ff930fc0748bb4b837d277",
+      "received_at": 1791693231.6528115,
+      "filename": "page-030000.json"
+    },
+    {
+      "url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/0/query?where=1%3D1&geometry=114.14847910592809%2C22.260135465325188%2C114.20095724003887%2C22.318525691699605&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&f=geojson&outFields=%2A&outSR=4326&returnZ=true&resultRecordCount=3000&resultOffset=33000&orderByFields=OBJECTID",
+      "bytes": 2825819,
+      "sha256": "756177a8e8131d7a35d4e08c5095648ec6f19f10aa1e6b2b26b87c4d2e8c769d",
+      "received_at": 1791693231.4142382,
+      "filename": "page-033000.json"
+    },
+    {
+      "url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/0/query?where=1%3D1&geometry=114.14847910592809%2C22.260135465325188%2C114.20095724003887%2C22.318525691699605&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&f=geojson&outFields=%2A&outSR=4326&returnZ=true&resultRecordCount=3000&resultOffset=36000&orderByFields=OBJECTID",
+      "bytes": 2694184,
+      "sha256": "6b93926c83cc12cec8a7920790ef076f065e3a2b7befeac894f0f76d2bef7299",
+      "received_at": 1791693238.409392,
+      "filename": "page-036000.json"
+    },
+    {
+      "url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/0/query?where=1%3D1&geometry=114.14847910592809%2C22.260135465325188%2C114.20095724003887%2C22.318525691699605&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&f=geojson&outFields=%2A&outSR=4326&returnZ=true&resultRecordCount=3000&resultOffset=39000&orderByFields=OBJECTID",
+      "bytes": 2634196,
+      "sha256": "2f44c9c1ce6ae4d91fc977377468e2aad07ec8f5f410b225ad35eeb69c8561cc",
+      "received_at": 1791693237.4085195,
+      "filename": "page-039000.json"
+    },
+    {
+      "url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/0/query?where=1%3D1&geometry=114.14847910592809%2C22.260135465325188%2C114.20095724003887%2C22.318525691699605&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&f=geojson&outFields=%2A&outSR=4326&returnZ=true&resultRecordCount=3000&resultOffset=42000&orderByFields=OBJECTID",
+      "bytes": 2679566,
+      "sha256": "ccfeefbb80d2013b9ca93f6ce1c1a0e511ce12f51a381853e379d58110b4b049",
+      "received_at": 1791693238.0076327,
+      "filename": "page-042000.json"
+    },
+    {
+      "url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/0/query?where=1%3D1&geometry=114.14847910592809%2C22.260135465325188%2C114.20095724003887%2C22.318525691699605&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&f=geojson&outFields=%2A&outSR=4326&returnZ=true&resultRecordCount=3000&resultOffset=45000&orderByFields=OBJECTID",
+      "bytes": 2691685,
+      "sha256": "95aecb8f5feaf416f11f944c312bc9cb831a54c40665252ca1dd56e6c63f00fa",
+      "received_at": 1791693237.6115599,
+      "filename": "page-045000.json"
+    },
+    {
+      "url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/0/query?where=1%3D1&geometry=114.14847910592809%2C22.260135465325188%2C114.20095724003887%2C22.318525691699605&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&f=geojson&outFields=%2A&outSR=4326&returnZ=true&resultRecordCount=3000&resultOffset=48000&orderByFields=OBJECTID",
+      "bytes": 3191651,
+      "sha256": "b8044d59d2b8a30639aeb425d2846f86243e85d885257dbc10afa49abb3acac4",
+      "received_at": 1791693238.797853,
+      "filename": "page-048000.json"
+    },
+    {
+      "url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/0/query?where=1%3D1&geometry=114.14847910592809%2C22.260135465325188%2C114.20095724003887%2C22.318525691699605&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&f=geojson&outFields=%2A&outSR=4326&returnZ=true&resultRecordCount=3000&resultOffset=51000&orderByFields=OBJECTID",
+      "bytes": 2891251,
+      "sha256": "36a5fe82fc455e27f2c80d922253c7eafeb17a53e04c8795f43d9cc84f89c50a",
+      "received_at": 1791693238.014489,
+      "filename": "page-051000.json"
+    },
+    {
+      "url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/0/query?where=1%3D1&geometry=114.14847910592809%2C22.260135465325188%2C114.20095724003887%2C22.318525691699605&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&f=geojson&outFields=%2A&outSR=4326&returnZ=true&resultRecordCount=3000&resultOffset=54000&orderByFields=OBJECTID",
+      "bytes": 2722019,
+      "sha256": "260d562c655cc5e310605f200f3dcbd5de108db92b4a304b8ca62e5fea3b9a1c",
+      "received_at": 1791693245.0404892,
+      "filename": "page-054000.json"
+    },
+    {
+      "url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/0/query?where=1%3D1&geometry=114.14847910592809%2C22.260135465325188%2C114.20095724003887%2C22.318525691699605&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&f=geojson&outFields=%2A&outSR=4326&returnZ=true&resultRecordCount=3000&resultOffset=57000&orderByFields=OBJECTID",
+      "bytes": 1811766,
+      "sha256": "058fa6550af737530bf9b1843ea993f896979ebe6a849d82e62cca980fc4c8fb",
+      "received_at": 1791693244.8211377,
+      "filename": "page-057000.json"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "version": "0c7915bb217539f4",
+  "method": "EXACT_OFFICIAL_XYZ_ENDPOINT_IDENTITY",
+  "rounding": "Existing graph: 1e-8 degrees / 1 mm Z; no additional tolerance",
+  "station_version": "b1e24d8ef9214320",
+  "joins": [
+    {
+      "station_node_id": "KOW:N:128cb17d4fd1c3",
+      "area_node_id": "AUS:N:128cb17d4fd1c3",
+      "coordinates": [
+        114.16082329,
+        22.30474656,
+        4.951
+      ],
+      "region_id": "AUS",
+      "indoor_features": [
+        1001054499
+      ],
+      "outdoor_edges": [
+        "AUS:P:290029414",
+        "AUS:P:290029415"
+      ]
+    },
+    {
+      "station_node_id": "KOW:N:16774291ca5933",
+      "area_node_id": "AUS:N:16774291ca5933",
+      "coordinates": [
+        114.16091339,
+        22.30494777,
+        5.374
+      ],
+      "region_id": "AUS",
+      "indoor_features": [
+        1001054498
+      ],
+      "outdoor_edges": [
+        "AUS:P:290029415",
+        "AUS:P:290029416"
+      ]
+    },
+    {
+      "station_node_id": "KOW:N:1ad104043ec065",
+      "area_node_id": "AUS:N:1ad104043ec065",
+      "coordinates": [
+        114.16069008,
+        22.3044459,
+        5.241
+      ],
+      "region_id": "AUS",
+      "indoor_features": [
+        1001054500
+      ],
+      "outdoor_edges": [
+        "AUS:P:290029414"
+      ]
+    },
+    {
+      "station_node_id": "KOW:N:9e36e1e1968082",
+      "area_node_id": "AUS:N:9e36e1e1968082",
+      "coordinates": [
+        114.16110008,
+        22.30534626,
+        5.506
+      ],
+      "region_id": "AUS",
+      "indoor_features": [
+        1001054497
+      ],
+      "outdoor_edges": [
+        "AUS:P:290029418",
+        "AUS:P:290029419"
+      ]
+    },
+    {
+      "station_node_id": "KOW:N:bd0b1e654c8b7b",
+      "area_node_id": "AUS:N:bd0b1e654c8b7b",
+      "coordinates": [
+        114.16118666,
+        22.30554167,
+        5.174
+      ],
+      "region_id": "AUS",
+      "indoor_features": [
+        1001054719
+      ],
+      "outdoor_edges": [
+        "AUS:P:290029417",
+        "AUS:P:290029418"
+      ]
+    },
+    {
+      "station_node_id": "KOW:N:dac6e58febbfb0",
+      "area_node_id": "AUS:N:dac6e58febbfb0",
+      "coordinates": [
+        114.16219232,
+        22.30682794,
+        5.52
+      ],
+      "region_id": "AUS",
+      "indoor_features": [
+        1001059154
+      ],
+      "outdoor_edges": [
+        "AUS:P:240011477",
+        "AUS:P:290046816"
+      ]
+    },
+    {
+      "station_node_id": "KOW:N:f5d0a36ab9bd27",
+      "area_node_id": "AUS:N:f5d0a36ab9bd27",
+      "coordinates": [
+        114.1613209,
+        22.30584465,
+        6
+      ],
+      "region_id": "AUS",
+      "indoor_features": [
+        1001054496
+      ],
+      "outdoor_edges": [
+        "AUS:P:290029417"
+      ]
+    }
+  ],
+  "excluded_paid_area_edges": 560,
+  "indoor_source": {
+    "url": "https://portal.csdi.gov.hk/csdi-webpage/dataset/landsd_rcd_1742809197336_78665",
+    "attribution": "Map from Lands Department; © Government of the Hong Kong SAR; CSDI Portal",
+    "excluded_segments": {},
+    "node_join_rule": "Exact matching XYZ endpoints; no proximity joins",
+    "paid_area_policy": "Location 3 retained only for station navigation; valid fare access required"
+  },
+  "added_nodes": 829,
+  "added_edges": 1749
+}

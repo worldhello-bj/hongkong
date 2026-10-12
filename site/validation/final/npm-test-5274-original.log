@@ -1,0 +1,283 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> test
+> node --test --test-concurrency=1 tests/navigation/*.test.mjs tests/taxi/*.test.mjs
+
+Taxi public prefix 34 minutes, pickup gap 55 m
+✔ public prefix reaches actual graph node beside pickup, not silently snapped road (4568.307167ms)
+✔ taxi matches real public arrival and explicit curb link; prototype stays scenario-only (772.923521ms)
+✔ in-flight transit Worker is terminated on cancel and next query starts fresh (44.824998ms)
+✔ whole-segment guard rejects water and honors evenodd islands (2.629056ms)
+✔ known disabled edges and explicit physical closures remain barriers (1.008168ms)
+✔ missing or malformed geometry fails closed (0.216514ms)
+✔ 121m ordinary land gap is explicit and timed; no arbitrary100m cut (0.691633ms)
+✔ strict profiles and unknown/blocked geometry never become certified (0.653954ms)
+✔ real rendered Hong Kong water context rejects cross-harbour chords (18.626908ms)
+✔ demo accessibility graph filters known barriers and all closed physical directions (2.269986ms)
+✔ graph filter is cached, source-immutable, and retains all metadata and schedules (0.826164ms)
+✔ ordinary simulation and accessible/luggage pending facilities have explicit non-verified tags (1.107242ms)
+✔ source-graph lookup rejects barriers reintroduced beneath generic walking steps (0.867005ms)
+✔ unused graph barriers do not invalidate the actual safe route (0.18004ms)
+✔ every demo profile rejects disabled or physically closed traversed edges (0.278743ms)
+✔ direct prohibited steps or summary segments cannot be relabelled as accessible (0.306417ms)
+✔ no invented lifts or unresolved official physical source edges (0.286629ms)
+✔ incomplete, missing and blocked journeys never acquire false completion (0.838093ms)
+✔ cached walks reject prohibited or absent source edges and preserve source links (1.203551ms)
+✔ cached legs and geometry both undergo barrier validation, including source aliases (0.534906ms)
+✔ only explicit schematic endpoint access can lack a physical cached source (0.395185ms)
+✔ actual engine chooses a land-safe snap and preserves original coordinates and access time (13.778826ms)
+✔ removed authoritative overlay edges cannot be accepted from a base graph (0.435598ms)
+✔ latest city graph retained rather than old small prototype (1.006105ms)
+✔ strict accessibility remains guarded rather than silently substituting ordinary route (1.630737ms)
+✔ cancellation preserved (0.951174ms)
+Verified real graph route: 27.927807 minutes; walk → escalator → walk → escalator → walk → escalator → walk → wait → rail → walk → escalator → walk → wait → rail → walk → stairs → walk → escalator → walk
+✔ public multimodal engine returns clock-aware journey and actual service anchors (1496.934009ms)
+Same-shore preset: 20.228401 walk → escalator → walk → escalator → walk → wait → rail → walk → escalator → walk → escalator → walk → stairs → stairs → stairs
+✔ same-shore public preset has a complete route in loaded source graph (1220.386485ms)
+✔ expanded data and public selectors retain all original72 test endpoints (2.292368ms)
+✖ tests/navigation/expanded-integration.test.mjs (66386.365027ms)
+✔ opening waits respect traversal, closing, midnight, calendar, destination and horizon (3.569162ms)
+✔ deterministic window oracle exhaustively checks 2000 generated cases (116.005729ms)
+✔ real engine reconstructs paid wait and keeps earliest fast arrival (6.736885ms)
+✔ no-wait node preserves later arrival needed for gate (0.978694ms)
+✔ disabled scheduled edge cannot be reopened by waiting (0.743398ms)
+✔ facility preference preserves earlier expensive state needed before closing (0.68146ms)
+✔ unscheduled route retains support beyond scheduled four-hour horizon (0.492997ms)
+✔ seed42 fleet and complete synthetic polylines stay inside display at0,10min,1h (3465.83714ms)
+✔ requested trip outside fleet showcase retains full route and continuous dropoff (1195.018787ms)
+✔ generic map-picked endpoints allow modeled gaps over40m and keep original selection (2.200367ms)
+✔ interchange shortlist bounded, prefers modeled exits, excludes platform targets (0.581272ms)
+✔ direct taxi includes both endpoint walking connectors, full time and destination name (1.270279ms)
+✔ taxi can be first or last leg, with public journey phase indices preserved (0.457616ms)
+✔ routing branches stay bounded while completed work releases next branch (21.238336ms)
+✔ preference-aware reverse edge bound never exceeds any realizable profile/ride-state cost (9.849233ms)
+✔ admissible A* equals full state/time Dijkstra for all five profiles, opening waits, lift continuity, paid/rail state and zero edges (190.19846ms)
+✔ same OD has a genuine weighted middle ground without forcing taxi (2.605557ms)
+✔ price sensitivity is monotonic, stable and independent of dominated outliers (2.043697ms)
+✔ wait burden adds no clock time and unknown fares never look free (0.307882ms)
+✔ same pricing model includes distance and declared cross-harbour assumption (1.44517ms)
+✔ shortlist includes real bus and tram stops with directional boarding/alighting (1.091193ms)
+✔ planner composes first and last mile at actual arrival clocks and keeps direct candidate (3.19644ms)
+✔ unsafe road links and cancelled computation never emit phantom routes (0.299225ms)
+✔ unmodeled Tsuen Wan line is a contextual reference, never a made-up navigable connection (0.545887ms)
+✔ luggage carrying is explicitly confirmed before any taxi reservation or navigation (5.076252ms)
+✔ 75m modeled bend preserves source XYZ and does not touch known stairs/escalators (6.102938ms)
+✔ wrong elevation, missing source anchors, and a new crossing closure cannot create a modeled connection (0.569802ms)
+✔ actual small source path retains original C1, follows full modeled bends then real lift; strict graph remains blocked (14.320781ms)
+✔ overhead source stairs do not block same-level corridor but same-height crossing does (5.631594ms)
+✔ Kowloon exactXYZ joins preserve original area topology and reject approximate joins (132.360041ms)
+✔ E1 to actual outdoor boundary is strictly accessible in both directions (1076.560288ms)
+✔ disabled and wheelchair barrier boundary closures stay rejected (4345.263189ms)
+✔ C1 stairs remain excluded from strict accessibility despite new outdoor links (26.032405ms)
+✔ one-way outdoor boundaries and closed opening hours are preserved (3399.834792ms)
+✔ real cached 18.252m stop access retains its own endpoints after entrance verification downgrade (1.649887ms)
+✔ guidance cannot borrow a later connector sharing ACCESS:destination (0.390752ms)
+✔ internal modeled connector uses local source endpoints, never whole-trip destination, without shifting timetable (1.109878ms)
+✔ missing local intermediate geometry and inconsistent distance both fail closed (0.227409ms)
+✔ idle metro index is released, active query protected, next request safely rebuilds (7.767819ms)
+✔ farther same-height snap replaces nearer wrong-height snap without moving original G-labelled source (12.256963ms)
+✔ absence of same-height approach does not turn G into elevation zero or invent a lift (1.194755ms)
+✔ modeled connector guidance preserves known source XYZ without changing arrival time (0.716913ms)
+✔ all public modes enabled without taxi; no private-car or bike fiction (2.461626ms)
+✔ route chain preserves middle and final taxi, excludes waits (0.446066ms)
+✔ ranking respects actual user priority rather than former mode tab (2.053715ms)
+✔ arrival bridge uses timed service geometry, never a made-up pickup (0.522557ms)
+✔ entry retains detailed routes and Web Workers but exposes exactly two selectors (18.331929ms)
+✔ identical route results collapse; distinct steps remain (1.236613ms)
+✔ two policy controls render and preserve facility/date preferences (4.434712ms)
+✖ user-requested calculation cap removal retains cancel and progress (3.939927ms)
+✔ all five UI preferences have explicit distinct semantics on a microscopic network (9.566851ms)
+✔ paid waiting cannot falsely dominate a later cheaper facility state (0.343943ms)
+✔ luggage is distinct from wheelchair and known luggage bans remain hard (2.342262ms)
+✔ actual S1 publishes modeled route, defers heavy walk behind comparisons, and rejects cancelled refinements (8.418281ms)
+✔ over100 navigation walking segments compact only pricing input (2.520696ms)
+✔ pricing failure does not mutate or invalidate the journey (0.299702ms)
+✔ heavy graph owners serialize and previous worker is released before the next allocation (14.765635ms)
+✔ cancellation releases current graph owner and prevents queued queries starting (1.952265ms)
+✔ bounded finite weights, corrupt persistence recovery and reset preserve preset defaults (3.250688ms)
+✔ cached geometry is reused but every adjusted score and winner is recomputed (0.606268ms)
+✔ compact collapsed panel exposes exact formula, units and route-level production contributions (0.738023ms)
+PASS original-endpoint detour accessible false 13 金鐘鐵路站升降機
+PASS original-endpoint detour accessible true 13 金鐘鐵路站升降機
+PASS original-endpoint detour luggage false 8 undefined
+PASS original-endpoint detour luggage true 8 金鐘鐵路站升降機
+PASS explicit alternative selection, origin preservation, stale data and cancellation guards
+PASS detour opening-hours exclusion
+PASS overlay safety precedence disabled
+PASS overlay safety precedence wheelchair_barrier
+PASS explicit closure is not overwritten
+✔ tests/navigation/station-alternatives.test.mjs (82046.036186ms)
+PASS HUH:portal:B2-lift -> HUH:platform-area:EAL luggage 10 minutes
+PASS HUH:portal:B2-lift -> HUH:platform-area:EAL accessible 13 minutes
+PASS HUH:platform-area:EAL -> HUH:portal:B2-lift luggage 13 minutes
+PASS HUH:platform-area:EAL -> HUH:portal:B2-lift accessible 13 minutes
+PASS HUH:portal:B2-lift -> HUH:platform-area:TML luggage 10 minutes
+PASS HUH:portal:B2-lift -> HUH:platform-area:TML accessible 12 minutes
+PASS HUH:platform-area:TML -> HUH:portal:B2-lift luggage 12 minutes
+PASS HUH:platform-area:TML -> HUH:portal:B2-lift accessible 12 minutes
+PASS KOW:portal:E1 -> KOW:platform-area:TCL luggage 8 minutes
+PASS KOW:portal:E1 -> KOW:platform-area:TCL accessible 8 minutes
+PASS KOW:platform-area:TCL -> KOW:portal:E1 luggage 8 minutes
+PASS KOW:platform-area:TCL -> KOW:portal:E1 accessible 8 minutes
+PASS inaccessible lift safety guard: disabled
+PASS inaccessible lift safety guard: barrier
+PASS lift safety guard: ineligible
+PASS lift safety guard: closed-hours
+PASS lift safety guard: direction
+PASS stair policy accessible
+PASS stair policy luggage
+✔ tests/navigation/station-endpoints.test.mjs (13304.448514ms)
+PASS actual HUH identity route 11 70 minutes
+PASS actual HUH identity route 15 53 minutes
+PASS actual HUH identity route 21 28 minutes
+PASS actual HUH identity route 25 33 minutes
+✔ tests/navigation/station-identity-engine.test.mjs (18814.526718ms)
+✔ HUH A3 same official amenity canonicalizes obsolete area anchor (3.977589ms)
+✔ different feature, station, source height, nearby node and absent identity are not conflated (402.049874ms)
+✔ bundle patches are narrow, idempotent and fail closed on anchor drift (1.309519ms)
+✔ exact HUH B2 lift and D6 can search existing A3 stop via station graph (2.728559ms)
+✔ fleet display region fits entirely within restored geographic background (1.26199ms)
+✔ viewport culling uses the map projection and leaves vehicle positions unchanged (1.236827ms)
+✔ extended road context renders original polylines, distinguishes tunnels and caches stable views (0.804706ms)
+✔ taxi toggle false respects ordinary (1.887216ms)
+✔ taxi toggle true respects ordinary (0.458656ms)
+✔ taxi toggle false respects luggage (0.134724ms)
+✔ taxi toggle true respects luggage (0.345871ms)
+✔ taxi toggle false respects escalator (0.115066ms)
+✔ taxi toggle true respects escalator (0.084878ms)
+✔ taxi toggle false respects lift (0.087093ms)
+✔ taxi toggle true respects lift (0.072216ms)
+✔ taxi toggle false respects accessible (0.167814ms)
+✔ taxi toggle true respects accessible (2.407799ms)
+✔ luggage quote carries capacity confirmation without changing geometry, time, or public evidence (2.991706ms)
+✔ only existing bus/tram stops, exact coordinate identity and deduplicated route directions (1.591795ms)
+✔ wide view clusters without losing stops; zoom gives individual exact positions (2.262463ms)
+✔ card shows existing route, source, actions and escapes untrusted names (0.379638ms)
+✔ controller single stop, keyboard, endpoint actions, close, clustering and cached redraw (1.499517ms)
+✔ large touch targets, distinct icon shapes, limited labels and source integration (2.7078ms)
+TEST_RUNTIME 5274ca0d14f4
+IMPORT OK
+PROGRESS 0 [] []
+ENDPOINT_DIAGNOSTIC {"id":"transit","first":[114.16624518,22.27888752,6],"last":[114.16605219,22.30508756,5.6],"totalMinutes":28}
+EDGE_AUDIT {"id":"transit","usedCount":96,"forbidden":[],"modeled":[],"sourceIds":["ADM:I:1000928688","ADM:I:1000928678","ADM:I:1000928689","ADM:I:1000928690:r","ADM:I:1000928692:r","ADM:I:1000928681:r","ADM:I:1000859578","ADM:I:1000859620","ADM:I:1000859629:r","ADM:I:1000859487","ADM:I:1000861507:r","ADM:I:1000859928","ADM:I:1000860634","ADM:I:1000860281","ADM:I:1001098066","ADM:I:1000860630","ADM:I:1000860699","ADM:I:1001098144","ADM:I:1000859944:r","ADM:I:1000859943:r","ADM:I:1000860294:r","ADM:I:1000859923:r","ADM:I:1000860963:r","ADM:I:1000860731:r","ADM:I:1000860840","ADM:I:1000860934","ADM:I:1000860935","ADM:I:1000860838","ADM:I:1000860937:r","ADM:I:1000860767","ADM:I:1000862735:r","ADM:I:1000862218","WAIT:RAIL:ADM:EAL:39834.63168","RIDE:scheduled:RAIL:EAL:0:39840:RAIL:ADM:EAL:RAIL:HUH:EAL","HUH:I:1000859034:r","HUH:I:1000859084:r","HUH:I:1000859033:r","HUH:I:1000859032:r","HUH:I:1000859145","HUH:I:1000859113:r","HUH:I:1000858937","HUH:I:1000859256","HUH:I:1000857626:r","HUH:I:1000857792","HUH:I:1000857897","HUH:I:1000857785","HUH:I:1000859405:r","HUH:I:1000857734:r","HUH:I:1000859404:r","HUH:I:1000859403:r","HUH:I:1000859402:r","WAIT:RAIL:HUH:TML:40360.96536","RIDE:scheduled:RAIL:TML:0:40620:RAIL:HUH:TML:RAIL:AUS:TML","AUS:I:1000546480:r","AUS:I:1000546537:r","AUS:I:1000546479:r","AUS:I:1000546536:r","AUS:I:1000546478:r","AUS:I:1000546535:r","AUS:I:1000546477:r","AUS:I:1000546560","AUS:I:1000546521","AUS:I:1000546561","AUS:I:1000546522","AUS:I:1000546455","AUS:I:1000546528:r","AUS:I:1000546453:r","AUS:I:1000546412","AUS:I:1000547157","AUS:I:1000546623:r","AUS:I:1000546740:r","AUS:I:1000546649:r","AUS:I:1000546648:r","AUS:I:1000546678:r","AUS:I:1001098892:r","AUS:I:1000546647:r","AUS:I:1001098870:r","AUS:I:1000546646:r","AUS:I:1000546645:r","AUS:I:1000546644","AUS:I:1000546629:r","AUS:I:1000546685","AUS:I:1000546796:r","AUS:I:1000546822","AUS:I:1000546697","AUS:I:1000546612","AUS:I:1000546841","AUS:I:1000546861","AUS:I:1000546947","AUS:I:1001098906","AUS:I:1000546906","AUS:I:1000546891","AUS:I:1000546892","AUS:I:1000546893","AUS:I:1000546911:r","AUS:I:1000546941:r","AUS:I:1000546905","AUS:I:1000546876","AUS:I:1000546873","AUS:I:1000546938:r"]}
+MEMORY_DIAGNOSTIC {"memory":{"rss":1315422208,"heapTotal":473075712,"heapUsed":376068760,"external":203241065,"arrayBuffers":25940848},"maxRSS":1316420}
+FINAL_DIAGNOSTIC {"warmStart":false,"startedMonotonic":5929.10188,"startedAt":"2026-10-12T13:17:17.033Z","origin":"金钟站 E2出口","destination":"柯士甸站 B2出口","stages":[{"id":"public-fast","durationMs":5133,"status":"ready","cached":false}],"firstResultMs":5147,"totalMs":null} [ [ 'transit', true, '演示班次联程 · 11:00 出发' ] ] 已找到可用方案，可直接选择；其他组合继续计算。
+Full entry + real Worker + rendered public route passed: metadata stalled; legacy stored taxi-only policy and navigation hash
+✔ full entry and Worker remain usable when optional metadata stalls (11980.867496ms)
+TEST_RUNTIME 5274ca0d14f4
+IMPORT OK
+PROGRESS 0 [] []
+ENDPOINT_DIAGNOSTIC {"id":"transit","first":[114.15011,22.28776],"last":[114.18096,22.27931],"totalMinutes":29}
+EDGE_AUDIT {"id":"transit","usedCount":0,"forbidden":[],"modeled":[],"sourceIds":["WAIT:td:99211:39600","RIDE:td:4005:2:287:0:39868:td:99211:td:99227"]}
+MEMORY_DIAGNOSTIC {"memory":{"rss":1235419136,"heapTotal":411947008,"heapUsed":320477160,"external":178114147,"arrayBuffers":25189426},"maxRSS":1206464}
+FINAL_DIAGNOSTIC {"warmStart":false,"startedMonotonic":2997.985515,"startedAt":"2026-10-12T13:17:26.081Z","origin":"港澳码头 (东行方向)","destination":"坚拿道西 (东行方向)","stages":[{"id":"public-fast","durationMs":4193,"status":"ready","cached":false}],"firstResultMs":4200,"totalMs":null} [ [ 'transit', true, '演示班次联程 · 11:00 出发' ] ] 已找到可用方案，可直接选择；其他组合继续计算。
+Full entry + real Worker + rendered public route passed: block stalled; legacy stored taxi-only policy and navigation hash
+✔ full entry and Worker remain usable when optional block stalls (7893.001092ms)
+TEST_RUNTIME 5274ca0d14f4
+IMPORT OK
+PROGRESS 0 [] []
+ENDPOINT_DIAGNOSTIC {"id":"transit","first":[114.17405457978654,22.312218704929617],"last":[114.1750543331201,22.302091394706313],"totalMinutes":34}
+EDGE_AUDIT {"id":"transit","usedCount":165,"forbidden":[],"modeled":[],"sourceIds":["ACCESS:origin","AUS:P:240009493:r","AUS:P:240009699","AUS:P:240009638","AUS:P:240009532","AUS:P:240009595:r","AUS:P:240009722","AUS:P:240009227","AUS:P:240009653","AUS:P:240009358:r","AUS:P:240009440:r","AUS:P:240009207:r","AUS:P:240009549","AUS:P:240009309:r","AUS:P:240009642:r","AUS:P:240009147:r","AUS:P:240009083:r","AUS:P:240009220:r","AUS:P:240009537:r","AUS:P:240009294:r","AUS:P:240009193:r","AUS:P:240009217","AUS:P:240009562","AUS:P:240009382","AUS:P:240009697","AUS:P:240009717","AUS:P:240009395","AUS:P:240009510","AUS:P:240009151","AUS:P:240009842","AUS:P:240009843","AUS:P:240009844","AUS:P:240009845","AUS:P:240009846","AUS:P:240009847","AUS:P:240010486","AUS:P:240009523","AUS:P:240010983","AUS:P:240009272","AUS:P:240010287","AUS:P:240010520:r","AUS:P:240010521:r","AUS:P:240012929:r","AUS:P:240012930:r","AUS:P:240012931:r","AUS:P:240012932:r","AUS:P:240012933:r","AUS:P:240012711","AUS:P:240012713","AUS:P:240012712","AUS:P:240013071:r","AUS:P:240013072:r","AUS:P:240012834","AUS:P:240012836","AUS:P:240012835","AUS:P:240013061:r","AUS:P:240013062:r","AUS:P:240013060:r","AUS:P:240012489","AUS:P:240012491","AUS:P:240022581","AUS:P:240012490","AUS:P:240013429:r","AUS:P:240013430:r","AUS:P:240022582:r","AUS:P:240012031:r","AUS:P:240013601:r","AUS:P:240012677","AUS:P:240012678","AUS:P:240013371","AUS:P:240012676","AUS:P:240012675","AUS:P:240011959:r","AUS:P:240011824:r","AUS:P:240012348:r","AUS:P:240012349:r","AUS:P:240012350:r","AUS:P:240012547","AUS:P:240013455","AUS:P:240012549","AUS:P:240012548","AUS:P:240013288:r","AUS:P:240021583:r","AUS:P:240011960:r","AUS:P:240013580:r","AUS:P:240012408:r","AUS:P:240012407:r","AUS:P:240011815:r","AUS:P:240013578:r","AUS:P:240012613","AUS:P:240012615","AUS:P:240012614","AUS:P:240013579:r","AUS:P:240011629:r","AUS:P:240013458:r","AUS:P:240013459:r","AUS:P:240011630","AUS:P:240011940:r","AUS:P:240021581:r","AUS:P:240012382","AUS:P:240012384","AUS:P:240012383","AUS:P:240021582","AUS:P:240012234","AUS:P:240013466:r","AUS:P:240011781:r","AUS:P:240013467:r","AUS:P:240021580:r","AUS:P:240014793","AUS:P:240014795","AUS:P:240014794","AUS:P:240015402:r","AUS:P:240014334:r","AUS:P:240015363:r","AUS:P:240014690","AUS:P:240014691","AUS:P:240014689","AUS:P:240021579:r","AUS:P:240014147:r","AUS:P:240014679","AUS:P:240015274","AUS:P:240014681","AUS:P:240015275","AUS:P:240014680","AUS:P:240014338:r","AUS:P:240015431:r","AUS:P:240014586","AUS:P:240014587","AUS:P:240014585","AUS:P:240014577:r","AUS:P:240014578:r","AUS:P:240014579:r","AUS:P:240014580:r","AUS:P:240022593:r","AUS:P:240014581:r","AUS:P:240014525:r","AUS:P:240015246:r","AUS:P:240015247:r","AUS:P:240014526:r","AUS:P:240014294:r","AUS:P:240015237:r","AUS:P:240014588","AUS:P:240014589","AUS:P:240015241","AUS:P:240015240","AUS:P:240015048","AUS:P:240015047","AUS:P:240014903","AUS:P:240014904","AUS:P:240015925","AUS:P:240016785","AUS:P:240016786","AUS:P:240016787","AUS:P:240016788","AUS:P:240016789","AUS:P:240016790","AUS:P:240016791","AUS:P:240016792","AUS:P:240016733","AUS:P:240016732","AUS:P:240016008","AUS:P:240016184","AUS:P:240016236","AUS:P:240016227","AUS:P:240015853","AUS:P:240016016","ACCESS:destination"]}
+MEMORY_DIAGNOSTIC {"memory":{"rss":1033093120,"heapTotal":405295104,"heapUsed":253949080,"external":9106331,"arrayBuffers":9801516},"maxRSS":1251964}
+FINAL_DIAGNOSTIC {"warmStart":false,"startedMonotonic":7609.593979,"startedAt":"2026-10-12T13:17:38.584Z","origin":"地图所选地点","destination":"地图所选地点","stages":[{"id":"public-fast","durationMs":8133,"status":"ready","cached":false}],"firstResultMs":8138,"totalMs":null} [ [ 'transit', true, '演示班次联程 · 08:00 出发' ] ] 已找到可用方案，可直接选择；其他组合继续计算。
+Full entry + real Worker + rendered public route passed: land stalled; legacy stored taxi-only policy and navigation hash
+✔ full entry and Worker remain usable when optional land stalls (18035.981766ms)
+TEST_RUNTIME 5274ca0d14f4
+IMPORT OK
+PROGRESS 0 [] []
+PROGRESS 10 [{"id":"public-fast","durationMs":12714,"status":"needs-indoor-refinement","cached":false}] []
+ENDPOINT_DIAGNOSTIC {"id":"transit-demo-review","first":[114.19220183840672,22.26356158940252],"last":[114.15065798999056,22.2703634423568],"totalMinutes":113}
+EDGE_AUDIT {"id":"transit-demo-review","usedCount":413,"forbidden":[],"modeled":[],"sourceIds":["ACCESS:origin","ADM:P:290023186:r","ADM:P:280011781:r","ADM:P:280011836:r","ADM:P:280011762:r","ADM:P:280011811:r","ADM:P:280012036","ADM:P:280011782","ADM:P:280012035","ADM:P:280011840:r","ADM:P:280011821:r","ADM:P:280011989:r","ADM:P:280011988:r","ADM:P:280011987:r","ADM:P:280012021","ADM:P:280012020","ADM:P:280012022","ADM:P:280011843","ADM:P:280011767:r","ADM:P:280011976:r","ADM:P:280011977:r","ADM:P:280011723","ADM:P:280011803","ADM:P:280013940","ADM:P:280011970","ADM:P:280011969","ADM:P:280012228","ADM:P:280012229","ADM:P:280012230","ADM:P:280012192","ADM:P:280013932","ADM:P:280012209","ADM:P:280012208","ADM:P:280012207","ADM:P:280012167:r","ADM:P:280013892:r","ADM:P:280013844:r","ADM:P:280011722","ADM:P:280011929","ADM:P:280011928","ADM:P:280011926","ADM:P:280011927","ADM:P:280011930:r","ADM:P:280011931:r","ADM:P:280011687:r","ADM:P:280011876","ADM:P:280011982","ADM:P:280012069","ADM:P:280011825:r","ADM:P:280011925:r","ADM:P:280011924:r","ADM:P:280011923:r","ADM:P:280011922:r","ADM:P:280012073:r","ADM:P:280011706:r","ADM:P:280011878:r","ADM:P:280011877:r","ADM:P:280012072:r","ADM:P:280011699:r","ADM:P:280012008:r","ADM:P:280012009:r","ADM:P:280012007:r","ADM:P:280011913:r","ADM:P:280011916:r","ADM:P:280011915:r","ADM:P:280011914:r","ADM:P:280011839:r","ADM:P:280011820:r","ADM:P:280011950:r","ADM:P:280011949:r","ADM:P:280011948:r","ADM:P:280011947:r","ADM:P:280011946:r","ADM:P:280011945:r","ADM:P:280013639:r","ADM:P:280013638:r","ADM:P:280011983:r","ADM:P:280011984:r","ADM:P:280013171:r","ADM:P:280013730:r","ADM:P:280013170:r","ADM:P:280013091:r","ADM:P:280013731:r","ADM:P:280012842:r","ADM:P:280013916:r","ADM:P:280013178:r","ADM:P:280013636:r","ADM:P:280013177:r","ADM:P:280013915","ADM:P:280012919","ADM:P:280013013","ADM:P:280013280:r","ADM:P:280013658:r","ADM:P:280013279:r","ADM:P:280013278:r","ADM:P:280013076:r","ADM:P:280013277:r","ADM:P:280013912","ADM:P:280013084","ADM:P:280013352","ADM:P:280013351","ADM:P:280013350","ADM:P:280013349","ADM:P:280013383","ADM:P:280013384","ADM:P:999000447","ADM:P:999000450","ADM:P:999000449","ADM:P:280013022","ADM:P:280013263:r","ADM:P:280012852:r","ADM:P:280013262:r","ADM:P:280013116","ADM:P:280013113","ADM:P:280013257","ADM:P:280012974","ADM:P:280013256","ADM:P:280013794","ADM:P:280013795","ADM:P:280013793","ADM:P:280013792","ADM:P:280013801","ADM:P:280013800","ADM:P:280013799","ADM:P:280013252","ADM:P:280013039:r","ADM:P:280013250:r","ADM:P:280013030:r","ADM:P:280013249:r","ADM:P:280013251","ADM:P:280012914","ADM:P:280012970","ADM:P:280013245:r","ADM:P:280013807:r","ADM:P:280013806:r","ADM:P:280013805:r","ADM:P:280013808","ADM:P:280012885","ADM:P:280013241","ADM:P:280012875","ADM:P:280013232","ADM:P:280013104","ADM:P:280013827","ADM:P:280013826","ADM:P:280013825","ADM:P:280013824","ADM:P:280013228:r","ADM:P:280012827:r","ADM:P:280012652:r","ADM:P:280013910:r","ADM:P:280012462:r","ADM:P:280012381:r","ADM:P:280012493:r","ADM:P:280012649:r","ADM:P:280012279:r","ADM:P:280012648:r","ADM:P:280013909:r","ADM:P:280012370:r","ADM:P:280012473:r","ADM:P:280012635:r","ADM:P:280012517:r","ADM:P:280012634:r","ADM:P:280012520:r","ADM:P:280012307:r","ADM:P:280012287:r","ADM:P:280012628:r","ADM:P:280012633","ADM:P:280012300","ADM:P:280012632","ADM:P:280013907","ADM:P:280012463","ADM:P:280012480","ADM:P:280012564:r","ADM:P:280012563:r","ADM:P:280012369:r","ADM:P:280013894:r","ADM:P:280013893:r","ADM:P:280012583:r","ADM:P:280012752:r","ADM:P:280012582:r","ADM:P:280012581","ADM:P:280012764","ADM:P:280012580","ADM:P:999000424","ADM:P:280010682","ADM:P:280010513","ADM:P:280010320","ADM:P:280010321","ADM:P:280010466","ADM:P:280010683","ADM:P:280010177","ADM:P:280010366","ADM:P:280010365","ADM:P:280009898:r","ADM:P:280010364:r","ADM:P:280009825:r","ADM:P:280010363:r","ADM:P:280011004:r","ADM:P:280010362:r","ADM:P:280010266","ADM:P:280009809","ADM:P:280010753:r","ADM:P:280010752:r","ADM:P:280010460:r","ADM:P:280010293:r","ADM:P:280014715:r","ADM:P:280009851:r","ADM:P:280010271","ADM:P:280010480","ADM:P:280010652","ADM:P:280010269:r","ADM:P:280010497:r","ADM:P:280010268:r","ADM:P:280010267:r","ADM:P:280010651:r","ADM:P:280010064","ADM:P:280010317","ADM:P:280010316","ADM:P:280010315","ADM:P:280003483","ADM:P:280003196","ADM:P:999001757:r","ADM:P:999001780","ADM:P:999001770","ADM:P:280003961","ADM:P:280003962","ADM:P:280002863","ADM:P:280003065:r","ADM:P:280003960:r","ADM:P:280003286:r","ADM:P:280003150:r","ADM:P:280003051:r","ADM:P:280003964:r","ADM:P:280003963:r","ADM:P:280003965:r","ADM:P:280003010:r","ADM:P:280003966:r","ADM:P:280003301","ADM:P:280003967","ADM:P:280003053","ADM:P:280003968","ADM:P:280003970:r","ADM:P:280014211:r","ADM:P:280004075:r","ADM:P:280014212:r","ADM:P:280003969:r","ADM:P:280004124:r","ADM:P:280004122:r","ADM:P:280003976:r","ADM:P:280004076:r","ADM:P:280000389:r","ADM:P:280000330:r","ADM:P:290035365","ACCESS:destination","WAIT:td:99125:32061.26532","RIDE:td:4005:1:287:0:32092:td:99125:td:99135","ADM:P:250012989","ADM:P:250012988","ADM:P:250013329","ADM:P:250012746","ADM:P:250012745","ADM:P:250012090","ADM:P:250011652","ADM:P:250013080","ADM:P:290062196","ADM:P:290062195","ADM:P:250011236","ADM:P:250012067","ADM:P:250013327","ADM:P:250012317","ADM:P:250012316","ADM:P:250012315:r","ADM:P:250013141:r","ADM:P:290062230:r","ADM:P:290062229:r","ADM:P:250013296:r","ADM:P:250011211:r","ADM:P:250012368","ADM:P:250012370","ADM:P:250012369","ADM:P:250011584:r","ADM:P:250013294:r","ADM:P:250011136:r","ADM:P:290047578:r","ADM:P:250012486:r","ADM:P:250012488:r","ADM:P:250012487:r","ADM:P:250012156","ADM:P:250012547:r","ADM:P:250012546:r","ADM:P:250012545:r","ADM:P:250012615","ADM:P:250012614","ADM:P:250012613","ADM:P:250011938","ADM:P:250012112","ADM:P:250012185:r","ADM:P:250011629","ADM:P:250012979","ADM:P:250012980","ADM:P:250012243","ADM:P:250011497","ADM:P:250013173","ADM:P:250012246","ADM:P:250012775","ADM:P:250012776","ADM:P:250012774","ADM:P:250013171","ADM:P:250012216","ADM:P:250012234","ADM:P:290066703","ADM:P:250012233","ADM:P:250012232","ADM:P:250013169","ADM:P:290062139","ADM:P:290066704","ADM:P:250012267","ADM:P:250013421","ADM:P:250011837","ADM:P:250012270","ADM:P:250012271","ADM:P:250012272","ADM:P:290066706","ADM:P:290066711","ADM:P:250012854","ADM:P:250012856","ADM:P:250012855","ADM:P:999000189","ADM:P:250012599","ADM:P:250012601","ADM:P:250012600","ADM:P:250013156:r","ADM:P:250011769:r","ADM:P:250012375","ADM:P:250012376","ADM:P:290023078:r","ADM:P:290023077","ADM:P:250011431","ADM:P:250012235","ADM:P:250010243","ADM:P:250010242","ADM:P:250010176","ADM:P:250010785","ADM:P:250010981","ADM:P:250010982","ADM:P:250009639","ADM:P:250009568","ADM:P:290061973","ADM:P:250009736","ADM:P:250010320","ADM:P:250010321","ADM:P:250010319","ADM:P:250010985","ADM:P:250010986","ADM:P:250009919","ADM:P:250010987","ADM:P:250010308","ADM:P:250010310","ADM:P:250014203","ADM:P:250010309","ADM:P:250010316","ADM:P:250010315","ADM:P:250010313:r","ADM:P:250010314:r","ADM:P:250010989:r","ADM:P:250010988:r","ADM:P:250009545:r","ADM:P:250010824:r","ADM:P:250010305:r","ADM:P:250010306:r","ADM:P:250010307:r","ADM:P:250010956:r","ADM:P:250010955:r","ADM:P:250010954:r","ADM:P:250010953:r","ADM:P:250010952:r","ADM:P:250010951:r","ADM:P:250009657:r","ADM:P:250010779:r","ADM:P:250010949:r","ADM:P:250010950:r","ADM:P:250010780:r","ADM:P:250010948:r","ADM:P:250010947:r","ADM:P:250010792:r","ADM:P:290061984:r","ADM:P:290061985:r","ADM:P:250019419:r","ADM:P:250019420:r","ADM:P:250009836:r","ADM:P:250010975:r","ADM:P:250010976:r","ADM:P:250009884:r","ADM:P:250009478:r","ADM:P:250010389:r","ADM:P:250010391:r","ADM:P:250010390:r","ADM:P:250010312:r","ADM:P:250010311:r","ADM:P:250019445:r","ADM:P:250019444:r","ADM:P:250019443:r","ADM:P:250019442:r","ADM:P:250019441:r","ADM:P:250019440:r","ADM:P:250014534","ADM:P:250014514","ADM:P:250010759","ADM:P:250010661","ADM:P:250014530","ADM:P:250019500","ADM:P:250014708","ADM:P:250014700","ADM:P:250014943:r","ADM:P:250015163","ADM:P:250015164","ADM:P:250014517"]}
+MEMORY_DIAGNOSTIC {"memory":{"rss":1371934720,"heapTotal":553668608,"heapUsed":420592328,"external":203245115,"arrayBuffers":25940848},"maxRSS":1375132}
+FINAL_DIAGNOSTIC {"warmStart":false,"startedMonotonic":22065.302709,"startedAt":"2026-10-12T13:18:11.089Z","origin":"地图所选地点","destination":"地图所选地点","stages":[{"id":"public-fast","durationMs":12714,"status":"needs-indoor-refinement","cached":false},{"id":"demo-public-fast","durationMs":7577,"status":"modeled"},{"id":"demo-fallback","durationMs":7848,"status":"modeled"}],"firstResultMs":20589,"totalMs":null} [
+  [
+    'transit-demo-review',
+    true,
+    '演示路线已连通；无障碍设施与接入条件待确认，不能视为已核验无障碍路线。'
+  ]
+] 已找到可用方案，可直接选择；其他组合继续计算。
+Full entry + real Worker + rendered public route passed: accessible stalled; legacy stored taxi-only policy and navigation hash
+✔ full entry and Worker remain usable when optional accessible stalls (43746.485098ms)
+TEST_RUNTIME 5274ca0d14f4
+IMPORT OK
+PROGRESS 0 [] []
+ENDPOINT_DIAGNOSTIC {"id":"transit","first":[114.16624518,22.27888752,6],"last":[114.16605219,22.30508756,5.6],"totalMinutes":28}
+EDGE_AUDIT {"id":"transit","usedCount":96,"forbidden":[],"modeled":[],"sourceIds":["ADM:I:1000928688","ADM:I:1000928678","ADM:I:1000928689","ADM:I:1000928690:r","ADM:I:1000928692:r","ADM:I:1000928681:r","ADM:I:1000859578","ADM:I:1000859620","ADM:I:1000859629:r","ADM:I:1000859487","ADM:I:1000861507:r","ADM:I:1000859928","ADM:I:1000860634","ADM:I:1000860281","ADM:I:1001098066","ADM:I:1000860630","ADM:I:1000860699","ADM:I:1001098144","ADM:I:1000859944:r","ADM:I:1000859943:r","ADM:I:1000860294:r","ADM:I:1000859923:r","ADM:I:1000860963:r","ADM:I:1000860731:r","ADM:I:1000860840","ADM:I:1000860934","ADM:I:1000860935","ADM:I:1000860838","ADM:I:1000860937:r","ADM:I:1000860767","ADM:I:1000862735:r","ADM:I:1000862218","WAIT:RAIL:ADM:EAL:39834.63168","RIDE:scheduled:RAIL:EAL:0:39840:RAIL:ADM:EAL:RAIL:HUH:EAL","HUH:I:1000859034:r","HUH:I:1000859084:r","HUH:I:1000859033:r","HUH:I:1000859032:r","HUH:I:1000859145","HUH:I:1000859113:r","HUH:I:1000858937","HUH:I:1000859256","HUH:I:1000857626:r","HUH:I:1000857792","HUH:I:1000857897","HUH:I:1000857785","HUH:I:1000859405:r","HUH:I:1000857734:r","HUH:I:1000859404:r","HUH:I:1000859403:r","HUH:I:1000859402:r","WAIT:RAIL:HUH:TML:40360.96536","RIDE:scheduled:RAIL:TML:0:40620:RAIL:HUH:TML:RAIL:AUS:TML","AUS:I:1000546480:r","AUS:I:1000546537:r","AUS:I:1000546479:r","AUS:I:1000546536:r","AUS:I:1000546478:r","AUS:I:1000546535:r","AUS:I:1000546477:r","AUS:I:1000546560","AUS:I:1000546521","AUS:I:1000546561","AUS:I:1000546522","AUS:I:1000546455","AUS:I:1000546528:r","AUS:I:1000546453:r","AUS:I:1000546412","AUS:I:1000547157","AUS:I:1000546623:r","AUS:I:1000546740:r","AUS:I:1000546649:r","AUS:I:1000546648:r","AUS:I:1000546678:r","AUS:I:1001098892:r","AUS:I:1000546647:r","AUS:I:1001098870:r","AUS:I:1000546646:r","AUS:I:1000546645:r","AUS:I:1000546644","AUS:I:1000546629:r","AUS:I:1000546685","AUS:I:1000546796:r","AUS:I:1000546822","AUS:I:1000546697","AUS:I:1000546612","AUS:I:1000546841","AUS:I:1000546861","AUS:I:1000546947","AUS:I:1001098906","AUS:I:1000546906","AUS:I:1000546891","AUS:I:1000546892","AUS:I:1000546893","AUS:I:1000546911:r","AUS:I:1000546941:r","AUS:I:1000546905","AUS:I:1000546876","AUS:I:1000546873","AUS:I:1000546938:r"]}
+MEMORY_DIAGNOSTIC {"memory":{"rss":1061785600,"heapTotal":421634048,"heapUsed":307969728,"external":9106331,"arrayBuffers":9801516},"maxRSS":1248240}
+FINAL_DIAGNOSTIC {"warmStart":false,"startedMonotonic":5814.163564,"startedAt":"2026-10-12T13:18:38.586Z","origin":"金钟站 E2出口","destination":"柯士甸站 B2出口","stages":[{"id":"public-fast","durationMs":9090,"status":"ready","cached":false}],"firstResultMs":9103,"totalMs":null} [ [ 'transit', true, '演示班次联程 · 11:00 出发' ] ] 已找到可用方案，可直接选择；其他组合继续计算。
+Full entry + real Worker + rendered public route passed: quote-failure stalled; legacy stored taxi-only policy and navigation hash
+✔ full entry and Worker remain usable when optional quote-failure stalls (16604.650618ms)
+✔ historical URLs resolve inside one app, with safe standalone navigation states (2.751024ms)
+✔ all historical HTML is replaced, retired UI physically removed, shared 3D retained (43.303319ms)
+✔ station and information screens expose unified actions and evidence boundaries (0.755936ms)
+✔ full source shell: tabs, repeated open/close, hash and back/forward stay unified (738.159147ms)
+PASS repeatable seed, fleet limits and varied synthetic previous orders
+PASS bounded road route reaches approximate pickup and dropoff
+PASS quotes preserve previous order, physical car availability, and waits
+PASS one next trip only; old quotes cannot double-book
+PASS all positions and motion segments remain on directed road edges; no teleport or overlap
+PASS graph excludes pedestrian roads and respects one-way/access
+PASS roaming samples random destination routes and honors turn restrictions across segment boundaries
+PASS render sampling never extends paths; explicit preparation keeps a bounded recent window
+PASS urban fleet is distributed across both shores and all four zones
+PASS cross-harbour journeys use all three real road tunnels
+PASS bounded showcase keeps every synthetic position and polyline vertex inside at 0,10min,1hour
+PASS explicit outside passenger trip stays continuous and available at dropoff without boundary teleport
+PASS bounded turn-aware reachable pool does not strand synthetic cars across fixed seeds
+13 taxi test groups passed.
+✔ tests/taxi/roaming.test.mjs (50396.94145ms)
+ℹ tests 127
+ℹ suites 0
+ℹ pass 125
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 371240.318624
+
+✖ failing tests:
+
+test at tests/navigation/expanded-integration.test.mjs:1:1
+✖ tests/navigation/expanded-integration.test.mjs (66386.365027ms)
+  'test failed'
+
+test at tests/navigation/policy.test.mjs:42:1
+✖ user-requested calculation cap removal retains cancel and progress (3.939927ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /runBounded\(\[publicWork,taxiWork,walkWork\],2\)/. Input:
+  
+  'import {scoreParameters,updateScoreParameter,resetScoreParameters,scoreParameterPanel} from "./score-parameters.js";\n' +
+    'import {createRoutingQueue} from "./routing-queue.js";\n' +
+    'import {limitedRailReference} from "./rail-reference.js";\n' +
+    'import {journeyScore,hasPublicAlternative} from "./journey-score.js";\n' +
+    'import {planTaxiCandidates} from "./taxi-candidates.js";\n' +
+    'import {APP_STAGES,STATIONS,validStation,parseNavigationLocation,normalizeAppStage,navigationUrl,primaryAppTab} from "./ui-navigation.js";\n' +
+    'import {stationPanel,informationPanel} from "./ui-content.js";\n' +
+    'import {c as createStationModel} from "./mobile-navigation-DfEsS_7b.js";\n' +
+    'import {createTransitStopLayer} from "./transit-stops.js";\n' +
+    'import {addKowloonModeledCorridor} from "./kow-c1-corridor.js";\n' +
+    'import {taxiPassengerPolicy,annotateTaxiPassengerResult} from "./taxi-policy.js";\n' +
+    'import {annotatePreferenceResult} from "./preference-routing.js";\n' +
+    'import {quoteRouteSafely,simulatedTaxiFareCents} from "./route-quote.js";\n' +
+    'import {createDemoAccessibilityGraph,createDemoWalkLinks,annotateDemoFallback} from "./demo-fallback.js";\n' +
+    'import {publicCoverageRings} from "./public-coverage.js";\n' +
+    'import {evaluateStationEntrances,stationEntrancePanel,applyStationEntranceChoice,annotateStationDetour} from "./station-alternatives.js";\n' +
+    'import {FLEET_DEMO_BOUNDS,boundsCorners,createRoadContext,visibleFleet} from "./taxi-map.js";\n' +
+    'import {nearestPedestrianNode,composeTaxiJourney,nearestRoadPoint,modeledRoadLink,nearestInterchanges,emptyPublicJourney} from "./taxi-bridge.js";\n' +
+    'import {PUBLIC_MODES, SEARCH_VARIANTS, journeyModeChain, rankJourneys as rankBaseJourneys, deduplicateJourneys, publicArrivalAnchors, compatibleWithOverlay, runBounded, addShortDemoConnectors, createModeledConnectorGuard} from "./integrated-navigation.js";\n' +
+    'import{t as T}from"./zh-BN2SYn6V.js";import{b as w2,m as F1,l as $2,a as I2}from"./intermodal-routing-D8vKT-lN.js";import{d as Z2,p as m2,g as C1,h as t2,j as A2,a as x2,l as K1,k as _2,m as S2,n as C2}from"./mobile-navigation-DfEsS_7b.js";import{p as W1,disposeIdleMetroWorkers}from"./metro-planning-CBAOotPX.js";function E2(e,L,t,a,n){let i;let s,o=!1,d=0;const m=new Map,g=()=>new DOMException("Aborted","AbortError"),c=b=>{s?.terminate(),s=void 0,o=!1;for(const y of m.values())y.cleanup(),y.reject(b);m.clear()};return{dispose(){c(g())},get network(){return(i??=w2(e,L,t,a,n)).network},async route(b,y){if(y?.aborted)throw g();if(typeof Worker>"u"&&typeof window>"u")return(i??=w2(e,L,t,a,n)).route(b,y);if(typeof Worker>"u")throw new Error("此浏览器无法启动本地联程计算线程，请使用支持 Web Worker 的浏览器。");if(!s){s=new Worker(new URL("/assets/app-transit-worker-CaCMeUxU.js",import.meta.url),{type:"module"}),s.onmessage=l=>{const k=m.get(l.data.id);k&&(m.delete(l.data.id),k.cleanup(),l.data.route?k.resolve(l.data.route):k.reject(new Error(l.data.error??"联程路线计算失败")))};const h=s;s.onerror=()=>{s===h&&c(new Error("本地联程计算线程未能完成，请重试。"))}}const v=s,p=++d;return new Promise((h,l)=>{const k=()=>c(g()),u=()=>y?.removeEventListener("abort",k);m.set(p,{resolve:h,reject:l,cleanup:u}),y?.addEventListener("abort",k,{once:!0});try{v.postMessage({id:p,request:b,...o?{}:{inputs:{area:e,services:L,walkLinks:t,station:a,detailed:n}}}),o=!0}catch(w){m.delete(p),u(),l(w instanceof Error?w:new Error(String(w)))}})}}}const O2=[{kind:"green",sourceId:83,d:"M-2580.4,1505.3L-2599.0,1500.4L-2608.2,1501.5L-2612.8,1507.6L-2615.4,1526.8L-2631.3,1537.7L-2668.9,1538.3L-2681.1,1535.2L-2691.3,1527.8L-2700.3,1529.8L-2706.0,1541.2L-2705.8,1552.7L-2684.7,1574.7L-2681.8,1584.9L-2685.1,1594.5L-2695.6,1598.9L-2712.6,1599.1L-2723.9,1594.9L-2745.9,1541.1L-2758.0,1531.7L-2768.7,1537.2L-2770.0,1556.8L-2778.2,1562.2L-2782.5,1570.9L-2780.6,1582.3L-2750.3,1607.5L-2739.8,1609.6L-2734.4,1622.3L-2723.5,1627.6L-2720.6,1637.1L-2723.2,1645.5L-2732.2,1650.4L-2759.5,1647.2L-2765.8,1649.7L-2770.0,1668.5L-2777.7,1675.6L-2779.3,1689.1L-2775.3,1695.6L-2751.2,1710.8L-2743.1,1742.2L-2745.3,1759.0L-2725.5,1790.8L-2728.8,1811.3L-2723.9,1819.1L-2672.9,1823.8L-2646.0,1784.0L-2631.4,1770.2L-2632.3,1753.6L-2608.9,1714.4L-2610.7,1703.9L-2624.2,1679.8L-2619.8,1650.5L-2618.4,1592.3L-2606.7,1580.3L-2586.7,1578.0L-2573.6,1556.4L-2553.9,1544.6L-2537.4,1525.6L-2537.3,1513.3L-2542.8,1506.8L-2558.0,1502.2Z"},{kind:"green",sourceId:180,d:"M-3012.1,2596.8L-3050.2,2625.5L-3070.8,2625.4L-3112.2,2637.5L-3153.2,2654.3L-3152.9,2671.0L-3152.6,2671.7L-3001.1,2671.7L-3031.2,2663.3L-2995.1,2636.7Z"},{kind:"green",sourceId:181,d:"M-3537.6,1308.1L-3542.5,1291.1L-3555.6,1284.9L-3565.5,1289.3L-3581.5,1306.8L-3601.5,1307.3L-3601.5,1565.1L-3598.4,1565.0L-3594.1,1559.8L-3593.2,1547.1L-3588.7,1539.1L-3578.6,1536.5L-3568.1,1539.2L-3559.7,1557.1L-3540.7,1561.7L-3536.5,1576.3L-3526.6,1584.4L-3497.5,1578.7L-3491.3,1571.8L-3494.5,1530.9L-3508.2,1465.5L-3508.4,1434.0L-3503.6,1409.6L-3505.6,1390.1L-3513.4,1363.4L-3518.4,1357.7L-3521.9,1339.7L-3532.8,1312.9Z"},{kind:"green",sourceId:182,d:"M-3259.4,2036.2L-3265.5,2023.6L-3294.3,2014.0L-3299.9,2015.2L-3322.7,2058.8L-3335.0,2052.6L-3333.0,2044.8L-3355.7,2034.2L-3374.7,2061.8L-3355.2,2068.7L-3354.6,2088.8L-3332.0,2101.5L-3291.5,2050.0L-3289.6,2040.9L-3279.6,2051.5L-3272.5,2068.3L-3264.3,2067.5L-3259.3,2058.4Z"},{kind:"green",sourceId:183,d:"M-3177.1,1236.1L-3183.7,1211.2L-3215.6,1172.9L-3219.1,1151.9L-3213.8,1132.6L-3183.6,1121.1L-3173.1,1110.8L-3171.6,1102.4L-3175.5,1096.7L-3203.7,1081.6L-3207.8,1069.9L-3211.9,1032.7L-3219.5,1022.6L-3227.8,1021.1L-3243.1,1029.8L-3254.7,1050.4L-3272.1,1062.2L-3274.1,1091.3L-3271.6,1115.0L-3275.9,1122.6L-3294.8,1135.4L-3302.6,1171.1L-3313.6,1191.6L-3301.9,1214.2L-3293.3,1243.1L-3284.5,1245.9L-3265.8,1238.8L-3254.5,1246.8L-3242.2,1248.0L-3237.4,1263.8L-3229.6,1271.1L-3228.9,1316.8L-3237.0,1319.8L-3246.9,1330.5L-3249.8,1351.9L-3254.3,1361.3L-3247.8,1387.6L-3243.0,1392.4L-3236.2,1393.1L-3201.9,1373.6L-3185.6,1373.6L-3174.8,1382.9L-3170.3,1407.5L-3132.9,1433.0L-3131.5,1441.9L-3134.8,1447.9L-3144.2,1455.6L-3167.5,1464.0L-3175.2,1472.1L-3176.9,1480.0L-3157.1,1518.7L-3150.7,1521.2L-3136.2,1518.7L-3130.2,1521.9L-3130.6,1570.1L-3127.1,1577.0L-3112.1,1581.6L-3040.8,1579.2L-3032.7,1588.5L-3005.0,1589.6L-2993.3,1599.9L-2984.0,1599.4L-2979.1,1590.8L-2983.4,1577.5L-2972.3,1562.8L-2973.1,1552.8L-2995.5,1545.8L-3011.1,1536.7L-3014.9,1531.0L-3015.8,1516.5L-3020.9,1510.8L-3043.3,1509.8L-3072.3,1515.6L-3103.2,1495.5L-3108.3,1475.0L-3102.3,1425.5L-3107.1,1419.3L-3123.1,1413.0L-3126.9,1403.3L-3125.6,1392.2L-3112.0,1361.0L-3106.3,1323.4L-3097.5,1304.7L-3084.7,1291.6L-3065.7,1283.0L-3061.4,1275.8L-3063.1,1255.6L-3083.0,1242.3L-3084.4,1233.1L-3066.1,1221.1L-3043.4,1213.4L-3035.1,1206.2L-3023.8,1176.1L-3024.5,1168.4L-3040.1,1152.3L-3063.3,1140.8L-3076.5,1121.1L-3086.1,1120.5L-3103.2,1127.7L-3129.0,1142.1L-3139.4,1151.9L-3146.2,1164.5L-3144.8,1173.8L-3125.5,1209.7L-3112.6,1224.4L-3110.9,1233.2L-3113.8,1243.2L-3132.0,1254.7L-3147.6,1256.5L-3171.1,1245.8Z"},{kind:"green",sourceId:184,d:"M-2924.5,-354.8L-2935.5,-359.5L-2959.4,-354.8L-2976.8,-356.7L-3002.4,-349.2L-3011.7,-342.2L-3013.8,-334.1L-3003.3,-315.3L-3003.1,-299.3L-3025.8,-276.7L-3044.0,-234.3L-3064.8,-205.8L-3056.9,-178.6L-3041.3,-157.3L-3039.6,-134.3L-3042.8,-117.9L-3051.1,-111.8L-3062.1,-113.7L-3066.4,-121.1L-3068.7,-136.8L-3080.3,-140.5L-3085.6,-136.0L-3095.4,-113.5L-3113.2,-103.4L-3133.7,-98.2L-3137.6,-92.5L-3137.1,-85.6L-3109.6,-70.8L-3055.5,-54.5L-3040.3,-37.7L-3030.4,-39.9L-3022.6,-49.3L-3012.9,-50.8L-3004.8,-43.4L-3001.5,-24.6L-2981.1,-15.6L-2972.9,-16.7L-2948.7,-30.9L-2918.8,-22.4L-2873.6,-37.7L-2847.2,-31.3L-2796.0,21.3L-2787.8,36.5L-2761.9,39.4L-2747.5,54.4L-2737.4,54.4L-2732.5,46.6L-2734.5,13.8L-2712.4,-10.2L-2708.1,-38.2L-2721.2,-57.9L-2745.3,-55.7L-2750.0,-59.7L-2764.8,-135.5L-2755.8,-160.3L-2745.3,-172.0L-2726.1,-184.7L-2724.8,-195.4L-2738.3,-206.7L-2765.3,-197.7L-2769.7,-204.8L-2762.9,-215.2L-2764.8,-224.2L-2786.9,-235.2L-2814.6,-257.0L-2884.0,-260.9L-2897.8,-265.3L-2907.7,-278.2L-2912.2,-313.1ZM-2849.7,-54.2L-2854.5,-58.0L-2858.3,-84.6L-2835.5,-88.4L-2826.9,-99.5L-2810.9,-98.7L-2807.7,-72.9L-2819.0,-54.4Z"},{kind:"green",sourceId:267,d:"M-2721.6,2648.3L-2731.0,2640.4L-2747.9,2636.4L-2755.3,2638.7L-2758.7,2645.5L-2751.3,2663.1L-2730.1,2667.0L-2730.0,2671.7L-2700.6,2671.7L-2708.4,2652.0L-2714.1,2648.0Z"},{kind:"green",sourceId:371,d:"M-3229.5,2021.1L-3247.1,2021.0L-3254.0,2025.9L-3253.3,2055.5L-3260.9,2071.3L-3273.8,2073.2L-3284.3,2062.6L-3293.5,2063.0L-3311.5,2087.0L-3322.0,2092.3L-3328.2,2104.8L-3338.3,2110.1L-3340.6,2116.5L-3337.5,2129.8L-3326.8,2146.2L-3311.8,2155.7L-3300.4,2177.2L-3289.6,2211.5L-3298.5,2238.0L-3293.0,2257.7L-3286.9,2262.4L-3269.6,2264.0L-3268.3,2291.1L-3264.2,2297.5L-3229.7,2299.6L-3225.5,2303.4L-3225.3,2365.1L-3231.0,2373.3L-3232.1,2385.3L-3283.4,2391.6L-3288.2,2397.7L-3291.4,2420.9L-3286.3,2429.6L-3263.9,2435.5L-3251.0,2446.4L-3246.6,2489.2L-3238.0,2504.3L-3230.2,2507.9L-3219.9,2500.0L-3218.1,2484.6L-3204.3,2482.7L-3188.2,2467.3L-3179.4,2382.0L-3185.0,2356.3L-3193.1,2338.2L-3208.6,2241.2L-3210.4,2213.4L-3230.6,2175.1L-3248.3,2156.5L-3248.2,2110.6L-3224.9,2032.6L-3225.2,2026.4Z"},{kind:"green",sourceId:374,d:"M-3080.9,-401.1L-3087.5,-402.9L-3098.4,-414.2L-3098.7,-429.7L-3102.1,-435.6L-3115.5,-438.7L-3122.6,-436.4L-3126.2,-428.7L-3123.1,-414.2L-3132.4,-369.5L-3153.4,-348.2L-3163.2,-327.5L-3169.9,-323.9L-3177.6,-325.5L-3206.3,-343.8L-3234.6,-365.2L-3236.0,-377.4L-3221.5,-395.5L-3219.8,-403.0L-3224.0,-409.4L-3243.0,-420.7L-3267.0,-420.7L-3281.9,-403.8L-3295.9,-397.9L-3303.4,-383.4L-3323.2,-379.6L-3328.4,-375.1L-3333.5,-362.3L-3332.9,-355.4L-3312.6,-339.7L-3309.9,-332.6L-3317.5,-314.5L-3321.6,-293.1L-3333.5,-281.8L-3356.3,-280.1L-3384.2,-269.2L-3394.0,-251.1L-3387.4,-242.6L-3360.4,-239.0L-3358.5,-225.5L-3350.1,-218.1L-3347.2,-206.4L-3323.8,-185.6L-3304.5,-175.2L-3301.1,-160.6L-3305.5,-154.2L-3313.5,-152.4L-3338.6,-162.9L-3356.2,-146.5L-3366.7,-123.3L-3371.3,-77.3L-3380.6,-40.5L-3389.1,-21.4L-3381.6,-10.5L-3361.3,-5.3L-3340.2,36.2L-3339.5,61.1L-3348.8,77.8L-3349.0,113.5L-3346.5,124.7L-3337.9,134.3L-3332.2,149.9L-3332.5,160.9L-3338.1,176.8L-3334.0,183.2L-33'... 255882 more characters
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/0cc388d3824f/previews/hongkong/tests/navigation/policy.test.mjs:46:9)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'import {scoreParameters,updateScoreParameter,resetScoreParameters,scoreParameterPanel} from "./score-parameters.js";\nimport {createRoutingQueue} from "./routing-queue.js";\nimport {limitedRailReference} from "./rail-reference.js";\nimport {journeyScore,hasPublicAlternative} from "./journey-score.js";\nimport {planTaxiCandidates} from "./taxi-candidates.js";\nimport {APP_STAGES,STATIONS,validStation,parseNavigationLocation,normalizeAppStage,navigationUrl,primaryAppTab} from "./ui-navigation.js";\nimport {stationPanel,informationPanel} from "./ui-content.js";\nimport {c as createStationModel} from "./mobile-navigation-DfEsS_7b.js";\nimport {createTransitStopLayer} from "./transit-stops.js";\nimport {addKowloonModeledCorridor} from "./kow-c1-corridor.js";\nimport {taxiPassengerPolicy,annotateTaxiPassengerResult} from "./taxi-policy.js";\nimport {annotatePreferenceResult} from "./preference-routing.js";\nimport {quoteRouteSafely,simulatedTaxiFareCents} from "./route-quote.js";\nimport {createDemoAccessibilityGraph,createDemoWalkLinks,annotateDemoFallback} from "./demo-fallback.js";\nimport {publicCoverageRings} from "./public-coverage.js";\nimport {evaluateStationEntrances,stationEntrancePanel,applyStationEntranceChoice,annotateStationDetour} from "./station-alternatives.js";\nimport {FLEET_DEMO_BOUNDS,boundsCorners,createRoadContext,visibleFleet} from "./taxi-map.js";\nimport {nearestPedestrianNode,composeTaxiJourney,nearestRoadPoint,modeledRoadLink,nearestInterchanges,emptyPublicJourney} from "./taxi-bridge.js";\nimport {PUBLIC_MODES, SEARCH_VARIANTS, journeyModeChain, rankJourneys as rankBaseJourneys, deduplicateJourneys, publicArrivalAnchors, compatibleWithOverlay, runBounded, addShortDemoConnectors, createModeledConnectorGuard} from "./integrated-navigation.js";\nimport{t as T}from"./zh-BN2SYn6V.js";import{b as w2,m as F1,l as $2,a as I2}from"./intermodal-routing-D8vKT-lN.js";import{d as Z2,p as m2,g as C1,h as t2,j as A2,a as x2,l as K1,k as _2,m as S2,n as C2}from"./mobile-navigation-DfEsS_7b.js";import{p as W1,disposeIdleMetroWorkers}from"./metro-planning-CBAOotPX.js";function E2(e,L,t,a,n){let i;let s,o=!1,d=0;const m=new Map,g=()=>new DOMException("Aborted","AbortError"),c=b=>{s?.terminate(),s=void 0,o=!1;for(const y of m.values())y.cleanup(),y.reject(b);m.clear()};return{dispose(){c(g())},get network(){return(i??=w2(e,L,t,a,n)).network},async route(b,y){if(y?.aborted)throw g();if(typeof Worker>"u"&&typeof window>"u")return(i??=w2(e,L,t,a,n)).route(b,y);if(typeof Worker>"u")throw new Error("此浏览器无法启动本地联程计算线程，请使用支持 Web Worker 的浏览器。");if(!s){s=new Worker(new URL("/assets/app-transit-worker-CaCMeUxU.js",import.meta.url),{type:"module"}),s.onmessage=l=>{const k=m.get(l.data.id);k&&(m.delete(l.data.id),k.cleanup(),l.data.route?k.resolve(l.data.route):k.reject(new Error(l.data.error??"联程路线计算失败")))};const h=s;s.onerror=()=>{s===h&&c(new Error("本地联程计算线程未能完成，请重试。"))}}const v=s,p=++d;return new Promise((h,l)=>{const k=()=>c(g()),u=()=>y?.removeEventListener("abort",k);m.set(p,{resolve:h,reject:l,cleanup:u}),y?.addEventListener("abort",k,{once:!0});try{v.postMessage({id:p,request:b,...o?{}:{inputs:{area:e,services:L,walkLinks:t,station:a,detailed:n}}}),o=!0}catch(w){m.delete(p),u(),l(w instanceof Error?w:new Error(String(w)))}})}}}const O2=[{kind:"green",sourceId:83,d:"M-2580.4,1505.3L-2599.0,1500.4L-2608.2,1501.5L-2612.8,1507.6L-2615.4,1526.8L-2631.3,1537.7L-2668.9,1538.3L-2681.1,1535.2L-2691.3,1527.8L-2700.3,1529.8L-2706.0,1541.2L-2705.8,1552.7L-2684.7,1574.7L-2681.8,1584.9L-2685.1,1594.5L-2695.6,1598.9L-2712.6,1599.1L-2723.9,1594.9L-2745.9,1541.1L-2758.0,1531.7L-2768.7,1537.2L-2770.0,1556.8L-2778.2,1562.2L-2782.5,1570.9L-2780.6,1582.3L-2750.3,1607.5L-2739.8,1609.6L-2734.4,1622.3L-2723.5,1627.6L-2720.6,1637.1L-2723.2,1645.5L-2732.2,1650.4L-2759.5,1647.2L-2765.8,1649.7L-2770.0,1668.5L-2777.7,1675.6L-2779.3,1689.1L-2775.3,1695.6L-2751.2,1710.8L-2743.1,1742.2L-2745.3,1759.0L-2725.5,1790.8L-2728.8,1811.3L-2723.9,1819.1L-2672.9,1823.8L-2646.0,1784.0L-2631.4,1770.2L-2632.3,1753.6L-2608.9,1714.4L-2610.7,1703.9L-2624.2,1679.8L-2619.8,1650.5L-2618.4,1592.3L-2606.7,1580.3L-2586.7,1578.0L-2573.6,1556.4L-2553.9,1544.6L-2537.4,1525.6L-2537.3,1513.3L-2542.8,1506.8L-2558.0,1502.2Z"},{kind:"green",sourceId:180,d:"M-3012.1,2596.8L-3050.2,2625.5L-3070.8,2625.4L-3112.2,2637.5L-3153.2,2654.3L-3152.9,2671.0L-3152.6,2671.7L-3001.1,2671.7L-3031.2,2663.3L-2995.1,2636.7Z"},{kind:"green",sourceId:181,d:"M-3537.6,1308.1L-3542.5,1291.1L-3555.6,1284.9L-3565.5,1289.3L-3581.5,1306.8L-3601.5,1307.3L-3601.5,1565.1L-3598.4,1565.0L-3594.1,1559.8L-3593.2,1547.1L-3588.7,1539.1L-3578.6,1536.5L-3568.1,1539.2L-3559.7,1557.1L-3540.7,1561.7L-3536.5,1576.3L-3526.6,1584.4L-3497.5,1578.7L-3491.3,1571.8L-3494.5,1530.9L-3508.2,1465.5L-3508.4,1434.0L-3503.6,1409.6L-3505.6,1390.1L-3513.4,1363.4L-3518.4,1357.7L-3521.9,1339.7L-3532.8,1312.9Z"},{kind:"green",sourceId:182,d:"M-3259.4,2036.2L-3265.5,2023.6L-3294.3,2014.0L-3299.9,2015.2L-3322.7,2058.8L-3335.0,2052.6L-3333.0,2044.8L-3355.7,2034.2L-3374.7,2061.8L-3355.2,2068.7L-3354.6,2088.8L-3332.0,2101.5L-3291.5,2050.0L-3289.6,2040.9L-3279.6,2051.5L-3272.5,2068.3L-3264.3,2067.5L-3259.3,2058.4Z"},{kind:"green",sourceId:183,d:"M-3177.1,1236.1L-3183.7,1211.2L-3215.6,1172.9L-3219.1,1151.9L-3213.8,1132.6L-3183.6,1121.1L-3173.1,1110.8L-3171.6,1102.4L-3175.5,1096.7L-3203.7,1081.6L-3207.8,1069.9L-3211.9,1032.7L-3219.5,1022.6L-3227.8,1021.1L-3243.1,1029.8L-3254.7,1050.4L-3272.1,1062.2L-3274.1,1091.3L-3271.6,1115.0L-3275.9,1122.6L-3294.8,1135.4L-3302.6,1171.1L-3313.6,1191.6L-3301.9,1214.2L-3293.3,1243.1L-3284.5,1245.9L-3265.8,1238.8L-3254.5,1246.8L-3242.2,1248.0L-3237.4,1263.8L-3229.6,1271.1L-3228.9,1316.8L-3237.0,1319.8L-3246.9,1330.5L-3249.8,1351.9L-3254.3,1361.3L-3247.8,1387.6L-3243.0,1392.4L-3236.2,1393.1L-3201.9,1373.6L-3185.6,1373.6L-3174.8,1382.9L-3170.3,1407.5L-3132.9,1433.0L-3131.5,1441.9L-3134.8,1447.9L-3144.2,1455.6L-3167.5,1464.0L-3175.2,1472.1L-3176.9,1480.0L-3157.1,1518.7L-3150.7,1521.2L-3136.2,1518.7L-3130.2,1521.9L-3130.6,1570.1L-3127.1,1577.0L-3112.1,1581.6L-3040.8,1579.2L-3032.7,1588.5L-3005.0,1589.6L-2993.3,1599.9L-2984.0,1599.4L-2979.1,1590.8L-2983.4,1577.5L-2972.3,1562.8L-2973.1,1552.8L-2995.5,1545.8L-3011.1,1536.7L-3014.9,1531.0L-3015.8,1516.5L-3020.9,1510.8L-3043.3,1509.8L-3072.3,1515.6L-3103.2,1495.5L-3108.3,1475.0L-3102.3,1425.5L-3107.1,1419.3L-3123.1,1413.0L-3126.9,1403.3L-3125.6,1392.2L-3112.0,1361.0L-3106.3,1323.4L-3097.5,1304.7L-3084.7,1291.6L-3065.7,1283.0L-3061.4,1275.8L-3063.1,1255.6L-3083.0,1242.3L-3084.4,1233.1L-3066.1,1221.1L-3043.4,1213.4L-3035.1,1206.2L-3023.8,1176.1L-3024.5,1168.4L-3040.1,1152.3L-3063.3,1140.8L-3076.5,1121.1L-3086.1,1120.5L-3103.2,1127.7L-3129.0,1142.1L-3139.4,1151.9L-3146.2,1164.5L-3144.8,1173.8L-3125.5,1209.7L-3112.6,1224.4L-3110.9,1233.2L-3113.8,1243.2L-3132.0,1254.7L-3147.6,1256.5L-3171.1,1245.8Z"},{kind:"green",sourceId:184,d:"M-2924.5,-354.8L-2935.5,-359.5L-2959.4,-354.8L-2976.8,-356.7L-3002.4,-349.2L-3011.7,-342.2L-3013.8,-334.1L-3003.3,-315.3L-3003.1,-299.3L-3025.8,-276.7L-3044.0,-234.3L-3064.8,-205.8L-3056.9,-178.6L-3041.3,-157.3L-3039.6,-134.3L-3042.8,-117.9L-3051.1,-111.8L-3062.1,-113.7L-3066.4,-121.1L-3068.7,-136.8L-3080.3,-140.5L-3085.6,-136.0L-3095.4,-113.5L-3113.2,-103.4L-3133.7,-98.2L-3137.6,-92.5L-3137.1,-85.6L-3109.6,-70.8L-3055.5,-54.5L-3040.3,-37.7L-3030.4,-39.9L-3022.6,-49.3L-3012.9,-50.8L-3004.8,-43.4L-3001.5,-24.6L-2981.1,-15.6L-2972.9,-16.7L-2948.7,-30.9L-2918.8,-22.4L-2873.6,-37.7L-2847.2,-31.3L-2796.0,21.3L-2787.8,36.5L-2761.9,39.4L-2747.5,54.4L-2737.4,54.4L-2732.5,46.6L-2734.5,13.8L-2712.4,-10.2L-2708.1,-38.2L-2721.2,-57.9L-2745.3,-55.7L-2750.0,-59.7L-2764.8,-135.5L-2755.8,-160.3L-2745.3,-172.0L-2726.1,-184.7L-2724.8,-195.4L-2738.3,-206.7L-2765.3,-197.7L-2769.7,-204.8L-2762.9,-215.2L-2764.8,-224.2L-2786.9,-235.2L-2814.6,-257.0L-2884.0,-260.9L-2897.8,-265.3L-2907.7,-278.2L-2912.2,-313.1ZM-2849.7,-54.2L-2854.5,-58.0L-2858.3,-84.6L-2835.5,-88.4L-2826.9,-99.5L-2810.9,-98.7L-2807.7,-72.9L-2819.0,-54.4Z"},{kind:"green",sourceId:267,d:"M-2721.6,2648.3L-2731.0,2640.4L-2747.9,2636.4L-2755.3,2638.7L-2758.7,2645.5L-2751.3,2663.1L-2730.1,2667.0L-2730.0,2671.7L-2700.6,2671.7L-2708.4,2652.0L-2714.1,2648.0Z"},{kind:"green",sourceId:371,d:"M-3229.5,2021.1L-3247.1,2021.0L-3254.0,2025.9L-3253.3,2055.5L-3260.9,2071.3L-3273.8,2073.2L-3284.3,2062.6L-3293.5,2063.0L-3311.5,2087.0L-3322.0,2092.3L-3328.2,2104.8L-3338.3,2110.1L-3340.6,2116.5L-3337.5,2129.8L-3326.8,2146.2L-3311.8,2155.7L-3300.4,2177.2L-3289.6,2211.5L-3298.5,2238.0L-3293.0,2257.7L-3286.9,2262.4L-3269.6,2264.0L-3268.3,2291.1L-3264.2,2297.5L-3229.7,2299.6L-3225.5,2303.4L-3225.3,2365.1L-3231.0,2373.3L-3232.1,2385.3L-3283.4,2391.6L-3288.2,2397.7L-3291.4,2420.9L-3286.3,2429.6L-3263.9,2435.5L-3251.0,2446.4L-3246.6,2489.2L-3238.0,2504.3L-3230.2,2507.9L-3219.9,2500.0L-3218.1,2484.6L-3204.3,2482.7L-3188.2,2467.3L-3179.4,2382.0L-3185.0,2356.3L-3193.1,2338.2L-3208.6,2241.2L-3210.4,2213.4L-3230.6,2175.1L-3248.3,2156.5L-3248.2,2110.6L-3224.9,2032.6L-3225.2,2026.4Z"},{kind:"green",sourceId:374,d:"M-3080.9,-401.1L-3087.5,-402.9L-3098.4,-414.2L-3098.7,-429.7L-3102.1,-435.6L-3115.5,-438.7L-3122.6,-436.4L-3126.2,-428.7L-3123.1,-414.2L-3132.4,-369.5L-3153.4,-348.2L-3163.2,-327.5L-3169.9,-323.9L-3177.6,-325.5L-3206.3,-343.8L-3234.6,-365.2L-3236.0,-377.4L-3221.5,-395.5L-3219.8,-403.0L-3224.0,-409.4L-3243.0,-420.7L-3267.0,-420.7L-3281.9,-403.8L-3295.9,-397.9L-3303.4,-383.4L-3323.2,-379.6L-3328.4,-375.1L-3333.5,-362.3L-3332.9,-355.4L-3312.6,-339.7L-3309.9,-332.6L-3317.5,-314.5L-3321.6,-293.1L-3333.5,-281.8L-3356.3,-280.1L-3384.2,-269.2L-3394.0,-251.1L-3387.4,-242.6L-3360.4,-239.0L-3358.5,-225.5L-3350.1,-218.1L-3347.2,-206.4L-3323.8,-185.6L-3304.5,-175.2L-3301.1,-160.6L-3305.5,-154.2L-3313.5,-152.4L-3338.6,-162.9L-3356.2,-146.5L-3366.7,-123.3L-3371.3,-77.3L-3380.6,-40.5L-3389.1,-21.4L-3381.6,-10.5L-3361.3,-5.3L-3340.2,36.2L-3339.5,61.1L-3348.8,77.8L-3349.0,113.5L-3346.5,124.7L-3337.9,134.3L-3332.2,149.9L-3332.5,160.9L-3338.1,176.8L-3334.0,183.2L-33'... 255882 more characters,
+    expected: /runBounded\(\[publicWork,taxiWork,walkWork\],2\)/,
+    operator: 'match',
+    diff: 'simple'
+  }
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice

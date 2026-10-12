@@ -1,0 +1,187 @@
+{
+  "runtime": "4f0a062ef29d",
+  "id": 12,
+  "need": "luggage",
+  "state": "complete",
+  "wallMs": 49040,
+  "memory": {
+    "rss": 1331937280,
+    "heapTotal": 650567680,
+    "heapUsed": 524601760,
+    "external": 31671691,
+    "arrayBuffers": 9801516,
+    "maxRSSKiB": 1366508
+  },
+  "request": {
+    "origin": {
+      "id": "map:random--1386445323",
+      "name": "地图所选地点",
+      "detail": "用户选择 · 接入待核验",
+      "coordinates": [
+        114.17386388874023,
+        22.30366360826388
+      ],
+      "lon": 114.17386388874023,
+      "lat": 22.30366360826388
+    },
+    "destination": {
+      "id": "map:random--2018280993",
+      "name": "地图所选地点",
+      "detail": "用户选择 · 接入待核验",
+      "coordinates": [
+        114.18872616863665,
+        22.27087158388786
+      ],
+      "lon": 114.18872616863665,
+      "lat": 22.27087158388786
+    }
+  },
+  "performance": {
+    "warmStart": false,
+    "startedMonotonic": 7305.387582,
+    "startedAt": "2026-10-12T11:47:22.992Z",
+    "origin": "地图所选地点",
+    "destination": "地图所选地点",
+    "stages": [
+      {
+        "id": "public-fast",
+        "durationMs": 13271,
+        "status": "ready",
+        "cached": false
+      },
+      {
+        "id": "walk",
+        "durationMs": 12988,
+        "status": "no-complete-route",
+        "cached": false
+      },
+      {
+        "id": "taxi",
+        "durationMs": 45433,
+        "status": "ready"
+      }
+    ],
+    "firstResultMs": 1745,
+    "totalMs": 45464,
+    "taxiCandidates": [
+      {
+        "side": "last",
+        "id": "td:1286",
+        "status": "not-a-shorter-feeder"
+      },
+      {
+        "side": "first",
+        "id": "HUH:portal:A2",
+        "status": "ready",
+        "minutes": 100
+      },
+      {
+        "side": "first",
+        "id": "td:99226",
+        "status": "ready",
+        "minutes": 73
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "id": "taxi-direct",
+      "kind": "direct",
+      "minutes": 16,
+      "cost": 87.9,
+      "walkMinutes": 3,
+      "waitMinutes": 1.8212506887151296,
+      "transfers": 0,
+      "modes": [
+        "walk",
+        "taxi",
+        "walk"
+      ],
+      "endpointsPreserved": true,
+      "forbidden": [],
+      "needsVehicleConfirmation": true,
+      "needsConfirmation": true,
+      "requestedPreference": "luggage",
+      "effectivePreference": "luggage"
+    },
+    {
+      "id": "taxi-first-tram-td:99226",
+      "kind": "first",
+      "minutes": 73,
+      "cost": 84.18,
+      "walkMinutes": 55,
+      "waitMinutes": 7.821250688715129,
+      "transfers": 1,
+      "modes": [
+        "walk",
+        "taxi",
+        "walk",
+        "tram",
+        "walk"
+      ],
+      "endpointsPreserved": true,
+      "forbidden": [],
+      "needsVehicleConfirmation": true,
+      "needsConfirmation": true,
+      "requestedPreference": "luggage",
+      "effectivePreference": "luggage"
+    },
+    {
+      "id": "taxi-first-metro-HUH:portal:A2",
+      "kind": "first",
+      "minutes": 100,
+      "cost": 39.87,
+      "walkMinutes": 71,
+      "waitMinutes": 6.821250688715129,
+      "transfers": 2,
+      "modes": [
+        "walk",
+        "taxi",
+        "walk",
+        "metro",
+        "walk",
+        "tram",
+        "walk"
+      ],
+      "endpointsPreserved": true,
+      "forbidden": [],
+      "needsVehicleConfirmation": true,
+      "needsConfirmation": true,
+      "requestedPreference": "luggage",
+      "effectivePreference": "luggage"
+    },
+    {
+      "id": "transit",
+      "kind": "public",
+      "minutes": 128,
+      "cost": 16.17,
+      "walkMinutes": 76,
+      "waitMinutes": 28,
+      "transfers": 2,
+      "modes": [
+        "walk",
+        "bus",
+        "walk",
+        "metro",
+        "walk",
+        "tram",
+        "walk"
+      ],
+      "endpointsPreserved": true,
+      "forbidden": [],
+      "needsVehicleConfirmation": false,
+      "needsConfirmation": true,
+      "requestedPreference": "luggage",
+      "effectivePreference": "luggage"
+    }
+  ],
+  "selected": "taxi-direct",
+  "publicAvailable": true,
+  "taxiAvailable": true,
+  "invariants": {
+    "endpoints": true,
+    "knownEdges": true,
+    "strictTaxiExcluded": true,
+    "luggageTaxiConfirmed": true
+  }
+}

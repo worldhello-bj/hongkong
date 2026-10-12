@@ -1,0 +1,68 @@
+{
+  "version": "ed79999cccce",
+  "publicSetupMs": 2052,
+  "presets": [
+    {
+      "name": "跨海地铁",
+      "ms": 3058,
+      "minutes": 28,
+      "complete": true,
+      "modes": [
+        "walk",
+        "escalator",
+        "walk",
+        "escalator",
+        "walk",
+        "escalator",
+        "walk",
+        "wait",
+        "rail",
+        "walk",
+        "escalator",
+        "walk",
+        "wait",
+        "rail",
+        "walk",
+        "stairs",
+        "walk",
+        "escalator",
+        "walk"
+      ]
+    },
+    {
+      "name": "同岸电车+步行",
+      "ms": 487,
+      "minutes": 31,
+      "complete": true,
+      "modeledConnectors": false
+    },
+    {
+      "name": "大件行李升降机",
+      "ms": 554,
+      "minutes": 9,
+      "complete": true
+    },
+    {
+      "name": "跨海出租车",
+      "ms": 44,
+      "minutes": 16,
+      "complete": true,
+      "tunnel": true
+    },
+    {
+      "name": "地铁+出租车末段",
+      "ms": 43,
+      "minutes": 35,
+      "complete": true,
+      "reusedPublicPrefix": true
+    },
+    {
+      "name": "出租车首段+地铁",
+      "ms": 514,
+      "minutes": 36,
+      "complete": true
+    }
+  ],
+  "taxiDataMs": 424,
+  "fleetInitMs": 537
+}

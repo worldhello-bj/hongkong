@@ -1,0 +1,1445 @@
+{
+  "runtime": "6e52ec3d2521",
+  "observationWindowMs": 60000,
+  "comparisonLimitations": [
+    "Single diagnostic run per cell; not a stable speed ratio or p95.",
+    "A/B/D have no CPU sampling; C used CPU sampling. search-states adds low-frequency counters.",
+    "Same origin/destination, departure clock, preference and frozen data; experimental variants do not relax facilities/endpoints.",
+    "Node DOM stand-ins cannot establish browser visual, layout or paint performance."
+  ],
+  "rows": [
+    {
+      "directory": "baseline-6e52ec3d2521-od7-luggage",
+      "runtime": "6e52ec3d2521",
+      "label": "baseline",
+      "variant": "baseline",
+      "id": 7,
+      "need": "luggage",
+      "state": "observation-window-ended",
+      "wallMs": 60319.594283,
+      "workers": 4,
+      "peakRssGiB": 1.3106002807617188,
+      "stages": [
+        {
+          "id": "public-fast",
+          "durationMs": 10303,
+          "status": "ready",
+          "cached": false
+        }
+      ],
+      "availableCandidates": 3,
+      "endpointsPreserved": true,
+      "knownDisabledOrClosedEdgesExcluded": true,
+      "luggageVehicleConfirmation": true,
+      "workerGraphPrepareMs": 6090.937690999996,
+      "workerCloneSendMs": 3484.6605930000023,
+      "sameWorkerExactDuplicateQueries": 0,
+      "unfinishedMain": [
+        {
+          "name": "S1"
+        },
+        {
+          "name": "n3",
+          "request": {
+            "origin": {
+              "id": "map:random--2138587087",
+              "coordinates": [
+                114.19780266014673,
+                22.27037983652672
+              ]
+            },
+            "destination": {
+              "id": "map:random-892708869",
+              "coordinates": [
+                114.16388501171271,
+                22.2735175495032
+              ]
+            },
+            "preference": "luggage",
+            "mode": "transit",
+            "allowedModes": [
+              "metro",
+              "bus",
+              "tram"
+            ],
+            "departureS": 28800,
+            "departureDate": "2026-10-12"
+          }
+        },
+        {
+          "name": "f2",
+          "request": {
+            "origin": {
+              "id": "map:random--2138587087",
+              "coordinates": [
+                114.19780266014673,
+                22.27037983652672
+              ]
+            },
+            "destination": {
+              "id": "map:random-892708869",
+              "coordinates": [
+                114.16388501171271,
+                22.2735175495032
+              ]
+            },
+            "preference": "luggage",
+            "mode": "walk",
+            "allowedModes": [
+              "metro",
+              "bus",
+              "tram"
+            ],
+            "departureS": 28800,
+            "departureDate": "2026-10-12"
+          }
+        },
+        {
+          "name": "r2",
+          "request": {
+            "origin": {
+              "id": "map:random--2138587087",
+              "coordinates": [
+                114.19780266014673,
+                22.27037983652672
+              ]
+            },
+            "destination": {
+              "id": "map:random-892708869",
+              "coordinates": [
+                114.16388501171271,
+                22.2735175495032
+              ]
+            },
+            "preference": "luggage",
+            "mode": "walk",
+            "allowedModes": [
+              "metro",
+              "bus",
+              "tram"
+            ],
+            "departureS": 28800,
+            "departureDate": "2026-10-12"
+          }
+        },
+        {
+          "name": "D2",
+          "request": {
+            "origin": {
+              "id": "map:random--2138587087",
+              "coordinates": [
+                114.19780266014673,
+                22.27037983652672
+              ]
+            },
+            "destination": {
+              "id": "map:random-892708869",
+              "coordinates": [
+                114.16388501171271,
+                22.2735175495032
+              ]
+            },
+            "preference": "luggage",
+            "mode": "walk",
+            "departureS": 28800,
+            "departureDate": "2026-10-12"
+          }
+        }
+      ],
+      "unfinishedWorker": [
+        {
+          "t": 27878.918,
+          "worker": 4,
+          "kind": "app-walk-worker-jk5g-BMr.js",
+          "event": "worker-span-start",
+          "sid": 3,
+          "name": "walk-query",
+          "request": {
+            "origin": {
+              "coordinates": [
+                114.19780266014673,
+                22.27037983652672
+              ]
+            },
+            "destination": {
+              "coordinates": [
+                114.16388501171271,
+                22.2735175495032
+              ]
+            },
+            "preference": "luggage",
+            "mode": "walk",
+            "departureS": 28800,
+            "departureDate": "2026-10-12"
+          },
+          "graph": {
+            "version": "b1e24d8ef9214320",
+            "nodes": 65304,
+            "edges": 144603,
+            "regions": [
+              "ADM",
+              "AUS",
+              "HUH",
+              "EXC",
+              "ETS",
+              "KOW"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "directory": "defer-walk-6e52ec3d2521-od7-luggage",
+      "runtime": "6e52ec3d2521",
+      "label": "defer-walk",
+      "variant": "defer-walk",
+      "id": 7,
+      "need": "luggage",
+      "state": "observation-window-ended",
+      "wallMs": 60083.162563000005,
+      "workers": 4,
+      "peakRssGiB": 1.27374267578125,
+      "stages": [
+        {
+          "id": "public-fast",
+          "durationMs": 9689,
+          "status": "ready",
+          "cached": false
+        },
+        {
+          "id": "taxi",
+          "durationMs": 24863,
+          "status": "ready"
+        }
+      ],
+      "availableCandidates": 5,
+      "endpointsPreserved": true,
+      "knownDisabledOrClosedEdgesExcluded": true,
+      "luggageVehicleConfirmation": true,
+      "workerGraphPrepareMs": 4844.069682999999,
+      "workerCloneSendMs": 3039.972283,
+      "sameWorkerExactDuplicateQueries": 0,
+      "unfinishedMain": [
+        {
+          "name": "S1"
+        },
+        {
+          "name": "f2",
+          "request": {
+            "origin": {
+              "id": "map:random--2138587087",
+              "coordinates": [
+                114.19780266014673,
+                22.27037983652672
+              ]
+            },
+            "destination": {
+              "id": "map:random-892708869",
+              "coordinates": [
+                114.16388501171271,
+                22.2735175495032
+              ]
+            },
+            "preference": "luggage",
+            "mode": "walk",
+            "allowedModes": [
+              "metro",
+              "bus",
+              "tram"
+            ],
+            "departureS": 28800,
+            "departureDate": "2026-10-12"
+          }
+        },
+        {
+          "name": "r2",
+          "request": {
+            "origin": {
+              "id": "map:random--2138587087",
+              "coordinates": [
+                114.19780266014673,
+                22.27037983652672
+              ]
+            },
+            "destination": {
+              "id": "map:random-892708869",
+              "coordinates": [
+                114.16388501171271,
+                22.2735175495032
+              ]
+            },
+            "preference": "luggage",
+            "mode": "walk",
+            "allowedModes": [
+              "metro",
+              "bus",
+              "tram"
+            ],
+            "departureS": 28800,
+            "departureDate": "2026-10-12"
+          }
+        },
+        {
+          "name": "D2",
+          "request": {
+            "origin": {
+              "id": "map:random--2138587087",
+              "coordinates": [
+                114.19780266014673,
+                22.27037983652672
+              ]
+            },
+            "destination": {
+              "id": "map:random-892708869",
+              "coordinates": [
+                114.16388501171271,
+                22.2735175495032
+              ]
+            },
+            "preference": "luggage",
+            "mode": "walk",
+            "departureS": 28800,
+            "departureDate": "2026-10-12"
+          }
+        }
+      ],
+      "unfinishedWorker": [
+        {
+          "t": 34879.128,
+          "worker": 4,
+          "kind": "app-walk-worker-jk5g-BMr.js",
+          "event": "worker-span-start",
+          "sid": 3,
+          "name": "walk-query",
+          "request": {
+            "origin": {
+              "coordinates": [
+                114.19780266014673,
+                22.27037983652672
+              ]
+            },
+            "destination": {
+              "coordinates": [
+                114.16388501171271,
+                22.2735175495032
+              ]
+            },
+            "preference": "luggage",
+            "mode": "walk",
+            "departureS": 28800,
+            "departureDate": "2026-10-12"
+          },
+          "graph": {
+            "version": "b1e24d8ef9214320",
+            "nodes": 65304,
+            "edges": 144603,
+            "regions": [
+              "ADM",
+              "AUS",
+              "HUH",
+              "EXC",
+              "ETS",
+              "KOW"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "directory": "fifo-guard-6e52ec3d2521-od7-luggage",
+      "runtime": "6e52ec3d2521",
+      "label": "fifo-guard",
+      "variant": "fifo-guard",
+      "id": 7,
+      "need": "luggage",
+      "state": "observation-window-ended",
+      "wallMs": 60327.838629000005,
+      "workers": 5,
+      "peakRssGiB": 1.2203750610351562,
+      "stages": [
+        {
+          "id": "public-fast",
+          "durationMs": 12602,
+          "status": "ready",
+          "cached": false
+        },
+        {
+          "id": "walk",
+          "durationMs": 26580,
+          "status": "error",
+          "message": "本地步行计算线程未能完成，请重试。",
+          "cached": false
+        }
+      ],
+      "availableCandidates": 3,
+      "endpointsPreserved": true,
+      "knownDisabledOrClosedEdgesExcluded": true,
+      "luggageVehicleConfirmation": true,
+      "workerGraphPrepareMs": 8329.590649000014,
+      "workerCloneSendMs": 4595.426906000005,
+      "sameWorkerExactDuplicateQueries": 0,
+      "unfinishedMain": [
+        {
+          "name": "S1"
+        },
+        {
+          "name": "n3",
+          "request": {
+            "origin": {
+              "id": "map:random--2138587087",
+              "coordinates": [
+                114.19780266014673,
+                22.27037983652672
+              ]
+            },
+            "destination": {
+              "id": "map:random-892708869",
+              "coordinates": [
+                114.16388501171271,
+                22.2735175495032
+              ]
+            },
+            "preference": "luggage",
+            "mode": "transit",
+            "allowedModes": [
+              "metro",
+              "bus",
+              "tram"
+            ],
+            "departureS": 28800,
+            "departureDate": "2026-10-12"
+          }
+        },
+        {
+          "name": "f2",
+          "request": {
+            "origin": {
+              "id": "map:random--2138587087",
+              "coordinates": [
+                114.19780266014673,
+                22.27037983652672
+              ]
+            },
+            "destination": {
+              "id": "EXC:portal:B3",
+              "node_id": "EXC:N:faaafc3c73386c",
+              "coordinates": [
+                114.17458227,
+                22.28124078,
+                11.245
+              ]
+            },
+            "preference": "luggage",
+            "mode": "transit",
+            "allowedModes": [
+              "metro",
+              "bus",
+              "tram"
+            ],
+            "departureS": 28800,
+            "departureDate": "2026-10-12"
+          }
+        },
+        {
+          "name": "r2",
+          "request": {
+            "origin": {
+              "id": "map:random--2138587087",
+              "coordinates": [
+                114.19780266014673,
+                22.27037983652672
+              ]
+            },
+            "destination": {
+              "id": "EXC:portal:B3",
+              "node_id": "EXC:N:faaafc3c73386c",
+              "coordinates": [
+                114.17458227,
+                22.28124078,
+                11.245
+              ]
+            },
+            "preference": "luggage",
+            "mode": "transit",
+            "allowedModes": [
+              "metro",
+              "bus",
+              "tram"
+            ],
+            "departureS": 28800,
+            "departureDate": "2026-10-12"
+          }
+        }
+      ],
+      "unfinishedWorker": [
+        {
+          "t": 53687.961,
+          "worker": 5,
+          "kind": "app-transit-worker-CaCMeUxU.js",
+          "event": "worker-span-start",
+          "sid": 7,
+          "name": "transit-query",
+          "request": {
+            "origin": {
+              "coordinates": [
+                114.19780266014673,
+                22.27037983652672
+              ]
+            },
+            "destination": {
+              "node_id": "EXC:N:faaafc3c73386c",
+              "coordinates": [
+                114.17458227,
+                22.28124078,
+                11.245
+              ]
+            },
+            "preference": "luggage",
+            "allowedModes": [
+              "metro",
+              "bus",
+              "tram"
+            ],
+            "departureS": 28800,
+            "departureDate": "2026-10-12"
+          }
+        },
+        {
+          "t": 53767.105,
+          "worker": 5,
+          "kind": "app-transit-worker-CaCMeUxU.js",
+          "event": "worker-span-start",
+          "sid": 8,
+          "name": "scheduled-search"
+        },
+        {
+          "t": 64383.801,
+          "worker": 5,
+          "kind": "app-transit-worker-CaCMeUxU.js",
+          "event": "worker-span-start",
+          "sid": 787,
+          "name": "walk-query",
+          "request": {
+            "origin": {
+              "node_id": "AUS:N:05b021e7ab23a1",
+              "coordinates": [
+                114.1665208,
+                22.30458381
+              ]
+            },
+            "destination": {
+              "node_id": "AUS:N:4c852240270908",
+              "coordinates": [
+                114.16709506,
+                22.30365374
+              ]
+            },
+            "preference": "luggage",
+            "mode": "walk",
+            "departureS": 49680,
+            "departureDate": "2026-10-12"
+          },
+          "graph": {
+            "version": "b1e24d8ef9214320",
+            "nodes": 678,
+            "edges": 1447,
+            "regions": [
+              "AUS"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "directory": "search-states-6e52ec3d2521-od7-luggage",
+      "runtime": "6e52ec3d2521",
+      "label": "search-states",
+      "variant": "baseline",
+      "id": 7,
+      "need": "luggage",
+      "state": "observation-window-ended",
+      "wallMs": 60842.693738999995,
+      "workers": 4,
+      "peakRssGiB": 1.2079353332519531,
+      "stages": [
+        {
+          "id": "public-fast",
+          "durationMs": 12384,
+          "status": "ready",
+          "cached": false
+        }
+      ],
+      "availableCandidates": 3,
+      "endpointsPreserved": true,
+      "knownDisabledOrClosedEdgesExcluded": true,
+      "luggageVehicleConfirmation": true,
+      "workerGraphPrepareMs": 4468.296063000003,
+      "workerCloneSendMs": 4049.6052230000023,
+      "sameWorkerExactDuplicateQueries": 0,
+      "unfinishedMain": [
+        {
+          "name": "S1"
+        },
+        {
+          "name": "n3",
+          "request": {
+            "origin": {
+              "id": "map:random--2138587087",
+              "coordinates": [
+                114.19780266014673,
+                22.27037983652672
+              ]
+            },
+            "destination": {
+              "id": "map:random-892708869",
+              "coordinates": [
+                114.16388501171271,
+                22.2735175495032
+              ]
+            },
+            "preference": "luggage",
+            "mode": "transit",
+            "allowedModes": [
+              "metro",
+              "bus",
+              "tram"
+            ],
+            "departureS": 28800,
+            "departureDate": "2026-10-12"
+          }
+        },
+        {
+          "name": "f2",
+          "request": {
+            "origin": {
+              "id": "map:random--2138587087",
+              "coordinates": [
+                114.19780266014673,
+                22.27037983652672
+              ]
+            },
+            "destination": {
+              "id": "map:random-892708869",
+              "coordinates": [
+                114.16388501171271,
+                22.2735175495032
+              ]
+            },
+            "preference": "luggage",
+            "mode": "walk",
+            "allowedModes": [
+              "metro",
+              "bus",
+              "tram"
+            ],
+            "departureS": 28800,
+            "departureDate": "2026-10-12"
+          }
+        },
+        {
+          "name": "r2",
+          "request": {
+            "origin": {
+              "id": "map:random--2138587087",
+              "coordinates": [
+                114.19780266014673,
+                22.27037983652672
+              ]
+            },
+            "destination": {
+              "id": "map:random-892708869",
+              "coordinates": [
+                114.16388501171271,
+                22.2735175495032
+              ]
+            },
+            "preference": "luggage",
+            "mode": "walk",
+            "allowedModes": [
+              "metro",
+              "bus",
+              "tram"
+            ],
+            "departureS": 28800,
+            "departureDate": "2026-10-12"
+          }
+        },
+        {
+          "name": "D2",
+          "request": {
+            "origin": {
+              "id": "map:random--2138587087",
+              "coordinates": [
+                114.19780266014673,
+                22.27037983652672
+              ]
+            },
+            "destination": {
+              "id": "map:random-892708869",
+              "coordinates": [
+                114.16388501171271,
+                22.2735175495032
+              ]
+            },
+            "preference": "luggage",
+            "mode": "walk",
+            "departureS": 28800,
+            "departureDate": "2026-10-12"
+          }
+        }
+      ],
+      "unfinishedWorker": [
+        {
+          "t": 37783.949,
+          "worker": 4,
+          "kind": "app-walk-worker-jk5g-BMr.js",
+          "event": "worker-span-start",
+          "sid": 3,
+          "name": "walk-query",
+          "request": {
+            "origin": {
+              "coordinates": [
+                114.19780266014673,
+                22.27037983652672
+              ]
+            },
+            "destination": {
+              "coordinates": [
+                114.16388501171271,
+                22.2735175495032
+              ]
+            },
+            "preference": "luggage",
+            "mode": "walk",
+            "departureS": 28800,
+            "departureDate": "2026-10-12"
+          },
+          "graph": {
+            "version": "b1e24d8ef9214320",
+            "nodes": 65304,
+            "edges": 144603,
+            "regions": [
+              "ADM",
+              "AUS",
+              "HUH",
+              "EXC",
+              "ETS",
+              "KOW"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "directory": "baseline-6e52ec3d2521-od36-ordinary",
+      "runtime": "6e52ec3d2521",
+      "label": "baseline",
+      "variant": "baseline",
+      "id": 36,
+      "need": "ordinary",
+      "state": "observation-window-ended",
+      "wallMs": 60174.360390999995,
+      "workers": 7,
+      "peakRssGiB": 1.4673805236816406,
+      "stages": [
+        {
+          "id": "public-fast",
+          "durationMs": 8092,
+          "status": "needs-indoor-refinement",
+          "cached": false
+        },
+        {
+          "id": "metro",
+          "durationMs": 9681,
+          "status": "no-complete-route",
+          "cached": false
+        },
+        {
+          "id": "demo-public-fast",
+          "durationMs": 34310,
+          "status": "modeled"
+        },
+        {
+          "id": "demo-fallback",
+          "durationMs": 34340,
+          "status": "modeled"
+        }
+      ],
+      "availableCandidates": 2,
+      "endpointsPreserved": true,
+      "knownDisabledOrClosedEdgesExcluded": true,
+      "luggageVehicleConfirmation": true,
+      "workerGraphPrepareMs": 11680.765306000007,
+      "workerCloneSendMs": 6666.687961999999,
+      "sameWorkerExactDuplicateQueries": 0,
+      "unfinishedMain": [
+        {
+          "name": "S1"
+        },
+        {
+          "name": "n3",
+          "request": {
+            "origin": {
+              "id": "map:random--1529480317",
+              "coordinates": [
+                114.16965086248385,
+                22.293277490710825
+              ]
+            },
+            "destination": {
+              "id": "map:random-2133651309",
+              "coordinates": [
+                114.15007628641142,
+                22.26413857693343
+              ]
+            },
+            "preference": "ordinary",
+            "mode": "transit",
+            "allowedModes": [
+              "metro",
+              "bus",
+              "tram"
+            ],
+            "departureS": 28800,
+            "departureDate": "2026-10-12"
+          }
+        },
+        {
+          "name": "f2",
+          "request": {
+            "origin": {
+              "id": "map:random--1529480317",
+              "coordinates": [
+                114.16965086248385,
+                22.293277490710825
+              ]
+            },
+            "destination": {
+              "id": "td:99139",
+              "coordinates": [
+                114.15296,
+                22.28629
+              ]
+            },
+            "preference": "ordinary",
+            "mode": "transit",
+            "allowedModes": [
+              "tram"
+            ],
+            "departureS": 28800,
+            "departureDate": "2026-10-12"
+          }
+        },
+        {
+          "name": "r2",
+          "request": {
+            "origin": {
+              "id": "map:random--1529480317",
+              "coordinates": [
+                114.16965086248385,
+                22.293277490710825
+              ]
+            },
+            "destination": {
+              "id": "td:99139",
+              "coordinates": [
+                114.15296,
+                22.28629
+              ]
+            },
+            "preference": "ordinary",
+            "mode": "transit",
+            "allowedModes": [
+              "tram"
+            ],
+            "departureS": 28800,
+            "departureDate": "2026-10-12"
+          }
+        }
+      ],
+      "unfinishedWorker": []
+    },
+    {
+      "directory": "defer-walk-6e52ec3d2521-od36-ordinary",
+      "runtime": "6e52ec3d2521",
+      "label": "defer-walk",
+      "variant": "defer-walk",
+      "id": 36,
+      "need": "ordinary",
+      "state": "observation-window-ended",
+      "wallMs": 60468.72392,
+      "workers": 8,
+      "peakRssGiB": 1.4777755737304688,
+      "stages": [
+        {
+          "id": "public-fast",
+          "durationMs": 8731,
+          "status": "needs-indoor-refinement",
+          "cached": false
+        },
+        {
+          "id": "metro",
+          "durationMs": 8880,
+          "status": "no-complete-route",
+          "cached": false
+        },
+        {
+          "id": "demo-public-fast",
+          "durationMs": 14859,
+          "status": "modeled"
+        },
+        {
+          "id": "demo-fallback",
+          "durationMs": 14885,
+          "status": "modeled"
+        }
+      ],
+      "availableCandidates": 2,
+      "endpointsPreserved": true,
+      "knownDisabledOrClosedEdgesExcluded": true,
+      "luggageVehicleConfirmation": true,
+      "workerGraphPrepareMs": 12904.035839,
+      "workerCloneSendMs": 5763.016266999994,
+      "sameWorkerExactDuplicateQueries": 0,
+      "unfinishedMain": [
+        {
+          "name": "S1"
+        },
+        {
+          "name": "n3",
+          "request": {
+            "origin": {
+              "id": "map:random--1529480317",
+              "coordinates": [
+                114.16965086248385,
+                22.293277490710825
+              ]
+            },
+            "destination": {
+              "id": "map:random-2133651309",
+              "coordinates": [
+                114.15007628641142,
+                22.26413857693343
+              ]
+            },
+            "preference": "ordinary",
+            "mode": "transit",
+            "allowedModes": [
+              "metro",
+              "bus",
+              "tram"
+            ],
+            "departureS": 28800,
+            "departureDate": "2026-10-12"
+          }
+        },
+        {
+          "name": "f2",
+          "request": {
+            "origin": {
+              "id": "map:random--1529480317",
+              "coordinates": [
+                114.16965086248385,
+                22.293277490710825
+              ]
+            },
+            "destination": {
+              "id": "map:random-2133651309",
+              "coordinates": [
+                114.15007628641142,
+                22.26413857693343
+              ]
+            },
+            "preference": "ordinary",
+            "mode": "transit",
+            "allowedModes": [
+              "metro",
+              "bus",
+              "tram"
+            ],
+            "departureS": 28800,
+            "departureDate": "2026-10-12"
+          }
+        },
+        {
+          "name": "r2",
+          "request": {
+            "origin": {
+              "id": "map:random--1529480317",
+              "coordinates": [
+                114.16965086248385,
+                22.293277490710825
+              ]
+            },
+            "destination": {
+              "id": "map:random-2133651309",
+              "coordinates": [
+                114.15007628641142,
+                22.26413857693343
+              ]
+            },
+            "preference": "ordinary",
+            "mode": "transit",
+            "allowedModes": [
+              "metro",
+              "bus",
+              "tram"
+            ],
+            "departureS": 28800,
+            "departureDate": "2026-10-12"
+          }
+        }
+      ],
+      "unfinishedWorker": [
+        {
+          "t": 50663.08,
+          "worker": 8,
+          "kind": "app-transit-worker-CaCMeUxU.js",
+          "event": "worker-span-start",
+          "sid": 12,
+          "name": "transit-query",
+          "request": {
+            "origin": {
+              "coordinates": [
+                114.16965086248385,
+                22.293277490710825
+              ]
+            },
+            "destination": {
+              "coordinates": [
+                114.15007628641142,
+                22.26413857693343
+              ]
+            },
+            "preference": "fast",
+            "allowedModes": [
+              "metro",
+              "bus",
+              "tram"
+            ],
+            "departureS": 28800,
+            "departureDate": "2026-10-12"
+          }
+        },
+        {
+          "t": 50731.241,
+          "worker": 8,
+          "kind": "app-transit-worker-CaCMeUxU.js",
+          "event": "worker-span-start",
+          "sid": 13,
+          "name": "scheduled-search"
+        },
+        {
+          "t": 63259.554,
+          "worker": 8,
+          "kind": "app-transit-worker-CaCMeUxU.js",
+          "event": "worker-span-start",
+          "sid": 367,
+          "name": "walk-query",
+          "request": {
+            "origin": {
+              "coordinates": [
+                114.16438,
+                22.2784
+              ]
+            },
+            "destination": {
+              "node_id": "ADM:N:0ed55516ad2679",
+              "coordinates": [
+                114.16601089,
+                22.27890956
+              ]
+            },
+            "preference": "fast",
+            "mode": "walk",
+            "departureS": 32225.40834,
+            "departureDate": "2026-10-12"
+          },
+          "graph": {
+            "version": "814b03c9c2d7e3c5+block:19aebcac62f227eb",
+            "nodes": 27512,
+            "edges": 60514,
+            "regions": [
+              "ADM"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "directory": "fifo-guard-6e52ec3d2521-od36-ordinary",
+      "runtime": "6e52ec3d2521",
+      "label": "fifo-guard",
+      "variant": "fifo-guard",
+      "id": 36,
+      "need": "ordinary",
+      "state": "observation-window-ended",
+      "wallMs": 60071.553695,
+      "workers": 8,
+      "peakRssGiB": 1.4841995239257812,
+      "stages": [
+        {
+          "id": "public-fast",
+          "durationMs": 15465,
+          "status": "needs-indoor-refinement",
+          "cached": false
+        },
+        {
+          "id": "metro",
+          "durationMs": 13479,
+          "status": "no-complete-route",
+          "cached": false
+        },
+        {
+          "id": "demo-public-fast",
+          "durationMs": 19207,
+          "status": "modeled"
+        },
+        {
+          "id": "demo-fallback",
+          "durationMs": 19228,
+          "status": "modeled"
+        }
+      ],
+      "availableCandidates": 2,
+      "endpointsPreserved": true,
+      "knownDisabledOrClosedEdgesExcluded": true,
+      "luggageVehicleConfirmation": true,
+      "workerGraphPrepareMs": 11705.372474999987,
+      "workerCloneSendMs": 8894.415159999993,
+      "sameWorkerExactDuplicateQueries": 0,
+      "unfinishedMain": [
+        {
+          "name": "S1"
+        },
+        {
+          "name": "n3",
+          "request": {
+            "origin": {
+              "id": "map:random--1529480317",
+              "coordinates": [
+                114.16965086248385,
+                22.293277490710825
+              ]
+            },
+            "destination": {
+              "id": "map:random-2133651309",
+              "coordinates": [
+                114.15007628641142,
+                22.26413857693343
+              ]
+            },
+            "preference": "ordinary",
+            "mode": "transit",
+            "allowedModes": [
+              "metro",
+              "bus",
+              "tram"
+            ],
+            "departureS": 28800,
+            "departureDate": "2026-10-12"
+          }
+        },
+        {
+          "name": "f2",
+          "request": {
+            "origin": {
+              "id": "map:random--1529480317",
+              "coordinates": [
+                114.16965086248385,
+                22.293277490710825
+              ]
+            },
+            "destination": {
+              "id": "map:random-2133651309",
+              "coordinates": [
+                114.15007628641142,
+                22.26413857693343
+              ]
+            },
+            "preference": "ordinary",
+            "mode": "transit",
+            "allowedModes": [
+              "metro",
+              "bus",
+              "tram"
+            ],
+            "departureS": 28800,
+            "departureDate": "2026-10-12"
+          }
+        },
+        {
+          "name": "r2",
+          "request": {
+            "origin": {
+              "id": "map:random--1529480317",
+              "coordinates": [
+                114.16965086248385,
+                22.293277490710825
+              ]
+            },
+            "destination": {
+              "id": "map:random-2133651309",
+              "coordinates": [
+                114.15007628641142,
+                22.26413857693343
+              ]
+            },
+            "preference": "ordinary",
+            "mode": "transit",
+            "allowedModes": [
+              "metro",
+              "bus",
+              "tram"
+            ],
+            "departureS": 28800,
+            "departureDate": "2026-10-12"
+          }
+        }
+      ],
+      "unfinishedWorker": [
+        {
+          "t": 63717.266,
+          "worker": 8,
+          "kind": "app-transit-worker-CaCMeUxU.js",
+          "event": "worker-span-start",
+          "sid": 1,
+          "name": "graph-prepare",
+          "graph": {
+            "version": "814b03c9c2d7e3c5",
+            "nodes": 61055,
+            "edges": 135514,
+            "regions": [
+              "ADM",
+              "AUS"
+            ]
+          }
+        },
+        {
+          "t": 63717.284,
+          "worker": 8,
+          "kind": "app-transit-worker-CaCMeUxU.js",
+          "event": "worker-span-start",
+          "sid": 2,
+          "name": "graph-validate",
+          "graph": {
+            "version": "814b03c9c2d7e3c5",
+            "nodes": 61055,
+            "edges": 135514,
+            "regions": [
+              "ADM",
+              "AUS"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "directory": "shared-base-6e52ec3d2521-od36-ordinary",
+      "runtime": "6e52ec3d2521",
+      "label": "shared-base",
+      "variant": "shared-base",
+      "id": 36,
+      "need": "ordinary",
+      "state": "observation-window-ended",
+      "wallMs": 60144.149797,
+      "workers": 7,
+      "peakRssGiB": 1.5819892883300781,
+      "stages": [
+        {
+          "id": "public-fast",
+          "durationMs": 8142,
+          "status": "needs-indoor-refinement",
+          "cached": false
+        },
+        {
+          "id": "metro",
+          "durationMs": 5865,
+          "status": "no-complete-route",
+          "cached": false
+        },
+        {
+          "id": "demo-public-fast",
+          "durationMs": 16682,
+          "status": "modeled"
+        },
+        {
+          "id": "demo-fallback",
+          "durationMs": 16702,
+          "status": "modeled"
+        }
+      ],
+      "availableCandidates": 2,
+      "endpointsPreserved": true,
+      "knownDisabledOrClosedEdgesExcluded": true,
+      "luggageVehicleConfirmation": true,
+      "workerGraphPrepareMs": 10433.371494000017,
+      "workerCloneSendMs": 6056.328920000004,
+      "sameWorkerExactDuplicateQueries": 0,
+      "unfinishedMain": [
+        {
+          "name": "S1"
+        },
+        {
+          "name": "n3",
+          "request": {
+            "origin": {
+              "id": "map:random--1529480317",
+              "coordinates": [
+                114.16965086248385,
+                22.293277490710825
+              ]
+            },
+            "destination": {
+              "id": "map:random-2133651309",
+              "coordinates": [
+                114.15007628641142,
+                22.26413857693343
+              ]
+            },
+            "preference": "ordinary",
+            "mode": "transit",
+            "allowedModes": [
+              "metro",
+              "bus",
+              "tram"
+            ],
+            "departureS": 28800,
+            "departureDate": "2026-10-12"
+          }
+        },
+        {
+          "name": "f2",
+          "request": {
+            "origin": {
+              "id": "map:random--1529480317",
+              "coordinates": [
+                114.16965086248385,
+                22.293277490710825
+              ]
+            },
+            "destination": {
+              "id": "map:random-2133651309",
+              "coordinates": [
+                114.15007628641142,
+                22.26413857693343
+              ]
+            },
+            "preference": "ordinary",
+            "mode": "transit",
+            "allowedModes": [
+              "metro",
+              "bus",
+              "tram"
+            ],
+            "departureS": 28800,
+            "departureDate": "2026-10-12"
+          }
+        },
+        {
+          "name": "r2",
+          "request": {
+            "origin": {
+              "id": "map:random--1529480317",
+              "coordinates": [
+                114.16965086248385,
+                22.293277490710825
+              ]
+            },
+            "destination": {
+              "id": "map:random-2133651309",
+              "coordinates": [
+                114.15007628641142,
+                22.26413857693343
+              ]
+            },
+            "preference": "ordinary",
+            "mode": "transit",
+            "allowedModes": [
+              "metro",
+              "bus",
+              "tram"
+            ],
+            "departureS": 28800,
+            "departureDate": "2026-10-12"
+          }
+        }
+      ],
+      "unfinishedWorker": [
+        {
+          "t": 47390.308,
+          "worker": 7,
+          "kind": "app-transit-worker-CaCMeUxU.js",
+          "event": "worker-span-start",
+          "sid": 12,
+          "name": "transit-query",
+          "request": {
+            "origin": {
+              "coordinates": [
+                114.16965086248385,
+                22.293277490710825
+              ]
+            },
+            "destination": {
+              "coordinates": [
+                114.15007628641142,
+                22.26413857693343
+              ]
+            },
+            "preference": "fast",
+            "allowedModes": [
+              "metro",
+              "bus",
+              "tram"
+            ],
+            "departureS": 28800,
+            "departureDate": "2026-10-12"
+          }
+        },
+        {
+          "t": 47453.152,
+          "worker": 7,
+          "kind": "app-transit-worker-CaCMeUxU.js",
+          "event": "worker-span-start",
+          "sid": 13,
+          "name": "scheduled-search"
+        },
+        {
+          "t": 63301.936,
+          "worker": 7,
+          "kind": "app-transit-worker-CaCMeUxU.js",
+          "event": "worker-span-start",
+          "sid": 414,
+          "name": "walk-query",
+          "request": {
+            "origin": {
+              "coordinates": [
+                114.16454,
+                22.27827
+              ]
+            },
+            "destination": {
+              "node_id": "ADM:N:423d9c94cd1e0b",
+              "coordinates": [
+                114.16478974,
+                22.27904296
+              ]
+            },
+            "preference": "fast",
+            "mode": "walk",
+            "departureS": 32248.816980000003,
+            "departureDate": "2026-10-12"
+          },
+          "graph": {
+            "version": "814b03c9c2d7e3c5+block:19aebcac62f227eb",
+            "nodes": 27512,
+            "edges": 60514,
+            "regions": [
+              "ADM"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

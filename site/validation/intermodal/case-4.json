@@ -1,0 +1,792 @@
+{
+  "runtime": "4f0a062ef29d",
+  "departureDate": "2026-10-12",
+  "departureS": 39600,
+  "method": "Actual production f2 + routing Worker bundles and seeded 48-car road simulation; not browser QA; all fares/schedules/vehicles remain simulation",
+  "rows": [
+    {
+      "name": "覆盖电车走廊",
+      "request": {
+        "origin": {
+          "id": "td:99211",
+          "name": "港澳码头 (东行方向)",
+          "coordinates": [
+            114.15011,
+            22.28776
+          ],
+          "lon": 114.15011,
+          "lat": 22.28776
+        },
+        "destination": {
+          "id": "td:99227",
+          "name": "坚拿道西 (东行方向)",
+          "coordinates": [
+            114.18096,
+            22.27931
+          ],
+          "lon": 114.18096,
+          "lat": 22.27931
+        },
+        "departureS": 39600,
+        "departureDate": "2026-10-12",
+        "need": "ordinary",
+        "mode": "transit",
+        "allowedTransitModes": [
+          "metro",
+          "bus",
+          "tram"
+        ]
+      },
+      "candidates": [
+        {
+          "id": "public-all",
+          "breakdown": {
+            "walk": 0,
+            "station": 0,
+            "wait": 4.466666666666667,
+            "ride": 24.316666666666666,
+            "taxi": 0
+          },
+          "legs": [
+            {
+              "kind": "wait",
+              "label": "在港澳码头 (东行方向)候车，11:04出发（所选时钟）",
+              "minutes": 4.466666666666667,
+              "distanceM": 0
+            },
+            {
+              "kind": "tram",
+              "label": "电车 中环—湾仔（常规班距模拟）：港澳码头 (东行方向) → 坚拿道西 (东行方向)（11:04–11:28）",
+              "minutes": 24.316666666666666,
+              "distanceM": 3648.6685522296257
+            }
+          ],
+          "kind": "public",
+          "available": true,
+          "minutes": 29,
+          "cost": 3,
+          "walkMinutes": 0,
+          "waitMinutes": 5,
+          "transfers": 0,
+          "modes": [
+            "wait",
+            "tram"
+          ],
+          "score": 33.75,
+          "simulationOnly": false,
+          "message": "演示班次联程 · 11:00 出发"
+        },
+        {
+          "id": "taxi-direct",
+          "breakdown": {
+            "walk": 0.5886323981545143,
+            "station": 0,
+            "wait": 2.6905863696609837,
+            "ride": 0,
+            "taxi": 9.64081666666667
+          },
+          "legs": [
+            {
+              "kind": "walk",
+              "label": "步行 25 米到预约上客点",
+              "minutes": 0.33863239815451424,
+              "distanceM": 24.381532667125025
+            },
+            {
+              "kind": "wait",
+              "label": "等待 DEMO-01 · 3 分钟",
+              "minutes": 2.6905863696609837,
+              "distanceM": 0
+            },
+            {
+              "kind": "taxi",
+              "label": "乘出租车 DEMO-01 前往 坚拿道西 (东行方向)",
+              "minutes": 9.64081666666667,
+              "distanceM": 4895.304
+            },
+            {
+              "kind": "walk",
+              "label": "步行 15 米到坚拿道西 (东行方向)",
+              "minutes": 0.25,
+              "distanceM": 14.232418597825347
+            }
+          ],
+          "kind": "direct",
+          "available": true,
+          "minutes": 13,
+          "cost": 52.16,
+          "walkMinutes": 1,
+          "waitMinutes": 2.6905863696609837,
+          "transfers": 0,
+          "modes": [
+            "walk",
+            "wait",
+            "taxi",
+            "walk"
+          ],
+          "score": 53.81529318483049,
+          "simulationOnly": true,
+          "message": "按到达时间接车，继续前往目的地",
+          "title": "出租车直达"
+        },
+        {
+          "id": "taxi-last-metro-ADM:portal:E2",
+          "breakdown": {
+            "walk": 5.06590980014573,
+            "station": 0,
+            "wait": 4.466666666666667,
+            "ride": 12.3,
+            "taxi": 4.479783333333332
+          },
+          "legs": [
+            {
+              "kind": "wait",
+              "label": "在港澳码头 (东行方向)候车，11:04出发（所选时钟）",
+              "minutes": 4.466666666666667,
+              "distanceM": 0
+            },
+            {
+              "kind": "tram",
+              "label": "电车 中环—湾仔（常规班距模拟）：港澳码头 (东行方向) → 金钟港铁站 (东行方向)（11:04–11:16）",
+              "minutes": 12.3,
+              "distanceM": 1844.0306815759104
+            },
+            {
+              "kind": "access_connector",
+              "label": "前往站台入口（约18.3米）",
+              "minutes": 0.253506,
+              "distanceM": 18.252
+            },
+            {
+              "kind": "walk",
+              "label": "行人道",
+              "minutes": 0.181762,
+              "distanceM": 13.087
+            },
+            {
+              "kind": "walk",
+              "label": "金鐘道",
+              "minutes": 0.461104,
+              "distanceM": 33.2
+            },
+            {
+              "kind": "walk",
+              "label": "行人道",
+              "minutes": 0.040363,
+              "distanceM": 2.906
+            },
+            {
+              "kind": "walk",
+              "label": "金鐘道",
+              "minutes": 1.156169,
+              "distanceM": 83.244
+            },
+            {
+              "kind": "walk",
+              "label": "金鐘站",
+              "minutes": 0.02504,
+              "distanceM": 1.803
+            },
+            {
+              "kind": "crossing",
+              "label": "金鐘站過路處",
+              "minutes": 0.084196,
+              "distanceM": 6.062
+            },
+            {
+              "kind": "walk",
+              "label": "金鐘站安全島",
+              "minutes": 0.026897,
+              "distanceM": 1.937
+            },
+            {
+              "kind": "crossing",
+              "label": "金鐘站過路處",
+              "minutes": 0.091247,
+              "distanceM": 6.57
+            },
+            {
+              "kind": "walk",
+              "label": "金鐘站",
+              "minutes": 0.772428,
+              "distanceM": 55.615
+            },
+            {
+              "kind": "ramp",
+              "label": "斜道",
+              "minutes": 0.164903,
+              "distanceM": 11.873
+            },
+            {
+              "kind": "walk",
+              "label": "金鐘站",
+              "minutes": 0.497063,
+              "distanceM": 35.789
+            },
+            {
+              "kind": "walk",
+              "label": "樂禮街車輛出入口",
+              "minutes": 0.074576,
+              "distanceM": 5.369
+            },
+            {
+              "kind": "walk",
+              "label": "金鐘站",
+              "minutes": 0.118945,
+              "distanceM": 8.564
+            },
+            {
+              "kind": "ramp",
+              "label": "金鐘鐵路站E1出口斜道",
+              "minutes": 0.041504,
+              "distanceM": 2.988
+            },
+            {
+              "kind": "ramp",
+              "label": "金鐘鐵路站斜道",
+              "minutes": 0.137936,
+              "distanceM": 9.931
+            },
+            {
+              "kind": "walk",
+              "label": "金鐘鐵路站E1及E2出口地面",
+              "minutes": 0.221226,
+              "distanceM": 15.928
+            },
+            {
+              "kind": "walk",
+              "label": "步行 34 米到预约上客点",
+              "minutes": 0.4670448001457294,
+              "distanceM": 33.627225610492516
+            },
+            {
+              "kind": "taxi",
+              "label": "乘出租车 DEMO-17 前往 坚拿道西 (东行方向)",
+              "minutes": 4.479783333333332,
+              "distanceM": 1881.503
+            },
+            {
+              "kind": "walk",
+              "label": "步行 15 米到坚拿道西 (东行方向)",
+              "minutes": 0.25,
+              "distanceM": 14.232418597825347
+            }
+          ],
+          "kind": "last",
+          "available": true,
+          "minutes": 27,
+          "cost": 32,
+          "walkMinutes": 6,
+          "waitMinutes": 5,
+          "transfers": 1,
+          "modes": [
+            "wait",
+            "tram",
+            "access_connector",
+            "walk",
+            "crossing",
+            "walk",
+            "crossing",
+            "walk",
+            "ramp",
+            "walk",
+            "ramp",
+            "walk",
+            "taxi",
+            "walk"
+          ],
+          "anchor": {
+            "id": "ADM:portal:E2",
+            "name": "金鐘站 E2出口",
+            "mode": "metro",
+            "coordinates": [
+              114.16624518,
+              22.27888752,
+              6
+            ]
+          },
+          "score": 58.6,
+          "simulationOnly": true,
+          "message": "按到达时间接车，继续前往目的地",
+          "title": "电车 + 出租车末程"
+        },
+        {
+          "id": "taxi-last-tram-td:99220",
+          "breakdown": {
+            "walk": 0.5,
+            "station": 0,
+            "wait": 4.466666666666667,
+            "ride": 12.3,
+            "taxi": 4.6412499999999985
+          },
+          "legs": [
+            {
+              "kind": "wait",
+              "label": "在港澳码头 (东行方向)候车，11:04出发（所选时钟）",
+              "minutes": 4.466666666666667,
+              "distanceM": 0
+            },
+            {
+              "kind": "tram",
+              "label": "电车 中环—湾仔（常规班距模拟）：港澳码头 (东行方向) → 金钟港铁站 (东行方向)（11:04–11:16）",
+              "minutes": 12.3,
+              "distanceM": 1844.0306815759104
+            },
+            {
+              "kind": "walk",
+              "label": "步行 11 米到预约上客点",
+              "minutes": 0.25,
+              "distanceM": 10.473153989205448
+            },
+            {
+              "kind": "taxi",
+              "label": "乘出租车 DEMO-17 前往 坚拿道西 (东行方向)",
+              "minutes": 4.6412499999999985,
+              "distanceM": 1949.316
+            },
+            {
+              "kind": "walk",
+              "label": "步行 15 米到坚拿道西 (东行方向)",
+              "minutes": 0.25,
+              "distanceM": 14.232418597825347
+            }
+          ],
+          "kind": "last",
+          "available": true,
+          "minutes": 22,
+          "cost": 32,
+          "walkMinutes": 1,
+          "waitMinutes": 5,
+          "transfers": 1,
+          "modes": [
+            "wait",
+            "tram",
+            "walk",
+            "taxi",
+            "walk"
+          ],
+          "anchor": {
+            "id": "td:99220",
+            "name": "金钟港铁站 (东行方向)",
+            "mode": "tram",
+            "coordinates": [
+              114.16438,
+              22.2784
+            ]
+          },
+          "score": 51.85,
+          "simulationOnly": true,
+          "message": "按到达时间接车，继续前往目的地",
+          "title": "电车 + 出租车末程"
+        },
+        {
+          "id": "taxi-first-metro-ADM:portal:E2",
+          "breakdown": {
+            "walk": 5.154542198300244,
+            "station": 0,
+            "wait": 3.698092135033221,
+            "ride": 11.766666666666667,
+            "taxi": 8.164033333333336
+          },
+          "legs": [
+            {
+              "kind": "walk",
+              "label": "步行 25 米到预约上客点",
+              "minutes": 0.33863239815451424,
+              "distanceM": 24.381532667125025
+            },
+            {
+              "kind": "wait",
+              "label": "等待 DEMO-01 · 3 分钟",
+              "minutes": 2.6905863696609837,
+              "distanceM": 0
+            },
+            {
+              "kind": "taxi",
+              "label": "乘出租车 DEMO-01 前往 金鐘站 E2出口",
+              "minutes": 8.164033333333336,
+              "distanceM": 3460.461000000001
+            },
+            {
+              "kind": "walk",
+              "label": "步行 34 米接续下一程",
+              "minutes": 0.4670448001457294,
+              "distanceM": 33.627225610492516
+            },
+            {
+              "kind": "walk",
+              "label": "金鐘鐵路站E1及E2出口地面",
+              "minutes": 0.221226,
+              "distanceM": 15.928
+            },
+            {
+              "kind": "ramp",
+              "label": "金鐘鐵路站斜道",
+              "minutes": 0.137936,
+              "distanceM": 9.931
+            },
+            {
+              "kind": "ramp",
+              "label": "金鐘鐵路站E1出口斜道",
+              "minutes": 0.041504,
+              "distanceM": 2.988
+            },
+            {
+              "kind": "walk",
+              "label": "金鐘站",
+              "minutes": 0.118945,
+              "distanceM": 8.564
+            },
+            {
+              "kind": "walk",
+              "label": "樂禮街車輛出入口",
+              "minutes": 0.074576,
+              "distanceM": 5.369
+            },
+            {
+              "kind": "walk",
+              "label": "金鐘站",
+              "minutes": 0.497063,
+              "distanceM": 35.789
+            },
+            {
+              "kind": "ramp",
+              "label": "斜道",
+              "minutes": 0.164903,
+              "distanceM": 11.873
+            },
+            {
+              "kind": "walk",
+              "label": "金鐘站",
+              "minutes": 0.772428,
+              "distanceM": 55.615
+            },
+            {
+              "kind": "crossing",
+              "label": "金鐘站過路處",
+              "minutes": 0.091247,
+              "distanceM": 6.57
+            },
+            {
+              "kind": "walk",
+              "label": "金鐘站安全島",
+              "minutes": 0.026897,
+              "distanceM": 1.937
+            },
+            {
+              "kind": "crossing",
+              "label": "金鐘站過路處",
+              "minutes": 0.084196,
+              "distanceM": 6.062
+            },
+            {
+              "kind": "walk",
+              "label": "金鐘站",
+              "minutes": 0.02504,
+              "distanceM": 1.803
+            },
+            {
+              "kind": "walk",
+              "label": "金鐘道",
+              "minutes": 1.156169,
+              "distanceM": 83.244
+            },
+            {
+              "kind": "walk",
+              "label": "行人道",
+              "minutes": 0.040363,
+              "distanceM": 2.906
+            },
+            {
+              "kind": "walk",
+              "label": "金鐘道",
+              "minutes": 0.461104,
+              "distanceM": 33.2
+            },
+            {
+              "kind": "walk",
+              "label": "行人道",
+              "minutes": 0.181762,
+              "distanceM": 13.087
+            },
+            {
+              "kind": "access_connector",
+              "label": "前往站台入口（约18.3米）",
+              "minutes": 0.253506,
+              "distanceM": 18.252
+            },
+            {
+              "kind": "wait",
+              "label": "在金钟港铁站 (东行方向)候车，11:17出发（所选时钟）",
+              "minutes": 1.0075057653722372,
+              "distanceM": 0
+            },
+            {
+              "kind": "tram",
+              "label": "电车 中环—湾仔（常规班距模拟）：金钟港铁站 (东行方向) → 坚拿道西 (东行方向)（11:17–11:28）",
+              "minutes": 11.766666666666667,
+              "distanceM": 1804.6378706537153
+            }
+          ],
+          "kind": "first",
+          "available": true,
+          "minutes": 30,
+          "cost": 43.68,
+          "walkMinutes": 6,
+          "waitMinutes": 4.690586369660984,
+          "transfers": 1,
+          "modes": [
+            "walk",
+            "wait",
+            "taxi",
+            "walk",
+            "ramp",
+            "walk",
+            "ramp",
+            "walk",
+            "crossing",
+            "walk",
+            "crossing",
+            "walk",
+            "access_connector",
+            "wait",
+            "tram"
+          ],
+          "anchor": {
+            "id": "ADM:portal:E2",
+            "name": "金鐘站 E2出口",
+            "mode": "metro",
+            "coordinates": [
+              114.16624518,
+              22.27888752,
+              6
+            ]
+          },
+          "score": 70.2052931848305,
+          "simulationOnly": true,
+          "message": "按到达时间接车，继续前往目的地",
+          "title": "出租车首程 + 电车"
+        },
+        {
+          "id": "taxi-first-tram-td:99219",
+          "breakdown": {
+            "walk": 0.5886323981545143,
+            "station": 0,
+            "wait": 8.82945093517883,
+            "ride": 13.65,
+            "taxi": 5.715250000000002
+          },
+          "legs": [
+            {
+              "kind": "walk",
+              "label": "步行 25 米到预约上客点",
+              "minutes": 0.33863239815451424,
+              "distanceM": 24.381532667125025
+            },
+            {
+              "kind": "wait",
+              "label": "等待 DEMO-01 · 3 分钟",
+              "minutes": 2.6905863696609837,
+              "distanceM": 0
+            },
+            {
+              "kind": "taxi",
+              "label": "乘出租车 DEMO-01 前往 美利道 (东行方向)",
+              "minutes": 5.715250000000002,
+              "distanceM": 2400.386000000001
+            },
+            {
+              "kind": "walk",
+              "label": "步行 16 米接续下一程",
+              "minutes": 0.25,
+              "distanceM": 15.136005707966692
+            },
+            {
+              "kind": "wait",
+              "label": "在美利道 (东行方向)候车，11:15出发（所选时钟）",
+              "minutes": 6.138864565517846,
+              "distanceM": 0
+            },
+            {
+              "kind": "tram",
+              "label": "电车 中环—湾仔（常规班距模拟）：美利道 (东行方向) → 坚拿道西 (东行方向)（11:15–11:28）",
+              "minutes": 13.65,
+              "distanceM": 2091.3489495507724
+            }
+          ],
+          "kind": "first",
+          "available": true,
+          "minutes": 29,
+          "cost": 35.2,
+          "walkMinutes": 1,
+          "waitMinutes": 9.690586369660984,
+          "transfers": 1,
+          "modes": [
+            "walk",
+            "wait",
+            "taxi",
+            "walk",
+            "wait",
+            "tram"
+          ],
+          "anchor": {
+            "id": "td:99219",
+            "name": "美利道 (东行方向)",
+            "mode": "tram",
+            "coordinates": [
+              114.16199,
+              22.27972
+            ]
+          },
+          "score": 63.595293184830496,
+          "simulationOnly": true,
+          "message": "按到达时间接车，继续前往目的地",
+          "title": "出租车首程 + 电车"
+        }
+      ],
+      "diagnostics": [
+        {
+          "side": "last",
+          "id": "ADM:portal:E2",
+          "status": "ready",
+          "minutes": 27
+        },
+        {
+          "side": "last",
+          "id": "td:99220",
+          "status": "ready",
+          "minutes": 22
+        },
+        {
+          "side": "first",
+          "id": "ADM:portal:E2",
+          "status": "ready",
+          "minutes": 30
+        },
+        {
+          "side": "first",
+          "id": "td:99219",
+          "status": "ready",
+          "minutes": 29
+        }
+      ],
+      "shortlist": {
+        "first": [
+          {
+            "id": "ADM:portal:E2",
+            "mode": "metro"
+          },
+          {
+            "id": "EXC:portal:B3",
+            "mode": "metro"
+          },
+          {
+            "id": "td:4025",
+            "mode": "bus"
+          },
+          {
+            "id": "td:99219",
+            "mode": "tram"
+          }
+        ],
+        "last": [
+          {
+            "id": "EXC:portal:A1",
+            "mode": "metro"
+          },
+          {
+            "id": "ADM:portal:E2",
+            "mode": "metro"
+          },
+          {
+            "id": "td:1279",
+            "mode": "bus"
+          },
+          {
+            "id": "td:99220",
+            "mode": "tram"
+          }
+        ]
+      },
+      "taxiStatus": {
+        "status": "ready",
+        "published": 5
+      },
+      "rankings": {
+        "time": [
+          "public-all",
+          "taxi-last-tram-td:99220",
+          "taxi-direct",
+          "taxi-last-metro-ADM:portal:E2",
+          "taxi-first-tram-td:99219",
+          "taxi-first-metro-ADM:portal:E2"
+        ],
+        "cost": [
+          "public-all",
+          "taxi-last-tram-td:99220",
+          "taxi-last-metro-ADM:portal:E2",
+          "taxi-first-tram-td:99219",
+          "taxi-first-metro-ADM:portal:E2",
+          "taxi-direct"
+        ],
+        "walk": [
+          "public-all",
+          "taxi-direct",
+          "taxi-last-tram-td:99220",
+          "taxi-first-tram-td:99219",
+          "taxi-last-metro-ADM:portal:E2",
+          "taxi-first-metro-ADM:portal:E2"
+        ]
+      },
+      "priceWeightSensitivity": [
+        {
+          "costWeight": 0,
+          "winner": "taxi-direct"
+        },
+        {
+          "costWeight": 0.25,
+          "winner": "taxi-direct"
+        },
+        {
+          "costWeight": 0.5,
+          "winner": "public-all"
+        },
+        {
+          "costWeight": 0.75,
+          "winner": "public-all"
+        },
+        {
+          "costWeight": 1,
+          "winner": "public-all"
+        },
+        {
+          "costWeight": 2,
+          "winner": "public-all"
+        }
+      ],
+      "taxiPriceSensitivity": [
+        {
+          "factor": 0.5,
+          "winner": "public-all"
+        },
+        {
+          "factor": 1,
+          "winner": "public-all"
+        },
+        {
+          "factor": 1.5,
+          "winner": "public-all"
+        },
+        {
+          "factor": 2,
+          "winner": "public-all"
+        },
+        {
+          "factor": 3,
+          "winner": "public-all"
+        }
+      ],
+      "ms": 16596
+    }
+  ]
+}

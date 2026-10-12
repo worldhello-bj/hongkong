@@ -1,0 +1,242 @@
+{
+  "status": "PASS",
+  "groups": 21,
+  "coveredStopIds": 32,
+  "missingStopIds": [],
+  "bytes": 21242140,
+  "triangles": 139887,
+  "maxOfficialPointDiscrepancyM": 1.437,
+  "groupsDetail": [
+    {
+      "id": "admiralty",
+      "bytes": 694908,
+      "triangles": 4867,
+      "vertices": 7722,
+      "primitives": 7,
+      "textureImages": 7,
+      "alphaTextureImages": 1,
+      "estimatedTextureRgbaBytes": 10318664,
+      "checks": "GLB header/chunks, buffers, finite attributes, UV range, normal lengths, index bounds, manifest bounds, hashes, embedded image decoding"
+    },
+    {
+      "id": "arsenal-street",
+      "bytes": 459104,
+      "triangles": 3605,
+      "vertices": 3837,
+      "primitives": 7,
+      "textureImages": 7,
+      "alphaTextureImages": 1,
+      "estimatedTextureRgbaBytes": 8786712,
+      "checks": "GLB header/chunks, buffers, finite attributes, UV range, normal lengths, index bounds, manifest bounds, hashes, embedded image decoding"
+    },
+    {
+      "id": "gresson-fenwick",
+      "bytes": 664652,
+      "triangles": 6610,
+      "vertices": 9771,
+      "primitives": 8,
+      "textureImages": 8,
+      "alphaTextureImages": 1,
+      "estimatedTextureRgbaBytes": 11513856,
+      "checks": "GLB header/chunks, buffers, finite attributes, UV range, normal lengths, index bounds, manifest bounds, hashes, embedded image decoding"
+    },
+    {
+      "id": "swatow-luard",
+      "bytes": 593836,
+      "triangles": 3960,
+      "vertices": 4610,
+      "primitives": 8,
+      "textureImages": 8,
+      "alphaTextureImages": 1,
+      "estimatedTextureRgbaBytes": 9282076,
+      "checks": "GLB header/chunks, buffers, finite attributes, UV range, normal lengths, index bounds, manifest bounds, hashes, embedded image decoding"
+    },
+    {
+      "id": "obrien-road",
+      "bytes": 1031404,
+      "triangles": 9463,
+      "vertices": 13223,
+      "primitives": 9,
+      "textureImages": 9,
+      "alphaTextureImages": 1,
+      "estimatedTextureRgbaBytes": 14057360,
+      "checks": "GLB header/chunks, buffers, finite attributes, UV range, normal lengths, index bounds, manifest bounds, hashes, embedded image decoding"
+    },
+    {
+      "id": "burrows-fleming",
+      "bytes": 1042172,
+      "triangles": 5986,
+      "vertices": 7232,
+      "primitives": 6,
+      "textureImages": 6,
+      "alphaTextureImages": 0,
+      "estimatedTextureRgbaBytes": 22646784,
+      "checks": "GLB header/chunks, buffers, finite attributes, UV range, normal lengths, index bounds, manifest bounds, hashes, embedded image decoding"
+    },
+    {
+      "id": "tonnochy-road",
+      "bytes": 1178912,
+      "triangles": 7550,
+      "vertices": 10698,
+      "primitives": 9,
+      "textureImages": 9,
+      "alphaTextureImages": 1,
+      "estimatedTextureRgbaBytes": 20678996,
+      "checks": "GLB header/chunks, buffers, finite attributes, UV range, normal lengths, index bounds, manifest bounds, hashes, embedded image decoding"
+    },
+    {
+      "id": "canal-road-west",
+      "bytes": 1895584,
+      "triangles": 7137,
+      "vertices": 9090,
+      "primitives": 17,
+      "textureImages": 17,
+      "alphaTextureImages": 4,
+      "estimatedTextureRgbaBytes": 46306988,
+      "checks": "GLB header/chunks, buffers, finite attributes, UV range, normal lengths, index bounds, manifest bounds, hashes, embedded image decoding"
+    },
+    {
+      "id": "percival-street",
+      "bytes": 735324,
+      "triangles": 4033,
+      "vertices": 3847,
+      "primitives": 7,
+      "textureImages": 7,
+      "alphaTextureImages": 1,
+      "estimatedTextureRgbaBytes": 18748072,
+      "checks": "GLB header/chunks, buffers, finite attributes, UV range, normal lengths, index bounds, manifest bounds, hashes, embedded image decoding"
+    },
+    {
+      "id": "cotton-tree-drive",
+      "bytes": 1328700,
+      "triangles": 7622,
+      "vertices": 11414,
+      "primitives": 13,
+      "textureImages": 13,
+      "alphaTextureImages": 3,
+      "estimatedTextureRgbaBytes": 17841684,
+      "checks": "GLB header/chunks, buffers, finite attributes, UV range, normal lengths, index bounds, manifest bounds, hashes, embedded image decoding"
+    },
+    {
+      "id": "murray-road",
+      "bytes": 654616,
+      "triangles": 2549,
+      "vertices": 3118,
+      "primitives": 5,
+      "textureImages": 5,
+      "alphaTextureImages": 1,
+      "estimatedTextureRgbaBytes": 10027008,
+      "checks": "GLB header/chunks, buffers, finite attributes, UV range, normal lengths, index bounds, manifest bounds, hashes, embedded image decoding"
+    },
+    {
+      "id": "bank-street",
+      "bytes": 1320888,
+      "triangles": 8538,
+      "vertices": 10830,
+      "primitives": 12,
+      "textureImages": 12,
+      "alphaTextureImages": 1,
+      "estimatedTextureRgbaBytes": 19017728,
+      "checks": "GLB header/chunks, buffers, finite attributes, UV range, normal lengths, index bounds, manifest bounds, hashes, embedded image decoding"
+    },
+    {
+      "id": "ice-house-street",
+      "bytes": 660244,
+      "triangles": 5527,
+      "vertices": 8362,
+      "primitives": 4,
+      "textureImages": 4,
+      "alphaTextureImages": 0,
+      "estimatedTextureRgbaBytes": 9256960,
+      "checks": "GLB header/chunks, buffers, finite attributes, UV range, normal lengths, index bounds, manifest bounds, hashes, embedded image decoding"
+    },
+    {
+      "id": "pedder-street",
+      "bytes": 1307140,
+      "triangles": 10779,
+      "vertices": 15693,
+      "primitives": 7,
+      "textureImages": 7,
+      "alphaTextureImages": 0,
+      "estimatedTextureRgbaBytes": 21508096,
+      "checks": "GLB header/chunks, buffers, finite attributes, UV range, normal lengths, index bounds, manifest bounds, hashes, embedded image decoding"
+    },
+    {
+      "id": "pottinger-street",
+      "bytes": 1127464,
+      "triangles": 7635,
+      "vertices": 11511,
+      "primitives": 7,
+      "textureImages": 7,
+      "alphaTextureImages": 0,
+      "estimatedTextureRgbaBytes": 17617744,
+      "checks": "GLB header/chunks, buffers, finite attributes, UV range, normal lengths, index bounds, manifest bounds, hashes, embedded image decoding"
+    },
+    {
+      "id": "jubilee-street",
+      "bytes": 1444224,
+      "triangles": 7379,
+      "vertices": 10680,
+      "primitives": 14,
+      "textureImages": 14,
+      "alphaTextureImages": 0,
+      "estimatedTextureRgbaBytes": 26943596,
+      "checks": "GLB header/chunks, buffers, finite attributes, UV range, normal lengths, index bounds, manifest bounds, hashes, embedded image decoding"
+    },
+    {
+      "id": "gilman-street",
+      "bytes": 1139616,
+      "triangles": 7925,
+      "vertices": 11448,
+      "primitives": 8,
+      "textureImages": 8,
+      "alphaTextureImages": 0,
+      "estimatedTextureRgbaBytes": 17518592,
+      "checks": "GLB header/chunks, buffers, finite attributes, UV range, normal lengths, index bounds, manifest bounds, hashes, embedded image decoding"
+    },
+    {
+      "id": "man-wa-lane",
+      "bytes": 742600,
+      "triangles": 6378,
+      "vertices": 8738,
+      "primitives": 7,
+      "textureImages": 7,
+      "alphaTextureImages": 0,
+      "estimatedTextureRgbaBytes": 11551156,
+      "checks": "GLB header/chunks, buffers, finite attributes, UV range, normal lengths, index bounds, manifest bounds, hashes, embedded image decoding"
+    },
+    {
+      "id": "hillier-street",
+      "bytes": 1100076,
+      "triangles": 7999,
+      "vertices": 13370,
+      "primitives": 9,
+      "textureImages": 9,
+      "alphaTextureImages": 0,
+      "estimatedTextureRgbaBytes": 17893012,
+      "checks": "GLB header/chunks, buffers, finite attributes, UV range, normal lengths, index bounds, manifest bounds, hashes, embedded image decoding"
+    },
+    {
+      "id": "western-market",
+      "bytes": 1480308,
+      "triangles": 11307,
+      "vertices": 18741,
+      "primitives": 8,
+      "textureImages": 8,
+      "alphaTextureImages": 0,
+      "estimatedTextureRgbaBytes": 22958080,
+      "checks": "GLB header/chunks, buffers, finite attributes, UV range, normal lengths, index bounds, manifest bounds, hashes, embedded image decoding"
+    },
+    {
+      "id": "macau-ferry-terminal",
+      "bytes": 640368,
+      "triangles": 3038,
+      "vertices": 4353,
+      "primitives": 5,
+      "textureImages": 5,
+      "alphaTextureImages": 0,
+      "estimatedTextureRgbaBytes": 11321296,
+      "checks": "GLB header/chunks, buffers, finite attributes, UV range, normal lengths, index bounds, manifest bounds, hashes, embedded image decoding"
+    }
+  ]
+}

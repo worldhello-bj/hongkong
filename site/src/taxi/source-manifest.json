@@ -1,0 +1,328 @@
+{
+  "source": "OpenStreetMap official map API",
+  "retrievedAt": "2026-10-11",
+  "license": "ODbL-1.0",
+  "coverageNote": "Urban subset; outer bbox is an extent, not a guarantee of coverage for every point. Northeastern outer tiles were not needed for the main urban demo. Check nearestRoadNode.covered.",
+  "tiles": [
+    {
+      "bbox": [
+        114.115,
+        22.26,
+        114.1325,
+        22.275
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=114.115,22.26,114.1325,22.275",
+      "downloadBytes": 5023026
+    },
+    {
+      "bbox": [
+        114.115,
+        22.275,
+        114.1325,
+        22.29
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=114.115,22.275,114.1325,22.29",
+      "downloadBytes": 6620598
+    },
+    {
+      "bbox": [
+        114.115,
+        22.29,
+        114.15,
+        22.32
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=114.115,22.29,114.15,22.32",
+      "downloadBytes": 4685701
+    },
+    {
+      "bbox": [
+        114.115,
+        22.32,
+        114.15,
+        22.355
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=114.115,22.32,114.15,22.355",
+      "downloadBytes": 23928299
+    },
+    {
+      "bbox": [
+        114.1325,
+        22.26,
+        114.15,
+        22.275
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=114.1325,22.26,114.15,22.275",
+      "downloadBytes": 5359832
+    },
+    {
+      "bbox": [
+        114.1325,
+        22.275,
+        114.15,
+        22.29
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=114.1325,22.275,114.15,22.29",
+      "downloadBytes": 16598181
+    },
+    {
+      "bbox": [
+        114.15,
+        22.26,
+        114.1675,
+        22.275
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=114.15,22.26,114.1675,22.275",
+      "downloadBytes": 5825378
+    },
+    {
+      "bbox": [
+        114.15,
+        22.275,
+        114.1675,
+        22.29
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=114.15,22.275,114.1675,22.29",
+      "downloadBytes": 19984417
+    },
+    {
+      "bbox": [
+        114.15,
+        22.29,
+        114.1675,
+        22.305
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=114.15,22.29,114.1675,22.305",
+      "downloadBytes": 8266452
+    },
+    {
+      "bbox": [
+        114.15,
+        22.305,
+        114.1675,
+        22.32
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=114.15,22.305,114.1675,22.32",
+      "downloadBytes": 12890859
+    },
+    {
+      "bbox": [
+        114.15,
+        22.32,
+        114.1675,
+        22.3375
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=114.15,22.32,114.1675,22.3375",
+      "downloadBytes": 22411163
+    },
+    {
+      "bbox": [
+        114.15,
+        22.3375,
+        114.1675,
+        22.355
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=114.15,22.3375,114.1675,22.355",
+      "downloadBytes": 11384968
+    },
+    {
+      "bbox": [
+        114.1675,
+        22.26,
+        114.185,
+        22.275
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=114.1675,22.26,114.185,22.275",
+      "downloadBytes": 6603319
+    },
+    {
+      "bbox": [
+        114.1675,
+        22.275,
+        114.185,
+        22.29
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=114.1675,22.275,114.185,22.29",
+      "downloadBytes": 16575222
+    },
+    {
+      "bbox": [
+        114.1675,
+        22.29,
+        114.185,
+        22.305
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=114.1675,22.29,114.185,22.305",
+      "downloadBytes": 12610819
+    },
+    {
+      "bbox": [
+        114.1675,
+        22.305,
+        114.185,
+        22.32
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=114.1675,22.305,114.185,22.32",
+      "downloadBytes": 20118690
+    },
+    {
+      "bbox": [
+        114.1675,
+        22.32,
+        114.185,
+        22.3375
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=114.1675,22.32,114.185,22.3375",
+      "downloadBytes": 18212746
+    },
+    {
+      "bbox": [
+        114.1675,
+        22.3375,
+        114.185,
+        22.355
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=114.1675,22.3375,114.185,22.355",
+      "downloadBytes": 9146331
+    },
+    {
+      "bbox": [
+        114.185,
+        22.26,
+        114.2025,
+        22.275
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=114.185,22.26,114.2025,22.275",
+      "downloadBytes": 6354112
+    },
+    {
+      "bbox": [
+        114.185,
+        22.275,
+        114.2025,
+        22.29
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=114.185,22.275,114.2025,22.29",
+      "downloadBytes": 13169873
+    },
+    {
+      "bbox": [
+        114.185,
+        22.29,
+        114.2025,
+        22.305
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=114.185,22.29,114.2025,22.305",
+      "downloadBytes": 8916903
+    },
+    {
+      "bbox": [
+        114.185,
+        22.305,
+        114.2025,
+        22.32
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=114.185,22.305,114.2025,22.32",
+      "downloadBytes": 9759458
+    },
+    {
+      "bbox": [
+        114.185,
+        22.32,
+        114.2025,
+        22.3375
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=114.185,22.32,114.2025,22.3375",
+      "downloadBytes": 18445048
+    },
+    {
+      "bbox": [
+        114.2025,
+        22.26,
+        114.22,
+        22.275
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=114.2025,22.26,114.22,22.275",
+      "downloadBytes": 2201587
+    },
+    {
+      "bbox": [
+        114.2025,
+        22.275,
+        114.22,
+        22.29
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=114.2025,22.275,114.22,22.29",
+      "downloadBytes": 10218250
+    },
+    {
+      "bbox": [
+        114.2025,
+        22.29,
+        114.22,
+        22.305
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=114.2025,22.29,114.22,22.305",
+      "downloadBytes": 5812317
+    },
+    {
+      "bbox": [
+        114.2025,
+        22.305,
+        114.22,
+        22.32
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=114.2025,22.305,114.22,22.32",
+      "downloadBytes": 11816603
+    },
+    {
+      "bbox": [
+        114.2025,
+        22.32,
+        114.22,
+        22.3375
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=114.2025,22.32,114.22,22.3375",
+      "downloadBytes": 18941119
+    },
+    {
+      "bbox": [
+        114.22,
+        22.26,
+        114.255,
+        22.29
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=114.22,22.26,114.255,22.29",
+      "downloadBytes": 17073694
+    },
+    {
+      "bbox": [
+        114.22,
+        22.29,
+        114.2375,
+        22.305
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=114.22,22.29,114.2375,22.305",
+      "downloadBytes": 5945117
+    },
+    {
+      "bbox": [
+        114.22,
+        22.305,
+        114.2375,
+        22.32
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=114.22,22.305,114.2375,22.32",
+      "downloadBytes": 18091183
+    },
+    {
+      "bbox": [
+        114.2375,
+        22.29,
+        114.255,
+        22.305
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=114.2375,22.29,114.255,22.305",
+      "downloadBytes": 6807769
+    }
+  ]
+}

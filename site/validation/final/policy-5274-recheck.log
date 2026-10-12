@@ -1,0 +1,16 @@
+✔ all public modes enabled without taxi; no private-car or bike fiction (2.231307ms)
+✔ route chain preserves middle and final taxi, excludes waits (0.384541ms)
+✔ ranking respects actual user priority rather than former mode tab (1.018703ms)
+✔ arrival bridge uses timed service geometry, never a made-up pickup (0.440539ms)
+✔ entry retains detailed routes and Web Workers but exposes exactly two selectors (11.909629ms)
+✔ identical route results collapse; distinct steps remain (0.529165ms)
+✔ two policy controls render and preserve facility/date preferences (4.260802ms)
+✔ user-requested calculation cap removal retains cancel and progress (35.428522ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 219.793859

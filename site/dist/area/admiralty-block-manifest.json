@@ -1,0 +1,481 @@
+{
+  "version": "5c0438f39e775941",
+  "block_bbox": [
+    114.162,
+    22.2765,
+    114.1689,
+    22.2834
+  ],
+  "coverage": {
+    "source_physical_count": 3706,
+    "node_count": 3326,
+    "directed_edge_count": 7279,
+    "physical_edge_count": 3683,
+    "facility_counts": {
+      "walk": 2957,
+      "stairs": 221,
+      "footbridge": 128,
+      "crossing": 133,
+      "ramp": 22,
+      "escalator": 146,
+      "lift": 63,
+      "stairlift": 11,
+      "travelator": 2
+    },
+    "previously_included_physical_count": 3136,
+    "recovered_scheduled_physical_count": 569,
+    "net_new_physical_count": 547,
+    "operator_closed_physical_count": 22,
+    "resolved_access_rule_count": 26,
+    "named_place_count": 6,
+    "entrance_count": 112,
+    "floor_anchor_count": 66
+  },
+  "source": {
+    "attribution": "Map from Lands Department; © Government of the Hong Kong SAR; CSDI Portal",
+    "outdoor_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/0",
+    "indoor_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+    "node_join_rule": "Exact canonical official XYZ endpoints only; never XY crossing/proximity joins",
+    "schedule_source_urls": [
+      "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1005",
+      "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1006"
+    ],
+    "excluded_segments": {
+      "OPERATOR_TEMPORARY_TUNNEL_CLOSURE": 22,
+      "SELF_LOOP": 1
+    }
+  },
+  "places": [
+    {
+      "id": "pacific-place",
+      "name": "太古广场商场",
+      "coordinates": [
+        114.16432165,
+        22.27762541
+      ],
+      "region_id": "ADM",
+      "entrance_ids": [
+        "ADM:block:pacific-place:entry:1",
+        "ADM:block:pacific-place:entry:2",
+        "ADM:block:pacific-place:entry:3",
+        "ADM:block:pacific-place:entry:4",
+        "ADM:block:pacific-place:entry:6",
+        "ADM:block:pacific-place:entry:7",
+        "ADM:block:pacific-place:entry:8",
+        "ADM:block:pacific-place:entry:9",
+        "ADM:block:pacific-place:entry:10",
+        "ADM:block:pacific-place:entry:12"
+      ],
+      "floors": [
+        {
+          "id": "250000069",
+          "name": "L2",
+          "entrance_ids": [
+            "ADM:block:pacific-place:floor:250000069:1",
+            "ADM:block:pacific-place:floor:250000069:2",
+            "ADM:block:pacific-place:floor:250000069:3",
+            "ADM:block:pacific-place:floor:250000069:4",
+            "ADM:block:pacific-place:floor:250000069:5",
+            "ADM:block:pacific-place:floor:250000069:6",
+            "ADM:block:pacific-place:floor:250000069:7",
+            "ADM:block:pacific-place:floor:250000069:8",
+            "ADM:block:pacific-place:floor:250000069:9",
+            "ADM:block:pacific-place:floor:250000069:10",
+            "ADM:block:pacific-place:floor:250000069:11",
+            "ADM:block:pacific-place:floor:250000069:12",
+            "ADM:block:pacific-place:floor:250000069:13",
+            "ADM:block:pacific-place:floor:250000069:14",
+            "ADM:block:pacific-place:floor:250000069:15",
+            "ADM:block:pacific-place:floor:250000069:16",
+            "ADM:block:pacific-place:floor:250000069:17",
+            "ADM:block:pacific-place:floor:250000069:18"
+          ]
+        },
+        {
+          "id": "250000073",
+          "name": "L4",
+          "entrance_ids": [
+            "ADM:block:pacific-place:floor:250000073:1",
+            "ADM:block:pacific-place:floor:250000073:2",
+            "ADM:block:pacific-place:floor:250000073:3",
+            "ADM:block:pacific-place:floor:250000073:4",
+            "ADM:block:pacific-place:floor:250000073:5"
+          ]
+        },
+        {
+          "id": "250000074",
+          "name": "L1",
+          "entrance_ids": [
+            "ADM:block:pacific-place:floor:250000074:1",
+            "ADM:block:pacific-place:floor:250000074:2",
+            "ADM:block:pacific-place:floor:250000074:3",
+            "ADM:block:pacific-place:floor:250000074:4",
+            "ADM:block:pacific-place:floor:250000074:5",
+            "ADM:block:pacific-place:floor:250000074:6",
+            "ADM:block:pacific-place:floor:250000074:7",
+            "ADM:block:pacific-place:floor:250000074:8",
+            "ADM:block:pacific-place:floor:250000074:9",
+            "ADM:block:pacific-place:floor:250000074:10"
+          ]
+        },
+        {
+          "id": "250000101",
+          "name": "LG1",
+          "entrance_ids": [
+            "ADM:block:pacific-place:floor:250000101:1",
+            "ADM:block:pacific-place:floor:250000101:2"
+          ]
+        },
+        {
+          "id": "250000136",
+          "name": "L3",
+          "entrance_ids": [
+            "ADM:block:pacific-place:floor:250000136:1",
+            "ADM:block:pacific-place:floor:250000136:2",
+            "ADM:block:pacific-place:floor:250000136:3",
+            "ADM:block:pacific-place:floor:250000136:4",
+            "ADM:block:pacific-place:floor:250000136:5",
+            "ADM:block:pacific-place:floor:250000136:6"
+          ]
+        }
+      ],
+      "source_url": "https://www.pacificplace.com.hk/en/locationandparking",
+      "detail": "官方场地与建筑关联通道；选择后明确显示抵达接点或楼层",
+      "warnings": [
+        "地名代表场地，系统在有来源的连接点中选路并明确显示抵达位置；不会将任意地图点静默移动到入口。"
+      ],
+      "access_time_id": 290000393,
+      "access_schedule": {
+        "kind": "daily",
+        "windows": [
+          {
+            "start_s": 36000,
+            "end_s": 79200
+          }
+        ],
+        "label": "太古廣場平台 开放：ED 10:00–22:00",
+        "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1006",
+        "source_rule_id": 290000393,
+        "source_access_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1005",
+        "source_schema_urls": [
+          "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1005?f=pjson",
+          "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1006?f=pjson"
+        ],
+        "timezone": "Asia/Hong_Kong",
+        "week_start": "MON",
+        "source_access_type": "OPEN",
+        "source_access_record": {
+          "OBJECTID": 733,
+          "AccessTimeID": 290000393,
+          "AccessTimeType": "OPEN",
+          "DescriptionTC": "太古廣場平台",
+          "DescriptionEN": "Pacific Place Podium",
+          "CreationDate": 1647302400000,
+          "ModifiedBy": "LANDSD",
+          "LastAmendmentDate": 1653523200000
+        },
+        "source_rows": [
+          {
+            "OBJECTID": 1135,
+            "AccessTimeID": 290000393,
+            "DayCode": "ED",
+            "FromTime": 1000,
+            "ToTime": 2200
+          }
+        ],
+        "source_rule_signature": "eea32f665a5a43504422e61248a253c6d9fb3d0ac1843e8bc45829422ddc922a",
+        "policy_version": "landsd-weekly-access-v1",
+        "limitations": [
+          "Recorded recurring schedule, not live operational status.",
+          "No public-holiday calendar or unscheduled closures are inferred."
+        ]
+      },
+      "alternative_place_ids": [
+        "pacific-place-public-bridge"
+      ]
+    },
+    {
+      "id": "tamar-park",
+      "name": "添马公园",
+      "coordinates": [
+        114.16599237,
+        22.28229697
+      ],
+      "region_id": "ADM",
+      "entrance_ids": [
+        "ADM:block:tamar-park:entry:1",
+        "ADM:block:tamar-park:entry:2",
+        "ADM:block:tamar-park:entry:3",
+        "ADM:block:tamar-park:entry:4",
+        "ADM:block:tamar-park:entry:5",
+        "ADM:block:tamar-park:entry:6",
+        "ADM:block:tamar-park:entry:7",
+        "ADM:block:tamar-park:entry:8",
+        "ADM:block:tamar-park:entry:9",
+        "ADM:block:tamar-park:entry:10",
+        "ADM:block:tamar-park:entry:11",
+        "ADM:block:tamar-park:entry:12",
+        "ADM:block:tamar-park:entry:13",
+        "ADM:block:tamar-park:entry:14"
+      ],
+      "floors": [],
+      "source_url": "https://www.lcsd.gov.hk/en/parks/tp/",
+      "detail": "官方场地与建筑关联通道；选择后明确显示抵达接点或楼层",
+      "warnings": [
+        "地名代表场地，系统在有来源的连接点中选路并明确显示抵达位置；不会将任意地图点静默移动到入口。"
+      ]
+    },
+    {
+      "id": "harcourt-garden",
+      "name": "夏慤花园",
+      "coordinates": [
+        114.165992,
+        22.27886277
+      ],
+      "region_id": "ADM",
+      "entrance_ids": [
+        "ADM:block:harcourt-garden:entry:1",
+        "ADM:block:harcourt-garden:entry:2",
+        "ADM:block:harcourt-garden:entry:3",
+        "ADM:block:harcourt-garden:entry:4",
+        "ADM:block:harcourt-garden:entry:5",
+        "ADM:block:harcourt-garden:entry:6",
+        "ADM:block:harcourt-garden:entry:7",
+        "ADM:block:harcourt-garden:entry:8",
+        "ADM:block:harcourt-garden:entry:9",
+        "ADM:block:harcourt-garden:entry:10",
+        "ADM:block:harcourt-garden:entry:11",
+        "ADM:block:harcourt-garden:entry:12",
+        "ADM:block:harcourt-garden:entry:13",
+        "ADM:block:harcourt-garden:entry:14",
+        "ADM:block:harcourt-garden:entry:15",
+        "ADM:block:harcourt-garden:entry:16",
+        "ADM:block:harcourt-garden:entry:17",
+        "ADM:block:harcourt-garden:entry:18",
+        "ADM:block:harcourt-garden:entry:19",
+        "ADM:block:harcourt-garden:entry:20",
+        "ADM:block:harcourt-garden:entry:21",
+        "ADM:block:harcourt-garden:entry:22",
+        "ADM:block:harcourt-garden:entry:23",
+        "ADM:block:harcourt-garden:entry:24",
+        "ADM:block:harcourt-garden:entry:25",
+        "ADM:block:harcourt-garden:entry:26",
+        "ADM:block:harcourt-garden:entry:27",
+        "ADM:block:harcourt-garden:entry:28",
+        "ADM:block:harcourt-garden:entry:29",
+        "ADM:block:harcourt-garden:entry:30",
+        "ADM:block:harcourt-garden:entry:31",
+        "ADM:block:harcourt-garden:entry:32",
+        "ADM:block:harcourt-garden:entry:33"
+      ],
+      "floors": [
+        {
+          "id": "250000070",
+          "name": "1/F",
+          "entrance_ids": [
+            "ADM:block:harcourt-garden:floor:250000070:1"
+          ]
+        }
+      ],
+      "source_url": "https://portal.csdi.gov.hk/csdi-webpage/dataset/landsd_rcd_1637222018065_52265",
+      "detail": "官方场地与建筑关联通道；选择后明确显示抵达接点或楼层",
+      "warnings": [
+        "地名代表场地，系统在有来源的连接点中选路并明确显示抵达位置；不会将任意地图点静默移动到入口。"
+      ]
+    },
+    {
+      "id": "queensway-plaza",
+      "name": "金钟廊",
+      "coordinates": [
+        114.16362801,
+        22.27973744
+      ],
+      "region_id": "ADM",
+      "entrance_ids": [
+        "ADM:block:queensway-plaza:entry:1",
+        "ADM:block:queensway-plaza:entry:2",
+        "ADM:block:queensway-plaza:entry:3",
+        "ADM:block:queensway-plaza:entry:4",
+        "ADM:block:queensway-plaza:entry:5",
+        "ADM:block:queensway-plaza:entry:6",
+        "ADM:block:queensway-plaza:entry:7",
+        "ADM:block:queensway-plaza:entry:8",
+        "ADM:block:queensway-plaza:entry:9",
+        "ADM:block:queensway-plaza:entry:10",
+        "ADM:block:queensway-plaza:entry:11",
+        "ADM:block:queensway-plaza:entry:12",
+        "ADM:block:queensway-plaza:entry:13",
+        "ADM:block:queensway-plaza:entry:14",
+        "ADM:block:queensway-plaza:entry:15",
+        "ADM:block:queensway-plaza:entry:16",
+        "ADM:block:queensway-plaza:entry:17",
+        "ADM:block:queensway-plaza:entry:18",
+        "ADM:block:queensway-plaza:entry:19",
+        "ADM:block:queensway-plaza:entry:20",
+        "ADM:block:queensway-plaza:entry:21",
+        "ADM:block:queensway-plaza:entry:22",
+        "ADM:block:queensway-plaza:entry:23",
+        "ADM:block:queensway-plaza:entry:24",
+        "ADM:block:queensway-plaza:entry:25",
+        "ADM:block:queensway-plaza:entry:26",
+        "ADM:block:queensway-plaza:entry:27",
+        "ADM:block:queensway-plaza:entry:28",
+        "ADM:block:queensway-plaza:entry:29",
+        "ADM:block:queensway-plaza:entry:30",
+        "ADM:block:queensway-plaza:entry:31",
+        "ADM:block:queensway-plaza:entry:32",
+        "ADM:block:queensway-plaza:entry:33",
+        "ADM:block:queensway-plaza:entry:34",
+        "ADM:block:queensway-plaza:entry:35",
+        "ADM:block:queensway-plaza:entry:36",
+        "ADM:block:queensway-plaza:entry:37",
+        "ADM:block:queensway-plaza:entry:38",
+        "ADM:block:queensway-plaza:entry:39",
+        "ADM:block:queensway-plaza:entry:40",
+        "ADM:block:queensway-plaza:entry:41",
+        "ADM:block:queensway-plaza:entry:42",
+        "ADM:block:queensway-plaza:entry:43",
+        "ADM:block:queensway-plaza:entry:44"
+      ],
+      "floors": [
+        {
+          "id": "250000071",
+          "name": "1/F",
+          "entrance_ids": [
+            "ADM:block:queensway-plaza:floor:250000071:1",
+            "ADM:block:queensway-plaza:floor:250000071:2",
+            "ADM:block:queensway-plaza:floor:250000071:3",
+            "ADM:block:queensway-plaza:floor:250000071:4",
+            "ADM:block:queensway-plaza:floor:250000071:5"
+          ]
+        },
+        {
+          "id": "250000075",
+          "name": "Ground",
+          "entrance_ids": [
+            "ADM:block:queensway-plaza:floor:250000075:1",
+            "ADM:block:queensway-plaza:floor:250000075:2"
+          ]
+        }
+      ],
+      "source_url": "https://portal.csdi.gov.hk/csdi-webpage/dataset/landsd_rcd_1637222018065_52265",
+      "detail": "官方场地与建筑关联通道；选择后明确显示抵达接点或楼层",
+      "warnings": [
+        "地名代表场地，系统在有来源的连接点中选路并明确显示抵达位置；不会将任意地图点静默移动到入口。"
+      ]
+    },
+    {
+      "id": "admiralty-centre",
+      "name": "海富中心",
+      "coordinates": [
+        114.1651648,
+        22.27929494
+      ],
+      "region_id": "ADM",
+      "entrance_ids": [
+        "ADM:block:admiralty-centre:entry:1",
+        "ADM:block:admiralty-centre:entry:2",
+        "ADM:block:admiralty-centre:entry:3",
+        "ADM:block:admiralty-centre:entry:4",
+        "ADM:block:admiralty-centre:entry:5",
+        "ADM:block:admiralty-centre:entry:6",
+        "ADM:block:admiralty-centre:entry:7",
+        "ADM:block:admiralty-centre:entry:8",
+        "ADM:block:admiralty-centre:entry:9",
+        "ADM:block:admiralty-centre:entry:10"
+      ],
+      "floors": [
+        {
+          "id": "250000055",
+          "name": "1/F",
+          "entrance_ids": [
+            "ADM:block:admiralty-centre:floor:250000055:1",
+            "ADM:block:admiralty-centre:floor:250000055:2",
+            "ADM:block:admiralty-centre:floor:250000055:3",
+            "ADM:block:admiralty-centre:floor:250000055:4",
+            "ADM:block:admiralty-centre:floor:250000055:5",
+            "ADM:block:admiralty-centre:floor:250000055:6",
+            "ADM:block:admiralty-centre:floor:250000055:7",
+            "ADM:block:admiralty-centre:floor:250000055:8"
+          ]
+        },
+        {
+          "id": "250000064",
+          "name": "Ground",
+          "entrance_ids": [
+            "ADM:block:admiralty-centre:floor:250000064:1",
+            "ADM:block:admiralty-centre:floor:250000064:2",
+            "ADM:block:admiralty-centre:floor:250000064:3",
+            "ADM:block:admiralty-centre:floor:250000064:4",
+            "ADM:block:admiralty-centre:floor:250000064:5",
+            "ADM:block:admiralty-centre:floor:250000064:6",
+            "ADM:block:admiralty-centre:floor:250000064:7",
+            "ADM:block:admiralty-centre:floor:250000064:8",
+            "ADM:block:admiralty-centre:floor:250000064:9"
+          ]
+        }
+      ],
+      "source_url": "https://portal.csdi.gov.hk/csdi-webpage/dataset/landsd_rcd_1637222018065_52265",
+      "detail": "官方场地与建筑关联通道；选择后明确显示抵达接点或楼层",
+      "warnings": [
+        "地名代表场地，系统在有来源的连接点中选路并明确显示抵达位置；不会将任意地图点静默移动到入口。"
+      ]
+    },
+    {
+      "id": "pacific-place-public-bridge",
+      "name": "太古广场外 · 金钟道公共天桥",
+      "coordinates": [
+        114.16590857,
+        22.27781704
+      ],
+      "region_id": "ADM",
+      "entrance_ids": [
+        "ADM:block:pacific-place-public-bridge:entry:1"
+      ],
+      "floors": [],
+      "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/0",
+      "detail": "公共天桥来源节点，商场关闭时仍可独立选择；不是进入商场。"
+    }
+  ],
+  "warnings": [
+    "区块采用官方三维行人及港铁路网，包含真实天桥、隧道、商场楼层与公园路径；未核验临时围封或设施运行。",
+    "地铁付费区需有效车票；行李偏好不等于已核验无台阶，无障碍条件仍逐段保守处理。",
+    "建筑/场地连接点为来源路网属性边界，不声称完整门扇调查；任意点击的未知接入仍显式保留。"
+  ],
+  "closures": [
+    {
+      "id": "three-pacific-place-tunnel",
+      "state": "CLOSED_UNTIL_OPERATOR_REOPENING_CONFIRMED",
+      "source_url": "https://www.pacificplace.com.hk/en/work/threepacificplace",
+      "checked_date": "2026-10-10",
+      "source_excerpt": "The Three Pacific Place Tunnel is temporarily closed for enhancement works, with a reopening targeted for summer 2027.",
+      "reopening_target": "summer 2027",
+      "automatic_reopening_date": null,
+      "mapping_evidence": "Exact connected eastbound source chain from the -6.5m Admiralty F branch through three travelator sections to the -0.5m Three Pacific Place approach. Main Pacific Place F access at XYZ114.16593711,22.27784825,1 is outside this chain.",
+      "physical_ids": [
+        "ADM:P:290021816",
+        "ADM:P:290021817",
+        "ADM:P:290021818",
+        "ADM:P:290021819",
+        "ADM:P:290021820",
+        "ADM:P:290021821",
+        "ADM:P:290021822",
+        "ADM:P:290021823",
+        "ADM:P:290021824",
+        "ADM:P:290021825",
+        "ADM:P:290021826",
+        "ADM:P:290021827",
+        "ADM:P:290021828",
+        "ADM:P:290021829",
+        "ADM:P:290021830",
+        "ADM:P:290021831",
+        "ADM:P:290021832",
+        "ADM:P:290021833",
+        "ADM:P:290021834",
+        "ADM:P:290021835",
+        "ADM:P:290021836",
+        "ADM:P:290021851"
+      ]
+    }
+  ]
+}

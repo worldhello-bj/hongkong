@@ -1,0 +1,403 @@
+{
+  "type": "FeatureCollection",
+  "name": "West Kowloon government taxi facility reference subset",
+  "bbox": [
+    114.15,
+    22.298,
+    114.17,
+    22.311
+  ],
+  "coordinateOrder": "longitude, latitude; source GeoJSON decimal degrees",
+  "purpose": "Reference anchors only; not automatically connected to the driving or pedestrian graph. Check kerb, traffic direction and level before routing.",
+  "attribution": "Source: Transport Department, HKSAR Government; CSDI Portal. Government and relevant organisations retain intellectual property rights.",
+  "sources": [
+    {
+      "id": "taxi_stands",
+      "provider": "Transport Department, HKSAR Government",
+      "datasetId": "td_rcd_1697081907714_17556",
+      "url": "https://portal.csdi.gov.hk/csdi-webpage/file-api?dataset_id=td_rcd_1697081907714_17556&format=geojson&layer_name=Taxi_Stands",
+      "retrievedDateUTC": "2026-10-11",
+      "httpStatus": 200,
+      "sourceFeatureCount": 518,
+      "sourceSha256": "7adc00aef3f2dfeb73c9701c0c2524e02d1d68b90035e8400a7d6b4200867940",
+      "license": "https://portal.csdi.gov.hk/csdi-webpage/doc/TNC"
+    },
+    {
+      "id": "taxi_pick_up_drop_off_points",
+      "provider": "Transport Department, HKSAR Government",
+      "datasetId": "td_rcd_1697082382328_14459",
+      "url": "https://portal.csdi.gov.hk/csdi-webpage/file-api?dataset_id=td_rcd_1697082382328_14459&format=geojson&layer_name=Taxi_Pick_up_Drop_off_Points",
+      "retrievedDateUTC": "2026-10-11",
+      "httpStatus": 200,
+      "sourceFeatureCount": 275,
+      "sourceSha256": "4b8473cb49955b81edc2207aa6455cf9bd9c8e3252ddde2b408f9fe20b72d02c",
+      "license": "https://portal.csdi.gov.hk/csdi-webpage/doc/TNC"
+    }
+  ],
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1655556551,
+          22.3049104777
+        ]
+      },
+      "properties": {
+        "OBJECTID": 190,
+        "Region_EN": "Kowloon",
+        "Region_TC": "九龍",
+        "Region_SC": "九龙",
+        "District_EN": "Yau Tsim",
+        "District_TC": "油尖",
+        "District_SC": "油尖",
+        "Location_EN": "B2/F of Hong Kong West Kowloon Station",
+        "Location_TC": "香港西九龍站 B2層",
+        "Location_SC": "香港西九龙站 B2层",
+        "Status_EN": "Cross Harbour Taxi Stand",
+        "Status_TC": "過海的士站",
+        "Status_SC": "过海的士站",
+        "sourceDataset": "taxi_stands"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1655131514,
+          22.3048966398
+        ]
+      },
+      "properties": {
+        "OBJECTID": 191,
+        "Region_EN": "Kowloon",
+        "Region_TC": "九龍",
+        "Region_SC": "九龙",
+        "District_EN": "Yau Tsim",
+        "District_TC": "油尖",
+        "District_SC": "油尖",
+        "Location_EN": "B2/F of Hong Kong West Kowloon Station",
+        "Location_TC": "香港西九龍站 B2層",
+        "Location_SC": "香港西九龙站 B2层",
+        "Status_EN": "Urban Taxi Stand",
+        "Status_TC": "市區的士站",
+        "Status_SC": "市区的士站",
+        "sourceDataset": "taxi_stands"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.168755655,
+          22.2986027431
+        ]
+      },
+      "properties": {
+        "OBJECTID": 192,
+        "Region_EN": "Kowloon",
+        "Region_TC": "九龍",
+        "Region_SC": "九龙",
+        "District_EN": "Yau Tsim",
+        "District_TC": "油尖",
+        "District_SC": "油尖",
+        "Location_EN": "Canton Road near Haiphong Road",
+        "Location_TC": "廣東道近海防道",
+        "Location_SC": "广东道近海防道",
+        "Status_EN": "Cross Harbour Taxi Stand",
+        "Status_TC": "過海的士站",
+        "Status_SC": "过海的士站",
+        "sourceDataset": "taxi_stands"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1631998254,
+          22.3054542611
+        ]
+      },
+      "properties": {
+        "OBJECTID": 193,
+        "Region_EN": "Kowloon",
+        "Region_TC": "九龍",
+        "Region_SC": "九龙",
+        "District_EN": "Yau Tsim",
+        "District_TC": "油尖",
+        "District_SC": "油尖",
+        "Location_EN": "Kowloon Station PTI",
+        "Location_TC": "九龍站公共交通交匯處",
+        "Location_SC": "九龙站公共交通交汇处",
+        "Status_EN": "Urban Taxi Stand",
+        "Status_TC": "市區的士站",
+        "Status_SC": "市区的士站",
+        "sourceDataset": "taxi_stands"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1697683181,
+          22.303044203
+        ]
+      },
+      "properties": {
+        "OBJECTID": 197,
+        "Region_EN": "Kowloon",
+        "Region_TC": "九龍",
+        "Region_SC": "九龙",
+        "District_EN": "Yau Tsim",
+        "District_TC": "油尖",
+        "District_SC": "油尖",
+        "Location_EN": "Austin Road o/s HK Scout Centre",
+        "Location_TC": "柯士甸道香港童軍中心外",
+        "Location_SC": "柯士甸道香港童军中心外",
+        "Status_EN": "Urban Taxi Stand",
+        "Status_TC": "市區的士站",
+        "Status_SC": "市区的士站",
+        "sourceDataset": "taxi_stands"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.158912656,
+          22.3014982223
+        ]
+      },
+      "properties": {
+        "OBJECTID": 201,
+        "Region_EN": "Kowloon",
+        "Region_TC": "九龍",
+        "Region_SC": "九龙",
+        "District_EN": "Yau Tsim",
+        "District_TC": "油尖",
+        "District_SC": "油尖",
+        "Location_EN": "Cultural Drive",
+        "Location_TC": "文化道",
+        "Location_SC": "文化道",
+        "Status_EN": "Urban Taxi Stand",
+        "Status_TC": "市區的士站",
+        "Status_SC": "市区的士站",
+        "sourceDataset": "taxi_stands"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1661469928,
+          22.3025439213
+        ]
+      },
+      "properties": {
+        "OBJECTID": 110,
+        "Region_EN": "Kowloon",
+        "Region_TC": "九龍區",
+        "Region_SC": "九龙区",
+        "District_EN": "Yau Tsim",
+        "District_TC": "油尖",
+        "District_SC": "油尖",
+        "Location_EN": "Austin Road West near Lin Cheung Road and Xiqu Centre",
+        "Location_TC": "柯士甸道西近連翔道及戲曲中心",
+        "Location_SC": "柯士甸道西近連翔道及戲曲中心",
+        "Status_EN": "Taxi PU/DF",
+        "Status_TC": "的士上落客點",
+        "Status_SC": "的士上落客点",
+        "sourceDataset": "taxi_pick_up_drop_off_points"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1643218055,
+          22.3036549978
+        ]
+      },
+      "properties": {
+        "OBJECTID": 111,
+        "Region_EN": "Kowloon",
+        "Region_TC": "九龍區",
+        "Region_SC": "九龙区",
+        "District_EN": "Yau Tsim",
+        "District_TC": "油尖",
+        "District_SC": "油尖",
+        "Location_EN": "B1/F of Hong Kong West Kowloon Station (Drop-off Points)",
+        "Location_TC": "香港西九龍站 B1層 （落客點）",
+        "Location_SC": "香港西九龙站 B1层 （落客点）",
+        "Status_EN": "Taxi PU/DF",
+        "Status_TC": "的士上落客點",
+        "Status_SC": "的士上落客点",
+        "sourceDataset": "taxi_pick_up_drop_off_points"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1655556551,
+          22.3049104777
+        ]
+      },
+      "properties": {
+        "OBJECTID": 112,
+        "Region_EN": "Kowloon",
+        "Region_TC": "九龍區",
+        "Region_SC": "九龙区",
+        "District_EN": "Yau Tsim",
+        "District_TC": "油尖",
+        "District_SC": "油尖",
+        "Location_EN": "B2/F of Hong Kong West Kowloon Station (Pick-up Points)",
+        "Location_TC": "香港西九龍站 B2層 （上客點）",
+        "Location_SC": "香港西九龙站 B2层 （上客点）",
+        "Status_EN": "Taxi PU/DF",
+        "Status_TC": "的士上落客點",
+        "Status_SC": "的士上落客点",
+        "sourceDataset": "taxi_pick_up_drop_off_points"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1680641606,
+          22.3007030055
+        ]
+      },
+      "properties": {
+        "OBJECTID": 113,
+        "Region_EN": "Kowloon",
+        "Region_TC": "九龍區",
+        "Region_SC": "九龙区",
+        "District_EN": "Yau Tsim",
+        "District_TC": "油尖",
+        "District_SC": "油尖",
+        "Location_EN": "China Hong Kong City, Canton Road, Tsim Sha Tsui",
+        "Location_TC": "尖沙咀廣東道中港城",
+        "Location_SC": "尖沙咀广东道中港城",
+        "Status_EN": "Taxi PU/DF",
+        "Status_TC": "的士上落客點",
+        "Status_SC": "的士上落客点",
+        "sourceDataset": "taxi_pick_up_drop_off_points"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1674561236,
+          22.3073372
+        ]
+      },
+      "properties": {
+        "OBJECTID": 114,
+        "Region_EN": "Kowloon",
+        "Region_TC": "九龍區",
+        "Region_SC": "九龙区",
+        "District_EN": "Yau Tsim",
+        "District_TC": "油尖",
+        "District_SC": "油尖",
+        "Location_EN": "Ferry Street (S/B) between Saigon Street and Jordan Road",
+        "Location_TC": "介乎西貢街與佐敦道之間的渡船街南行",
+        "Location_SC": "介乎西贡街与佐敦道之间的渡船街南行",
+        "Status_EN": "Taxi PU/DF",
+        "Status_TC": "的士上落客點",
+        "Status_SC": "的士上落客点",
+        "sourceDataset": "taxi_pick_up_drop_off_points"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1694799479,
+          22.3065435636
+        ]
+      },
+      "properties": {
+        "OBJECTID": 125,
+        "Region_EN": "Kowloon",
+        "Region_TC": "九龍區",
+        "Region_SC": "九龙区",
+        "District_EN": "Yau Tsim",
+        "District_TC": "油尖",
+        "District_SC": "油尖",
+        "Location_EN": "Shanghai Street eastern kerbside between Ning Po Street and Nanking Street",
+        "Location_TC": "介乎寧波街與南京街的上海街",
+        "Location_SC": "介乎宁波街与南京街的上海街",
+        "Status_EN": "Taxi PU/DF",
+        "Status_TC": "的士上落客點",
+        "Status_SC": "的士上落客点",
+        "sourceDataset": "taxi_pick_up_drop_off_points"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1658382185,
+          22.3090602186
+        ]
+      },
+      "properties": {
+        "OBJECTID": 127,
+        "Region_EN": "Kowloon",
+        "Region_TC": "九龍區",
+        "Region_SC": "九龙区",
+        "District_EN": "Yau Tsim",
+        "District_TC": "油尖",
+        "District_SC": "油尖",
+        "Location_EN": "Yan Cheung Road E/B near Yau Cheung Road",
+        "Location_TC": "欣翔道東行近友翔道",
+        "Location_SC": "欣翔道東行近友翔道",
+        "Status_EN": "Taxi PU/DF",
+        "Status_TC": "的士上落客點",
+        "Status_SC": "的士上落客点",
+        "sourceDataset": "taxi_pick_up_drop_off_points"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1660340695,
+          22.3088458876
+        ]
+      },
+      "properties": {
+        "OBJECTID": 128,
+        "Region_EN": "Kowloon",
+        "Region_TC": "九龍區",
+        "Region_SC": "九龙区",
+        "District_EN": "Yau Tsim",
+        "District_TC": "油尖",
+        "District_SC": "油尖",
+        "Location_EN": "Yan Cheung Road W/B near Yau Cheung Road",
+        "Location_TC": "欣翔道西行近友翔道",
+        "Location_SC": "欣翔道西行近友翔道",
+        "Status_EN": "Taxi PU/DF",
+        "Status_TC": "的士上落客點",
+        "Status_SC": "的士上落客点",
+        "sourceDataset": "taxi_pick_up_drop_off_points"
+      }
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+[
+  {
+    "origin": {
+      "id": "ETS:portal:L1",
+      "region_id": "ETS",
+      "station_id": "ETS",
+      "name": "尖東站 L1出口",
+      "level": "G",
+      "level_name": "Exit L1 Ground Level",
+      "source_feature_id": "mtr_amenity_point.1418",
+      "coordinates": [
+        114.17313379,
+        22.29577127,
+        4.1
+      ],
+      "source_coordinates": [
+        114.17313379,
+        22.29577127,
+        4.1
+      ],
+      "node_id": "ETS:N:e1743b9ffe0aa6",
+      "offset_m": 0,
+      "max_association_distance_m": 12,
+      "max_height_difference_m": 0.75,
+      "source_url": "https://portal.csdi.gov.hk/csdi-webpage/apidoc/3d-indoor-mtr-station-map",
+      "evidence": "OFFICIAL_ENTRY_AMENITY_BOUNDED_SAME_HEIGHT_NODE_ASSOCIATION",
+      "lon": 114.17313379,
+      "lat": 22.29577127
+    },
+    "destination": {
+      "id": "map:random--1081891938",
+      "name": "地图所选地点",
+      "detail": "用户选择 · 接入待核验",
+      "coordinates": [
+        114.19460718767374,
+        22.28753958555163
+      ],
+      "lon": 114.19460718767374,
+      "lat": 22.28753958555163
+    },
+    "mode": "transit",
+    "need": "ordinary",
+    "departureDate": "2026-10-11",
+    "departureS": 28800,
+    "allowedTransitModes": [
+      "metro",
+      "bus",
+      "tram"
+    ]
+  },
+  {
+    "origin": {
+      "id": "KOW:portal:C1",
+      "region_id": "KOW",
+      "station_id": "KOW",
+      "name": "九龍站 C1出口",
+      "level": "U3",
+      "level_name": "Exit C1 Concourse Level (Tung Chung Line)",
+      "source_feature_id": "mtr_amenity_point.3295",
+      "coordinates": [
+        114.16228083,
+        22.30464011,
+        13.5
+      ],
+      "source_coordinates": [
+        114.16228082,
+        22.30464012,
+        13.5
+      ],
+      "node_id": "KOW:N:80bd652ff86c03",
+      "offset_m": 0.002,
+      "max_association_distance_m": 12,
+      "max_height_difference_m": 0.75,
+      "source_url": "https://portal.csdi.gov.hk/csdi-webpage/apidoc/3d-indoor-mtr-station-map",
+      "evidence": "OFFICIAL_ENTRY_AMENITY_BOUNDED_SAME_HEIGHT_NODE_ASSOCIATION",
+      "lon": 114.16228083,
+      "lat": 22.30464011
+    },
+    "destination": {
+      "id": "map:random-1253627151",
+      "name": "地图所选地点",
+      "detail": "用户选择 · 接入待核验",
+      "coordinates": [
+        114.16302703729382,
+        22.280723730609612
+      ],
+      "lon": 114.16302703729382,
+      "lat": 22.280723730609612
+    },
+    "mode": "transit",
+    "need": "ordinary",
+    "departureDate": "2026-10-11",
+    "departureS": 28800,
+    "allowedTransitModes": [
+      "metro",
+      "bus",
+      "tram"
+    ]
+  },
+  {
+    "origin": {
+      "id": "map:random-621791481",
+      "name": "地图所选地点",
+      "detail": "用户选择 · 接入待核验",
+      "coordinates": [
+        114.19220183840672,
+        22.26356158940252
+      ],
+      "lon": 114.19220183840672,
+      "lat": 22.26356158940252
+    },
+    "destination": {
+      "id": "map:random--1273715529",
+      "name": "地图所选地点",
+      "detail": "用户选择 · 接入待核验",
+      "coordinates": [
+        114.15065798999056,
+        22.2703634423568
+      ],
+      "lon": 114.15065798999056,
+      "lat": 22.2703634423568
+    },
+    "mode": "transit",
+    "need": "accessible",
+    "departureDate": "2026-10-11",
+    "departureS": 28800,
+    "allowedTransitModes": [
+      "metro",
+      "bus",
+      "tram"
+    ]
+  }
+]

@@ -1,0 +1,363 @@
+{
+  "runtime": "80590edd104d",
+  "departureDate": "2026-10-12",
+  "departureS": 39600,
+  "method": "Actual production f2 + routing Worker bundles and seeded 48-car road simulation; not browser QA; all fares/schedules/vehicles remain simulation",
+  "rows": [
+    {
+      "name": "金钟至旺角",
+      "request": {
+        "origin": {
+          "id": "ADM:portal:E2",
+          "region_id": "ADM",
+          "station_id": "ADM",
+          "name": "金鐘站 E2出口",
+          "level": "G",
+          "level_name": "Exit E1 & E2 Ground Level",
+          "source_feature_id": "mtr_amenity_point.221",
+          "coordinates": [
+            114.16624518,
+            22.27888752,
+            6
+          ],
+          "source_coordinates": [
+            114.16624518,
+            22.27888752,
+            6
+          ],
+          "node_id": "ADM:N:15dedbcfbae59e",
+          "offset_m": 0,
+          "max_association_distance_m": 12,
+          "max_height_difference_m": 0.75,
+          "source_url": "https://portal.csdi.gov.hk/csdi-webpage/apidoc/3d-indoor-mtr-station-map",
+          "evidence": "OFFICIAL_ENTRY_AMENITY_BOUNDED_SAME_HEIGHT_NODE_ASSOCIATION",
+          "lon": 114.16624518,
+          "lat": 22.27888752
+        },
+        "destination": {
+          "id": "旺角",
+          "name": "旺角",
+          "coordinates": [
+            114.16839,
+            22.3179
+          ],
+          "lon": 114.16839,
+          "lat": 22.3179
+        },
+        "departureS": 39600,
+        "departureDate": "2026-10-12",
+        "need": "ordinary",
+        "mode": "transit",
+        "allowedTransitModes": [
+          "metro",
+          "bus",
+          "tram"
+        ]
+      },
+      "candidates": [
+        {
+          "id": "public-all",
+          "kind": "public",
+          "available": true,
+          "minutes": 62,
+          "cost": 20.61,
+          "walkMinutes": 28,
+          "waitMinutes": 13,
+          "transfers": 2,
+          "modes": [
+            "walk",
+            "escalator",
+            "walk",
+            "escalator",
+            "walk",
+            "escalator",
+            "walk",
+            "wait",
+            "rail",
+            "walk",
+            "escalator",
+            "walk",
+            "wait",
+            "rail",
+            "walk",
+            "stairs",
+            "walk",
+            "escalator",
+            "walk",
+            "ramp",
+            "subway",
+            "ramp",
+            "walk",
+            "crossing",
+            "walk",
+            "crossing",
+            "walk",
+            "crossing",
+            "walk",
+            "access_connector",
+            "wait",
+            "bus",
+            "access_connector",
+            "walk",
+            "crossing",
+            "walk",
+            "crossing",
+            "walk",
+            "crossing",
+            "walk",
+            "crossing",
+            "walk",
+            "crossing",
+            "walk",
+            "crossing",
+            "walk",
+            "crossing",
+            "walk",
+            "access_connector"
+          ],
+          "score": 93.5745,
+          "simulationOnly": true,
+          "message": "演示班次联程 · 11:00 出发"
+        },
+        {
+          "id": "taxi-direct",
+          "kind": "direct",
+          "available": true,
+          "minutes": 16,
+          "cost": 94.53,
+          "walkMinutes": 1,
+          "waitMinutes": 3.0908317213189247,
+          "transfers": 0,
+          "modes": [
+            "walk",
+            "wait",
+            "taxi",
+            "walk"
+          ],
+          "score": 60.43391586065946,
+          "simulationOnly": true,
+          "message": "按到达时间接车，继续前往目的地",
+          "title": "出租车直达 · 经海底隧道"
+        },
+        {
+          "id": "taxi-last-metro-AUS:portal:B2",
+          "kind": "last",
+          "available": true,
+          "minutes": 35,
+          "cost": 46.65,
+          "walkMinutes": 11,
+          "waitMinutes": 5,
+          "transfers": 2,
+          "modes": [
+            "walk",
+            "escalator",
+            "walk",
+            "escalator",
+            "walk",
+            "escalator",
+            "walk",
+            "wait",
+            "rail",
+            "walk",
+            "escalator",
+            "walk",
+            "wait",
+            "rail",
+            "walk",
+            "stairs",
+            "walk",
+            "escalator",
+            "walk",
+            "taxi",
+            "walk"
+          ],
+          "anchor": {
+            "id": "AUS:portal:B2",
+            "name": "柯士甸站 B2出口",
+            "mode": "metro",
+            "coordinates": [
+              114.16605219,
+              22.30508756,
+              5.6
+            ]
+          },
+          "score": 68.3425,
+          "simulationOnly": true,
+          "message": "按到达时间接车，继续前往目的地",
+          "title": "地铁 + 出租车末程"
+        },
+        {
+          "id": "taxi-last-metro-KOW:portal:E6",
+          "kind": "last",
+          "available": true,
+          "minutes": 52,
+          "cost": 59.92,
+          "walkMinutes": 21,
+          "waitMinutes": 5,
+          "transfers": 3,
+          "modes": [
+            "walk",
+            "escalator",
+            "walk",
+            "escalator",
+            "walk",
+            "escalator",
+            "walk",
+            "wait",
+            "rail",
+            "walk",
+            "escalator",
+            "walk",
+            "wait",
+            "rail",
+            "walk",
+            "stairs",
+            "walk",
+            "escalator",
+            "walk",
+            "ramp",
+            "subway",
+            "stairs",
+            "walk",
+            "access_connector",
+            "wait",
+            "bus",
+            "access_connector",
+            "walk",
+            "crossing",
+            "walk",
+            "crossing",
+            "walk",
+            "crossing",
+            "walk",
+            "taxi",
+            "walk"
+          ],
+          "anchor": {
+            "id": "KOW:portal:E6",
+            "name": "九龍站 E6出口",
+            "mode": "metro",
+            "coordinates": [
+              114.1614539,
+              22.30577462,
+              6
+            ]
+          },
+          "score": 97.814,
+          "simulationOnly": true,
+          "message": "按到达时间接车，继续前往目的地",
+          "title": "地铁 + 公交 + 出租车末程"
+        }
+      ],
+      "diagnostics": [
+        {
+          "side": "last",
+          "id": "AUS:portal:B2",
+          "status": "ready",
+          "minutes": 35
+        },
+        {
+          "side": "last",
+          "id": "KOW:portal:E6",
+          "status": "ready",
+          "minutes": 52
+        },
+        {
+          "side": "last",
+          "id": "td:99134",
+          "status": "not-a-shorter-feeder"
+        },
+        {
+          "side": "first",
+          "id": "td:4025",
+          "status": "not-a-shorter-feeder"
+        }
+      ],
+      "shortlist": {
+        "first": [
+          {
+            "id": "EXC:portal:B3",
+            "mode": "metro"
+          },
+          {
+            "id": "ETS:portal:L3",
+            "mode": "metro"
+          },
+          {
+            "id": "td:4025",
+            "mode": "bus"
+          },
+          {
+            "id": "td:99133",
+            "mode": "tram"
+          }
+        ],
+        "last": [
+          {
+            "id": "AUS:portal:B2",
+            "mode": "metro"
+          },
+          {
+            "id": "KOW:portal:E6",
+            "mode": "metro"
+          },
+          {
+            "id": "td:4233",
+            "mode": "bus"
+          },
+          {
+            "id": "td:99134",
+            "mode": "tram"
+          }
+        ]
+      },
+      "taxiStatus": {
+        "status": "ready",
+        "published": 3
+      },
+      "rankings": {
+        "time": [
+          "taxi-direct",
+          "taxi-last-metro-AUS:portal:B2",
+          "public-all",
+          "taxi-last-metro-KOW:portal:E6"
+        ],
+        "cost": [
+          "public-all",
+          "taxi-last-metro-AUS:portal:B2",
+          "taxi-last-metro-KOW:portal:E6",
+          "taxi-direct"
+        ],
+        "walk": [
+          "taxi-direct",
+          "taxi-last-metro-AUS:portal:B2",
+          "taxi-last-metro-KOW:portal:E6",
+          "public-all"
+        ]
+      },
+      "taxiPriceSensitivity": [
+        {
+          "factor": 0.5,
+          "winner": "taxi-direct"
+        },
+        {
+          "factor": 1,
+          "winner": "taxi-direct"
+        },
+        {
+          "factor": 1.5,
+          "winner": "taxi-last-metro-AUS:portal:B2"
+        },
+        {
+          "factor": 2,
+          "winner": "taxi-last-metro-AUS:portal:B2"
+        },
+        {
+          "factor": 3,
+          "winner": "public-all"
+        }
+      ],
+      "ms": 17154
+    }
+  ]
+}

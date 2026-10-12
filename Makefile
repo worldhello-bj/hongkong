@@ -1,7 +1,11 @@
-.PHONY: serve test data build
+.PHONY: serve test build research-test data
 serve:
-	python -m uvicorn app.main:app --host 127.0.0.1 --port 8081
+	npm start
+build:
+	npm run build
 test:
+	npm test
+research-test:
 	python -m pytest -q
 	python scripts/benchmark.py
 data:
@@ -9,5 +13,3 @@ data:
 	python scripts/build_bus_services.py
 	python scripts/fetch_bus_patterns.py
 	python scripts/build_model.py
-build:
-	cd web && npm ci && npm run build
