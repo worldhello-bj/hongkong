@@ -1,0 +1,12 @@
+{
+  "runtime": "fd323a328ba2",
+  "command": "npm test",
+  "exitCode": 0,
+  "tests": 273,
+  "passed": 273,
+  "failed": 0,
+  "cancelled": 0,
+  "skipped": 0,
+  "durationMs": 273362.416135,
+  "note": "Shell glob fixed at 18:35 UTC; three observer-only tests added later were checked separately and must be included in final remote CI."
+}

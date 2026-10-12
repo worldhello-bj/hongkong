@@ -29,6 +29,7 @@ await import('./repair-fifo-wait.mjs');
 await import('./repair-demo-snap.mjs');
 await import('./repair-preference-routing.mjs');
 for (const patch of ['repair-preference-heuristic.mjs','repair-modeled-height-snap.mjs']) (await import('node:child_process')).execFileSync(process.execPath,[root+'scripts/'+patch,root],{stdio:'inherit'});
+(await import('node:child_process')).execFileSync(process.execPath,[root+'scripts/repair-demo-snap-cache.mjs',root],{stdio:'inherit'});
 await import('./repair-coverage-selection.mjs');
 (await import('node:child_process')).execFileSync(process.execPath,[root+'scripts/repair-endpoint-region.mjs',root],{stdio:'inherit'});
 (await import('node:child_process')).execFileSync(process.execPath,[root+'scripts/repair-station-identity.mjs'],{stdio:'inherit'});

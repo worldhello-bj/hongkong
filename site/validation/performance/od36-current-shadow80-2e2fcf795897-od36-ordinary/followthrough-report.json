@@ -1,0 +1,1745 @@
+{
+  "runtime": "2e2fcf795897",
+  "productionEntrySha256": "b7e4c421908557e91e52031c03d41f06428cbb31ac2355155834bc4824d6e6a5",
+  "instrumentedEntrySha256": "6a67ebdd412bafde15e01b53ba2f443d4682ea564296140652fb17e52190b654",
+  "label": "od36-current-shadow80",
+  "variant": "baseline",
+  "goalBoundObserver": true,
+  "latestGoalBoundShadow": {
+    "t": 80624.276,
+    "worker": 5,
+    "kind": "app-transit-worker-CaCMeUxU.js",
+    "sid": 13,
+    "event": "goal-bound-shadow",
+    "reason": "ten-second",
+    "elapsedMs": 30014.787741000007,
+    "observerElapsedMs": 30012.14600400001,
+    "incumbent": 18186.929190000003,
+    "expanded": 5532,
+    "wouldPrune": 0,
+    "equal": 0,
+    "noIncumbent": 959,
+    "unsupported": 0,
+    "currentScoreAboveIncumbent": 0,
+    "outgoingResolverPotential": 0,
+    "outgoingDynamicPotential": 0,
+    "resolverCalls": 20486,
+    "resolverMs": 28492.492312998555,
+    "dynamicResolverCalls": 5459,
+    "wouldPruneResolverCalls": 0,
+    "wouldPruneResolverMs": 0,
+    "wouldPruneDynamicResolverCalls": 0,
+    "ftCalls": 5437,
+    "ftMs": 26186.991454000177,
+    "wouldPruneFtCalls": 0,
+    "wouldPruneFtMs": 0,
+    "minOriginalScore": 0,
+    "maxOriginalScore": 6680.23878,
+    "minVirtualScore": 0,
+    "maxVirtualScore": 8582,
+    "minIncumbent": 18186.929190000003,
+    "maxIncumbent": 18315.647129999998,
+    "topNodes": [
+      {
+        "node": "RAIL:AUS:TML",
+        "expanded": 200,
+        "wouldPrune": 0,
+        "equal": 0,
+        "noIncumbent": 6,
+        "unsupported": 0,
+        "currentScoreAboveIncumbent": 0,
+        "outgoingResolverPotential": 0,
+        "outgoingDynamicPotential": 0,
+        "resolverCalls": 1200,
+        "resolverMs": 5108.076667000001,
+        "dynamicResolverCalls": 1200,
+        "wouldPruneResolverCalls": 0,
+        "wouldPruneResolverMs": 0,
+        "wouldPruneDynamicResolverCalls": 0,
+        "ftCalls": 1200,
+        "ftMs": 4919.780408000093,
+        "wouldPruneFtCalls": 0,
+        "wouldPruneFtMs": 0,
+        "minOriginalScore": 3634.8460499999983,
+        "maxOriginalScore": 6678.5412000000015,
+        "minVirtualScore": 4473.90763,
+        "maxVirtualScore": 7517.930119999999,
+        "minIncumbent": 18186.929190000003,
+        "maxIncumbent": 18315.647129999998
+      },
+      {
+        "node": "td:1164",
+        "expanded": 190,
+        "wouldPrune": 0,
+        "equal": 0,
+        "noIncumbent": 10,
+        "unsupported": 0,
+        "currentScoreAboveIncumbent": 0,
+        "outgoingResolverPotential": 0,
+        "outgoingDynamicPotential": 0,
+        "resolverCalls": 1520,
+        "resolverMs": 19.20561299969995,
+        "dynamicResolverCalls": 0,
+        "wouldPruneResolverCalls": 0,
+        "wouldPruneResolverMs": 0,
+        "wouldPruneDynamicResolverCalls": 0,
+        "ftCalls": 0,
+        "ftMs": 0,
+        "wouldPruneFtCalls": 0,
+        "wouldPruneFtMs": 0,
+        "minOriginalScore": 4003.78803,
+        "maxOriginalScore": 6678.021420000005,
+        "minVirtualScore": 5342.5,
+        "maxVirtualScore": 8016,
+        "minIncumbent": 18186.929190000003,
+        "maxIncumbent": 18315.647129999998
+      },
+      {
+        "node": "td:4248",
+        "expanded": 181,
+        "wouldPrune": 0,
+        "equal": 0,
+        "noIncumbent": 8,
+        "unsupported": 0,
+        "currentScoreAboveIncumbent": 0,
+        "outgoingResolverPotential": 0,
+        "outgoingDynamicPotential": 0,
+        "resolverCalls": 1629,
+        "resolverMs": 22.24220100011007,
+        "dynamicResolverCalls": 0,
+        "wouldPruneResolverCalls": 0,
+        "wouldPruneResolverMs": 0,
+        "wouldPruneDynamicResolverCalls": 0,
+        "ftCalls": 0,
+        "ftMs": 0,
+        "wouldPruneFtCalls": 0,
+        "wouldPruneFtMs": 0,
+        "minOriginalScore": 4253.5218300000015,
+        "maxOriginalScore": 6669.374279999996,
+        "minVirtualScore": 5617.5,
+        "maxVirtualScore": 8033,
+        "minIncumbent": 18186.929190000003,
+        "maxIncumbent": 18315.647129999998
+      },
+      {
+        "node": "td:1331",
+        "expanded": 171,
+        "wouldPrune": 0,
+        "equal": 0,
+        "noIncumbent": 12,
+        "unsupported": 0,
+        "currentScoreAboveIncumbent": 0,
+        "outgoingResolverPotential": 0,
+        "outgoingDynamicPotential": 0,
+        "resolverCalls": 1026,
+        "resolverMs": 220.55173099976673,
+        "dynamicResolverCalls": 0,
+        "wouldPruneResolverCalls": 0,
+        "wouldPruneResolverMs": 0,
+        "wouldPruneDynamicResolverCalls": 0,
+        "ftCalls": 0,
+        "ftMs": 0,
+        "wouldPruneFtCalls": 0,
+        "wouldPruneFtMs": 0,
+        "minOriginalScore": 3940.78803,
+        "maxOriginalScore": 6678.093870000004,
+        "minVirtualScore": 5327.5,
+        "maxVirtualScore": 8064,
+        "minIncumbent": 18186.929190000003,
+        "maxIncumbent": 18315.647129999998
+      },
+      {
+        "node": "AUS:portal:D1",
+        "expanded": 158,
+        "wouldPrune": 0,
+        "equal": 0,
+        "noIncumbent": 4,
+        "unsupported": 0,
+        "currentScoreAboveIncumbent": 0,
+        "outgoingResolverPotential": 0,
+        "outgoingDynamicPotential": 0,
+        "resolverCalls": 632,
+        "resolverMs": 567.1636529999087,
+        "dynamicResolverCalls": 158,
+        "wouldPruneResolverCalls": 0,
+        "wouldPruneResolverMs": 0,
+        "wouldPruneDynamicResolverCalls": 0,
+        "ftCalls": 158,
+        "ftMs": 535.6163150000284,
+        "wouldPruneFtCalls": 0,
+        "wouldPruneFtMs": 0,
+        "minOriginalScore": 4115.2023,
+        "maxOriginalScore": 6676.587329999999,
+        "minVirtualScore": 4955.12138,
+        "maxVirtualScore": 7516.26761,
+        "minIncumbent": 18186.929190000003,
+        "maxIncumbent": 18315.647129999998
+      },
+      {
+        "node": "AUS:portal:B1",
+        "expanded": 157,
+        "wouldPrune": 0,
+        "equal": 0,
+        "noIncumbent": 5,
+        "unsupported": 0,
+        "currentScoreAboveIncumbent": 0,
+        "outgoingResolverPotential": 0,
+        "outgoingDynamicPotential": 0,
+        "resolverCalls": 628,
+        "resolverMs": 327.33585999990464,
+        "dynamicResolverCalls": 157,
+        "wouldPruneResolverCalls": 0,
+        "wouldPruneResolverMs": 0,
+        "wouldPruneDynamicResolverCalls": 0,
+        "ftCalls": 157,
+        "ftMs": 301.86244799997075,
+        "wouldPruneFtCalls": 0,
+        "wouldPruneFtMs": 0,
+        "minOriginalScore": 4154.7137999999995,
+        "maxOriginalScore": 6676.4817299999995,
+        "minVirtualScore": 4993.82828,
+        "maxVirtualScore": 7516.40425,
+        "minIncumbent": 18186.929190000003,
+        "maxIncumbent": 18315.647129999998
+      },
+      {
+        "node": "AUS:portal:B2",
+        "expanded": 155,
+        "wouldPrune": 0,
+        "equal": 0,
+        "noIncumbent": 3,
+        "unsupported": 0,
+        "currentScoreAboveIncumbent": 0,
+        "outgoingResolverPotential": 0,
+        "outgoingDynamicPotential": 0,
+        "resolverCalls": 620,
+        "resolverMs": 472.3702679997368,
+        "dynamicResolverCalls": 155,
+        "wouldPruneResolverCalls": 0,
+        "wouldPruneResolverMs": 0,
+        "wouldPruneDynamicResolverCalls": 0,
+        "ftCalls": 155,
+        "ftMs": 441.63082499994925,
+        "wouldPruneFtCalls": 0,
+        "wouldPruneFtMs": 0,
+        "minOriginalScore": 4224.0171,
+        "maxOriginalScore": 6675.563250000001,
+        "minVirtualScore": 5063.41026,
+        "maxVirtualScore": 7515.337949999999,
+        "minIncumbent": 18186.929190000003,
+        "maxIncumbent": 18315.647129999998
+      },
+      {
+        "node": "RAIL:HUH:TML",
+        "expanded": 152,
+        "wouldPrune": 0,
+        "equal": 0,
+        "noIncumbent": 11,
+        "unsupported": 0,
+        "currentScoreAboveIncumbent": 0,
+        "outgoingResolverPotential": 0,
+        "outgoingDynamicPotential": 0,
+        "resolverCalls": 304,
+        "resolverMs": 1036.9311550000348,
+        "dynamicResolverCalls": 304,
+        "wouldPruneResolverCalls": 0,
+        "wouldPruneResolverMs": 0,
+        "wouldPruneDynamicResolverCalls": 0,
+        "ftCalls": 304,
+        "ftMs": 992.8028510000804,
+        "wouldPruneFtCalls": 0,
+        "wouldPruneFtMs": 0,
+        "minOriginalScore": 3273.9156799999996,
+        "maxOriginalScore": 6668.129829999994,
+        "minVirtualScore": 3693.46462,
+        "maxVirtualScore": 7087.19311,
+        "minIncumbent": 18186.929190000003,
+        "maxIncumbent": 18315.647129999998
+      },
+      {
+        "node": "td:4052",
+        "expanded": 149,
+        "wouldPrune": 0,
+        "equal": 0,
+        "noIncumbent": 2,
+        "unsupported": 0,
+        "currentScoreAboveIncumbent": 0,
+        "outgoingResolverPotential": 0,
+        "outgoingDynamicPotential": 0,
+        "resolverCalls": 447,
+        "resolverMs": 6.7779129998452845,
+        "dynamicResolverCalls": 0,
+        "wouldPruneResolverCalls": 0,
+        "wouldPruneResolverMs": 0,
+        "wouldPruneDynamicResolverCalls": 0,
+        "ftCalls": 0,
+        "ftMs": 0,
+        "wouldPruneFtCalls": 0,
+        "wouldPruneFtMs": 0,
+        "minOriginalScore": 4457.935530000001,
+        "maxOriginalScore": 6679.317600000006,
+        "minVirtualScore": 6092.5,
+        "maxVirtualScore": 8312.5,
+        "minIncumbent": 18186.929190000003,
+        "maxIncumbent": 18315.647129999998
+      },
+      {
+        "node": "RAIL:HUH:EAL",
+        "expanded": 148,
+        "wouldPrune": 0,
+        "equal": 0,
+        "noIncumbent": 9,
+        "unsupported": 0,
+        "currentScoreAboveIncumbent": 0,
+        "outgoingResolverPotential": 0,
+        "outgoingDynamicPotential": 0,
+        "resolverCalls": 296,
+        "resolverMs": 974.5813829999461,
+        "dynamicResolverCalls": 296,
+        "wouldPruneResolverCalls": 0,
+        "wouldPruneResolverMs": 0,
+        "wouldPruneDynamicResolverCalls": 0,
+        "ftCalls": 296,
+        "ftMs": 929.9289130000761,
+        "wouldPruneFtCalls": 0,
+        "wouldPruneFtMs": 0,
+        "minOriginalScore": 3398.5392799999977,
+        "maxOriginalScore": 6676.79508,
+        "minVirtualScore": 3818.23878,
+        "maxVirtualScore": 7096.4401,
+        "minIncumbent": 18186.929190000003,
+        "maxIncumbent": 18315.647129999998
+      },
+      {
+        "node": "AUS:portal:B3",
+        "expanded": 138,
+        "wouldPrune": 0,
+        "equal": 0,
+        "noIncumbent": 3,
+        "unsupported": 0,
+        "currentScoreAboveIncumbent": 0,
+        "outgoingResolverPotential": 0,
+        "outgoingDynamicPotential": 0,
+        "resolverCalls": 552,
+        "resolverMs": 277.2081869999165,
+        "dynamicResolverCalls": 138,
+        "wouldPruneResolverCalls": 0,
+        "wouldPruneResolverMs": 0,
+        "wouldPruneDynamicResolverCalls": 0,
+        "ftCalls": 138,
+        "ftMs": 251.14705399996456,
+        "wouldPruneFtCalls": 0,
+        "wouldPruneFtMs": 0,
+        "minOriginalScore": 4231.73925,
+        "maxOriginalScore": 6677.990129999998,
+        "minVirtualScore": 5071.043549999999,
+        "maxVirtualScore": 7517.10929,
+        "minIncumbent": 18186.929190000003,
+        "maxIncumbent": 18315.647129999998
+      },
+      {
+        "node": "td:9013",
+        "expanded": 132,
+        "wouldPrune": 0,
+        "equal": 0,
+        "noIncumbent": 32,
+        "unsupported": 0,
+        "currentScoreAboveIncumbent": 0,
+        "outgoingResolverPotential": 0,
+        "outgoingDynamicPotential": 0,
+        "resolverCalls": 396,
+        "resolverMs": 3.94955799994932,
+        "dynamicResolverCalls": 0,
+        "wouldPruneResolverCalls": 0,
+        "wouldPruneResolverMs": 0,
+        "wouldPruneDynamicResolverCalls": 0,
+        "ftCalls": 0,
+        "ftMs": 0,
+        "wouldPruneFtCalls": 0,
+        "wouldPruneFtMs": 0,
+        "minOriginalScore": 2082.78803,
+        "maxOriginalScore": 6654.433889999999,
+        "minVirtualScore": 2752.5,
+        "maxVirtualScore": 7322.5,
+        "minIncumbent": 18186.929190000003,
+        "maxIncumbent": 18315.647129999998
+      },
+      {
+        "node": "AUS:portal:D3",
+        "expanded": 131,
+        "wouldPrune": 0,
+        "equal": 0,
+        "noIncumbent": 4,
+        "unsupported": 0,
+        "currentScoreAboveIncumbent": 0,
+        "outgoingResolverPotential": 0,
+        "outgoingDynamicPotential": 0,
+        "resolverCalls": 524,
+        "resolverMs": 649.6331959999225,
+        "dynamicResolverCalls": 131,
+        "wouldPruneResolverCalls": 0,
+        "wouldPruneResolverMs": 0,
+        "wouldPruneDynamicResolverCalls": 0,
+        "ftCalls": 131,
+        "ftMs": 544.3887280000054,
+        "wouldPruneFtCalls": 0,
+        "wouldPruneFtMs": 0,
+        "minOriginalScore": 3188.39715,
+        "maxOriginalScore": 6680.193450000006,
+        "minVirtualScore": 4028.0382899999995,
+        "maxVirtualScore": 7520.11607,
+        "minIncumbent": 18186.929190000003,
+        "maxIncumbent": 18315.647129999998
+      },
+      {
+        "node": "HUH:portal:A3",
+        "expanded": 131,
+        "wouldPrune": 0,
+        "equal": 0,
+        "noIncumbent": 32,
+        "unsupported": 0,
+        "currentScoreAboveIncumbent": 0,
+        "outgoingResolverPotential": 0,
+        "outgoingDynamicPotential": 0,
+        "resolverCalls": 655,
+        "resolverMs": 1157.775257999936,
+        "dynamicResolverCalls": 262,
+        "wouldPruneResolverCalls": 0,
+        "wouldPruneResolverMs": 0,
+        "wouldPruneDynamicResolverCalls": 0,
+        "ftCalls": 262,
+        "ftMs": 1059.135536000118,
+        "wouldPruneFtCalls": 0,
+        "wouldPruneFtMs": 0,
+        "minOriginalScore": 2333.8646299999987,
+        "maxOriginalScore": 6634.774330000006,
+        "minVirtualScore": 2753.43399,
+        "maxVirtualScore": 7054.17981,
+        "minIncumbent": 18186.929190000003,
+        "maxIncumbent": 18315.647129999998
+      },
+      {
+        "node": "AUS:portal:D2",
+        "expanded": 124,
+        "wouldPrune": 0,
+        "equal": 0,
+        "noIncumbent": 4,
+        "unsupported": 0,
+        "currentScoreAboveIncumbent": 0,
+        "outgoingResolverPotential": 0,
+        "outgoingDynamicPotential": 0,
+        "resolverCalls": 496,
+        "resolverMs": 296.4496799999324,
+        "dynamicResolverCalls": 124,
+        "wouldPruneResolverCalls": 0,
+        "wouldPruneResolverMs": 0,
+        "wouldPruneDynamicResolverCalls": 0,
+        "ftCalls": 124,
+        "ftMs": 277.00210200006404,
+        "wouldPruneFtCalls": 0,
+        "wouldPruneFtMs": 0,
+        "minOriginalScore": 3195.399900000001,
+        "maxOriginalScore": 6678.524700000003,
+        "minVirtualScore": 4035.23994,
+        "maxVirtualScore": 7518.11482,
+        "minIncumbent": 18186.929190000003,
+        "maxIncumbent": 18315.647129999998
+      },
+      {
+        "node": "td:4265",
+        "expanded": 107,
+        "wouldPrune": 0,
+        "equal": 0,
+        "noIncumbent": 18,
+        "unsupported": 0,
+        "currentScoreAboveIncumbent": 0,
+        "outgoingResolverPotential": 0,
+        "outgoingDynamicPotential": 0,
+        "resolverCalls": 214,
+        "resolverMs": 3.0248040000878973,
+        "dynamicResolverCalls": 0,
+        "wouldPruneResolverCalls": 0,
+        "wouldPruneResolverMs": 0,
+        "wouldPruneDynamicResolverCalls": 0,
+        "ftCalls": 0,
+        "ftMs": 0,
+        "wouldPruneFtCalls": 0,
+        "wouldPruneFtMs": 0,
+        "minOriginalScore": 2794.78803,
+        "maxOriginalScore": 6640.759419999999,
+        "minVirtualScore": 4378.5,
+        "maxVirtualScore": 8223.5,
+        "minIncumbent": 18186.929190000003,
+        "maxIncumbent": 18315.647129999998
+      },
+      {
+        "node": "td:4255",
+        "expanded": 105,
+        "wouldPrune": 0,
+        "equal": 0,
+        "noIncumbent": 19,
+        "unsupported": 0,
+        "currentScoreAboveIncumbent": 0,
+        "outgoingResolverPotential": 0,
+        "outgoingDynamicPotential": 0,
+        "resolverCalls": 315,
+        "resolverMs": 3.6786720000891364,
+        "dynamicResolverCalls": 0,
+        "wouldPruneResolverCalls": 0,
+        "wouldPruneResolverMs": 0,
+        "wouldPruneDynamicResolverCalls": 0,
+        "ftCalls": 0,
+        "ftMs": 0,
+        "wouldPruneFtCalls": 0,
+        "wouldPruneFtMs": 0,
+        "minOriginalScore": 3052.9800299999997,
+        "maxOriginalScore": 6666.486229999997,
+        "minVirtualScore": 4533,
+        "maxVirtualScore": 8146,
+        "minIncumbent": 18186.929190000003,
+        "maxIncumbent": 18315.647129999998
+      },
+      {
+        "node": "td:12366",
+        "expanded": 99,
+        "wouldPrune": 0,
+        "equal": 0,
+        "noIncumbent": 45,
+        "unsupported": 0,
+        "currentScoreAboveIncumbent": 0,
+        "outgoingResolverPotential": 0,
+        "outgoingDynamicPotential": 0,
+        "resolverCalls": 297,
+        "resolverMs": 4.388204999973823,
+        "dynamicResolverCalls": 0,
+        "wouldPruneResolverCalls": 0,
+        "wouldPruneResolverMs": 0,
+        "wouldPruneDynamicResolverCalls": 0,
+        "ftCalls": 0,
+        "ftMs": 0,
+        "wouldPruneFtCalls": 0,
+        "wouldPruneFtMs": 0,
+        "minOriginalScore": 2669.7660799999994,
+        "maxOriginalScore": 6678.679740000009,
+        "minVirtualScore": 3687.5,
+        "maxVirtualScore": 7697.5,
+        "minIncumbent": 18186.929190000003,
+        "maxIncumbent": 18315.647129999998
+      },
+      {
+        "node": "td:12751",
+        "expanded": 99,
+        "wouldPrune": 0,
+        "equal": 0,
+        "noIncumbent": 17,
+        "unsupported": 0,
+        "currentScoreAboveIncumbent": 0,
+        "outgoingResolverPotential": 0,
+        "outgoingDynamicPotential": 0,
+        "resolverCalls": 297,
+        "resolverMs": 4.055434000016248,
+        "dynamicResolverCalls": 0,
+        "wouldPruneResolverCalls": 0,
+        "wouldPruneResolverMs": 0,
+        "wouldPruneDynamicResolverCalls": 0,
+        "ftCalls": 0,
+        "ftMs": 0,
+        "wouldPruneFtCalls": 0,
+        "wouldPruneFtMs": 0,
+        "minOriginalScore": 3336.204780000001,
+        "maxOriginalScore": 6677.744379999997,
+        "minVirtualScore": 5089,
+        "maxVirtualScore": 8430.5,
+        "minIncumbent": 18186.929190000003,
+        "maxIncumbent": 18315.647129999998
+      },
+      {
+        "node": "td:4252",
+        "expanded": 99,
+        "wouldPrune": 0,
+        "equal": 0,
+        "noIncumbent": 22,
+        "unsupported": 0,
+        "currentScoreAboveIncumbent": 0,
+        "outgoingResolverPotential": 0,
+        "outgoingDynamicPotential": 0,
+        "resolverCalls": 297,
+        "resolverMs": 3.2968879998734337,
+        "dynamicResolverCalls": 0,
+        "wouldPruneResolverCalls": 0,
+        "wouldPruneResolverMs": 0,
+        "wouldPruneDynamicResolverCalls": 0,
+        "ftCalls": 0,
+        "ftMs": 0,
+        "wouldPruneFtCalls": 0,
+        "wouldPruneFtMs": 0,
+        "minOriginalScore": 3276.060530000001,
+        "maxOriginalScore": 6635.769130000002,
+        "minVirtualScore": 4991,
+        "maxVirtualScore": 8350.5,
+        "minIncumbent": 18186.929190000003,
+        "maxIncumbent": 18315.647129999998
+      }
+    ],
+    "interpretation": "Original-trace potential upper bound only; actual pruning changes memo eviction/replay. No expansion or callback is skipped."
+  },
+  "cpuSampling": false,
+  "searchStateCounters": true,
+  "heapSampling": false,
+  "heapSamplingSelectedWorker": null,
+  "lowerBoundCounters": true,
+  "ancestorTimingSampling": {
+    "every": 64,
+    "exactScanAndHopCounts": true
+  },
+  "fixedUiDeparture": {
+    "departureS": 28800,
+    "departureDate": "2026-10-12"
+  },
+  "id": 36,
+  "need": "ordinary",
+  "state": "extended-observation-window-ended",
+  "windowMs": 80000,
+  "wallMs": 80171.42156,
+  "totalBootAndRouteMs": 83594.382,
+  "request": {
+    "origin": {
+      "id": "map:random--1529480317",
+      "name": "地图所选地点",
+      "detail": "用户选择 · 接入待核验",
+      "coordinates": [
+        114.16965086248385,
+        22.293277490710825
+      ],
+      "lon": 114.16965086248385,
+      "lat": 22.293277490710825
+    },
+    "destination": {
+      "id": "map:random-2133651309",
+      "name": "地图所选地点",
+      "detail": "用户选择 · 接入待核验",
+      "coordinates": [
+        114.15007628641142,
+        22.26413857693343
+      ],
+      "lon": 114.15007628641142,
+      "lat": 22.26413857693343
+    }
+  },
+  "routePerformance": {
+    "warmStart": false,
+    "startedMonotonic": 7604.285719,
+    "startedAt": "2026-10-12T18:41:04.720Z",
+    "origin": "地图所选地点",
+    "destination": "地图所选地点",
+    "stages": [
+      {
+        "id": "public-fast",
+        "durationMs": 9219,
+        "status": "needs-indoor-refinement",
+        "cached": false
+      },
+      {
+        "id": "taxi",
+        "durationMs": 23986,
+        "status": "ready"
+      },
+      {
+        "id": "metro",
+        "durationMs": 5261,
+        "status": "no-complete-route",
+        "cached": false
+      },
+      {
+        "id": "demo-public-fast",
+        "durationMs": 9237,
+        "status": "modeled"
+      },
+      {
+        "id": "demo-fallback",
+        "durationMs": 9251,
+        "status": "modeled"
+      }
+    ],
+    "firstResultMs": 1604,
+    "totalMs": null,
+    "taxiCandidates": [
+      {
+        "side": "first",
+        "id": "ADM:portal:E2",
+        "status": "ready",
+        "minutes": 109
+      },
+      {
+        "side": "first",
+        "id": "td:99215",
+        "status": "ready",
+        "minutes": 103
+      }
+    ]
+  },
+  "navigationLoad": {
+    "status": "ready",
+    "durationMs": 3162,
+    "block": "ready"
+  },
+  "aggregates": {
+    "n1": {
+      "count": 20,
+      "totalMs": 215.64713000000472,
+      "maxMs": 80.08726300000126
+    },
+    "x": {
+      "count": 12,
+      "totalMs": 179.0200409999976,
+      "maxMs": 81.11154800000077
+    },
+    "K1-load": {
+      "count": 3,
+      "totalMs": 5761.728277,
+      "maxMs": 2956.4529919999995
+    },
+    "r3": {
+      "count": 1,
+      "totalMs": 3176.419272,
+      "maxMs": 3176.419272
+    },
+    "ensureTaxi": {
+      "count": 2,
+      "totalMs": 3958.071467,
+      "maxMs": 2387.6324659999996
+    },
+    "m2-prepare": {
+      "count": 2,
+      "totalMs": 1550.903107,
+      "maxMs": 783.4490420000002
+    },
+    "g2": {
+      "count": 12,
+      "totalMs": 1797.4336899999953,
+      "maxMs": 907.3829569999998
+    },
+    "loadBlockData": {
+      "count": 1,
+      "totalMs": 4065.189551,
+      "maxMs": 4065.189551
+    },
+    "F1-merge": {
+      "count": 11,
+      "totalMs": 1748.4787119999964,
+      "maxMs": 898.7339250000005
+    },
+    "r2": {
+      "count": 11,
+      "totalMs": 42542.85101399999,
+      "maxMs": 9218.208121
+    },
+    "f2": {
+      "count": 11,
+      "totalMs": 43479.111056,
+      "maxMs": 9218.819283
+    },
+    "n3": {
+      "count": 2,
+      "totalMs": 29655.224389,
+      "maxMs": 23985.445516
+    },
+    "S1": {
+      "count": 1,
+      "totalMs": 5677.693186,
+      "maxMs": 5677.693186
+    },
+    "j2": {
+      "count": 10,
+      "totalMs": 1175.043569999998,
+      "maxMs": 208.0558639999981
+    }
+  },
+  "pendingMain": [
+    {
+      "sid": 25,
+      "name": "S1",
+      "graphs": [],
+      "t": 7471.426
+    },
+    {
+      "sid": 99,
+      "name": "f2",
+      "request": {
+        "origin": {
+          "id": "map:random--1529480317",
+          "coordinates": [
+            114.16965086248385,
+            22.293277490710825
+          ]
+        },
+        "destination": {
+          "id": "map:random-2133651309",
+          "coordinates": [
+            114.15007628641142,
+            22.26413857693343
+          ]
+        },
+        "preference": "ordinary",
+        "mode": "transit",
+        "allowedModes": [
+          "metro",
+          "bus",
+          "tram"
+        ],
+        "departureS": 28800,
+        "departureDate": "2026-10-12"
+      },
+      "graphs": [
+        {
+          "gid": 1,
+          "version": "b1e24d8ef9214320",
+          "nodes": 5405,
+          "edges": 11387,
+          "regions": [
+            "ADM",
+            "AUS",
+            "HUH",
+            "EXC",
+            "ETS",
+            "KOW"
+          ]
+        },
+        {
+          "gid": 2,
+          "version": "814b03c9c2d7e3c5",
+          "nodes": 61055,
+          "edges": 135514,
+          "regions": [
+            "ADM",
+            "AUS"
+          ]
+        },
+        {
+          "gid": 3,
+          "version": "19aebcac62f227eb:pacific-f-anchor-v1",
+          "nodes": 3326,
+          "edges": 7279,
+          "regions": [
+            "ADM"
+          ]
+        }
+      ],
+      "t": 46108.817
+    },
+    {
+      "sid": 101,
+      "name": "r2",
+      "request": {
+        "origin": {
+          "id": "map:random--1529480317",
+          "coordinates": [
+            114.16965086248385,
+            22.293277490710825
+          ]
+        },
+        "destination": {
+          "id": "map:random-2133651309",
+          "coordinates": [
+            114.15007628641142,
+            22.26413857693343
+          ]
+        },
+        "preference": "ordinary",
+        "mode": "transit",
+        "allowedModes": [
+          "metro",
+          "bus",
+          "tram"
+        ],
+        "departureS": 28800,
+        "departureDate": "2026-10-12"
+      },
+      "graphs": [
+        {
+          "gid": 1,
+          "version": "b1e24d8ef9214320",
+          "nodes": 5405,
+          "edges": 11387,
+          "regions": [
+            "ADM",
+            "AUS",
+            "HUH",
+            "EXC",
+            "ETS",
+            "KOW"
+          ]
+        },
+        {
+          "gid": 4,
+          "version": "814b03c9c2d7e3c5+block:19aebcac62f227eb:pacific-f-anchor-v1",
+          "nodes": 62479,
+          "edges": 138703,
+          "regions": [
+            "ADM",
+            "AUS"
+          ]
+        }
+      ],
+      "t": 46108.958
+    }
+  ],
+  "candidates": [
+    {
+      "id": "taxi-direct",
+      "kind": "direct",
+      "minutes": 31,
+      "cost": 140.25,
+      "modes": [
+        "walk",
+        "taxi",
+        "walk"
+      ],
+      "endpointsPreserved": true,
+      "forbidden": [],
+      "needsVehicleConfirmation": false
+    },
+    {
+      "id": "taxi-first-tram-td:99215",
+      "kind": "first",
+      "minutes": 103,
+      "cost": 98.89,
+      "modes": [
+        "walk",
+        "taxi",
+        "walk",
+        "tram",
+        "walk"
+      ],
+      "endpointsPreserved": true,
+      "forbidden": [],
+      "needsVehicleConfirmation": false
+    },
+    {
+      "id": "taxi-first-metro-ADM:portal:E2",
+      "kind": "first",
+      "minutes": 109,
+      "cost": 96.73,
+      "modes": [
+        "walk",
+        "taxi",
+        "walk",
+        "tram",
+        "walk"
+      ],
+      "endpointsPreserved": true,
+      "forbidden": [],
+      "needsVehicleConfirmation": false
+    },
+    {
+      "id": "transit-demo-review",
+      "kind": "public",
+      "minutes": 151,
+      "cost": 16.57,
+      "modes": [
+        "walk",
+        "bus",
+        "walk",
+        "metro",
+        "walk",
+        "tram",
+        "walk"
+      ],
+      "endpointsPreserved": true,
+      "forbidden": [],
+      "needsVehicleConfirmation": false
+    }
+  ],
+  "fetched": [
+    {
+      "path": "/area/station-graph.json.gz",
+      "bytes": 563298,
+      "sha256": "446700358a6a56ccb8bbf1e024f6a09da99925e2778331e67c307c135a0f0a1e",
+      "readMs": 2.181086999999991
+    },
+    {
+      "path": "/area/area-graph.json.gz",
+      "bytes": 8036890,
+      "sha256": "44901caf6ee1241a23e096eb3d692f96913789fb2c1cbd742da59d8d3730253f",
+      "readMs": 26.925722999999948
+    },
+    {
+      "path": "/transit/services.json",
+      "bytes": 239733,
+      "sha256": "59c1c4faef3fadbf32748b0707231f78c3ec36aa4d2edc47de39b8c39485c542",
+      "readMs": 0.43536600000004455
+    },
+    {
+      "path": "/transit/walk-links.json.gz",
+      "bytes": 303355,
+      "sha256": "9505ee7867641cd5c7bbf2a3c76a4216c7cdc05fdd7a72d7da4cf85eb2f6420b",
+      "readMs": 0.4973420000000033
+    },
+    {
+      "path": "/area/admiralty-block-graph.json.gz",
+      "bytes": 686250,
+      "sha256": "388a08977ed80e57295fe1a0d623178e79ecd441cedaa5cfc62fe043385e2298",
+      "readMs": 1.0714819999998326
+    }
+  ],
+  "samples": [
+    {
+      "t": 1043.724,
+      "rss": 222027776,
+      "heapTotal": 112816128,
+      "heapUsed": 48608440,
+      "external": 100555526,
+      "arrayBuffers": 100482636,
+      "maxRSSKiB": 224688
+    },
+    {
+      "t": 6097.899,
+      "rss": 1152098304,
+      "heapTotal": 452284416,
+      "heapUsed": 329994960,
+      "external": 202886038,
+      "arrayBuffers": 27999970,
+      "maxRSSKiB": 1154052
+    },
+    {
+      "t": 9107.712,
+      "rss": 1193541632,
+      "heapTotal": 504799232,
+      "heapUsed": 401524544,
+      "external": 58186274,
+      "arrayBuffers": 11174396,
+      "maxRSSKiB": 1165888
+    },
+    {
+      "t": 10108.17,
+      "rss": 1117044736,
+      "heapTotal": 504799232,
+      "heapUsed": 401568496,
+      "external": 58186274,
+      "arrayBuffers": 11174396,
+      "maxRSSKiB": 1186012
+    },
+    {
+      "t": 11108.497,
+      "rss": 1155694592,
+      "heapTotal": 504799232,
+      "heapUsed": 401609360,
+      "external": 58186274,
+      "arrayBuffers": 11174396,
+      "maxRSSKiB": 1186012
+    },
+    {
+      "t": 12108.628,
+      "rss": 1203818496,
+      "heapTotal": 504799232,
+      "heapUsed": 402132992,
+      "external": 58186274,
+      "arrayBuffers": 11174396,
+      "maxRSSKiB": 1186012
+    },
+    {
+      "t": 13108.826,
+      "rss": 1219760128,
+      "heapTotal": 504799232,
+      "heapUsed": 402692880,
+      "external": 58186274,
+      "arrayBuffers": 11174396,
+      "maxRSSKiB": 1212264
+    },
+    {
+      "t": 14108.973,
+      "rss": 1271603200,
+      "heapTotal": 504799232,
+      "heapUsed": 403959640,
+      "external": 58186274,
+      "arrayBuffers": 11174396,
+      "maxRSSKiB": 1241800
+    },
+    {
+      "t": 15109.222,
+      "rss": 1279827968,
+      "heapTotal": 504799232,
+      "heapUsed": 404707504,
+      "external": 58186274,
+      "arrayBuffers": 11174396,
+      "maxRSSKiB": 1269604
+    },
+    {
+      "t": 16108.795,
+      "rss": 1284939776,
+      "heapTotal": 506880000,
+      "heapUsed": 411913136,
+      "external": 58186274,
+      "arrayBuffers": 11174396,
+      "maxRSSKiB": 1269604
+    },
+    {
+      "t": 17397.22,
+      "rss": 1268441088,
+      "heapTotal": 543203328,
+      "heapUsed": 420408632,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1269604
+    },
+    {
+      "t": 18397.186,
+      "rss": 1269125120,
+      "heapTotal": 543203328,
+      "heapUsed": 424489664,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1269604
+    },
+    {
+      "t": 19397.604,
+      "rss": 1271353344,
+      "heapTotal": 545366016,
+      "heapUsed": 433246520,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1269604
+    },
+    {
+      "t": 20398.012,
+      "rss": 1278681088,
+      "heapTotal": 547774464,
+      "heapUsed": 443095728,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1269604
+    },
+    {
+      "t": 21398.071,
+      "rss": 1286455296,
+      "heapTotal": 547774464,
+      "heapUsed": 443555736,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1269604
+    },
+    {
+      "t": 22397.961,
+      "rss": 1313550336,
+      "heapTotal": 547774464,
+      "heapUsed": 443902872,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1284552
+    },
+    {
+      "t": 23398.116,
+      "rss": 1297002496,
+      "heapTotal": 547774464,
+      "heapUsed": 444634272,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1293848
+    },
+    {
+      "t": 24398.726,
+      "rss": 1309855744,
+      "heapTotal": 547774464,
+      "heapUsed": 445324672,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1293848
+    },
+    {
+      "t": 25398.995,
+      "rss": 1313865728,
+      "heapTotal": 547774464,
+      "heapUsed": 446688536,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1293848
+    },
+    {
+      "t": 26549.373,
+      "rss": 1139335168,
+      "heapTotal": 478765056,
+      "heapUsed": 320378792,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1293848
+    },
+    {
+      "t": 27549.353,
+      "rss": 1153175552,
+      "heapTotal": 479502336,
+      "heapUsed": 329831664,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1293848
+    },
+    {
+      "t": 28548.728,
+      "rss": 1170862080,
+      "heapTotal": 479502336,
+      "heapUsed": 330149352,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1293848
+    },
+    {
+      "t": 29549.522,
+      "rss": 1168748544,
+      "heapTotal": 479502336,
+      "heapUsed": 330471792,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1293848
+    },
+    {
+      "t": 30550.558,
+      "rss": 1182633984,
+      "heapTotal": 479502336,
+      "heapUsed": 330804816,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1293848
+    },
+    {
+      "t": 32156.799,
+      "rss": 1347403776,
+      "heapTotal": 534200320,
+      "heapUsed": 447681200,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1315824
+    },
+    {
+      "t": 33157.404,
+      "rss": 1244282880,
+      "heapTotal": 534200320,
+      "heapUsed": 447176832,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1315824
+    },
+    {
+      "t": 34157.512,
+      "rss": 1276395520,
+      "heapTotal": 534200320,
+      "heapUsed": 447186080,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1315824
+    },
+    {
+      "t": 35156.821,
+      "rss": 1290706944,
+      "heapTotal": 534200320,
+      "heapUsed": 447195720,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1315824
+    },
+    {
+      "t": 36156.74,
+      "rss": 1252806656,
+      "heapTotal": 534200320,
+      "heapUsed": 447205192,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1315824
+    },
+    {
+      "t": 39108.21,
+      "rss": 1363656704,
+      "heapTotal": 560140288,
+      "heapUsed": 470224312,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1331696
+    },
+    {
+      "t": 40107.731,
+      "rss": 1296834560,
+      "heapTotal": 560820224,
+      "heapUsed": 471347272,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 41107.804,
+      "rss": 1272537088,
+      "heapTotal": 560820224,
+      "heapUsed": 471386296,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 42107.956,
+      "rss": 1295847424,
+      "heapTotal": 560820224,
+      "heapUsed": 472284840,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 43108.013,
+      "rss": 1299472384,
+      "heapTotal": 560820224,
+      "heapUsed": 473088632,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 44108.54,
+      "rss": 1354768384,
+      "heapTotal": 560820224,
+      "heapUsed": 473879464,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 45108.947,
+      "rss": 1336590336,
+      "heapTotal": 560820224,
+      "heapUsed": 476415464,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 46867.226,
+      "rss": 1352716288,
+      "heapTotal": 505753600,
+      "heapUsed": 416368248,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 47867.154,
+      "rss": 1229221888,
+      "heapTotal": 453226496,
+      "heapUsed": 298802072,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 48866.882,
+      "rss": 1253662720,
+      "heapTotal": 453226496,
+      "heapUsed": 298826456,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 49866.945,
+      "rss": 1283801088,
+      "heapTotal": 453226496,
+      "heapUsed": 298845704,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 50867.397,
+      "rss": 1246646272,
+      "heapTotal": 453767168,
+      "heapUsed": 299822992,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 51866.733,
+      "rss": 1268678656,
+      "heapTotal": 453767168,
+      "heapUsed": 300530224,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 52866.94,
+      "rss": 1282211840,
+      "heapTotal": 453767168,
+      "heapUsed": 301920216,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 53870.572,
+      "rss": 1275568128,
+      "heapTotal": 453767168,
+      "heapUsed": 303042032,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 54870.347,
+      "rss": 1269764096,
+      "heapTotal": 457093120,
+      "heapUsed": 311185512,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 55869.933,
+      "rss": 1107824640,
+      "heapTotal": 306425856,
+      "heapUsed": 299482944,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 56869.637,
+      "rss": 1108029440,
+      "heapTotal": 311164928,
+      "heapUsed": 300811728,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 57869.899,
+      "rss": 1110913024,
+      "heapTotal": 311164928,
+      "heapUsed": 301751760,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 58869.867,
+      "rss": 1115643904,
+      "heapTotal": 313081856,
+      "heapUsed": 304214512,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 59870.604,
+      "rss": 1107492864,
+      "heapTotal": 312516608,
+      "heapUsed": 303878096,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 60871.483,
+      "rss": 1107759104,
+      "heapTotal": 312516608,
+      "heapUsed": 304377264,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 61871.232,
+      "rss": 1125695488,
+      "heapTotal": 325500928,
+      "heapUsed": 312701160,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 63000.416,
+      "rss": 1122283520,
+      "heapTotal": 320905216,
+      "heapUsed": 304837112,
+      "external": 31749936,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 64000.537,
+      "rss": 1127583744,
+      "heapTotal": 322879488,
+      "heapUsed": 309140944,
+      "external": 32053105,
+      "arrayBuffers": 10086887,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 65000.63,
+      "rss": 1128853504,
+      "heapTotal": 321167360,
+      "heapUsed": 303225216,
+      "external": 32053105,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 66001.962,
+      "rss": 1127235584,
+      "heapTotal": 321167360,
+      "heapUsed": 304443000,
+      "external": 32053105,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 67057.705,
+      "rss": 1127235584,
+      "heapTotal": 321167360,
+      "heapUsed": 305422048,
+      "external": 32053105,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 68058.005,
+      "rss": 1128022016,
+      "heapTotal": 321167360,
+      "heapUsed": 307293240,
+      "external": 32053105,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 69057.972,
+      "rss": 1128759296,
+      "heapTotal": 321167360,
+      "heapUsed": 305813056,
+      "external": 31768106,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 70058.16,
+      "rss": 1132756992,
+      "heapTotal": 321167360,
+      "heapUsed": 308328408,
+      "external": 31768106,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 71058.47,
+      "rss": 1132425216,
+      "heapTotal": 321167360,
+      "heapUsed": 307237920,
+      "external": 31768106,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 72057.943,
+      "rss": 1135718400,
+      "heapTotal": 325689344,
+      "heapUsed": 312233512,
+      "external": 31768106,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 73058.563,
+      "rss": 1135480832,
+      "heapTotal": 321167360,
+      "heapUsed": 304163304,
+      "external": 31768106,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 74058.745,
+      "rss": 1138061312,
+      "heapTotal": 321167360,
+      "heapUsed": 307441456,
+      "external": 31768106,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 75059.464,
+      "rss": 1136152576,
+      "heapTotal": 321167360,
+      "heapUsed": 305120568,
+      "external": 31768106,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 76059.179,
+      "rss": 1142312960,
+      "heapTotal": 326164480,
+      "heapUsed": 312595584,
+      "external": 31768106,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 77059.004,
+      "rss": 1139023872,
+      "heapTotal": 321691648,
+      "heapUsed": 304623040,
+      "external": 31768106,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 78059.056,
+      "rss": 1139367936,
+      "heapTotal": 321691648,
+      "heapUsed": 303287224,
+      "external": 31768106,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 79058.805,
+      "rss": 1139032064,
+      "heapTotal": 321691648,
+      "heapUsed": 301934792,
+      "external": 31768106,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 80058.608,
+      "rss": 1143488512,
+      "heapTotal": 326197248,
+      "heapUsed": 309890160,
+      "external": 31768106,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 81060.075,
+      "rss": 1138995200,
+      "heapTotal": 321691648,
+      "heapUsed": 303395448,
+      "external": 31768106,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 82059.746,
+      "rss": 1139011584,
+      "heapTotal": 321691648,
+      "heapUsed": 306760088,
+      "external": 31768106,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    },
+    {
+      "t": 83060.317,
+      "rss": 1144778752,
+      "heapTotal": 343015424,
+      "heapUsed": 310638040,
+      "external": 31768106,
+      "arrayBuffers": 9801888,
+      "maxRSSKiB": 1353116
+    }
+  ],
+  "memory": {
+    "rss": 1145565184,
+    "heapTotal": 343015424,
+    "heapUsed": 312626760,
+    "external": 32053105,
+    "arrayBuffers": 10086887,
+    "maxRSSKiB": 1353116
+  },
+  "eventLoopDelayMs": {
+    "mean": 25.337536467153285,
+    "max": 4781.506559,
+    "p99": 36.143103
+  },
+  "workers": [
+    {
+      "id": 1,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "terminated": true,
+      "pending": [
+        {
+          "origin": {
+            "id": "map:random--1529480317",
+            "coordinates": [
+              114.16965086248385,
+              22.293277490710825
+            ]
+          },
+          "destination": {
+            "id": "map:random-2133651309",
+            "coordinates": [
+              114.15007628641142,
+              22.26413857693343
+            ]
+          },
+          "preference": "fast",
+          "allowedModes": [
+            "metro",
+            "bus",
+            "tram"
+          ],
+          "departureS": 28800,
+          "departureDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "terminated": true,
+      "pending": []
+    },
+    {
+      "id": 3,
+      "kind": "metro-worker-BDEusPKL.js",
+      "terminated": true,
+      "pending": []
+    },
+    {
+      "id": 4,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "terminated": true,
+      "pending": []
+    },
+    {
+      "id": 5,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "pending": [
+        {
+          "origin": {
+            "id": "map:random--1529480317",
+            "coordinates": [
+              114.16965086248385,
+              22.293277490710825
+            ]
+          },
+          "destination": {
+            "id": "map:random-2133651309",
+            "coordinates": [
+              114.15007628641142,
+              22.26413857693343
+            ]
+          },
+          "preference": "fast",
+          "allowedModes": [
+            "metro",
+            "bus",
+            "tram"
+          ],
+          "departureS": 28800,
+          "departureDate": "2026-10-12"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Node worker_threads executes instrumented production S1 and production Worker bundles.",
+    "DOM stand-ins measure JS/string work, not browser layout, paint or visual acceptance.",
+    "Event stream is flushed in bounded batches (2048 queued records maximum, 512 serialized at once); earlier probes retained all events, so main-process memory is not directly comparable.",
+    "The original matrix stopped accessible runs as soon as public comparison was usable; this probe observes full completion or the unchanged 60-second window."
+  ],
+  "originalCheckpointWindowMs": 60000
+}

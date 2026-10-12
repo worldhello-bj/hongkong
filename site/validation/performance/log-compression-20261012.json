@@ -1,6 +1,6 @@
 {
-  "scope": "Completed inactive runs only, including cfc,9e,2e after streaming attribution. Original raw bytes SHA-256 verified through gzip decompression before unlink.",
-  "overlayBytesReclaimed": 673952574,
+  "scope": "Completed inactive runs only, including cfc,9e,2e and shadow80 after streaming attribution. Original raw bytes SHA-256 verified through gzip decompression before unlink.",
+  "overlayBytesReclaimed": 708661555,
   "tmpfsBytesReclaimed": 0,
   "files": [
     {
@@ -170,6 +170,30 @@
       "archiveBytes": 1637,
       "sha256": "8f9769a01afe521b0655a3b72956f065354f7879681eb324b003ce17245a63fe",
       "recovery": "gzip -dc validation/performance/od36-current-clock120-2e2fcf795897-od36-ordinary/worker-lifecycle.ndjson.gz > validation/performance/od36-current-clock120-2e2fcf795897-od36-ordinary/worker-lifecycle.ndjson"
+    },
+    {
+      "source": "validation/performance/od36-current-shadow80-2e2fcf795897-od36-ordinary/events.ndjson",
+      "archive": "validation/performance/od36-current-shadow80-2e2fcf795897-od36-ordinary/events.ndjson.gz",
+      "sourceBytes": 12161311,
+      "archiveBytes": 852168,
+      "sha256": "a06b6b3030d4eead6e7c8dc929c70f7275e98bc77faaee8e47e302939ff36118",
+      "recovery": "gzip -dc validation/performance/od36-current-shadow80-2e2fcf795897-od36-ordinary/events.ndjson.gz > validation/performance/od36-current-shadow80-2e2fcf795897-od36-ordinary/events.ndjson"
+    },
+    {
+      "source": "validation/performance/od36-current-shadow80-2e2fcf795897-od36-ordinary/instrumented/followthrough-events.ndjson",
+      "archive": "validation/performance/od36-current-shadow80-2e2fcf795897-od36-ordinary/instrumented/followthrough-events.ndjson.gz",
+      "sourceBytes": 25236672,
+      "archiveBytes": 1845264,
+      "sha256": "a9eca13a118d51f0d4fcf06bf5b2b265632ab5fe4837dc926081238697657183",
+      "recovery": "gzip -dc validation/performance/od36-current-shadow80-2e2fcf795897-od36-ordinary/instrumented/followthrough-events.ndjson.gz > validation/performance/od36-current-shadow80-2e2fcf795897-od36-ordinary/instrumented/followthrough-events.ndjson"
+    },
+    {
+      "source": "validation/performance/od36-current-shadow80-2e2fcf795897-od36-ordinary/worker-lifecycle.ndjson",
+      "archive": "validation/performance/od36-current-shadow80-2e2fcf795897-od36-ordinary/worker-lifecycle.ndjson.gz",
+      "sourceBytes": 10073,
+      "archiveBytes": 1643,
+      "sha256": "9c48fcd35d541cd42061ff36f3f3e4065f44857183bad6559fd6d402e6e54af9",
+      "recovery": "gzip -dc validation/performance/od36-current-shadow80-2e2fcf795897-od36-ordinary/worker-lifecycle.ndjson.gz > validation/performance/od36-current-shadow80-2e2fcf795897-od36-ordinary/worker-lifecycle.ndjson"
     }
   ]
 }

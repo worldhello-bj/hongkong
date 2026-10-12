@@ -1,0 +1,44 @@
+{
+  "tripIds": 385,
+  "macroNodes": 100,
+  "stateUpperBound": 77200,
+  "stateLimitCheck": true,
+  "walkUpperBound": 46690714400,
+  "walkBoundBelow2Pow50": true,
+  "virtualIntegerUpper": 47764456224,
+  "virtualBelow2Pow51": true,
+  "perPattern": [
+    {
+      "id": "td:1326:1:287",
+      "trips": 14
+    },
+    {
+      "id": "td:1326:2:287",
+      "trips": 15
+    },
+    {
+      "id": "td:4005:1:287",
+      "trips": 54
+    },
+    {
+      "id": "td:4005:2:287",
+      "trips": 56
+    },
+    {
+      "id": "scheduled:RAIL:EAL",
+      "trips": 61
+    },
+    {
+      "id": "scheduled:RAIL:EAL:r",
+      "trips": 61
+    },
+    {
+      "id": "scheduled:RAIL:TML",
+      "trips": 62
+    },
+    {
+      "id": "scheduled:RAIL:TML:r",
+      "trips": 62
+    }
+  ]
+}

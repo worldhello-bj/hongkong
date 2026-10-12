@@ -1,0 +1,11 @@
+const root=fileURLToPath(new URL('../../../',import.meta.url));
+const runtime=fileURLToPath(new URL('../runtime-2e2fcf795897/',import.meta.url));
+const out=fileURLToPath(new URL('./',import.meta.url));
+import fs from'node:fs';import vm from'node:vm';import{fileURLToPath,pathToFileURL}from'node:url';import assert from'node:assert/strict';
+const url=pathToFileURL(runtime+'assets/app-transit-worker-CaCMeUxU.js');let source=fs.readFileSync(url,'utf8');const context={self:{},setTimeout,clearTimeout,DOMException,console};
+for(const m of source.matchAll(/import\s*\{([^}]+)\}\s*from\s*"([^"]+)";/g)){const mod=await import(new URL(m[2],url));for(const b of m[1].split(',')){const[n,a]=b.trim().split(/\s+as\s+/);context[a??n]=mod[n];}}
+source=source.replace(/import\s*\{([^}]+)\}\s*from\s*"([^"]+)";/g,'').replace('let tt;self.onmessage','globalThis.meta={trips:Ot,rail:Wt};let tt;self.onmessage');vm.createContext(context);vm.runInContext(source,context);
+const topology=JSON.parse(fs.readFileSync(out+'topology.json')),services=JSON.parse(fs.readFileSync(runtime+'transit/services.json')),ids=new Set(topology.arcs.filter(e=>e.kind==='pattern').map(e=>e.id)),patterns=services.patterns.map(p=>p.calendar?{...p,calendar:{...p.calendar,baseDate:'2026-10-12'}}:p);
+for(const p of context.meta.rail){const id='scheduled:'+p.edgeId;if(ids.has(id))patterns.push({id,stops:[{arrivalOffsetS:0,departureOffsetS:0},{arrivalOffsetS:420,departureOffsetS:420}],schedule:{windows:[{startS:p.start,endS:p.end+1,headwayS:360}],departuresS:[p.end]}});}
+const trips=new Set(),perPattern=[];for(const p of patterns){if(!ids.has(p.id))continue;const result=context.meta.trips(p,28800-p.stops.at(-1).arrivalOffsetS,50400);result.forEach(t=>trips.add(t.id));perPattern.push({id:p.id,trips:result.length});}
+assert.equal(perPattern.length,ids.size);const states=2*topology.inputCounts.macroNodes*(trips.size+1),walkUpper=states*604802;const result={tripIds:trips.size,macroNodes:100,stateUpperBound:states,stateLimitCheck:states<=2**30,walkUpperBound:walkUpper,walkBoundBelow2Pow50:walkUpper<2**50,virtualIntegerUpper:walkUpper+2**30,virtualBelow2Pow51:walkUpper+2**30<2**51,perPattern};fs.writeFileSync(out+'prepared-state-bound.json',JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));

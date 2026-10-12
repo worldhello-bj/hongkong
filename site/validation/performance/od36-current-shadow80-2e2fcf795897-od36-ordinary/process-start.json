@@ -1,0 +1,9 @@
+{
+  "runtime": "2e2fcf795897",
+  "label": "od36-current-shadow80",
+  "pid": 13,
+  "pidScope": "exec namespace; not a global host PID",
+  "startedUtc": "2026-10-12T18:40:57.291Z",
+  "workerOldGenerationCapMiB": 384,
+  "followThroughMs": 80000
+}
