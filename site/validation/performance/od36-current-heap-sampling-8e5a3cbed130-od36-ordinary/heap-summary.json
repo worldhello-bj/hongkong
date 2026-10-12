@@ -1,0 +1,1000 @@
+{
+  "worker": 5,
+  "samplingInterval": 65536,
+  "sampleCount": 4060,
+  "checkpoint": {
+    "source": "scheduled-search",
+    "sid": 13,
+    "retainedLabels": 4532,
+    "activeLabels": 4199,
+    "expanded": 1792,
+    "queue": 2740,
+    "elapsedMs": 14183.834371000004,
+    "rss": 1136123904,
+    "heapTotal": 463028224,
+    "heapUsed": 371194216,
+    "external": 12293761,
+    "arrayBuffers": 7234171,
+    "elapsedSinceSamplingStartMs": 19810.937386999998,
+    "thresholdMiB": 340,
+    "targetLabels": 5000
+  },
+  "totalEstimatedSampledBytes": 307212952,
+  "totalEstimatedSampledMiB": 292.9811019897461,
+  "nonOverlappingGroups": [
+    {
+      "category": "Unattributed V8 API allocations",
+      "estimatedBytes": 181602224,
+      "estimatedMiB": 173.1893768310547
+    },
+    {
+      "category": "Prepared walk-index construction (bt subtree)",
+      "estimatedBytes": 68300448,
+      "estimatedMiB": 65.13638305664062
+    },
+    {
+      "category": "Walk-query allocations excluding index construction",
+      "estimatedBytes": 21510016,
+      "estimatedMiB": 20.5135498046875
+    },
+    {
+      "category": "Transit initialization outside scheduled search",
+      "estimatedBytes": 18656464,
+      "estimatedMiB": 17.792190551757812
+    },
+    {
+      "category": "Scheduled-search context excluding ft/bt (includes region containers)",
+      "estimatedBytes": 9166712,
+      "estimatedMiB": 8.742057800292969
+    },
+    {
+      "category": "Lt synthetic EXACT portal objects",
+      "estimatedBytes": 7354824,
+      "estimatedMiB": 7.014106750488281
+    },
+    {
+      "category": "Other",
+      "estimatedBytes": 622264,
+      "estimatedMiB": 0.5934371948242188
+    }
+  ],
+  "topSelfFrames": [
+    {
+      "id": 50,
+      "name": "(V8 API)",
+      "estimatedSelfBytes": 181602224,
+      "estimatedSubtreeBytes": 181602224,
+      "frame": {
+        "functionName": "(V8 API)",
+        "scriptId": "0",
+        "url": "",
+        "lineNumber": -1,
+        "columnNumber": -1
+      },
+      "stack": [
+        "(root)",
+        "(V8 API)"
+      ],
+      "group": "Unattributed V8 API allocations"
+    },
+    {
+      "id": 373,
+      "name": "__profile_raw_bt",
+      "estimatedSelfBytes": 14449712,
+      "estimatedSubtreeBytes": 27366880,
+      "frame": {
+        "functionName": "__profile_raw_bt",
+        "scriptId": "273",
+        "url": "file:///workspace/scratch/0cc388d3824f/previews/hongkong/validation/performance/od36-current-heap-sampling-8e5a3cbed130-od36-ordinary/instrumented/app-transit-worker-CaCMeUxU.js",
+        "lineNumber": 105,
+        "columnNumber": 9379
+      },
+      "stack": [
+        "(root)",
+        "(anonymous)",
+        "route",
+        "Dt",
+        "invoke",
+        "__profile_raw_Dt",
+        "le",
+        "(anonymous)",
+        "ee",
+        "ft",
+        "invoke",
+        "__profile_raw_ft",
+        "bt",
+        "invoke",
+        "__profile_raw_bt"
+      ],
+      "group": "Prepared walk-index construction (bt subtree)",
+      "sourceContext": "..args){return globalThis.__profile.invoke(\"walk-index\",__profile_raw_bt,this,args);}function __profile_raw_bt(t,e){const o=new Map,n=new Map;for(const d of t.edges)if(Fe(d,e)){const f=o.get(d.from_id);f?f.push(ve(d)):o.set(d.from_id,[ve(d)])}for(const d of t.regions){const f=new Map;for(const u of t.edges)if(wt(u,d,e)){const p=f.get(u.physical_id);p?p.push(u):f.set(u"
+    },
+    {
+      "id": 212,
+      "name": "set",
+      "estimatedSelfBytes": 11010168,
+      "estimatedSubtreeBytes": 11010168,
+      "frame": {
+        "functionName": "set",
+        "scriptId": "0",
+        "url": "",
+        "lineNumber": -1,
+        "columnNumber": -1
+      },
+      "stack": [
+        "(root)",
+        "(anonymous)",
+        "(anonymous)",
+        "(anonymous)",
+        "self.onmessage",
+        "jt",
+        "invoke",
+        "__profile_raw_jt",
+        "Map",
+        "set"
+      ],
+      "group": "Transit initialization outside scheduled search"
+    },
+    {
+      "id": 799,
+      "name": "__profile_raw_bt",
+      "estimatedSelfBytes": 8668736,
+      "estimatedSubtreeBytes": 22506720,
+      "frame": {
+        "functionName": "__profile_raw_bt",
+        "scriptId": "273",
+        "url": "file:///workspace/scratch/0cc388d3824f/previews/hongkong/validation/performance/od36-current-heap-sampling-8e5a3cbed130-od36-ordinary/instrumented/app-transit-worker-CaCMeUxU.js",
+        "lineNumber": 105,
+        "columnNumber": 9379
+      },
+      "stack": [
+        "(root)",
+        "(anonymous)",
+        "route",
+        "Dt",
+        "invoke",
+        "__profile_raw_Dt",
+        "le",
+        "(anonymous)",
+        "ee",
+        "ft",
+        "invoke",
+        "__profile_raw_ft",
+        "bt",
+        "invoke",
+        "__profile_raw_bt"
+      ],
+      "group": "Prepared walk-index construction (bt subtree)",
+      "sourceContext": "..args){return globalThis.__profile.invoke(\"walk-index\",__profile_raw_bt,this,args);}function __profile_raw_bt(t,e){const o=new Map,n=new Map;for(const d of t.edges)if(Fe(d,e)){const f=o.get(d.from_id);f?f.push(ve(d)):o.set(d.from_id,[ve(d)])}for(const d of t.regions){const f=new Map;for(const u of t.edges)if(wt(u,d,e)){const p=f.get(u.physical_id);p?p.push(u):f.set(u"
+    },
+    {
+      "id": 800,
+      "name": "ve",
+      "estimatedSelfBytes": 5836496,
+      "estimatedSubtreeBytes": 5836496,
+      "frame": {
+        "functionName": "ve",
+        "scriptId": "273",
+        "url": "file:///workspace/scratch/0cc388d3824f/previews/hongkong/validation/performance/od36-current-heap-sampling-8e5a3cbed130-od36-ordinary/instrumented/app-transit-worker-CaCMeUxU.js",
+        "lineNumber": 105,
+        "columnNumber": 8187
+      },
+      "stack": [
+        "(root)",
+        "(anonymous)",
+        "route",
+        "Dt",
+        "invoke",
+        "__profile_raw_Dt",
+        "le",
+        "(anonymous)",
+        "ee",
+        "ft",
+        "invoke",
+        "__profile_raw_ft",
+        "bt",
+        "invoke",
+        "__profile_raw_bt",
+        "ve"
+      ],
+      "group": "Prepared walk-index construction (bt subtree)",
+      "sourceContext": "c.push([...t.coordinates[r]]);return Ne(c[c.length-1],s.coordinates)||c.push([...s.coordinates]),c}function ve(t,e=t.from_id,o=t.to_id,n,s){return{edge:t,from:e,to:o,fraction:Math.max(0,(s?.fraction??1)-(n?.fraction??0)),start:n,end:s}}const Mt={\"HUH:I:1000858952\":[\"HUH:N:e12bafb277002c\",\"HUH:N:6caf0d73e2cca8\"],\"HUH:I:1000859247\":[\"HUH:N:6caf0d73e2cca8\",\"HUH:N:b7c910d"
+    },
+    {
+      "id": 470,
+      "name": "(anonymous)",
+      "estimatedSelfBytes": 4786760,
+      "estimatedSubtreeBytes": 4786760,
+      "frame": {
+        "functionName": "",
+        "scriptId": "273",
+        "url": "file:///workspace/scratch/0cc388d3824f/previews/hongkong/validation/performance/od36-current-heap-sampling-8e5a3cbed130-od36-ordinary/instrumented/app-transit-worker-CaCMeUxU.js",
+        "lineNumber": 105,
+        "columnNumber": 42121
+      },
+      "stack": [
+        "(root)",
+        "(anonymous)",
+        "route",
+        "Dt",
+        "invoke",
+        "__profile_raw_Dt",
+        "le",
+        "(anonymous)",
+        "(anonymous)",
+        "map",
+        "(anonymous)"
+      ],
+      "group": "Lt synthetic EXACT portal objects",
+      "sourceContext": "P&&y.source_id===\"CSDI-INDOOR\"&&y.geometry_mode===\"official\"&&O.has(y.from_id)&&O.has(y.to_id)),portals:B.map(y=>({id:\"EXACT:\"+y.id,node_id:y.id,name:\"官方站内节点\",region_id:P,coordinates:y.coordinates,offset_m:0}))}),e.set(P,E)}const J=ft(E,{origin:{lon:M.coordinates[0],lat:M.coordinates[1],node_id:M.id},destination:{lon:S.coordinates[0],lat:S.coordinates[1],node_id:S.id}"
+    },
+    {
+      "id": 802,
+      "name": "push",
+      "estimatedSelfBytes": 4593456,
+      "estimatedSubtreeBytes": 4593456,
+      "frame": {
+        "functionName": "push",
+        "scriptId": "0",
+        "url": "",
+        "lineNumber": -1,
+        "columnNumber": -1
+      },
+      "stack": [
+        "(root)",
+        "(anonymous)",
+        "route",
+        "Dt",
+        "invoke",
+        "__profile_raw_Dt",
+        "le",
+        "(anonymous)",
+        "ee",
+        "ft",
+        "invoke",
+        "__profile_raw_ft",
+        "bt",
+        "invoke",
+        "__profile_raw_bt",
+        "push"
+      ],
+      "group": "Prepared walk-index construction (bt subtree)"
+    },
+    {
+      "id": 666,
+      "name": "__profile_raw_bt",
+      "estimatedSelfBytes": 4264208,
+      "estimatedSubtreeBytes": 6951496,
+      "frame": {
+        "functionName": "__profile_raw_bt",
+        "scriptId": "273",
+        "url": "file:///workspace/scratch/0cc388d3824f/previews/hongkong/validation/performance/od36-current-heap-sampling-8e5a3cbed130-od36-ordinary/instrumented/app-transit-worker-CaCMeUxU.js",
+        "lineNumber": 105,
+        "columnNumber": 9379
+      },
+      "stack": [
+        "(root)",
+        "(anonymous)",
+        "route",
+        "Dt",
+        "invoke",
+        "__profile_raw_Dt",
+        "(anonymous)",
+        "(anonymous)",
+        "ft",
+        "invoke",
+        "__profile_raw_ft",
+        "bt",
+        "invoke",
+        "__profile_raw_bt"
+      ],
+      "group": "Prepared walk-index construction (bt subtree)",
+      "sourceContext": "..args){return globalThis.__profile.invoke(\"walk-index\",__profile_raw_bt,this,args);}function __profile_raw_bt(t,e){const o=new Map,n=new Map;for(const d of t.edges)if(Fe(d,e)){const f=o.get(d.from_id);f?f.push(ve(d)):o.set(d.from_id,[ve(d)])}for(const d of t.regions){const f=new Map;for(const u of t.edges)if(wt(u,d,e)){const p=f.get(u.physical_id);p?p.push(u):f.set(u"
+    },
+    {
+      "id": 499,
+      "name": "push",
+      "estimatedSelfBytes": 4199208,
+      "estimatedSubtreeBytes": 4199208,
+      "frame": {
+        "functionName": "push",
+        "scriptId": "0",
+        "url": "",
+        "lineNumber": -1,
+        "columnNumber": -1
+      },
+      "stack": [
+        "(root)",
+        "(anonymous)",
+        "route",
+        "Dt",
+        "invoke",
+        "__profile_raw_Dt",
+        "le",
+        "(anonymous)",
+        "(anonymous)",
+        "ft",
+        "invoke",
+        "__profile_raw_ft",
+        "bt",
+        "invoke",
+        "__profile_raw_bt",
+        "push"
+      ],
+      "group": "Prepared walk-index construction (bt subtree)"
+    },
+    {
+      "id": 375,
+      "name": "push",
+      "estimatedSelfBytes": 4068456,
+      "estimatedSubtreeBytes": 4068456,
+      "frame": {
+        "functionName": "push",
+        "scriptId": "0",
+        "url": "",
+        "lineNumber": -1,
+        "columnNumber": -1
+      },
+      "stack": [
+        "(root)",
+        "(anonymous)",
+        "route",
+        "Dt",
+        "invoke",
+        "__profile_raw_Dt",
+        "le",
+        "(anonymous)",
+        "ee",
+        "ft",
+        "invoke",
+        "__profile_raw_ft",
+        "bt",
+        "invoke",
+        "__profile_raw_bt",
+        "push"
+      ],
+      "group": "Prepared walk-index construction (bt subtree)"
+    },
+    {
+      "id": 374,
+      "name": "set",
+      "estimatedSelfBytes": 3670096,
+      "estimatedSubtreeBytes": 3670096,
+      "frame": {
+        "functionName": "set",
+        "scriptId": "0",
+        "url": "",
+        "lineNumber": -1,
+        "columnNumber": -1
+      },
+      "stack": [
+        "(root)",
+        "(anonymous)",
+        "route",
+        "Dt",
+        "invoke",
+        "__profile_raw_Dt",
+        "le",
+        "(anonymous)",
+        "ee",
+        "ft",
+        "invoke",
+        "__profile_raw_ft",
+        "bt",
+        "invoke",
+        "__profile_raw_bt",
+        "set"
+      ],
+      "group": "Prepared walk-index construction (bt subtree)"
+    },
+    {
+      "id": 494,
+      "name": "__profile_raw_ft",
+      "estimatedSelfBytes": 3213168,
+      "estimatedSubtreeBytes": 18951800,
+      "frame": {
+        "functionName": "__profile_raw_ft",
+        "scriptId": "273",
+        "url": "file:///workspace/scratch/0cc388d3824f/previews/hongkong/validation/performance/od36-current-heap-sampling-8e5a3cbed130-od36-ordinary/instrumented/app-transit-worker-CaCMeUxU.js",
+        "lineNumber": 105,
+        "columnNumber": 14357
+      },
+      "stack": [
+        "(root)",
+        "(anonymous)",
+        "route",
+        "Dt",
+        "invoke",
+        "__profile_raw_Dt",
+        "le",
+        "(anonymous)",
+        "(anonymous)",
+        "ft",
+        "invoke",
+        "__profile_raw_ft"
+      ],
+      "group": "Walk-query allocations excluding index construction",
+      "sourceContext": "..args){return globalThis.__profile.invoke(\"walk-query\",__profile_raw_ft,this,args);}function __profile_raw_ft(t,e){const o=Je.get(t);o||ot(t);const n=(t.warnings??[]).filter(a=>!/40\\s*米|不計入路程|不计入路程/.test(a)),s=(a,g)=>({status:a,message:g,warnings:n}),c=Xe(t,e?.origin),r=Xe(t,e?.destination);if(!c||!r)return s(\"OUT_OF_REGION\",\"起点及终点必须位于已加载的道路覆盖范围内。\");if(![\"fast\",\"few_"
+    },
+    {
+      "id": 616,
+      "name": "__profile_raw_ft",
+      "estimatedSelfBytes": 3147728,
+      "estimatedSubtreeBytes": 13902320,
+      "frame": {
+        "functionName": "__profile_raw_ft",
+        "scriptId": "273",
+        "url": "file:///workspace/scratch/0cc388d3824f/previews/hongkong/validation/performance/od36-current-heap-sampling-8e5a3cbed130-od36-ordinary/instrumented/app-transit-worker-CaCMeUxU.js",
+        "lineNumber": 105,
+        "columnNumber": 14357
+      },
+      "stack": [
+        "(root)",
+        "(anonymous)",
+        "route",
+        "Dt",
+        "invoke",
+        "__profile_raw_Dt",
+        "(anonymous)",
+        "(anonymous)",
+        "ft",
+        "invoke",
+        "__profile_raw_ft"
+      ],
+      "group": "Walk-query allocations excluding index construction",
+      "sourceContext": "..args){return globalThis.__profile.invoke(\"walk-query\",__profile_raw_ft,this,args);}function __profile_raw_ft(t,e){const o=Je.get(t);o||ot(t);const n=(t.warnings??[]).filter(a=>!/40\\s*米|不計入路程|不计入路程/.test(a)),s=(a,g)=>({status:a,message:g,warnings:n}),c=Xe(t,e?.origin),r=Xe(t,e?.destination);if(!c||!r)return s(\"OUT_OF_REGION\",\"起点及终点必须位于已加载的道路覆盖范围内。\");if(![\"fast\",\"few_"
+    },
+    {
+      "id": 641,
+      "name": "(anonymous)",
+      "estimatedSelfBytes": 2491648,
+      "estimatedSubtreeBytes": 2491648,
+      "frame": {
+        "functionName": "",
+        "scriptId": "273",
+        "url": "file:///workspace/scratch/0cc388d3824f/previews/hongkong/validation/performance/od36-current-heap-sampling-8e5a3cbed130-od36-ordinary/instrumented/app-transit-worker-CaCMeUxU.js",
+        "lineNumber": 105,
+        "columnNumber": 42121
+      },
+      "stack": [
+        "(root)",
+        "(anonymous)",
+        "route",
+        "Dt",
+        "invoke",
+        "__profile_raw_Dt",
+        "(anonymous)",
+        "(anonymous)",
+        "map",
+        "(anonymous)"
+      ],
+      "group": "Lt synthetic EXACT portal objects",
+      "sourceContext": "P&&y.source_id===\"CSDI-INDOOR\"&&y.geometry_mode===\"official\"&&O.has(y.from_id)&&O.has(y.to_id)),portals:B.map(y=>({id:\"EXACT:\"+y.id,node_id:y.id,name:\"官方站内节点\",region_id:P,coordinates:y.coordinates,offset_m:0}))}),e.set(P,E)}const J=ft(E,{origin:{lon:M.coordinates[0],lat:M.coordinates[1],node_id:M.id},destination:{lon:S.coordinates[0],lat:S.coordinates[1],node_id:S.id}"
+    },
+    {
+      "id": 630,
+      "name": "(anonymous)",
+      "estimatedSelfBytes": 2294408,
+      "estimatedSubtreeBytes": 2294408,
+      "frame": {
+        "functionName": "",
+        "scriptId": "273",
+        "url": "file:///workspace/scratch/0cc388d3824f/previews/hongkong/validation/performance/od36-current-heap-sampling-8e5a3cbed130-od36-ordinary/instrumented/app-transit-worker-CaCMeUxU.js",
+        "lineNumber": 105,
+        "columnNumber": 7897
+      },
+      "stack": [
+        "(root)",
+        "(anonymous)",
+        "route",
+        "Dt",
+        "invoke",
+        "__profile_raw_Dt",
+        "(anonymous)",
+        "(anonymous)",
+        "ft",
+        "invoke",
+        "__profile_raw_ft",
+        "vt",
+        "map",
+        "(anonymous)"
+      ],
+      "group": "Walk-query allocations excluding index construction",
+      "sourceContext": ",coordinates:t.coordinates[e?t.coordinates.length-1:0]}}function vt(t,e,o){if(!e&&!o)return t.coordinates.map(r=>[...r]);if(t.geometry_mode===\"none\")return[];const n=e??st(t,!1),s=o??st(t,!0),c=[[...n.coordinates]];for(let r=n.segment+1;r<=s.segment;r++)Ne(c[c.length-1],t.coordinates[r])||c.push([...t.coordinates[r]]);return Ne(c[c.length-1],s.coordinates)||c.push([.."
+    },
+    {
+      "id": 315,
+      "name": "__profile_raw_Dt",
+      "estimatedSelfBytes": 2229672,
+      "estimatedSubtreeBytes": 106332000,
+      "frame": {
+        "functionName": "__profile_raw_Dt",
+        "scriptId": "273",
+        "url": "file:///workspace/scratch/0cc388d3824f/previews/hongkong/validation/performance/od36-current-heap-sampling-8e5a3cbed130-od36-ordinary/instrumented/app-transit-worker-CaCMeUxU.js",
+        "lineNumber": 105,
+        "columnNumber": 33905
+      },
+      "stack": [
+        "(root)",
+        "(anonymous)",
+        "route",
+        "Dt",
+        "invoke",
+        "__profile_raw_Dt"
+      ],
+      "group": "Scheduled-search context excluding ft/bt (includes region containers)",
+      "sourceContext": "){return globalThis.__profile.invoke(\"scheduled-search\",__profile_raw_Dt,this,args);}function __profile_raw_Dt(t,e){const{fromId:o,toId:n,departureS:s}=e,c=e.horizonS??21600,r=e.walkPenalty??1,d=e.transferPenaltyS??180;if(!te(s)||!te(c)||c<0||c>7*$e||!te(r)||r<1||!te(d)||d<0)throw new Error(\"Invalid route time/horizon/penalty\");const f=s+c,u=new Map,p=e.resolveConnect"
+    },
+    {
+      "id": 497,
+      "name": "__profile_raw_bt",
+      "estimatedSelfBytes": 2098576,
+      "estimatedSubtreeBytes": 11475352,
+      "frame": {
+        "functionName": "__profile_raw_bt",
+        "scriptId": "273",
+        "url": "file:///workspace/scratch/0cc388d3824f/previews/hongkong/validation/performance/od36-current-heap-sampling-8e5a3cbed130-od36-ordinary/instrumented/app-transit-worker-CaCMeUxU.js",
+        "lineNumber": 105,
+        "columnNumber": 9379
+      },
+      "stack": [
+        "(root)",
+        "(anonymous)",
+        "route",
+        "Dt",
+        "invoke",
+        "__profile_raw_Dt",
+        "le",
+        "(anonymous)",
+        "(anonymous)",
+        "ft",
+        "invoke",
+        "__profile_raw_ft",
+        "bt",
+        "invoke",
+        "__profile_raw_bt"
+      ],
+      "group": "Prepared walk-index construction (bt subtree)",
+      "sourceContext": "..args){return globalThis.__profile.invoke(\"walk-index\",__profile_raw_bt,this,args);}function __profile_raw_bt(t,e){const o=new Map,n=new Map;for(const d of t.edges)if(Fe(d,e)){const f=o.get(d.from_id);f?f.push(ve(d)):o.set(d.from_id,[ve(d)])}for(const d of t.regions){const f=new Map;for(const u of t.edges)if(wt(u,d,e)){const p=f.get(u.physical_id);p?p.push(u):f.set(u"
+    },
+    {
+      "id": 376,
+      "name": "ve",
+      "estimatedSelfBytes": 2032808,
+      "estimatedSubtreeBytes": 2032808,
+      "frame": {
+        "functionName": "ve",
+        "scriptId": "273",
+        "url": "file:///workspace/scratch/0cc388d3824f/previews/hongkong/validation/performance/od36-current-heap-sampling-8e5a3cbed130-od36-ordinary/instrumented/app-transit-worker-CaCMeUxU.js",
+        "lineNumber": 105,
+        "columnNumber": 8187
+      },
+      "stack": [
+        "(root)",
+        "(anonymous)",
+        "route",
+        "Dt",
+        "invoke",
+        "__profile_raw_Dt",
+        "le",
+        "(anonymous)",
+        "ee",
+        "ft",
+        "invoke",
+        "__profile_raw_ft",
+        "bt",
+        "invoke",
+        "__profile_raw_bt",
+        "ve"
+      ],
+      "group": "Prepared walk-index construction (bt subtree)",
+      "sourceContext": "c.push([...t.coordinates[r]]);return Ne(c[c.length-1],s.coordinates)||c.push([...s.coordinates]),c}function ve(t,e=t.from_id,o=t.to_id,n,s){return{edge:t,from:e,to:o,fraction:Math.max(0,(s?.fraction??1)-(n?.fraction??0)),start:n,end:s}}const Mt={\"HUH:I:1000858952\":[\"HUH:N:e12bafb277002c\",\"HUH:N:6caf0d73e2cca8\"],\"HUH:I:1000859247\":[\"HUH:N:6caf0d73e2cca8\",\"HUH:N:b7c910d"
+    },
+    {
+      "id": 520,
+      "name": "(anonymous)",
+      "estimatedSelfBytes": 1835544,
+      "estimatedSubtreeBytes": 1835544,
+      "frame": {
+        "functionName": "",
+        "scriptId": "273",
+        "url": "file:///workspace/scratch/0cc388d3824f/previews/hongkong/validation/performance/od36-current-heap-sampling-8e5a3cbed130-od36-ordinary/instrumented/app-transit-worker-CaCMeUxU.js",
+        "lineNumber": 105,
+        "columnNumber": 7897
+      },
+      "stack": [
+        "(root)",
+        "(anonymous)",
+        "route",
+        "Dt",
+        "invoke",
+        "__profile_raw_Dt",
+        "le",
+        "(anonymous)",
+        "(anonymous)",
+        "ft",
+        "invoke",
+        "__profile_raw_ft",
+        "vt",
+        "map",
+        "(anonymous)"
+      ],
+      "group": "Walk-query allocations excluding index construction",
+      "sourceContext": ",coordinates:t.coordinates[e?t.coordinates.length-1:0]}}function vt(t,e,o){if(!e&&!o)return t.coordinates.map(r=>[...r]);if(t.geometry_mode===\"none\")return[];const n=e??st(t,!1),s=o??st(t,!0),c=[[...n.coordinates]];for(let r=n.segment+1;r<=s.segment;r++)Ne(c[c.length-1],t.coordinates[r])||c.push([...t.coordinates[r]]);return Ne(c[c.length-1],s.coordinates)||c.push([.."
+    },
+    {
+      "id": 801,
+      "name": "set",
+      "estimatedSelfBytes": 1835088,
+      "estimatedSubtreeBytes": 1835088,
+      "frame": {
+        "functionName": "set",
+        "scriptId": "0",
+        "url": "",
+        "lineNumber": -1,
+        "columnNumber": -1
+      },
+      "stack": [
+        "(root)",
+        "(anonymous)",
+        "route",
+        "Dt",
+        "invoke",
+        "__profile_raw_Dt",
+        "le",
+        "(anonymous)",
+        "ee",
+        "ft",
+        "invoke",
+        "__profile_raw_ft",
+        "bt",
+        "invoke",
+        "__profile_raw_bt",
+        "set"
+      ],
+      "group": "Prepared walk-index construction (bt subtree)"
+    },
+    {
+      "id": 208,
+      "name": "set",
+      "estimatedSelfBytes": 1835048,
+      "estimatedSubtreeBytes": 1835048,
+      "frame": {
+        "functionName": "set",
+        "scriptId": "0",
+        "url": "",
+        "lineNumber": -1,
+        "columnNumber": -1
+      },
+      "stack": [
+        "(root)",
+        "(anonymous)",
+        "(anonymous)",
+        "(anonymous)",
+        "self.onmessage",
+        "jt",
+        "invoke",
+        "__profile_raw_jt",
+        "Lt",
+        "invoke",
+        "__profile_raw_Lt",
+        "Map",
+        "set"
+      ],
+      "group": "Transit initialization outside scheduled search"
+    },
+    {
+      "id": 540,
+      "name": "set",
+      "estimatedSelfBytes": 1835048,
+      "estimatedSubtreeBytes": 1835048,
+      "frame": {
+        "functionName": "set",
+        "scriptId": "0",
+        "url": "",
+        "lineNumber": -1,
+        "columnNumber": -1
+      },
+      "stack": [
+        "(root)",
+        "(anonymous)",
+        "route",
+        "Dt",
+        "invoke",
+        "__profile_raw_Dt",
+        "le",
+        "(anonymous)",
+        "(anonymous)",
+        "ft",
+        "invoke",
+        "__profile_raw_ft",
+        "bt",
+        "invoke",
+        "__profile_raw_bt",
+        "Map",
+        "set"
+      ],
+      "group": "Prepared walk-index construction (bt subtree)"
+    },
+    {
+      "id": 536,
+      "name": "set",
+      "estimatedSelfBytes": 1835048,
+      "estimatedSubtreeBytes": 1835048,
+      "frame": {
+        "functionName": "set",
+        "scriptId": "0",
+        "url": "",
+        "lineNumber": -1,
+        "columnNumber": -1
+      },
+      "stack": [
+        "(root)",
+        "(anonymous)",
+        "route",
+        "Dt",
+        "invoke",
+        "__profile_raw_Dt",
+        "le",
+        "(anonymous)",
+        "(anonymous)",
+        "ft",
+        "invoke",
+        "__profile_raw_ft",
+        "bt",
+        "invoke",
+        "__profile_raw_bt",
+        "set"
+      ],
+      "group": "Prepared walk-index construction (bt subtree)"
+    },
+    {
+      "id": 391,
+      "name": "set",
+      "estimatedSelfBytes": 1835048,
+      "estimatedSubtreeBytes": 1835048,
+      "frame": {
+        "functionName": "set",
+        "scriptId": "0",
+        "url": "",
+        "lineNumber": -1,
+        "columnNumber": -1
+      },
+      "stack": [
+        "(root)",
+        "(anonymous)",
+        "route",
+        "Dt",
+        "invoke",
+        "__profile_raw_Dt",
+        "le",
+        "(anonymous)",
+        "ee",
+        "ft",
+        "invoke",
+        "__profile_raw_ft",
+        "bt",
+        "invoke",
+        "__profile_raw_bt",
+        "Map",
+        "set"
+      ],
+      "group": "Prepared walk-index construction (bt subtree)"
+    },
+    {
+      "id": 402,
+      "name": "set",
+      "estimatedSelfBytes": 1835048,
+      "estimatedSubtreeBytes": 1835048,
+      "frame": {
+        "functionName": "set",
+        "scriptId": "0",
+        "url": "",
+        "lineNumber": -1,
+        "columnNumber": -1
+      },
+      "stack": [
+        "(root)",
+        "(anonymous)",
+        "route",
+        "Dt",
+        "invoke",
+        "__profile_raw_Dt",
+        "le",
+        "(anonymous)",
+        "ee",
+        "ft",
+        "invoke",
+        "__profile_raw_ft",
+        "N",
+        "Et",
+        "set"
+      ],
+      "group": "Walk-query allocations excluding index construction"
+    },
+    {
+      "id": 152,
+      "name": "__profile_raw_xt",
+      "estimatedSelfBytes": 1679288,
+      "estimatedSubtreeBytes": 1679288,
+      "frame": {
+        "functionName": "__profile_raw_xt",
+        "scriptId": "273",
+        "url": "file:///workspace/scratch/0cc388d3824f/previews/hongkong/validation/performance/od36-current-heap-sampling-8e5a3cbed130-od36-ordinary/instrumented/app-transit-worker-CaCMeUxU.js",
+        "lineNumber": 105,
+        "columnNumber": 42884
+      },
+      "stack": [
+        "(root)",
+        "(anonymous)",
+        "(anonymous)",
+        "(anonymous)",
+        "self.onmessage",
+        "jt",
+        "invoke",
+        "__profile_raw_jt",
+        "xt",
+        "invoke",
+        "__profile_raw_xt"
+      ],
+      "group": "Transit initialization outside scheduled search",
+      "sourceContext": "rgs){return globalThis.__profile.invoke(\"station-merge\",__profile_raw_xt,this,args);}function __profile_raw_xt(t,e){const o=Qe.get(t)?.get(e);if(o)return o;const n=new Map(e.nodes.map(u=>[u.id,u]));for(const u of t.nodes){const p=n.get(u.id);if(p&&p.coordinates.some((N,M)=>N!==u.coordinates[M]))throw new Error(\"站内与街道路网节点坐标冲突。\");n.set(u.id,u)}const s=new Map(e.edges.fi"
+    },
+    {
+      "id": 326,
+      "name": "filter",
+      "estimatedSelfBytes": 1388208,
+      "estimatedSubtreeBytes": 1388208,
+      "frame": {
+        "functionName": "filter",
+        "scriptId": "0",
+        "url": "",
+        "lineNumber": -1,
+        "columnNumber": -1
+      },
+      "stack": [
+        "(root)",
+        "(anonymous)",
+        "route",
+        "Dt",
+        "invoke",
+        "__profile_raw_Dt",
+        "le",
+        "(anonymous)",
+        "ee",
+        "filter"
+      ],
+      "group": "Scheduled-search context excluding ft/bt (includes region containers)"
+    },
+    {
+      "id": 542,
+      "name": "add",
+      "estimatedSelfBytes": 1310760,
+      "estimatedSubtreeBytes": 1310760,
+      "frame": {
+        "functionName": "add",
+        "scriptId": "0",
+        "url": "",
+        "lineNumber": -1,
+        "columnNumber": -1
+      },
+      "stack": [
+        "(root)",
+        "(anonymous)",
+        "route",
+        "Dt",
+        "invoke",
+        "__profile_raw_Dt",
+        "le",
+        "(anonymous)",
+        "(anonymous)",
+        "ft",
+        "invoke",
+        "__profile_raw_ft",
+        "bt",
+        "invoke",
+        "__profile_raw_bt",
+        "Set",
+        "add"
+      ],
+      "group": "Prepared walk-index construction (bt subtree)"
+    },
+    {
+      "id": 393,
+      "name": "add",
+      "estimatedSelfBytes": 1310760,
+      "estimatedSubtreeBytes": 1310760,
+      "frame": {
+        "functionName": "add",
+        "scriptId": "0",
+        "url": "",
+        "lineNumber": -1,
+        "columnNumber": -1
+      },
+      "stack": [
+        "(root)",
+        "(anonymous)",
+        "route",
+        "Dt",
+        "invoke",
+        "__profile_raw_Dt",
+        "le",
+        "(anonymous)",
+        "ee",
+        "ft",
+        "invoke",
+        "__profile_raw_ft",
+        "bt",
+        "invoke",
+        "__profile_raw_bt",
+        "Set",
+        "add"
+      ],
+      "group": "Prepared walk-index construction (bt subtree)"
+    },
+    {
+      "id": 222,
+      "name": "(anonymous)",
+      "estimatedSelfBytes": 1245656,
+      "estimatedSubtreeBytes": 2033376,
+      "frame": {
+        "functionName": "",
+        "scriptId": "273",
+        "url": "file:///workspace/scratch/0cc388d3824f/previews/hongkong/validation/performance/od36-current-heap-sampling-8e5a3cbed130-od36-ordinary/instrumented/app-transit-worker-CaCMeUxU.js",
+        "lineNumber": 105,
+        "columnNumber": 45531
+      },
+      "stack": [
+        "(root)",
+        "(anonymous)",
+        "(anonymous)",
+        "(anonymous)",
+        "self.onmessage",
+        "jt",
+        "invoke",
+        "__profile_raw_jt",
+        "zt",
+        "map",
+        "(anonymous)"
+      ],
+      "group": "Transit initialization outside scheduled search",
+      "sourceContext": "}}}),o=new Map;for(const s of e){const c=s.properties.edge_id;o.set(c,[...o.get(c)??[],s])}const n=t.legs.map(s=>{const c=s,r=c.edge_ids??c.source_edge_ids;if(!Array.isArray(r))throw new Error(\"步行换乘步骤缺少来源路段编号。\");const d=r.map(u=>o.get(u)?.shift()?.geometry.coordinates);let f=c.geometry;if(!f&&d.length&&d.every(u=>u&&u.length>=2)){const u=[];let p=!0;for(const N of d){"
+    }
+  ],
+  "labelConstructionFrames": [
+    {
+      "id": 460,
+      "name": "P",
+      "estimatedSelfBytes": 984016,
+      "estimatedSubtreeBytes": 984016,
+      "frame": {
+        "functionName": "P",
+        "scriptId": "273",
+        "url": "file:///workspace/scratch/0cc388d3824f/previews/hongkong/validation/performance/od36-current-heap-sampling-8e5a3cbed130-od36-ordinary/instrumented/app-transit-worker-CaCMeUxU.js",
+        "lineNumber": 105,
+        "columnNumber": 35271
+      },
+      "stack": [
+        "(root)",
+        "(anonymous)",
+        "route",
+        "Dt",
+        "invoke",
+        "__profile_raw_Dt",
+        "P"
+      ],
+      "group": "Scheduled-search context excluding ft/bt (includes region containers)",
+      "sourceContext": "e(0,-1).forEach((k,A)=>{const w=j.get(k.stopId)??[];w.push({p:h,index:A,trips:I}),j.set(k.stopId,w)})}const P=(h,I,k,A,w,Y=0)=>{const q=h.facilityPenalty+Y;if(k>f)return;const Z=w.find(m=>m.kind!==\"walk\"&&m.kind!==\"wait\"),fe=Z?Z.tripId??`connection:${Z.connectionId}`:void 0,H=h.boarded||!!Z,re=h.transfers+(Z&&h.boarded&&h.onboardTrip!==fe?1:0),ie=u.get(I)??[],ee=m=>m."
+    }
+  ],
+  "limitations": [
+    "Statistical live-allocation samples, not exact retained sizes or dominator/retainer paths.",
+    "Objects not yet collected can still appear; no forced GC was requested.",
+    "Native allocations and input cloning can have unattributed/root frames.",
+    "Only this selected detailed Worker is sampled; wall-time is diagnostic, not an A/B timing run.",
+    "Stack categories describe allocation sites, not exact retained owners or object dominators.",
+    "V8 API frames cannot be relabeled as input graph clones without independent proof.",
+    "Subtree frames overlap; only the explicitly nonOverlappingGroups can be summed.",
+    "The checkpoint occurs on a 256-pop boundary, so heap can exceed the configured threshold before capture."
+  ]
+}

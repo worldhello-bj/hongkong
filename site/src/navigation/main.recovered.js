@@ -1,7 +1,7 @@
 import {buildPacificPlaceModel,createPacificPlaceModel,PACIFIC_PLACE_BUILDING_ID} from "./pacific-place-model.js";
 import {pacificOpeningAdvice,pacificPlaceControls,pacificModelPanel,isPacificPlace} from "./place-opening.js";
 import {scoreParameters,updateScoreParameter,resetScoreParameters,scoreParameterPanel} from "./score-parameters.js";
-import {createRoutingQueue} from "./routing-queue.js";
+import {createRoutingQueue,runRoutingPhases} from "./routing-queue.js";
 import {limitedRailReference} from "./rail-reference.js";
 import {journeyScore,hasPublicAlternative} from "./journey-score.js";
 import {planTaxiCandidates} from "./taxi-candidates.js";
@@ -13,7 +13,7 @@ import {addKowloonModeledCorridor} from "./kow-c1-corridor.js";
 import {taxiPassengerPolicy,annotateTaxiPassengerResult} from "./taxi-policy.js";
 import {annotatePreferenceResult} from "./preference-routing.js";
 import {quoteRouteSafely,simulatedTaxiFareCents} from "./route-quote.js";
-import {createDemoAccessibilityGraph,createDemoWalkLinks,annotateDemoFallback} from "./demo-fallback.js";
+import {createDemoAccessibilityGraph,createDemoWalkLinks,annotateDemoFallback,demoEndpointEvidenceMissing} from "./demo-fallback.js";
 import {publicCoverageRings} from "./public-coverage.js";
 import {evaluateStationEntrances,stationEntrancePanel,applyStationEntranceChoice,annotateStationDetour} from "./station-alternatives.js";
 import {FLEET_DEMO_BOUNDS,boundsCorners,createRoadContext,visibleFleet} from "./taxi-map.js";
@@ -145,9 +145,9 @@ function taxiMap() {
 let taxiPanelExpanded=false;
 function taxiPanel() {
   if(!t1.has("taxi"))return "";
-  return `<details class="na-taxi-panel" data-app="taxi-details" ${taxiPanelExpanded?"open":""}><summary>出租车演示与车队<span>模拟运行</span></summary><div class="na-section-title"><h2>出租车游走池</h2><span data-app="taxi-clock">${taxiClock(taxiClockS)}</span></div><p data-app="taxi-fleet-status">${taxiSimulation?.fleetSize??48} 辆演示车 · 含预置已有订单</p><div class="na-taxi-buttons"><button data-action="taxi-play">${taxiPlaying?"暂停":"播放"}</button><button data-action="taxi-step">推进 1 分钟</button><button data-action="taxi-fit">查看车队</button></div><div class="na-taxi-presets"><button data-action="taxi-cross-road">中环 → 旺角 · 跨海道路</button><button data-action="taxi-cross-metro">金钟 → 旺角 · 地铁接出租车</button><button data-action="taxi-example">金钟 → M+</button></div><p class="na-taxi-coverage">车辆在图示中央演示区游走；查询仍覆盖港岛北岸、九龙及跨海通道。</p><p class="na-note">黄色游走 · 灰色已有订单 · 绿色接送乘客</p>${taxiOffers.slice(0,1).map(offer=>`<div class="na-taxi-offer"><b>${offer.carId}</b><span>人到 ${taxiClock(offer.passengerReadyS)} · 车到 ${taxiClock(offer.carArrivalS)}</span><small>人等车 ${Math.ceil(offer.passengerWaitS/60)} 分钟 · 车等人 ${Math.ceil(offer.vehicleWaitS/60)} 分钟${offer.currentState==="existingorder"?` · 先完成已有订单（${taxiClock(offer.availableAtS)}）`:""}</small><button data-taxi-reserve="${offer.id}">${taxiSelectedQuote?.id===offer.id?"已模拟预留":"模拟预留"}</button></div>`).join("")}</details>`;
+  return `<details class="na-taxi-panel" data-app="taxi-details" ${taxiPanelExpanded?"open":""}><summary>出租车演示与车队<span>模拟运行</span></summary><div class="na-section-title"><h2>出租车游走池</h2><span data-app="taxi-clock">${taxiClock(taxiClockS)}</span></div><p data-app="taxi-fleet-status">${taxiSimulation?.fleetSize??48} 辆演示车 · 含预置已有订单</p><div class="na-taxi-buttons"><button data-action="taxi-play">${taxiPlaying?"暂停":"播放"}</button><button data-action="taxi-step">推进 1 分钟</button><button data-action="taxi-fit">查看车队</button></div><div class="na-taxi-presets"><button data-action="taxi-cross-road">中环 → 旺角 · 跨海道路</button><button data-action="taxi-cross-metro">金钟 → 旺角 · 地铁接出租车</button><button data-action="taxi-example">金钟 → M+</button></div><p class="na-taxi-coverage">车辆在图示中央演示区游走；查询仍覆盖港岛北岸、九龙及跨海通道。</p><p class="na-note">黄色游走 · 灰色已有订单 · 绿色接送乘客</p>${taxiOffers.slice(0,1).map(offer=>`<div class="na-taxi-offer"><b>${offer.carId}</b><span>人到 ${taxiClock(offer.passengerReadyS)} · 车到 ${taxiClock(offer.carArrivalS)}</span><small>人等车 ${Math.ceil(offer.passengerWaitS/60)} 分钟 · 车等人 ${Math.ceil(offer.vehicleWaitS/60)} 分钟${offer.currentState==="existingorder"?` · 先完成已有订单（${taxiClock(offer.availableAtS)}）`:""}</small><button data-taxi-reserve="${offer.id}" ${!$?.journey?.complete?"disabled":""}>${taxiSelectedQuote?.id===offer.id?"已模拟预留":"模拟预留"}</button></div>`).join("")}</details>`;
 }
-async function n3(request, signal, routingQueue) {
+async function n3(request, signal, routingQueue, sharedBaseRouter) {
   taxiCoverageMessage="";
   const passengerPolicy=taxiPassengerPolicy({enabled:t1.has("taxi"),need:request.need});
   if(!passengerPolicy.eligible){taxiCoverageMessage=passengerPolicy.message;return;}
@@ -166,14 +166,14 @@ async function n3(request, signal, routingQueue) {
     C.push(choice);C=rankJourneys(deduplicateJourneys(C),G,request.need);
     _=C.find(candidate=>candidate.available&&r.demoFocus&&candidate.id.startsWith(r.demoFocus))??C.find(candidate=>candidate.available)??C[0];$=_?.result;
     taxiOffers=$?.taxiQuote?[$.taxiQuote]:[result.taxiQuote];
-    if(routePerformance.firstResultMs===null&&Number.isFinite(routePerformance.startedMonotonic))routePerformance.firstResultMs=Math.round(performance.now()-routePerformance.startedMonotonic);
-    taxiCoverageMessage=[disclosure,passengerPolicy.message].filter(Boolean).join(" ");x();B();Z("已找到可用方案，继续比较公共交通接续。");
+    if(_?.available&&routePerformance.firstResultMs===null&&Number.isFinite(routePerformance.startedMonotonic))routePerformance.firstResultMs=Math.round(performance.now()-routePerformance.startedMonotonic);
+    taxiCoverageMessage=[disclosure,passengerPolicy.message].filter(Boolean).join(" ");x();B();Z(_?.available?"已找到可用方案，继续比较公共交通接续。":"已显示未完成接续的费用情景，继续查找可用公共交通方案。");
   };
   const ask=(pickup,destination,passengerReadyS)=>{
     try{const quote=sim.offerQuotes({pickup,destination,passengerReadyS,nowS:request.departureS})[0];if(quote){quote.tunnelPaths=quote.passengerRoute.edges.filter(edge=>roadGraph.ways[edge.way]?.tunnel==="yes").map(edge=>edge.geometry??[roadGraph.nodes[edge.from],roadGraph.nodes[edge.to]]);quote.harbourTunnel=quote.passengerRoute.edges.some(edge=>/海底隧道|Harbour Crossing|Cross-Harbour/i.test(roadGraph.ways[edge.way]?.name??""));}return quote;}catch{return null;}
   };
   const sceneFor=(pickup,destination,name)=>({pickup,destination:{...destination,name},disclaimer:disclosure});
-  const taxiRouter=E2(Q,I1,publicWalkLinks,L1);
+  const taxiRouter=sharedBaseRouter??E2(Q,I1,publicWalkLinks,L1),ownsTaxiRouter=!sharedBaseRouter;
   const publicRoute=async(origin,destination,departureS,mode)=>{
     const query={...request,origin,destination,departureS,mode:'transit',allowedTransitModes:mode==='metro'?[...PUBLIC_MODES]:[mode]};
     const key=JSON.stringify([origin,destination,departureS,request.departureDate,request.need,mode]);
@@ -187,7 +187,7 @@ async function n3(request, signal, routingQueue) {
   };
   let status;try{status=await planTaxiCandidates({request,station:L1,services:I1,graph:Q,findRoad,ask,publicRoute,publish,
     isCurrent:current,isLinkAllowed:createModeledConnectorGuard({geography:O2,graph:Q,detail:z}),
-    onDiagnostic:entry=>{routePerformance.taxiCandidates??=[];routePerformance.taxiCandidates.push(entry);}});}finally{taxiRouter.dispose();}
+    onDiagnostic:entry=>{routePerformance.taxiCandidates??=[];routePerformance.taxiCandidates.push(entry);}});}finally{if(ownsTaxiRouter)taxiRouter.dispose();}
   if(status.status==='unsafe-road-connector')taxiCoverageMessage='所选地点与道路之间没有可核验的同岸接驳，请改选附近路侧点。';
   if(!C.some(choice=>choice.result.taxiQuote))taxiCoverageMessage="当前车辆没有完整道路接续，可调整地点后重试。";
 }
@@ -215,11 +215,16 @@ async function loadBlockData(){
  }catch(error){blockDataState="error";window.__navigationLoad.block="error";window.__navigationLoad.blockError=error.message;x();Z("公共交通已可用；站内细图暂未加载，可点击重试。");}
 }
 
-function J1(e=$,L){const t=e?.namedPlaceAlternative;if(t)return`<section class="na-unavailable"><p>${M(t.reason)} 当前所选地点未更改。</p><button class="na-secondary" data-action="use-named-place-alternative" ${L?`data-endpoint-choice="${M(L)}"`:""}>改选 ${M(t.place.name)}</button></section>`;const a=e?.entranceAlternative,n=a?`<section class="na-unavailable"><p>当前入口不满足此路线的条件。已计算可改用「${M(a.place.name)}」的行程；原地点尚未更改。</p><button class="na-secondary" data-action="use-alternative-entrance" ${L?`data-endpoint-choice="${M(L)}"`:""}>改用 ${M(a.place.name)}</button></section>`:"",i=e?.endpointAlternative;if(!i)return n;const s=i.side==="origin"?"起点":"终点";return n+`<section class="na-unavailable"><p>${s}与这处已建模步道相距约 ${i.gapM.toFixed(1)} 米。这段接驳未核验；从步道出发或到达步道的替代行程已算通，原地点尚未更改。</p><button class="na-secondary" data-action="use-modeled-sidewalk" ${L?`data-endpoint-choice="${M(L)}"`:""}>将${s}设为这处已建模步道</button></section>`}function i3(){if(!$)return d1?'<p class="na-note">正在计算，找到方案后会立即显示。</p>':'<p class="na-note">确认起终点和出行条件后，计算当前方案。</p>';if(!$.journey)return`<section class="na-no-route"><h2>${$.failureStatus==="SEARCH_LIMIT"?"路线计算受限，结果未定":$.failureStatus==="NO_ROUTE"?"当前条件下未找到路线":"暂时无法提供完整路线"}</h2><p>${M($.message)}</p><p>${$.failureStatus==="SEARCH_LIMIT"?"可以重新计算或选择已经显示的方案。":"可以按上方提示重试，或修改地点与偏好。不会补画不存在的连接。"}</p>${J1()}</section>`;const e=$.journey;return`<section class="na-result"><div class="na-result-heading"><h2>${_?Math.ceil(_.minutes)+" 分钟 · 全程估算":M($.metric)}</h2><span>${$.needsFacilityConfirmation?"设施待确认 · 模拟方案":$.scenarioOnly?"联程演示":$.simulationOnly?"仅供查看 · 接驳未核验":e.complete?"有条件可行":"有待核验段"}</span></div><p>${M($.message)}</p>${limitedRailReference(r)}${$.waitMinutes>=15?`<p class="na-long-wait">候车合计 ${$.waitMinutes} 分钟 · 已计入全程时间</p>`:""}${($.resolvedEndpoints??[]).map(L=>`<p class="na-arrival-entry"><b>${L.side==="origin"?"出发入口":"到达入口"}</b> ${M(L.entranceName)}${L.floorName?" · "+M(L.floorName):""}<small>地点保留为${M(L.placeName)}；导航接至此来源路网入口节点。</small></p>`).join("")}${($.alternatives??[]).map(L=>`<p class="na-note">${M(L)}</p>`).join("")}${$.warnings.filter(L=>/C1.*门口|分类冲突/.test(L)).map(L=>`<p class="na-unavailable">${M(L)}</p>`).join("")}${J1()}<button class="na-primary" data-action="start" ${!e.complete||_&&!_.available?"disabled":""}>${$.luggageCarryRequired?"确认搬运行李并查看路线":$.needsFacilityConfirmation?"查看模拟路线（设施待确认）":$.scenarioOnly?"开始联程演练":$.simulationOnly?"未核验接驳，不能开始连续导航":_&&["taxi","bikeshare","parking"].includes(_.id)?"开始分段情景演练":"开始三维路线演练"} <span>↗</span></button>${_?.quote?.available?'<button class="na-secondary na-checkout" data-action="checkout">统一预订与模拟支付 →</button>':""}${e.complete?"":'<p class="na-note">完整连接尚未核验，不能开始全程导航。</p>'}<details class="na-itinerary"><summary>分段行程 <span>${e.phases.length} 段 · 查看走法与费用</span></summary><ol class="na-legs">${e.phases.map((L,t)=>{const a=e.steps.filter(s=>s.phase===t),n=a[0],i=a.some(s=>["rail","metro","tram","bus","taxi","bikeshare","parking"].includes(s.kind));return`<li><button data-phase="${t}"><i class="${i?"ride":""}">${i?"▣":"↗"}</i><span><b>${M(L)}</b>${_?.quote.segments[t]&&!_.quote.compacted?`<small class="na-leg-price">${f1(_.quote.segments[t].amountCents)} · ${Math.ceil(_.quote.segments[t].durationMinutes??0)} 分钟${_.quote.segments[t].mode==="parking"?"停车时长":"（分段估算）"}</small>`:""}<small>${a.some(s=>s.blocked)?"路径未核验":i?n?.trainPhase?M(C2(n.trainPhase,r.need)):"乘车接续 · 方向以现场为准":`${a.length} 个导航步骤`}</small></span><b>›</b></button></li>`}).join("")}</ol></details>${y2()}${routePerformance.stages.length?`<details class="na-performance"><summary>计算耗时 · ${routePerformance.warmStart?"热启动":"冷启动"}${routePerformance.firstResultMs!==null?" · 首个方案 "+(routePerformance.firstResultMs/1000).toFixed(1)+" 秒":""}</summary><p>资料加载：公共路网 ${dataPerformance.publicLoadMs===null?"加载中":(dataPerformance.publicLoadMs/1000).toFixed(2)+" 秒"}${dataPerformance.taxiLoadMs===null?"":" · 出租车 "+(dataPerformance.taxiLoadMs/1000).toFixed(2)+" 秒（按需加载）"}</p>${routePerformance.stages.map(stage=>`<p>${M(({"public-fast":"公共交通快查",metro:"站内精细路线",walk:"步行",taxi:"出租车接续","transit-detailed":"室内外联程"})[stage.id]??stage.id)}：${(stage.durationMs/1000).toFixed(2)} 秒${stage.cached?" · 缓存":""}</p>`).join("")}</details>`:""}<details class="na-evidence"><summary>估算与核验提示（${$.warnings.length}）</summary>${$.warnings.map(L=>`<p>${M(L)}</p>`).join("")}</details></section>`}function L2(){const e=h2(V,k1);A("search-results").innerHTML=e.length?e.map((L,t)=>`<button data-place="${M(L.id)}" id="na-place-${t}" role="option" aria-selected="${t===s1}"><span>⌖</span><span><b>${M(L.name)}</b><small>${M(L.detail)}</small></span><span>↗</span></button>`).join(""):'<p class="na-note">没有匹配地点。试试车站名，或在地图上选点。</p>'}function publicCoverageMessage(point){
- const nearest=V.filter(place=>place.coordinates&&t2(Q,place)).map(place=>({place,meters:C1([point.coordinates,place.coordinates])})).sort((a,b)=>a.meters-b.meters)[0];
+function J1(e=$,L){const t=e?.namedPlaceAlternative;if(t)return`<section class="na-unavailable"><p>${M(t.reason)} 当前所选地点未更改。</p><button class="na-secondary" data-action="use-named-place-alternative" ${L?`data-endpoint-choice="${M(L)}"`:""}>改选 ${M(t.place.name)}</button></section>`;const a=e?.entranceAlternative,n=a?`<section class="na-unavailable"><p>当前入口不满足此路线的条件。已计算可改用「${M(a.place.name)}」的行程；原地点尚未更改。</p><button class="na-secondary" data-action="use-alternative-entrance" ${L?`data-endpoint-choice="${M(L)}"`:""}>改用 ${M(a.place.name)}</button></section>`:"",i=e?.endpointAlternative;if(!i)return n;const s=i.side==="origin"?"起点":"终点";return n+`<section class="na-unavailable"><p>${s}与这处已建模步道相距约 ${i.gapM.toFixed(1)} 米。这段接驳未核验；从步道出发或到达步道的替代行程已算通，原地点尚未更改。</p><button class="na-secondary" data-action="use-modeled-sidewalk" ${L?`data-endpoint-choice="${M(L)}"`:""}>将${s}设为这处已建模步道</button></section>`}function i3(){if(!$)return d1?'<p class="na-note">正在计算，找到方案后会立即显示。</p>':'<p class="na-note">确认起终点和出行条件后，计算当前方案。</p>';if(!$.journey)return`<section class="na-no-route"><h2>${$.failureStatus==="SEARCH_LIMIT"?"路线计算受限，结果未定":$.failureStatus==="NO_ROUTE"?"当前条件下未找到路线":"暂时无法提供完整路线"}</h2><p>${M($.message)}</p><p>${$.failureStatus==="SEARCH_LIMIT"?"可以重新计算或选择已经显示的方案。":"可以按上方提示重试，或修改地点与偏好。不会补画不存在的连接。"}</p>${J1()}</section>`;const e=$.journey;return`<section class="na-result"><div class="na-result-heading"><h2>${_?Math.ceil(_.minutes)+" 分钟 · 全程估算":M($.metric)}</h2><span>${$.needsFacilityConfirmation?"设施待确认 · 模拟方案":$.scenarioOnly?"联程演示":$.simulationOnly?"仅供查看 · 接驳未核验":e.complete?"有条件可行":"有待核验段"}</span></div><p>${M($.message)}</p>${limitedRailReference(r)}${$.waitMinutes>=15?`<p class="na-long-wait">候车合计 ${$.waitMinutes} 分钟 · 已计入全程时间</p>`:""}${($.resolvedEndpoints??[]).map(L=>`<p class="na-arrival-entry"><b>${L.side==="origin"?"出发入口":"到达入口"}</b> ${M(L.entranceName)}${L.floorName?" · "+M(L.floorName):""}<small>地点保留为${M(L.placeName)}；导航接至此来源路网入口节点。</small></p>`).join("")}${($.alternatives??[]).map(L=>`<p class="na-note">${M(L)}</p>`).join("")}${$.warnings.filter(L=>/C1.*门口|分类冲突/.test(L)).map(L=>`<p class="na-unavailable">${M(L)}</p>`).join("")}${J1()}<button class="na-primary" data-action="start" ${!e.complete||_&&!_.available?"disabled":""}>${$.luggageCarryRequired?"确认搬运行李并查看路线":$.needsFacilityConfirmation?"查看模拟路线（设施待确认）":$.scenarioOnly?"开始联程演练":$.simulationOnly?"未核验接驳，不能开始连续导航":_&&["taxi","bikeshare","parking"].includes(_.id)?"开始分段情景演练":"开始三维路线演练"} <span>↗</span></button>${_?.quote?.available?'<button class="na-secondary na-checkout" data-action="checkout">统一预订与模拟支付 →</button>':""}${e.complete?"":'<p class="na-note">完整连接尚未核验，不能开始全程导航。</p>'}<details class="na-itinerary"><summary>分段行程 <span>${e.phases.length} 段 · 查看走法与费用</span></summary><ol class="na-legs">${e.phases.map((L,t)=>{const a=e.steps.filter(s=>s.phase===t),n=a[0],i=a.some(s=>["rail","metro","tram","bus","taxi","bikeshare","parking"].includes(s.kind));return`<li><button data-phase="${t}"><i class="${i?"ride":""}">${i?"▣":"↗"}</i><span><b>${M(L)}</b>${_?.quote.segments[t]&&!_.quote.compacted?`<small class="na-leg-price">${f1(_.quote.segments[t].amountCents)} · ${Math.ceil(_.quote.segments[t].durationMinutes??0)} 分钟${_.quote.segments[t].mode==="parking"?"停车时长":"（分段估算）"}</small>`:""}<small>${a.some(s=>s.blocked)?"路径未核验":i?n?.trainPhase?M(C2(n.trainPhase,r.need)):"乘车接续 · 方向以现场为准":`${a.length} 个导航步骤`}</small></span><b>›</b></button></li>`}).join("")}</ol></details>${routePerformance.stages.some(stage=>stage.status==="error")?'<p class="na-unavailable" role="status">后台细化计算异常，完整比较尚未完成；已找到的方案仍保留，可重新计算。</p>':""}${y2()}${routePerformance.stages.length?`<details class="na-performance"><summary>计算耗时 · ${routePerformance.warmStart?"热启动":"冷启动"}${routePerformance.firstResultMs!==null?" · 首个方案 "+(routePerformance.firstResultMs/1000).toFixed(1)+" 秒":""}</summary><p>资料加载：公共路网 ${dataPerformance.publicLoadMs===null?"加载中":(dataPerformance.publicLoadMs/1000).toFixed(2)+" 秒"}${dataPerformance.taxiLoadMs===null?"":" · 出租车 "+(dataPerformance.taxiLoadMs/1000).toFixed(2)+" 秒（按需加载）"}</p>${routePerformance.stages.map(stage=>`<p>${M(({"public-fast":"公共交通快查",metro:"站内精细路线",walk:"步行",taxi:"出租车接续","transit-detailed":"室内外联程"})[stage.id]??stage.id)}：${(stage.durationMs/1000).toFixed(2)} 秒${stage.cached?" · 缓存":""}</p>`).join("")}</details>`:""}<details class="na-evidence"><summary>估算与核验提示（${$.warnings.length}）</summary>${$.warnings.map(L=>`<p>${M(L)}</p>`).join("")}</details></section>`}function L2(){const e=h2(V,k1);A("search-results").innerHTML=e.length?e.map((L,t)=>`<button data-place="${M(L.id)}" id="na-place-${t}" role="option" aria-selected="${t===s1}"><span>⌖</span><span><b>${M(L.name)}</b><small>${M(L.detail)}</small></span><span>↗</span></button>`).join(""):'<p class="na-note">没有匹配地点。试试车站名，或在地图上选点。</p>'}function publicPointRegion(point){
+ // Coverage is the union of loaded source graphs, while every actual router
+ // still validates its own exact endpoint identities and source connections.
+ for(const graph of [Q,L1,z])if(graph){const region=t2(graph,point);if(region)return region;}
+}
+function publicCoverageMessage(point){
+ const nearest=V.filter(place=>place.coordinates&&publicPointRegion(place)).map(place=>({place,meters:C1([point.coordinates,place.coordinates])})).sort((a,b)=>a.meters-b.meters)[0];
  return "该地点超出公共步行接入范围（地图绿色虚线）"+(nearest?"；最近可搜索「"+nearest.place.name+"」，约 "+Math.round(nearest.meters)+" 米":"")+(t1.has("taxi")?"。仍可比较出租车道路方案。":"。可移动地图选点，或开启出租车。");
 }
-function D1(e){N(),r={...r,[r.target]:e},k1="",H("home"),B([e.coordinates]),Z(Q&&!t2(Q,e)?publicCoverageMessage(e):"已选择"+e.name+"，可以继续选择地点或查看路线。"),P.querySelector(`[data-action="${r.target==="origin"?"destination":"origin"}"]`)?.focus({preventScroll:!0})}/** Progressive routing: no clock/expansion cap; cancel only on user action or stale input. */
+function D1(e){N(),r={...r,[r.target]:e},k1="",H("home"),B([e.coordinates]),Z(Q&&!publicPointRegion(e)?publicCoverageMessage(e):"已选择"+e.name+"，可以继续选择地点或查看路线。"),P.querySelector(`[data-action="${r.target==="origin"?"destination":"origin"}"]`)?.focus({preventScroll:!0})}/** Progressive routing: no clock/expansion cap; cancel only on user action or stale input. */
 async function S1() {
   if(!r.origin||!r.destination){Z("请先选择起点与终点。");return;}
   if(!publicDataReady){
@@ -230,13 +235,15 @@ async function S1() {
     if(!publicDataReady){Z("公共交通资料加载失败："+publicDataError+"。请点击重新加载资料。");return;}
   }
   if(r.origin.id===r.destination.id){N();x();Z("起点与终点相同，无需规划行程。");return;}
-  const outsidePoint=[r.origin,r.destination].find(point=>!t2(Q,point));
+  const outsidePoint=[r.origin,r.destination].find(point=>!publicPointRegion(point));
   if(outsidePoint&&!t1.has("taxi")){u1();Z(publicCoverageMessage(outsidePoint));return;}
   u1();pendingDetailRefresh=true;
   const request={origin:r.origin,destination:r.destination,mode:"transit",need:r.need,departureDate:w1,
     departureS:Number(c1.slice(0,2))*3600+Number(c1.slice(3))*60,allowedTransitModes:[...PUBLIC_MODES]};
   const generation=h1,controller=G1=new AbortController(),started=performance.now();
   const routingQueue=createRoutingQueue(controller.signal);
+  // Identical official base inputs share one owner for the whole initial phase.
+  const baseRouter=fastPublicRouter??E2(Q,I1,publicWalkLinks,L1);
   const stale=()=>generation!==h1||y1||controller.signal.aborted;
   d1=true;r={...r,mode:"transit",stage:"routes"};writeAppHistory();
   $=undefined;C=[];_=undefined;taxiCoverageMessage="";stationEntranceOptions=[];stationAlternativeLoading=false;
@@ -269,7 +276,7 @@ async function S1() {
     }catch(error){
       if(stale())return;
       routePerformance.stages.push({id,durationMs:Math.round(performance.now()-stageStart),status:"error",message:error.message,cached});
-      C.push(u2(id,{message:"这个组合暂未完成，可选择其他方案或重新计算。",warnings:[error.message],lines:[]}));refresh();
+      C.push(u2(id,{failureStatus:"SEARCH_ERROR",message:"这个组合计算异常，结果未完成；已显示方案仍可使用，也可重新计算。",warnings:[error.message],lines:[]}));refresh();
     }
   };
   // HK_GUARDED_FIRST_REFINEMENT_V1: this is part of the public work slot,
@@ -281,6 +288,10 @@ async function S1() {
     try{
       let result=routeResultCache.get(key);
       if(!result){
+        if(demoEndpointEvidenceMissing(request)){
+          routePerformance.stages.push({id:"demo-fallback",durationMs:Math.round(performance.now()-stageStart),status:"precheck-skipped",reason:"named-floor-source-evidence-required"});
+          return;
+        }
         const needsFacilities=request.need==="accessible";
         const closed=new Set([...(Q.closures??[]),...(z?.closures??[])].flatMap(c=>c.physical_ids??[]));
         const snapBarriers=[...Q.edges,...(z?.edges??[])].filter(edge=>edge.disabled||closed.has(edge.physical_id)).map(edge=>edge.coordinates);
@@ -290,13 +301,9 @@ async function S1() {
         // Isolated router and graph cache: never reuse unfiltered official routing state.
         const demoLinks=needsFacilities?createDemoWalkLinks(publicWalkLinks,[demoArea,demoStation,demoBlock].filter(Boolean)):publicWalkLinks;
         demoRouter=E2(demoArea,I1,demoLinks,demoStation);
-        const demoEndpoint=point=>{
-          if(!point.node_id||demoArea.nodes.some(node=>node.id===point.node_id))return point;
-          const portal=L1.portals?.find(entry=>entry.id===point.id&&entry.node_id===point.node_id);
-          if(!portal||!(/^(G|GF|G\/F|GROUND)$/i.test(portal.level??"")||/Ground Level/i.test(portal.level_name??"")))return point;
-          return {...point,node_id:undefined,node_ids:undefined,coordinates:point.coordinates.slice(0,2),demoSourceCoordinates:point.coordinates,demoSourceNodeId:point.node_id};
-        };
-        const demoRequest={...request,origin:demoEndpoint(request.origin),destination:demoEndpoint(request.destination),need:needsFacilities?"ordinary":request.need,mode:"transit"};
+        // Keep the exact source node/floor/XYZ and every hard preference. A
+        // nominal Ground label is not permission to relocate a source portal.
+        const demoRequest={...request,mode:"transit"};
         const accept=raw=>compatibleWithOverlay(raw,demoArea,demoBlock)?annotateDemoFallback(annotatePreferenceResult(raw,request),request):null;
         // Public all-mode base graph first. A remote indoor overlay must not make
         // every projected street endpoint recompute all station access walks.
@@ -319,21 +326,22 @@ async function S1() {
         const choice=u2("transit-demo-review",result);choice.title=result.luggageCarryRequired?"备选 · 需搬运行李 / 设施待确认":result.needsFacilityConfirmation?"模拟联程 · 设施待确认":"模拟联程 · 含估算接驳";
         C.push(choice);routePerformance.stages.push({id:"demo-fallback",durationMs:Math.round(performance.now()-stageStart),status:"modeled"});refresh();
       }
-    }catch(error){if(!stale())routePerformance.stages.push({id:"demo-fallback",durationMs:Math.round(performance.now()-stageStart),status:"unavailable",message:error.message});}
+    }catch(error){if(!stale())routePerformance.stages.push({id:"demo-fallback",durationMs:Math.round(performance.now()-stageStart),status:"error",message:error.message});}
     finally{demoRouter?.dispose();disposeIdleWalkWorkers();}
     if(stale())return;
   }
   }
-  // Public and taxi work are independent; neither waits behind the other.
+  // Base public and every taxi public middle leg share the same immutable index.
+  // Finish this owner group before metro/demo/detailed work can evict it.
   const publicWork=async()=>{
     if(outsidePoint){routePerformance.stages.push({id:"public-fast",durationMs:0,status:"outside-public-coverage"});return;}
-    await run("public-fast","transit",fastPublicRouter??b2);
-    if(stale())return;
-    // Taxi owns its router; retire the finished base index before indoor refinement.
-    fastPublicRouter?.dispose();
+    await run("public-fast","transit",baseRouter);
+  };
+  const publicRefinementWork=async()=>{
+    if(stale()||outsidePoint)return;
     // Same-region metro-only is not a distinct valid alternative. Cross-harbour
     // rail still receives its detailed comparison alongside the all-mode result.
-    if(!hasPublicAlternative(C)&&t2(Q,request.origin)?.id!==t2(Q,request.destination)?.id)await run("metro","metro",b2);
+    if(!hasPublicAlternative(C)&&publicPointRegion(request.origin)?.id!==publicPointRegion(request.destination)?.id)await run("metro","metro",b2);
     if(stale())return;
     if(!hasPublicAlternative(C))await guardedDemoWork();
     if(stale())return;
@@ -344,12 +352,11 @@ async function S1() {
   const taxiWork=async()=>{
     if(!t1.has("taxi"))return;
     const stageStart=performance.now();
-    try{await n3(request,controller.signal,routingQueue);if(!stale()){routePerformance.stages.push({id:"taxi",durationMs:Math.round(performance.now()-stageStart),status:"ready"});refresh();}}
+    try{await n3(request,controller.signal,routingQueue,baseRouter);if(!stale()){const failures=(routePerformance.taxiCandidates??[]).filter(entry=>entry.status==="error");routePerformance.stages.push({id:"taxi",durationMs:Math.round(performance.now()-stageStart),status:failures.length?"error":"ready",...(failures.length?{message:failures.length+" 个接驳组合计算异常，比较未完成"}:{})});refresh();}}
     catch(error){if(!stale()){routePerformance.stages.push({id:"taxi",durationMs:Math.round(performance.now()-stageStart),status:"error",message:error.message});refresh();}}
   };
-  // Complete actionable public/taxi comparisons before heavyweight walking-only refinement.
-  await runBounded([publicWork,taxiWork],2);
-  if(!stale())await walkWork();
+  // Owner grouping changes scheduling only: every original refinement still runs.
+  await runRoutingPhases({basePublic:publicWork,taxi:taxiWork,refinePublic:publicRefinementWork,walk:walkWork,isCurrent:()=>!stale()});
   if(stale())return;
   if(!C.some(choice=>choice.available)&&stationAlternativeData){
     stationAlternativeLoading=true;refresh();
@@ -360,11 +367,14 @@ async function S1() {
     });
     if(stale())return;stationAlternativeLoading=false;
   }
-  routingQueue.dispose();fastPublicRouter?.dispose();b2?.dispose();disposeIdleWalkWorkers();
-  d1=false;routePerformance.totalMs=Math.round(performance.now()-started);refresh();
-  Z(C.some(choice=>choice.available)?"方案已更新，可以开始这一程。":"暂未找到完整方案，可更换示例或重新计算。");
+  routingQueue.dispose();baseRouter.dispose();fastPublicRouter?.dispose();b2?.dispose();disposeIdleWalkWorkers();
+  d1=false;routePerformance.totalMs=Math.round(performance.now()-started);
+  const failedStages=routePerformance.stages.filter(stage=>stage.status==='error');
+  routePerformance.comparisonStatus=failedStages.length?'incomplete-error':'complete';routePerformance.failedStages=failedStages.map(stage=>stage.id);refresh();
+  Z(failedStages.length?(C.some(choice=>choice.available)?"已有方案可用，但后台细化计算异常、比较未完成，可重新计算。":"本次计算异常，结果未完成，请重新计算。"):(C.some(choice=>choice.available)?"方案已更新，可以开始这一程。":"暂未找到完整方案，可更换示例或重新计算。"));
 }
-function s3(){r.stage!=="search"&&(r.target="origin");const e=++a1;if(!navigator.geolocation){Z("此浏览器不支持定位，请搜索地点或地图选点。");return}Z("正在请求设备位置；室内楼层仍需手动确认。"),navigator.geolocation.getCurrentPosition(L=>{if(e!==a1||y1)return;const{longitude:t,latitude:a,accuracy:n}=L.coords;D1({id:"device",name:"设备当前位置",detail:`定位精度约 ±${Math.round(n)} 米`,lon:t,lat:a,coordinates:[t,a]}),Z(`位置精度约 ±${Math.round(n)} 米，室内楼层未知；请核对起点。`)},()=>{e===a1&&Z("未获得设备位置，请搜索地点或地图选点。")},{timeout:1e4,maximumAge:3e4,enableHighAccuracy:!0})}const Y=(e,L,t)=>e.addEventListener(L,t,{signal:P1.signal});Y(P,"input",e=>{e.target.matches('[data-app="search"]')&&(k1=e.target.value,s1=-1,L2())});Y(P,"change",e=>{const L=e.target;if(L.dataset.scoreWeight){try{O.setPreferences({scoreWeights:updateScoreParameter(O.snapshot().preferences.scoreWeights,G,L.dataset.scoreWeight,L.value)});scorePanelOpen=true;rerankCurrentChoices();Z("已按新权重重排，行程时间和费用本身未改变。");}catch(error){Z(error.message);L.value=activeScoreWeights()[L.dataset.scoreWeight];}return;}if(L.matches('[data-app="block-layer"]')){Y1=L.value,n1();return}if(L.dataset.endpointFloor){const t=L.dataset.endpointFloor,a=j1(r[t],z).find(n=>n.id===L.value);a&&(N(),r={...r,[t]:a},x(),Z("已选择"+a.name+"，请重新比较路线。"));return}if(L.dataset.extra){L.checked?t1.add(L.dataset.extra):t1.delete(L.dataset.extra),O.setPreferences({allowedModes:["walk","metro","bus","tram",...t1]}),N(),x(),Z("交通方式已更新，请重新比较。");return}if(L.matches('[data-app="departure-date"]')){w1=L.value||X1(),N(),x();return}if(L.matches('[data-app="departure"]')){c1=L.value||"08:00",N(),x();return}if(L.matches('[data-app="sort"]')){G=L.value;rerankCurrentChoices();Z("排序偏好已更新，已有路线无需重新寻路。");return}t3(L)||e.target.matches('[data-app="need"]')&&(r.need=e.target.value,N(),x(),Z("偏好已更新，请重新查看路线。"))});Y(P,"click",e=>{const L=e.target,t=L.closest("button");if(!t)return;const a=t.dataset.action;if(!a3(t)){if(a==="reset-score-weights"){O.setPreferences({scoreWeights:resetScoreParameters(O.snapshot().preferences.scoreWeights,G)});scorePanelOpen=true;rerankCurrentChoices();Z("已恢复当前排序方案默认权重。");return;}if(t.dataset.stationEntranceChoice){const option=stationEntranceOptions.find(item=>item.id===t.dataset.stationEntranceChoice);if(!option)return;const next=applyStationEntranceChoice(r,option);if(!next)return;N();r=next;B([option.place.coordinates]);Z("已按你的选择更改"+(option.side==="origin"?"起点":"终点")+"为"+option.place.name+"，重新计算；原入口之间接驳仍未核验。");S1();return}if(t.dataset.demoPreset){selectDemoPreset(t.dataset.demoPreset);return}if(t.dataset.tab){H(t.dataset.tab);return}if(a==="pacific-opening"){const advice=pacificOpeningAdvice(r,w1,c1,z);if(advice){N();w1=advice.date;c1=advice.time;if(r.origin&&r.destination)S1();else x();Z("已按你的选择改为"+w1+" "+c1+"（香港时间）；原起终点保持不变。");}return;}if(a==="pacific-model"){r.mallTarget=t.dataset.mallTarget??(isPacificPlace(r.origin)?"origin":"destination");H("mall");return;}if(t.dataset.mallTarget){r.mallTarget=t.dataset.mallTarget;writeAppHistory(true);x();return;}if(t.dataset.station){r.station=validStation(t.dataset.station);writeAppHistory(true);x();return}if(a==="close-secondary"){H(r.returnStage??"home");return}if(a==="station-plan"){const place=V.find(place=>place.id?.startsWith(validStation(r.station)+":portal:"));if(place){r.target="origin";D1(place)}else Z("此站尚无可选择的已载入入口，请在出行页搜索地点。");return}if(t.dataset.choice){const n=C.find(i=>i.id===t.dataset.choice);n?.available&&(u1(),e1=void 0,_=n,$=n.result,taxiOffers=n.result.taxiQuote?[n.result.taxiQuote]:[],x(),B(),Z("已选择"+n.title));return}if(t.dataset.place){const n=V.find(i=>i.id===t.dataset.place);n&&D1(n);return}if(t.dataset.taxiReserve){try{taxiSelectedQuote=taxiSimulation.reserveQuote(t.dataset.taxiReserve);taxiClockS=taxiSimulation.startS;x();B([...taxiSelectedQuote.deadheadRoute.geometry,...taxiSelectedQuote.passengerRoute.geometry]);Z("已模拟预留 "+taxiSelectedQuote.carId+"；车辆先完成已有订单，再接驾。")}catch(error){Z(error.message)}return}
+function s3(){r.stage!=="search"&&(r.target="origin");const e=++a1;if(!navigator.geolocation){Z("此浏览器不支持定位，请搜索地点或地图选点。");return}Z("正在请求设备位置；室内楼层仍需手动确认。"),navigator.geolocation.getCurrentPosition(L=>{if(e!==a1||y1)return;const{longitude:t,latitude:a,accuracy:n}=L.coords;D1({id:"device",name:"设备当前位置",detail:`定位精度约 ±${Math.round(n)} 米`,lon:t,lat:a,coordinates:[t,a]}),Z(`位置精度约 ±${Math.round(n)} 米，室内楼层未知；请核对起点。`)},()=>{e===a1&&Z("未获得设备位置，请搜索地点或地图选点。")},{timeout:1e4,maximumAge:3e4,enableHighAccuracy:!0})}const Y=(e,L,t)=>e.addEventListener(L,t,{signal:P1.signal});Y(P,"input",e=>{e.target.matches('[data-app="search"]')&&(k1=e.target.value,s1=-1,L2())});Y(P,"change",e=>{const L=e.target;if(L.dataset.scoreWeight){try{O.setPreferences({scoreWeights:updateScoreParameter(O.snapshot().preferences.scoreWeights,G,L.dataset.scoreWeight,L.value)});scorePanelOpen=true;rerankCurrentChoices();Z("已按新权重重排，行程时间和费用本身未改变。");}catch(error){Z(error.message);L.value=activeScoreWeights()[L.dataset.scoreWeight];}return;}if(L.matches('[data-app="block-layer"]')){Y1=L.value,n1();return}if(L.dataset.endpointFloor){const t=L.dataset.endpointFloor,a=j1(r[t],z).find(n=>n.id===L.value);a&&(N(),r={...r,[t]:a},x(),Z("已选择"+a.name+"，请重新比较路线。"));return}if(L.dataset.extra){L.checked?t1.add(L.dataset.extra):t1.delete(L.dataset.extra),O.setPreferences({allowedModes:["walk","metro","bus","tram",...t1]}),N(),x(),Z("交通方式已更新，请重新比较。");return}if(L.matches('[data-app="departure-date"]')){w1=L.value||X1(),N(),x();return}if(L.matches('[data-app="departure"]')){c1=L.value||"08:00",N(),x();return}if(L.matches('[data-app="sort"]')){G=L.value;rerankCurrentChoices();Z("排序偏好已更新，已有路线无需重新寻路。");return}t3(L)||e.target.matches('[data-app="need"]')&&(r.need=e.target.value,N(),x(),Z("偏好已更新，请重新查看路线。"))});Y(P,"click",e=>{const L=e.target,t=L.closest("button");if(!t)return;const a=t.dataset.action;if(!a3(t)){if(a==="reset-score-weights"){O.setPreferences({scoreWeights:resetScoreParameters(O.snapshot().preferences.scoreWeights,G)});scorePanelOpen=true;rerankCurrentChoices();Z("已恢复当前排序方案默认权重。");return;}if(t.dataset.stationEntranceChoice){const option=stationEntranceOptions.find(item=>item.id===t.dataset.stationEntranceChoice);if(!option)return;const next=applyStationEntranceChoice(r,option);if(!next)return;N();r=next;B([option.place.coordinates]);Z("已按你的选择更改"+(option.side==="origin"?"起点":"终点")+"为"+option.place.name+"，重新计算；原入口之间接驳仍未核验。");S1();return}if(t.dataset.demoPreset){selectDemoPreset(t.dataset.demoPreset);return}if(t.dataset.tab){H(t.dataset.tab);return}if(a==="pacific-opening"){const advice=pacificOpeningAdvice(r,w1,c1,z);if(advice){N();w1=advice.date;c1=advice.time;if(r.origin&&r.destination)S1();else x();Z("已按你的选择改为"+w1+" "+c1+"（香港时间）；原起终点保持不变。");}return;}if(a==="pacific-model"){r.mallTarget=t.dataset.mallTarget??(isPacificPlace(r.origin)?"origin":"destination");H("mall");return;}if(t.dataset.mallTarget){r.mallTarget=t.dataset.mallTarget;writeAppHistory(true);x();return;}if(t.dataset.station){r.station=validStation(t.dataset.station);writeAppHistory(true);x();return}if(a==="close-secondary"){H(r.returnStage??"home");return}if(a==="station-plan"){const place=V.find(place=>place.id?.startsWith(validStation(r.station)+":portal:"));if(place){r.target="origin";D1(place)}else Z("此站尚无可选择的已载入入口，请在出行页搜索地点。");return}if(t.dataset.choice){const n=C.find(i=>i.id===t.dataset.choice);n?.available&&(u1(),e1=void 0,_=n,$=n.result,taxiOffers=n.result.taxiQuote?[n.result.taxiQuote]:[],x(),B(),Z("已选择"+n.title));return}if(t.dataset.place){const n=V.find(i=>i.id===t.dataset.place);n&&D1(n);return}if(t.dataset.taxiReserve){if(!$?.journey?.complete){Z("首末接续未完成，不能模拟预留或开始导航；原始地点已保留。");return}try{taxiSelectedQuote=taxiSimulation.reserveQuote(t.dataset.taxiReserve);taxiClockS=taxiSimulation.startS;x();B([...taxiSelectedQuote.deadheadRoute.geometry,...taxiSelectedQuote.passengerRoute.geometry]);Z("已模拟预留 "+taxiSelectedQuote.carId+"；车辆先完成已有订单，再接驾。")}catch(error){Z(error.message)}return}
+if(a==="start"&&$?.taxiQuote&&!$?.journey?.complete){Z("首末接续未完成，不能开始完整导航；可改选已可用方案。");return}
 if(a==="start"&&$?.luggageCarryRequired&&!window.confirm("此备选包含楼梯或扶梯，需要搬运行李，设施与通行条件仍待确认。确认你可以接受搬运后，才进入路线演练。是否继续？"))return;
 if(a==="start"&&$?.taxiQuote&&taxiSimulation&&!taxiSelectedQuote){try{taxiSelectedQuote=taxiSimulation.reserveQuote($.taxiQuote.id)}catch(error){Z(error.message);return}}
 if(a==="taxi-play"){taxiPlaying=!taxiPlaying;clearInterval(taxiTimer);if(taxiPlaying)taxiTimer=setInterval(()=>{if(!t1.has("taxi")||y1){clearInterval(taxiTimer);taxiPlaying=false;return}const before=taxiClockS;taxiClockS+=10;if(Math.floor(before/60)!==Math.floor(taxiClockS/60))taxiSimulation?.prepareUntil?.(taxiClockS+300);taxiMap()},500);x();return}

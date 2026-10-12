@@ -1,0 +1,530 @@
+{
+  "runtime": "9e104c614b66",
+  "elapsedMs": 120246.503,
+  "routePerformance": {
+    "warmStart": false,
+    "startedMonotonic": 7307.715182,
+    "startedAt": "2026-10-12T17:19:03.898Z",
+    "origin": "地图所选地点",
+    "destination": "地图所选地点",
+    "stages": [
+      {
+        "id": "public-fast",
+        "durationMs": 7482,
+        "status": "needs-indoor-refinement",
+        "cached": false
+      },
+      {
+        "id": "taxi",
+        "durationMs": 14394,
+        "status": "ready"
+      },
+      {
+        "id": "metro",
+        "durationMs": 5394,
+        "status": "no-complete-route",
+        "cached": false
+      },
+      {
+        "id": "demo-public-fast",
+        "durationMs": 10206,
+        "status": "modeled"
+      },
+      {
+        "id": "demo-fallback",
+        "durationMs": 10223,
+        "status": "modeled"
+      }
+    ],
+    "firstResultMs": 1601,
+    "totalMs": null,
+    "taxiCandidates": [
+      {
+        "side": "first",
+        "id": "ADM:portal:E2",
+        "status": "ready",
+        "minutes": 109
+      },
+      {
+        "side": "first",
+        "id": "td:99215",
+        "status": "ready",
+        "minutes": 103
+      }
+    ]
+  },
+  "memory": {
+    "rss": 1175121920,
+    "heapTotal": 342106112,
+    "heapUsed": 309599280,
+    "external": 31833642,
+    "arrayBuffers": 9867424,
+    "maxRSSKiB": 1328840
+  },
+  "workers": [
+    {
+      "id": 1,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "terminated": true,
+      "pending": [
+        {
+          "origin": {
+            "id": "map:random--1529480317",
+            "coordinates": [
+              114.16965086248385,
+              22.293277490710825
+            ]
+          },
+          "destination": {
+            "id": "map:random-2133651309",
+            "coordinates": [
+              114.15007628641142,
+              22.26413857693343
+            ]
+          },
+          "preference": "fast",
+          "allowedModes": [
+            "metro",
+            "bus",
+            "tram"
+          ],
+          "departureS": 28800,
+          "departureDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "terminated": true,
+      "pending": []
+    },
+    {
+      "id": 3,
+      "kind": "metro-worker-BDEusPKL.js",
+      "terminated": true,
+      "pending": []
+    },
+    {
+      "id": 4,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "terminated": true,
+      "pending": []
+    },
+    {
+      "id": 5,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "pending": [
+        {
+          "origin": {
+            "id": "map:random--1529480317",
+            "coordinates": [
+              114.16965086248385,
+              22.293277490710825
+            ]
+          },
+          "destination": {
+            "id": "map:random-2133651309",
+            "coordinates": [
+              114.15007628641142,
+              22.26413857693343
+            ]
+          },
+          "preference": "fast",
+          "allowedModes": [
+            "metro",
+            "bus",
+            "tram"
+          ],
+          "departureS": 28800,
+          "departureDate": "2026-10-12"
+        }
+      ]
+    }
+  ],
+  "latestWorkerHeaps": [
+    {
+      "worker": 1,
+      "event": "worker-span-end",
+      "name": "transit-build",
+      "t": 8858.788,
+      "heapUsed": 250193696
+    },
+    {
+      "worker": 2,
+      "event": "worker-span-end",
+      "name": "transit-query",
+      "t": 21296.005,
+      "heapUsed": 308399112
+    },
+    {
+      "worker": 4,
+      "event": "worker-span-end",
+      "name": "transit-query",
+      "t": 36549.627,
+      "heapUsed": 322865288
+    },
+    {
+      "worker": 5,
+      "event": "worker-span-end",
+      "name": "walk-query",
+      "t": 120112.668,
+      "heapUsed": 382438360
+    }
+  ],
+  "latestScheduled": {
+    "t": 117843.52,
+    "worker": 5,
+    "kind": "app-transit-worker-CaCMeUxU.js",
+    "event": "scheduled-hotspot-progress",
+    "sid": 13,
+    "request": {
+      "fromId": "journey:origin",
+      "toId": "journey:destination",
+      "departureS": 28800,
+      "horizonS": 21600,
+      "walkPenalty": 2.5,
+      "transferPenaltyS": 180
+    },
+    "elapsedMs": 75523.56188200001,
+    "acceptedLabels": 27055,
+    "activeLabels": 26256,
+    "retainedLabels": 27055,
+    "invalidations": 799,
+    "expanded": 11008,
+    "settled": 10856,
+    "queue": 16047,
+    "peakQueue": 16049,
+    "connectionResolveCalls": 43854,
+    "temporalBoundary": {
+      "departureS": 28800,
+      "boundaryS": 39600,
+      "delayS": 10800,
+      "resolverPresent": true,
+      "openingTimesCount": 596,
+      "sourceSummary": {
+        "departureS": 28800,
+        "departureDate": "2026-10-12",
+        "horizonS": 21600,
+        "maxOpeningS": 39600,
+        "maxSourceCount": 4,
+        "sources": [
+          {
+            "id": "ADM:P:250017626",
+            "regionId": "ADM",
+            "accessTimeId": 290000991,
+            "kind": "lift"
+          },
+          {
+            "id": "ADM:P:250017626:r",
+            "regionId": "ADM",
+            "accessTimeId": 290000991,
+            "kind": "lift"
+          },
+          {
+            "id": "ADM:P:250017626",
+            "regionId": "ADM",
+            "accessTimeId": 290000991,
+            "kind": "lift"
+          },
+          {
+            "id": "ADM:P:250017626:r",
+            "regionId": "ADM",
+            "accessTimeId": 290000991,
+            "kind": "lift"
+          }
+        ],
+        "sourceSampleCap": 16,
+        "edgesScanned": 283306
+      }
+    },
+    "goalLabelCount": 290,
+    "firstGoalGeneratedAtMs": 3708.5178490000035,
+    "bestGeneratedGoalScore": 18186.929190000003,
+    "labelIndex": {
+      "bucketed": true,
+      "nodes": 100,
+      "buckets": 19547,
+      "labelReferences": 20814,
+      "maxLabelsPerNode": 1048,
+      "maxLabelsPerBucket": 11,
+      "nodesByLabelCount": {
+        "under16": 6,
+        "under256": 74,
+        "under4096": 20,
+        "atLeast4096": 0
+      },
+      "topNodes": [
+        {
+          "node": "AUS:portal:D1",
+          "retainedLabels": 1048,
+          "activeLabels": 1028,
+          "clockBuckets": 1028,
+          "preBoundaryExactClockBuckets": 1028,
+          "postBoundaryBucketPresent": false,
+          "minTime": 30446.08092,
+          "maxTime": 35656.24186
+        },
+        {
+          "node": "td:4248",
+          "retainedLabels": 1008,
+          "activeLabels": 1007,
+          "clockBuckets": 1001,
+          "preBoundaryExactClockBuckets": 1000,
+          "postBoundaryBucketPresent": true,
+          "minTime": 30614.37828,
+          "maxTime": 40312
+        },
+        {
+          "node": "td:1331",
+          "retainedLabels": 1005,
+          "activeLabels": 1000,
+          "clockBuckets": 998,
+          "preBoundaryExactClockBuckets": 997,
+          "postBoundaryBucketPresent": true,
+          "minTime": 30677.27724,
+          "maxTime": 43350
+        },
+        {
+          "node": "td:1164",
+          "retainedLabels": 986,
+          "activeLabels": 984,
+          "clockBuckets": 982,
+          "preBoundaryExactClockBuckets": 981,
+          "postBoundaryBucketPresent": true,
+          "minTime": 30588.009000000002,
+          "maxTime": 43413
+        },
+        {
+          "node": "AUS:portal:D2",
+          "retainedLabels": 947,
+          "activeLabels": 947,
+          "clockBuckets": 947,
+          "preBoundaryExactClockBuckets": 947,
+          "postBoundaryBucketPresent": false,
+          "minTime": 30078.15996,
+          "maxTime": 35660.50689999999
+        },
+        {
+          "node": "AUS:portal:D3",
+          "retainedLabels": 900,
+          "activeLabels": 900,
+          "clockBuckets": 900,
+          "preBoundaryExactClockBuckets": 900,
+          "postBoundaryBucketPresent": false,
+          "minTime": 30075.35886,
+          "maxTime": 35652.72706
+        },
+        {
+          "node": "AUS:portal:B2",
+          "retainedLabels": 849,
+          "activeLabels": 849,
+          "clockBuckets": 849,
+          "preBoundaryExactClockBuckets": 849,
+          "postBoundaryBucketPresent": false,
+          "minTime": 30489.60684,
+          "maxTime": 35515.75156
+        },
+        {
+          "node": "AUS:portal:B3",
+          "retainedLabels": 846,
+          "activeLabels": 828,
+          "clockBuckets": 828,
+          "preBoundaryExactClockBuckets": 828,
+          "postBoundaryBucketPresent": false,
+          "minTime": 30492.6957,
+          "maxTime": 35544.884439999994
+        },
+        {
+          "node": "td:4246",
+          "retainedLabels": 801,
+          "activeLabels": 799,
+          "clockBuckets": 797,
+          "preBoundaryExactClockBuckets": 796,
+          "postBoundaryBucketPresent": true,
+          "minTime": 30924.34902,
+          "maxTime": 43800
+        },
+        {
+          "node": "AUS:portal:B1",
+          "retainedLabels": 782,
+          "activeLabels": 769,
+          "clockBuckets": 769,
+          "preBoundaryExactClockBuckets": 769,
+          "postBoundaryBucketPresent": false,
+          "minTime": 30461.88552,
+          "maxTime": 35487.233799999995
+        },
+        {
+          "node": "td:4052",
+          "retainedLabels": 626,
+          "activeLabels": 622,
+          "clockBuckets": 617,
+          "preBoundaryExactClockBuckets": 616,
+          "postBoundaryBucketPresent": true,
+          "minTime": 30925.40538,
+          "maxTime": 40413
+        },
+        {
+          "node": "RAIL:AUS:TML",
+          "retainedLabels": 583,
+          "activeLabels": 583,
+          "clockBuckets": 581,
+          "preBoundaryExactClockBuckets": 580,
+          "postBoundaryBucketPresent": true,
+          "minTime": 30253.93842,
+          "maxTime": 40320
+        },
+        {
+          "node": "td:99134",
+          "retainedLabels": 422,
+          "activeLabels": 418,
+          "clockBuckets": 401,
+          "preBoundaryExactClockBuckets": 400,
+          "postBoundaryBucketPresent": true,
+          "minTime": 32462.42958,
+          "maxTime": 40687
+        },
+        {
+          "node": "RAIL:HUH:TML",
+          "retainedLabels": 324,
+          "activeLabels": 324,
+          "clockBuckets": 282,
+          "preBoundaryExactClockBuckets": 281,
+          "postBoundaryBucketPresent": true,
+          "minTime": 31020,
+          "maxTime": 40020
+        },
+        {
+          "node": "td:13311",
+          "retainedLabels": 301,
+          "activeLabels": 281,
+          "clockBuckets": 274,
+          "preBoundaryExactClockBuckets": 273,
+          "postBoundaryBucketPresent": true,
+          "minTime": 31658.87888,
+          "maxTime": 42208
+        },
+        {
+          "node": "td:99220",
+          "retainedLabels": 300,
+          "activeLabels": 268,
+          "clockBuckets": 245,
+          "preBoundaryExactClockBuckets": 244,
+          "postBoundaryBucketPresent": true,
+          "minTime": 32225.40834,
+          "maxTime": 40606
+        },
+        {
+          "node": "td:99133",
+          "retainedLabels": 293,
+          "activeLabels": 255,
+          "clockBuckets": 229,
+          "preBoundaryExactClockBuckets": 228,
+          "postBoundaryBucketPresent": true,
+          "minTime": 32219.922840000003,
+          "maxTime": 40603
+        },
+        {
+          "node": "RAIL:HUH:EAL",
+          "retainedLabels": 290,
+          "activeLabels": 290,
+          "clockBuckets": 282,
+          "preBoundaryExactClockBuckets": 281,
+          "postBoundaryBucketPresent": true,
+          "minTime": 31120.6305,
+          "maxTime": 40260
+        },
+        {
+          "node": "RAIL:ADM:EAL",
+          "retainedLabels": 266,
+          "activeLabels": 264,
+          "clockBuckets": 257,
+          "preBoundaryExactClockBuckets": 256,
+          "postBoundaryBucketPresent": true,
+          "minTime": 31800,
+          "maxTime": 40080
+        },
+        {
+          "node": "td:9010",
+          "retainedLabels": 265,
+          "activeLabels": 265,
+          "clockBuckets": 264,
+          "preBoundaryExactClockBuckets": 263,
+          "postBoundaryBucketPresent": true,
+          "minTime": 31193.46438,
+          "maxTime": 43197
+        }
+      ],
+      "atExpanded": 8448,
+      "scanMs": 19.40176999999676
+    },
+    "geometry": {
+      "legs": 29000,
+      "walkLegs": 25107,
+      "walkWithoutGeometry": 25107,
+      "arrays": 1947,
+      "coordinateReferences": 163501,
+      "maxCoordinates": 699,
+      "byKind": {
+        "walk": 0,
+        "wait": 0,
+        "bus": 812,
+        "tram": 996,
+        "metro": 139,
+        "other": 0
+      },
+      "signatureSamples": 31,
+      "signatureTooLarge": 0,
+      "signatureWindowRepeats": 2,
+      "signatureWindowUnique": 29,
+      "signatureWindowCapacity": 256,
+      "signatureEvery": 64,
+      "signatureSampleLimit": 1024
+    },
+    "routeMemos": [
+      {
+        "memoId": 1,
+        "kind": "station",
+        "capacity": 64,
+        "connectionCount": 0,
+        "duplicateIds": 0,
+        "duplicateIdExamples": [],
+        "lookups": 7101,
+        "hits": 1,
+        "misses": 7100,
+        "sets": 7100,
+        "nullSets": 0,
+        "evictions": 7036,
+        "size": 64,
+        "maxSize": 64,
+        "pairedSize": 0,
+        "pinnedSize": 0
+      },
+      {
+        "memoId": 2,
+        "kind": "connection-pair",
+        "capacity": 64,
+        "connectionCount": 307,
+        "duplicateIds": 0,
+        "duplicateIdExamples": [],
+        "lookups": 43854,
+        "hits": 0,
+        "misses": 43854,
+        "sets": 43854,
+        "nullSets": 1,
+        "evictions": 43790,
+        "size": 64,
+        "maxSize": 64,
+        "pairedSize": 64,
+        "pinnedSize": 0
+      }
+    ],
+    "heapUsed": 390603760
+  },
+  "errors": [],
+  "eventStream": {
+    "totalEvents": 91545,
+    "bufferedEvents": 0
+  }
+}

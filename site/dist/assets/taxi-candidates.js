@@ -1,5 +1,5 @@
-import {simulatedTaxiFareCents} from './route-quote.js?v=d701fed258cc';
-import {nearestInterchanges,modeledRoadLink,emptyPublicJourney,composeTaxiJourney} from './taxi-bridge.js?v=d701fed258cc';
+import {simulatedTaxiFareCents} from './route-quote.js?v=2e2fcf795897';
+import {nearestInterchanges,modeledRoadLink,emptyPublicJourney,composeTaxiJourney} from './taxi-bridge.js?v=2e2fcf795897';
 const publicModes=new Set(['metro','rail','bus','tram']);
 const coordinate=point=>point.coordinates??point.coordinate;
 const distance=(a,b)=>Math.hypot((coordinate(a)[0]-coordinate(b)[0])*102900,(coordinate(a)[1]-coordinate(b)[1])*111320);
@@ -85,7 +85,7 @@ export async function planTaxiCandidates({request,station,services,graph,findRoa
    result.transferAnchor={id:interchange.id,name:interchange.name,mode:interchange.mode,coordinates:interchange.coordinates};
    emit('taxi-'+side+'-'+interchange.mode+'-'+interchange.id,taxiJourneyTitle(result,side),result,side);
    onDiagnostic({side,id:interchange.id,status:'ready',minutes:result.totalMinutes});
-  }catch(error){if(!isCurrent())return {status:'cancelled',published};onDiagnostic({side,id:interchange.id,status:'unavailable',message:error.message});}
+  }catch(error){if(!isCurrent())return {status:'cancelled',published};onDiagnostic({side,id:interchange.id,status:'error',message:error.message});}
  }
  return {status:published?'ready':'no-road-route',published};
 }

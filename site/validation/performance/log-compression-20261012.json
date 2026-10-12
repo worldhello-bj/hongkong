@@ -1,0 +1,175 @@
+{
+  "scope": "Completed inactive runs only, including cfc,9e,2e after streaming attribution. Original raw bytes SHA-256 verified through gzip decompression before unlink.",
+  "overlayBytesReclaimed": 673952574,
+  "tmpfsBytesReclaimed": 0,
+  "files": [
+    {
+      "source": "validation/performance/od36-current-lowerbound-attribution-841fca7dce88-od36-ordinary/events.ndjson",
+      "archive": "validation/performance/od36-current-lowerbound-attribution-841fca7dce88-od36-ordinary/events.ndjson.gz",
+      "sourceBytes": 4128938,
+      "archiveBytes": 364909,
+      "sha256": "1dc92319fad37744e71e90095872b2343768e247fa8723f5b620849ffb98c5d1",
+      "recovery": "gzip -dc validation/performance/od36-current-lowerbound-attribution-841fca7dce88-od36-ordinary/events.ndjson.gz > validation/performance/od36-current-lowerbound-attribution-841fca7dce88-od36-ordinary/events.ndjson"
+    },
+    {
+      "source": "validation/performance/od36-current-owner-grouped-841fca7dce88-od36-ordinary/events.ndjson",
+      "archive": "validation/performance/od36-current-owner-grouped-841fca7dce88-od36-ordinary/events.ndjson.gz",
+      "sourceBytes": 3439654,
+      "archiveBytes": 325545,
+      "sha256": "92a9823e8eae9af83d6f3234cca7ec17f89e40190423275052319e9f12a9b183",
+      "recovery": "gzip -dc validation/performance/od36-current-owner-grouped-841fca7dce88-od36-ordinary/events.ndjson.gz > validation/performance/od36-current-owner-grouped-841fca7dce88-od36-ordinary/events.ndjson"
+    },
+    {
+      "source": "validation/performance/od36-current-heap-sampling-8e5a3cbed130-od36-ordinary/events.ndjson",
+      "archive": "validation/performance/od36-current-heap-sampling-8e5a3cbed130-od36-ordinary/events.ndjson.gz",
+      "sourceBytes": 6389756,
+      "archiveBytes": 583005,
+      "sha256": "48603a6d08971672309779a3ff1c1da4b57aa19f01c80ad1e7c4e3861c33e27e",
+      "recovery": "gzip -dc validation/performance/od36-current-heap-sampling-8e5a3cbed130-od36-ordinary/events.ndjson.gz > validation/performance/od36-current-heap-sampling-8e5a3cbed130-od36-ordinary/events.ndjson"
+    },
+    {
+      "source": "validation/performance/od36-current-compact64-8e5a3cbed130-od36-ordinary/events.ndjson",
+      "archive": "validation/performance/od36-current-compact64-8e5a3cbed130-od36-ordinary/events.ndjson.gz",
+      "sourceBytes": 6474377,
+      "archiveBytes": 591533,
+      "sha256": "d7d1d56dfd262ce3902ef8286e2ded435a1e898995dd3f5116f85488994c8197",
+      "recovery": "gzip -dc validation/performance/od36-current-compact64-8e5a3cbed130-od36-ordinary/events.ndjson.gz > validation/performance/od36-current-compact64-8e5a3cbed130-od36-ordinary/events.ndjson"
+    },
+    {
+      "source": "validation/performance/od36-current-compact64-8e5a3cbed130-od36-ordinary/instrumented/followthrough-events.ndjson",
+      "archive": "validation/performance/od36-current-compact64-8e5a3cbed130-od36-ordinary/instrumented/followthrough-events.ndjson.gz",
+      "sourceBytes": 11563593,
+      "archiveBytes": 1125319,
+      "sha256": "4c883b9796a88d0a0fb7c73ad4d9583e2d11b2373c596b25280d8176b1c6e19a",
+      "recovery": "gzip -dc validation/performance/od36-current-compact64-8e5a3cbed130-od36-ordinary/instrumented/followthrough-events.ndjson.gz > validation/performance/od36-current-compact64-8e5a3cbed130-od36-ordinary/instrumented/followthrough-events.ndjson"
+    },
+    {
+      "source": "validation/performance/od36-current-compact-cache-10e14b8593db-od36-ordinary/events.ndjson",
+      "archive": "validation/performance/od36-current-compact-cache-10e14b8593db-od36-ordinary/events.ndjson.gz",
+      "sourceBytes": 6236814,
+      "archiveBytes": 566811,
+      "sha256": "3e72fdda51d67a2014cafac1b368549194b487f669cd6322345e2b8941c2dd71",
+      "recovery": "gzip -dc validation/performance/od36-current-compact-cache-10e14b8593db-od36-ordinary/events.ndjson.gz > validation/performance/od36-current-compact-cache-10e14b8593db-od36-ordinary/events.ndjson"
+    },
+    {
+      "source": "validation/performance/od36-current-compact-cache-10e14b8593db-od36-ordinary/instrumented/followthrough-events.ndjson",
+      "archive": "validation/performance/od36-current-compact-cache-10e14b8593db-od36-ordinary/instrumented/followthrough-events.ndjson.gz",
+      "sourceBytes": 9000212,
+      "archiveBytes": 859713,
+      "sha256": "7990c73c0397cd5ca473b8bbec4681f916a89cf48d09a117b42c82dfadf43206",
+      "recovery": "gzip -dc validation/performance/od36-current-compact-cache-10e14b8593db-od36-ordinary/instrumented/followthrough-events.ndjson.gz > validation/performance/od36-current-compact-cache-10e14b8593db-od36-ordinary/instrumented/followthrough-events.ndjson"
+    },
+    {
+      "source": "validation/performance/od36-current-baseline-d701fed258cc-od36-ordinary/events.ndjson",
+      "archive": "validation/performance/od36-current-baseline-d701fed258cc-od36-ordinary/events.ndjson.gz",
+      "sourceBytes": 2859202,
+      "archiveBytes": 258170,
+      "sha256": "0fc0b7d85eec563bf0f54584339beb6bd4cd72193fdb359b3cbdef3169382cb1",
+      "recovery": "gzip -dc validation/performance/od36-current-baseline-d701fed258cc-od36-ordinary/events.ndjson.gz > validation/performance/od36-current-baseline-d701fed258cc-od36-ordinary/events.ndjson"
+    },
+    {
+      "source": "validation/performance/od36-current-route-memory-exclusive-34c1eabb21cf-od36-ordinary/events.ndjson",
+      "archive": "validation/performance/od36-current-route-memory-exclusive-34c1eabb21cf-od36-ordinary/events.ndjson.gz",
+      "sourceBytes": 9112253,
+      "archiveBytes": 847019,
+      "sha256": "a25de4d0ed2594d05daf5320aeb8b97a4d45338ff33e8abc1f3a0c8795ea56bd",
+      "recovery": "gzip -dc validation/performance/od36-current-route-memory-exclusive-34c1eabb21cf-od36-ordinary/events.ndjson.gz > validation/performance/od36-current-route-memory-exclusive-34c1eabb21cf-od36-ordinary/events.ndjson"
+    },
+    {
+      "source": "validation/performance/od36-current-route-memory-exclusive-34c1eabb21cf-od36-ordinary/instrumented/live-events.ndjson",
+      "archive": "validation/performance/od36-current-route-memory-exclusive-34c1eabb21cf-od36-ordinary/instrumented/live-events.ndjson.gz",
+      "sourceBytes": 51958136,
+      "archiveBytes": 5597516,
+      "sha256": "8e41a37e03eede0cb7cdd16f8f2bcc5875b02fe052bef661957fd29189a2d022",
+      "recovery": "gzip -dc validation/performance/od36-current-route-memory-exclusive-34c1eabb21cf-od36-ordinary/instrumented/live-events.ndjson.gz > validation/performance/od36-current-route-memory-exclusive-34c1eabb21cf-od36-ordinary/instrumented/live-events.ndjson"
+    },
+    {
+      "source": "validation/performance/od36-current-route-memory-exclusive-34c1eabb21cf-od36-ordinary/instrumented/followthrough-events.ndjson",
+      "archive": "validation/performance/od36-current-route-memory-exclusive-34c1eabb21cf-od36-ordinary/instrumented/followthrough-events.ndjson.gz",
+      "sourceBytes": 52327165,
+      "archiveBytes": 5638401,
+      "sha256": "6c1309c849aa8811cbcdbb375e6d612c09c95552a5a7956fd625654f0a293b81",
+      "recovery": "gzip -dc validation/performance/od36-current-route-memory-exclusive-34c1eabb21cf-od36-ordinary/instrumented/followthrough-events.ndjson.gz > validation/performance/od36-current-route-memory-exclusive-34c1eabb21cf-od36-ordinary/instrumented/followthrough-events.ndjson"
+    },
+    {
+      "source": "validation/performance/od36-current-destination-core-cfc54d2d0718-od36-ordinary/events.ndjson",
+      "archive": "validation/performance/od36-current-destination-core-cfc54d2d0718-od36-ordinary/events.ndjson.gz",
+      "sourceBytes": 16462667,
+      "archiveBytes": 1239805,
+      "sha256": "c8f192affa228ae35969d25ba6f72d9bbe6869f04498e3f6e7c7c12ae1bdfedb",
+      "recovery": "gzip -dc validation/performance/od36-current-destination-core-cfc54d2d0718-od36-ordinary/events.ndjson.gz > validation/performance/od36-current-destination-core-cfc54d2d0718-od36-ordinary/events.ndjson"
+    },
+    {
+      "source": "validation/performance/od36-current-destination-core-cfc54d2d0718-od36-ordinary/instrumented/followthrough-events.ndjson",
+      "archive": "validation/performance/od36-current-destination-core-cfc54d2d0718-od36-ordinary/instrumented/followthrough-events.ndjson.gz",
+      "sourceBytes": 60352110,
+      "archiveBytes": 4956631,
+      "sha256": "8c1902bb5fa2e7a1ef324c3d8a3517850f1d1273715ae4ef4413b9807af807a2",
+      "recovery": "gzip -dc validation/performance/od36-current-destination-core-cfc54d2d0718-od36-ordinary/instrumented/followthrough-events.ndjson.gz > validation/performance/od36-current-destination-core-cfc54d2d0718-od36-ordinary/instrumented/followthrough-events.ndjson"
+    },
+    {
+      "source": "validation/performance/od36-current-destination-core-cfc54d2d0718-od36-ordinary/instrumented/live-events.ndjson",
+      "archive": "validation/performance/od36-current-destination-core-cfc54d2d0718-od36-ordinary/instrumented/live-events.ndjson.gz",
+      "sourceBytes": 355783637,
+      "archiveBytes": 29504154,
+      "sha256": "5c257cdb1e7ef49d311f7711f2d4b97f9d6acdbffec2ccf1b9516dcd5c9528fe",
+      "recovery": "gzip -dc validation/performance/od36-current-destination-core-cfc54d2d0718-od36-ordinary/instrumented/live-events.ndjson.gz > validation/performance/od36-current-destination-core-cfc54d2d0718-od36-ordinary/instrumented/live-events.ndjson"
+    },
+    {
+      "source": "validation/performance/od36-current-destination-core-cfc54d2d0718-od36-ordinary/worker-lifecycle.ndjson",
+      "archive": "validation/performance/od36-current-destination-core-cfc54d2d0718-od36-ordinary/worker-lifecycle.ndjson.gz",
+      "sourceBytes": 10084,
+      "archiveBytes": 1629,
+      "sha256": "48d0f742cfff091fee6a85655e6c7c36902bd663343ab659043ae17fe33cac2e",
+      "recovery": "gzip -dc validation/performance/od36-current-destination-core-cfc54d2d0718-od36-ordinary/worker-lifecycle.ndjson.gz > validation/performance/od36-current-destination-core-cfc54d2d0718-od36-ordinary/worker-lifecycle.ndjson"
+    },
+    {
+      "source": "validation/performance/od36-current-final120-9e104c614b66-od36-ordinary/events.ndjson",
+      "archive": "validation/performance/od36-current-final120-9e104c614b66-od36-ordinary/events.ndjson.gz",
+      "sourceBytes": 19807248,
+      "archiveBytes": 1432991,
+      "sha256": "7ea10e39f8ffaa5f0a753fe41a92c7c1ac38a626ebde80532df6710939430da0",
+      "recovery": "gzip -dc validation/performance/od36-current-final120-9e104c614b66-od36-ordinary/events.ndjson.gz > validation/performance/od36-current-final120-9e104c614b66-od36-ordinary/events.ndjson"
+    },
+    {
+      "source": "validation/performance/od36-current-final120-9e104c614b66-od36-ordinary/instrumented/followthrough-events.ndjson",
+      "archive": "validation/performance/od36-current-final120-9e104c614b66-od36-ordinary/instrumented/followthrough-events.ndjson.gz",
+      "sourceBytes": 51660907,
+      "archiveBytes": 3844556,
+      "sha256": "441a20e7a9f852e9ef6b6585cc400a2cf14628a5e9cd8db26759aeb02b9a6f43",
+      "recovery": "gzip -dc validation/performance/od36-current-final120-9e104c614b66-od36-ordinary/instrumented/followthrough-events.ndjson.gz > validation/performance/od36-current-final120-9e104c614b66-od36-ordinary/instrumented/followthrough-events.ndjson"
+    },
+    {
+      "source": "validation/performance/od36-current-final120-9e104c614b66-od36-ordinary/worker-lifecycle.ndjson",
+      "archive": "validation/performance/od36-current-final120-9e104c614b66-od36-ordinary/worker-lifecycle.ndjson.gz",
+      "sourceBytes": 10081,
+      "archiveBytes": 1642,
+      "sha256": "e7ea5ee64654fc8da0fe34e5e8f70a08a10733482bac5d54a11adb60ab2fee88",
+      "recovery": "gzip -dc validation/performance/od36-current-final120-9e104c614b66-od36-ordinary/worker-lifecycle.ndjson.gz > validation/performance/od36-current-final120-9e104c614b66-od36-ordinary/worker-lifecycle.ndjson"
+    },
+    {
+      "source": "validation/performance/od36-current-clock120-2e2fcf795897-od36-ordinary/events.ndjson",
+      "archive": "validation/performance/od36-current-clock120-2e2fcf795897-od36-ordinary/events.ndjson.gz",
+      "sourceBytes": 16141819,
+      "archiveBytes": 1151187,
+      "sha256": "d0e257645fbaa4efee8ae2be80f90be464912389f5e512d8baf0858a6bc6ead9",
+      "recovery": "gzip -dc validation/performance/od36-current-clock120-2e2fcf795897-od36-ordinary/events.ndjson.gz > validation/performance/od36-current-clock120-2e2fcf795897-od36-ordinary/events.ndjson"
+    },
+    {
+      "source": "validation/performance/od36-current-clock120-2e2fcf795897-od36-ordinary/instrumented/followthrough-events.ndjson",
+      "archive": "validation/performance/od36-current-clock120-2e2fcf795897-od36-ordinary/instrumented/followthrough-events.ndjson.gz",
+      "sourceBytes": 53057543,
+      "archiveBytes": 3941512,
+      "sha256": "cce4e81ff5cfbe2037d14eeb32a402b73c0c514d8ed4eff9953cd105dc773db3",
+      "recovery": "gzip -dc validation/performance/od36-current-clock120-2e2fcf795897-od36-ordinary/instrumented/followthrough-events.ndjson.gz > validation/performance/od36-current-clock120-2e2fcf795897-od36-ordinary/instrumented/followthrough-events.ndjson"
+    },
+    {
+      "source": "validation/performance/od36-current-clock120-2e2fcf795897-od36-ordinary/worker-lifecycle.ndjson",
+      "archive": "validation/performance/od36-current-clock120-2e2fcf795897-od36-ordinary/worker-lifecycle.ndjson.gz",
+      "sourceBytes": 10063,
+      "archiveBytes": 1637,
+      "sha256": "8f9769a01afe521b0655a3b72956f065354f7879681eb324b003ce17245a63fe",
+      "recovery": "gzip -dc validation/performance/od36-current-clock120-2e2fcf795897-od36-ordinary/worker-lifecycle.ndjson.gz > validation/performance/od36-current-clock120-2e2fcf795897-od36-ordinary/worker-lifecycle.ndjson"
+    }
+  ]
+}

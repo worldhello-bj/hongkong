@@ -1,0 +1,2773 @@
+{
+  "runtime": "10e14b8593db",
+  "label": "od36-current-compact-cache",
+  "variant": "baseline",
+  "cpuSampling": false,
+  "id": 36,
+  "need": "ordinary",
+  "departure": {
+    "departureS": 28800,
+    "departureDate": "2026-10-12"
+  },
+  "windowMs": 60000,
+  "state": "observation-window-ended",
+  "wallMs": 60300.542167,
+  "routePerformance": {
+    "warmStart": false,
+    "startedMonotonic": 12921.202308,
+    "startedAt": "2026-10-12T14:49:55.418Z",
+    "origin": "地图所选地点",
+    "destination": "地图所选地点",
+    "stages": [
+      {
+        "id": "public-fast",
+        "durationMs": 10213,
+        "status": "needs-indoor-refinement",
+        "cached": false
+      },
+      {
+        "id": "taxi",
+        "durationMs": 14905,
+        "status": "ready"
+      },
+      {
+        "id": "metro",
+        "durationMs": 6299,
+        "status": "no-complete-route",
+        "cached": false
+      },
+      {
+        "id": "demo-public-fast",
+        "durationMs": 9109,
+        "status": "modeled"
+      },
+      {
+        "id": "demo-fallback",
+        "durationMs": 9130,
+        "status": "modeled"
+      }
+    ],
+    "firstResultMs": 2818,
+    "totalMs": null,
+    "taxiCandidates": [
+      {
+        "side": "first",
+        "id": "ADM:portal:E2",
+        "status": "ready",
+        "minutes": 109
+      },
+      {
+        "side": "first",
+        "id": "td:99215",
+        "status": "ready",
+        "minutes": 103
+      }
+    ]
+  },
+  "memory": {
+    "maxRSSKiB": 1327828,
+    "maxRSSGiB": 1.2663154602050781,
+    "finalRssBytes": 1153540096
+  },
+  "workers": [
+    {
+      "worker": 1,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "createdAt": 5509.932,
+      "cloneSendMs": 1573.2014169999993,
+      "initializations": 1,
+      "results": 0,
+      "exitAt": 15756.107
+    },
+    {
+      "worker": 2,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "createdAt": 14265.291,
+      "cloneSendMs": 1319.4483290000026,
+      "initializations": 1,
+      "results": 8,
+      "exitAt": 28752.846
+    },
+    {
+      "worker": 3,
+      "kind": "metro-worker-BDEusPKL.js",
+      "createdAt": 27763.225,
+      "cloneSendMs": 962.5795959999996,
+      "initializations": 1,
+      "results": 1,
+      "exitAt": 36920.904
+    },
+    {
+      "worker": 4,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "createdAt": 36087.849,
+      "cloneSendMs": 829.6636010000002,
+      "initializations": 1,
+      "results": 1,
+      "exitAt": 44062.696
+    },
+    {
+      "worker": 5,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "createdAt": 43241.516,
+      "cloneSendMs": 819.7395519999991,
+      "initializations": 1,
+      "results": 0
+    }
+  ],
+  "cloneSendMs": 5504.632495000001,
+  "workerSpanTotals": {
+    "app-transit-worker-CaCMeUxU.js:graph-prepare": {
+      "completed": 26,
+      "totalMs": 9820.469426000005,
+      "maxMs": 1407.396313000001
+    },
+    "app-transit-worker-CaCMeUxU.js:graph-validate": {
+      "completed": 26,
+      "totalMs": 7101.302487000017,
+      "maxMs": 935.5764159999999
+    },
+    "app-transit-worker-CaCMeUxU.js:transit-build": {
+      "completed": 4,
+      "totalMs": 2544.204738000002,
+      "maxMs": 1453.5802390000026
+    },
+    "app-transit-worker-CaCMeUxU.js:station-build": {
+      "completed": 4,
+      "totalMs": 15.355873000000429,
+      "maxMs": 11.585000999999465
+    },
+    "app-transit-worker-CaCMeUxU.js:walk-index": {
+      "completed": 16,
+      "totalMs": 1136.3583209999852,
+      "maxMs": 248.69408499999918
+    },
+    "app-transit-worker-CaCMeUxU.js:transit-query": {
+      "completed": 9,
+      "totalMs": 11730.086202999999,
+      "maxMs": 4368.188786000002
+    },
+    "app-transit-worker-CaCMeUxU.js:scheduled-search": {
+      "completed": 9,
+      "totalMs": 11416.962945000003,
+      "maxMs": 4321.855634
+    },
+    "app-transit-worker-CaCMeUxU.js:walk-query": {
+      "completed": 2418,
+      "totalMs": 23530.462884000044,
+      "maxMs": 717.2806280000004
+    },
+    "app-transit-worker-CaCMeUxU.js:station-merge": {
+      "completed": 1,
+      "totalMs": 1064.6758560000017,
+      "maxMs": 1064.6758560000017
+    }
+  },
+  "scheduledAttribution": [
+    {
+      "worker": 2,
+      "sid": 8,
+      "totalMs": 4321.855634,
+      "directNestedMs": {
+        "graph-prepare": 953.2152160000005,
+        "walk-query": 3090.5033219999823
+      },
+      "exclusiveResidualMs": 278.13709600001675
+    },
+    {
+      "worker": 2,
+      "sid": 428,
+      "totalMs": 15.495202999998583,
+      "directNestedMs": {
+        "walk-query": 2.1099119999998948
+      },
+      "exclusiveResidualMs": 13.385290999998688
+    },
+    {
+      "worker": 2,
+      "sid": 432,
+      "totalMs": 987.0329390000006,
+      "directNestedMs": {
+        "walk-query": 894.0198710000368
+      },
+      "exclusiveResidualMs": 93.01306799996382
+    },
+    {
+      "worker": 2,
+      "sid": 715,
+      "totalMs": 0.8975639999989653,
+      "directNestedMs": {
+        "walk-query": 0.08468100000027334
+      },
+      "exclusiveResidualMs": 0.812882999998692
+    },
+    {
+      "worker": 2,
+      "sid": 718,
+      "totalMs": 1217.9964230000005,
+      "directNestedMs": {
+        "walk-query": 1155.8011459999907
+      },
+      "exclusiveResidualMs": 62.19527700000981
+    },
+    {
+      "worker": 2,
+      "sid": 883,
+      "totalMs": 117.29182100000253,
+      "directNestedMs": {
+        "walk-query": 115.5818229999968
+      },
+      "exclusiveResidualMs": 1.7099980000057258
+    },
+    {
+      "worker": 2,
+      "sid": 890,
+      "totalMs": 112.46692900000198,
+      "directNestedMs": {
+        "walk-query": 64.86311100000239
+      },
+      "exclusiveResidualMs": 47.60381799999959
+    },
+    {
+      "worker": 2,
+      "sid": 897,
+      "totalMs": 639.249447000002,
+      "directNestedMs": {
+        "walk-query": 630.4000879999985
+      },
+      "exclusiveResidualMs": 8.84935900000346
+    },
+    {
+      "worker": 4,
+      "sid": 8,
+      "totalMs": 4004.6769849999982,
+      "directNestedMs": {
+        "graph-prepare": 766.4600160000045,
+        "walk-query": 3004.406786000036
+      },
+      "exclusiveResidualMs": 233.81018299995776
+    }
+  ],
+  "lowerBoundPreparation": {
+    "queries": 2402,
+    "groups": [
+      {
+        "worker": 2,
+        "graphNodes": 34965,
+        "graphEdges": 78179,
+        "timed": false,
+        "queries": 8,
+        "lookups": 0,
+        "hits": 0,
+        "misses": 0,
+        "builds": 0,
+        "buildMs": 0,
+        "preparationMs": 0.14830800000345334,
+        "evictions": 0,
+        "maxLowerBoundEntries": 1,
+        "maxCacheSize": 0,
+        "maxCacheCapacity": 0,
+        "maxRetainedArrayBytes": 0,
+        "storage": "compact-float64",
+        "keys": [],
+        "uniqueCacheKeys": 0
+      },
+      {
+        "worker": 2,
+        "graphNodes": 945,
+        "graphEdges": 1948,
+        "timed": false,
+        "queries": 206,
+        "lookups": 0,
+        "hits": 0,
+        "misses": 0,
+        "builds": 0,
+        "buildMs": 0,
+        "preparationMs": 0.8976309999998193,
+        "evictions": 0,
+        "maxLowerBoundEntries": 1,
+        "maxCacheSize": 0,
+        "maxCacheCapacity": 0,
+        "maxRetainedArrayBytes": 0,
+        "storage": "compact-float64",
+        "keys": [],
+        "uniqueCacheKeys": 0
+      },
+      {
+        "worker": 2,
+        "graphNodes": 678,
+        "graphEdges": 1447,
+        "timed": false,
+        "queries": 378,
+        "lookups": 0,
+        "hits": 0,
+        "misses": 0,
+        "builds": 0,
+        "buildMs": 0,
+        "preparationMs": 1.3841180000381428,
+        "evictions": 0,
+        "maxLowerBoundEntries": 1,
+        "maxCacheSize": 0,
+        "maxCacheCapacity": 0,
+        "maxRetainedArrayBytes": 0,
+        "storage": "compact-float64",
+        "keys": [],
+        "uniqueCacheKeys": 0
+      },
+      {
+        "worker": 2,
+        "graphNodes": 1300,
+        "graphEdges": 2745,
+        "timed": false,
+        "queries": 247,
+        "lookups": 0,
+        "hits": 0,
+        "misses": 0,
+        "builds": 0,
+        "buildMs": 0,
+        "preparationMs": 1.1047809999872698,
+        "evictions": 0,
+        "maxLowerBoundEntries": 1,
+        "maxCacheSize": 0,
+        "maxCacheCapacity": 0,
+        "maxRetainedArrayBytes": 0,
+        "storage": "compact-float64",
+        "keys": [],
+        "uniqueCacheKeys": 0
+      },
+      {
+        "worker": 2,
+        "graphNodes": 26088,
+        "graphEdges": 57325,
+        "timed": false,
+        "queries": 14,
+        "lookups": 0,
+        "hits": 0,
+        "misses": 0,
+        "builds": 0,
+        "buildMs": 0,
+        "preparationMs": 0.07048899999062996,
+        "evictions": 0,
+        "maxLowerBoundEntries": 1,
+        "maxCacheSize": 0,
+        "maxCacheCapacity": 0,
+        "maxRetainedArrayBytes": 0,
+        "storage": "compact-float64",
+        "keys": [],
+        "uniqueCacheKeys": 0
+      },
+      {
+        "worker": 4,
+        "graphNodes": 34965,
+        "graphEdges": 78179,
+        "timed": false,
+        "queries": 4,
+        "lookups": 0,
+        "hits": 0,
+        "misses": 0,
+        "builds": 0,
+        "buildMs": 0,
+        "preparationMs": 0.12247600000409875,
+        "evictions": 0,
+        "maxLowerBoundEntries": 1,
+        "maxCacheSize": 0,
+        "maxCacheCapacity": 0,
+        "maxRetainedArrayBytes": 0,
+        "storage": "compact-float64",
+        "keys": [],
+        "uniqueCacheKeys": 0
+      },
+      {
+        "worker": 4,
+        "graphNodes": 945,
+        "graphEdges": 1948,
+        "timed": false,
+        "queries": 104,
+        "lookups": 0,
+        "hits": 0,
+        "misses": 0,
+        "builds": 0,
+        "buildMs": 0,
+        "preparationMs": 0.7377230000056443,
+        "evictions": 0,
+        "maxLowerBoundEntries": 1,
+        "maxCacheSize": 0,
+        "maxCacheCapacity": 0,
+        "maxRetainedArrayBytes": 0,
+        "storage": "compact-float64",
+        "keys": [],
+        "uniqueCacheKeys": 0
+      },
+      {
+        "worker": 4,
+        "graphNodes": 678,
+        "graphEdges": 1447,
+        "timed": false,
+        "queries": 210,
+        "lookups": 0,
+        "hits": 0,
+        "misses": 0,
+        "builds": 0,
+        "buildMs": 0,
+        "preparationMs": 0.9638290000148118,
+        "evictions": 0,
+        "maxLowerBoundEntries": 1,
+        "maxCacheSize": 0,
+        "maxCacheCapacity": 0,
+        "maxRetainedArrayBytes": 0,
+        "storage": "compact-float64",
+        "keys": [],
+        "uniqueCacheKeys": 0
+      },
+      {
+        "worker": 4,
+        "graphNodes": 1300,
+        "graphEdges": 2745,
+        "timed": false,
+        "queries": 80,
+        "lookups": 0,
+        "hits": 0,
+        "misses": 0,
+        "builds": 0,
+        "buildMs": 0,
+        "preparationMs": 0.21738299999560695,
+        "evictions": 0,
+        "maxLowerBoundEntries": 1,
+        "maxCacheSize": 0,
+        "maxCacheCapacity": 0,
+        "maxRetainedArrayBytes": 0,
+        "storage": "compact-float64",
+        "keys": [],
+        "uniqueCacheKeys": 0
+      },
+      {
+        "worker": 4,
+        "graphNodes": 26088,
+        "graphEdges": 57325,
+        "timed": false,
+        "queries": 4,
+        "lookups": 0,
+        "hits": 0,
+        "misses": 0,
+        "builds": 0,
+        "buildMs": 0,
+        "preparationMs": 0.36516000000119675,
+        "evictions": 0,
+        "maxLowerBoundEntries": 1,
+        "maxCacheSize": 0,
+        "maxCacheCapacity": 0,
+        "maxRetainedArrayBytes": 0,
+        "storage": "compact-float64",
+        "keys": [],
+        "uniqueCacheKeys": 0
+      },
+      {
+        "worker": 5,
+        "graphNodes": 34965,
+        "graphEdges": 78179,
+        "timed": false,
+        "queries": 4,
+        "lookups": 0,
+        "hits": 0,
+        "misses": 0,
+        "builds": 0,
+        "buildMs": 0,
+        "preparationMs": 0.18714499999623513,
+        "evictions": 0,
+        "maxLowerBoundEntries": 1,
+        "maxCacheSize": 0,
+        "maxCacheCapacity": 0,
+        "maxRetainedArrayBytes": 0,
+        "storage": "compact-float64",
+        "keys": [],
+        "uniqueCacheKeys": 0
+      },
+      {
+        "worker": 5,
+        "graphNodes": 947,
+        "graphEdges": 1948,
+        "timed": false,
+        "queries": 392,
+        "lookups": 0,
+        "hits": 0,
+        "misses": 0,
+        "builds": 0,
+        "buildMs": 0,
+        "preparationMs": 1.209231999971962,
+        "evictions": 0,
+        "maxLowerBoundEntries": 1,
+        "maxCacheSize": 0,
+        "maxCacheCapacity": 0,
+        "maxRetainedArrayBytes": 0,
+        "storage": "compact-float64",
+        "keys": [],
+        "uniqueCacheKeys": 0
+      },
+      {
+        "worker": 5,
+        "graphNodes": 34363,
+        "graphEdges": 1447,
+        "timed": false,
+        "queries": 398,
+        "lookups": 0,
+        "hits": 0,
+        "misses": 0,
+        "builds": 0,
+        "buildMs": 0,
+        "preparationMs": 1.4410640000060084,
+        "evictions": 0,
+        "maxLowerBoundEntries": 1,
+        "maxCacheSize": 0,
+        "maxCacheCapacity": 0,
+        "maxRetainedArrayBytes": 0,
+        "storage": "compact-float64",
+        "keys": [],
+        "uniqueCacheKeys": 0
+      },
+      {
+        "worker": 5,
+        "graphNodes": 27512,
+        "graphEdges": 2745,
+        "timed": false,
+        "queries": 72,
+        "lookups": 0,
+        "hits": 0,
+        "misses": 0,
+        "builds": 0,
+        "buildMs": 0,
+        "preparationMs": 0.2004650000089896,
+        "evictions": 0,
+        "maxLowerBoundEntries": 1,
+        "maxCacheSize": 0,
+        "maxCacheCapacity": 0,
+        "maxRetainedArrayBytes": 0,
+        "storage": "compact-float64",
+        "keys": [],
+        "uniqueCacheKeys": 0
+      },
+      {
+        "worker": 5,
+        "graphNodes": 27512,
+        "graphEdges": 60514,
+        "timed": true,
+        "queries": 281,
+        "lookups": 281,
+        "hits": 239,
+        "misses": 42,
+        "builds": 42,
+        "buildMs": 8682.289532000017,
+        "preparationMs": 8689.292148999899,
+        "evictions": 10,
+        "maxLowerBoundEntries": 26732,
+        "maxCacheSize": 32,
+        "maxCacheCapacity": 32,
+        "maxRetainedArrayBytes": 7153120,
+        "storage": "compact-float64",
+        "keys": [
+          {
+            "cacheKey": "[{\"lon\":114.16624518,\"lat\":22.27888752,\"node_id\":\"ADM:N:15dedbcfbae59e\"},{\"lon\":114.16817,\"lat\":22.27785},\"walk\"]",
+            "calls": 4,
+            "hits": 2,
+            "builds": 2,
+            "buildMs": 701.2153800000015,
+            "departures": [
+              32029.69998,
+              32389.69998,
+              32749.69998,
+              33109.69998
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.16478974,\"lat\":22.27904296,\"node_id\":\"ADM:N:423d9c94cd1e0b\"},{\"id\":\"map:random-2133651309\",\"name\":\"地图所选地点\",\"detail\":\"用户选择 · 接入待核验\",\"coordinates\":[114.15007628641142,22.26413857693343],\"lon\":114.15007628641142,\"lat\":22.26413857693343},\"walk\"]",
+            "calls": 7,
+            "hits": 6,
+            "builds": 1,
+            "buildMs": 643.2633659999992,
+            "departures": [
+              32092.42662,
+              32452.42662,
+              32812.42662,
+              32402.87826,
+              32413.8492,
+              32431.772340000003,
+              32431.7724
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.16624518,\"lat\":22.27888752,\"node_id\":\"ADM:N:15dedbcfbae59e\"},{\"lon\":114.16438,\"lat\":22.2784},\"walk\"]",
+            "calls": 4,
+            "hits": 2,
+            "builds": 2,
+            "buildMs": 484.88887700000487,
+            "departures": [
+              32029.69998,
+              32389.69998,
+              32749.69998,
+              33109.69998
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.16851,\"lat\":22.27776},{\"lon\":114.16817,\"lat\":22.27785},\"walk\"]",
+            "calls": 2,
+            "hits": 1,
+            "builds": 1,
+            "buildMs": 418.4707770000023,
+            "departures": [
+              32370.285060000002,
+              32378.61846
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.16287,\"lat\":22.27921},{\"lon\":114.16479351,\"lat\":22.27854757,\"node_id\":\"ADM:N:31b17842679990\"},\"walk\"]",
+            "calls": 1,
+            "hits": 0,
+            "builds": 1,
+            "buildMs": 396.6887360000037,
+            "departures": [
+              32462.42958
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.16624518,\"lat\":22.27888752,\"node_id\":\"ADM:N:15dedbcfbae59e\"},{\"lon\":114.16454,\"lat\":22.27827},\"walk\"]",
+            "calls": 4,
+            "hits": 2,
+            "builds": 2,
+            "buildMs": 368.9740329999913,
+            "departures": [
+              32029.69998,
+              32389.69998,
+              32749.69998,
+              33109.69998
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.17008,\"lat\":22.27725},{\"lon\":114.16851,\"lat\":22.27776},\"walk\"]",
+            "calls": 1,
+            "hits": 0,
+            "builds": 1,
+            "buildMs": 362.9105120000022,
+            "departures": [
+              32442
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.16817,\"lat\":22.27785},{\"lon\":114.16851,\"lat\":22.27776},\"walk\"]",
+            "calls": 2,
+            "hits": 1,
+            "builds": 1,
+            "buildMs": 358.53768599999603,
+            "departures": [
+              32332.557660000002,
+              32340.89106
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.16851,\"lat\":22.27776},{\"lon\":114.17008,\"lat\":22.27725},\"walk\"]",
+            "calls": 2,
+            "hits": 1,
+            "builds": 1,
+            "buildMs": 337.47956700000213,
+            "departures": [
+              32370.285060000002,
+              32378.61846
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.16817,\"lat\":22.27785},{\"lon\":114.17008,\"lat\":22.27725},\"walk\"]",
+            "calls": 2,
+            "hits": 1,
+            "builds": 1,
+            "buildMs": 337.1622320000024,
+            "departures": [
+              32332.557660000002,
+              32340.89106
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.17008,\"lat\":22.27725},{\"lon\":114.16817,\"lat\":22.27785},\"walk\"]",
+            "calls": 1,
+            "hits": 0,
+            "builds": 1,
+            "buildMs": 331.40855600000214,
+            "departures": [
+              32442
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.16438,\"lat\":22.2784},{\"lon\":114.16601089,\"lat\":22.27890956,\"node_id\":\"ADM:N:0ed55516ad2679\"},\"walk\"]",
+            "calls": 12,
+            "hits": 11,
+            "builds": 1,
+            "buildMs": 271.7316709999941,
+            "departures": [
+              32225.40834,
+              32243.331480000004,
+              32281.34826,
+              32299.2714,
+              32325.72906,
+              32330.7042,
+              32343.652260000003,
+              32348.6274,
+              32585.40834,
+              32603.331480000004,
+              32641.34826,
+              32659.2714
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.16601089,\"lat\":22.27890956,\"node_id\":\"ADM:N:0ed55516ad2679\"},{\"lon\":114.16817,\"lat\":22.27785},\"walk\"]",
+            "calls": 3,
+            "hits": 2,
+            "builds": 1,
+            "buildMs": 266.8765459999995,
+            "departures": [
+              32042.78766,
+              32402.78766,
+              32762.78766
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.16454,\"lat\":22.27827},{\"lon\":114.16287,\"lat\":22.27921},\"walk\"]",
+            "calls": 12,
+            "hits": 11,
+            "builds": 1,
+            "buildMs": 239.83795400000236,
+            "departures": [
+              32219.922840000003,
+              32248.816980000003,
+              32275.86276,
+              32304.7569,
+              32320.24362,
+              32325.21876,
+              32349.137700000003,
+              32354.11284,
+              32579.922840000003,
+              32608.816980000003,
+              32635.86276,
+              32664.7569
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.16479351,\"lat\":22.27854757,\"node_id\":\"ADM:N:31b17842679990\"},{\"lon\":114.16438,\"lat\":22.2784},\"walk\"]",
+            "calls": 14,
+            "hits": 13,
+            "builds": 1,
+            "buildMs": 236.13744600000064,
+            "departures": [
+              32113.49994,
+              32473.49994,
+              32381.80494,
+              32392.775879999997,
+              32833.49994,
+              32410.69902,
+              32410.69908,
+              32426.1858,
+              32431.16094,
+              32437.15668,
+              32442.13182,
+              32455.07988,
+              32455.079880000005,
+              32460.05502
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.16454,\"lat\":22.27827},{\"lon\":114.16478974,\"lat\":22.27904296,\"node_id\":\"ADM:N:423d9c94cd1e0b\"},\"walk\"]",
+            "calls": 12,
+            "hits": 11,
+            "builds": 1,
+            "buildMs": 225.03170700000192,
+            "departures": [
+              32219.922840000003,
+              32248.816980000003,
+              32275.86276,
+              32304.7569,
+              32320.24362,
+              32325.21876,
+              32349.137700000003,
+              32354.11284,
+              32579.922840000003,
+              32608.816980000003,
+              32635.86276,
+              32664.7569
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.16601089,\"lat\":22.27890956,\"node_id\":\"ADM:N:0ed55516ad2679\"},{\"lon\":114.16438,\"lat\":22.2784},\"walk\"]",
+            "calls": 3,
+            "hits": 2,
+            "builds": 1,
+            "buildMs": 188.69641499999852,
+            "departures": [
+              32042.78766,
+              32402.78766,
+              32762.78766
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.16438,\"lat\":22.2784},{\"lon\":114.16199,\"lat\":22.27972},\"walk\"]",
+            "calls": 12,
+            "hits": 11,
+            "builds": 1,
+            "buildMs": 155.2031150000039,
+            "departures": [
+              32225.40834,
+              32243.331480000004,
+              32281.34826,
+              32299.2714,
+              32325.72906,
+              32330.7042,
+              32343.652260000003,
+              32348.6274,
+              32585.40834,
+              32603.331480000004,
+              32641.34826,
+              32659.2714
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.17008,\"lat\":22.27725},{\"lon\":114.17015,\"lat\":22.27711},\"walk\"]",
+            "calls": 1,
+            "hits": 0,
+            "builds": 1,
+            "buildMs": 154.79991000000155,
+            "departures": [
+              32442
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.16601089,\"lat\":22.27890956,\"node_id\":\"ADM:N:0ed55516ad2679\"},{\"lon\":114.16454,\"lat\":22.27827},\"walk\"]",
+            "calls": 3,
+            "hits": 2,
+            "builds": 1,
+            "buildMs": 152.11376000000018,
+            "departures": [
+              32042.78766,
+              32402.78766,
+              32762.78766
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.16478974,\"lat\":22.27904296,\"node_id\":\"ADM:N:423d9c94cd1e0b\"},{\"lon\":114.16287,\"lat\":22.27921},\"walk\"]",
+            "calls": 7,
+            "hits": 6,
+            "builds": 1,
+            "buildMs": 147.90469000000303,
+            "departures": [
+              32092.42662,
+              32452.42662,
+              32812.42662,
+              32402.87826,
+              32413.8492,
+              32431.772340000003,
+              32431.7724
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.16438,\"lat\":22.2784},{\"lon\":114.16479351,\"lat\":22.27854757,\"node_id\":\"ADM:N:31b17842679990\"},\"walk\"]",
+            "calls": 12,
+            "hits": 11,
+            "builds": 1,
+            "buildMs": 146.53047099999822,
+            "departures": [
+              32225.40834,
+              32243.331480000004,
+              32281.34826,
+              32299.2714,
+              32325.72906,
+              32330.7042,
+              32343.652260000003,
+              32348.6274,
+              32585.40834,
+              32603.331480000004,
+              32641.34826,
+              32659.2714
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.16454,\"lat\":22.27827},{\"lon\":114.16479351,\"lat\":22.27854757,\"node_id\":\"ADM:N:31b17842679990\"},\"walk\"]",
+            "calls": 12,
+            "hits": 11,
+            "builds": 1,
+            "buildMs": 127.52086299999792,
+            "departures": [
+              32219.922840000003,
+              32248.816980000003,
+              32275.86276,
+              32304.7569,
+              32320.24362,
+              32325.21876,
+              32349.137700000003,
+              32354.11284,
+              32579.922840000003,
+              32608.816980000003,
+              32635.86276,
+              32664.7569
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.16479351,\"lat\":22.27854757,\"node_id\":\"ADM:N:31b17842679990\"},{\"lon\":114.16454,\"lat\":22.27827},\"walk\"]",
+            "calls": 14,
+            "hits": 13,
+            "builds": 1,
+            "buildMs": 121.99024500000087,
+            "departures": [
+              32113.49994,
+              32473.49994,
+              32381.80494,
+              32392.775879999997,
+              32833.49994,
+              32410.69902,
+              32410.69908,
+              32426.1858,
+              32431.16094,
+              32437.15668,
+              32442.13182,
+              32455.07988,
+              32455.079880000005,
+              32460.05502
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.16438,\"lat\":22.2784},{\"lon\":114.16454,\"lat\":22.27827},\"walk\"]",
+            "calls": 12,
+            "hits": 11,
+            "builds": 1,
+            "buildMs": 120.20499700000073,
+            "departures": [
+              32225.40834,
+              32243.331480000004,
+              32281.34826,
+              32299.2714,
+              32325.72906,
+              32330.7042,
+              32343.652260000003,
+              32348.6274,
+              32585.40834,
+              32603.331480000004,
+              32641.34826,
+              32659.2714
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.16478974,\"lat\":22.27904296,\"node_id\":\"ADM:N:423d9c94cd1e0b\"},{\"lon\":114.16438,\"lat\":22.2784},\"walk\"]",
+            "calls": 7,
+            "hits": 6,
+            "builds": 1,
+            "buildMs": 117.69923099999869,
+            "departures": [
+              32092.42662,
+              32452.42662,
+              32812.42662,
+              32402.87826,
+              32413.8492,
+              32431.772340000003,
+              32431.7724
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.16478974,\"lat\":22.27904296,\"node_id\":\"ADM:N:423d9c94cd1e0b\"},{\"lon\":114.16454,\"lat\":22.27827},\"walk\"]",
+            "calls": 7,
+            "hits": 6,
+            "builds": 1,
+            "buildMs": 113.31625599999825,
+            "departures": [
+              32092.42662,
+              32452.42662,
+              32812.42662,
+              32402.87826,
+              32413.8492,
+              32431.772340000003,
+              32431.7724
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.16851,\"lat\":22.27776},{\"lon\":114.17015,\"lat\":22.27711},\"walk\"]",
+            "calls": 2,
+            "hits": 1,
+            "builds": 1,
+            "buildMs": 111.26641699999891,
+            "departures": [
+              32370.285060000002,
+              32378.61846
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.16817,\"lat\":22.27785},{\"lon\":114.16601089,\"lat\":22.27890956,\"node_id\":\"ADM:N:0ed55516ad2679\"},\"walk\"]",
+            "calls": 2,
+            "hits": 1,
+            "builds": 1,
+            "buildMs": 110.17416400000366,
+            "departures": [
+              32332.557660000002,
+              32340.89106
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.16479351,\"lat\":22.27854757,\"node_id\":\"ADM:N:31b17842679990\"},{\"id\":\"map:random-2133651309\",\"name\":\"地图所选地点\",\"detail\":\"用户选择 · 接入待核验\",\"coordinates\":[114.15007628641142,22.26413857693343],\"lon\":114.15007628641142,\"lat\":22.26413857693343},\"walk\"]",
+            "calls": 14,
+            "hits": 13,
+            "builds": 1,
+            "buildMs": 104.06273300000612,
+            "departures": [
+              32113.49994,
+              32473.49994,
+              32381.80494,
+              32392.775879999997,
+              32833.49994,
+              32410.69902,
+              32410.69908,
+              32426.1858,
+              32431.16094,
+              32437.15668,
+              32442.13182,
+              32455.07988,
+              32455.079880000005,
+              32460.05502
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.16817,\"lat\":22.27785},{\"lon\":114.17015,\"lat\":22.27711},\"walk\"]",
+            "calls": 2,
+            "hits": 1,
+            "builds": 1,
+            "buildMs": 101.25979399999778,
+            "departures": [
+              32332.557660000002,
+              32340.89106
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.16438,\"lat\":22.2784},{\"lon\":114.16478974,\"lat\":22.27904296,\"node_id\":\"ADM:N:423d9c94cd1e0b\"},\"walk\"]",
+            "calls": 12,
+            "hits": 11,
+            "builds": 1,
+            "buildMs": 99.74320100000477,
+            "departures": [
+              32225.40834,
+              32243.331480000004,
+              32281.34826,
+              32299.2714,
+              32325.72906,
+              32330.7042,
+              32343.652260000003,
+              32348.6274,
+              32585.40834,
+              32603.331480000004,
+              32641.34826,
+              32659.2714
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.16817,\"lat\":22.27785},{\"lon\":114.16624518,\"lat\":22.27888752,\"node_id\":\"ADM:N:15dedbcfbae59e\"},\"walk\"]",
+            "calls": 2,
+            "hits": 1,
+            "builds": 1,
+            "buildMs": 97.4769740000047,
+            "departures": [
+              32332.557660000002,
+              32340.89106
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.16479351,\"lat\":22.27854757,\"node_id\":\"ADM:N:31b17842679990\"},{\"lon\":114.16287,\"lat\":22.27921},\"walk\"]",
+            "calls": 14,
+            "hits": 13,
+            "builds": 1,
+            "buildMs": 94.52255599999626,
+            "departures": [
+              32113.49994,
+              32473.49994,
+              32381.80494,
+              32392.775879999997,
+              32833.49994,
+              32410.69902,
+              32410.69908,
+              32426.1858,
+              32431.16094,
+              32437.15668,
+              32442.13182,
+              32455.07988,
+              32455.079880000005,
+              32460.05502
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.16454,\"lat\":22.27827},{\"lon\":114.16438,\"lat\":22.2784},\"walk\"]",
+            "calls": 12,
+            "hits": 11,
+            "builds": 1,
+            "buildMs": 92.90113199999905,
+            "departures": [
+              32219.922840000003,
+              32248.816980000003,
+              32275.86276,
+              32304.7569,
+              32320.24362,
+              32325.21876,
+              32349.137700000003,
+              32354.11284,
+              32579.922840000003,
+              32608.816980000003,
+              32635.86276,
+              32664.7569
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.16438,\"lat\":22.2784},{\"lon\":114.16624518,\"lat\":22.27888752,\"node_id\":\"ADM:N:15dedbcfbae59e\"},\"walk\"]",
+            "calls": 12,
+            "hits": 11,
+            "builds": 1,
+            "buildMs": 88.74812100000418,
+            "departures": [
+              32225.40834,
+              32243.331480000004,
+              32281.34826,
+              32299.2714,
+              32325.72906,
+              32330.7042,
+              32343.652260000003,
+              32348.6274,
+              32585.40834,
+              32603.331480000004,
+              32641.34826,
+              32659.2714
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.16454,\"lat\":22.27827},{\"lon\":114.16624518,\"lat\":22.27888752,\"node_id\":\"ADM:N:15dedbcfbae59e\"},\"walk\"]",
+            "calls": 12,
+            "hits": 11,
+            "builds": 1,
+            "buildMs": 87.80496499999572,
+            "departures": [
+              32219.922840000003,
+              32248.816980000003,
+              32275.86276,
+              32304.7569,
+              32320.24362,
+              32325.21876,
+              32349.137700000003,
+              32354.11284,
+              32579.922840000003,
+              32608.816980000003,
+              32635.86276,
+              32664.7569
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.16438,\"lat\":22.2784},{\"lon\":114.16287,\"lat\":22.27921},\"walk\"]",
+            "calls": 12,
+            "hits": 11,
+            "builds": 1,
+            "buildMs": 86.61005199999636,
+            "departures": [
+              32225.40834,
+              32243.331480000004,
+              32281.34826,
+              32299.2714,
+              32325.72906,
+              32330.7042,
+              32343.652260000003,
+              32348.6274,
+              32585.40834,
+              32603.331480000004,
+              32641.34826,
+              32659.2714
+            ]
+          },
+          {
+            "cacheKey": "[{\"lon\":114.16454,\"lat\":22.27827},{\"lon\":114.16601089,\"lat\":22.27890956,\"node_id\":\"ADM:N:0ed55516ad2679\"},\"walk\"]",
+            "calls": 12,
+            "hits": 11,
+            "builds": 1,
+            "buildMs": 81.12442400000145,
+            "departures": [
+              32219.922840000003,
+              32248.816980000003,
+              32275.86276,
+              32304.7569,
+              32320.24362,
+              32325.21876,
+              32349.137700000003,
+              32354.11284,
+              32579.922840000003,
+              32608.816980000003,
+              32635.86276,
+              32664.7569
+            ]
+          }
+        ],
+        "uniqueCacheKeys": 39
+      }
+    ],
+    "eventSource": "events.ndjson:lower-bound-preparation",
+    "caveat": "Build time measures the existing reverse lower-bound preparation block, including its cache insertion/eviction. No cache policy, size, key, route ordering or result was changed."
+  },
+  "pendingWorkerSpans": [
+    {
+      "t": 48192.757,
+      "worker": 5,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "event": "worker-span-start",
+      "sid": 12,
+      "name": "transit-query",
+      "request": {
+        "origin": {
+          "coordinates": [
+            114.16965086248385,
+            22.293277490710825
+          ]
+        },
+        "destination": {
+          "coordinates": [
+            114.15007628641142,
+            22.26413857693343
+          ]
+        },
+        "preference": "fast",
+        "allowedModes": [
+          "metro",
+          "bus",
+          "tram"
+        ],
+        "departureS": 28800,
+        "departureDate": "2026-10-12"
+      }
+    },
+    {
+      "t": 48251.049,
+      "worker": 5,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "event": "worker-span-start",
+      "sid": 13,
+      "name": "scheduled-search",
+      "parentSid": 12
+    },
+    {
+      "t": 64924.516,
+      "worker": 5,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "event": "worker-span-start",
+      "sid": 1177,
+      "name": "walk-query",
+      "request": {
+        "origin": {
+          "coordinates": [
+            114.16287,
+            22.27921
+          ]
+        },
+        "destination": {
+          "node_id": "ADM:N:423d9c94cd1e0b",
+          "coordinates": [
+            114.16478974,
+            22.27904296
+          ]
+        },
+        "preference": "fast",
+        "mode": "walk",
+        "departureS": 32462.42958,
+        "departureDate": "2026-10-12"
+      },
+      "graph": {
+        "version": "814b03c9c2d7e3c5+block:19aebcac62f227eb:pacific-f-anchor-v1",
+        "nodes": 27512,
+        "edges": 60514,
+        "regions": [
+          "ADM"
+        ]
+      },
+      "parentSid": 13
+    }
+  ],
+  "timeSemanticsPreparation": {
+    "calls": 2403,
+    "totalMs": 422.6462749997627,
+    "maxMs": 26.04371600000013,
+    "groups": [
+      {
+        "worker": 2,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "graphNodes": 34965,
+        "graphEdges": 78179,
+        "graphRuleEdges": 0,
+        "graphNontrivialRuleEdges": 0,
+        "timed": false,
+        "fifo": true,
+        "calls": 8,
+        "totalMs": 15.322802999999112,
+        "maxMs": 15.247873000000254
+      },
+      {
+        "worker": 2,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "graphNodes": 945,
+        "graphEdges": 1948,
+        "graphRuleEdges": 0,
+        "graphNontrivialRuleEdges": 0,
+        "timed": false,
+        "fifo": true,
+        "calls": 206,
+        "totalMs": 1.2881419999830541,
+        "maxMs": 0.5467829999979585
+      },
+      {
+        "worker": 2,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "graphNodes": 678,
+        "graphEdges": 1447,
+        "graphRuleEdges": 0,
+        "graphNontrivialRuleEdges": 0,
+        "timed": false,
+        "fifo": true,
+        "calls": 378,
+        "totalMs": 2.461543999990681,
+        "maxMs": 0.32409500000358094
+      },
+      {
+        "worker": 2,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "graphNodes": 1300,
+        "graphEdges": 2745,
+        "graphRuleEdges": 0,
+        "graphNontrivialRuleEdges": 0,
+        "timed": false,
+        "fifo": true,
+        "calls": 247,
+        "totalMs": 2.320843999990757,
+        "maxMs": 1.0574669999987236
+      },
+      {
+        "worker": 2,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "graphNodes": 26088,
+        "graphEdges": 57325,
+        "graphRuleEdges": 0,
+        "graphNontrivialRuleEdges": 0,
+        "timed": false,
+        "fifo": true,
+        "calls": 14,
+        "totalMs": 13.320263999998133,
+        "maxMs": 13.238721999998234
+      },
+      {
+        "worker": 4,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "graphNodes": 34965,
+        "graphEdges": 78179,
+        "graphRuleEdges": 0,
+        "graphNontrivialRuleEdges": 0,
+        "timed": false,
+        "fifo": true,
+        "calls": 4,
+        "totalMs": 14.358429999985674,
+        "maxMs": 14.324383999999554
+      },
+      {
+        "worker": 4,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "graphNodes": 945,
+        "graphEdges": 1948,
+        "graphRuleEdges": 0,
+        "graphNontrivialRuleEdges": 0,
+        "timed": false,
+        "fifo": true,
+        "calls": 104,
+        "totalMs": 1.4822159999603173,
+        "maxMs": 0.5157649999964633
+      },
+      {
+        "worker": 4,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "graphNodes": 678,
+        "graphEdges": 1447,
+        "graphRuleEdges": 0,
+        "graphNontrivialRuleEdges": 0,
+        "timed": false,
+        "fifo": true,
+        "calls": 210,
+        "totalMs": 1.9307929999486078,
+        "maxMs": 0.8914010000007693
+      },
+      {
+        "worker": 4,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "graphNodes": 1300,
+        "graphEdges": 2745,
+        "graphRuleEdges": 0,
+        "graphNontrivialRuleEdges": 0,
+        "timed": false,
+        "fifo": true,
+        "calls": 80,
+        "totalMs": 1.099564999982249,
+        "maxMs": 0.4503679999979795
+      },
+      {
+        "worker": 4,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "graphNodes": 26088,
+        "graphEdges": 57325,
+        "graphRuleEdges": 0,
+        "graphNontrivialRuleEdges": 0,
+        "timed": false,
+        "fifo": true,
+        "calls": 4,
+        "totalMs": 9.54448599999887,
+        "maxMs": 9.524702000002435
+      },
+      {
+        "worker": 5,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "graphNodes": 34965,
+        "graphEdges": 78179,
+        "graphRuleEdges": 0,
+        "graphNontrivialRuleEdges": 0,
+        "timed": false,
+        "fifo": true,
+        "calls": 4,
+        "totalMs": 9.98709599999711,
+        "maxMs": 9.960470999998506
+      },
+      {
+        "worker": 5,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "graphNodes": 947,
+        "graphEdges": 1948,
+        "graphRuleEdges": 0,
+        "graphNontrivialRuleEdges": 0,
+        "timed": false,
+        "fifo": true,
+        "calls": 392,
+        "totalMs": 3.9895200000028126,
+        "maxMs": 2.0861060000024736
+      },
+      {
+        "worker": 5,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "graphNodes": 34363,
+        "graphEdges": 1447,
+        "graphRuleEdges": 0,
+        "graphNontrivialRuleEdges": 0,
+        "timed": false,
+        "fifo": true,
+        "calls": 398,
+        "totalMs": 3.5017599999773665,
+        "maxMs": 1.9158349999997881
+      },
+      {
+        "worker": 5,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "graphNodes": 27512,
+        "graphEdges": 2745,
+        "graphRuleEdges": 0,
+        "graphNontrivialRuleEdges": 0,
+        "timed": false,
+        "fifo": true,
+        "calls": 72,
+        "totalMs": 2.878967999982706,
+        "maxMs": 1.9432030000025406
+      },
+      {
+        "worker": 5,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "graphNodes": 27512,
+        "graphEdges": 60514,
+        "graphRuleEdges": 1114,
+        "graphNontrivialRuleEdges": 688,
+        "timed": true,
+        "fifo": true,
+        "calls": 282,
+        "totalMs": 339.15984399996523,
+        "maxMs": 26.04371600000013
+      }
+    ]
+  },
+  "ancestry": {
+    "queriesWithCounters": 2402,
+    "scanCalls": 104013,
+    "scanHops": 2902549,
+    "fifoScanCalls": 104013,
+    "fifoScanHops": 2902549,
+    "cycles": 42730,
+    "sampleCount": 1781,
+    "sampleHops": 42175,
+    "sampleElapsedMs": 4.536775999797101,
+    "sampleEvery": 64,
+    "timingCaveat": "Only 1/64 scans are timed, counts/hops are exact at the latest progress/end. Sample elapsed time is not total scan wall-time. Instrumentation overhead and JIT/GC/host scheduling remain."
+  },
+  "walkLabels": {
+    "queries": 2402,
+    "acceptedTotal": 1866295,
+    "timedLabelsAllocated": 56962,
+    "activeTotal": 1810684,
+    "retainedTotal": 1813041,
+    "predecessorsTotal": 1810639,
+    "maxRetained": 25000,
+    "maxActive": 25000,
+    "maxQueue": 200,
+    "maxAllocatedPerBaseState": 8,
+    "largest": [
+      {
+        "t": 24790.868,
+        "worker": 2,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "event": "walk-hotspot-end",
+        "sid": 719,
+        "request": {
+          "origin": {
+            "node_id": "ADM:N:15dedbcfbae59e",
+            "coordinates": [
+              114.16624518,
+              22.27888752,
+              6
+            ]
+          },
+          "destination": {
+            "coordinates": [
+              114.16454,
+              22.27827
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureS": 29806.419913006546,
+          "departureDate": "2026-10-12"
+        },
+        "timed": false,
+        "fifo": true,
+        "elapsedMs": 200.51268300000083,
+        "expanded": 26540,
+        "acceptedLabels": 26543,
+        "timedLabelsAllocated": 0,
+        "activeLabels": 25000,
+        "retainedLabels": 25000,
+        "predecessors": 24999,
+        "baseStates": 1,
+        "invalidated": 0,
+        "queue": 3,
+        "peakQueue": 140,
+        "maxComparable": 0,
+        "maxAllocatedPerBaseState": 0,
+        "ancestorScanCalls": 0,
+        "ancestorScanHops": 0,
+        "ancestorCycles": 0,
+        "ancestorSampleCount": 0,
+        "ancestorSampleHops": 0,
+        "ancestorSampleMs": 0,
+        "ancestorSampleEvery": 64,
+        "heapUsed": 272103240,
+        "acceptedCountMethod": "exact initial+accepted-relaxation pushes = popped+remaining queue"
+      },
+      {
+        "t": 24955.314,
+        "worker": 2,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "event": "walk-hotspot-end",
+        "sid": 720,
+        "request": {
+          "origin": {
+            "node_id": "ADM:N:15dedbcfbae59e",
+            "coordinates": [
+              114.16624518,
+              22.27888752,
+              6
+            ]
+          },
+          "destination": {
+            "coordinates": [
+              114.16438,
+              22.2784
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureS": 29806.419913006546,
+          "departureDate": "2026-10-12"
+        },
+        "timed": false,
+        "fifo": true,
+        "elapsedMs": 141.1564729999991,
+        "expanded": 26538,
+        "acceptedLabels": 26539,
+        "timedLabelsAllocated": 0,
+        "activeLabels": 24999,
+        "retainedLabels": 24999,
+        "predecessors": 24998,
+        "baseStates": 1,
+        "invalidated": 0,
+        "queue": 1,
+        "peakQueue": 138,
+        "maxComparable": 0,
+        "maxAllocatedPerBaseState": 0,
+        "ancestorScanCalls": 0,
+        "ancestorScanHops": 0,
+        "ancestorCycles": 0,
+        "ancestorSampleCount": 0,
+        "ancestorSampleHops": 0,
+        "ancestorSampleMs": 0,
+        "ancestorSampleEvery": 64,
+        "heapUsed": 327028144,
+        "acceptedCountMethod": "exact initial+accepted-relaxation pushes = popped+remaining queue"
+      },
+      {
+        "t": 20615.649,
+        "worker": 2,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "event": "walk-hotspot-end",
+        "sid": 80,
+        "request": {
+          "origin": {
+            "node_id": "ADM:N:423d9c94cd1e0b",
+            "coordinates": [
+              114.16478974,
+              22.27904296
+            ]
+          },
+          "destination": {
+            "coordinates": [
+              114.15007628641142,
+              22.26413857693343
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureS": 32092.42626,
+          "departureDate": "2026-10-12"
+        },
+        "timed": false,
+        "fifo": true,
+        "elapsedMs": 264.43370199999845,
+        "expanded": 26424,
+        "acceptedLabels": 26439,
+        "timedLabelsAllocated": 0,
+        "activeLabels": 24916,
+        "retainedLabels": 24916,
+        "predecessors": 24915,
+        "baseStates": 1,
+        "invalidated": 0,
+        "queue": 15,
+        "peakQueue": 148,
+        "maxComparable": 0,
+        "maxAllocatedPerBaseState": 0,
+        "ancestorScanCalls": 0,
+        "ancestorScanHops": 0,
+        "ancestorCycles": 0,
+        "ancestorSampleCount": 0,
+        "ancestorSampleHops": 0,
+        "ancestorSampleMs": 0,
+        "ancestorSampleEvery": 64,
+        "heapUsed": 270063712,
+        "acceptedCountMethod": "exact initial+accepted-relaxation pushes = popped+remaining queue"
+      },
+      {
+        "t": 20797.01,
+        "worker": 2,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "event": "walk-hotspot-end",
+        "sid": 83,
+        "request": {
+          "origin": {
+            "node_id": "ADM:N:31b17842679990",
+            "coordinates": [
+              114.16479351,
+              22.27854757
+            ]
+          },
+          "destination": {
+            "coordinates": [
+              114.15007628641142,
+              22.26413857693343
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureS": 32113.49958,
+          "departureDate": "2026-10-12"
+        },
+        "timed": false,
+        "fifo": true,
+        "elapsedMs": 171.44714000000022,
+        "expanded": 26427,
+        "acceptedLabels": 26442,
+        "timedLabelsAllocated": 0,
+        "activeLabels": 24916,
+        "retainedLabels": 24916,
+        "predecessors": 24915,
+        "baseStates": 1,
+        "invalidated": 0,
+        "queue": 15,
+        "peakQueue": 138,
+        "maxComparable": 0,
+        "maxAllocatedPerBaseState": 0,
+        "ancestorScanCalls": 0,
+        "ancestorScanHops": 0,
+        "ancestorCycles": 0,
+        "ancestorSampleCount": 0,
+        "ancestorSampleHops": 0,
+        "ancestorSampleMs": 0,
+        "ancestorSampleEvery": 64,
+        "heapUsed": 318897104,
+        "acceptedCountMethod": "exact initial+accepted-relaxation pushes = popped+remaining queue"
+      },
+      {
+        "t": 25116.119,
+        "worker": 2,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "event": "walk-hotspot-end",
+        "sid": 725,
+        "request": {
+          "origin": {
+            "node_id": "ADM:N:15dedbcfbae59e",
+            "coordinates": [
+              114.16624518,
+              22.27888752,
+              6
+            ]
+          },
+          "destination": {
+            "coordinates": [
+              114.15007628641142,
+              22.26413857693343
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureS": 29806.419913006546,
+          "departureDate": "2026-10-12"
+        },
+        "timed": false,
+        "fifo": true,
+        "elapsedMs": 146.94102100000237,
+        "expanded": 26443,
+        "acceptedLabels": 26458,
+        "timedLabelsAllocated": 0,
+        "activeLabels": 24916,
+        "retainedLabels": 24916,
+        "predecessors": 24915,
+        "baseStates": 1,
+        "invalidated": 0,
+        "queue": 15,
+        "peakQueue": 136,
+        "maxComparable": 0,
+        "maxAllocatedPerBaseState": 0,
+        "ancestorScanCalls": 0,
+        "ancestorScanHops": 0,
+        "ancestorCycles": 0,
+        "ancestorSampleCount": 0,
+        "ancestorSampleHops": 0,
+        "ancestorSampleMs": 0,
+        "ancestorSampleEvery": 64,
+        "heapUsed": 311825656,
+        "acceptedCountMethod": "exact initial+accepted-relaxation pushes = popped+remaining queue"
+      },
+      {
+        "t": 41022.161,
+        "worker": 4,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "event": "walk-hotspot-end",
+        "sid": 80,
+        "request": {
+          "origin": {
+            "node_id": "ADM:N:423d9c94cd1e0b",
+            "coordinates": [
+              114.16478974,
+              22.27904296
+            ]
+          },
+          "destination": {
+            "coordinates": [
+              114.15007628641142,
+              22.26413857693343
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureS": 32092.42626,
+          "departureDate": "2026-10-12"
+        },
+        "timed": false,
+        "fifo": true,
+        "elapsedMs": 233.93578200000047,
+        "expanded": 26424,
+        "acceptedLabels": 26439,
+        "timedLabelsAllocated": 0,
+        "activeLabels": 24916,
+        "retainedLabels": 24916,
+        "predecessors": 24915,
+        "baseStates": 1,
+        "invalidated": 0,
+        "queue": 15,
+        "peakQueue": 148,
+        "maxComparable": 0,
+        "maxAllocatedPerBaseState": 0,
+        "ancestorScanCalls": 0,
+        "ancestorScanHops": 0,
+        "ancestorCycles": 0,
+        "ancestorSampleCount": 0,
+        "ancestorSampleHops": 0,
+        "ancestorSampleMs": 0,
+        "ancestorSampleEvery": 64,
+        "heapUsed": 272534968,
+        "acceptedCountMethod": "exact initial+accepted-relaxation pushes = popped+remaining queue"
+      },
+      {
+        "t": 41213.776,
+        "worker": 4,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "event": "walk-hotspot-end",
+        "sid": 83,
+        "request": {
+          "origin": {
+            "node_id": "ADM:N:31b17842679990",
+            "coordinates": [
+              114.16479351,
+              22.27854757
+            ]
+          },
+          "destination": {
+            "coordinates": [
+              114.15007628641142,
+              22.26413857693343
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureS": 32113.49958,
+          "departureDate": "2026-10-12"
+        },
+        "timed": false,
+        "fifo": true,
+        "elapsedMs": 184.6216409999979,
+        "expanded": 26427,
+        "acceptedLabels": 26442,
+        "timedLabelsAllocated": 0,
+        "activeLabels": 24916,
+        "retainedLabels": 24916,
+        "predecessors": 24915,
+        "baseStates": 1,
+        "invalidated": 0,
+        "queue": 15,
+        "peakQueue": 138,
+        "maxComparable": 0,
+        "maxAllocatedPerBaseState": 0,
+        "ancestorScanCalls": 0,
+        "ancestorScanHops": 0,
+        "ancestorCycles": 0,
+        "ancestorSampleCount": 0,
+        "ancestorSampleHops": 0,
+        "ancestorSampleMs": 0,
+        "ancestorSampleEvery": 64,
+        "heapUsed": 328678344,
+        "acceptedCountMethod": "exact initial+accepted-relaxation pushes = popped+remaining queue"
+      },
+      {
+        "t": 27066.212,
+        "worker": 2,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "event": "walk-hotspot-end",
+        "sid": 903,
+        "request": {
+          "origin": {
+            "coordinates": [
+              114.16025,
+              22.28053
+            ]
+          },
+          "destination": {
+            "coordinates": [
+              114.15007628641142,
+              22.26413857693343
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureS": 30329,
+          "departureDate": "2026-10-12"
+        },
+        "timed": false,
+        "fifo": true,
+        "elapsedMs": 214.03259600000092,
+        "expanded": 26329,
+        "acceptedLabels": 26363,
+        "timedLabelsAllocated": 0,
+        "activeLabels": 24838,
+        "retainedLabels": 24838,
+        "predecessors": 24837,
+        "baseStates": 1,
+        "invalidated": 0,
+        "queue": 34,
+        "peakQueue": 157,
+        "maxComparable": 0,
+        "maxAllocatedPerBaseState": 0,
+        "ancestorScanCalls": 0,
+        "ancestorScanHops": 0,
+        "ancestorCycles": 0,
+        "ancestorSampleCount": 0,
+        "ancestorSampleHops": 0,
+        "ancestorSampleMs": 0,
+        "ancestorSampleEvery": 64,
+        "heapUsed": 323535104,
+        "acceptedCountMethod": "exact initial+accepted-relaxation pushes = popped+remaining queue"
+      }
+    ]
+  },
+  "scheduledLabels": [
+    {
+      "t": 22598.273,
+      "worker": 2,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "event": "scheduled-hotspot-end",
+      "sid": 8,
+      "request": {
+        "fromId": "journey:origin",
+        "toId": "journey:destination",
+        "departureS": 28800,
+        "horizonS": 21600,
+        "walkPenalty": 2.5,
+        "transferPenaltyS": 180
+      },
+      "elapsedMs": 4320.846662,
+      "acceptedLabels": 1550,
+      "activeLabels": 1365,
+      "retainedLabels": 1550,
+      "invalidations": 185,
+      "expanded": 1415,
+      "settled": 1229,
+      "queue": 135,
+      "peakQueue": 303,
+      "connectionResolveCalls": 3699,
+      "heapUsed": 348575864
+    },
+    {
+      "t": 23090.196,
+      "worker": 2,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "event": "scheduled-hotspot-end",
+      "sid": 428,
+      "request": {
+        "fromId": "journey:origin",
+        "toId": "journey:destination",
+        "departureS": 28800,
+        "horizonS": 21600,
+        "walkPenalty": 2.5,
+        "transferPenaltyS": 180
+      },
+      "elapsedMs": 15.260773000001791,
+      "acceptedLabels": 407,
+      "activeLabels": 322,
+      "retainedLabels": 407,
+      "invalidations": 85,
+      "expanded": 201,
+      "settled": 170,
+      "queue": 206,
+      "peakQueue": 216,
+      "connectionResolveCalls": 487,
+      "heapUsed": 281467384
+    },
+    {
+      "t": 24427.904,
+      "worker": 2,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "event": "scheduled-hotspot-end",
+      "sid": 432,
+      "request": {
+        "fromId": "journey:origin",
+        "toId": "journey:destination",
+        "departureS": 28800,
+        "horizonS": 21600,
+        "walkPenalty": 2.5,
+        "transferPenaltyS": 180
+      },
+      "elapsedMs": 986.9120540000004,
+      "acceptedLabels": 1709,
+      "activeLabels": 1524,
+      "retainedLabels": 1709,
+      "invalidations": 185,
+      "expanded": 1709,
+      "settled": 1524,
+      "queue": 0,
+      "peakQueue": 300,
+      "connectionResolveCalls": 4588,
+      "heapUsed": 331973656
+    },
+    {
+      "t": 24457.325,
+      "worker": 2,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "event": "scheduled-hotspot-end",
+      "sid": 715,
+      "request": {
+        "fromId": "journey:origin",
+        "toId": "journey:destination",
+        "departureS": 28800,
+        "horizonS": 21600,
+        "walkPenalty": 2.5,
+        "transferPenaltyS": 180
+      },
+      "elapsedMs": 0.7593350000024657,
+      "acceptedLabels": 1,
+      "activeLabels": 1,
+      "retainedLabels": 1,
+      "invalidations": 0,
+      "expanded": 1,
+      "settled": 1,
+      "queue": 0,
+      "peakQueue": 1,
+      "connectionResolveCalls": 1,
+      "heapUsed": 346750880
+    },
+    {
+      "t": 25769.936,
+      "worker": 2,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "event": "scheduled-hotspot-end",
+      "sid": 718,
+      "request": {
+        "fromId": "journey:origin",
+        "toId": "journey:destination",
+        "departureS": 29806.419913006546,
+        "horizonS": 21600,
+        "walkPenalty": 2.5,
+        "transferPenaltyS": 180
+      },
+      "elapsedMs": 1217.8528779999979,
+      "acceptedLabels": 1298,
+      "activeLabels": 1081,
+      "retainedLabels": 1298,
+      "invalidations": 217,
+      "expanded": 1189,
+      "settled": 971,
+      "queue": 109,
+      "peakQueue": 245,
+      "connectionResolveCalls": 2970,
+      "heapUsed": 359967536
+    },
+    {
+      "t": 26404.296,
+      "worker": 2,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "event": "scheduled-hotspot-end",
+      "sid": 883,
+      "request": {
+        "fromId": "journey:origin",
+        "toId": "journey:destination",
+        "departureS": 29157.55903994801,
+        "horizonS": 21600,
+        "walkPenalty": 2.5,
+        "transferPenaltyS": 180
+      },
+      "elapsedMs": 117.20781699999861,
+      "acceptedLabels": 1,
+      "activeLabels": 1,
+      "retainedLabels": 1,
+      "invalidations": 0,
+      "expanded": 1,
+      "settled": 1,
+      "queue": 0,
+      "peakQueue": 1,
+      "connectionResolveCalls": 5,
+      "heapUsed": 310165152
+    },
+    {
+      "t": 26549.055,
+      "worker": 2,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "event": "scheduled-hotspot-end",
+      "sid": 890,
+      "request": {
+        "fromId": "journey:origin",
+        "toId": "journey:destination",
+        "departureS": 29201.375149805124,
+        "horizonS": 21600,
+        "walkPenalty": 2.5,
+        "transferPenaltyS": 180
+      },
+      "elapsedMs": 112.32757099999799,
+      "acceptedLabels": 1509,
+      "activeLabels": 1328,
+      "retainedLabels": 1509,
+      "invalidations": 181,
+      "expanded": 1509,
+      "settled": 1328,
+      "queue": 0,
+      "peakQueue": 336,
+      "connectionResolveCalls": 3592,
+      "heapUsed": 288398272
+    },
+    {
+      "t": 27229.864,
+      "worker": 2,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "event": "scheduled-hotspot-end",
+      "sid": 897,
+      "request": {
+        "fromId": "journey:origin",
+        "toId": "journey:destination",
+        "departureS": 29917.122224997802,
+        "horizonS": 21600,
+        "walkPenalty": 2.5,
+        "transferPenaltyS": 180
+      },
+      "elapsedMs": 639.0129940000006,
+      "acceptedLabels": 541,
+      "activeLabels": 381,
+      "retainedLabels": 541,
+      "invalidations": 160,
+      "expanded": 536,
+      "settled": 376,
+      "queue": 5,
+      "peakQueue": 231,
+      "connectionResolveCalls": 1234,
+      "heapUsed": 324817928
+    },
+    {
+      "t": 42756.471,
+      "worker": 4,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "event": "scheduled-hotspot-end",
+      "sid": 8,
+      "request": {
+        "fromId": "journey:origin",
+        "toId": "journey:destination",
+        "departureS": 28800,
+        "horizonS": 21600,
+        "walkPenalty": 2.5,
+        "transferPenaltyS": 180
+      },
+      "elapsedMs": 4003.609860000004,
+      "acceptedLabels": 1550,
+      "activeLabels": 1365,
+      "retainedLabels": 1550,
+      "invalidations": 185,
+      "expanded": 1415,
+      "settled": 1229,
+      "queue": 135,
+      "peakQueue": 303,
+      "connectionResolveCalls": 3699,
+      "heapUsed": 340877504
+    },
+    {
+      "t": 63453.779,
+      "worker": 5,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "event": "scheduled-hotspot-progress",
+      "sid": 13,
+      "request": {
+        "fromId": "journey:origin",
+        "toId": "journey:destination",
+        "departureS": 28800,
+        "horizonS": 21600,
+        "walkPenalty": 2.5,
+        "transferPenaltyS": 180
+      },
+      "elapsedMs": 15201.938579999995,
+      "acceptedLabels": 5723,
+      "activeLabels": 5382,
+      "retainedLabels": 5723,
+      "invalidations": 341,
+      "expanded": 2304,
+      "settled": 2236,
+      "queue": 3419,
+      "peakQueue": 3420,
+      "connectionResolveCalls": 7459,
+      "heapUsed": 334299192
+    }
+  ],
+  "walkSubqueries": {
+    "started": 2420,
+    "sameWorkerExactRepeats": [],
+    "sameWorkerSpatialKeys": 173,
+    "top": [
+      {
+        "worker": 5,
+        "requestWithoutDeparture": {
+          "origin": {
+            "node_id": "ADM:N:423d9c94cd1e0b",
+            "coordinates": [
+              114.16478974,
+              22.27904296
+            ]
+          },
+          "destination": {
+            "coordinates": [
+              114.15007628641142,
+              22.26413857693343
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureDate": "2026-10-12"
+        },
+        "graph": {
+          "version": "814b03c9c2d7e3c5+block:19aebcac62f227eb:pacific-f-anchor-v1",
+          "nodes": 27512,
+          "edges": 60514,
+          "regions": [
+            "ADM"
+          ]
+        },
+        "count": 7,
+        "departures": [
+          32092.42662,
+          32452.42662,
+          32812.42662,
+          32402.87826,
+          32413.8492,
+          32431.772340000003,
+          32431.7724
+        ],
+        "completedMs": 940.9887369999997
+      },
+      {
+        "worker": 5,
+        "requestWithoutDeparture": {
+          "origin": {
+            "node_id": "ADM:N:15dedbcfbae59e",
+            "coordinates": [
+              114.16624518,
+              22.27888752
+            ]
+          },
+          "destination": {
+            "coordinates": [
+              114.16817,
+              22.27785
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureDate": "2026-10-12"
+        },
+        "graph": {
+          "version": "814b03c9c2d7e3c5+block:19aebcac62f227eb:pacific-f-anchor-v1",
+          "nodes": 27512,
+          "edges": 60514,
+          "regions": [
+            "ADM"
+          ]
+        },
+        "count": 4,
+        "departures": [
+          32029.69998,
+          32389.69998,
+          32749.69998,
+          33109.69998
+        ],
+        "completedMs": 737.0825130000012
+      },
+      {
+        "worker": 5,
+        "requestWithoutDeparture": {
+          "origin": {
+            "node_id": "ADM:N:15dedbcfbae59e",
+            "coordinates": [
+              114.16624518,
+              22.27888752
+            ]
+          },
+          "destination": {
+            "coordinates": [
+              114.16454,
+              22.27827
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureDate": "2026-10-12"
+        },
+        "graph": {
+          "version": "814b03c9c2d7e3c5+block:19aebcac62f227eb:pacific-f-anchor-v1",
+          "nodes": 27512,
+          "edges": 60514,
+          "regions": [
+            "ADM"
+          ]
+        },
+        "count": 4,
+        "departures": [
+          32029.69998,
+          32389.69998,
+          32749.69998,
+          33109.69998
+        ],
+        "completedMs": 682.922900000005
+      },
+      {
+        "worker": 5,
+        "requestWithoutDeparture": {
+          "origin": {
+            "node_id": "ADM:N:15dedbcfbae59e",
+            "coordinates": [
+              114.16624518,
+              22.27888752
+            ]
+          },
+          "destination": {
+            "coordinates": [
+              114.16438,
+              22.2784
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureDate": "2026-10-12"
+        },
+        "graph": {
+          "version": "814b03c9c2d7e3c5+block:19aebcac62f227eb:pacific-f-anchor-v1",
+          "nodes": 27512,
+          "edges": 60514,
+          "regions": [
+            "ADM"
+          ]
+        },
+        "count": 4,
+        "departures": [
+          32029.69998,
+          32389.69998,
+          32749.69998,
+          33109.69998
+        ],
+        "completedMs": 545.9502139999968
+      },
+      {
+        "worker": 2,
+        "requestWithoutDeparture": {
+          "origin": {
+            "node_id": "ADM:N:423d9c94cd1e0b",
+            "coordinates": [
+              114.16478974,
+              22.27904296
+            ]
+          },
+          "destination": {
+            "coordinates": [
+              114.15007628641142,
+              22.26413857693343
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureDate": "2026-10-12"
+        },
+        "graph": {
+          "version": "814b03c9c2d7e3c5",
+          "nodes": 26088,
+          "edges": 57325,
+          "regions": [
+            "ADM"
+          ]
+        },
+        "count": 1,
+        "departures": [
+          32092.42626
+        ],
+        "completedMs": 512.5887259999981
+      },
+      {
+        "worker": 4,
+        "requestWithoutDeparture": {
+          "origin": {
+            "coordinates": [
+              114.16965086248385,
+              22.293277490710825
+            ]
+          },
+          "destination": {
+            "coordinates": [
+              114.16906,
+              22.29411
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureDate": "2026-10-12"
+        },
+        "graph": {
+          "version": "814b03c9c2d7e3c5",
+          "nodes": 34965,
+          "edges": 78179,
+          "regions": [
+            "AUS"
+          ]
+        },
+        "count": 1,
+        "departures": [
+          28800
+        ],
+        "completedMs": 508.12112999999954
+      },
+      {
+        "worker": 5,
+        "requestWithoutDeparture": {
+          "origin": {
+            "node_id": "ADM:N:31b17842679990",
+            "coordinates": [
+              114.16479351,
+              22.27854757
+            ]
+          },
+          "destination": {
+            "coordinates": [
+              114.15007628641142,
+              22.26413857693343
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureDate": "2026-10-12"
+        },
+        "graph": {
+          "version": "814b03c9c2d7e3c5+block:19aebcac62f227eb:pacific-f-anchor-v1",
+          "nodes": 27512,
+          "edges": 60514,
+          "regions": [
+            "ADM"
+          ]
+        },
+        "count": 14,
+        "departures": [
+          32113.49994,
+          32473.49994,
+          32381.80494,
+          32392.775879999997,
+          32833.49994,
+          32410.69902,
+          32410.69908,
+          32426.1858,
+          32431.16094,
+          32437.15668,
+          32442.13182,
+          32455.07988,
+          32455.079880000005,
+          32460.05502
+        ],
+        "completedMs": 506.4853890000086
+      },
+      {
+        "worker": 4,
+        "requestWithoutDeparture": {
+          "origin": {
+            "node_id": "ADM:N:423d9c94cd1e0b",
+            "coordinates": [
+              114.16478974,
+              22.27904296
+            ]
+          },
+          "destination": {
+            "coordinates": [
+              114.15007628641142,
+              22.26413857693343
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureDate": "2026-10-12"
+        },
+        "graph": {
+          "version": "814b03c9c2d7e3c5",
+          "nodes": 26088,
+          "edges": 57325,
+          "regions": [
+            "ADM"
+          ]
+        },
+        "count": 1,
+        "departures": [
+          32092.42626
+        ],
+        "completedMs": 443.11044799999945
+      },
+      {
+        "worker": 5,
+        "requestWithoutDeparture": {
+          "origin": {
+            "node_id": "HUH:N:0fe5b92f02be54",
+            "coordinates": [
+              114.18149112,
+              22.30410369
+            ]
+          },
+          "destination": {
+            "node_id": "HUH:N:3d02491202399b",
+            "coordinates": [
+              114.18217425,
+              22.30287753
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureDate": "2026-10-12"
+        },
+        "graph": {
+          "version": "b1e24d8ef9214320",
+          "nodes": 947,
+          "edges": 1948,
+          "regions": [
+            "HUH"
+          ]
+        },
+        "count": 82,
+        "departures": [
+          30792.43064,
+          31323.170120000002,
+          31323.68192,
+          31406.33108,
+          31406.842879999997,
+          31559.52902,
+          31560.04082,
+          31622.535620000002,
+          31623.04742,
+          32592.43064,
+          31962.12496,
+          31962.636759999998,
+          31670.096960000003,
+          31670.60876,
+          31696.75256,
+          31697.264359999997,
+          31759.75916,
+          31760.270959999998,
+          32057.737800000003,
+          32058.2496,
+          31807.462460000002,
+          31807.97426,
+          32170.215280000004,
+          32170.72708,
+          31855.023800000003,
+          31855.5356,
+          31906.455860000002,
+          31906.96766,
+          31959.082720000002,
+          31959.59452,
+          32194.96134,
+          32195.47314,
+          32006.644060000002,
+          32007.15586,
+          32269.350640000004,
+          32269.86244,
+          31944.686,
+          31945.197799999998,
+          32007.692600000002,
+          32008.2044,
+          32096.30626,
+          32096.818059999998,
+          32118.02836,
+          32118.540159999997,
+          33123.17012,
+          33123.68192,
+          32406.574180000003,
+          32407.08598,
+          32165.5897,
+          32166.101499999997,
+          32395.333440000002,
+          32395.84524,
+          32091.382700000002,
+          32091.8945,
+          32141.629820000002,
+          32142.14162,
+          32154.389300000003,
+          32154.9011,
+          32431.32024,
+          32431.832039999998,
+          31453.70406,
+          32442.894780000002,
+          32443.40658,
+          32189.191160000002,
+          32189.70296,
+          32243.00296,
+          32243.51476,
+          32255.2519,
+          32255.763699999996,
+          33206.33108,
+          33206.842880000004,
+          32457.55554,
+          32458.067339999998,
+          33462.12496,
+          33462.63676,
+          32532.55698,
+          32533.068779999998,
+          32576.5372,
+          32278.85336,
+          32279.365159999998,
+          32505.11688,
+          32505.628679999998
+        ],
+        "completedMs": 435.3320130000211
+      },
+      {
+        "worker": 5,
+        "requestWithoutDeparture": {
+          "origin": {
+            "coordinates": [
+              114.16851,
+              22.27776
+            ]
+          },
+          "destination": {
+            "coordinates": [
+              114.16817,
+              22.27785
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureDate": "2026-10-12"
+        },
+        "graph": {
+          "version": "814b03c9c2d7e3c5+block:19aebcac62f227eb:pacific-f-anchor-v1",
+          "nodes": 27512,
+          "edges": 60514,
+          "regions": [
+            "ADM"
+          ]
+        },
+        "count": 2,
+        "departures": [
+          32370.285060000002,
+          32378.61846
+        ],
+        "completedMs": 424.33687400000053
+      },
+      {
+        "worker": 5,
+        "requestWithoutDeparture": {
+          "origin": {
+            "coordinates": [
+              114.16817,
+              22.27785
+            ]
+          },
+          "destination": {
+            "coordinates": [
+              114.16851,
+              22.27776
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureDate": "2026-10-12"
+        },
+        "graph": {
+          "version": "814b03c9c2d7e3c5+block:19aebcac62f227eb:pacific-f-anchor-v1",
+          "nodes": 27512,
+          "edges": 60514,
+          "regions": [
+            "ADM"
+          ]
+        },
+        "count": 2,
+        "departures": [
+          32332.557660000002,
+          32340.89106
+        ],
+        "completedMs": 413.6252409999943
+      },
+      {
+        "worker": 5,
+        "requestWithoutDeparture": {
+          "origin": {
+            "coordinates": [
+              114.16287,
+              22.27921
+            ]
+          },
+          "destination": {
+            "node_id": "ADM:N:31b17842679990",
+            "coordinates": [
+              114.16479351,
+              22.27854757
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureDate": "2026-10-12"
+        },
+        "graph": {
+          "version": "814b03c9c2d7e3c5+block:19aebcac62f227eb:pacific-f-anchor-v1",
+          "nodes": 27512,
+          "edges": 60514,
+          "regions": [
+            "ADM"
+          ]
+        },
+        "count": 1,
+        "departures": [
+          32462.42958
+        ],
+        "completedMs": 402.3617680000025
+      }
+    ],
+    "caveat": "The original raw acceptedLabels field counted only timed labels; this summary derives exact accepted pushes from expanded+queue for all queries. Worker + descriptive graph metadata define these groups; cross-Worker identities are not assumed equivalent. Different departureS are time-dependent queries, not duplicates."
+  },
+  "candidates": [
+    {
+      "id": "taxi-direct",
+      "kind": "direct",
+      "minutes": 31,
+      "cost": 140.25,
+      "modes": [
+        "walk",
+        "taxi",
+        "walk"
+      ],
+      "endpointsPreserved": true,
+      "forbidden": [],
+      "needsVehicleConfirmation": false
+    },
+    {
+      "id": "taxi-first-tram-td:99215",
+      "kind": "first",
+      "minutes": 103,
+      "cost": 98.89,
+      "modes": [
+        "walk",
+        "taxi",
+        "walk",
+        "tram",
+        "walk"
+      ],
+      "endpointsPreserved": true,
+      "forbidden": [],
+      "needsVehicleConfirmation": false
+    },
+    {
+      "id": "taxi-first-metro-ADM:portal:E2",
+      "kind": "first",
+      "minutes": 109,
+      "cost": 96.73,
+      "modes": [
+        "walk",
+        "taxi",
+        "walk",
+        "tram",
+        "walk"
+      ],
+      "endpointsPreserved": true,
+      "forbidden": [],
+      "needsVehicleConfirmation": false
+    },
+    {
+      "id": "transit-demo-review",
+      "kind": "public",
+      "minutes": 151,
+      "cost": 16.56,
+      "modes": [
+        "walk",
+        "bus",
+        "walk",
+        "metro",
+        "walk",
+        "tram",
+        "walk"
+      ],
+      "endpointsPreserved": true,
+      "forbidden": [],
+      "needsVehicleConfirmation": false
+    }
+  ],
+  "limitations": [
+    "Node worker_threads executes instrumented production S1 and production Worker bundles.",
+    "DOM stand-ins measure JS/string work, not browser layout, paint or visual acceptance.",
+    "CPU collection slightly delays physical Worker termination; timing is diagnostic, compare with same probe.",
+    "The original matrix stopped accessible runs as soon as public comparison was usable; this probe observes full completion or the unchanged 60-second window."
+  ]
+}

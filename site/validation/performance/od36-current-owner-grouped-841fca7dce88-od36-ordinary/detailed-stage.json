@@ -1,0 +1,192 @@
+{
+  "worker": 5,
+  "observationCutoffMs": 64563.143,
+  "currentUnfinishedFt": {
+    "t": 64514.812,
+    "worker": 5,
+    "kind": "app-transit-worker-CaCMeUxU.js",
+    "event": "worker-span-start",
+    "sid": 561,
+    "name": "walk-query",
+    "request": {
+      "origin": {
+        "coordinates": [
+          114.16454,
+          22.27827
+        ]
+      },
+      "destination": {
+        "node_id": "ADM:N:15dedbcfbae59e",
+        "coordinates": [
+          114.16624518,
+          22.27888752
+        ]
+      },
+      "preference": "fast",
+      "mode": "walk",
+      "departureS": 32304.7569,
+      "departureDate": "2026-10-12"
+    },
+    "graph": {
+      "version": "814b03c9c2d7e3c5+block:19aebcac62f227eb:pacific-f-anchor-v1",
+      "nodes": 27512,
+      "edges": 60514,
+      "regions": [
+        "ADM"
+      ]
+    },
+    "parentSid": 13
+  },
+  "currentFtAvailableCounters": null,
+  "currentFtCounterCaveat": "Only start and temporal preparation were observed; it has not reached a 4096-pop sample or end. Do not substitute a different query or cumulative totals.",
+  "previousCompletedFt": {
+    "t": 64514.633,
+    "worker": 5,
+    "kind": "app-transit-worker-CaCMeUxU.js",
+    "event": "walk-hotspot-end",
+    "sid": 560,
+    "request": {
+      "origin": {
+        "coordinates": [
+          114.16454,
+          22.27827
+        ]
+      },
+      "destination": {
+        "node_id": "ADM:N:0ed55516ad2679",
+        "coordinates": [
+          114.16601089,
+          22.27890956
+        ]
+      },
+      "preference": "fast",
+      "mode": "walk",
+      "departureS": 32304.7569,
+      "departureDate": "2026-10-12"
+    },
+    "timed": true,
+    "fifo": true,
+    "elapsedMs": 0.5580159999954049,
+    "expanded": 32,
+    "acceptedLabels": 61,
+    "timedLabelsAllocated": 60,
+    "activeLabels": 61,
+    "retainedLabels": 61,
+    "predecessors": 60,
+    "baseStates": 61,
+    "invalidated": 0,
+    "queue": 29,
+    "peakQueue": 30,
+    "maxComparable": 1,
+    "maxAllocatedPerBaseState": 1,
+    "ancestorScanCalls": 90,
+    "ancestorScanHops": 824,
+    "ancestorCycles": 29,
+    "ancestorSampleCount": 2,
+    "ancestorSampleHops": 3,
+    "ancestorSampleMs": 0.0009409999984200113,
+    "ancestorSampleEvery": 64,
+    "heapUsed": 380696416
+  },
+  "allCompletedFt": {
+    "count": 532,
+    "totalMs": 20335.238367999926
+  },
+  "timedCompletedFt": {
+    "completedQueries": 77,
+    "queryTotalMs": 17239.30297700003,
+    "searchLoopMs": 335.48285200001555,
+    "temporalPrepMs": 3483.590672999977,
+    "acceptedLabelsSumAcrossCompletedQueries": 13614,
+    "predecessorsSumAcrossCompletedQueries": 13537,
+    "maxRetainedInOneQuery": 1641,
+    "maxAllocatedPerBaseInOneQuery": 8,
+    "unattributedRemainderMs": 13420.229452000036
+  },
+  "heapMilestones": [
+    {
+      "t": 40919.141,
+      "worker": 5,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "event": "worker-span-end",
+      "sid": 5,
+      "name": "graph-prepare",
+      "durationMs": 949.5135579999987,
+      "heapUsed": 222983216,
+      "heapMiB": 212.6533660888672
+    },
+    {
+      "t": 42316.07,
+      "worker": 5,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "event": "worker-span-end",
+      "sid": 7,
+      "name": "transit-build",
+      "durationMs": 1396.4411089999994,
+      "heapUsed": 283600784,
+      "heapMiB": 270.46278381347656
+    },
+    {
+      "t": 45031.527,
+      "worker": 5,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "event": "worker-span-end",
+      "sid": 161,
+      "name": "graph-prepare",
+      "durationMs": 404.2587480000002,
+      "heapUsed": 346293728,
+      "heapMiB": 330.2514343261719
+    },
+    {
+      "t": 45293.113,
+      "worker": 5,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "event": "worker-span-end",
+      "sid": 164,
+      "name": "walk-index",
+      "durationMs": 260.925900000002,
+      "heapUsed": 354174344,
+      "heapMiB": 337.76697540283203
+    },
+    {
+      "t": 64514.779,
+      "worker": 5,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "event": "worker-span-end",
+      "sid": 560,
+      "name": "walk-query",
+      "durationMs": 265.1885170000023,
+      "status": "CONDITIONAL",
+      "heapUsed": 380748696,
+      "heapMiB": 363.1102523803711
+    }
+  ],
+  "lastScheduledProgress": {
+    "t": 63355.539,
+    "worker": 5,
+    "kind": "app-transit-worker-CaCMeUxU.js",
+    "event": "scheduled-hotspot-progress",
+    "sid": 13,
+    "request": {
+      "fromId": "journey:origin",
+      "toId": "journey:destination",
+      "departureS": 28800,
+      "horizonS": 21600,
+      "walkPenalty": 2.5,
+      "transferPenaltyS": 180
+    },
+    "elapsedMs": 20961.670266,
+    "acceptedLabels": 3934,
+    "activeLabels": 3603,
+    "retainedLabels": 3934,
+    "invalidations": 331,
+    "expanded": 1536,
+    "settled": 1487,
+    "queue": 2398,
+    "peakQueue": 2399,
+    "connectionResolveCalls": 4624,
+    "heapUsed": 376845296
+  },
+  "remainingCacheStaticHypothesis": "The unmeasured remainder includes reverse lower-bound setup between temporal preparation and the main search loop; production remainingCache is capped at 8 with origin+destination+mode keys. This is a code-supported investigation target, not measured attribution.",
+  "memoryCaveat": "Heap milestones cross different GC points and retained graph/index/cache lifetimes. Their differences do not measure single-query label memory."
+}

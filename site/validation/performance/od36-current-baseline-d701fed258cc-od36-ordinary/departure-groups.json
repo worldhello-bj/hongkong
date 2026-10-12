@@ -1,0 +1,628 @@
+{
+  "sameWorkerDifferentDepartureGroups": 76,
+  "queriesInGroups": 1474,
+  "completedMs": 6800.322273999875,
+  "top": [
+    {
+      "worker": 6,
+      "graph": {
+        "version": "b1e24d8ef9214320",
+        "nodes": 1300,
+        "edges": 2745,
+        "regions": [
+          "ADM"
+        ]
+      },
+      "requestWithoutDeparture": {
+        "origin": {
+          "node_id": "ADM:N:bb37f9214497f5",
+          "coordinates": [
+            114.16668057,
+            22.27906096
+          ]
+        },
+        "destination": {
+          "node_id": "ADM:N:31b17842679990",
+          "coordinates": [
+            114.16479351,
+            22.27854757
+          ]
+        },
+        "preference": "fast",
+        "mode": "walk",
+        "departureDate": "2026-10-12"
+      },
+      "count": 19,
+      "departures": [
+        31800,
+        32264.331599999998,
+        32880,
+        33240,
+        33960,
+        34320,
+        35040,
+        35400,
+        36120,
+        36480,
+        37200,
+        37560,
+        38280,
+        38640,
+        39360,
+        39720,
+        40440,
+        40800,
+        41520
+      ],
+      "ms": 293.11687200001325
+    },
+    {
+      "worker": 6,
+      "graph": {
+        "version": "b1e24d8ef9214320",
+        "nodes": 945,
+        "edges": 1948,
+        "regions": [
+          "HUH"
+        ]
+      },
+      "requestWithoutDeparture": {
+        "origin": {
+          "node_id": "HUH:N:fbb2cd1f0d461a",
+          "coordinates": [
+            114.18229474,
+            22.3029085
+          ]
+        },
+        "destination": {
+          "node_id": "HUH:N:0fe5b92f02be54",
+          "coordinates": [
+            114.18149112,
+            22.30410369
+          ]
+        },
+        "preference": "fast",
+        "mode": "walk",
+        "departureDate": "2026-10-12"
+      },
+      "count": 30,
+      "departures": [
+        31020,
+        31168.45106,
+        32100,
+        32460,
+        33180,
+        33540,
+        33900,
+        34260,
+        34620,
+        34980,
+        35340,
+        35700,
+        36060,
+        36420,
+        36780,
+        37140,
+        37500,
+        37860,
+        38220,
+        38580,
+        38940,
+        39300,
+        39660,
+        40020,
+        40380,
+        40740,
+        41100,
+        41460,
+        41820,
+        42540
+      ],
+      "ms": 292.6912110000121
+    },
+    {
+      "worker": 6,
+      "graph": {
+        "version": "b1e24d8ef9214320",
+        "nodes": 1300,
+        "edges": 2745,
+        "regions": [
+          "ADM"
+        ]
+      },
+      "requestWithoutDeparture": {
+        "origin": {
+          "node_id": "ADM:N:bb37f9214497f5",
+          "coordinates": [
+            114.16668057,
+            22.27906096
+          ]
+        },
+        "destination": {
+          "node_id": "ADM:N:423d9c94cd1e0b",
+          "coordinates": [
+            114.16478974,
+            22.27904296
+          ]
+        },
+        "preference": "fast",
+        "mode": "walk",
+        "departureDate": "2026-10-12"
+      },
+      "count": 19,
+      "departures": [
+        31800,
+        32264.331599999998,
+        32880,
+        33240,
+        33960,
+        34320,
+        35040,
+        35400,
+        36120,
+        36480,
+        37200,
+        37560,
+        38280,
+        38640,
+        39360,
+        39720,
+        40440,
+        40800,
+        41520
+      ],
+      "ms": 290.6164499999868
+    },
+    {
+      "worker": 6,
+      "graph": {
+        "version": "b1e24d8ef9214320",
+        "nodes": 1300,
+        "edges": 2745,
+        "regions": [
+          "ADM"
+        ]
+      },
+      "requestWithoutDeparture": {
+        "origin": {
+          "node_id": "ADM:N:bb37f9214497f5",
+          "coordinates": [
+            114.16668057,
+            22.27906096
+          ]
+        },
+        "destination": {
+          "node_id": "ADM:N:15dedbcfbae59e",
+          "coordinates": [
+            114.16624518,
+            22.27888752
+          ]
+        },
+        "preference": "fast",
+        "mode": "walk",
+        "departureDate": "2026-10-12"
+      },
+      "count": 19,
+      "departures": [
+        31800,
+        32264.331599999998,
+        32880,
+        33240,
+        33960,
+        34320,
+        35040,
+        35400,
+        36120,
+        36480,
+        37200,
+        37560,
+        38280,
+        38640,
+        39360,
+        39720,
+        40440,
+        40800,
+        41520
+      ],
+      "ms": 287.1255689999962
+    },
+    {
+      "worker": 5,
+      "graph": {
+        "version": "b1e24d8ef9214320",
+        "nodes": 945,
+        "edges": 1948,
+        "regions": [
+          "HUH"
+        ]
+      },
+      "requestWithoutDeparture": {
+        "origin": {
+          "node_id": "HUH:N:fbb2cd1f0d461a",
+          "coordinates": [
+            114.18229474,
+            22.3029085
+          ]
+        },
+        "destination": {
+          "node_id": "HUH:N:0fe5b92f02be54",
+          "coordinates": [
+            114.18149112,
+            22.30410369
+          ]
+        },
+        "preference": "fast",
+        "mode": "walk",
+        "departureDate": "2026-10-12"
+      },
+      "count": 52,
+      "departures": [
+        31020,
+        31168.45106,
+        32100,
+        32460,
+        33180,
+        33540,
+        33900,
+        34260,
+        34620,
+        34980,
+        35340,
+        35700,
+        36060,
+        36420,
+        36780,
+        37140,
+        37500,
+        37860,
+        38220,
+        38580,
+        38940,
+        39300,
+        39660,
+        40020,
+        40380,
+        40740,
+        41100,
+        41460,
+        41820,
+        42180,
+        42540,
+        42900,
+        43260,
+        43620,
+        43980,
+        44340,
+        44700,
+        45060,
+        45420,
+        45780,
+        46140,
+        46500,
+        46860,
+        47220,
+        47580,
+        47940,
+        48300,
+        48660,
+        49020,
+        49380,
+        49740,
+        50100
+      ],
+      "ms": 257.1512359999542
+    },
+    {
+      "worker": 6,
+      "graph": {
+        "version": "b1e24d8ef9214320",
+        "nodes": 1300,
+        "edges": 2745,
+        "regions": [
+          "ADM"
+        ]
+      },
+      "requestWithoutDeparture": {
+        "origin": {
+          "node_id": "ADM:N:bb37f9214497f5",
+          "coordinates": [
+            114.16668057,
+            22.27906096
+          ]
+        },
+        "destination": {
+          "node_id": "ADM:N:0ed55516ad2679",
+          "coordinates": [
+            114.16601089,
+            22.27890956
+          ]
+        },
+        "preference": "fast",
+        "mode": "walk",
+        "departureDate": "2026-10-12"
+      },
+      "count": 19,
+      "departures": [
+        31800,
+        32264.331599999998,
+        32880,
+        33240,
+        33960,
+        34320,
+        35040,
+        35400,
+        36120,
+        36480,
+        37200,
+        37560,
+        38280,
+        38640,
+        39360,
+        39720,
+        40440,
+        40800,
+        41520
+      ],
+      "ms": 252.93777599999885
+    },
+    {
+      "worker": 6,
+      "graph": {
+        "version": "b1e24d8ef9214320",
+        "nodes": 678,
+        "edges": 1447,
+        "regions": [
+          "AUS"
+        ]
+      },
+      "requestWithoutDeparture": {
+        "origin": {
+          "node_id": "AUS:N:05b021e7ab23a1",
+          "coordinates": [
+            114.1665208,
+            22.30458381
+          ]
+        },
+        "destination": {
+          "node_id": "AUS:N:b4c259c76b2c2b",
+          "coordinates": [
+            114.16591679,
+            22.30539306
+          ]
+        },
+        "preference": "fast",
+        "mode": "walk",
+        "departureDate": "2026-10-12"
+      },
+      "count": 31,
+      "departures": [
+        30258.19146,
+        31338.22506,
+        31680,
+        32027.39748,
+        32760,
+        33120,
+        33138.22506,
+        33840,
+        34200,
+        34560,
+        34920,
+        35280,
+        35640,
+        36000,
+        36360,
+        36720,
+        37080,
+        37440,
+        37800,
+        38160,
+        38520,
+        38880,
+        39240,
+        39600,
+        39960,
+        40320,
+        40680,
+        41040,
+        41400,
+        41760,
+        42120
+      ],
+      "ms": 222.4115320000201
+    },
+    {
+      "worker": 5,
+      "graph": {
+        "version": "b1e24d8ef9214320",
+        "nodes": 1300,
+        "edges": 2745,
+        "regions": [
+          "ADM"
+        ]
+      },
+      "requestWithoutDeparture": {
+        "origin": {
+          "node_id": "ADM:N:bb37f9214497f5",
+          "coordinates": [
+            114.16668057,
+            22.27906096
+          ]
+        },
+        "destination": {
+          "node_id": "ADM:N:31b17842679990",
+          "coordinates": [
+            114.16479351,
+            22.27854757
+          ]
+        },
+        "preference": "fast",
+        "mode": "walk",
+        "departureDate": "2026-10-12"
+      },
+      "count": 35,
+      "departures": [
+        31800,
+        32264.331599999998,
+        32880,
+        33240,
+        33960,
+        34320,
+        35040,
+        35400,
+        36120,
+        36480,
+        37200,
+        37560,
+        38280,
+        38640,
+        39360,
+        39720,
+        40440,
+        40800,
+        41520,
+        41880,
+        42600,
+        42960,
+        43680,
+        44040,
+        44760,
+        45120,
+        45840,
+        46200,
+        46920,
+        47280,
+        48000,
+        48360,
+        49080,
+        49440,
+        50160
+      ],
+      "ms": 221.1617110000152
+    },
+    {
+      "worker": 5,
+      "graph": {
+        "version": "b1e24d8ef9214320",
+        "nodes": 1300,
+        "edges": 2745,
+        "regions": [
+          "ADM"
+        ]
+      },
+      "requestWithoutDeparture": {
+        "origin": {
+          "node_id": "ADM:N:bb37f9214497f5",
+          "coordinates": [
+            114.16668057,
+            22.27906096
+          ]
+        },
+        "destination": {
+          "node_id": "ADM:N:423d9c94cd1e0b",
+          "coordinates": [
+            114.16478974,
+            22.27904296
+          ]
+        },
+        "preference": "fast",
+        "mode": "walk",
+        "departureDate": "2026-10-12"
+      },
+      "count": 35,
+      "departures": [
+        31800,
+        32264.331599999998,
+        32880,
+        33240,
+        33960,
+        34320,
+        35040,
+        35400,
+        36120,
+        36480,
+        37200,
+        37560,
+        38280,
+        38640,
+        39360,
+        39720,
+        40440,
+        40800,
+        41520,
+        41880,
+        42600,
+        42960,
+        43680,
+        44040,
+        44760,
+        45120,
+        45840,
+        46200,
+        46920,
+        47280,
+        48000,
+        48360,
+        49080,
+        49440,
+        50160
+      ],
+      "ms": 217.76425599996583
+    },
+    {
+      "worker": 6,
+      "graph": {
+        "version": "b1e24d8ef9214320",
+        "nodes": 945,
+        "edges": 1948,
+        "regions": [
+          "HUH"
+        ]
+      },
+      "requestWithoutDeparture": {
+        "origin": {
+          "node_id": "HUH:N:3d02491202399b",
+          "coordinates": [
+            114.18217425,
+            22.30287753
+          ]
+        },
+        "destination": {
+          "node_id": "HUH:N:0fe5b92f02be54",
+          "coordinates": [
+            114.18149112,
+            22.30410369
+          ]
+        },
+        "preference": "fast",
+        "mode": "walk",
+        "departureDate": "2026-10-12"
+      },
+      "count": 21,
+      "departures": [
+        31120.6305,
+        31218.300499999998,
+        32340,
+        32700,
+        33420,
+        33780,
+        34500,
+        34860,
+        35580,
+        35940,
+        36660,
+        37020,
+        37740,
+        38100,
+        38820,
+        39180,
+        39900,
+        40260,
+        40980,
+        41340,
+        42060
+      ],
+      "ms": 196.21513599999162
+    }
+  ],
+  "caveat": "Potential only. A departure-independent or batched result requires proof that graph, endpoints, constraints, source role, opening rules, waiting, date and tie order are preserved. No result sharing or production cache was implemented."
+}

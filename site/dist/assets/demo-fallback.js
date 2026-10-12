@@ -1,4 +1,4 @@
-import {preferenceAllows,annotatePreferenceResult,PREFERENCE_PROFILES} from "./preference-routing.js?v=d701fed258cc";
+import {preferenceAllows,annotatePreferenceResult,PREFERENCE_PROFILES} from "./preference-routing.js?v=2e2fcf795897";
 /** Unknown facilities can support a labelled demo, never accessibility certification. */
 const accessibilityGraphCache = new WeakMap();
 const walkLinksCache = new WeakMap();
@@ -82,6 +82,62 @@ export function createDemoWalkLinks(links, graphs) {
   return cache.result;
 }
 
+const sourceEdgeId = id => typeof id === 'string' ? id.replace(/:split:\d+$/, '') : id;
+const strictPhysicalExcludedKinds = new Set([...excludedKinds,'rail','transfer','stationaccess','accessconnector']);
+const serviceKinds = new Set(['rail','metro','bus','tram','taxi','wait','station_overview']);
+const samePosition = (expected, actual) => Array.isArray(expected) && Array.isArray(actual)
+  && expected.length <= actual.length && expected.every((value,index) => Number.isFinite(value)
+    && Number.isFinite(actual[index]) && Math.abs(value-actual[index]) <= (index===2?.005:1e-7));
+
+/** Necessary evidence for this fallback verifier, not a reachability decision.
+ * The full indoor planner resolves named floors from its trusted source graph.
+ * Its derived node set is not present on the original UI request passed to this
+ * verifier. Until that contract supplies a trusted set, every fallback result
+ * for such a request would be rejected below. Unknown/malformed inputs are not
+ * optimized. Keep this precheck synchronized with the floor rule below.
+ */
+export function demoEndpointEvidenceMissing(request = {}) {
+  return ['origin','destination'].some(side=>{
+    const point=request[side];
+    return !!point?.floorId && !point.node_id
+      && (point.node_ids == null || Array.isArray(point.node_ids) && point.node_ids.length===0);
+  });
+}
+
+/** A drawn endpoint connector is not evidence that an exact node/floor was reached. */
+export function demoEndpointEvidence(result, request = {}) {
+  const graph=result?.journey?.graph, nodes=new Map((graph?.nodes??[]).map(node=>[node.id,node]));
+  const edges=new Map((graph?.edges??[]).map(edge=>[edge.id,edge]));
+  const geometric=(result?.journey?.steps??[]).filter(step=>step.guidance?.geometry?.type==='LineString'
+    && step.guidance.geometry.coordinates.length);
+  return ['origin','destination'].every(side=>{
+    const point=request[side];
+    if(!point || !(point.node_id || point.node_ids?.length || point.floorId || point.coordinates?.length===3))return true;
+    const step=side==='origin'?geometric[0]:geometric.at(-1);
+    const actual=side==='origin'?step?.guidance.geometry.coordinates[0]:step?.guidance.geometry.coordinates.at(-1);
+    const resolved=result.resolvedEndpoints?.find(entry=>entry.side===side);
+    let allowed=point.node_id?[point.node_id]:point.node_ids??[];
+    if(point.floorId){
+      if(!resolved || resolved.placeId!==point.namedPlaceId || resolved.floorName!==point.floorName)return false;
+      const portal=graph?.portals?.find(entry=>entry.id===resolved.entranceId);
+      if(!portal || !allowed.includes(portal.node_id))return false;
+      allowed=[portal.node_id];
+    }
+    const routed=result.routedEndpoints?.[side];
+    if(allowed.length){
+      const ids=[...(step?.guidance?.edge_ids??[]),...(step?.edge_ids??[])];
+      return allowed.some(id=>{
+        const node=nodes.get(id);if(!node || !samePosition(node.coordinates,actual)
+          || routed && !samePosition(node.coordinates,routed))return false;
+        if(point.node_id && !samePosition(point.coordinates,node.coordinates))return false;
+        return ids.some(raw=>{const edge=edges.get(raw)??edges.get(sourceEdgeId(raw));return edge
+          && (edge.from_id===id || edge.to_id===id);});
+      });
+    }
+    return samePosition(point.coordinates,actual) && (!routed || samePosition(point.coordinates,routed));
+  });
+}
+
 /**
  * Accept only a complete fallback result. Validate traversed source edges even when a
  * summary disguises them as walking or an overlay accidentally reintroduces a barrier.
@@ -91,7 +147,7 @@ export function createDemoWalkLinks(links, graphs) {
 export function annotateDemoFallback(result, originalRequest = {}) {
   result=annotatePreferenceResult(result,originalRequest);
   const journey = result?.journey;
-  if (journey?.complete !== true || !Array.isArray(journey.steps)) return null;
+  if (journey?.complete !== true || !Array.isArray(journey.steps) || !demoEndpointEvidence(result,originalRequest)) return null;
   const need = originalRequest.need ?? 'ordinary';
   const needsFacilityConfirmation = isFacilityProfile(need);
   const graph = journey.graph;
@@ -109,15 +165,22 @@ export function annotateDemoFallback(result, originalRequest = {}) {
     const guidance = step?.guidance;
     if (!step || step.blocked || normalKind(step.kind) === 'gap' || forbidden(step) || forbidden(guidance)) return null;
     const ids = [...new Set([...(guidance?.edge_ids ?? []), ...(step.edge_ids ?? [])])];
-    const traversed = ids.flatMap(id => edges.get(id) ?? []);
+    const recordsFor = id => edges.get(id) ?? edges.get(sourceEdgeId(id));
+    const traversed = ids.flatMap(id => recordsFor(id) ?? []);
     if (traversed.some(forbidden)) return null;
+    // Strict accessibility is a hard source-data constraint. Merely removing
+    // known barriers cannot certify unknown/schematic pedestrian connections.
+    if(need==='accessible' && !serviceKinds.has(step.kind)){
+      if(!ids.length || ids.some(id=>!recordsFor(id)) || traversed.some(edge=>
+        edge.accessible_eligible!==true || strictPhysicalExcludedKinds.has(normalKind(edge.kind)) || edge.geometry_mode==='official' && edge.wheelchair_barrier!==2))return null;
+    }
     // Official physical steps must resolve to their source graph. Transit services
     // and explicit schematic endpoint connectors may have synthetic service IDs.
     const officialPhysical = guidance?.geometry_mode === 'official'
       && !['rail', 'metro', 'bus', 'tram', 'taxi', 'wait', 'station_overview'].includes(step.kind);
-    if (needsFacilityConfirmation && officialPhysical && (!ids.length || ids.some(id => !edges.has(id)))) return null;
+    if (needsFacilityConfirmation && officialPhysical && (!ids.length || ids.some(id => !recordsFor(id)))) return null;
     if ([step.kind, guidance?.kind].some(kind => normalKind(kind) === 'lift')
-      && (!ids.length || ids.some(id => !edges.has(id)) || !traversed.some(edge => normalKind(edge.kind) === 'lift'))) return null;
+      && (!ids.length || ids.some(id => !recordsFor(id)) || !traversed.some(edge => normalKind(edge.kind) === 'lift'))) return null;
   }
   // Summaries can be coarser than navigation steps, but must not contradict them.
   if ((result.segments ?? []).some(forbidden)) return null;
@@ -136,7 +199,7 @@ export function annotateDemoFallback(result, originalRequest = {}) {
     accessibility: 'unverified',
     originalNeed: need,
     requestedPreference:need,
-    effectivePreference:need==='accessible'?'fast-filtered-accessibility':PREFERENCE_PROFILES[need]?.engine??'fast',
+    effectivePreference:PREFERENCE_PROFILES[need]?.engine??'fast',
     reviewLabel,
     message,
     warnings: [...new Set([...(result.warnings ?? []), message])],

@@ -16,9 +16,18 @@ const station=prepare(read('area/station-graph.json.gz')),area=prepare(read('are
 const router=E2(area,read('transit/services.json'),read('transit/walk-links.json.gz'),station,g2(area,block));
 
 const requests=JSON.parse(readFileSync(new URL('./fixtures/demo-fallback-requests.json',import.meta.url),'utf8'));
+const coverageStart=source.indexOf('function publicPointRegion('),coverageEnd=source.indexOf('function publicCoverageMessage(',coverageStart);
+assert.ok(coverageStart>=0&&coverageEnd>coverageStart);
+const publicPointRegion=new Function('t2','Q','L1','z',source.slice(coverageStart,coverageEnd)+'return publicPointRegion;')(t2,area,station,block);
 test('expanded data and public selectors retain all original72 test endpoints',()=>{
  const all=JSON.parse(readFileSync(new URL('./fixtures/land-coverage-72.json',import.meta.url),'utf8')).rows;
- for(const {request} of all)for(const p of [request.origin,request.destination])assert.ok(t2(area,p),p.coordinates.join(','));
+ // Production checks the loaded source union, not just the ground-level area
+ // projection. A station lift's exact height may correctly reject the area
+ // copy of that node while matching its station source.
+ for(const {request} of all)for(const p of [request.origin,request.destination])assert.ok(publicPointRegion(p),p.coordinates.join(','));
+ const huh=all.flatMap(row=>[row.request.origin,row.request.destination]).find(p=>p.coordinates.join(',')==='114.18193105,22.30359537,13.8');
+ assert.ok(huh);assert.equal(t2(area,huh),undefined);assert.equal(t2(station,huh)?.id,'HUH');
+ assert.equal(publicPointRegion({...huh,coordinates:[...huh.coordinates.slice(0,2),999]}),undefined,'coverage never repairs a contradictory requested height');
 });
 test('KOW C1 reaches outside land with Admiralty detail loaded and exact boundary identity',async()=>{
  const result=await f2(requests[1],station,area,router,undefined,block);assert.equal(result.journey?.complete,true,result.message);console.log('KOW full f2 with detail',result.totalMinutes,result.journey.steps.length);

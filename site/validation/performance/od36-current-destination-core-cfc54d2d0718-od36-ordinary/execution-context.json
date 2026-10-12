@@ -1,0 +1,10 @@
+{
+  "runtime":"cfc54d2d0718",
+  "startedUtc":"2026-10-12T15:56:57Z",
+  "memoryAvailableBeforeMiB":3202,
+  "coordination":"Host scheduling report confirmed an unrelated workload heavy process exited and Hong Kong point precheck paused; one Hong Kong routing probe authorized.",
+  "namespaceLimit":"This exec namespace cannot exhaustively inspect host-wide processes.",
+  "instrumentation":"No CPU or heap sampling. Low-overhead copied counters separately measure destination-core lookups/builds, immutable base reverse preparation, Dijkstra, compacting, query leaves and legacy exact-key fallback.",
+  "otherRuntimeChange":"This build also integrates explicit bus/tram stop_projection geometry. Service clocks and walking were unchanged; quote values may differ by 0.01 after corrected vehicle-line length. Any actual differences must be reported separately from performance semantics.",
+  "priorBaseline":"The prior 34c1eabb21cf 600-second pending result is preserved. Its early time measurements overlapped an unrelated workload until 15:33:40 UTC."
+}

@@ -1,0 +1,12 @@
+{
+  "runtime": "34c1eabb21cf",
+  "runLabel": "od36-current-route-memory",
+  "startedUtc": "2026-10-12T15:25:49Z",
+  "observedEndedUtc": "2026-10-12T15:27:31Z",
+  "exitCode": 137,
+  "shellMessage": "Killed",
+  "checkpointWritten": false,
+  "workerHeapErrorRecorded": false,
+  "knownInterference": "Parent reports ui-startup test inadvertently overlapped 15:25:54–15:26:16 UTC, then Ctrl-C exit130. Exact process-kill cause unproven.",
+  "conclusion": "Interrupted before any durable 60-second result. No performance, heap-exhaustion or route-success claim can be made from this execution. Frozen snapshot and generated instrumentation retained."
+}

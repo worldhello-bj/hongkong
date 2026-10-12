@@ -1,4 +1,4 @@
-import {JOURNEY_WEIGHTS,journeyScore,validatedJourneyWeights} from './journey-score.js?v=d701fed258cc';
+import {JOURNEY_WEIGHTS,journeyScore,validatedJourneyWeights} from './journey-score.js?v=2e2fcf795897';
 export const SCORE_PARAMETER_FIELDS=Object.freeze([
  {key:'minutes',label:'全程时间',unit:'综合分钟 / 分钟',max:10,step:.05},
  {key:'cost',label:'价格',unit:'综合分钟 / HK$',max:10,step:.05},

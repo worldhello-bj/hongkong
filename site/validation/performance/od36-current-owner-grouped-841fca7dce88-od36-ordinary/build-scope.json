@@ -1,0 +1,7 @@
+{
+  "baselineRuntime": "d701fed258cc",
+  "candidateRuntime": "841fca7dce88",
+  "comparisonMethod": "Compare every frozen snapshot file byte-for-byte, replacing only the runtime ID in JavaScript, JSON and HTML.",
+  "differingFilesAfterRuntimeNormalization": ["build-meta.json", "assets/routing-queue.js", "assets/main-integrated.js"],
+  "workerAlgorithmsAndGraphDataUnchanged": true
+}

@@ -43,7 +43,7 @@ test('user-requested calculation cap removal retains cancel and progress',async(
  const s=await readFile(new URL('../../src/navigation/main.recovered.js',import.meta.url),'utf8');
  assert.doesNotMatch(s,/setTimeout\(\s*\(\)\s*=>\s*budget\.abort/);
  assert.doesNotMatch(s,/本轮计算已达到演示时限/);
- assert.match(s,/await runBounded\(\[publicWork,taxiWork\],2\);\s*if\(!stale\(\)\)await walkWork\(\)/);
+ assert.match(s,/await runRoutingPhases\(\{basePublic:publicWork,taxi:taxiWork,refinePublic:publicRefinementWork,walk:walkWork,isCurrent:\(\)=>!stale\(\)\}\)/);
  assert.match(s,/routeResultCache/);assert.match(s,/__navigationPerformance/);assert.match(s,/cancel-plan/);
  for(const name of ['mobile-navigation-DfEsS_7b.js','intermodal-routing-D8vKT-lN.js','app-walk-worker-jk5g-BMr.js','app-transit-worker-CaCMeUxU.js','metro-worker-BDEusPKL.js']){
   const engine=await readFile(new URL('../../dist/assets/'+name,import.meta.url),'utf8');assert.equal(engine.includes('超过安全预算'),false,name);

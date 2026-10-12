@@ -1,0 +1,472 @@
+{
+  "schema": 1,
+  "runtime": {
+    "version": "8e5a3cbed130",
+    "assets": {
+      "area/admiralty-block-graph.json.gz": "388a08977ed80e57295fe1a0d623178e79ecd441cedaa5cfc62fe043385e2298",
+      "area/admiralty-block-manifest.json": "3ca578fed53857bf83cb93c4f51aab5f854656415384f7a869360a983ea07001",
+      "area/area-graph.json.gz": "44901caf6ee1241a23e096eb3d692f96913789fb2c1cbd742da59d8d3730253f",
+      "area/station-graph.json.gz": "446700358a6a56ccb8bbf1e024f6a09da99925e2778331e67c307c135a0f0a1e",
+      "assets/app-transit-worker-CaCMeUxU.js": "1ccb5e4a429a002ff218fd4f362abe0d1a4fb4373e270b6a060e46ffa12924e2",
+      "assets/app-walk-worker-jk5g-BMr.js": "64d14568a44435ef4287931268853356ccc30e96de7c90902f330f0e3afe0d47",
+      "assets/boot-status.js": "53c430e4c7e6b380f1b3ad694eb75dc5922bc881350e5d42f66102cc595d5817",
+      "assets/demo-fallback.js": "bbba7a13847b1221591c8301615e85fe5f5c9961422a08703a81874e9d123ae5",
+      "assets/integrated-navigation.js": "d57b11aeec51d8a15e3f0123ba0bba78d77ff34ce9c75d15abc37e907e5876ec",
+      "assets/intermodal-routing-D8vKT-lN.js": "5b361a7452cd5a8e3f07b319fa663030c433313b06f222f6625803cde3baf88c",
+      "assets/journey-score.js": "c3545d09363b7f9bd5025a7da5cc81fecd9f25e869bf77dc2f74b62296cde0b5",
+      "assets/kow-c1-corridor-data.js": "a2a51a8d0e54cf4b45f2b7df4c3a3bad366e9b9544e9514b2e208fa7b973ea01",
+      "assets/kow-c1-corridor.js": "9fcfe86090fbae36d5a69e7eaf1829b27010fd3ecb3d2f875eb383a2c9765c6e",
+      "assets/main-integrated.js": "42d3e7eeecbfb702e686b234a78aecd3362aba8c028fb95c98d1d3d0d13804f4",
+      "assets/maplibre-gl-_-pAOC5F.js": "f0a214ad8b161ece04da3257f8ca6c4ac288c2899fd765e6e4b15e80a44ec224",
+      "assets/metro-planning-CBAOotPX.js": "c90f443ead50da7a8ba231021bce44ade1081cfc61034d47884d375ca277bf8c",
+      "assets/metro-worker-BDEusPKL.js": "ee1b4aa710b8a8cdd2a6d5723253d5878f2638ec5b4a5b01e4cb2d8172b5beb3",
+      "assets/mobile-navigation-DfEsS_7b.js": "e98fd58dee81ca55566f5d574f7dd97e35b52a578f45a83a7136dc0be53232d0",
+      "assets/pacific-place-model.js": "c38037acd1a2ae23531b31de9742909d267e821531d3648b1a8f7522d54d73a5",
+      "assets/place-opening.js": "651d8b65cbfbea4f515edf656320de8f94b970a76022e29f45eb602a1ff85a41",
+      "assets/preference-routing.js": "e4fcfd7f6d6d0d7c09e40b59a56af6a85f720c8c8b785536a7ace7692884635c",
+      "assets/preload-helper-BXl3LOEh.js": "d887044e7c17fd90344fc4f74f53cac686584daf2a458ab2136d36f1946e9ab6",
+      "assets/public-coverage.js": "7b9a48c85d3731c18b74c8896a0e7949d2b03b9dffd5878066eecc076f443da3",
+      "assets/rail-reference.js": "d443c08eccb243ab64a57203ff992b2f541cdb1053ff41d3d25b09db920300ae",
+      "assets/route-quote.js": "06e944e179be290edea57e0881e1186896282a41782eab426c4a280cc1477171",
+      "assets/routing-queue.js": "8ac1a97a9e60f93ac08c7e67031f51e7820621a8de20b473c142a9e3448bc761",
+      "assets/score-parameters.js": "b51d5e4e457e078cecf73472e091b471852a8df2878cf660f53e3cc9fb841644",
+      "assets/station-alternatives.js": "8032d4f80d7e87f7748f66a9f1e729e56a19be9186ad2026899fb8ec30ed99be",
+      "assets/taxi-bridge.js": "4d41bd5425026c0080715351853851d5bd1d72cc476c90d70c9839dd56fb9596",
+      "assets/taxi-candidates.js": "ddc3f5caaff4d83f0576f2db77a5fb16a66c370f3da84c940aadf35518e995cf",
+      "assets/taxi-map.js": "2c9a40cd381f967cec687f7a76c7445e200c8fec180394aeb04daeb1111a0839",
+      "assets/taxi-policy.js": "e72b1cb6aeedae048ceafe99a76cf399c15c1da19eca0298e7a18acfe6af2ee6",
+      "assets/tram-model-DNfzveeh.js": "ec626d1d35fbb4cadd146409601b00a3c581bf1795ceaca1416c4f3c220cae17",
+      "assets/transit-stops.js": "39b812021f7e4b098187bc8fcfeca134fddcc6c8b9a70b8a3ff4bc2378cf3dfa",
+      "assets/ui-content.js": "896e1a34f8e588f298c4ff3ae2b85898cd95332fdaecc1391dbfb06ab39e9d5f",
+      "assets/ui-navigation.js": "e95235ec7976ea3b06d7fe5f88502eb3a1a70829eb5a86bf6cbf746598859927",
+      "assets/zh-BN2SYn6V.js": "0baa0f4a0af2ee59f48d8f79ea5736143840a3dcef5ab0b3088bd716b2dcd980",
+      "taxi/government-data.json": "755ccae78e10a507fbf0537bd5d0597aa4f7bebe97d7b5825199fb0472fdbafb",
+      "taxi/road-graph.js": "78f3f2d916148f6e2d6ab261906e661072f995a64ca027e5642395bf5d6ac48e",
+      "taxi/roaming.js": "cbf4ebe18bb1ad50314787e475407828457562c0538ef949da8904ee25466b12",
+      "transit/services.json": "59c1c4faef3fadbf32748b0707231f78c3ec36aa4d2edc47de39b8c39485c542",
+      "transit/tram-stops.json": "4b34355bd7c4cceb4e7afbd73fd2e7c49ecc73d89a01f4082468c693cbc56684",
+      "transit/walk-links.json": "5cdff906f22c51146abc9e6e565f0b07a1d57a739239af403482f2dff2c6658c",
+      "transit/walk-links.json.gz": "9505ee7867641cd5c7bbf2a3c76a4216c7cdc05fdd7a72d7da4cf85eb2f6420b"
+    },
+    "signature": "9f9b7d1fccb766f4cb4539aad5c7a910c2b2a2b613c11e80426d4391c8a94965"
+  },
+  "checkedAt": "2026-10-12T15:26:40.125Z",
+  "priceWeights": [
+    0,
+    0.25,
+    0.75,
+    1.5,
+    3
+  ],
+  "priority": "time",
+  "otherWeights": "Unmodified production time-priority defaults, including fixed per-preference facility penalty and luggage carry ordering.",
+  "rows": [
+    {
+      "file": "exits-cross-ordinary-taxi-off.json",
+      "sha256": "a70d433ee98c1cf001e1f217164f4ccae9b5576fdd20c47bb7063d601d325e89",
+      "rowId": "exits-cross",
+      "need": "ordinary",
+      "taxi": false,
+      "observationClassification": "completed-with-candidates",
+      "comparisonStatus": null,
+      "candidateSetComplete": true,
+      "eligible": [
+        "transit"
+      ],
+      "excluded": [],
+      "samples": [
+        {
+          "priceWeight": 0,
+          "winner": "transit",
+          "winnerKind": "public",
+          "ranked": [
+            {
+              "id": "transit",
+              "kind": "public",
+              "score": 30.1,
+              "contributions": {
+                "minutes": 24,
+                "cost": 0,
+                "walkMinutes": 5.6,
+                "waitMinutes": 0.5,
+                "transfers": 0,
+                "facilities": 0
+              },
+              "weights": {
+                "label": "综合推荐",
+                "minutes": 1,
+                "cost": 0,
+                "walkMinutes": 0.35,
+                "waitMinutes": 0.5,
+                "transfers": 3
+              },
+              "metrics": {
+                "minutes": 24,
+                "cost": 7.87,
+                "walkMinutes": 16,
+                "waitMinutes": 1,
+                "transfers": 0
+              },
+              "luggageCarryRequired": false
+            }
+          ]
+        },
+        {
+          "priceWeight": 0.25,
+          "winner": "transit",
+          "winnerKind": "public",
+          "ranked": [
+            {
+              "id": "transit",
+              "kind": "public",
+              "score": 32.0675,
+              "contributions": {
+                "minutes": 24,
+                "cost": 1.9675,
+                "walkMinutes": 5.6,
+                "waitMinutes": 0.5,
+                "transfers": 0,
+                "facilities": 0
+              },
+              "weights": {
+                "label": "综合推荐",
+                "minutes": 1,
+                "cost": 0.25,
+                "walkMinutes": 0.35,
+                "waitMinutes": 0.5,
+                "transfers": 3
+              },
+              "metrics": {
+                "minutes": 24,
+                "cost": 7.87,
+                "walkMinutes": 16,
+                "waitMinutes": 1,
+                "transfers": 0
+              },
+              "luggageCarryRequired": false
+            }
+          ]
+        },
+        {
+          "priceWeight": 0.75,
+          "winner": "transit",
+          "winnerKind": "public",
+          "ranked": [
+            {
+              "id": "transit",
+              "kind": "public",
+              "score": 36.0025,
+              "contributions": {
+                "minutes": 24,
+                "cost": 5.9025,
+                "walkMinutes": 5.6,
+                "waitMinutes": 0.5,
+                "transfers": 0,
+                "facilities": 0
+              },
+              "weights": {
+                "label": "综合推荐",
+                "minutes": 1,
+                "cost": 0.75,
+                "walkMinutes": 0.35,
+                "waitMinutes": 0.5,
+                "transfers": 3
+              },
+              "metrics": {
+                "minutes": 24,
+                "cost": 7.87,
+                "walkMinutes": 16,
+                "waitMinutes": 1,
+                "transfers": 0
+              },
+              "luggageCarryRequired": false
+            }
+          ]
+        },
+        {
+          "priceWeight": 1.5,
+          "winner": "transit",
+          "winnerKind": "public",
+          "ranked": [
+            {
+              "id": "transit",
+              "kind": "public",
+              "score": 41.905,
+              "contributions": {
+                "minutes": 24,
+                "cost": 11.805,
+                "walkMinutes": 5.6,
+                "waitMinutes": 0.5,
+                "transfers": 0,
+                "facilities": 0
+              },
+              "weights": {
+                "label": "综合推荐",
+                "minutes": 1,
+                "cost": 1.5,
+                "walkMinutes": 0.35,
+                "waitMinutes": 0.5,
+                "transfers": 3
+              },
+              "metrics": {
+                "minutes": 24,
+                "cost": 7.87,
+                "walkMinutes": 16,
+                "waitMinutes": 1,
+                "transfers": 0
+              },
+              "luggageCarryRequired": false
+            }
+          ]
+        },
+        {
+          "priceWeight": 3,
+          "winner": "transit",
+          "winnerKind": "public",
+          "ranked": [
+            {
+              "id": "transit",
+              "kind": "public",
+              "score": 53.71,
+              "contributions": {
+                "minutes": 24,
+                "cost": 23.61,
+                "walkMinutes": 5.6,
+                "waitMinutes": 0.5,
+                "transfers": 0,
+                "facilities": 0
+              },
+              "weights": {
+                "label": "综合推荐",
+                "minutes": 1,
+                "cost": 3,
+                "walkMinutes": 0.35,
+                "waitMinutes": 0.5,
+                "transfers": 3
+              },
+              "metrics": {
+                "minutes": 24,
+                "cost": 7.87,
+                "walkMinutes": 16,
+                "waitMinutes": 1,
+                "transfers": 0
+              },
+              "luggageCarryRequired": false
+            }
+          ]
+        }
+      ],
+      "winnerChanges": false,
+      "qualification": "Only observed complete, available, structurally passing candidates are reranked. Missing/pending candidates are not inferred; a lower score does not establish a global optimum."
+    },
+    {
+      "file": "exits-cross-ordinary-taxi-on.json",
+      "sha256": "5081f54d1313c14459fa2bc0fd1bc6f0405cc54d8bd64873c89e80858a9724fc",
+      "rowId": "exits-cross",
+      "need": "ordinary",
+      "taxi": true,
+      "observationClassification": "invariant-failure",
+      "comparisonStatus": null,
+      "candidateSetComplete": false,
+      "eligible": [
+        "transit"
+      ],
+      "excluded": [
+        {
+          "id": "taxi-direct",
+          "reason": "not a complete available candidate with passing structural assertions"
+        }
+      ],
+      "samples": [
+        {
+          "priceWeight": 0,
+          "winner": "transit",
+          "winnerKind": "public",
+          "ranked": [
+            {
+              "id": "transit",
+              "kind": "public",
+              "score": 30.1,
+              "contributions": {
+                "minutes": 24,
+                "cost": 0,
+                "walkMinutes": 5.6,
+                "waitMinutes": 0.5,
+                "transfers": 0,
+                "facilities": 0
+              },
+              "weights": {
+                "label": "综合推荐",
+                "minutes": 1,
+                "cost": 0,
+                "walkMinutes": 0.35,
+                "waitMinutes": 0.5,
+                "transfers": 3
+              },
+              "metrics": {
+                "minutes": 24,
+                "cost": 7.87,
+                "walkMinutes": 16,
+                "waitMinutes": 1,
+                "transfers": 0
+              },
+              "luggageCarryRequired": false
+            }
+          ]
+        },
+        {
+          "priceWeight": 0.25,
+          "winner": "transit",
+          "winnerKind": "public",
+          "ranked": [
+            {
+              "id": "transit",
+              "kind": "public",
+              "score": 32.0675,
+              "contributions": {
+                "minutes": 24,
+                "cost": 1.9675,
+                "walkMinutes": 5.6,
+                "waitMinutes": 0.5,
+                "transfers": 0,
+                "facilities": 0
+              },
+              "weights": {
+                "label": "综合推荐",
+                "minutes": 1,
+                "cost": 0.25,
+                "walkMinutes": 0.35,
+                "waitMinutes": 0.5,
+                "transfers": 3
+              },
+              "metrics": {
+                "minutes": 24,
+                "cost": 7.87,
+                "walkMinutes": 16,
+                "waitMinutes": 1,
+                "transfers": 0
+              },
+              "luggageCarryRequired": false
+            }
+          ]
+        },
+        {
+          "priceWeight": 0.75,
+          "winner": "transit",
+          "winnerKind": "public",
+          "ranked": [
+            {
+              "id": "transit",
+              "kind": "public",
+              "score": 36.0025,
+              "contributions": {
+                "minutes": 24,
+                "cost": 5.9025,
+                "walkMinutes": 5.6,
+                "waitMinutes": 0.5,
+                "transfers": 0,
+                "facilities": 0
+              },
+              "weights": {
+                "label": "综合推荐",
+                "minutes": 1,
+                "cost": 0.75,
+                "walkMinutes": 0.35,
+                "waitMinutes": 0.5,
+                "transfers": 3
+              },
+              "metrics": {
+                "minutes": 24,
+                "cost": 7.87,
+                "walkMinutes": 16,
+                "waitMinutes": 1,
+                "transfers": 0
+              },
+              "luggageCarryRequired": false
+            }
+          ]
+        },
+        {
+          "priceWeight": 1.5,
+          "winner": "transit",
+          "winnerKind": "public",
+          "ranked": [
+            {
+              "id": "transit",
+              "kind": "public",
+              "score": 41.905,
+              "contributions": {
+                "minutes": 24,
+                "cost": 11.805,
+                "walkMinutes": 5.6,
+                "waitMinutes": 0.5,
+                "transfers": 0,
+                "facilities": 0
+              },
+              "weights": {
+                "label": "综合推荐",
+                "minutes": 1,
+                "cost": 1.5,
+                "walkMinutes": 0.35,
+                "waitMinutes": 0.5,
+                "transfers": 3
+              },
+              "metrics": {
+                "minutes": 24,
+                "cost": 7.87,
+                "walkMinutes": 16,
+                "waitMinutes": 1,
+                "transfers": 0
+              },
+              "luggageCarryRequired": false
+            }
+          ]
+        },
+        {
+          "priceWeight": 3,
+          "winner": "transit",
+          "winnerKind": "public",
+          "ranked": [
+            {
+              "id": "transit",
+              "kind": "public",
+              "score": 53.71,
+              "contributions": {
+                "minutes": 24,
+                "cost": 23.61,
+                "walkMinutes": 5.6,
+                "waitMinutes": 0.5,
+                "transfers": 0,
+                "facilities": 0
+              },
+              "weights": {
+                "label": "综合推荐",
+                "minutes": 1,
+                "cost": 3,
+                "walkMinutes": 0.35,
+                "waitMinutes": 0.5,
+                "transfers": 3
+              },
+              "metrics": {
+                "minutes": 24,
+                "cost": 7.87,
+                "walkMinutes": 16,
+                "waitMinutes": 1,
+                "transfers": 0
+              },
+              "luggageCarryRequired": false
+            }
+          ]
+        }
+      ],
+      "winnerChanges": false,
+      "qualification": "Only observed complete, available, structurally passing candidates are reranked. Missing/pending candidates are not inferred; a lower score does not establish a global optimum."
+    }
+  ],
+  "limitations": [
+    "No new routing, endpoint mutation or fare changes.",
+    "Old reports are used only if their exact runtime is available; missing non-ordinary facility data is excluded, never guessed.",
+    "Pending and error comparisons may have a partial eligible candidate set, explicitly labeled.",
+    "Unavailable XYZ/floor curb-access fare scenarios and structurally failing candidates are excluded."
+  ]
+}

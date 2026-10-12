@@ -119,3 +119,15 @@ OD7 从基线 60 秒仍缺两条接驳，变为 27.66 秒已显示完整公共�
 两个样本所有已返回候选端点保持、禁用边检查通过，行李出租车保留车辆确认；未返回候选不能据此判定。Node DOM stand-in 仍不证明浏览器绘制性能。详细步行的 Pareto label/前驱累计和 OD36 的跨 owner 索引重建仍为已知未解决问题。
 
 复测原始概要：production-final-5274ca0d14f4-od7-luggage/report.json、production-final-5274ca0d14f4-od36-ordinary/report.json。
+
+## OD36 follow-up after live v38 (2026-10-12)
+
+The earlier Pareto/ancestor-scan hypothesis above is **not supported by the new production attribution** and is not the basis of this change. The current baseline is the exact live runtime `d701fed258cc`, rather than the older `5274` experiment. Same fixed OD36, ordinary preference, simulated departure/date, production S1 and real Worker bundles run under a Node DOM stand-in. This does not measure browser painting or real journeys.
+
+1. Owner-group scheduling (`841fca7dce88`) preserves base-graph inputs and runs all taxi-dependent base queries before another graph owner evicts the Worker. Eight Workers become five; initial public and taxi comparisons complete earlier. Demo and detailed official graphs remain separate. Every original refinement still runs, cancellation prevents later phases, and there is no production search cutoff.
+2. Frozen-graph timing metadata is cached only for prepared immutable graphs and their existing preference index. Origin/destination schedules and departure/date remain per-query inputs. The measured temporal preparation scan was repeated unnecessarily; no facility/waiting rule is removed.
+3. Reverse lower-bound keys, Float64 values, traversal order and admissibility remain unchanged. A shared node index plus Float64 arrays and a presence bitmap retain missing values, NaN, infinities and signed zero exactly; query-only synthetic nodes retain a Map. Retention is bounded. Array budget is explicitly not a whole-heap budget: shared node-index and synthetic-map overhead are additional. The prior eight large Maps were repeatedly discarded during transit refinement.
+
+The default FIFO ancestor guard and numeric-label experiment are **not enabled**. Cache storage and scheduling have paired original-engine oracle tests, including 720 seeded route queries and 111 successful scheduled routes across more than eight endpoint keys, reverse-order reuse and eviction. The route outputs are compared deeply, not only by arrival time. Cache unit tests also cover budget, owner isolation, missing values and precise numeric representation.
+
+Results and the latest measured budget are recorded in the matching `od36-current-*` directories. The original 60-second observation is retained separately from an optional same-process 120-second follow-through. Pending does not mean NO_ROUTE. More searches completed inside a fixed window can increase state counts; compare the reached phases before treating this as a regression. A completed taxi comparison does not imply all detailed public or walking refinements have finished.

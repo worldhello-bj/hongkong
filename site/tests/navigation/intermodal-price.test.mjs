@@ -67,7 +67,7 @@ test('luggage carrying is explicitly confirmed before any taxi reservation or na
  const {readFileSync}=await import('node:fs');
  const source=readFileSync(new URL('../../src/navigation/main.recovered.js',import.meta.url),'utf8');
  const start=source.indexOf('if(a==="start"&&$?.luggageCarryRequired');
- const reserve=source.indexOf('if(a==="start"&&$?.taxiQuote');
+ const reserve=source.indexOf('if(a==="start"&&$?.taxiQuote&&taxiSimulation');
  assert.ok(start>0&&start<reserve);assert.match(source,/确认搬运行李并查看路线/);
  const guard=new Function('a','$','window',source.slice(start,reserve)+'return true;');
  let asked=0;assert.equal(guard('start',{luggageCarryRequired:true},{confirm:()=>{asked++;return false;}}),undefined);assert.equal(asked,1);

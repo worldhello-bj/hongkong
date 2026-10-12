@@ -1,0 +1,9 @@
+{
+  "queries": 47,
+  "fullFtMs": 14004.914009999971,
+  "loopMs": 403.094929999992,
+  "temporalPrepMs": 1494.7191609999936,
+  "lowerBuildMs": 11492.757283999985,
+  "lowerPrepMs": 11494.31899700001,
+  "remainingMs": 612.7809219999763
+}

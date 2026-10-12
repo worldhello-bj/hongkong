@@ -1,0 +1,23 @@
+{
+  "windowMs": 360000,
+  "atMs": 364119.773,
+  "completedTimedWalk": {
+    "timedCompleted": 27646.0,
+    "timedFtMs": 175513.9099820024,
+    "loopMs": 90811.16650099825,
+    "timingPrepMs": 54704.86160599788,
+    "lowerPrepMs": 9454.190661001368,
+    "coreDijkstraMs": 2499.3640230000165,
+    "baseBuildMs": 124.8430010000011,
+    "coreCompactMs": 288.644194000015,
+    "leafRebuildMs": 619.3767640043516,
+    "totalMs": 8075.687583004314
+  },
+  "scheduledElapsedMs": 319180.91099999996,
+  "directChildrenMs": {
+    "graph-prepare": 1102.6365080000032,
+    "walk-query": 287806.1068380008
+  },
+  "scheduledResidualMs": 30272.167653999117,
+  "caveat": "Wall-time attribution from completed spans and partial direct children; not CPU sampling."
+}

@@ -36,3 +36,25 @@ test('routing branches stay bounded while completed work releases next branch',a
  const tasks=Array.from({length:5},(_,i)=>async()=>{active++;max=Math.max(max,active);await new Promise(r=>setTimeout(r,5));active--;return i});
  const results=await runBounded(tasks,2);assert.equal(max,2);assert.equal(active,0);assert.deepEqual(results.map(r=>r.value),[0,1,2,3,4]);
 });
+
+test('exact XYZ source endpoints are preserved but cannot be certified by an XY curb scenario',()=>{
+ const exact={...request,origin:{...request.origin,node_id:'source-origin',coordinates:[...request.origin.coordinates,6]},destination:{...request.destination,node_id:'source-destination',coordinates:[...request.destination.coordinates,13.8]}};
+ const pick=modeledRoadLink(exact.origin,{id:'a',coordinate:roads.nodes.a}),drop=modeledRoadLink(exact.destination,{id:'b',coordinate:roads.nodes.b});
+ const result=composeTaxiJourney({request:exact,quote,pickupLink:pick,dropoffLink:drop,scene,graph:{}});
+ assert.deepEqual(result.lines[0].coordinates[0],exact.origin.coordinates);assert.deepEqual(result.lines.at(-1).coordinates.at(-1),exact.destination.coordinates);
+ assert.equal(result.journey.complete,false);assert.equal(result.incompleteReason,'UNVERIFIED_ENDPOINT_ACCESS');assert.equal(result.endpointAccess.filter(p=>p.status==='unverified-node-or-floor').length,2);assert.ok(result.taxiQuote);assert.match(result.message,/保留原地点/);
+});
+test('a real public prefix preserves exact source-origin access; unverified named destination floor is still incomplete',()=>{
+ const exact={...request,origin:{...request.origin,node_id:'source-origin',coordinates:[...request.origin.coordinates,6]}};
+ const prefix={...emptyPublicJourney({},28800),journey:{complete:true,phases:['source walk'],steps:[{kind:'walk',phase:0,guidance:{edge_ids:['source-edge'],geometry_mode:'official',geometry:{type:'LineString',coordinates:[exact.origin.coordinates,pickupLink.node.coordinates]}}}],graph:{}}};
+ const last=composeTaxiJourney({request:exact,prefix,quote,pickupLink,dropoffLink,scene,graph:{}});assert.equal(last.journey.complete,true);assert.equal(last.endpointAccess[0].status,'source-route');
+ const floor={...exact,destination:{...exact.destination,namedPlaceId:'mall',floorId:'L4',floorName:'L4'}};
+ const incomplete=composeTaxiJourney({request:floor,prefix,quote,pickupLink,dropoffLink,scene,graph:{}});assert.equal(incomplete.journey.complete,false);assert.equal(incomplete.endpointAccess[1].status,'unverified-node-or-floor');
+});
+
+test('explicit source-node group may resolve to one allowed node but never an unrelated node',()=>{
+ const endpoint={...request.origin,node_ids:['allowed'],coordinates:[114.16,22.28,5]},chosen=[114.1601,22.2801,5],groupRequest={...request,origin:endpoint};
+ const prefix={...emptyPublicJourney({},28800),journey:{complete:true,phases:['source walk'],steps:[{kind:'walk',phase:0,guidance:{edge_ids:['real'],geometry:{type:'LineString',coordinates:[chosen,pickupLink.node.coordinates]}}}],graph:{nodes:[{id:'allowed',coordinates:chosen}]}}};
+ assert.equal(composeTaxiJourney({request:groupRequest,prefix,quote,pickupLink,dropoffLink,scene,graph:{}}).journey.complete,true);
+ prefix.journey.graph.nodes[0].id='wrong';assert.equal(composeTaxiJourney({request:groupRequest,prefix,quote,pickupLink,dropoffLink,scene,graph:{}}).journey.complete,false);
+});

@@ -18,7 +18,8 @@ test('actual small source path retains original C1, follows full modeled bends t
  const raw=engine.d(engine.p(demo),request);assert.equal(raw.status,'CONDITIONAL',raw.message);assert.deepEqual(raw.snapped_origin.coordinates,origin.coordinates);assert(raw.legs.some(l=>l.kind==='lift'));
  const journey=engine.a(demo,raw,'C1 lift');assert(addShortDemoConnectors(journey,raw,{...request,need:'ordinary'},{isConnectorAllowed:()=>true}));
  const step=journey.steps.find(s=>s.guidance?.edge_ids?.includes('DEMO:KOW:C1:U3:CORRIDOR'));assert.deepEqual(step.guidance.geometry.coordinates,D.coordinates);assert(Math.abs(step.guidance.minutes-D.lengthM/72)<1e-5);assert.match(step.guidance.instruction,/75 米/);
- const result=annotateDemoFallback({journey,segments:[],warnings:[]},{need:'accessible'});assert(result);assert.equal(result.accessibilityVerified,false);assert.equal(result.needsFacilityConfirmation,true);
+ assert.equal(annotateDemoFallback({journey,segments:[],warnings:[]},{need:'accessible'}),null,'modeled corridor is not strict eligible');
+ const result=annotateDemoFallback({journey,segments:[],warnings:[]},{need:'ordinary'});assert(result);assert.equal(result.accessibilityVerified,false);
  const strict=engine.d(engine.p(graph),{...request,preference:'accessible'});assert.equal(strict.status,'NO_ROUTE');
 });
 

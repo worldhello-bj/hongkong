@@ -48,6 +48,22 @@ try{
  for(const choice of api.C.filter(c=>c.available)){const result=choice.result,graph=result.journey?.graph;const ids=new Set((result.journey?.steps??[]).flatMap(st=>st.guidance?.edge_ids??[]));const used=(graph?.edges??[]).filter(e=>ids.has(e.id)),closed=new Set((graph?.closures??[]).flatMap(c=>c.physical_ids??[]));const forbidden=used.filter(e=>e.disabled||closed.has(e.physical_id)||(api.r.need==='accessible'&&(e.wheelchair_barrier===1||['stairs','stairlift','escalator','travelator'].includes(e.kind))));assert.equal(forbidden.length,0,'known forbidden source edges absent');console.log('EDGE_AUDIT',JSON.stringify({id:choice.id,usedCount:used.length,forbidden:forbidden.map(e=>e.id),modeled:used.filter(e=>e.source_id?.startsWith('MODELED')).map(e=>({id:e.id,length_m:e.length_m,duration_s:e.duration_s,coordinates:e.coordinates})),sourceIds:[...ids]}));}
  console.log('MEMORY_DIAGNOSTIC',JSON.stringify({memory:process.memoryUsage(),maxRSS:process.resourceUsage().maxRSS}));
  console.log('FINAL_DIAGNOSTIC',JSON.stringify(window.__navigationPerformance),api.C.map(c=>[c.id,c.available,c.result.message]),el('[data-app="status"]').textContent);
+ if(process.env.HK_BOOT_CASE==='accessible'){
+  // This fixed map-point fixture has unverified first/last access. The old
+  // assertion incorrectly demanded an enabled Start for an ordinary-profile
+  // fallback relabelled strict. A complete strict source path has its own
+  // positive engine tests; this is the explicit negative startup/UI contract.
+  const strictInput=JSON.parse(readFileSync(new URL('./fixtures/demo-fallback-requests.json',import.meta.url)))[2];
+  assert.equal(api.r.need,'accessible');for(const side of ['origin','destination'])assert(api.r[side].coordinates.every((v,i)=>Math.abs(v-strictInput[side].coordinates[i])<1e-7),'strict original endpoint preserved');
+  assert.equal(api.d1,false,'all strict phases actually terminate');
+  assert.equal(window.__navigationPerformance.comparisonStatus,'complete');
+  assert.deepEqual(window.__navigationPerformance.failedStages,[]);
+  assert.equal(api.C.filter(c=>c.available).length,0,'unverified endpoint access cannot become a strict candidate');
+  assert(api.C.some(c=>/无障碍.*尚未核验/.test(c.result.message)),'exact unverified-access reason remains visible');
+  assert(!/data-action="start"(?![^>]*disabled)/.test(el('[data-app="panel"]').innerHTML),'no navigation start for unknown strict access');
+  const beforeStage=api.r.stage;click({action:'start'});assert.equal(api.r.stage,beforeStage,'programmatic start cannot bypass strict completeness');
+  console.log('Strict negative fixture passed: original endpoints retained, unknown access rejected, no enabled or programmatic Start');
+ }else{
  assert.ok(/data-action="start"(?![^>]*disabled)/.test(el('[data-app="panel"]').innerHTML),'start button usable immediately');
  if(process.env.HK_TAXI!==undefined){const quotes=api.C.filter(c=>c.result.taxiQuote);assert.equal(quotes.length>0,process.env.HK_TAXI==='1'&&api.r.need!=='accessible','taxi policy matches selected profile/toggle');if(api.r.need==='luggage'&&quotes.length){assert.equal(quotes[0].result.needsVehicleConfirmation,true);assert.equal(quotes[0].result.luggageSpaceUnverified,true);assert.match(quotes[0].result.message,/后备厢容量/);assert.equal(quotes[0].luggageCompatible,undefined);}}
  click({action:'cancel-plan'});
@@ -55,6 +71,7 @@ try{
  assert.ok(api.C.some(c=>(process.env.HK_NEED||c.id.startsWith('transit'))&&c.available),'public route stays available with optional resource stalled and legacy taxi-only stored preferences');
  assert.ok(api.C.some(c=>c.available&&!c.result.taxiQuote&&el('[data-app="panel"]').innerHTML.includes('data-choice="'+c.id+'"')),'usable public result rendered by stable route identity');
  if(api.r.need==='accessible'){const result=api.C.find(c=>c.available);assert.equal(result.accessibility,'unknown');assert.equal(result.result.accessibilityVerified,false);assert.equal(result.result.needsConfirmation,true);}
+ }
  console.log('Full entry + real Worker + rendered public route passed:',process.env.HK_BOOT_CASE??'metadata','stalled; legacy stored taxi-only policy and navigation hash');
 }finally{for(const worker of workers)worker.terminate();}
 

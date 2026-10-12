@@ -85,7 +85,7 @@ export async function planTaxiCandidates({request,station,services,graph,findRoa
    result.transferAnchor={id:interchange.id,name:interchange.name,mode:interchange.mode,coordinates:interchange.coordinates};
    emit('taxi-'+side+'-'+interchange.mode+'-'+interchange.id,taxiJourneyTitle(result,side),result,side);
    onDiagnostic({side,id:interchange.id,status:'ready',minutes:result.totalMinutes});
-  }catch(error){if(!isCurrent())return {status:'cancelled',published};onDiagnostic({side,id:interchange.id,status:'unavailable',message:error.message});}
+  }catch(error){if(!isCurrent())return {status:'cancelled',published};onDiagnostic({side,id:interchange.id,status:'error',message:error.message});}
  }
  return {status:published?'ready':'no-road-route',published};
 }

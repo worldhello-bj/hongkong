@@ -1,0 +1,24 @@
+{
+  "pass": true,
+  "baselineRuntime": "b702b6920092",
+  "currentRuntime": "2e2fcf795897",
+  "baselineSignature": "f32dfcc1a1ba60f3987b03f198560960bd23364aeb86d8600395d1ea86313fc3",
+  "currentSignature": "58a530dacc14c45c5e58342db8aa4ed9337136ab77a68e960a9079cda499c099",
+  "retainedPayloadSha256Before": "bffa05ed9759e1a5a053939ec772429785812b740348d2a8ea7e5fc0339ac073",
+  "retainedPayloadSha256After": "bffa05ed9759e1a5a053939ec772429785812b740348d2a8ea7e5fc0339ac073",
+  "differences": [],
+  "classificationBefore": "completed-with-candidates",
+  "classificationAfter": "completed-with-candidates",
+  "newAssertionsPass": true,
+  "timing": {
+    "firstBeforeMs": 6649,
+    "firstAfterMs": 5807,
+    "fullBeforeMs": 15521.696714999998,
+    "fullAfterMs": 13889.736438
+  },
+  "excludedDiagnostics": [
+    "Top-level runtime, observation/performance/Worker/load/cancel timing and audit-file provenance are not candidate data.",
+    "Only candidate.strictSourceAudit.provenance.sha256 is omitted inside retained candidate objects."
+  ],
+  "scope": "All originally retained candidate and unavailable fields, plus exact request/need/taxi/fixture, are compared recursively. Full original raw journey geometry was not saved; its byte equality is not claimed. New routes independently rerun all structural audits."
+}

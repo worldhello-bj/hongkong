@@ -1,0 +1,36 @@
+{
+  "runtime": "9e104c614b66",
+  "startedUtc": "2026-10-12T17:18:56.683Z",
+  "before": {
+    "utc": "2026-10-12T17:18:39Z",
+    "availableRamMiB": 3463,
+    "availableDiskMiB": 646
+  },
+  "coordination": "Parent confirmed 60 point-matrix cells terminal and released heavy slot. Parent aggregate starts only after this probe exits.",
+  "processVisibility": "ps inspected only current exec PID namespace, not all host processes.",
+  "requestedWindowMs": 120000,
+  "noCpuSampling": true,
+  "workerOldGenerationCapMiB": 384,
+  "mainExitCode": 0,
+  "allCreatedWorkersExited": true,
+  "createdWorkers": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "exitedWorkers": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "instrumentationChanges": [
+    "Bounded event flushing (2048 records, serialized 512 at a time), incremental scalar latest states, file-copy checkpoints and final rename.",
+    "Exact core key definitions emitted once and referenced by short IDs in main-process logs; Worker postMessage/timing remains unchanged.",
+    "Read-only goal, top20 bucket, opening source and bounded geometry counters.",
+    "Top-node/index counters refresh only every8192 pops; atExpanded marks sample age."
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "windowMs": 420000,
+  "atMs": 424056.935,
+  "rows": [
+    {
+      "status": "CONDITIONAL",
+      "timed": false,
+      "nodes": 34965,
+      "edges": 78179,
+      "calls": 4,
+      "ms": 491.0618920000052,
+      "maxMs": 399.2964470000006
+    },
+    {
+      "status": "NO_ROUTE",
+      "timed": null,
+      "nodes": 62479,
+      "edges": 138703,
+      "calls": 1,
+      "ms": 0.15015200000198092,
+      "maxMs": 0.15015200000198092
+    },
+    {
+      "status": "CONDITIONAL",
+      "timed": false,
+      "nodes": 947,
+      "edges": 1948,
+      "calls": 1984,
+      "ms": 9699.47965999935,
+      "maxMs": 238.22574199998053
+    },
+    {
+      "status": "CONDITIONAL",
+      "timed": false,
+      "nodes": 34363,
+      "edges": 1447,
+      "calls": 19475,
+      "ms": 78890.39628900122,
+      "maxMs": 554.1238640000083
+    },
+    {
+      "status": "CONDITIONAL",
+      "timed": false,
+      "nodes": 27512,
+      "edges": 2745,
+      "calls": 4495,
+      "ms": 42691.79632799925,
+      "maxMs": 430.54828000001726
+    },
+    {
+      "status": "CONDITIONAL",
+      "timed": true,
+      "nodes": 27512,
+      "edges": 60514,
+      "calls": 34353,
+      "ms": 205093.89145600365,
+      "maxMs": 696.1483210000151
+    }
+  ],
+  "noRouteMs": 0.15015200000198092,
+  "allCompletedWalkMs": 336866.7757770035,
+  "noRouteShare": 4.457311043977142e-07,
+  "caveat": "NO_ROUTE is actual returned status. Existing events do not contain the origin static bound or reason, so this does not establish structural disconnection."
+}

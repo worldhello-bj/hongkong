@@ -1,0 +1,13 @@
+{
+  "exactODKeys": 116,
+  "exactOriginObjects": 36,
+  "exactDestinationAndModeKeys": 37,
+  "modes": [
+    "walk"
+  ],
+  "identicalEndpointKeys": [],
+  "caveat": "Structural count only; not a implemented/proven reusable destination cache. Source-specific origin overlays and p=true need separate handling.",
+  "observedPTrueKeys": [],
+  "minimumHorizontalEndpointDistanceM": 9.089929699612338,
+  "pCheck": "Same haversine threshold 0.001m, absent node_ids and equal node_id (including both absent)."
+}

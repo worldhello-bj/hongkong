@@ -1,0 +1,34 @@
+{
+  "runtime": "2e2fcf795897",
+  "startedUtc": "2026-10-12T17:39:27.818Z",
+  "resourceSnapshotBefore": {
+    "utc": "2026-10-12T17:39:27Z",
+    "availableRamMiB": 3426,
+    "availableDiskMiB": 497
+  },
+  "coordination": "Parent confirmed14 supplemental point cases terminal and48 point Workers exited before releasing heavy slot. Probe Worker exit confirmation sent before parent final npm test.",
+  "pidVisibility": "Current exec namespace only, not a complete host process audit.",
+  "requestedWindowMs": 120000,
+  "mainExitCode": 0,
+  "createdWorkers": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "exitedWorkers": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "allCreatedWorkersExited": true,
+  "workerErrors": [],
+  "sameProbeAs9e": true,
+  "workerOldGenerationCapMiB": 384,
+  "cpuSampling": false,
+  "routingRuns": 1,
+  "extensionsBeyond120s": 0
+}

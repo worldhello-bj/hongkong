@@ -1,0 +1,551 @@
+{
+  "runtime": "9e104c614b66",
+  "state60": "observation-window-ended",
+  "state120": "extended-observation-window-ended",
+  "workerErrors": [],
+  "allWorkersExited": true,
+  "firstResultMs": 1601,
+  "stages": [
+    {
+      "id": "public-fast",
+      "durationMs": 7482,
+      "status": "needs-indoor-refinement",
+      "cached": false
+    },
+    {
+      "id": "taxi",
+      "durationMs": 14394,
+      "status": "ready"
+    },
+    {
+      "id": "metro",
+      "durationMs": 5394,
+      "status": "no-complete-route",
+      "cached": false
+    },
+    {
+      "id": "demo-public-fast",
+      "durationMs": 10206,
+      "status": "modeled"
+    },
+    {
+      "id": "demo-fallback",
+      "durationMs": 10223,
+      "status": "modeled"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "taxi-direct",
+      "kind": "direct",
+      "minutes": 31,
+      "cost": 140.25,
+      "modes": [
+        "walk",
+        "taxi",
+        "walk"
+      ],
+      "endpointsPreserved": true,
+      "forbidden": [],
+      "needsVehicleConfirmation": false
+    },
+    {
+      "id": "taxi-first-tram-td:99215",
+      "kind": "first",
+      "minutes": 103,
+      "cost": 98.89,
+      "modes": [
+        "walk",
+        "taxi",
+        "walk",
+        "tram",
+        "walk"
+      ],
+      "endpointsPreserved": true,
+      "forbidden": [],
+      "needsVehicleConfirmation": false
+    },
+    {
+      "id": "taxi-first-metro-ADM:portal:E2",
+      "kind": "first",
+      "minutes": 109,
+      "cost": 96.73,
+      "modes": [
+        "walk",
+        "taxi",
+        "walk",
+        "tram",
+        "walk"
+      ],
+      "endpointsPreserved": true,
+      "forbidden": [],
+      "needsVehicleConfirmation": false
+    },
+    {
+      "id": "transit-demo-review",
+      "kind": "public",
+      "minutes": 151,
+      "cost": 16.57,
+      "modes": [
+        "walk",
+        "bus",
+        "walk",
+        "metro",
+        "walk",
+        "tram",
+        "walk"
+      ],
+      "endpointsPreserved": true,
+      "forbidden": [],
+      "needsVehicleConfirmation": false
+    }
+  ],
+  "candidateValuesEqual60to120": true,
+  "candidateValuesEqualCfc120": true,
+  "memory60": {
+    "rss": 1146658816,
+    "heapTotal": 323715072,
+    "heapUsed": 311567000,
+    "external": 32034935,
+    "arrayBuffers": 10086887,
+    "maxRSSKiB": 1328840
+  },
+  "memory120": {
+    "rss": 1171550208,
+    "heapTotal": 338223104,
+    "heapUsed": 304523536,
+    "external": 32118641,
+    "arrayBuffers": 10152423,
+    "maxRSSKiB": 1328840
+  },
+  "destinationBounds": {
+    "calls": 7658,
+    "used": 7658,
+    "fallbacks": 0,
+    "coreLookups": 7658,
+    "coreHits": 7621,
+    "coreMisses": 37,
+    "coreBuilds": 37,
+    "baseLookups": 37,
+    "baseHits": 36,
+    "baseBuilds": 1,
+    "baseBuildMs": 78.17161800000031,
+    "coreDijkstraMs": 2570.5750430000335,
+    "coreCompactMs": 277.751771999996,
+    "leafRebuildMs": 151.73205400026927,
+    "totalMs": 4427.556912999535,
+    "maxCoreCacheSize": 37,
+    "maxCoreArrayBytes": 8270795,
+    "coreCacheCapacity": 64,
+    "distinctCoreKeys": 37
+  },
+  "completedTimedWalk": {
+    "completed": 7658,
+    "fullFtMs": 38295.574190999345,
+    "loopMs": 27727.6006709999,
+    "temporalPrepMs": 135.73462100042525,
+    "lowerPrepMs": 4662.992403999655,
+    "lowerBuildMs": 0,
+    "otherWallMs": 5769.246494999366
+  },
+  "scheduled": [
+    {
+      "sid": 13,
+      "complete": false,
+      "elapsedMs": 81310.34599999999,
+      "directChildrenMs": {
+        "graph-prepare": 964.1103260000018,
+        "walk-query": 75640.27284599932
+      },
+      "residualMs": 4705.962828000658
+    }
+  ],
+  "firstGoal": {
+    "t": 46028.233,
+    "worker": 5,
+    "kind": "app-transit-worker-CaCMeUxU.js",
+    "event": "scheduled-first-goal-generated",
+    "sid": 13,
+    "elapsedMs": 3708.5178490000035,
+    "score": 18315.647129999998,
+    "arrivalS": 37462.16334,
+    "walkS": 6315.65586,
+    "transfers": 1,
+    "facilityPenalty": 0,
+    "acceptedLabels": 2567
+  },
+  "latestScheduled": {
+    "t": 120728.727,
+    "worker": 5,
+    "kind": "app-transit-worker-CaCMeUxU.js",
+    "event": "scheduled-hotspot-progress",
+    "sid": 13,
+    "request": {
+      "fromId": "journey:origin",
+      "toId": "journey:destination",
+      "departureS": 28800,
+      "horizonS": 21600,
+      "walkPenalty": 2.5,
+      "transferPenaltyS": 180
+    },
+    "elapsedMs": 78409.09268199999,
+    "acceptedLabels": 27694,
+    "activeLabels": 26893,
+    "retainedLabels": 27694,
+    "invalidations": 801,
+    "expanded": 11264,
+    "settled": 11109,
+    "queue": 16430,
+    "peakQueue": 16432,
+    "connectionResolveCalls": 45000,
+    "temporalBoundary": {
+      "departureS": 28800,
+      "boundaryS": 39600,
+      "delayS": 10800,
+      "resolverPresent": true,
+      "openingTimesCount": 596,
+      "sourceSummary": {
+        "departureS": 28800,
+        "departureDate": "2026-10-12",
+        "horizonS": 21600,
+        "maxOpeningS": 39600,
+        "maxSourceCount": 4,
+        "sources": [
+          {
+            "id": "ADM:P:250017626",
+            "regionId": "ADM",
+            "accessTimeId": 290000991,
+            "kind": "lift"
+          },
+          {
+            "id": "ADM:P:250017626:r",
+            "regionId": "ADM",
+            "accessTimeId": 290000991,
+            "kind": "lift"
+          },
+          {
+            "id": "ADM:P:250017626",
+            "regionId": "ADM",
+            "accessTimeId": 290000991,
+            "kind": "lift"
+          },
+          {
+            "id": "ADM:P:250017626:r",
+            "regionId": "ADM",
+            "accessTimeId": 290000991,
+            "kind": "lift"
+          }
+        ],
+        "sourceSampleCap": 16,
+        "edgesScanned": 283306
+      }
+    },
+    "goalLabelCount": 301,
+    "firstGoalGeneratedAtMs": 3708.5178490000035,
+    "bestGeneratedGoalScore": 18186.929190000003,
+    "labelIndex": {
+      "bucketed": true,
+      "nodes": 100,
+      "buckets": 19547,
+      "labelReferences": 20814,
+      "maxLabelsPerNode": 1048,
+      "maxLabelsPerBucket": 11,
+      "nodesByLabelCount": {
+        "under16": 6,
+        "under256": 74,
+        "under4096": 20,
+        "atLeast4096": 0
+      },
+      "topNodes": [
+        {
+          "node": "AUS:portal:D1",
+          "retainedLabels": 1048,
+          "activeLabels": 1028,
+          "clockBuckets": 1028,
+          "preBoundaryExactClockBuckets": 1028,
+          "postBoundaryBucketPresent": false,
+          "minTime": 30446.08092,
+          "maxTime": 35656.24186
+        },
+        {
+          "node": "td:4248",
+          "retainedLabels": 1008,
+          "activeLabels": 1007,
+          "clockBuckets": 1001,
+          "preBoundaryExactClockBuckets": 1000,
+          "postBoundaryBucketPresent": true,
+          "minTime": 30614.37828,
+          "maxTime": 40312
+        },
+        {
+          "node": "td:1331",
+          "retainedLabels": 1005,
+          "activeLabels": 1000,
+          "clockBuckets": 998,
+          "preBoundaryExactClockBuckets": 997,
+          "postBoundaryBucketPresent": true,
+          "minTime": 30677.27724,
+          "maxTime": 43350
+        },
+        {
+          "node": "td:1164",
+          "retainedLabels": 986,
+          "activeLabels": 984,
+          "clockBuckets": 982,
+          "preBoundaryExactClockBuckets": 981,
+          "postBoundaryBucketPresent": true,
+          "minTime": 30588.009000000002,
+          "maxTime": 43413
+        },
+        {
+          "node": "AUS:portal:D2",
+          "retainedLabels": 947,
+          "activeLabels": 947,
+          "clockBuckets": 947,
+          "preBoundaryExactClockBuckets": 947,
+          "postBoundaryBucketPresent": false,
+          "minTime": 30078.15996,
+          "maxTime": 35660.50689999999
+        },
+        {
+          "node": "AUS:portal:D3",
+          "retainedLabels": 900,
+          "activeLabels": 900,
+          "clockBuckets": 900,
+          "preBoundaryExactClockBuckets": 900,
+          "postBoundaryBucketPresent": false,
+          "minTime": 30075.35886,
+          "maxTime": 35652.72706
+        },
+        {
+          "node": "AUS:portal:B2",
+          "retainedLabels": 849,
+          "activeLabels": 849,
+          "clockBuckets": 849,
+          "preBoundaryExactClockBuckets": 849,
+          "postBoundaryBucketPresent": false,
+          "minTime": 30489.60684,
+          "maxTime": 35515.75156
+        },
+        {
+          "node": "AUS:portal:B3",
+          "retainedLabels": 846,
+          "activeLabels": 828,
+          "clockBuckets": 828,
+          "preBoundaryExactClockBuckets": 828,
+          "postBoundaryBucketPresent": false,
+          "minTime": 30492.6957,
+          "maxTime": 35544.884439999994
+        },
+        {
+          "node": "td:4246",
+          "retainedLabels": 801,
+          "activeLabels": 799,
+          "clockBuckets": 797,
+          "preBoundaryExactClockBuckets": 796,
+          "postBoundaryBucketPresent": true,
+          "minTime": 30924.34902,
+          "maxTime": 43800
+        },
+        {
+          "node": "AUS:portal:B1",
+          "retainedLabels": 782,
+          "activeLabels": 769,
+          "clockBuckets": 769,
+          "preBoundaryExactClockBuckets": 769,
+          "postBoundaryBucketPresent": false,
+          "minTime": 30461.88552,
+          "maxTime": 35487.233799999995
+        },
+        {
+          "node": "td:4052",
+          "retainedLabels": 626,
+          "activeLabels": 622,
+          "clockBuckets": 617,
+          "preBoundaryExactClockBuckets": 616,
+          "postBoundaryBucketPresent": true,
+          "minTime": 30925.40538,
+          "maxTime": 40413
+        },
+        {
+          "node": "RAIL:AUS:TML",
+          "retainedLabels": 583,
+          "activeLabels": 583,
+          "clockBuckets": 581,
+          "preBoundaryExactClockBuckets": 580,
+          "postBoundaryBucketPresent": true,
+          "minTime": 30253.93842,
+          "maxTime": 40320
+        },
+        {
+          "node": "td:99134",
+          "retainedLabels": 422,
+          "activeLabels": 418,
+          "clockBuckets": 401,
+          "preBoundaryExactClockBuckets": 400,
+          "postBoundaryBucketPresent": true,
+          "minTime": 32462.42958,
+          "maxTime": 40687
+        },
+        {
+          "node": "RAIL:HUH:TML",
+          "retainedLabels": 324,
+          "activeLabels": 324,
+          "clockBuckets": 282,
+          "preBoundaryExactClockBuckets": 281,
+          "postBoundaryBucketPresent": true,
+          "minTime": 31020,
+          "maxTime": 40020
+        },
+        {
+          "node": "td:13311",
+          "retainedLabels": 301,
+          "activeLabels": 281,
+          "clockBuckets": 274,
+          "preBoundaryExactClockBuckets": 273,
+          "postBoundaryBucketPresent": true,
+          "minTime": 31658.87888,
+          "maxTime": 42208
+        },
+        {
+          "node": "td:99220",
+          "retainedLabels": 300,
+          "activeLabels": 268,
+          "clockBuckets": 245,
+          "preBoundaryExactClockBuckets": 244,
+          "postBoundaryBucketPresent": true,
+          "minTime": 32225.40834,
+          "maxTime": 40606
+        },
+        {
+          "node": "td:99133",
+          "retainedLabels": 293,
+          "activeLabels": 255,
+          "clockBuckets": 229,
+          "preBoundaryExactClockBuckets": 228,
+          "postBoundaryBucketPresent": true,
+          "minTime": 32219.922840000003,
+          "maxTime": 40603
+        },
+        {
+          "node": "RAIL:HUH:EAL",
+          "retainedLabels": 290,
+          "activeLabels": 290,
+          "clockBuckets": 282,
+          "preBoundaryExactClockBuckets": 281,
+          "postBoundaryBucketPresent": true,
+          "minTime": 31120.6305,
+          "maxTime": 40260
+        },
+        {
+          "node": "RAIL:ADM:EAL",
+          "retainedLabels": 266,
+          "activeLabels": 264,
+          "clockBuckets": 257,
+          "preBoundaryExactClockBuckets": 256,
+          "postBoundaryBucketPresent": true,
+          "minTime": 31800,
+          "maxTime": 40080
+        },
+        {
+          "node": "td:9010",
+          "retainedLabels": 265,
+          "activeLabels": 265,
+          "clockBuckets": 264,
+          "preBoundaryExactClockBuckets": 263,
+          "postBoundaryBucketPresent": true,
+          "minTime": 31193.46438,
+          "maxTime": 43197
+        }
+      ],
+      "atExpanded": 8448,
+      "scanMs": 19.40176999999676
+    },
+    "geometry": {
+      "legs": 29639,
+      "walkLegs": 25746,
+      "walkWithoutGeometry": 25746,
+      "arrays": 1947,
+      "coordinateReferences": 163501,
+      "maxCoordinates": 699,
+      "byKind": {
+        "walk": 0,
+        "wait": 0,
+        "bus": 812,
+        "tram": 996,
+        "metro": 139,
+        "other": 0
+      },
+      "signatureSamples": 31,
+      "signatureTooLarge": 0,
+      "signatureWindowRepeats": 2,
+      "signatureWindowUnique": 29,
+      "signatureWindowCapacity": 256,
+      "signatureEvery": 64,
+      "signatureSampleLimit": 1024
+    },
+    "routeMemos": [
+      {
+        "memoId": 1,
+        "kind": "station",
+        "capacity": 64,
+        "connectionCount": 0,
+        "duplicateIds": 0,
+        "duplicateIdExamples": [],
+        "lookups": 7255,
+        "hits": 1,
+        "misses": 7254,
+        "sets": 7254,
+        "nullSets": 0,
+        "evictions": 7190,
+        "size": 64,
+        "maxSize": 64,
+        "pairedSize": 0,
+        "pinnedSize": 0
+      },
+      {
+        "memoId": 2,
+        "kind": "connection-pair",
+        "capacity": 64,
+        "connectionCount": 307,
+        "duplicateIds": 0,
+        "duplicateIdExamples": [],
+        "lookups": 45000,
+        "hits": 0,
+        "misses": 45000,
+        "sets": 45000,
+        "nullSets": 1,
+        "evictions": 44936,
+        "size": 64,
+        "maxSize": 64,
+        "pairedSize": 64,
+        "pinnedSize": 0
+      }
+    ],
+    "heapUsed": 387653648
+  },
+  "comparisonCfc120": {
+    "completedTimedWalk": {
+      "completed": 7613,
+      "fullFtMs": 40775.15895100028,
+      "loopMs": 20156.019961999868,
+      "temporalPrepMs": 9162.188619999491,
+      "lowerPrepMs": 4884.501544999643,
+      "lowerBuildMs": 0,
+      "otherWallMs": 6572.44882400128
+    },
+    "scheduled": [
+      {
+        "sid": 13,
+        "complete": false,
+        "elapsedMs": 79154.065,
+        "directChildrenMs": {
+          "graph-prepare": 1102.6365080000032,
+          "walk-query": 72033.78252399947
+        },
+        "residualMs": 6017.645968000521
+      }
+    ],
+    "caveat": "Different scalar/log instrumentation and independent single runs; temporal-preparation work removed, but neither run completed, so no end-to-end speedup claim."
+  }
+}

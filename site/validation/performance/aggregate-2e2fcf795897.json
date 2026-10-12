@@ -1,0 +1,14 @@
+{
+  "runtime": "2e2fcf795897",
+  "command": "npm test",
+  "date": "2026-10-12",
+  "tests": 263,
+  "passed": 263,
+  "failed": 0,
+  "cancelled": 0,
+  "skipped": 0,
+  "durationMs": 294981.668753,
+  "exitCode": 0,
+  "logSha256": "726f073b12f78d7f4722def1abff92019443243d82d54d344ec8f18dd25f4afc",
+  "scope": "Full navigation and taxi test aggregate; no production time limit added."
+}

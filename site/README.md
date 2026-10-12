@@ -57,6 +57,8 @@ Run the build before tests that consume production `dist/` assets. The last two 
 
 Review [intermodal validation](validation/intermodal/) and [five-preference validation](validation/preference-matrix/), including runtime identifiers and individual logs. A diagnostic timeout, pending refinement or partial run is not a pass and does not prove that no route exists. Node/DOM-stub and Worker tests do not establish mobile layout, actual browser rendering or device performance.
 
+The [post-v38 investigation](validation/performance/POST-V38.md) separates source-index/cache improvements, exact endpoint failures, current point-matrix results, and the still-unfinished OD36 detailed search. See the [source-point matrix](validation/point-matrix/README.md) for its fixed seed, actual stop/exit/floor identities, five preferences, taxi toggle, and reproducible commands. The runner defaults to a dry plan; a diagnostic observation window never becomes a production routing cutoff.
+
 [README-navigation.md](README-navigation.md) retains detailed implementation and historical investigation notes. Its dated results describe those particular builds; current entry-point behavior is defined here, and current validation evidence belongs to the matching runtime in `validation/`.
 
 ## Attribution
