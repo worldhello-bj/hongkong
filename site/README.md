@@ -62,3 +62,7 @@ Review [intermodal validation](validation/intermodal/) and [five-preference vali
 ## Attribution
 
 Map from Lands Department · © Government of the Hong Kong SAR. Government spatial data are obtained through the CSDI Portal. Taxi road data: © OpenStreetMap contributors, ODbL. Transport and operator sources retain their respective ownership and terms. See [DATA-SOURCES.md](DATA-SOURCES.md) for source-specific attribution, evidence and disclaimers.
+
+### Pacific Place
+
+The integrated mall model has five source-supported levels, existing XYZ passages/facilities and an explicitly selectable station-side F boundary. Floor slabs are schematic display envelopes; LG2 and unverified lifts are not invented. The modeled internal 10:00–22:00 access rule differs from station-side/tenant hours, so the UI offers an explicit time change or separately selected exterior endpoint. See [Pacific Place evidence and 24-case regression](validation/pacific-place/README.md).

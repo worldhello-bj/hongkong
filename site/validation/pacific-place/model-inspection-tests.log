@@ -1,0 +1,26 @@
+✔ successful optional block load refreshes the visible map status, not only internal flags (4.126495ms)
+Actual source route: 12 instructions; 6 exact mall-source instructions resolved
+✔ exact mall edge IDs resolve from block overlay even when journey graph omits building metadata (20.637818ms)
+✔ journey-owned source mall edge works without block lookup; nearby or named points cannot trigger mall (4.035815ms)
+✔ mixed mall/station/outdoor instruction highlights only source mall edges and never projects whole mixed geometry (2.148484ms)
+✔ ordinary indoor railway instructions keep their actual station and mixed stations do not share geometry (3.481237ms)
+✔ actual 10:00 Tamar to Pacific Place L2 instruction selects mall without changing source graphs (595.925902ms)
+✔ five mall source levels, 5 existing lifts, and F approach render without fabricated LG2 (15.072795ms)
+✔ F source-anchor addition is immutable, idempotent and does not alter one route edge (247.568442ms)
+✔ missing evidence, mismatched elevation and source closure prevent new F anchor (6.744318ms)
+✔ closed Three Pacific Place tunnel is excluded from displayed navigable subset (0.291929ms)
+✔ per-floor model keeps finite source elevations and LG1 F context (7.37779ms)
+✔ floor choice names the requested endpoint, only acts on explicit selection, and disposes cleanly (3.903338ms)
+✔ opening suggestion is explicit, source-bounded and preserves endpoints (2.674537ms)
+✔ historical URLs resolve inside one app, with safe standalone navigation states (2.27838ms)
+✔ all historical HTML is replaced, retired UI physically removed, shared 3D retained (25.156103ms)
+✔ station and information screens expose unified actions and evidence boundaries (0.599948ms)
+✔ full source shell: tabs, repeated open/close, hash and back/forward stay unified (385.596359ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2367.376927

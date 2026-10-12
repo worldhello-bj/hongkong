@@ -1,5 +1,5 @@
 // One route namespace for current navigation and historical public entry points.
-export const APP_STAGES = Object.freeze(['home','search','routes','navigation','arrival','orders','account','services','checkout','station','info']);
+export const APP_STAGES = Object.freeze(['home','search','routes','navigation','arrival','orders','account','services','checkout','station','info','mall']);
 export const STATIONS = Object.freeze([
   {id:'ADM',name:'金钟',center:[114.1658,22.2791]},
   {id:'HUH',name:'红磡',center:[114.1817,22.3033]},
@@ -24,8 +24,8 @@ export function parseNavigationLocation(location={}, available={}) {
   const query=new URLSearchParams(location.search??'');
   const [rawHash,hashQuery='']=(location.hash??'').replace(/^#\/?/,'').split('?');
   const hashParams=new URLSearchParams(hashQuery);
-  const oldPage=pathname.split('/').pop();
-  const fallback=oldPage==='metro.html'?'station':oldPage==='research.html'?'info':query.has('station')?'station':'home';
+  const oldPage=pathname.replace(/\/+$/,'').split('/').pop().replace(/\.html$/,'');
+  const fallback=oldPage==='metro'?'station':oldPage==='research'?'info':query.has('station')?'station':'home';
   const stage=normalizeAppStage(rawHash||fallback,available);
   return {stage,station:validStation(hashParams.get('station')??query.get('station'))};
 }

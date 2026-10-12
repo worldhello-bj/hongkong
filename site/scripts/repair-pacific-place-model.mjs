@@ -1,0 +1,14 @@
+import{readFileSync,writeFileSync,mkdirSync}from'node:fs';
+import{gunzipSync,gzipSync}from'node:zlib';
+import{fileURLToPath}from'node:url';
+import{addPacificPlaceSourceAnchor,buildPacificPlaceModel}from'../src/navigation/pacific-place-model.js';
+const root=process.argv[2]??fileURLToPath(new URL('../',import.meta.url));
+const path=root+'/dist/area/admiralty-block-graph.json.gz';
+const before=JSON.parse(gunzipSync(readFileSync(path)));
+const after=addPacificPlaceSourceAnchor(before);
+const model=buildPacificPlaceModel(after);
+if(!model?.f_connection||model.floors.length!==5)throw Error('Pacific Place source anchors or floors no longer match; repair stopped.');
+if(after!==before)writeFileSync(path,gzipSync(JSON.stringify(after)));
+mkdirSync(root+'/dist/preview',{recursive:true});
+writeFileSync(root+'/dist/preview/pacific-place-model.json',JSON.stringify(model));
+console.log('Pacific Place model: '+JSON.stringify(model.summary)+'; no route edge or accessibility flag changed.');

@@ -1,0 +1,432 @@
+{
+  "runtime": "deeb5d2dd3c1",
+  "checked_at": "2026-10-12T13:37:56.772Z",
+  "scope": "Block-graph source route and assembled journey. Not browser UI or whole-Hong-Kong comparison.",
+  "summary": {
+    "physicalEdges": 110,
+    "levels": 5,
+    "entrances": 10,
+    "lifts": 5,
+    "escalators": 11,
+    "strictEligibleLifts": 0
+  },
+  "tests": [
+    {
+      "hour": 8,
+      "need": "ordinary",
+      "floor": "入口自动",
+      "status": "NO_ROUTE",
+      "complete": false,
+      "message": "起点商场/场地在所选香港时刻未开放，或缺少可核验时刻。开放规则：太古廣場平台 开放：ED 10:00–22:00。请选择正确时间，或明确另选公共室外地点；未移动起点。",
+      "kinds": [],
+      "forbidden": [],
+      "wallMs": 3
+    },
+    {
+      "hour": 8,
+      "need": "luggage",
+      "floor": "入口自动",
+      "status": "NO_ROUTE",
+      "complete": false,
+      "message": "起点商场/场地在所选香港时刻未开放，或缺少可核验时刻。开放规则：太古廣場平台 开放：ED 10:00–22:00。请选择正确时间，或明确另选公共室外地点；未移动起点。",
+      "kinds": [],
+      "forbidden": [],
+      "wallMs": 1
+    },
+    {
+      "hour": 8,
+      "need": "accessible",
+      "floor": "入口自动",
+      "status": "NO_ROUTE",
+      "complete": false,
+      "message": "起点商场/场地在所选香港时刻未开放，或缺少可核验时刻。开放规则：太古廣場平台 开放：ED 10:00–22:00。请选择正确时间，或明确另选公共室外地点；未移动起点。",
+      "kinds": [],
+      "forbidden": [],
+      "wallMs": 1
+    },
+    {
+      "hour": 11,
+      "need": "ordinary",
+      "floor": "入口自动",
+      "status": "CONDITIONAL",
+      "complete": true,
+      "minutes": 5.46945,
+      "origin": [
+        114.16471085,
+        22.27798527,
+        10.693
+      ],
+      "kinds": [
+        "walk",
+        "footbridge",
+        "stairs",
+        "escalator",
+        "ramp"
+      ],
+      "forbidden": [],
+      "wallMs": 53
+    },
+    {
+      "hour": 11,
+      "need": "ordinary",
+      "floor": "L2",
+      "status": "CONDITIONAL",
+      "complete": true,
+      "minutes": 5.46945,
+      "origin": [
+        114.16471085,
+        22.27798527,
+        10.693
+      ],
+      "kinds": [
+        "walk",
+        "footbridge",
+        "stairs",
+        "escalator",
+        "ramp"
+      ],
+      "forbidden": [],
+      "wallMs": 27
+    },
+    {
+      "hour": 11,
+      "need": "ordinary",
+      "floor": "L4",
+      "status": "CONDITIONAL",
+      "complete": true,
+      "minutes": 6.605424,
+      "origin": [
+        114.16511999,
+        22.27788563,
+        21.145
+      ],
+      "kinds": [
+        "escalator",
+        "walk",
+        "footbridge",
+        "stairs",
+        "ramp"
+      ],
+      "forbidden": [],
+      "wallMs": 34
+    },
+    {
+      "hour": 11,
+      "need": "ordinary",
+      "floor": "L1",
+      "status": "CONDITIONAL",
+      "complete": true,
+      "minutes": 5.724548,
+      "origin": [
+        114.16479242,
+        22.2779689,
+        6.145
+      ],
+      "kinds": [
+        "escalator",
+        "walk",
+        "footbridge",
+        "stairs",
+        "ramp"
+      ],
+      "forbidden": [],
+      "wallMs": 39
+    },
+    {
+      "hour": 11,
+      "need": "ordinary",
+      "floor": "LG1",
+      "status": "CONDITIONAL",
+      "complete": true,
+      "minutes": 6.405402,
+      "origin": [
+        114.16609174,
+        22.27773558,
+        1
+      ],
+      "kinds": [
+        "walk",
+        "escalator",
+        "stairs",
+        "ramp",
+        "footbridge"
+      ],
+      "forbidden": [],
+      "wallMs": 14
+    },
+    {
+      "hour": 11,
+      "need": "ordinary",
+      "floor": "L3",
+      "status": "CONDITIONAL",
+      "complete": true,
+      "minutes": 6.47379,
+      "origin": [
+        114.1643669,
+        22.27772813,
+        15.287
+      ],
+      "kinds": [
+        "escalator",
+        "walk",
+        "footbridge",
+        "stairs",
+        "ramp"
+      ],
+      "forbidden": [],
+      "wallMs": 13
+    },
+    {
+      "hour": 11,
+      "need": "luggage",
+      "floor": "入口自动",
+      "status": "CONDITIONAL",
+      "complete": true,
+      "minutes": 5.654079,
+      "origin": [
+        114.16471085,
+        22.27798527,
+        10.693
+      ],
+      "kinds": [
+        "walk",
+        "footbridge"
+      ],
+      "forbidden": [],
+      "wallMs": 30
+    },
+    {
+      "hour": 11,
+      "need": "luggage",
+      "floor": "L2",
+      "status": "CONDITIONAL",
+      "complete": true,
+      "minutes": 5.654079,
+      "origin": [
+        114.16471085,
+        22.27798527,
+        10.693
+      ],
+      "kinds": [
+        "walk",
+        "footbridge"
+      ],
+      "forbidden": [],
+      "wallMs": 22
+    },
+    {
+      "hour": 11,
+      "need": "luggage",
+      "floor": "L4",
+      "status": "CONDITIONAL",
+      "complete": true,
+      "minutes": 6.790054,
+      "origin": [
+        114.16511999,
+        22.27788563,
+        21.145
+      ],
+      "kinds": [
+        "escalator",
+        "walk",
+        "footbridge"
+      ],
+      "forbidden": [],
+      "wallMs": 21
+    },
+    {
+      "hour": 11,
+      "need": "luggage",
+      "floor": "L1",
+      "status": "CONDITIONAL",
+      "complete": true,
+      "minutes": 5.909177,
+      "origin": [
+        114.16479242,
+        22.2779689,
+        6.145
+      ],
+      "kinds": [
+        "escalator",
+        "walk",
+        "footbridge"
+      ],
+      "forbidden": [],
+      "wallMs": 13
+    },
+    {
+      "hour": 11,
+      "need": "luggage",
+      "floor": "LG1",
+      "status": "CONDITIONAL",
+      "complete": true,
+      "minutes": 7.693606,
+      "origin": [
+        114.16609174,
+        22.27773558,
+        1
+      ],
+      "kinds": [
+        "walk",
+        "escalator",
+        "lift",
+        "footbridge"
+      ],
+      "forbidden": [],
+      "wallMs": 16
+    },
+    {
+      "hour": 11,
+      "need": "luggage",
+      "floor": "L3",
+      "status": "CONDITIONAL",
+      "complete": true,
+      "minutes": 6.658419,
+      "origin": [
+        114.1643669,
+        22.27772813,
+        15.287
+      ],
+      "kinds": [
+        "escalator",
+        "walk",
+        "footbridge"
+      ],
+      "forbidden": [],
+      "wallMs": 17
+    },
+    {
+      "hour": 11,
+      "need": "accessible",
+      "floor": "入口自动",
+      "status": "CONDITIONAL",
+      "complete": true,
+      "minutes": 5.654079,
+      "origin": [
+        114.16471085,
+        22.27798527,
+        10.693
+      ],
+      "kinds": [
+        "walk",
+        "footbridge"
+      ],
+      "forbidden": [],
+      "wallMs": 28
+    },
+    {
+      "hour": 11,
+      "need": "accessible",
+      "floor": "L2",
+      "status": "CONDITIONAL",
+      "complete": true,
+      "minutes": 5.654079,
+      "origin": [
+        114.16471085,
+        22.27798527,
+        10.693
+      ],
+      "kinds": [
+        "walk",
+        "footbridge"
+      ],
+      "forbidden": [],
+      "wallMs": 24
+    },
+    {
+      "hour": 11,
+      "need": "accessible",
+      "floor": "L4",
+      "status": "NO_ROUTE",
+      "complete": false,
+      "message": "官方路网中未找到符合所选设施与沿途开放时间的连通路线（时限4小时，不安排等待开门或兜圈等待）；不会以直线补接缺失或未核验路段。",
+      "kinds": [],
+      "forbidden": [],
+      "wallMs": 50
+    },
+    {
+      "hour": 11,
+      "need": "accessible",
+      "floor": "L1",
+      "status": "NO_ROUTE",
+      "complete": false,
+      "message": "官方路网中未找到符合所选设施与沿途开放时间的连通路线（时限4小时，不安排等待开门或兜圈等待）；不会以直线补接缺失或未核验路段。",
+      "kinds": [],
+      "forbidden": [],
+      "wallMs": 51
+    },
+    {
+      "hour": 11,
+      "need": "accessible",
+      "floor": "LG1",
+      "status": "NO_ROUTE",
+      "complete": false,
+      "message": "官方路网中未找到符合所选设施与沿途开放时间的连通路线（时限4小时，不安排等待开门或兜圈等待）；不会以直线补接缺失或未核验路段。",
+      "kinds": [],
+      "forbidden": [],
+      "wallMs": 9
+    },
+    {
+      "hour": 11,
+      "need": "accessible",
+      "floor": "L3",
+      "status": "NO_ROUTE",
+      "complete": false,
+      "message": "官方路网中未找到符合所选设施与沿途开放时间的连通路线（时限4小时，不安排等待开门或兜圈等待）；不会以直线补接缺失或未核验路段。",
+      "kinds": [],
+      "forbidden": [],
+      "wallMs": 8
+    },
+    {
+      "hour": 8,
+      "need": "ordinary",
+      "floor": "F外侧显式替代",
+      "status": "CONDITIONAL",
+      "complete": true,
+      "minutes": 6.081017,
+      "origin": [
+        114.16593711,
+        22.27784825,
+        1
+      ],
+      "kinds": [
+        "walk",
+        "escalator",
+        "stairs",
+        "ramp",
+        "footbridge"
+      ],
+      "forbidden": []
+    },
+    {
+      "hour": 8,
+      "need": "luggage",
+      "floor": "F外侧显式替代",
+      "status": "CONDITIONAL",
+      "complete": true,
+      "minutes": 7.369221,
+      "origin": [
+        114.16593711,
+        22.27784825,
+        1
+      ],
+      "kinds": [
+        "walk",
+        "escalator",
+        "lift",
+        "footbridge"
+      ],
+      "forbidden": []
+    },
+    {
+      "hour": 8,
+      "need": "accessible",
+      "floor": "F外侧显式替代",
+      "status": "NO_ROUTE",
+      "complete": false,
+      "message": "官方路网中未找到符合所选设施与沿途开放时间的连通路线（时限4小时，不安排等待开门或兜圈等待）；不会以直线补接缺失或未核验路段。",
+      "kinds": [],
+      "forbidden": []
+    }
+  ]
+}

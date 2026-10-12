@@ -1,0 +1,31 @@
+✔ successful optional block load refreshes the visible map status, not only internal flags (4.086331ms)
+✔ five mall source levels, 5 existing lifts, and F approach render without fabricated LG2 (8.16208ms)
+✔ F source-anchor addition is immutable, idempotent and does not alter one route edge (182.354864ms)
+✔ missing evidence, mismatched elevation and source closure prevent new F anchor (2.85255ms)
+✔ closed Three Pacific Place tunnel is excluded from displayed navigable subset (0.27145ms)
+✔ per-floor model keeps finite source elevations and LG1 F context (2.835415ms)
+✔ floor choice names the requested endpoint, only acts on explicit selection, and disposes cleanly (2.090141ms)
+✔ opening suggestion is explicit, source-bounded and preserves endpoints (3.505583ms)
+✔ all public modes enabled without taxi; no private-car or bike fiction (3.074107ms)
+✔ route chain preserves middle and final taxi, excludes waits (0.321878ms)
+✔ ranking respects actual user priority rather than former mode tab (0.919893ms)
+✔ arrival bridge uses timed service geometry, never a made-up pickup (0.290513ms)
+✔ entry retains detailed routes and Web Workers but exposes exactly two selectors (14.778412ms)
+✔ identical route results collapse; distinct steps remain (0.333046ms)
+✔ two policy controls render and preserve facility/date preferences (2.494604ms)
+✔ user-requested calculation cap removal retains cancel and progress (69.054062ms)
+✔ bounded finite weights, corrupt persistence recovery and reset preserve preset defaults (2.751998ms)
+✔ cached geometry is reused but every adjusted score and winner is recomputed (0.871846ms)
+✔ compact collapsed panel exposes exact formula, units and route-level production contributions (0.776801ms)
+✔ historical URLs resolve inside one app, with safe standalone navigation states (2.541101ms)
+✔ all historical HTML is replaced, retired UI physically removed, shared 3D retained (108.181687ms)
+✔ station and information screens expose unified actions and evidence boundaries (0.695729ms)
+✔ full source shell: tabs, repeated open/close, hash and back/forward stay unified (402.482603ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 685.269001

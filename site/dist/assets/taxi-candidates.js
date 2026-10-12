@@ -1,5 +1,5 @@
-import {simulatedTaxiFareCents} from './route-quote.js?v=5274ca0d14f4';
-import {nearestInterchanges,modeledRoadLink,emptyPublicJourney,composeTaxiJourney} from './taxi-bridge.js?v=5274ca0d14f4';
+import {simulatedTaxiFareCents} from './route-quote.js?v=d701fed258cc';
+import {nearestInterchanges,modeledRoadLink,emptyPublicJourney,composeTaxiJourney} from './taxi-bridge.js?v=d701fed258cc';
 const publicModes=new Set(['metro','rail','bus','tram']);
 const coordinate=point=>point.coordinates??point.coordinate;
 const distance=(a,b)=>Math.hypot((coordinate(a)[0]-coordinate(b)[0])*102900,(coordinate(a)[1]-coordinate(b)[1])*111320);
