@@ -33,7 +33,7 @@ Build with `npm run build` and publish the complete `dist/` directory. The track
 ## Included functionality
 
 - Automatic walking, metro, bus and tram combinations, with an explicit option to include taxi connections
-- Five passenger preferences: 普通出行, 行李 · 少搬运, 扶梯优先, 升降机优先 and 严格无障碍
+- Four passenger preferences: 普通出行, 行李 · 少搬运, 扶梯优先 and 升降机优先
 - Whole-journey comparison covering modeled time, price, waiting, walking and transfers
 - Collapsible production-formula controls: adjust five bounded weights, inspect each route’s score contributions and reset presets; changes rerank cached geometry without another search
 - Parameters remain in memory unless “remember on this device” is enabled; clearing local data resets them
@@ -41,6 +41,8 @@ Build with `npm run build` and publish the complete `dist/` directory. The track
 - Local demonstration orders, simulated payments, account/privacy preferences and service controls
 
 All quoted prices, booking inventory, taxi vehicles and orders are demonstrations. Timing mixes source-backed data with explicit modeling; this is not a live dispatch, ticketing or payment service. Real official data cover only the loaded subsets. A drawn station or a map extent does not establish complete connectivity, accessibility, live facility availability or the best route across Hong Kong.
+
+The former strict-accessibility product mode was removed on 2026-10-13. Legacy saved selections and URLs migrate visibly to ordinary travel and require a fresh route where appropriate. Unknown wheelchair/facility suitability is not counted as a verified capability; the four remaining preferences make no wheelchair-accessibility promise. Source-backed ordinary paths and known physical facilities remain usable subject to their original prohibitions, direction and opening times. Original source evidence is retained, not changed to manufacture eligibility.
 
 For example, MTR's Admiralty–Mong Kok reference is approximately **10 minutes between platforms**, with possible waiting and without station access time. It is shown only as a coverage/reference note; it does not insert the missing Tsuen Wan Line and Mong Kok indoor connections into this demo's graph. See [data sources and limitations](DATA-SOURCES.md).
 
@@ -50,14 +52,16 @@ For example, MTR's Admiralty–Mong Kok reference is approximately **10 minutes 
 npm test
 node --test tests/navigation/unified-ui.test.mjs
 node tests/navigation/run-intermodal-validation.mjs
-node tests/navigation/run-preference-matrix.mjs
+node tests/navigation/four-preference-run.mjs
 ```
 
-Run the build before tests that consume production `dist/` assets. The last two commands write diagnostic results and may take substantially longer than unit tests.
+Run the build before tests that consume production `dist/` assets. The intermodal command writes diagnostic results. The four-preference runner defaults to a dry plan; add --run against a frozen runtime only when ready for its serial 16-cell real-point regression. These diagnostics can take substantially longer than unit tests.
 
-Review [intermodal validation](validation/intermodal/) and [five-preference validation](validation/preference-matrix/), including runtime identifiers and individual logs. A diagnostic timeout, pending refinement or partial run is not a pass and does not prove that no route exists. Node/DOM-stub and Worker tests do not establish mobile layout, actual browser rendering or device performance.
+The current four-preference point regression is recorded for [runtime 59ea6d932726](validation/four-preference-59ea6d932726-301671449fc3/REPORT.md). It covers exact Pacific Place floors and a covered cross-harbour station pair, with both taxi toggles; these exact endpoints have no verified taxi curb connector, so taxi success is not claimed.
 
-The [post-v38 investigation](validation/performance/POST-V38.md) separates source-index/cache improvements, exact endpoint failures, current point-matrix results, and the still-unfinished OD36 detailed search. See the [source-point matrix](validation/point-matrix/README.md) for its fixed seed, actual stop/exit/floor identities, five preferences, taxi toggle, and reproducible commands. The runner defaults to a dry plan; a diagnostic observation window never becomes a production routing cutoff.
+Review [intermodal validation](validation/intermodal/) and the historical [five-preference validation](validation/preference-matrix/), including runtime identifiers and individual logs. Those older five-mode fixtures are retained for reproducibility, not current product options. A diagnostic timeout, pending refinement or partial run is not a pass and does not prove that no route exists. Node/DOM-stub and Worker tests do not establish mobile layout, actual browser rendering or device performance.
+
+The [post-v38 investigation](validation/performance/POST-V38.md) separates source-index/cache improvements, exact endpoint failures, current point-matrix results, and the still-unfinished OD36 detailed search. See the historical [source-point matrix](validation/point-matrix/README.md) for its fixed seed, actual stop/exit/floor identities, five preferences, taxi toggle, and reproducible commands. The runner defaults to a dry plan; a diagnostic observation window never becomes a production routing cutoff.
 
 [README-navigation.md](README-navigation.md) retains detailed implementation and historical investigation notes. Its dated results describe those particular builds; current entry-point behavior is defined here, and current validation evidence belongs to the matching runtime in `validation/`.
 

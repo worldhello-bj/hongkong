@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "runtime": "59ea6d932726",
+  "distSignature": "301671449fc3b5d99fb4b37691beb73c62fc3201fa4624a502bbfce2211ea51c",
+  "distMatchesObserved": true,
+  "resourcesReleased": true,
+  "runExit": "0",
+  "newlyObservedCells": 16,
+  "acceptedCells": 16,
+  "maxRSSMiB": 1521.28515625
+}

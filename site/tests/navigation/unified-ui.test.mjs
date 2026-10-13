@@ -43,7 +43,7 @@ test('station and information screens expose unified actions and evidence bounda
   const panel=stationPanel({station:'KOW'},true,String);
   for(const station of STATIONS)assert.ok(panel.includes(`data-station="${station.id}"`));
   assert.match(panel,/九龙站部分站体为示意/);assert.match(panel,/data-action="close-secondary"/);
-  const info=informationPanel();assert.match(info,/严格无障碍/);assert.match(info,/无真实售票、调度或扣款/);assert.doesNotMatch(info,/href="\.\/(area|metro|research)\.html"/);
+  const info=informationPanel();assert.match(info,/共四种偏好/);assert.doesNotMatch(info,/严格无障碍|共五种偏好/);assert.match(info,/无真实售票、调度或扣款/);assert.doesNotMatch(info,/href="\.\/(area|metro|research)\.html"/);
 });
 
 test('full source shell: tabs, repeated open/close, hash and back/forward stay unified',async()=>{
@@ -67,7 +67,7 @@ test('full source shell: tabs, repeated open/close, hash and back/forward stay u
   assert.ok(source.includes('m as S2,'));source=source.replace('m as S2,','m as originalMobileNavigation,')+'\nconst S2=globalThis.__createMobileNavigation;';
   source=source.replace(/from\s*["'](\.\/[^"']+)["']/g,(_,path)=>{const own=new URL(path,new URL('../../src/navigation/main.recovered.js',import.meta.url));const target=existsSync(fileURLToPath(own))?own:new URL(path,new URL('../../dist/assets/main-integrated.js',import.meta.url));return 'from '+JSON.stringify(target.href)});
   source=source.replaceAll('import.meta.url',JSON.stringify(new URL('../../dist/assets/main-integrated.js',import.meta.url).href));
-  source+='\nexport {r,x,H,writeAppHistory,O,activeScoreWeights};export function uiTestGraph(graph){L1=graph} export function uiTestPreference(value){r.need=value;x()} export function uiTestBlock(graph){z=graph;V=j1({id:"pacific-place"},graph)} export function uiTestJourney(journey){$={journey,lines:[]};H("navigation")} ';
+  source+='\nexport {r,x,H,writeAppHistory,O,activeScoreWeights,z2,P2,H2,u2,currentUiSnapshot};export function uiTestLegacyHistory(need){Q1.get(history.state.navigationApp).need=need;restoreAppLocation({state:history.state})} export function uiTestRememberOrder(id,value){_1.set(id,value)}export function uiTestGraph(graph){L1=graph} export function uiTestPreference(value){r.need=value;x()} export function uiTestBlock(graph){z=graph;V=j1({id:"pacific-place"},graph)} export function uiTestJourney(journey){$={journey,lines:[]};H("navigation")} ';
   const app=await import('data:text/javascript;base64,'+Buffer.from(source).toString('base64'));
   const panel=()=>el('[data-app="panel"]').innerHTML;
   const click=dataset=>listeners.get('#navigation-app:click')({target:{closest:()=>({dataset})}});
@@ -128,5 +128,62 @@ test('full source shell: tabs, repeated open/close, hash and back/forward stay u
   navigationCallbacks.onInspectModel({guidance:{edge_ids:['unknown'],geometry_mode:'official'}});
   assert.equal(app.r.stage,'navigation');assert.equal(entries.length,historyCount,'unknown geometry never opens an unrelated ADM model');
 
+  // Source-shell migration coverage uses only tiny fixtures; never starts a road search.
+  click({tab:'home'});
+  const options=panel().match(/<select data-app="need">([\s\S]*?)<\/select>/)[1];
+  assert.deepEqual([...options.matchAll(/value="([^"]+)"/g)].map(match=>match[1]),['ordinary','luggage','escalator','lift']);
+  click({tab:'account'});assert.doesNotMatch(panel(),/value="accessible"|严格无障碍/);click({tab:'home'});
+  const oldNeeds=['accessible','strict_accessibility','strict-accessibility','wheelchair','strict','step-free'];
+  for(const need of oldNeeds){
+    listeners.get('#navigation-app:change')({target:{dataset:{},value:need,matches:selector=>selector==='[data-app="need"]'}});
+    assert.equal(app.r.need,'ordinary');assert.match(panel(),/旧版出行偏好已重置为普通出行/);
+    app.uiTestPreference('lift');location.hash='#home?need='+need;listeners.get('window:hashchange')();
+    assert.equal(app.r.need,'ordinary');assert.equal(location.hash,'#home');assert.match(panel(),/旧版出行偏好已重置为普通出行/);
+    app.uiTestJourney(inspectedJourney);app.uiTestLegacyHistory(need);
+    assert.equal(app.r.need,'ordinary');assert.equal(app.r.stage,'routes','retired history invalidates cached route before restoring navigation');
+    click({tab:'home'});app.r.need=need;
+    assert.equal(app.currentUiSnapshot().need,'ordinary');app.x();assert.equal(app.r.need,'ordinary');
+  }
+  listeners.get('#navigation-app:change')({target:{dataset:{},value:'lift',matches:selector=>selector==='[data-app="need"]'}});
+  assert.equal(app.r.need,'lift');assert.doesNotMatch(panel(),/旧版出行偏好已重置为普通出行/);
+  for(const hash of ['#accessible','#strict','#home?profile=accessible','#home?preference=strict','#home?mode=wheelchair','#home?accessibility=true']){
+    app.uiTestPreference('lift');location.hash=hash;listeners.get('window:hashchange')();
+    assert.equal(app.r.need,'ordinary');assert.equal(app.r.stage,'home');assert.equal(location.hash,'#home');assert.match(panel(),/旧版出行偏好已重置为普通出行/);
+  }
+  location.hash='#home?need=lift';listeners.get('window:hashchange')();
+  assert.equal(app.r.need,'lift');assert.doesNotMatch(panel(),/旧版出行偏好已重置为普通出行/);
+  app.O.setPreferences({priority:'accessible'});
+  listeners.get('#navigation-app:change')({target:{dataset:{},value:'luggage',matches:selector=>selector==='[data-app="need"]'}});
+  assert.equal(app.O.snapshot().preferences.passengerNeedMigrated,false,'explicit passenger choice clears stored migration notice');
+  app.O.setPreferences({priority:'accessible'});click({tab:'account'});
+  listeners.get('#navigation-app:change')({target:{dataset:{},value:'budget',matches:selector=>selector==='[data-app="account-priority"]'}});
+  assert.equal(app.O.snapshot().preferences.passengerNeedMigrated,false);assert.doesNotMatch(panel(),/旧版出行偏好已重置为普通出行/);click({tab:'home'});
+  assert.ok(app.P2.every(persona=>persona.id!=='accessible'));
+  assert.equal(app.H2([{id:'walk',available:true,minutes:5,cost:0,walkMinutes:5,transfers:0,modes:['walk']}],'accessible').persona.id,'commuter');
 
+  const seedEngine=new app.z2({now:()=>1000});
+  const seedQuote=seedEngine.createQuote({title:'保留订单',origin:'原起点',destination:'原终点',segments:[{mode:'bus',label:'演示公交',durationMinutes:5,distanceM:1000}]});
+  const seedOrder=seedEngine.reserve(seedQuote.id,'reserve-seed');seedEngine.pay(seedOrder.id,'pay-seed');
+  seedEngine.state.privacy.rememberOnDevice=true;seedEngine.state.account.name='保留昵称';
+  for(const need of oldNeeds){
+    const saved=structuredClone(seedEngine.state);saved.preferences.priority=need;saved.preferences.stepFree=true;saved.orders[0].quote.need=need;
+    let serialized=JSON.stringify(saved);
+    const engine=new app.z2({now:()=>1001,storage:{getItem:()=>serialized,setItem:(_key,value)=>{serialized=value},removeItem(){throw Error('must not delete a valid legacy account')}}});
+    assert.equal(engine.snapshot().account.name,'保留昵称');assert.equal(engine.snapshot().preferences.priority,'fast');assert.equal(engine.snapshot().preferences.stepFree,false);
+    assert.equal(engine.snapshot().orders[0].status,'paid');assert.equal(engine.snapshot().orders[0].quote.need,'ordinary');
+    assert.equal(JSON.parse(serialized).preferences.priority,'fast');assert.equal(JSON.parse(serialized).orders[0].paidCents,seedEngine.state.orders[0].paidCents);
+    engine.setPreferences({priority:need,stepFree:true});assert.equal(engine.snapshot().preferences.priority,'fast');assert.equal(engine.snapshot().preferences.stepFree,false);
+    assert.throws(()=>engine.setPreferences({priority:'bad-priority'}),/出行偏好无效/);
+  }
+  const appQuote=app.O.createQuote({title:'缓存订单',origin:'原起点',destination:'原终点',segments:[{mode:'walk',label:'步行',durationMinutes:1,distanceM:20}]});
+  const appOrder=app.O.reserve(appQuote.id,'reserve-cache');app.O.pay(appOrder.id,'pay-cache');
+  for(const need of oldNeeds){
+    const origin={id:'old-origin',name:'原起点',coordinates:[114.165,22.278]},destination={id:'old-destination',name:'原终点',coordinates:[114.166,22.279]};
+    app.uiTestRememberOrder(appOrder.id,{need,origin,destination,choice:{result:{journey:inspectedJourney}}});
+    click({resume:appOrder.id});
+    assert.equal(app.r.need,'ordinary');assert.equal(app.r.stage,'home');assert.equal(app.r.origin,origin);assert.equal(app.r.destination,destination);
+    assert.equal(app.O.snapshot().orders.find(order=>order.id===appOrder.id).status,'paid');assert.match(el('[data-app="status"]').textContent,/旧订单不会再次扣款/);
+  }
+  const choice=app.u2('walk',{journey:{complete:true,phases:[],steps:[]},segments:[{kind:'walk',label:'来源步道',minutes:1,distanceM:20}],lines:[],warnings:[]});
+  assert.equal(choice.accessibility,'unknown');assert.equal(choice.luggageCompatible,undefined,'absence of stairs does not verify luggage capability');
 });

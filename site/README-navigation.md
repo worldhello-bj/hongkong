@@ -2,6 +2,12 @@
 
 Built on the restored latest Site, preserving the large public pedestrian and indoor station datasets rather than the older small-node prototype.
 
+## Current passenger choices (2026-10-13)
+
+The public app now offers only ordinary, luggage, escalator-first and lift-first preferences. The former strict-accessibility mode and its account/scenario entries are retired. Legacy stored/URL selections are explicitly migrated to ordinary and stale route results are not reused. Unknown wheelchair or facility suitability remains unverified and must not be reported as an available capability. This does not remove source-backed ordinary paths or fabricate eligibility.
+
+The five-preference and strict-mode descriptions below record earlier implementation/validation history. Internal source eligibility/barrier checks and their regression fixtures are retained as defensive evidence tests, not as a selectable fifth product mode. Current mode behavior is defined by passenger-preferences.js and README.md.
+
 ## Build
 
 `npm run build` copies editable navigation source and the taxi module/graph/optional government metadata into `dist`. It removes the obsolete 100,000-label abort from the bundled routing engines without removing graph dominance/cycle checks or service-day horizons. Then it produces a deterministic content-derived runtime version and applies it consistently to page JS/CSS, module imports, Worker URLs and lazy taxi imports. `dist/build-meta.json` records that version, preventing old cached code/data from surviving a new deployment.

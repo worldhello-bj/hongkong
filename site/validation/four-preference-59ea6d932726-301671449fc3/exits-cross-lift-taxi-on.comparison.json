@@ -1,0 +1,26 @@
+{
+  "baselinePath": "validation/point-matrix/b702b6920092-f32dfcc1a1ba/exits-cross-lift-taxi-on.json",
+  "baselineReportSha256": "0c9586eb789b2fe8220d55dbc7e03c79c0db9ae3d9f92af9bfb372f4857d40b1",
+  "pass": true,
+  "baselineRuntime": "b702b6920092",
+  "currentRuntime": "59ea6d932726",
+  "baselineSignature": "f32dfcc1a1ba60f3987b03f198560960bd23364aeb86d8600395d1ea86313fc3",
+  "currentSignature": "301671449fc3b5d99fb4b37691beb73c62fc3201fa4624a502bbfce2211ea51c",
+  "retainedPayloadSha256Before": "7ddfc4fd2b76026a937d4c57dc45135c9c856f815203f5f39d32d5e09f68f759",
+  "retainedPayloadSha256After": "7ddfc4fd2b76026a937d4c57dc45135c9c856f815203f5f39d32d5e09f68f759",
+  "differences": [],
+  "classificationBefore": "completed-with-candidates",
+  "classificationAfter": "completed-with-candidates",
+  "newAssertionsPass": true,
+  "timing": {
+    "firstBeforeMs": 9879,
+    "firstAfterMs": 13210,
+    "fullBeforeMs": 37743.977267999995,
+    "fullAfterMs": 42846.216411
+  },
+  "excludedDiagnostics": [
+    "Top-level runtime, observation/performance/Worker/load/cancel timing and audit-file provenance are not candidate data.",
+    "Only candidate.strictSourceAudit.provenance.sha256 is omitted inside retained candidate objects."
+  ],
+  "scope": "All originally retained candidate and unavailable fields, plus exact request/need/taxi/fixture, are compared recursively. Full original raw journey geometry was not saved; its byte equality is not claimed. New routes independently rerun all structural audits."
+}

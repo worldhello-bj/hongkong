@@ -1,7 +1,8 @@
-/** Preferences change generalized cost, never clock time or known closures. */
+import {normalizePassengerNeed,isRemovedPassengerNeed} from './passenger-preferences.js?v=59ea6d932726';
+/** Four public preferences change cost, never clock time or known closures. */
 export const PREFERENCE_PROFILES=Object.freeze({
  ordinary:{engine:'fast',label:'普通出行'},luggage:{engine:'luggage',label:'行李搬运负担低'},
- escalator:{engine:'escalator_first',label:'扶梯优先'},lift:{engine:'lift_first',label:'升降机优先'},accessible:{engine:'accessible',label:'严格无障碍'}
+ escalator:{engine:'escalator_first',label:'扶梯优先'},lift:{engine:'lift_first',label:'升降机优先'}
 });
 const kindOf=edge=>String(edge?.kind??'').toLowerCase().replace(/[\s_-]/g,'');
 export function preferenceAllows(edge,preference){
@@ -25,10 +26,12 @@ export function waitingLabelDominates(a,b,compareTie=(x,y)=>String(x).localeComp
 }
 export function annotatePreferenceResult(result,request={}){
  if(!result?.journey?.complete)return result;
+ const removed=isRemovedPassengerNeed(request.need),originalNeed=request.need;
+ request={...request,need:normalizePassengerNeed(request.need)};
  const carryKind=edge=>['stairs','stairlift','escalator','travelator','movingwalkway'].includes(kindOf(edge));
  const used=new Set(request.need==='luggage'?(result.journey.steps??[]).flatMap(step=>[...(step.guidance?.edge_ids??[]),...(step.edge_ids??[])]).map(id=>id.replace(/:split:\d+$/,'')):[]);
  const needsCarry=request.need==='luggage'&&((result.segments??[]).some(carryKind)||(result.journey.steps??[]).some(step=>carryKind(step)||carryKind(step.guidance))||(result.journey.graph?.edges??[]).some(edge=>used.has(edge.id)&&carryKind(edge)));
- return {...result,requestedPreference:request.need,effectivePreference:PREFERENCE_PROFILES[request.need]?.engine??'fast',...(needsCarry?{luggageCarryRequired:true,needsConfirmation:true,needsFacilityConfirmation:true,accessibilityVerified:false,message:'此备选含楼梯或扶梯，需搬运行李；大件行李优先改用升降机，设施与通行条件待确认。'}:{})};
+ return {...result,requestedPreference:request.need,effectivePreference:PREFERENCE_PROFILES[request.need].engine,accessibility:'unknown',accessibilityVerified:false,...(removed?{preferenceMigration:{from:originalNeed,to:'ordinary'}}:{}),...(needsCarry?{luggageCarryRequired:true,needsConfirmation:true,needsFacilityConfirmation:true,message:'此备选含楼梯或扶梯，需搬运行李；大件行李优先改用升降机，设施与通行条件待确认。'}:{})};
 }
 export function preferenceConnectionPenalty(legs,preference){return (legs??[]).reduce((sum,leg)=>{const duration=Number(leg.minutes??0)*60;return sum+Math.max(0,preferenceCost(leg,duration,preference)-duration);},0)}
 export function preferenceJourneyScore(choice,need){const profile=PREFERENCE_PROFILES[need]?.engine??'fast';return (choice.minutes??Infinity)*60+preferenceConnectionPenalty(choice.result?.segments,profile)+(need==='luggage'?(choice.transfers??0)*180:0)}

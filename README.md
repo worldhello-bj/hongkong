@@ -1,6 +1,6 @@
 # Hong Kong MaaS
 
-The single supported application is the compact, map-led navigation in [`site/`](site/). It includes whole-journey public transport/taxi comparison, five passenger preferences and indoor multi-floor 3D.
+The single supported application is the compact, map-led navigation in [`site/`](site/). It includes whole-journey public transport/taxi comparison, four passenger preferences and indoor multi-floor 3D.
 
 ## Default start, build, test and deploy
 
@@ -26,3 +26,5 @@ See [`site/README.md`](site/README.md), [`site/DATA-SOURCES.md`](site/DATA-SOURC
 The original Python API, routing research, collectors and historical frontend source remain available for reproducibility. They are not the default demo. Their original instructions are archived in [`docs/HISTORICAL-README.md`](docs/HISTORICAL-README.md); backend research tests remain in CI.
 
 Government/CSDI, Transport Department and OpenStreetMap attribution and source-specific terms are retained. The repository code license does not supersede third-party dataset terms. The 25 MB raw OSM XML acquisition is omitted from this app import; its source manifest and derived road graph are included. Existing identical data blobs are reused rather than re-uploaded.
+
+The retired strict-accessibility mode is no longer a product option. Old stored selections and links migrate explicitly to ordinary travel. Unknown facility suitability is never certified by choosing a preference; source-backed ordinary paths and their original restrictions remain intact.

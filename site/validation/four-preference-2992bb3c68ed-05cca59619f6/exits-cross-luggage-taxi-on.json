@@ -1,0 +1,2762 @@
+{
+  "schema": 1,
+  "auditProvenance": {
+    "version": "four-preference-additive-v1",
+    "files": {
+      "four-preference-harness.mjs": "412165188c2f51c37f315a755034b0f89a485469e5b847c70a9e71ecc8f3e8b0",
+      "four-preference-audit.mjs": "2d3d3c6b70d505ff01418d8387433894a476c44482f3124b17c017e90143688c",
+      "four-preference-fixture.mjs": "1bf4d304b4582d41ba7706fbfc424f30b8e763e2b2eba426ad7a70ca0ca2b9ff",
+      "point-matrix-harness.mjs": "eebf77fc8512f208750a9e56d7d9c1f052c865c801b5935a2bb70946a2e248ab",
+      "point-matrix-audit.mjs": "5f9cdfc72e6c0d11e57e9b4cd5d17f9cab8888c2a3feed38c5c32977e6b7dbd3",
+      "point-source-eligibility.mjs": "a424b9710aafc3bf82ab157f6054cb1e62d0eee862df5cf5ab5398272b50c352",
+      "point-matrix-fixture.mjs": "5defc9c9417a73cf2157582405cf05c77220c0122d2a5278d294acff9fc44335"
+    }
+  },
+  "planningStarted": true,
+  "uiStatus": [
+    {
+      "id": "[data-app=\"status\"]",
+      "text": "方案已更新，可以开始这一程。"
+    },
+    {
+      "id": "[data-app=\"taxi-fleet-status\"]",
+      "text": "16 辆游走 · 32 辆执行已有订单 · 0 辆接送本次乘客 · 当前可见 41/48"
+    }
+  ],
+  "rowId": "exits-cross",
+  "label": "金鐘 E2 → 紅磡 B2 升降機入口",
+  "tags": [
+    "metro-exit",
+    "cross-harbour",
+    "lift-source"
+  ],
+  "need": "luggage",
+  "taxi": true,
+  "runtime": {
+    "version": "2992bb3c68ed",
+    "assets": {
+      "area/admiralty-block-graph.json.gz": "388a08977ed80e57295fe1a0d623178e79ecd441cedaa5cfc62fe043385e2298",
+      "area/admiralty-block-manifest.json": "3ca578fed53857bf83cb93c4f51aab5f854656415384f7a869360a983ea07001",
+      "area/area-graph.json.gz": "44901caf6ee1241a23e096eb3d692f96913789fb2c1cbd742da59d8d3730253f",
+      "area/station-graph.json.gz": "446700358a6a56ccb8bbf1e024f6a09da99925e2778331e67c307c135a0f0a1e",
+      "assets/app-transit-worker-CaCMeUxU.js": "c6899cec10a296eabac8c7fb4fb442e66fca8fa11a1fe77587609608e2009149",
+      "assets/app-walk-worker-jk5g-BMr.js": "98d72ad18a0cd0e0c4113c91be09494e5b956582f007dc58496ae033fb28487e",
+      "assets/boot-status.js": "53c430e4c7e6b380f1b3ad694eb75dc5922bc881350e5d42f66102cc595d5817",
+      "assets/demo-fallback.js": "f584df63b6a21ab61464ba35561a00aa31a0354fd65e298ca338d99933d7e054",
+      "assets/integrated-navigation.js": "13bbd416e48a2e305a5dd8dedd7ee9724c2e10e924210cf38508b65a1d71c60d",
+      "assets/intermodal-routing-D8vKT-lN.js": "d589b20b7d97d9856980582f97a1f7e63297653abf2dc19d428402b66f592973",
+      "assets/journey-score.js": "6d6c15b0bf07e51d0a277df81c178fcf870f9f67e3456e296e11dd9362a5a9f2",
+      "assets/kow-c1-corridor-data.js": "a2a51a8d0e54cf4b45f2b7df4c3a3bad366e9b9544e9514b2e208fa7b973ea01",
+      "assets/kow-c1-corridor.js": "32fbcecb479821340087f889028fb05d048b0db608312de4953c45d62d6322bf",
+      "assets/main-integrated.js": "b2c01ed81b6f77b9a8168b7e77ee049bdec982c02b9c0959533f9ac3f72d9057",
+      "assets/maplibre-gl-_-pAOC5F.js": "f0a214ad8b161ece04da3257f8ca6c4ac288c2899fd765e6e4b15e80a44ec224",
+      "assets/metro-planning-CBAOotPX.js": "06ed02f124bef8fc78fa92744cd7ab89bee0c35c515ff828b10d5ff61c5f6f7e",
+      "assets/metro-worker-BDEusPKL.js": "9e40259675fcba99a75be7db1028c71490d96b857652e40896edd03d44ee95df",
+      "assets/mobile-navigation-DfEsS_7b.js": "cfdf09ff1ac63e014b5fd12c84fb0537a2f1e6c4ab5a5a8a55785d77a1d5b7a5",
+      "assets/pacific-place-model.js": "3da1fdc7b90b610ace1e725a5bfc0fc8976b72e602ab582a04635c7a1030b691",
+      "assets/passenger-preferences.js": "6a5f8902fd622e70593514b7decf3b305d50270c5ba681d8ecdb088d4c5c167c",
+      "assets/place-opening.js": "8ca2c3e9a272e61158ad96924ffd1ff0171d23fc3544913c2041dc641f026e57",
+      "assets/preference-routing.js": "7ab591c4ed70ffa38e17cfacac5607f994a3368e5453d216a434072b945d1972",
+      "assets/preload-helper-BXl3LOEh.js": "d887044e7c17fd90344fc4f74f53cac686584daf2a458ab2136d36f1946e9ab6",
+      "assets/public-coverage.js": "7b9a48c85d3731c18b74c8896a0e7949d2b03b9dffd5878066eecc076f443da3",
+      "assets/rail-reference.js": "d443c08eccb243ab64a57203ff992b2f541cdb1053ff41d3d25b09db920300ae",
+      "assets/route-quote.js": "06e944e179be290edea57e0881e1186896282a41782eab426c4a280cc1477171",
+      "assets/routing-queue.js": "8ac1a97a9e60f93ac08c7e67031f51e7820621a8de20b473c142a9e3448bc761",
+      "assets/score-parameters.js": "873bde260c91567725fc7d563d5a0dac21f83e06399d1dccbb2e14b92b0f8697",
+      "assets/station-alternatives.js": "8032d4f80d7e87f7748f66a9f1e729e56a19be9186ad2026899fb8ec30ed99be",
+      "assets/taxi-bridge.js": "0bd24c2ae0d049c3da3349cd38bef4840ba17c1d00cc5259289de10425eb9ffc",
+      "assets/taxi-candidates.js": "1c4562e589ae99021920c080fcd775cfc54648ca232da867aabe661481e5e4e4",
+      "assets/taxi-map.js": "2c9a40cd381f967cec687f7a76c7445e200c8fec180394aeb04daeb1111a0839",
+      "assets/taxi-policy.js": "f8ab1ed20f36906db40e3bf7f7b1a3467b0108f453864f4abfb016c33575f37e",
+      "assets/tram-model-DNfzveeh.js": "375a08cfec820fbec94c8062b9770a25037f53b82740e5c3083586230ddeddc2",
+      "assets/transit-stops.js": "39b812021f7e4b098187bc8fcfeca134fddcc6c8b9a70b8a3ff4bc2378cf3dfa",
+      "assets/ui-content.js": "95867831aab85b6960875b6795a224ec14c689ddb049e80c8115e0707be2985b",
+      "assets/ui-navigation.js": "2e83cfbb182041b2289856ffbcdfaaeb7e86444220e57d41ed320b8f3180cb3d",
+      "assets/zh-BN2SYn6V.js": "0baa0f4a0af2ee59f48d8f79ea5736143840a3dcef5ab0b3088bd716b2dcd980",
+      "taxi/government-data.json": "755ccae78e10a507fbf0537bd5d0597aa4f7bebe97d7b5825199fb0472fdbafb",
+      "taxi/road-graph.js": "78f3f2d916148f6e2d6ab261906e661072f995a64ca027e5642395bf5d6ac48e",
+      "taxi/roaming.js": "abb99083c8a4e9fad90588201080729c185359a50408080bc067c7755ad2717f",
+      "transit/services.json": "59c1c4faef3fadbf32748b0707231f78c3ec36aa4d2edc47de39b8c39485c542",
+      "transit/tram-stops.json": "4b34355bd7c4cceb4e7afbd73fd2e7c49ecc73d89a01f4082468c693cbc56684",
+      "transit/walk-links.json": "5cdff906f22c51146abc9e6e565f0b07a1d57a739239af403482f2dff2c6658c",
+      "transit/walk-links.json.gz": "9505ee7867641cd5c7bbf2a3c76a4216c7cdc05fdd7a72d7da4cf85eb2f6420b"
+    },
+    "signature": "05cca59619f6fad154cec442ac2d70a9d0b83f5164ebc3b335e3243dffdd35e4"
+  },
+  "fixtureSha256": "791197c289bf10787b0104c3d1fc5ba70ec030f305507cc56b924be744588b0e",
+  "date": "2026-10-13T00:21:04.182Z",
+  "request": {
+    "origin": {
+      "id": "ADM:portal:E2",
+      "name": "金鐘站 E2出口",
+      "coordinates": [
+        114.16624518,
+        22.27888752,
+        6
+      ],
+      "node_id": "ADM:N:15dedbcfbae59e",
+      "region_id": "ADM",
+      "station_id": "ADM",
+      "level": "G",
+      "level_name": "Exit E1 & E2 Ground Level",
+      "source_feature_id": "mtr_amenity_point.221",
+      "source_url": "https://portal.csdi.gov.hk/csdi-webpage/apidoc/3d-indoor-mtr-station-map",
+      "evidence": "OFFICIAL_ENTRY_AMENITY_BOUNDED_SAME_HEIGHT_NODE_ASSOCIATION",
+      "lon": 114.16624518,
+      "lat": 22.27888752
+    },
+    "destination": {
+      "id": "HUH:portal:B2-lift",
+      "name": "紅磡站 B2 升降機入口",
+      "coordinates": [
+        114.18193105,
+        22.30359537,
+        13.8
+      ],
+      "node_id": "HUH:N:1883cb44eadc07",
+      "region_id": "HUH",
+      "station_id": "HUH",
+      "level": "G",
+      "level_name": "Exit B2 Elevator Ground Level",
+      "source_feature_id": "mtr_amenity_point.2654",
+      "source_url": "https://portal.csdi.gov.hk/csdi-webpage/apidoc/3d-indoor-mtr-station-map",
+      "evidence": "OFFICIAL_ELEVATOR_AMENITY_WITHIN_1CM_OF_EXISTING_GRAPH_NODE_INSIDE_OFFICIAL_ELEVATOR_UNIT",
+      "lon": 114.18193105,
+      "lat": 22.30359537
+    },
+    "departureDate": "2026-10-12",
+    "departureS": 39600
+  },
+  "state": "complete",
+  "comparisonStatus": "complete",
+  "failedStages": [],
+  "windowMs": 60000,
+  "bootMs": 2817.410707,
+  "wallMs": 38864.32393,
+  "firstObservedMs": 12984.391074000001,
+  "firstResultMs": 12949,
+  "fullCandidateWallMs": 38864.32393,
+  "stoppedWallMs": 38864.32393,
+  "performance": {
+    "warmStart": false,
+    "startedMonotonic": 2904.283189,
+    "startedAt": "2026-10-13T00:20:24.467Z",
+    "origin": "金鐘站 E2出口",
+    "destination": "紅磡站 B2 升降機入口",
+    "stages": [
+      {
+        "id": "public-fast",
+        "durationMs": 12942,
+        "status": "ready",
+        "cached": false
+      },
+      {
+        "id": "taxi",
+        "durationMs": 37174,
+        "status": "ready"
+      },
+      {
+        "id": "walk",
+        "durationMs": 1587,
+        "status": "no-complete-route",
+        "cached": false
+      }
+    ],
+    "firstResultMs": 12949,
+    "totalMs": 38826,
+    "taxiCandidates": [
+      {
+        "side": "last",
+        "id": "td:99131",
+        "status": "not-a-shorter-feeder"
+      }
+    ],
+    "comparisonStatus": "complete",
+    "failedStages": []
+  },
+  "navigationLoad": {
+    "status": "ready",
+    "durationMs": 1632,
+    "block": "ready"
+  },
+  "candidates": [
+    {
+      "id": "transit",
+      "kind": "public",
+      "available": true,
+      "scoringInput": {
+        "id": "transit",
+        "available": true,
+        "minutes": 31,
+        "cost": 7.87,
+        "walkMinutes": 22,
+        "transfers": 0,
+        "result": {
+          "waitMinutes": 3,
+          "segments": [
+            {
+              "kind": "walk",
+              "minutes": 0.25331
+            },
+            {
+              "kind": "lift",
+              "minutes": 2.46509
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.516781
+            },
+            {
+              "kind": "lift",
+              "minutes": 3.431678
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.30846
+            },
+            {
+              "kind": "wait",
+              "minutes": 2.0246820000000296
+            },
+            {
+              "kind": "rail",
+              "minutes": 7
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.452218
+            },
+            {
+              "kind": "lift",
+              "minutes": 2.666745
+            },
+            {
+              "kind": "walk",
+              "minutes": 2.076706
+            },
+            {
+              "kind": "lift",
+              "minutes": 2.378692
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.706864
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.299167
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.060106
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.000531
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.000531
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.060106
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.299167
+            },
+            {
+              "kind": "walk",
+              "minutes": 2.179253
+            },
+            {
+              "kind": "lift",
+              "minutes": 1.566957
+            }
+          ],
+          "luggageCarryRequired": true
+        }
+      },
+      "minutes": 31,
+      "cost": 7.87,
+      "walkMinutes": 22,
+      "waitMinutes": 3,
+      "transfers": 0,
+      "modes": [
+        "walk",
+        "metro",
+        "walk"
+      ],
+      "endpoints": {
+        "origin": {
+          "kind": "exact-source-node",
+          "requested": {
+            "id": "ADM:portal:E2",
+            "node_id": "ADM:N:15dedbcfbae59e",
+            "coordinates": [
+              114.16624518,
+              22.27888752,
+              6
+            ]
+          },
+          "actual": [
+            114.16624518,
+            22.27888752,
+            6
+          ],
+          "routed": [
+            114.16624518,
+            22.27888752,
+            6
+          ],
+          "sourceNodeMatches": true,
+          "nodeTraceable": true,
+          "pass": true
+        },
+        "destination": {
+          "kind": "exact-source-node",
+          "requested": {
+            "id": "HUH:portal:B2-lift",
+            "node_id": "HUH:N:1883cb44eadc07",
+            "coordinates": [
+              114.18193105,
+              22.30359537,
+              13.8
+            ]
+          },
+          "actual": [
+            114.18193105,
+            22.30359537,
+            13.8
+          ],
+          "routed": [
+            114.18193105,
+            22.30359537,
+            13.8
+          ],
+          "sourceNodeMatches": true,
+          "nodeTraceable": true,
+          "pass": true
+        }
+      },
+      "continuity": {
+        "maxGapM": 0,
+        "maxHeightGapM": 0,
+        "gaps": []
+      },
+      "evidence": {
+        "status": "modeled-or-unverified",
+        "modeledSteps": [
+          {
+            "step": 24,
+            "kind": "rail",
+            "geometryMode": "schematic",
+            "blocked": false
+          }
+        ],
+        "unknownEdgeIds": [
+          "WAIT:RAIL:ADM:EAL:40078.51908",
+          "RIDE:scheduled:RAIL:EAL:0:40200:RAIL:ADM:EAL:RAIL:HUH:EAL"
+        ],
+        "transitRideBoundaries": [],
+        "usedEdgeCount": 121,
+        "scheduledEdges": [],
+        "needsFacilityConfirmation": true,
+        "simulationOnly": false,
+        "scenarioOnly": false
+      },
+      "forbidden": [],
+      "strictSourceAudit": null,
+      "fare": {
+        "basis": "Production illustrative quote, not official live tariffs",
+        "available": true,
+        "pricingUnavailable": false,
+        "compacted": true,
+        "totalCents": 787,
+        "sumLegCents": 787,
+        "legs": [
+          {
+            "index": 0,
+            "mode": "walk",
+            "label": "金鐘鐵路站E1及E2出口地面",
+            "amountCents": 0,
+            "durationMinutes": 10.00000100000003,
+            "distanceM": 188.461,
+            "available": true
+          },
+          {
+            "index": 1,
+            "mode": "metro",
+            "label": "东铁线 金钟 → 红磡：金钟站·东铁线站台 → 红磡站·东铁线站台（11:10–11:17）",
+            "amountCents": 787,
+            "durationMinutes": 7,
+            "distanceM": 3396.0022087732223,
+            "available": true
+          },
+          {
+            "index": 2,
+            "mode": "walk",
+            "label": "紅磡鐵路站月台(東鐵綫)",
+            "amountCents": 0,
+            "durationMinutes": 13.747043000000003,
+            "distanceM": 524.533,
+            "available": true
+          }
+        ],
+        "expectedCompactedModes": [
+          "walk",
+          "metro",
+          "walk"
+        ],
+        "legCoverage": true,
+        "pass": true
+      },
+      "checks": {
+        "complete": true,
+        "endpoints": true,
+        "continuous": true,
+        "knownForbiddenEdges": true,
+        "strictSourceEligibility": true,
+        "fare": true,
+        "transitStopBoundaries": true,
+        "taxiPolicy": true,
+        "strictTaxi": true,
+        "luggageTaxiConfirmation": true,
+        "fourPassengerPreference": true,
+        "requestedPreference": true,
+        "effectivePreference": true,
+        "paidJourneyClock": true,
+        "unknownWheelchairEvidenceNotPromoted": true
+      },
+      "pass": true,
+      "warnings": [
+        "使用资料内演示服务日与所选时刻，不是实时到站。",
+        "仅为离线估算步行连接；首末接驳单独标为未核实示意线，距离和时间已计入。",
+        "车站入口按官方三维节点绑定；楼梯、通道及升降机当前状态未核实。",
+        "连接缓存必须与graph_version一致；不能用旧图缓存拼接新图。",
+        "本文件不提供实时发车或候车预测；列车、巴士和电车的班次模拟必须另行标注来源与假设。",
+        "公交、电车及地铁候车使用所选服务时钟；班次或车程含明确标注的演示/频率估算，不是实时车辆预测。",
+        "设施偏好按时间与搬运负担排序，楼梯或扶梯可能作为备选；扶梯优先允许升降机替代，不为凑扶梯数量绕远。站内、首末接入或未分类高差仍可能含楼梯，不能视为全程无楼梯或全扶梯保证。港铁指引要求携带大件行李使用升降机，勿携大件行李乘扶梯或自动行人道；请选升降机方案并遵循现场指示。",
+        "公交和电车上下车高差、车内行李空间及站内升降机连续连接尚未核验；没有已知楼梯不等于已验证的大件行李可行路线。",
+        "站內路線包含付費區，須持有效車票或付款入閘。",
+        "路線為官方三維路網；設施運作、開放狀態及步行時間未經即時核實。",
+        "目的地為官方月台區域內路網節點；未核實月台編號、列車方向或精確上車位置。",
+        "所有步行、车内及换乘时间均为估算；未核验即时封闭、班次、站内设施或实际可通行状况。",
+        "站内接驳采用官方有向 XYZ 路段及所选设施条件重新计算，包含付费区；月台方向、登车边缘和设施即时运作仍未核验。",
+        "服务首末时窗来自港铁；窗口内6分钟发车间隔、7分钟区间车程仅为演示假设，候车由所选时钟计算，非实时班次。",
+        "车站间示意线，不是实测轨道。",
+        "此為 B2 升降機設施點，與 B2 樓梯口分開。原入口至此處的街面繞行與即時運作未核驗。",
+        "推荐成本按步行权重2.5及每次换乘3分钟的研究假设计分；首次上车不算换乘，这些惩罚不增加真实行程时间或候车时间。"
+      ],
+      "requestedPreference": "luggage",
+      "effectivePreference": "luggage",
+      "fourPreferenceAudit": {
+        "clock": {
+          "departureDate": "2026-10-12",
+          "departureTimezone": "Asia/Hong_Kong",
+          "departureS": 39600,
+          "arrivalS": 41444.822639999984,
+          "durationMinutes": 30.747043999999732,
+          "knownMinutes": 30.747039,
+          "segmentMinutes": 30.747044000000027,
+          "reportedDepartureS": 39600,
+          "reportedArrivalS": 41444.82234,
+          "comparisons": {
+            "finiteStepClock": true,
+            "knownJourneyClock": true,
+            "segmentClock": true,
+            "requestedDeparture": true,
+            "reportedArrival": true,
+            "roundedDisplayedMinutes": true,
+            "originOpening": true,
+            "destinationOpening": true,
+            "scheduledFacilities": true
+          },
+          "records": [
+            {
+              "step": 0,
+              "kind": "walk",
+              "phase": 0,
+              "startS": 39600,
+              "endS": 39601.27428,
+              "durationS": 1.27428,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 1,
+              "kind": "walk",
+              "phase": 0,
+              "startS": 39601.27428,
+              "endS": 39611.40696,
+              "durationS": 10.13268,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 2,
+              "kind": "walk",
+              "phase": 0,
+              "startS": 39611.40696,
+              "endS": 39615.1986,
+              "durationS": 3.79164,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 3,
+              "kind": "lift",
+              "phase": 1,
+              "startS": 39615.1986,
+              "endS": 39763.10400000001,
+              "durationS": 147.9054,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 4,
+              "kind": "walk",
+              "phase": 2,
+              "startS": 39763.10400000001,
+              "endS": 39771.55056,
+              "durationS": 8.446560000000002,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 5,
+              "kind": "walk",
+              "phase": 2,
+              "startS": 39771.55056,
+              "endS": 39787.67442,
+              "durationS": 16.12386,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 6,
+              "kind": "walk",
+              "phase": 2,
+              "startS": 39787.67442,
+              "endS": 39792.72972,
+              "durationS": 5.0553,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 7,
+              "kind": "walk",
+              "phase": 2,
+              "startS": 39792.72972,
+              "endS": 39794.11086,
+              "durationS": 1.38114,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 8,
+              "kind": "lift",
+              "phase": 3,
+              "startS": 39794.11086,
+              "endS": 40000.01154,
+              "durationS": 205.90068,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 9,
+              "kind": "walk",
+              "phase": 4,
+              "startS": 40000.01154,
+              "endS": 40002.12636,
+              "durationS": 2.11482,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 10,
+              "kind": "walk",
+              "phase": 4,
+              "startS": 40002.12636,
+              "endS": 40013.13798,
+              "durationS": 11.01162,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 11,
+              "kind": "walk",
+              "phase": 4,
+              "startS": 40013.13798,
+              "endS": 40015.86876,
+              "durationS": 2.7307799999999998,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 12,
+              "kind": "walk",
+              "phase": 4,
+              "startS": 40015.86876,
+              "endS": 40032.1941,
+              "durationS": 16.32534,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 13,
+              "kind": "walk",
+              "phase": 4,
+              "startS": 40032.1941,
+              "endS": 40037.90592,
+              "durationS": 5.71182,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 14,
+              "kind": "walk",
+              "phase": 4,
+              "startS": 40037.90592,
+              "endS": 40040.7111,
+              "durationS": 2.80518,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 15,
+              "kind": "walk",
+              "phase": 4,
+              "startS": 40040.7111,
+              "endS": 40045.39518,
+              "durationS": 4.68408,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 16,
+              "kind": "walk",
+              "phase": 4,
+              "startS": 40045.39518,
+              "endS": 40052.22618,
+              "durationS": 6.831,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 17,
+              "kind": "walk",
+              "phase": 4,
+              "startS": 40052.22618,
+              "endS": 40059.388139999995,
+              "durationS": 7.16196,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 18,
+              "kind": "walk",
+              "phase": 4,
+              "startS": 40059.388139999995,
+              "endS": 40062.208199999994,
+              "durationS": 2.8200600000000002,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 19,
+              "kind": "walk",
+              "phase": 4,
+              "startS": 40062.208199999994,
+              "endS": 40066.58495999999,
+              "durationS": 4.37676,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 20,
+              "kind": "walk",
+              "phase": 4,
+              "startS": 40066.58495999999,
+              "endS": 40075.75169999999,
+              "durationS": 9.16674,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 21,
+              "kind": "walk",
+              "phase": 4,
+              "startS": 40075.75169999999,
+              "endS": 40078.51914,
+              "durationS": 2.7674399999999997,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 22,
+              "kind": "wait",
+              "phase": 5,
+              "startS": 40078.51914,
+              "endS": 40200.00006,
+              "durationS": 121.48092000000177,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 23,
+              "kind": "station_overview",
+              "phase": 6,
+              "startS": 40200.00006,
+              "endS": 40200.00006,
+              "durationS": 0,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 24,
+              "kind": "rail",
+              "phase": 6,
+              "startS": 40200.00006,
+              "endS": 40620.00006,
+              "durationS": 420,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 25,
+              "kind": "walk",
+              "phase": 7,
+              "startS": 40620.00006,
+              "endS": 40634.199779999995,
+              "durationS": 14.199720000000001,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 26,
+              "kind": "walk",
+              "phase": 7,
+              "startS": 40634.199779999995,
+              "endS": 40643.376959999994,
+              "durationS": 9.17718,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 27,
+              "kind": "walk",
+              "phase": 7,
+              "startS": 40643.376959999994,
+              "endS": 40647.13313999999,
+              "durationS": 3.7561800000000005,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 28,
+              "kind": "lift",
+              "phase": 8,
+              "startS": 40647.13313999999,
+              "endS": 40807.13783999999,
+              "durationS": 160.0047,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 29,
+              "kind": "walk",
+              "phase": 9,
+              "startS": 40807.13783999999,
+              "endS": 40808.107979999986,
+              "durationS": 0.97014,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 30,
+              "kind": "walk",
+              "phase": 9,
+              "startS": 40808.107979999986,
+              "endS": 40821.475559999984,
+              "durationS": 13.36758,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 31,
+              "kind": "walk",
+              "phase": 9,
+              "startS": 40821.475559999984,
+              "endS": 40825.126499999984,
+              "durationS": 3.65094,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 32,
+              "kind": "walk",
+              "phase": 9,
+              "startS": 40825.126499999984,
+              "endS": 40829.870099999986,
+              "durationS": 4.743600000000001,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 33,
+              "kind": "walk",
+              "phase": 9,
+              "startS": 40829.870099999986,
+              "endS": 40893.965759999985,
+              "durationS": 64.09566,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 34,
+              "kind": "walk",
+              "phase": 9,
+              "startS": 40893.965759999985,
+              "endS": 40929.97475999998,
+              "durationS": 36.009,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 35,
+              "kind": "walk",
+              "phase": 9,
+              "startS": 40929.97475999998,
+              "endS": 40931.740199999986,
+              "durationS": 1.76544,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 36,
+              "kind": "lift",
+              "phase": 10,
+              "startS": 40931.740199999986,
+              "endS": 41074.461719999985,
+              "durationS": 142.72152,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 37,
+              "kind": "walk",
+              "phase": 11,
+              "startS": 41074.461719999985,
+              "endS": 41076.60119999998,
+              "durationS": 2.1394800000000003,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 38,
+              "kind": "walk",
+              "phase": 11,
+              "startS": 41076.60119999998,
+              "endS": 41086.247459999984,
+              "durationS": 9.64626,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 39,
+              "kind": "walk",
+              "phase": 11,
+              "startS": 41086.247459999984,
+              "endS": 41138.670479999986,
+              "durationS": 52.42302,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 40,
+              "kind": "walk",
+              "phase": 11,
+              "startS": 41138.670479999986,
+              "endS": 41145.729599999984,
+              "durationS": 7.05912,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 41,
+              "kind": "walk",
+              "phase": 11,
+              "startS": 41145.729599999984,
+              "endS": 41173.230179999984,
+              "durationS": 27.50058,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 42,
+              "kind": "walk",
+              "phase": 11,
+              "startS": 41173.230179999984,
+              "endS": 41176.873559999985,
+              "durationS": 3.64338,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 43,
+              "kind": "stairs",
+              "phase": 12,
+              "startS": 41176.873559999985,
+              "endS": 41194.82357999998,
+              "durationS": 17.950020000000002,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 44,
+              "kind": "stairs",
+              "phase": 13,
+              "startS": 41194.82357999998,
+              "endS": 41198.42993999998,
+              "durationS": 3.60636,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 45,
+              "kind": "stairs",
+              "phase": 14,
+              "startS": 41198.42993999998,
+              "endS": 41198.46179999998,
+              "durationS": 0.03186,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 46,
+              "kind": "stairs",
+              "phase": 15,
+              "startS": 41198.46179999998,
+              "endS": 41198.493659999986,
+              "durationS": 0.03186,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 47,
+              "kind": "stairs",
+              "phase": 16,
+              "startS": 41198.493659999986,
+              "endS": 41202.10001999998,
+              "durationS": 3.60636,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 48,
+              "kind": "stairs",
+              "phase": 17,
+              "startS": 41202.10001999998,
+              "endS": 41220.05003999998,
+              "durationS": 17.950020000000002,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 49,
+              "kind": "walk",
+              "phase": 18,
+              "startS": 41220.05003999998,
+              "endS": 41223.69341999998,
+              "durationS": 3.64338,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 50,
+              "kind": "walk",
+              "phase": 18,
+              "startS": 41223.69341999998,
+              "endS": 41250.292079999985,
+              "durationS": 26.598660000000002,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 51,
+              "kind": "walk",
+              "phase": 18,
+              "startS": 41250.292079999985,
+              "endS": 41316.75683999999,
+              "durationS": 66.46476,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 52,
+              "kind": "walk",
+              "phase": 18,
+              "startS": 41316.75683999999,
+              "endS": 41334.43643999999,
+              "durationS": 17.679599999999997,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 53,
+              "kind": "walk",
+              "phase": 18,
+              "startS": 41334.43643999999,
+              "endS": 41347.23161999999,
+              "durationS": 12.79518,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 54,
+              "kind": "walk",
+              "phase": 18,
+              "startS": 41347.23161999999,
+              "endS": 41349.40859999999,
+              "durationS": 2.1769800000000004,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 55,
+              "kind": "walk",
+              "phase": 18,
+              "startS": 41349.40859999999,
+              "endS": 41350.80521999999,
+              "durationS": 1.39662,
+              "scheduledEdgeIds": []
+            },
+            {
+              "step": 56,
+              "kind": "lift",
+              "phase": 19,
+              "startS": 41350.80521999999,
+              "endS": 41444.822639999984,
+              "durationS": 94.01742,
+              "scheduledEdgeIds": []
+            }
+          ],
+          "violations": [],
+          "pass": true
+        },
+        "facilities": [
+          {
+            "id": "ADM:I:1000928688",
+            "physicalId": "ADM:I:1000928688",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000928678",
+            "physicalId": "ADM:I:1000928678",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000928689",
+            "physicalId": "ADM:I:1000928689",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000928677",
+            "physicalId": "ADM:I:1000928677",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000859580",
+            "physicalId": "ADM:I:1000859580",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000859613",
+            "physicalId": "ADM:I:1000859613",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000859480",
+            "physicalId": "ADM:I:1000859480",
+            "kind": "lift",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000860708:r",
+            "physicalId": "ADM:I:1000860708",
+            "kind": "lift",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000859708:r",
+            "physicalId": "ADM:I:1000859708",
+            "kind": "lift",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000859932:r",
+            "physicalId": "ADM:I:1000859932",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000860177",
+            "physicalId": "ADM:I:1000860177",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000859934",
+            "physicalId": "ADM:I:1000859934",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000859935",
+            "physicalId": "ADM:I:1000859935",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000860131:r",
+            "physicalId": "ADM:I:1000860131",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000860130:r",
+            "physicalId": "ADM:I:1000860130",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000859865:r",
+            "physicalId": "ADM:I:1000859865",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000860199:r",
+            "physicalId": "ADM:I:1000860199",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000859710:r",
+            "physicalId": "ADM:I:1000859710",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000861503:r",
+            "physicalId": "ADM:I:1000861503",
+            "kind": "lift",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000862126:r",
+            "physicalId": "ADM:I:1000862126",
+            "kind": "lift",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000860957:r",
+            "physicalId": "ADM:I:1000860957",
+            "kind": "lift",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000862720:r",
+            "physicalId": "ADM:I:1000862720",
+            "kind": "lift",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000862156",
+            "physicalId": "ADM:I:1000862156",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000862498",
+            "physicalId": "ADM:I:1000862498",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000862625",
+            "physicalId": "ADM:I:1000862625",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000862614",
+            "physicalId": "ADM:I:1000862614",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000862615",
+            "physicalId": "ADM:I:1000862615",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000862616",
+            "physicalId": "ADM:I:1000862616",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000862318",
+            "physicalId": "ADM:I:1000862318",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000862319",
+            "physicalId": "ADM:I:1000862319",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000862173",
+            "physicalId": "ADM:I:1000862173",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000862468:r",
+            "physicalId": "ADM:I:1000862468",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000862401:r",
+            "physicalId": "ADM:I:1000862401",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000862463:r",
+            "physicalId": "ADM:I:1000862463",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000862390:r",
+            "physicalId": "ADM:I:1000862390",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000862601",
+            "physicalId": "ADM:I:1000862601",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000862602",
+            "physicalId": "ADM:I:1000862602",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "ADM:I:1000862476:r",
+            "physicalId": "ADM:I:1000862476",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "sourceUrl": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": 2,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000859034:r",
+            "physicalId": "HUH:I:1000859034",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000859084:r",
+            "physicalId": "HUH:I:1000859084",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000859033:r",
+            "physicalId": "HUH:I:1000859033",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000859032:r",
+            "physicalId": "HUH:I:1000859032",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000859145",
+            "physicalId": "HUH:I:1000859145",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000859212",
+            "physicalId": "HUH:I:1000859212",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000859146",
+            "physicalId": "HUH:I:1000859146",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000859103",
+            "physicalId": "HUH:I:1000859103",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000859182",
+            "physicalId": "HUH:I:1000859182",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000859119:r",
+            "physicalId": "HUH:I:1000859119",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858952",
+            "physicalId": "HUH:I:1000858952",
+            "kind": "lift",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000859247",
+            "physicalId": "HUH:I:1000859247",
+            "kind": "lift",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000857950",
+            "physicalId": "HUH:I:1000857950",
+            "kind": "lift",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858155:r",
+            "physicalId": "HUH:I:1000858155",
+            "kind": "lift",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858438",
+            "physicalId": "HUH:I:1000858438",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858352:r",
+            "physicalId": "HUH:I:1000858352",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858292:r",
+            "physicalId": "HUH:I:1000858292",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1001109418:r",
+            "physicalId": "HUH:I:1001109418",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858112:r",
+            "physicalId": "HUH:I:1000858112",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000859434:r",
+            "physicalId": "HUH:I:1000859434",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858296:r",
+            "physicalId": "HUH:I:1000858296",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858295:r",
+            "physicalId": "HUH:I:1000858295",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858294:r",
+            "physicalId": "HUH:I:1000858294",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858540",
+            "physicalId": "HUH:I:1000858540",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858557",
+            "physicalId": "HUH:I:1000858557",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1001084048",
+            "physicalId": "HUH:I:1001084048",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1001084102",
+            "physicalId": "HUH:I:1001084102",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858616",
+            "physicalId": "HUH:I:1000858616",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858559",
+            "physicalId": "HUH:I:1000858559",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858617",
+            "physicalId": "HUH:I:1000858617",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858560",
+            "physicalId": "HUH:I:1000858560",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858618",
+            "physicalId": "HUH:I:1000858618",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858561",
+            "physicalId": "HUH:I:1000858561",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858619",
+            "physicalId": "HUH:I:1000858619",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858562",
+            "physicalId": "HUH:I:1000858562",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858620",
+            "physicalId": "HUH:I:1000858620",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858563",
+            "physicalId": "HUH:I:1000858563",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858621",
+            "physicalId": "HUH:I:1000858621",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858564",
+            "physicalId": "HUH:I:1000858564",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858565",
+            "physicalId": "HUH:I:1000858565",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000859375:r",
+            "physicalId": "HUH:I:1000859375",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000859376:r",
+            "physicalId": "HUH:I:1000859376",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000859377:r",
+            "physicalId": "HUH:I:1000859377",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000859378:r",
+            "physicalId": "HUH:I:1000859378",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858236:r",
+            "physicalId": "HUH:I:1000858236",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858624:r",
+            "physicalId": "HUH:I:1000858624",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858572:r",
+            "physicalId": "HUH:I:1000858572",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858081:r",
+            "physicalId": "HUH:I:1000858081",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858212",
+            "physicalId": "HUH:I:1000858212",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858403:r",
+            "physicalId": "HUH:I:1000858403",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858163",
+            "physicalId": "HUH:I:1000858163",
+            "kind": "lift",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858057:r",
+            "physicalId": "HUH:I:1000858057",
+            "kind": "lift",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000857979",
+            "physicalId": "HUH:I:1000857979",
+            "kind": "lift",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858046",
+            "physicalId": "HUH:I:1000858046",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000857964:r",
+            "physicalId": "HUH:I:1000857964",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000857993:r",
+            "physicalId": "HUH:I:1000857993",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858043:r",
+            "physicalId": "HUH:I:1000858043",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1001084090:r",
+            "physicalId": "HUH:I:1001084090",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1001084080:r",
+            "physicalId": "HUH:I:1001084080",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858042:r",
+            "physicalId": "HUH:I:1000858042",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858041:r",
+            "physicalId": "HUH:I:1000858041",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858002:r",
+            "physicalId": "HUH:I:1000858002",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000857956",
+            "physicalId": "HUH:I:1000857956",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 1,
+            "wheelchairAccess": null,
+            "accessibleEligible": false,
+            "explicitWheelchairEvidence": false
+          },
+          {
+            "id": "HUH:I:1000858063",
+            "physicalId": "HUH:I:1000858063",
+            "kind": "stairs",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 1,
+            "wheelchairAccess": null,
+            "accessibleEligible": false,
+            "explicitWheelchairEvidence": false
+          },
+          {
+            "id": "HUH:I:1000859261:r",
+            "physicalId": "HUH:I:1000859261",
+            "kind": "stairs",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 1,
+            "wheelchairAccess": null,
+            "accessibleEligible": false,
+            "explicitWheelchairEvidence": false
+          },
+          {
+            "id": "HUH:I:1000859262:r",
+            "physicalId": "HUH:I:1000859262",
+            "kind": "stairs",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 1,
+            "wheelchairAccess": null,
+            "accessibleEligible": false,
+            "explicitWheelchairEvidence": false
+          },
+          {
+            "id": "HUH:I:1000859262",
+            "physicalId": "HUH:I:1000859262",
+            "kind": "stairs",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 1,
+            "wheelchairAccess": null,
+            "accessibleEligible": false,
+            "explicitWheelchairEvidence": false
+          },
+          {
+            "id": "HUH:I:1000859261",
+            "physicalId": "HUH:I:1000859261",
+            "kind": "stairs",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 1,
+            "wheelchairAccess": null,
+            "accessibleEligible": false,
+            "explicitWheelchairEvidence": false
+          },
+          {
+            "id": "HUH:I:1000858063:r",
+            "physicalId": "HUH:I:1000858063",
+            "kind": "stairs",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 1,
+            "wheelchairAccess": null,
+            "accessibleEligible": false,
+            "explicitWheelchairEvidence": false
+          },
+          {
+            "id": "HUH:I:1000857956:r",
+            "physicalId": "HUH:I:1000857956",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 1,
+            "wheelchairAccess": null,
+            "accessibleEligible": false,
+            "explicitWheelchairEvidence": false
+          },
+          {
+            "id": "HUH:I:1000858002",
+            "physicalId": "HUH:I:1000858002",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858055:r",
+            "physicalId": "HUH:I:1000858055",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858040:r",
+            "physicalId": "HUH:I:1000858040",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858039:r",
+            "physicalId": "HUH:I:1000858039",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000857996:r",
+            "physicalId": "HUH:I:1000857996",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858037:r",
+            "physicalId": "HUH:I:1000858037",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858054:r",
+            "physicalId": "HUH:I:1000858054",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858007:r",
+            "physicalId": "HUH:I:1000858007",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000857958",
+            "physicalId": "HUH:I:1000857958",
+            "kind": "walk",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858058",
+            "physicalId": "HUH:I:1000858058",
+            "kind": "lift",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          },
+          {
+            "id": "HUH:I:1000858891:r",
+            "physicalId": "HUH:I:1000858891",
+            "kind": "lift",
+            "sourceId": "CSDI-INDOOR",
+            "geometryMode": "official",
+            "wheelchairBarrier": 2,
+            "wheelchairAccess": null,
+            "accessibleEligible": true,
+            "explicitWheelchairEvidence": true
+          }
+        ],
+        "unknownWheelchairEvidenceCount": 8,
+        "accessibilityVerified": false,
+        "qualification": "Legal ordinary/facility-preference use is separate from wheelchair suitability. Unknown suitability is retained as unknown; source lifts are not removed merely because strict mode is removed."
+      }
+    }
+  ],
+  "unavailable": [
+    {
+      "id": "walk",
+      "kind": "public",
+      "available": false,
+      "journeyComplete": false,
+      "failureStatus": "NO_ROUTE",
+      "scenarioOnly": false,
+      "simulationOnly": false,
+      "message": "当前两区之间没有可用的跨海步行路线，请选择“乘地铁”或将起终点设在同一区域。",
+      "warnings": [
+        "站內路線包含付費區，須持有效車票或付款入閘。",
+        "路線為官方三維路網；設施運作、開放狀態及步行時間未經即時核實。",
+        "目的地為官方月台區域內路網節點；未核實月台編號、列車方向或精確上車位置。"
+      ],
+      "minutes": 0,
+      "cost": 0,
+      "modes": [
+        "walk"
+      ],
+      "fareScenario": {
+        "basis": "Production illustrative quote, not official live tariffs",
+        "available": false,
+        "pricingUnavailable": false,
+        "compacted": false,
+        "totalCents": 0,
+        "sumLegCents": 0,
+        "legs": [
+          {
+            "index": 0,
+            "mode": "walk",
+            "label": "当前两区之间没有可用的跨海步行路线，请选择“乘地铁”或将起终点设在同一区域。",
+            "amountCents": 0,
+            "available": false
+          }
+        ],
+        "expectedCompactedModes": [],
+        "legCoverage": null,
+        "pass": true
+      },
+      "alternatives": {},
+      "qualification": "Unavailable journey; a retained fare estimate or preserved endpoint metadata does not establish a source-backed physical connection."
+    },
+    {
+      "id": "taxi-direct",
+      "kind": "direct",
+      "available": false,
+      "journeyComplete": false,
+      "incompleteReason": "UNVERIFIED_ENDPOINT_ACCESS",
+      "endpointAccess": [
+        {
+          "side": "origin",
+          "requested": {
+            "id": "ADM:portal:E2",
+            "node_id": "ADM:N:15dedbcfbae59e",
+            "coordinates": [
+              114.16624518,
+              22.27888752,
+              6
+            ]
+          },
+          "status": "unverified-node-or-floor"
+        },
+        {
+          "side": "destination",
+          "requested": {
+            "id": "HUH:portal:B2-lift",
+            "node_id": "HUH:N:1883cb44eadc07",
+            "coordinates": [
+              114.18193105,
+              22.30359537,
+              13.8
+            ]
+          },
+          "status": "unverified-node-or-floor"
+        }
+      ],
+      "scenarioOnly": true,
+      "simulationOnly": true,
+      "message": "楼层或节点与车行路缘的接续未核验，保留原地点并仅展示费用情景 行李空间待确认：车型、后备厢容量与装卸条件为演示假设，请确认后再乘车。",
+      "warnings": [
+        "演示数据：车辆、订单、票价与接驳时间为模拟，路线沿公开路网生成。",
+        "路缘连接显示为虚线模型：上客侧人行节点来源高度 6 米；车行侧高程与实际高差未核验。",
+        "出租车行驶沿 OpenStreetMap 有向道路；车速、既有订单、候车均为演示数据，不是实时调度。",
+        "本方案含未核验路缘连接，只可用于接续情景演练，不保证现实全程可通行或无障碍。",
+        "起点的原始楼层/来源节点已保留，但尚无可核验人行接续至车行路缘；此费用情景不作为完整可导航方案。",
+        "终点的原始楼层/来源节点已保留，但尚无可核验人行接续至车行路缘；此费用情景不作为完整可导航方案。",
+        "行李空间待确认：车型、后备厢容量与装卸条件为演示假设，请确认后再乘车。"
+      ],
+      "minutes": 13,
+      "cost": 78.8,
+      "modes": [
+        "walk",
+        "taxi",
+        "walk"
+      ],
+      "fareScenario": {
+        "basis": "Production illustrative quote, not official live tariffs",
+        "available": false,
+        "pricingUnavailable": false,
+        "compacted": true,
+        "totalCents": 7880,
+        "sumLegCents": 7880,
+        "legs": [
+          {
+            "index": 0,
+            "mode": "walk",
+            "label": "步行 34 米到预约上客点",
+            "amountCents": 0,
+            "durationMinutes": 3.557876521464654,
+            "distanceM": 33.627225610492516,
+            "available": false
+          },
+          {
+            "index": 1,
+            "mode": "taxi",
+            "label": "乘出租车 DEMO-13 前往 紅磡站 B2 升降機入口（经海底隧道）",
+            "amountCents": 7880,
+            "durationMinutes": 7.533033333333334,
+            "distanceM": 5099.626000000001,
+            "available": false
+          },
+          {
+            "index": 2,
+            "mode": "walk",
+            "label": "步行 92 米到紅磡站 B2 升降機入口",
+            "amountCents": 0,
+            "durationMinutes": 1.2645316986073447,
+            "distanceM": 91.0462822997288,
+            "available": false
+          }
+        ],
+        "expectedCompactedModes": [
+          "walk",
+          "taxi",
+          "walk"
+        ],
+        "legCoverage": true,
+        "pass": true
+      },
+      "alternatives": {},
+      "qualification": "Unavailable journey; a retained fare estimate or preserved endpoint metadata does not establish a source-backed physical connection."
+    }
+  ],
+  "sourceCoverageReview": [],
+  "requestIdentityPreserved": true,
+  "runtimeStable": true,
+  "cancel": {
+    "exercisedWhilePending": false,
+    "observationMs": 509.30029999999533,
+    "planningStopped": true,
+    "pendingBeforeCancel": [],
+    "pendingAfterCancel": [],
+    "noStaleCandidatePublication": true,
+    "pass": true
+  },
+  "workerErrors": [],
+  "workers": [
+    {
+      "id": 1,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "posts": 9,
+      "results": 9,
+      "pending": [],
+      "terminateRequested": true,
+      "exited": true,
+      "exitCode": 1
+    },
+    {
+      "id": 2,
+      "kind": "app-walk-worker-jk5g-BMr.js",
+      "posts": 1,
+      "results": 1,
+      "pending": [],
+      "terminateRequested": true,
+      "exited": true,
+      "exitCode": 1
+    }
+  ],
+  "memory": {
+    "rss": 1443999744,
+    "heapTotal": 568020992,
+    "heapUsed": 491257616,
+    "external": 67308036,
+    "arrayBuffers": 40147439,
+    "maxRSSKiB": 1431052,
+    "samples": [
+      {
+        "routeMs": 2112.6040730000004,
+        "rss": 1029935104,
+        "heapUsed": 397398512
+      },
+      {
+        "routeMs": 3112.4867840000006,
+        "rss": 1067741184,
+        "heapUsed": 289708176
+      },
+      {
+        "routeMs": 4113.079559,
+        "rss": 1151713280,
+        "heapUsed": 289735040
+      },
+      {
+        "routeMs": 5112.446388,
+        "rss": 1208176640,
+        "heapUsed": 289761880
+      },
+      {
+        "routeMs": 6112.441882000001,
+        "rss": 1181913088,
+        "heapUsed": 289789280
+      },
+      {
+        "routeMs": 7112.240788000001,
+        "rss": 1195130880,
+        "heapUsed": 289816248
+      },
+      {
+        "routeMs": 8112.653262,
+        "rss": 1235632128,
+        "heapUsed": 289843120
+      },
+      {
+        "routeMs": 9113.146922,
+        "rss": 1292005376,
+        "heapUsed": 289869992
+      },
+      {
+        "routeMs": 10113.536896,
+        "rss": 1256153088,
+        "heapUsed": 289896864
+      },
+      {
+        "routeMs": 11113.530653,
+        "rss": 1131429888,
+        "heapUsed": 288621144
+      },
+      {
+        "routeMs": 12114.260871,
+        "rss": 1157951488,
+        "heapUsed": 288648344
+      },
+      {
+        "routeMs": 13114.270326,
+        "rss": 1241260032,
+        "heapUsed": 389606192
+      },
+      {
+        "routeMs": 14114.962027,
+        "rss": 1245458432,
+        "heapUsed": 389671568
+      },
+      {
+        "routeMs": 15114.89022,
+        "rss": 1263243264,
+        "heapUsed": 389700104
+      },
+      {
+        "routeMs": 16114.728765000002,
+        "rss": 1308692480,
+        "heapUsed": 389737248
+      },
+      {
+        "routeMs": 17114.344602999998,
+        "rss": 1362345984,
+        "heapUsed": 389763016
+      },
+      {
+        "routeMs": 18114.175488,
+        "rss": 1354752000,
+        "heapUsed": 389788824
+      },
+      {
+        "routeMs": 19114.474557,
+        "rss": 1360814080,
+        "heapUsed": 389930688
+      },
+      {
+        "routeMs": 20115.118642,
+        "rss": 1372413952,
+        "heapUsed": 389955648
+      },
+      {
+        "routeMs": 21115.146224999997,
+        "rss": 1388240896,
+        "heapUsed": 390035848
+      },
+      {
+        "routeMs": 22115.813815,
+        "rss": 1222541312,
+        "heapUsed": 290914344
+      },
+      {
+        "routeMs": 23115.995887999998,
+        "rss": 1239531520,
+        "heapUsed": 290945160
+      },
+      {
+        "routeMs": 24115.501255000003,
+        "rss": 1253376000,
+        "heapUsed": 290969616
+      },
+      {
+        "routeMs": 25115.800637,
+        "rss": 1263853568,
+        "heapUsed": 290995384
+      },
+      {
+        "routeMs": 26115.587975000002,
+        "rss": 1219526656,
+        "heapUsed": 291021152
+      },
+      {
+        "routeMs": 27115.390295999998,
+        "rss": 1221369856,
+        "heapUsed": 291060152
+      },
+      {
+        "routeMs": 28115.359836000003,
+        "rss": 1236951040,
+        "heapUsed": 291101104
+      },
+      {
+        "routeMs": 29115.284169,
+        "rss": 1244839936,
+        "heapUsed": 291126872
+      },
+      {
+        "routeMs": 30115.466096999997,
+        "rss": 1221353472,
+        "heapUsed": 291152640
+      },
+      {
+        "routeMs": 31115.852532999997,
+        "rss": 1235542016,
+        "heapUsed": 291178416
+      },
+      {
+        "routeMs": 32478.911365,
+        "rss": 1339539456,
+        "heapUsed": 367513152
+      },
+      {
+        "routeMs": 33478.793100999996,
+        "rss": 1326198784,
+        "heapUsed": 387409384
+      },
+      {
+        "routeMs": 34478.815536999995,
+        "rss": 1342341120,
+        "heapUsed": 387435152
+      },
+      {
+        "routeMs": 35478.493998,
+        "rss": 1355350016,
+        "heapUsed": 387460920
+      },
+      {
+        "routeMs": 36478.975465999996,
+        "rss": 1366032384,
+        "heapUsed": 387486688
+      },
+      {
+        "routeMs": 37710.650996,
+        "rss": 1438068736,
+        "heapUsed": 393494120
+      },
+      {
+        "routeMs": 38711.088689,
+        "rss": 1362509824,
+        "heapUsed": 393523424
+      }
+    ]
+  },
+  "fetches": [
+    {
+      "path": "/area/station-graph.json.gz",
+      "bytes": 563298,
+      "sha256": "446700358a6a56ccb8bbf1e024f6a09da99925e2778331e67c307c135a0f0a1e"
+    },
+    {
+      "path": "/area/area-graph.json.gz",
+      "bytes": 8036890,
+      "sha256": "44901caf6ee1241a23e096eb3d692f96913789fb2c1cbd742da59d8d3730253f"
+    },
+    {
+      "path": "/transit/services.json",
+      "bytes": 239733,
+      "sha256": "59c1c4faef3fadbf32748b0707231f78c3ec36aa4d2edc47de39b8c39485c542"
+    },
+    {
+      "path": "/transit/walk-links.json.gz",
+      "bytes": 303355,
+      "sha256": "9505ee7867641cd5c7bbf2a3c76a4216c7cdc05fdd7a72d7da4cf85eb2f6420b"
+    },
+    {
+      "path": "/area/admiralty-block-graph.json.gz",
+      "bytes": 686250,
+      "sha256": "388a08977ed80e57295fe1a0d623178e79ecd441cedaa5cfc62fe043385e2298"
+    },
+    {
+      "path": "/preview/station-access-alternatives.json",
+      "status": 404
+    }
+  ],
+  "limitations": [
+    "Production built S1, Worker bundles and pricing code in Node with a DOM stand-in; not actual-browser visual or device-performance QA.",
+    "Data fully ready before plan, fresh process/cold route cache, taxi loaded on demand. Boot cost is separate.",
+    "A 60-second pending observation is never NO_ROUTE. Full comparison time is null unless S1 actually finishes.",
+    "Modeled/schematic geometry is identified separately even when geometrically continuous; source-backed does not mean live verified.",
+    "All costs are the production illustrative model; official tariff correctness is outside this harness."
+  ],
+  "classification": "completed-with-candidates"
+}

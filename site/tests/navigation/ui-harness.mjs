@@ -4,6 +4,8 @@ import {fileURLToPath} from 'node:url';
 import {Worker as NodeWorker} from 'node:worker_threads';
 const base=fileURLToPath(new URL('../../dist',import.meta.url));
 const workers=[];
+const passengerNeeds=['ordinary','luggage','escalator','lift'];
+const retiredPreference=process.env.HK_BOOT_CASE==='retired-preference';
 globalThis.requestAnimationFrame=callback=>setTimeout(callback,0);
 const els=new Map(),listeners=new Map();
 function el(id){if(els.has(id))return els.get(id);const e={id,focus(){},innerHTML:'',textContent:'',style:{},dataset:{},clientWidth:1000,clientHeight:800,childElementCount:0,hidden:false,relList:{supports:()=>true},classList:{add(){},remove(){},toggle(){return false}},querySelector:s=>el(s),querySelectorAll:()=>[],setAttribute(){},getAttribute(){return null},toggleAttribute(){},getBoundingClientRect:()=>({height:200,width:1000,top:0,left:0}),addEventListener:(t,fn)=>listeners.set(id+':'+t,fn),insertAdjacentHTML(_,s){this.innerHTML+=s},matches:()=>false};els.set(id,e);return e}
@@ -31,46 +33,70 @@ if(process.env.HK_STOPS_ONLY){
 }
 if(process.env.HK_BOOT_CASE==='quote-failure')api.O.createQuote=()=>{throw new Error('simulated pricing outage')};
 const click=dataset=>listeners.get('#navigation-app:click')({target:{closest:()=>({dataset})}});
-if(['land','accessible'].includes(process.env.HK_BOOT_CASE)||process.env.HK_LAND_ID){
+if(process.env.HK_BOOT_CASE==='land'||retiredPreference||process.env.HK_LAND_ID){
  const fallbackRequest=process.env.HK_LAND_ID?JSON.parse(readFileSync(new URL('./fixtures/fallback-cross-shore.json',import.meta.url))).find(row=>row.id===Number(process.env.HK_LAND_ID)).request:JSON.parse(readFileSync(new URL('./fixtures/demo-fallback-requests.json',import.meta.url)))[2];
- const coordinates=(process.env.HK_BOOT_CASE==='accessible'||process.env.HK_LAND_ID)?[["origin",fallbackRequest.origin.coordinates],["destination",fallbackRequest.destination.coordinates]]:[['origin',[114.17405457978654,22.312218704929617]],['destination',[114.1750543331201,22.302091394706313]]];
+ const coordinates=(retiredPreference||process.env.HK_LAND_ID)?[["origin",fallbackRequest.origin.coordinates],["destination",fallbackRequest.destination.coordinates]]:[['origin',[114.17405457978654,22.312218704929617]],['destination',[114.1750543331201,22.302091394706313]]];
  for(const [side,coordinate]of coordinates){
   api.r.target=side;api.f.x=(coordinate[0]-114.165)*102900-api.f.w/2;api.f.y=-(coordinate[1]-22.279)*111320-api.f.h/2;click({action:'confirm-map'});await new Promise(r=>setTimeout(r,2));
  }
- if(process.env.HK_BOOT_CASE==='accessible'||process.env.HK_LAND_ID)api.r.need=process.env.HK_NEED??fallbackRequest.need;
+ if(retiredPreference){assert.equal(fallbackRequest.need,'accessible','fixed legacy input is retained');api.r.need=fallbackRequest.need;}
+ else if(process.env.HK_LAND_ID)api.r.need=process.env.HK_NEED??fallbackRequest.need;
  if(process.env.HK_LAND_ID)for(const side of ['origin','destination'])if(fallbackRequest[side].node_id)api.r[side]={...fallbackRequest[side]};
  if(process.env.HK_TAXI==='1')api.t1.add('taxi');else if(process.env.HK_TAXI==='0')api.t1.clear();
  click({action:'plan'});
 }else click({demoPreset:process.env.HK_BOOT_CASE==='block'?'same-shore':'rail'});
 try{
- for(let i=0;i<(process.env.HK_FULL?180:90)&&api.d1&&(process.env.HK_FULL||!api.C.some(c=>c.available)||(process.env.HK_TAXI==='1'&&api.r.need!=='accessible'&&!api.C.some(c=>c.result.taxiQuote)));i++){await new Promise(r=>setTimeout(r,1000));if(i%10===0)console.log("PROGRESS",i,JSON.stringify(window.__navigationPerformance?.stages),api.C.map(c=>[c.id,c.available,c.result.message]));}
+ // Canonical UI/API contract: a retired request cannot remain a fifth option.
+ assert(passengerNeeds.includes(api.r.need),'planner request is a current passenger preference');
+ const preferenceOptions=el('[data-app="panel"]').innerHTML.match(/<select data-app="need">([\s\S]*?)<\/select>/)?.[1];
+ assert.ok(preferenceOptions,'passenger preference control remains visible');
+ assert.deepEqual([...preferenceOptions.matchAll(/value="([^"]+)"/g)].map(match=>match[1]),passengerNeeds);
+ if(retiredPreference){
+  assert.equal(api.r.need,'ordinary');
+  assert.equal(el('[data-app="need"]').value,'ordinary','ordinary is the displayed selection');
+  assert.match(el('[data-app="panel"]').innerHTML,/旧版出行偏好已重置为普通出行/);
+ }
+ for(let i=0;i<(process.env.HK_FULL?180:90)&&api.d1&&(process.env.HK_FULL||!api.C.some(c=>c.available)||(process.env.HK_TAXI==='1'&&!api.C.some(c=>c.result.taxiQuote)));i++){await new Promise(r=>setTimeout(r,1000));if(i%10===0)console.log("PROGRESS",i,JSON.stringify(window.__navigationPerformance?.stages),api.C.map(c=>[c.id,c.available,c.result.message]));}
  for(const choice of api.C.filter(c=>c.available)){const pts=choice.result.journey?.steps?.flatMap(st=>st.guidance?.geometry?.type==='LineString'?st.guidance.geometry.coordinates:[])??[];if(pts.length){for(const [side,point] of [['origin',pts[0]],['destination',pts.at(-1)]]){assert.ok(Math.abs(point[0]-api.r[side].coordinates[0])<1e-7&&Math.abs(point[1]-api.r[side].coordinates[1])<1e-7,'original endpoint XY preserved: '+side);if(api.r[side].coordinates.length===3)assert.ok(Math.abs(point[2]-api.r[side].coordinates[2])<=1,'original endpoint height retained: '+side);}console.log('ENDPOINT_DIAGNOSTIC',JSON.stringify({id:choice.id,first:pts[0],last:pts.at(-1),totalMinutes:choice.result.totalMinutes}));}}
- for(const choice of api.C.filter(c=>c.available)){const result=choice.result,graph=result.journey?.graph;const ids=new Set((result.journey?.steps??[]).flatMap(st=>st.guidance?.edge_ids??[]));const used=(graph?.edges??[]).filter(e=>ids.has(e.id)),closed=new Set((graph?.closures??[]).flatMap(c=>c.physical_ids??[]));const forbidden=used.filter(e=>e.disabled||closed.has(e.physical_id)||(api.r.need==='accessible'&&(e.wheelchair_barrier===1||['stairs','stairlift','escalator','travelator'].includes(e.kind))));assert.equal(forbidden.length,0,'known forbidden source edges absent');console.log('EDGE_AUDIT',JSON.stringify({id:choice.id,usedCount:used.length,forbidden:forbidden.map(e=>e.id),modeled:used.filter(e=>e.source_id?.startsWith('MODELED')).map(e=>({id:e.id,length_m:e.length_m,duration_s:e.duration_s,coordinates:e.coordinates})),sourceIds:[...ids]}));}
+ for(const choice of api.C.filter(c=>c.available)){const result=choice.result,graph=result.journey?.graph;const ids=new Set((result.journey?.steps??[]).flatMap(st=>st.guidance?.edge_ids??[]));const used=(graph?.edges??[]).filter(e=>ids.has(e.id)),closed=new Set((graph?.closures??[]).flatMap(c=>c.physical_ids??[]));const forbidden=used.filter(e=>e.disabled||closed.has(e.physical_id));assert.equal(forbidden.length,0,'known forbidden source edges absent');console.log('EDGE_AUDIT',JSON.stringify({id:choice.id,usedCount:used.length,forbidden:forbidden.map(e=>e.id),modeled:used.filter(e=>e.source_id?.startsWith('MODELED')).map(e=>({id:e.id,length_m:e.length_m,duration_s:e.duration_s,coordinates:e.coordinates})),sourceIds:[...ids]}));}
  console.log('MEMORY_DIAGNOSTIC',JSON.stringify({memory:process.memoryUsage(),maxRSS:process.resourceUsage().maxRSS}));
  console.log('FINAL_DIAGNOSTIC',JSON.stringify(window.__navigationPerformance),api.C.map(c=>[c.id,c.available,c.result.message]),el('[data-app="status"]').textContent);
- if(process.env.HK_BOOT_CASE==='accessible'){
-  // This fixed map-point fixture has unverified first/last access. The old
-  // assertion incorrectly demanded an enabled Start for an ordinary-profile
-  // fallback relabelled strict. A complete strict source path has its own
-  // positive engine tests; this is the explicit negative startup/UI contract.
-  const strictInput=JSON.parse(readFileSync(new URL('./fixtures/demo-fallback-requests.json',import.meta.url)))[2];
-  assert.equal(api.r.need,'accessible');for(const side of ['origin','destination'])assert(api.r[side].coordinates.every((v,i)=>Math.abs(v-strictInput[side].coordinates[i])<1e-7),'strict original endpoint preserved');
-  assert.equal(api.d1,false,'all strict phases actually terminate');
-  assert.equal(window.__navigationPerformance.comparisonStatus,'complete');
-  assert.deepEqual(window.__navigationPerformance.failedStages,[]);
-  assert.equal(api.C.filter(c=>c.available).length,0,'unverified endpoint access cannot become a strict candidate');
-  assert(api.C.some(c=>/无障碍.*尚未核验/.test(c.result.message)),'exact unverified-access reason remains visible');
-  assert(!/data-action="start"(?![^>]*disabled)/.test(el('[data-app="panel"]').innerHTML),'no navigation start for unknown strict access');
-  const beforeStage=api.r.stage;click({action:'start'});assert.equal(api.r.stage,beforeStage,'programmatic start cannot bypass strict completeness');
-  console.log('Strict negative fixture passed: original endpoints retained, unknown access rejected, no enabled or programmatic Start');
- }else{
+ // All remaining preferences describe ordinary passenger routing. Wheelchair
+ // source barriers are still evidence, not blanket bans on ordinary walkways.
+ for(const choice of api.C){
+  assert.notEqual(choice.accessibility,'verified','a passenger preference is not a wheelchair certificate');
+  assert.notEqual(choice.result.accessibilityVerified,true,'unknown capability is never promoted to verified');
+ }
+ if(retiredPreference){
+  const retiredInput=JSON.parse(readFileSync(new URL('./fixtures/demo-fallback-requests.json',import.meta.url)))[2];
+  assert.equal(api.r.need,'ordinary');
+  for(const side of ['origin','destination'])assert(api.r[side].coordinates.every((value,index)=>Math.abs(value-retiredInput[side].coordinates[index])<1e-7),'retired request retains original coordinates: '+side);
+  const availablePublic=api.C.filter(choice=>choice.available&&!choice.result.taxiQuote);
+  assert(availablePublic.length>0,'migrated ordinary request yields a usable public route');
+  for(const choice of availablePublic){
+   assert.equal(choice.result.journey?.complete,true);
+   const points=choice.result.journey.steps.flatMap(step=>step.guidance?.geometry?.type==='LineString'?step.guidance.geometry.coordinates:[]);
+   assert(points.length>1,'migrated route has actual geometry for the endpoint audit');
+   assert.notEqual(choice.result.accessibilityVerified,true);
+  }
+  assert.equal(el('[data-app="need"]').value,'ordinary');
+  assert.match(el('[data-app="panel"]').innerHTML,/旧版出行偏好已重置为普通出行/);
+ }
  assert.ok(/data-action="start"(?![^>]*disabled)/.test(el('[data-app="panel"]').innerHTML),'start button usable immediately');
- if(process.env.HK_TAXI!==undefined){const quotes=api.C.filter(c=>c.result.taxiQuote);assert.equal(quotes.length>0,process.env.HK_TAXI==='1'&&api.r.need!=='accessible','taxi policy matches selected profile/toggle');if(api.r.need==='luggage'&&quotes.length){assert.equal(quotes[0].result.needsVehicleConfirmation,true);assert.equal(quotes[0].result.luggageSpaceUnverified,true);assert.match(quotes[0].result.message,/后备厢容量/);assert.equal(quotes[0].luggageCompatible,undefined);}}
+ if(process.env.HK_TAXI!==undefined){const quotes=api.C.filter(c=>c.result.taxiQuote);assert.equal(quotes.length>0,process.env.HK_TAXI==='1','taxi policy matches selected profile/toggle');if(api.r.need==='luggage'&&quotes.length){assert.equal(quotes[0].result.needsVehicleConfirmation,true);assert.equal(quotes[0].result.luggageSpaceUnverified,true);assert.match(quotes[0].result.message,/后备厢容量/);assert.equal(quotes[0].luggageCompatible,undefined);}}
+ const availableBeforeCancel=api.C.filter(choice=>choice.available).map(choice=>choice.id).sort();
  click({action:'cancel-plan'});
- assert.equal(api.d1,false,'routing completes');
- assert.ok(api.C.some(c=>(process.env.HK_NEED||c.id.startsWith('transit'))&&c.available),'public route stays available with optional resource stalled and legacy taxi-only stored preferences');
+ assert.equal(api.d1,false,'programmatic cancellation stops routing');
+ assert.ok(api.C.some(c=>(retiredPreference||process.env.HK_NEED||c.id.startsWith('transit'))&&c.available),'public route stays available with optional resource stalled and legacy taxi-only stored preferences');
  assert.ok(api.C.some(c=>c.available&&!c.result.taxiQuote&&el('[data-app="panel"]').innerHTML.includes('data-choice="'+c.id+'"')),'usable public result rendered by stable route identity');
- if(api.r.need==='accessible'){const result=api.C.find(c=>c.available);assert.equal(result.accessibility,'unknown');assert.equal(result.result.accessibilityVerified,false);assert.equal(result.result.needsConfirmation,true);}
+ await new Promise(resolve=>setTimeout(resolve,25));
+ assert.equal(api.d1,false,'stale worker completion does not restart cancelled planning');
+ assert.deepEqual(api.C.filter(choice=>choice.available).map(choice=>choice.id).sort(),availableBeforeCancel,'cancellation preserves accepted choices without admitting stale results');
+ if(retiredPreference){
+  click({action:'cancel-plan'});assert.equal(api.d1,false,'repeated programmatic cancellation is safe');
+  assert.equal(api.r.need,'ordinary');
+  assert.ok(/data-action="start"(?![^>]*disabled)/.test(el('[data-app="panel"]').innerHTML),'complete migrated route remains startable after cancellation');
+  console.log('Retired preference migration passed: four visible preferences, ordinary selected, original coordinates retained, usable unverified ordinary route, safe cancel and enabled Start');
  }
  console.log('Full entry + real Worker + rendered public route passed:',process.env.HK_BOOT_CASE??'metadata','stalled; legacy stored taxi-only policy and navigation hash');
 }finally{for(const worker of workers)worker.terminate();}

@@ -5,7 +5,7 @@ const graph=JSON.parse(gunzipSync(readFileSync(new URL('../../dist/area/admiralt
 const model=buildPacificPlaceModel(graph);
 test('five mall source levels, 5 existing lifts, and F approach render without fabricated LG2',()=>{
  assert.deepEqual(model.floors.map(f=>f.name),['LG1','L1','L2','L3','L4']);
- assert.equal(model.summary.lifts,5);assert.equal(model.summary.strictEligibleLifts,0);
+ assert.equal(model.summary.lifts,5);assert.equal(model.summary.wheelchairEvidenceLifts,0);
  assert(model.summary.escalators>=10);assert.equal(model.floors[0].coverage,'partial');
  assert.equal(model.floors[0].edge_ids.length,3);assert.deepEqual(model.f_connection.coordinates,PACIFIC_PLACE_F.coordinates);
  const byId=new Map(graph.edges.map(e=>[e.id,e]));

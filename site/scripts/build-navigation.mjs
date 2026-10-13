@@ -4,7 +4,7 @@ import {fileURLToPath} from 'node:url';
 const root = fileURLToPath(new URL('../', import.meta.url));
 await copyFile(root + 'src/navigation/taxi-policy.js', root + 'dist/assets/taxi-policy.js');
 await copyFile(root + 'src/navigation/preference-routing.js', root + 'dist/assets/preference-routing.js');
-for (const file of ['transit-stops.js','kow-c1-corridor.js','kow-c1-corridor-data.js','ui-navigation.js','ui-content.js','journey-score.js','taxi-candidates.js','rail-reference.js','routing-queue.js','score-parameters.js','place-opening.js','pacific-place-model.js','pacific-place-model.css']) await copyFile(root+'src/navigation/'+file,root+'dist/assets/'+file);
+for (const file of ['passenger-preferences.js','transit-stops.js','kow-c1-corridor.js','kow-c1-corridor-data.js','ui-navigation.js','ui-content.js','journey-score.js','taxi-candidates.js','rail-reference.js','routing-queue.js','score-parameters.js','place-opening.js','pacific-place-model.js','pacific-place-model.css']) await copyFile(root+'src/navigation/'+file,root+'dist/assets/'+file);
 await copyFile(root + 'src/navigation/route-quote.js', root + 'dist/assets/route-quote.js');
 await copyFile(root + 'src/navigation/demo-fallback.js', root + 'dist/assets/demo-fallback.js');
 await copyFile(root + 'src/navigation/public-coverage.js', root + 'dist/assets/public-coverage.js');
