@@ -1,0 +1,23 @@
+/* HK_TERMINAL_PRECHECK_HOOK_BEGIN */
+  if(!t1.has("taxi")&&blockDataState==="ready"&&TERMINAL_POLICY_ID){
+    let terminal;
+    const precheckStart=performance.now(),precheckSlices=[];
+    try {
+    const snapshots=[Q,L1,z,I1,publicWalkLinks];
+    if(!terminalPrecheckState||snapshots.some((value,index)=>value!==terminalPrecheckState.snapshots[index])){
+      terminalPrecheckState={snapshots,evaluate:createExactPublicTerminalPrecheck({area:Q,station:L1,detail:z,services:I1,walkLinks:publicWalkLinks})};
+    }
+    terminal=await runExactPublicTerminalPrecheck(terminalPrecheckState.evaluate,request,{taxiAllowed:false,detailState:blockDataState,policyId:TERMINAL_POLICY_ID},{
+      signal:controller.signal,isCurrent:()=>!stale()&&snapshots.every((value,index)=>value===[Q,L1,z,I1,publicWalkLinks][index]),
+      onSlice:milliseconds=>precheckSlices.push(milliseconds)
+    });
+    } catch { terminal=null; } // Optional proof failures resume unchanged routing.
+    if(stale())return;
+    if(terminal){
+      C=[u2("source-terminal",terminal)];C[0].title="完整行程 · 来源连接缺失";_=C[0];$=_.result;d1=false;pendingDetailRefresh=false;
+      routePerformance.stages.push({id:"source-terminal-connectivity",durationMs:Math.round(performance.now()-precheckStart),status:"no-complete-route",reason:terminal.reason,slices:precheckSlices.length,maxSliceMs:Math.max(0,...precheckSlices)});
+      routePerformance.totalMs=Math.round(performance.now()-started);routePerformance.comparisonStatus="complete";routePerformance.failedStages=[];
+      routingQueue.dispose();baseRouter.dispose();fastPublicRouter?.dispose();b2?.dispose();disposeIdleWalkWorkers();x();Z(terminal.message);return;
+    }
+  }
+/* HK_TERMINAL_PRECHECK_HOOK_END */

@@ -32,3 +32,16 @@ test('expanded data and public selectors retain all original72 test endpoints',(
 test('KOW C1 reaches outside land with Admiralty detail loaded and exact boundary identity',async()=>{
  const result=await f2(requests[1],station,area,router,undefined,block);assert.equal(result.journey?.complete,true,result.message);console.log('KOW full f2 with detail',result.totalMinutes,result.journey.steps.length);
 });
+
+test('EXC B3 exact boundary survives station and Admiralty detail overlays in both directions',async()=>{
+ const point=id=>{const p=station.portals.find(p=>p.id===id);return {...p,lon:p.coordinates[0],lat:p.coordinates[1]};};
+ const b3=point('EXC:portal:B3'),c1=point('ADM:portal:C1');
+ for(const reverse of [false,true]){
+  const origin=reverse?c1:b3,destination=reverse?b3:c1;
+  const result=await f2({origin,destination,mode:'walk',need:'ordinary',departureS:28800,departureDate:'2026-10-13'},station,area,router,undefined,block);
+  assert.equal(result.journey?.complete,true,result.message);
+  assert.deepEqual(result.routedEndpoints,{origin:origin.coordinates,destination:destination.coordinates});
+  assert.ok(result.lines.length&&result.lines.every(line=>line.official));
+  assert.ok(!result.segments.some(segment=>['rail','station_access','access_connector'].includes(segment.kind)));
+ }
+});

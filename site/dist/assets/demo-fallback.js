@@ -1,4 +1,4 @@
-import {preferenceAllows,annotatePreferenceResult,PREFERENCE_PROFILES} from "./preference-routing.js?v=80559fd92aa0";
+import {preferenceAllows,annotatePreferenceResult,PREFERENCE_PROFILES} from "./preference-routing.js?v=ac80b061436c";
 /** Unknown facilities can support a labelled demo, never accessibility certification. */
 const accessibilityGraphCache = new WeakMap();
 const walkLinksCache = new WeakMap();

@@ -1,0 +1,284 @@
+{
+  "at": "2026-10-13T15:53:18.318Z",
+  "runtime": "616dc1f931e4",
+  "request": {
+    "origin": {
+      "id": "AUS:portal:D2",
+      "name": "柯士甸站 D2出口",
+      "detail": "车站出入口 · 柯士甸 AUS",
+      "lon": 114.16673881,
+      "lat": 22.30339902,
+      "coordinates": [
+        114.16673881,
+        22.30339902,
+        5.6
+      ],
+      "node_id": "AUS:N:7144fc7f1bf80b"
+    },
+    "destination": {
+      "id": "AUS:portal:F",
+      "name": "柯士甸站 F 楼梯口",
+      "detail": "车站出入口 · 柯士甸 AUS",
+      "lon": 114.16754163,
+      "lat": 22.30313108,
+      "coordinates": [
+        114.16754163,
+        22.30313108,
+        5.6
+      ],
+      "node_id": "AUS:N:4ab0a937f564e0"
+    },
+    "mode": "transit",
+    "need": "escalator",
+    "departureDate": "2026-10-13",
+    "departureS": 39600,
+    "allowedTransitModes": [
+      "metro",
+      "bus",
+      "tram"
+    ]
+  },
+  "source": "Exact s2(Q,L1,I1,z) extracted unchanged from production source; real translation; unrelated high-speed list empty. All original graph data and endpoint identities unchanged. This is a timer-clamp simulation, not a real-browser route run.",
+  "runs": [
+    {
+      "version": "before",
+      "simulatedWaitMs": 0,
+      "yields": 802,
+      "simulatedTotalWaitMs": 0,
+      "actualCPUWallMs": 434.574744,
+      "result": {
+        "failureStatus": "NO_ROUTE",
+        "reason": "SOURCE_TERMINAL_ISOLATED",
+        "warnings": [],
+        "lines": [],
+        "message": "所选终点在已载入路网中缺少与其他道路及公共交通连接的完整通道。已保留原起终点；这不代表现实中不可达，也不会自动改用附近入口。",
+        "terminalProof": {
+          "policyId": "hongkong-public-terminal-ingress-v1",
+          "destinationNodeId": "AUS:N:4ab0a937f564e0",
+          "originNodeId": "AUS:N:7144fc7f1bf80b",
+          "graphVersions": [
+            "fcbae8ea6df044aa",
+            "b1e24d8ef9214320",
+            "19aebcac62f227eb:pacific-f-anchor-v1"
+          ],
+          "servicesVersion": 1,
+          "walkLinksGraphVersion": "fcbae8ea6df044aa",
+          "closureNodeIds": [
+            "AUS:N:1b2b009de41d3d",
+            "AUS:N:234f78ee45e419",
+            "AUS:N:4ab0a937f564e0",
+            "AUS:N:53946ebcf53cdd",
+            "AUS:N:7035fe7ce27454",
+            "AUS:N:b420c1bf8892e2",
+            "AUS:N:df9f0f884a3612"
+          ],
+          "closureSize": 7,
+          "allSourceEdgesAdmitted": true,
+          "allServiceTimesAdmitted": true,
+          "modalAnchorsInClosure": 0,
+          "outdoorProjectionEdgesInClosure": 0
+        }
+      }
+    },
+    {
+      "version": "after",
+      "simulatedWaitMs": 0,
+      "yields": 802,
+      "simulatedTotalWaitMs": 0,
+      "actualCPUWallMs": 457.3164589999999,
+      "result": {
+        "failureStatus": "NO_ROUTE",
+        "reason": "SOURCE_TERMINAL_ISOLATED",
+        "warnings": [],
+        "lines": [],
+        "message": "所选终点在已载入路网中缺少与其他道路及公共交通连接的完整通道。已保留原起终点；这不代表现实中不可达，也不会自动改用附近入口。",
+        "terminalProof": {
+          "policyId": "hongkong-public-terminal-ingress-v1",
+          "destinationNodeId": "AUS:N:4ab0a937f564e0",
+          "originNodeId": "AUS:N:7144fc7f1bf80b",
+          "graphVersions": [
+            "fcbae8ea6df044aa",
+            "b1e24d8ef9214320",
+            "19aebcac62f227eb:pacific-f-anchor-v1"
+          ],
+          "servicesVersion": 1,
+          "walkLinksGraphVersion": "fcbae8ea6df044aa",
+          "closureNodeIds": [
+            "AUS:N:1b2b009de41d3d",
+            "AUS:N:234f78ee45e419",
+            "AUS:N:4ab0a937f564e0",
+            "AUS:N:53946ebcf53cdd",
+            "AUS:N:7035fe7ce27454",
+            "AUS:N:b420c1bf8892e2",
+            "AUS:N:df9f0f884a3612"
+          ],
+          "closureSize": 7,
+          "allSourceEdgesAdmitted": true,
+          "allServiceTimesAdmitted": true,
+          "modalAnchorsInClosure": 0,
+          "outdoorProjectionEdgesInClosure": 0
+        }
+      }
+    },
+    {
+      "version": "before",
+      "simulatedWaitMs": 4,
+      "yields": 25656,
+      "simulatedTotalWaitMs": 102624,
+      "actualCPUWallMs": 387.8417650000001,
+      "result": {
+        "failureStatus": "NO_ROUTE",
+        "reason": "SOURCE_TERMINAL_ISOLATED",
+        "warnings": [],
+        "lines": [],
+        "message": "所选终点在已载入路网中缺少与其他道路及公共交通连接的完整通道。已保留原起终点；这不代表现实中不可达，也不会自动改用附近入口。",
+        "terminalProof": {
+          "policyId": "hongkong-public-terminal-ingress-v1",
+          "destinationNodeId": "AUS:N:4ab0a937f564e0",
+          "originNodeId": "AUS:N:7144fc7f1bf80b",
+          "graphVersions": [
+            "fcbae8ea6df044aa",
+            "b1e24d8ef9214320",
+            "19aebcac62f227eb:pacific-f-anchor-v1"
+          ],
+          "servicesVersion": 1,
+          "walkLinksGraphVersion": "fcbae8ea6df044aa",
+          "closureNodeIds": [
+            "AUS:N:1b2b009de41d3d",
+            "AUS:N:234f78ee45e419",
+            "AUS:N:4ab0a937f564e0",
+            "AUS:N:53946ebcf53cdd",
+            "AUS:N:7035fe7ce27454",
+            "AUS:N:b420c1bf8892e2",
+            "AUS:N:df9f0f884a3612"
+          ],
+          "closureSize": 7,
+          "allSourceEdgesAdmitted": true,
+          "allServiceTimesAdmitted": true,
+          "modalAnchorsInClosure": 0,
+          "outdoorProjectionEdgesInClosure": 0
+        }
+      }
+    },
+    {
+      "version": "after",
+      "simulatedWaitMs": 4,
+      "yields": 802,
+      "simulatedTotalWaitMs": 3208,
+      "actualCPUWallMs": 371.34799999999996,
+      "result": {
+        "failureStatus": "NO_ROUTE",
+        "reason": "SOURCE_TERMINAL_ISOLATED",
+        "warnings": [],
+        "lines": [],
+        "message": "所选终点在已载入路网中缺少与其他道路及公共交通连接的完整通道。已保留原起终点；这不代表现实中不可达，也不会自动改用附近入口。",
+        "terminalProof": {
+          "policyId": "hongkong-public-terminal-ingress-v1",
+          "destinationNodeId": "AUS:N:4ab0a937f564e0",
+          "originNodeId": "AUS:N:7144fc7f1bf80b",
+          "graphVersions": [
+            "fcbae8ea6df044aa",
+            "b1e24d8ef9214320",
+            "19aebcac62f227eb:pacific-f-anchor-v1"
+          ],
+          "servicesVersion": 1,
+          "walkLinksGraphVersion": "fcbae8ea6df044aa",
+          "closureNodeIds": [
+            "AUS:N:1b2b009de41d3d",
+            "AUS:N:234f78ee45e419",
+            "AUS:N:4ab0a937f564e0",
+            "AUS:N:53946ebcf53cdd",
+            "AUS:N:7035fe7ce27454",
+            "AUS:N:b420c1bf8892e2",
+            "AUS:N:df9f0f884a3612"
+          ],
+          "closureSize": 7,
+          "allSourceEdgesAdmitted": true,
+          "allServiceTimesAdmitted": true,
+          "modalAnchorsInClosure": 0,
+          "outdoorProjectionEdgesInClosure": 0
+        }
+      }
+    },
+    {
+      "version": "before",
+      "simulatedWaitMs": 100,
+      "yields": 25656,
+      "simulatedTotalWaitMs": 2565600,
+      "actualCPUWallMs": 349.0120999999999,
+      "result": {
+        "failureStatus": "NO_ROUTE",
+        "reason": "SOURCE_TERMINAL_ISOLATED",
+        "warnings": [],
+        "lines": [],
+        "message": "所选终点在已载入路网中缺少与其他道路及公共交通连接的完整通道。已保留原起终点；这不代表现实中不可达，也不会自动改用附近入口。",
+        "terminalProof": {
+          "policyId": "hongkong-public-terminal-ingress-v1",
+          "destinationNodeId": "AUS:N:4ab0a937f564e0",
+          "originNodeId": "AUS:N:7144fc7f1bf80b",
+          "graphVersions": [
+            "fcbae8ea6df044aa",
+            "b1e24d8ef9214320",
+            "19aebcac62f227eb:pacific-f-anchor-v1"
+          ],
+          "servicesVersion": 1,
+          "walkLinksGraphVersion": "fcbae8ea6df044aa",
+          "closureNodeIds": [
+            "AUS:N:1b2b009de41d3d",
+            "AUS:N:234f78ee45e419",
+            "AUS:N:4ab0a937f564e0",
+            "AUS:N:53946ebcf53cdd",
+            "AUS:N:7035fe7ce27454",
+            "AUS:N:b420c1bf8892e2",
+            "AUS:N:df9f0f884a3612"
+          ],
+          "closureSize": 7,
+          "allSourceEdgesAdmitted": true,
+          "allServiceTimesAdmitted": true,
+          "modalAnchorsInClosure": 0,
+          "outdoorProjectionEdgesInClosure": 0
+        }
+      }
+    },
+    {
+      "version": "after",
+      "simulatedWaitMs": 100,
+      "yields": 802,
+      "simulatedTotalWaitMs": 80200,
+      "actualCPUWallMs": 353.7513249999997,
+      "result": {
+        "failureStatus": "NO_ROUTE",
+        "reason": "SOURCE_TERMINAL_ISOLATED",
+        "warnings": [],
+        "lines": [],
+        "message": "所选终点在已载入路网中缺少与其他道路及公共交通连接的完整通道。已保留原起终点；这不代表现实中不可达，也不会自动改用附近入口。",
+        "terminalProof": {
+          "policyId": "hongkong-public-terminal-ingress-v1",
+          "destinationNodeId": "AUS:N:4ab0a937f564e0",
+          "originNodeId": "AUS:N:7144fc7f1bf80b",
+          "graphVersions": [
+            "fcbae8ea6df044aa",
+            "b1e24d8ef9214320",
+            "19aebcac62f227eb:pacific-f-anchor-v1"
+          ],
+          "servicesVersion": 1,
+          "walkLinksGraphVersion": "fcbae8ea6df044aa",
+          "closureNodeIds": [
+            "AUS:N:1b2b009de41d3d",
+            "AUS:N:234f78ee45e419",
+            "AUS:N:4ab0a937f564e0",
+            "AUS:N:53946ebcf53cdd",
+            "AUS:N:7035fe7ce27454",
+            "AUS:N:b420c1bf8892e2",
+            "AUS:N:df9f0f884a3612"
+          ],
+          "closureSize": 7,
+          "allSourceEdgesAdmitted": true,
+          "allServiceTimesAdmitted": true,
+          "modalAnchorsInClosure": 0,
+          "outdoorProjectionEdgesInClosure": 0
+        }
+      }
+    }
+  ]
+}

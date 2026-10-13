@@ -1,0 +1,1829 @@
+{
+  "schema": 1,
+  "selectionSeed": 20261013,
+  "departureTimezone": "Asia/Hong_Kong",
+  "preferences": [
+    "ordinary",
+    "luggage",
+    "escalator",
+    "lift"
+  ],
+  "taxi": [
+    false,
+    true
+  ],
+  "observationWindowMs": 60000,
+  "externalWatchdogMs": 90000,
+  "sources": {
+    "area/station-graph.json.gz": "446700358a6a56ccb8bbf1e024f6a09da99925e2778331e67c307c135a0f0a1e",
+    "area/admiralty-block-graph.json.gz": "388a08977ed80e57295fe1a0d623178e79ecd441cedaa5cfc62fe043385e2298",
+    "transit/services.json": "59c1c4faef3fadbf32748b0707231f78c3ec36aa4d2edc47de39b8c39485c542"
+  },
+  "landFixture": {
+    "path": "tests/navigation/fixtures/land-coverage-72.json",
+    "sha256": "b9ced3ec573b02ccfb972bf2179c60b2c27a2ff30bbe0416ddc074a8d0581f15",
+    "rowIndices": [
+      1,
+      1,
+      19,
+      33
+    ],
+    "seed": 20261011,
+    "rowIndexBase": 1
+  },
+  "floors": [
+    {
+      "id": "250000101",
+      "name": "LG1",
+      "portals": [
+        {
+          "id": "ADM:block:pacific-place:floor:250000101:1",
+          "name": "太古广场 · LG1 官方通道点 1",
+          "coordinates": [
+            114.16609174,
+            22.27773558,
+            1
+          ],
+          "node_id": "ADM:N:579953c580796b",
+          "region_id": "ADM",
+          "level": "LG1",
+          "level_name": "LG1",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        },
+        {
+          "id": "ADM:block:pacific-place:floor:250000101:2",
+          "name": "太古广场 · LG1 官方通道点 2",
+          "coordinates": [
+            114.16619063,
+            22.27760704,
+            1
+          ],
+          "node_id": "ADM:N:d1ed689024436d",
+          "region_id": "ADM",
+          "level": "LG1",
+          "level_name": "LG1",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        }
+      ]
+    },
+    {
+      "id": "250000074",
+      "name": "L1",
+      "portals": [
+        {
+          "id": "ADM:block:pacific-place:floor:250000074:1",
+          "name": "太古广场 · L1 官方通道点 1",
+          "coordinates": [
+            114.16580273,
+            22.27778678,
+            5.909
+          ],
+          "node_id": "ADM:N:0b438a242f899a",
+          "region_id": "ADM",
+          "level": "L1",
+          "level_name": "L1",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        },
+        {
+          "id": "ADM:block:pacific-place:floor:250000074:2",
+          "name": "太古广场 · L1 官方通道点 2",
+          "coordinates": [
+            114.16620019,
+            22.27770334,
+            5.909
+          ],
+          "node_id": "ADM:N:67f8a9baedcc67",
+          "region_id": "ADM",
+          "level": "L1",
+          "level_name": "L1",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        },
+        {
+          "id": "ADM:block:pacific-place:floor:250000074:3",
+          "name": "太古广场 · L1 官方通道点 3",
+          "coordinates": [
+            114.1658034,
+            22.27779491,
+            5.909
+          ],
+          "node_id": "ADM:N:7afbd97f467b10",
+          "region_id": "ADM",
+          "level": "L1",
+          "level_name": "L1",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        },
+        {
+          "id": "ADM:block:pacific-place:floor:250000074:4",
+          "name": "太古广场 · L1 官方通道点 4",
+          "coordinates": [
+            114.16446523,
+            22.27785669,
+            6.1
+          ],
+          "node_id": "ADM:N:8d048f2ef2dfe7",
+          "region_id": "ADM",
+          "level": "L1",
+          "level_name": "L1",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        },
+        {
+          "id": "ADM:block:pacific-place:floor:250000074:5",
+          "name": "太古广场 · L1 官方通道点 5",
+          "coordinates": [
+            114.16618791,
+            22.27772371,
+            5.909
+          ],
+          "node_id": "ADM:N:9442a226b2ff57",
+          "region_id": "ADM",
+          "level": "L1",
+          "level_name": "L1",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        },
+        {
+          "id": "ADM:block:pacific-place:floor:250000074:6",
+          "name": "太古广场 · L1 官方通道点 6",
+          "coordinates": [
+            114.16479242,
+            22.2779689,
+            6.145
+          ],
+          "node_id": "ADM:N:a551379e1ffab2",
+          "region_id": "ADM",
+          "level": "L1",
+          "level_name": "L1",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        },
+        {
+          "id": "ADM:block:pacific-place:floor:250000074:7",
+          "name": "太古广场 · L1 官方通道点 7",
+          "coordinates": [
+            114.16448815,
+            22.27783637,
+            6.1
+          ],
+          "node_id": "ADM:N:aa2e69752a7386",
+          "region_id": "ADM",
+          "level": "L1",
+          "level_name": "L1",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        },
+        {
+          "id": "ADM:block:pacific-place:floor:250000074:8",
+          "name": "太古广场 · L1 官方通道点 8",
+          "coordinates": [
+            114.16479152,
+            22.27798019,
+            6.143
+          ],
+          "node_id": "ADM:N:ee93c2cee7e054",
+          "region_id": "ADM",
+          "level": "L1",
+          "level_name": "L1",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        },
+        {
+          "id": "ADM:block:pacific-place:floor:250000074:9",
+          "name": "太古广场 · L1 官方通道点 9",
+          "coordinates": [
+            114.16594317,
+            22.27781292,
+            5.909
+          ],
+          "node_id": "ADM:N:f5d321c8546392",
+          "region_id": "ADM",
+          "level": "L1",
+          "level_name": "L1",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        },
+        {
+          "id": "ADM:block:pacific-place:floor:250000074:10",
+          "name": "太古广场 · L1 官方通道点 10",
+          "coordinates": [
+            114.16445937,
+            22.27783815,
+            6.1
+          ],
+          "node_id": "ADM:N:fd6fea62a0c645",
+          "region_id": "ADM",
+          "level": "L1",
+          "level_name": "L1",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        }
+      ]
+    },
+    {
+      "id": "250000069",
+      "name": "L2",
+      "portals": [
+        {
+          "id": "ADM:block:pacific-place:floor:250000069:1",
+          "name": "太古广场 · L2 官方通道点 1",
+          "coordinates": [
+            114.16471272,
+            22.27724331,
+            10.693
+          ],
+          "node_id": "ADM:N:1a786254a565a1",
+          "region_id": "ADM",
+          "level": "L2",
+          "level_name": "L2",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        },
+        {
+          "id": "ADM:block:pacific-place:floor:250000069:2",
+          "name": "太古广场 · L2 官方通道点 2",
+          "coordinates": [
+            114.16444244,
+            22.27785181,
+            10.693
+          ],
+          "node_id": "ADM:N:27192758011f4d",
+          "region_id": "ADM",
+          "level": "L2",
+          "level_name": "L2",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        },
+        {
+          "id": "ADM:block:pacific-place:floor:250000069:3",
+          "name": "太古广场 · L2 官方通道点 3",
+          "coordinates": [
+            114.16449433,
+            22.2778374,
+            10.693
+          ],
+          "node_id": "ADM:N:3001823c8fbcb9",
+          "region_id": "ADM",
+          "level": "L2",
+          "level_name": "L2",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        },
+        {
+          "id": "ADM:block:pacific-place:floor:250000069:4",
+          "name": "太古广场 · L2 官方通道点 4",
+          "coordinates": [
+            114.16471085,
+            22.27798527,
+            10.693
+          ],
+          "node_id": "ADM:N:33dd814b2a4cd4",
+          "region_id": "ADM",
+          "level": "L2",
+          "level_name": "L2",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        },
+        {
+          "id": "ADM:block:pacific-place:floor:250000069:5",
+          "name": "太古广场 · L2 官方通道点 5",
+          "coordinates": [
+            114.16437512,
+            22.27774665,
+            10.693
+          ],
+          "node_id": "ADM:N:4bf46c4e191a83",
+          "region_id": "ADM",
+          "level": "L2",
+          "level_name": "L2",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        },
+        {
+          "id": "ADM:block:pacific-place:floor:250000069:6",
+          "name": "太古广场 · L2 官方通道点 6",
+          "coordinates": [
+            114.16446294,
+            22.27786048,
+            10.693
+          ],
+          "node_id": "ADM:N:557ecf6bd500c2",
+          "region_id": "ADM",
+          "level": "L2",
+          "level_name": "L2",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        },
+        {
+          "id": "ADM:block:pacific-place:floor:250000069:7",
+          "name": "太古广场 · L2 官方通道点 7",
+          "coordinates": [
+            114.16440246,
+            22.27773267,
+            10.693
+          ],
+          "node_id": "ADM:N:6a649c9a284d77",
+          "region_id": "ADM",
+          "level": "L2",
+          "level_name": "L2",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        },
+        {
+          "id": "ADM:block:pacific-place:floor:250000069:8",
+          "name": "太古广场 · L2 官方通道点 8",
+          "coordinates": [
+            114.16471838,
+            22.27723176,
+            10.693
+          ],
+          "node_id": "ADM:N:6fb4a012f715da",
+          "region_id": "ADM",
+          "level": "L2",
+          "level_name": "L2",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        },
+        {
+          "id": "ADM:block:pacific-place:floor:250000069:9",
+          "name": "太古广场 · L2 官方通道点 9",
+          "coordinates": [
+            114.16438499,
+            22.2777463,
+            10.693
+          ],
+          "node_id": "ADM:N:7315306ec1b20f",
+          "region_id": "ADM",
+          "level": "L2",
+          "level_name": "L2",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        },
+        {
+          "id": "ADM:block:pacific-place:floor:250000069:10",
+          "name": "太古广场 · L2 官方通道点 10",
+          "coordinates": [
+            114.16483285,
+            22.27792217,
+            10.693
+          ],
+          "node_id": "ADM:N:7fac20f3cdd7fc",
+          "region_id": "ADM",
+          "level": "L2",
+          "level_name": "L2",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        },
+        {
+          "id": "ADM:block:pacific-place:floor:250000069:11",
+          "name": "太古广场 · L2 官方通道点 11",
+          "coordinates": [
+            114.1648358,
+            22.27794241,
+            10.693
+          ],
+          "node_id": "ADM:N:8acf622295a2c5",
+          "region_id": "ADM",
+          "level": "L2",
+          "level_name": "L2",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        },
+        {
+          "id": "ADM:block:pacific-place:floor:250000069:12",
+          "name": "太古广场 · L2 官方通道点 12",
+          "coordinates": [
+            114.16441399,
+            22.27787151,
+            12.693
+          ],
+          "node_id": "ADM:N:9421284fa3a817",
+          "region_id": "ADM",
+          "level": "L2",
+          "level_name": "L2",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        },
+        {
+          "id": "ADM:block:pacific-place:floor:250000069:13",
+          "name": "太古广场 · L2 官方通道点 13",
+          "coordinates": [
+            114.16579876,
+            22.27779939,
+            10.693
+          ],
+          "node_id": "ADM:N:cdca6050d47d6c",
+          "region_id": "ADM",
+          "level": "L2",
+          "level_name": "L2",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        },
+        {
+          "id": "ADM:block:pacific-place:floor:250000069:14",
+          "name": "太古广场 · L2 官方通道点 14",
+          "coordinates": [
+            114.16473229,
+            22.27798825,
+            10.693
+          ],
+          "node_id": "ADM:N:d2972ff3f6cef7",
+          "region_id": "ADM",
+          "level": "L2",
+          "level_name": "L2",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        },
+        {
+          "id": "ADM:block:pacific-place:floor:250000069:15",
+          "name": "太古广场 · L2 官方通道点 15",
+          "coordinates": [
+            114.16473273,
+            22.27797672,
+            10.693
+          ],
+          "node_id": "ADM:N:d51f5e05320b92",
+          "region_id": "ADM",
+          "level": "L2",
+          "level_name": "L2",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        },
+        {
+          "id": "ADM:block:pacific-place:floor:250000069:16",
+          "name": "太古广场 · L2 官方通道点 16",
+          "coordinates": [
+            114.16579901,
+            22.2777907,
+            10.693
+          ],
+          "node_id": "ADM:N:e9cc2df0437611",
+          "region_id": "ADM",
+          "level": "L2",
+          "level_name": "L2",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        },
+        {
+          "id": "ADM:block:pacific-place:floor:250000069:17",
+          "name": "太古广场 · L2 官方通道点 17",
+          "coordinates": [
+            114.16446939,
+            22.27785531,
+            10.693
+          ],
+          "node_id": "ADM:N:f636e67017dec6",
+          "region_id": "ADM",
+          "level": "L2",
+          "level_name": "L2",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        },
+        {
+          "id": "ADM:block:pacific-place:floor:250000069:18",
+          "name": "太古广场 · L2 官方通道点 18",
+          "coordinates": [
+            114.16472257,
+            22.27722081,
+            10.693
+          ],
+          "node_id": "ADM:N:fb18d9f2b08f6d",
+          "region_id": "ADM",
+          "level": "L2",
+          "level_name": "L2",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        }
+      ]
+    },
+    {
+      "id": "250000136",
+      "name": "L3",
+      "portals": [
+        {
+          "id": "ADM:block:pacific-place:floor:250000136:1",
+          "name": "太古广场 · L3 官方通道点 1",
+          "coordinates": [
+            114.16432165,
+            22.27762541,
+            15.287
+          ],
+          "node_id": "ADM:N:13a1c531c47d22",
+          "region_id": "ADM",
+          "level": "L3",
+          "level_name": "L3",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        },
+        {
+          "id": "ADM:block:pacific-place:floor:250000136:2",
+          "name": "太古广场 · L3 官方通道点 2",
+          "coordinates": [
+            114.16435195,
+            22.27772819,
+            15.287
+          ],
+          "node_id": "ADM:N:4eb0b67042e47f",
+          "region_id": "ADM",
+          "level": "L3",
+          "level_name": "L3",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        },
+        {
+          "id": "ADM:block:pacific-place:floor:250000136:3",
+          "name": "太古广场 · L3 官方通道点 3",
+          "coordinates": [
+            114.16430391,
+            22.27763674,
+            15.287
+          ],
+          "node_id": "ADM:N:626281fcce2e36",
+          "region_id": "ADM",
+          "level": "L3",
+          "level_name": "L3",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        },
+        {
+          "id": "ADM:block:pacific-place:floor:250000136:4",
+          "name": "太古广场 · L3 官方通道点 4",
+          "coordinates": [
+            114.1643669,
+            22.27772813,
+            15.287
+          ],
+          "node_id": "ADM:N:77e6c9719e4130",
+          "region_id": "ADM",
+          "level": "L3",
+          "level_name": "L3",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        },
+        {
+          "id": "ADM:block:pacific-place:floor:250000136:5",
+          "name": "太古广场 · L3 官方通道点 5",
+          "coordinates": [
+            114.16439361,
+            22.27771224,
+            15.287
+          ],
+          "node_id": "ADM:N:9c3f712d08b655",
+          "region_id": "ADM",
+          "level": "L3",
+          "level_name": "L3",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        },
+        {
+          "id": "ADM:block:pacific-place:floor:250000136:6",
+          "name": "太古广场 · L3 官方通道点 6",
+          "coordinates": [
+            114.16429014,
+            22.27764745,
+            15.287
+          ],
+          "node_id": "ADM:N:c027d4b3109d8b",
+          "region_id": "ADM",
+          "level": "L3",
+          "level_name": "L3",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        }
+      ]
+    },
+    {
+      "id": "250000073",
+      "name": "L4",
+      "portals": [
+        {
+          "id": "ADM:block:pacific-place:floor:250000073:1",
+          "name": "太古广场 · L4 官方通道点 1",
+          "coordinates": [
+            114.16472196,
+            22.27721543,
+            21.145
+          ],
+          "node_id": "ADM:N:447367897bd0e8",
+          "region_id": "ADM",
+          "level": "L4",
+          "level_name": "L4",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        },
+        {
+          "id": "ADM:block:pacific-place:floor:250000073:2",
+          "name": "太古广场 · L4 官方通道点 2",
+          "coordinates": [
+            114.1651208,
+            22.27790532,
+            21.145
+          ],
+          "node_id": "ADM:N:45a6c09c656e84",
+          "region_id": "ADM",
+          "level": "L4",
+          "level_name": "L4",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        },
+        {
+          "id": "ADM:block:pacific-place:floor:250000073:3",
+          "name": "太古广场 · L4 官方通道点 3",
+          "coordinates": [
+            114.16511999,
+            22.27788563,
+            21.145
+          ],
+          "node_id": "ADM:N:5d070c970a095d",
+          "region_id": "ADM",
+          "level": "L4",
+          "level_name": "L4",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        },
+        {
+          "id": "ADM:block:pacific-place:floor:250000073:4",
+          "name": "太古广场 · L4 官方通道点 4",
+          "coordinates": [
+            114.16471717,
+            22.27722575,
+            21.145
+          ],
+          "node_id": "ADM:N:7fb73e2f5af645",
+          "region_id": "ADM",
+          "level": "L4",
+          "level_name": "L4",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        },
+        {
+          "id": "ADM:block:pacific-place:floor:250000073:5",
+          "name": "太古广场 · L4 官方通道点 5",
+          "coordinates": [
+            114.16471178,
+            22.27723765,
+            21.145
+          ],
+          "node_id": "ADM:N:e632455be81ca9",
+          "region_id": "ADM",
+          "level": "L4",
+          "level_name": "L4",
+          "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1002",
+          "evidence": "EXACT_SOURCE_NODE_ON_NAMED_FLOOR_PATH",
+          "access_time_id": 290000393
+        }
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "id": "station-portals-1",
+      "label": "會展站 B3出口 → 金鐘站 C1出口",
+      "tags": [
+        "station-portals",
+        "fixed-seed"
+      ],
+      "selection": "Exact source station portal identities; no successful-route filtering.",
+      "need": "ordinary",
+      "taxi": false,
+      "request": {
+        "origin": {
+          "id": "EXC:portal:B3",
+          "region_id": "EXC",
+          "station_id": "EXC",
+          "name": "會展站 B3出口",
+          "level": "P",
+          "level_name": "Exit B3 Podium Level",
+          "source_feature_id": "mtr_amenity_point.1570",
+          "coordinates": [
+            114.17458227,
+            22.28124078,
+            11.245
+          ],
+          "source_coordinates": [
+            114.17458226,
+            22.28124079,
+            11.245
+          ],
+          "node_id": "EXC:N:faaafc3c73386c",
+          "offset_m": 0.002,
+          "max_association_distance_m": 12,
+          "max_height_difference_m": 0.75,
+          "source_url": "https://portal.csdi.gov.hk/csdi-webpage/apidoc/3d-indoor-mtr-station-map",
+          "evidence": "OFFICIAL_ENTRY_AMENITY_BOUNDED_SAME_HEIGHT_NODE_ASSOCIATION",
+          "lon": 114.17458227,
+          "lat": 22.28124078
+        },
+        "destination": {
+          "id": "ADM:portal:C1",
+          "region_id": "ADM",
+          "station_id": "ADM",
+          "name": "金鐘站 C1出口",
+          "level": "G",
+          "level_name": "Exit C1 Ground Level",
+          "source_feature_id": "mtr_amenity_point.222",
+          "coordinates": [
+            114.16479351,
+            22.27854757,
+            6.1
+          ],
+          "source_coordinates": [
+            114.16479351,
+            22.27854757,
+            6.1
+          ],
+          "node_id": "ADM:N:31b17842679990",
+          "offset_m": 0,
+          "max_association_distance_m": 12,
+          "max_height_difference_m": 0.75,
+          "source_url": "https://portal.csdi.gov.hk/csdi-webpage/apidoc/3d-indoor-mtr-station-map",
+          "evidence": "OFFICIAL_ENTRY_AMENITY_BOUNDED_SAME_HEIGHT_NODE_ASSOCIATION",
+          "lon": 114.16479351,
+          "lat": 22.27854757
+        },
+        "departureDate": "2026-10-13",
+        "departureS": 28800
+      }
+    },
+    {
+      "id": "station-portals-2",
+      "label": "九龍站 B出口 → 九龍站 E1出口",
+      "tags": [
+        "station-portals",
+        "fixed-seed"
+      ],
+      "selection": "Exact source station portal identities; no successful-route filtering.",
+      "need": "luggage",
+      "taxi": true,
+      "request": {
+        "origin": {
+          "id": "KOW:portal:B",
+          "region_id": "KOW",
+          "station_id": "KOW",
+          "name": "九龍站 B出口",
+          "level": "G",
+          "level_name": "In-town Check In Level",
+          "source_feature_id": "mtr_amenity_point.3308",
+          "coordinates": [
+            114.16218635,
+            22.30420827,
+            6
+          ],
+          "source_coordinates": [
+            114.16218635,
+            22.30420827,
+            6
+          ],
+          "node_id": "KOW:N:ad70371430e3d5",
+          "offset_m": 0,
+          "max_association_distance_m": 12,
+          "max_height_difference_m": 0.75,
+          "source_url": "https://portal.csdi.gov.hk/csdi-webpage/apidoc/3d-indoor-mtr-station-map",
+          "evidence": "OFFICIAL_ENTRY_AMENITY_BOUNDED_SAME_HEIGHT_NODE_ASSOCIATION",
+          "lon": 114.16218635,
+          "lat": 22.30420827
+        },
+        "destination": {
+          "id": "KOW:portal:E1",
+          "region_id": "KOW",
+          "station_id": "KOW",
+          "name": "九龍站 E1出口",
+          "level": "G",
+          "level_name": "In-town Check In Level",
+          "source_feature_id": "mtr_amenity_point.3315",
+          "coordinates": [
+            114.16084416,
+            22.30438456,
+            6
+          ],
+          "source_coordinates": [
+            114.16084415,
+            22.30438456,
+            6
+          ],
+          "node_id": "KOW:N:2f356aed1425c2",
+          "offset_m": 0.001,
+          "max_association_distance_m": 12,
+          "max_height_difference_m": 0.75,
+          "source_url": "https://portal.csdi.gov.hk/csdi-webpage/apidoc/3d-indoor-mtr-station-map",
+          "evidence": "OFFICIAL_ENTRY_AMENITY_BOUNDED_SAME_HEIGHT_NODE_ASSOCIATION",
+          "lon": 114.16084416,
+          "lat": 22.30438456
+        },
+        "departureDate": "2026-10-13",
+        "departureS": 28980
+      }
+    },
+    {
+      "id": "station-portals-3",
+      "label": "柯士甸站 D2出口 → 柯士甸站 F 樓梯口",
+      "tags": [
+        "station-portals",
+        "fixed-seed"
+      ],
+      "selection": "Exact source station portal identities; no successful-route filtering.",
+      "need": "escalator",
+      "taxi": false,
+      "request": {
+        "origin": {
+          "id": "AUS:portal:D2",
+          "region_id": "AUS",
+          "station_id": "AUS",
+          "name": "柯士甸站 D2出口",
+          "level": "G",
+          "level_name": "Exit D Ground Level",
+          "source_feature_id": "mtr_amenity_point.372",
+          "coordinates": [
+            114.16673881,
+            22.30339902,
+            5.6
+          ],
+          "source_coordinates": [
+            114.16673881,
+            22.30339902,
+            5.6
+          ],
+          "node_id": "AUS:N:7144fc7f1bf80b",
+          "offset_m": 0,
+          "max_association_distance_m": 12,
+          "max_height_difference_m": 0.75,
+          "source_url": "https://portal.csdi.gov.hk/csdi-webpage/apidoc/3d-indoor-mtr-station-map",
+          "evidence": "OFFICIAL_ENTRY_AMENITY_BOUNDED_SAME_HEIGHT_NODE_ASSOCIATION",
+          "lon": 114.16673881,
+          "lat": 22.30339902
+        },
+        "destination": {
+          "id": "AUS:portal:F",
+          "region_id": "AUS",
+          "station_id": "AUS",
+          "name": "柯士甸站 F 樓梯口",
+          "level": "G",
+          "level_name": "Exit F Ground Level",
+          "source_feature_id": "mtr_amenity_point.371",
+          "coordinates": [
+            114.16754163,
+            22.30313108,
+            5.6
+          ],
+          "source_coordinates": [
+            114.16754163,
+            22.30313108,
+            5.6
+          ],
+          "node_id": "AUS:N:4ab0a937f564e0",
+          "offset_m": 0,
+          "max_association_distance_m": 12,
+          "max_height_difference_m": 0.75,
+          "source_url": "https://portal.csdi.gov.hk/csdi-webpage/apidoc/3d-indoor-mtr-station-map",
+          "evidence": "OFFICIAL_ENTRY_AMENITY_BOUNDED_SAME_HEIGHT_NODE_ASSOCIATION",
+          "facility_kind": "stairs",
+          "lon": 114.16754163,
+          "lat": 22.30313108
+        },
+        "departureDate": "2026-10-13",
+        "departureS": 39600
+      }
+    },
+    {
+      "id": "station-portals-4",
+      "label": "東涌綫月台區域 L4 → 會展站 B3出口",
+      "tags": [
+        "station-portals",
+        "fixed-seed"
+      ],
+      "selection": "Exact source station portal identities; no successful-route filtering.",
+      "need": "lift",
+      "taxi": true,
+      "request": {
+        "origin": {
+          "id": "KOW:platform-area:TCL",
+          "station_id": "KOW",
+          "region_id": "KOW",
+          "name": "東涌綫月台區域 L4",
+          "node_id": "KOW:N:0666822338f9f1",
+          "coordinates": [
+            114.16147167,
+            22.30470043,
+            -8.5
+          ],
+          "source_coordinates": [
+            114.16147167,
+            22.30470043,
+            -8.5
+          ],
+          "offset_m": 0,
+          "source_url": "https://portal.csdi.gov.hk/csdi-webpage/apidoc/3d-indoor-mtr-station-map",
+          "evidence": "EXACT_OFFICIAL_GRAPH_NODE_INSIDE_OFFICIAL_PLATFORM_POLYGON",
+          "supersedes_node_id": "KOW:N:4317a000beb1c0",
+          "anchor_correction": "Previous platform-area anchor was the foot of a stair, isolated for strict accessibility by source barrier edge 1001057535. Existing node 0.399m away is inside the same official platform polygon (excluding holes) and on the accessible platform network. No edges or barrier classifications changed.",
+          "lon": 114.16147167,
+          "lat": 22.30470043
+        },
+        "destination": {
+          "id": "EXC:portal:B3",
+          "region_id": "EXC",
+          "station_id": "EXC",
+          "name": "會展站 B3出口",
+          "level": "P",
+          "level_name": "Exit B3 Podium Level",
+          "source_feature_id": "mtr_amenity_point.1570",
+          "coordinates": [
+            114.17458227,
+            22.28124078,
+            11.245
+          ],
+          "source_coordinates": [
+            114.17458226,
+            22.28124079,
+            11.245
+          ],
+          "node_id": "EXC:N:faaafc3c73386c",
+          "offset_m": 0.002,
+          "max_association_distance_m": 12,
+          "max_height_difference_m": 0.75,
+          "source_url": "https://portal.csdi.gov.hk/csdi-webpage/apidoc/3d-indoor-mtr-station-map",
+          "evidence": "OFFICIAL_ENTRY_AMENITY_BOUNDED_SAME_HEIGHT_NODE_ASSOCIATION",
+          "lon": 114.17458227,
+          "lat": 22.28124078
+        },
+        "departureDate": "2026-10-13",
+        "departureS": 82800
+      }
+    },
+    {
+      "id": "surface-stops-1",
+      "label": "香港历史博物馆 → 忠民街",
+      "tags": [
+        "surface-stops",
+        "fixed-seed"
+      ],
+      "selection": "Existing timetable stop identities; route coverage is not assumed.",
+      "need": "ordinary",
+      "taxi": false,
+      "request": {
+        "origin": {
+          "id": "td:4174",
+          "name": "香港历史博物馆",
+          "coordinates": [
+            114.17759,
+            22.30264
+          ],
+          "lon": 114.17759,
+          "lat": 22.30264
+        },
+        "destination": {
+          "id": "td:12565",
+          "name": "忠民街",
+          "coordinates": [
+            114.17783,
+            22.31459
+          ],
+          "lon": 114.17783,
+          "lat": 22.31459
+        },
+        "departureDate": "2026-10-13",
+        "departureS": 28800
+      }
+    },
+    {
+      "id": "surface-stops-2",
+      "label": "西隧转车站, 雅翔道 → 租庇利街 (东行方向)",
+      "tags": [
+        "surface-stops",
+        "fixed-seed"
+      ],
+      "selection": "Existing timetable stop identities; route coverage is not assumed.",
+      "need": "luggage",
+      "taxi": true,
+      "request": {
+        "origin": {
+          "id": "td:10000065",
+          "name": "西隧转车站, 雅翔道",
+          "coordinates": [
+            114.15981,
+            22.30357
+          ],
+          "lon": 114.15981,
+          "lat": 22.30357
+        },
+        "destination": {
+          "id": "td:99215",
+          "name": "租庇利街 (东行方向)",
+          "coordinates": [
+            114.15566,
+            22.2847
+          ],
+          "lon": 114.15566,
+          "lat": 22.2847
+        },
+        "departureDate": "2026-10-13",
+        "departureS": 28980
+      }
+    },
+    {
+      "id": "surface-stops-3",
+      "label": "尖东站 K11 MUSEA → 禧利街 (东行方向)",
+      "tags": [
+        "surface-stops",
+        "fixed-seed"
+      ],
+      "selection": "Existing timetable stop identities; route coverage is not assumed.",
+      "need": "escalator",
+      "taxi": false,
+      "request": {
+        "origin": {
+          "id": "td:1286",
+          "name": "尖东站 K11 MUSEA",
+          "coordinates": [
+            114.17423,
+            22.29471
+          ],
+          "lon": 114.17423,
+          "lat": 22.29471
+        },
+        "destination": {
+          "id": "td:99213",
+          "name": "禧利街 (东行方向)",
+          "coordinates": [
+            114.1519,
+            22.28662
+          ],
+          "lon": 114.1519,
+          "lat": 22.28662
+        },
+        "departureDate": "2026-10-13",
+        "departureS": 39600
+      }
+    },
+    {
+      "id": "surface-stops-4",
+      "label": "金钟港铁站 (东行方向) → 油麻地文明里",
+      "tags": [
+        "surface-stops",
+        "fixed-seed"
+      ],
+      "selection": "Existing timetable stop identities; route coverage is not assumed.",
+      "need": "lift",
+      "taxi": true,
+      "request": {
+        "origin": {
+          "id": "td:99220",
+          "name": "金钟港铁站 (东行方向)",
+          "coordinates": [
+            114.16438,
+            22.2784
+          ],
+          "lon": 114.16438,
+          "lat": 22.2784
+        },
+        "destination": {
+          "id": "td:193",
+          "name": "油麻地文明里",
+          "coordinates": [
+            114.17083,
+            22.3115
+          ],
+          "lon": 114.17083,
+          "lat": 22.3115
+        },
+        "departureDate": "2026-10-13",
+        "departureS": 82800
+      }
+    },
+    {
+      "id": "land-nodes-1",
+      "label": "地图所选地点 → 地图所选地点",
+      "tags": [
+        "land-nodes",
+        "fixed-seed"
+      ],
+      "selection": "Seeded selection from existing land-coverage fixture; no sea points or success filtering.",
+      "sourceLandRowIndex": 1,
+      "need": "ordinary",
+      "taxi": false,
+      "request": {
+        "origin": {
+          "id": "map:random--611574659",
+          "name": "地图所选地点",
+          "detail": "用户选择 · 接入待核验",
+          "coordinates": [
+            114.16666226277333,
+            22.270987023264027
+          ],
+          "lon": 114.16666226277333,
+          "lat": 22.270987023264027
+        },
+        "destination": {
+          "id": "map:random--1875245999",
+          "name": "地图所选地点",
+          "detail": "用户选择 · 接入待核验",
+          "coordinates": [
+            114.1510242122139,
+            22.26650677116623
+          ],
+          "lon": 114.1510242122139,
+          "lat": 22.26650677116623
+        },
+        "departureDate": "2026-10-13",
+        "departureS": 28800
+      }
+    },
+    {
+      "id": "land-nodes-2",
+      "label": "地图所选地点 → 地图所选地点",
+      "tags": [
+        "land-nodes",
+        "fixed-seed"
+      ],
+      "selection": "Seeded selection from existing land-coverage fixture; no sea points or success filtering.",
+      "sourceLandRowIndex": 1,
+      "need": "luggage",
+      "taxi": true,
+      "request": {
+        "origin": {
+          "id": "map:random--611574659",
+          "name": "地图所选地点",
+          "detail": "用户选择 · 接入待核验",
+          "coordinates": [
+            114.16666226277333,
+            22.270987023264027
+          ],
+          "lon": 114.16666226277333,
+          "lat": 22.270987023264027
+        },
+        "destination": {
+          "id": "map:random--1875245999",
+          "name": "地图所选地点",
+          "detail": "用户选择 · 接入待核验",
+          "coordinates": [
+            114.1510242122139,
+            22.26650677116623
+          ],
+          "lon": 114.1510242122139,
+          "lat": 22.26650677116623
+        },
+        "departureDate": "2026-10-13",
+        "departureS": 28980
+      }
+    },
+    {
+      "id": "land-nodes-3",
+      "label": "地图所选地点 → 地图所选地点",
+      "tags": [
+        "land-nodes",
+        "fixed-seed"
+      ],
+      "selection": "Seeded selection from existing land-coverage fixture; no sea points or success filtering.",
+      "sourceLandRowIndex": 19,
+      "need": "escalator",
+      "taxi": false,
+      "request": {
+        "origin": {
+          "id": "map:random--634303559",
+          "name": "地图所选地点",
+          "detail": "用户选择 · 接入待核验",
+          "coordinates": [
+            114.1958869086207,
+            22.267140809985378
+          ],
+          "lon": 114.1958869086207,
+          "lat": 22.267140809985378
+        },
+        "destination": {
+          "id": "map:random-1133321057",
+          "name": "地图所选地点",
+          "detail": "用户选择 · 接入待核验",
+          "coordinates": [
+            114.18569494531123,
+            22.302712805411073
+          ],
+          "lon": 114.18569494531123,
+          "lat": 22.302712805411073
+        },
+        "departureDate": "2026-10-13",
+        "departureS": 39600
+      }
+    },
+    {
+      "id": "land-nodes-4",
+      "label": "地图所选地点 → 地图所选地点",
+      "tags": [
+        "land-nodes",
+        "fixed-seed"
+      ],
+      "selection": "Seeded selection from existing land-coverage fixture; no sea points or success filtering.",
+      "sourceLandRowIndex": 33,
+      "need": "lift",
+      "taxi": true,
+      "request": {
+        "origin": {
+          "id": "map:random--769762253",
+          "name": "地图所选地点",
+          "detail": "用户选择 · 接入待核验",
+          "coordinates": [
+            114.15689269731222,
+            22.26427051578665
+          ],
+          "lon": 114.15689269731222,
+          "lat": 22.26427051578665
+        },
+        "destination": {
+          "id": "map:random-1629698033",
+          "name": "地图所选地点",
+          "detail": "用户选择 · 接入待核验",
+          "coordinates": [
+            114.17372589195776,
+            22.272073869202053
+          ],
+          "lon": 114.17372589195776,
+          "lat": 22.272073869202053
+        },
+        "departureDate": "2026-10-13",
+        "departureS": 82800
+      }
+    },
+    {
+      "id": "source-floors-1",
+      "label": "太古廣場 · L4 → 太古廣場 · L3",
+      "tags": [
+        "source-floors",
+        "fixed-seed"
+      ],
+      "selection": "Existing source-supported named floors; exact floor resolution audited.",
+      "need": "ordinary",
+      "taxi": false,
+      "request": {
+        "origin": {
+          "id": "pacific-place:floor:250000073",
+          "namedPlaceId": "pacific-place",
+          "name": "太古廣場 · L4",
+          "floorId": "250000073",
+          "floorName": "L4",
+          "coordinates": [
+            114.16432165,
+            22.27762541
+          ],
+          "access_time_id": 290000393,
+          "access_schedule": {
+            "kind": "daily",
+            "windows": [
+              {
+                "start_s": 36000,
+                "end_s": 79200
+              }
+            ],
+            "label": "太古廣場平台 开放：ED 10:00–22:00",
+            "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1006",
+            "source_rule_id": 290000393,
+            "source_access_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1005",
+            "source_schema_urls": [
+              "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1005?f=pjson",
+              "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1006?f=pjson"
+            ],
+            "timezone": "Asia/Hong_Kong",
+            "week_start": "MON",
+            "source_access_type": "OPEN",
+            "source_access_record": {
+              "OBJECTID": 733,
+              "AccessTimeID": 290000393,
+              "AccessTimeType": "OPEN",
+              "DescriptionTC": "太古廣場平台",
+              "DescriptionEN": "Pacific Place Podium",
+              "CreationDate": 1647302400000,
+              "ModifiedBy": "LANDSD",
+              "LastAmendmentDate": 1653523200000
+            },
+            "source_rows": [
+              {
+                "OBJECTID": 1135,
+                "AccessTimeID": 290000393,
+                "DayCode": "ED",
+                "FromTime": 1000,
+                "ToTime": 2200
+              }
+            ],
+            "source_rule_signature": "eea32f665a5a43504422e61248a253c6d9fb3d0ac1843e8bc45829422ddc922a",
+            "policy_version": "landsd-weekly-access-v1",
+            "limitations": [
+              "Recorded recurring schedule, not live operational status.",
+              "No public-holiday calendar or unscheduled closures are inferred."
+            ]
+          },
+          "lon": 114.16432165,
+          "lat": 22.27762541
+        },
+        "destination": {
+          "id": "pacific-place:floor:250000136",
+          "namedPlaceId": "pacific-place",
+          "name": "太古廣場 · L3",
+          "floorId": "250000136",
+          "floorName": "L3",
+          "coordinates": [
+            114.16432165,
+            22.27762541
+          ],
+          "access_time_id": 290000393,
+          "access_schedule": {
+            "kind": "daily",
+            "windows": [
+              {
+                "start_s": 36000,
+                "end_s": 79200
+              }
+            ],
+            "label": "太古廣場平台 开放：ED 10:00–22:00",
+            "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1006",
+            "source_rule_id": 290000393,
+            "source_access_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1005",
+            "source_schema_urls": [
+              "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1005?f=pjson",
+              "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1006?f=pjson"
+            ],
+            "timezone": "Asia/Hong_Kong",
+            "week_start": "MON",
+            "source_access_type": "OPEN",
+            "source_access_record": {
+              "OBJECTID": 733,
+              "AccessTimeID": 290000393,
+              "AccessTimeType": "OPEN",
+              "DescriptionTC": "太古廣場平台",
+              "DescriptionEN": "Pacific Place Podium",
+              "CreationDate": 1647302400000,
+              "ModifiedBy": "LANDSD",
+              "LastAmendmentDate": 1653523200000
+            },
+            "source_rows": [
+              {
+                "OBJECTID": 1135,
+                "AccessTimeID": 290000393,
+                "DayCode": "ED",
+                "FromTime": 1000,
+                "ToTime": 2200
+              }
+            ],
+            "source_rule_signature": "eea32f665a5a43504422e61248a253c6d9fb3d0ac1843e8bc45829422ddc922a",
+            "policy_version": "landsd-weekly-access-v1",
+            "limitations": [
+              "Recorded recurring schedule, not live operational status.",
+              "No public-holiday calendar or unscheduled closures are inferred."
+            ]
+          },
+          "lon": 114.16432165,
+          "lat": 22.27762541
+        },
+        "departureDate": "2026-10-13",
+        "departureS": 28800
+      }
+    },
+    {
+      "id": "source-floors-2",
+      "label": "太古廣場 · L3 → 太古廣場 · L2",
+      "tags": [
+        "source-floors",
+        "fixed-seed"
+      ],
+      "selection": "Existing source-supported named floors; exact floor resolution audited.",
+      "need": "luggage",
+      "taxi": true,
+      "request": {
+        "origin": {
+          "id": "pacific-place:floor:250000136",
+          "namedPlaceId": "pacific-place",
+          "name": "太古廣場 · L3",
+          "floorId": "250000136",
+          "floorName": "L3",
+          "coordinates": [
+            114.16432165,
+            22.27762541
+          ],
+          "access_time_id": 290000393,
+          "access_schedule": {
+            "kind": "daily",
+            "windows": [
+              {
+                "start_s": 36000,
+                "end_s": 79200
+              }
+            ],
+            "label": "太古廣場平台 开放：ED 10:00–22:00",
+            "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1006",
+            "source_rule_id": 290000393,
+            "source_access_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1005",
+            "source_schema_urls": [
+              "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1005?f=pjson",
+              "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1006?f=pjson"
+            ],
+            "timezone": "Asia/Hong_Kong",
+            "week_start": "MON",
+            "source_access_type": "OPEN",
+            "source_access_record": {
+              "OBJECTID": 733,
+              "AccessTimeID": 290000393,
+              "AccessTimeType": "OPEN",
+              "DescriptionTC": "太古廣場平台",
+              "DescriptionEN": "Pacific Place Podium",
+              "CreationDate": 1647302400000,
+              "ModifiedBy": "LANDSD",
+              "LastAmendmentDate": 1653523200000
+            },
+            "source_rows": [
+              {
+                "OBJECTID": 1135,
+                "AccessTimeID": 290000393,
+                "DayCode": "ED",
+                "FromTime": 1000,
+                "ToTime": 2200
+              }
+            ],
+            "source_rule_signature": "eea32f665a5a43504422e61248a253c6d9fb3d0ac1843e8bc45829422ddc922a",
+            "policy_version": "landsd-weekly-access-v1",
+            "limitations": [
+              "Recorded recurring schedule, not live operational status.",
+              "No public-holiday calendar or unscheduled closures are inferred."
+            ]
+          },
+          "lon": 114.16432165,
+          "lat": 22.27762541
+        },
+        "destination": {
+          "id": "pacific-place:floor:250000069",
+          "namedPlaceId": "pacific-place",
+          "name": "太古廣場 · L2",
+          "floorId": "250000069",
+          "floorName": "L2",
+          "coordinates": [
+            114.16432165,
+            22.27762541
+          ],
+          "access_time_id": 290000393,
+          "access_schedule": {
+            "kind": "daily",
+            "windows": [
+              {
+                "start_s": 36000,
+                "end_s": 79200
+              }
+            ],
+            "label": "太古廣場平台 开放：ED 10:00–22:00",
+            "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1006",
+            "source_rule_id": 290000393,
+            "source_access_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1005",
+            "source_schema_urls": [
+              "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1005?f=pjson",
+              "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1006?f=pjson"
+            ],
+            "timezone": "Asia/Hong_Kong",
+            "week_start": "MON",
+            "source_access_type": "OPEN",
+            "source_access_record": {
+              "OBJECTID": 733,
+              "AccessTimeID": 290000393,
+              "AccessTimeType": "OPEN",
+              "DescriptionTC": "太古廣場平台",
+              "DescriptionEN": "Pacific Place Podium",
+              "CreationDate": 1647302400000,
+              "ModifiedBy": "LANDSD",
+              "LastAmendmentDate": 1653523200000
+            },
+            "source_rows": [
+              {
+                "OBJECTID": 1135,
+                "AccessTimeID": 290000393,
+                "DayCode": "ED",
+                "FromTime": 1000,
+                "ToTime": 2200
+              }
+            ],
+            "source_rule_signature": "eea32f665a5a43504422e61248a253c6d9fb3d0ac1843e8bc45829422ddc922a",
+            "policy_version": "landsd-weekly-access-v1",
+            "limitations": [
+              "Recorded recurring schedule, not live operational status.",
+              "No public-holiday calendar or unscheduled closures are inferred."
+            ]
+          },
+          "lon": 114.16432165,
+          "lat": 22.27762541
+        },
+        "departureDate": "2026-10-13",
+        "departureS": 28980
+      }
+    },
+    {
+      "id": "source-floors-3",
+      "label": "太古廣場 · LG1 → 太古廣場 · L3",
+      "tags": [
+        "source-floors",
+        "fixed-seed"
+      ],
+      "selection": "Existing source-supported named floors; exact floor resolution audited.",
+      "need": "escalator",
+      "taxi": false,
+      "request": {
+        "origin": {
+          "id": "pacific-place:floor:250000101",
+          "namedPlaceId": "pacific-place",
+          "name": "太古廣場 · LG1",
+          "floorId": "250000101",
+          "floorName": "LG1",
+          "coordinates": [
+            114.16432165,
+            22.27762541
+          ],
+          "access_time_id": 290000393,
+          "access_schedule": {
+            "kind": "daily",
+            "windows": [
+              {
+                "start_s": 36000,
+                "end_s": 79200
+              }
+            ],
+            "label": "太古廣場平台 开放：ED 10:00–22:00",
+            "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1006",
+            "source_rule_id": 290000393,
+            "source_access_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1005",
+            "source_schema_urls": [
+              "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1005?f=pjson",
+              "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1006?f=pjson"
+            ],
+            "timezone": "Asia/Hong_Kong",
+            "week_start": "MON",
+            "source_access_type": "OPEN",
+            "source_access_record": {
+              "OBJECTID": 733,
+              "AccessTimeID": 290000393,
+              "AccessTimeType": "OPEN",
+              "DescriptionTC": "太古廣場平台",
+              "DescriptionEN": "Pacific Place Podium",
+              "CreationDate": 1647302400000,
+              "ModifiedBy": "LANDSD",
+              "LastAmendmentDate": 1653523200000
+            },
+            "source_rows": [
+              {
+                "OBJECTID": 1135,
+                "AccessTimeID": 290000393,
+                "DayCode": "ED",
+                "FromTime": 1000,
+                "ToTime": 2200
+              }
+            ],
+            "source_rule_signature": "eea32f665a5a43504422e61248a253c6d9fb3d0ac1843e8bc45829422ddc922a",
+            "policy_version": "landsd-weekly-access-v1",
+            "limitations": [
+              "Recorded recurring schedule, not live operational status.",
+              "No public-holiday calendar or unscheduled closures are inferred."
+            ]
+          },
+          "lon": 114.16432165,
+          "lat": 22.27762541
+        },
+        "destination": {
+          "id": "pacific-place:floor:250000136",
+          "namedPlaceId": "pacific-place",
+          "name": "太古廣場 · L3",
+          "floorId": "250000136",
+          "floorName": "L3",
+          "coordinates": [
+            114.16432165,
+            22.27762541
+          ],
+          "access_time_id": 290000393,
+          "access_schedule": {
+            "kind": "daily",
+            "windows": [
+              {
+                "start_s": 36000,
+                "end_s": 79200
+              }
+            ],
+            "label": "太古廣場平台 开放：ED 10:00–22:00",
+            "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1006",
+            "source_rule_id": 290000393,
+            "source_access_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1005",
+            "source_schema_urls": [
+              "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1005?f=pjson",
+              "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1006?f=pjson"
+            ],
+            "timezone": "Asia/Hong_Kong",
+            "week_start": "MON",
+            "source_access_type": "OPEN",
+            "source_access_record": {
+              "OBJECTID": 733,
+              "AccessTimeID": 290000393,
+              "AccessTimeType": "OPEN",
+              "DescriptionTC": "太古廣場平台",
+              "DescriptionEN": "Pacific Place Podium",
+              "CreationDate": 1647302400000,
+              "ModifiedBy": "LANDSD",
+              "LastAmendmentDate": 1653523200000
+            },
+            "source_rows": [
+              {
+                "OBJECTID": 1135,
+                "AccessTimeID": 290000393,
+                "DayCode": "ED",
+                "FromTime": 1000,
+                "ToTime": 2200
+              }
+            ],
+            "source_rule_signature": "eea32f665a5a43504422e61248a253c6d9fb3d0ac1843e8bc45829422ddc922a",
+            "policy_version": "landsd-weekly-access-v1",
+            "limitations": [
+              "Recorded recurring schedule, not live operational status.",
+              "No public-holiday calendar or unscheduled closures are inferred."
+            ]
+          },
+          "lon": 114.16432165,
+          "lat": 22.27762541
+        },
+        "departureDate": "2026-10-13",
+        "departureS": 39600
+      }
+    },
+    {
+      "id": "source-floors-4",
+      "label": "太古廣場 · L1 → 太古廣場 · L3",
+      "tags": [
+        "source-floors",
+        "fixed-seed"
+      ],
+      "selection": "Existing source-supported named floors; exact floor resolution audited.",
+      "need": "lift",
+      "taxi": true,
+      "request": {
+        "origin": {
+          "id": "pacific-place:floor:250000074",
+          "namedPlaceId": "pacific-place",
+          "name": "太古廣場 · L1",
+          "floorId": "250000074",
+          "floorName": "L1",
+          "coordinates": [
+            114.16432165,
+            22.27762541
+          ],
+          "access_time_id": 290000393,
+          "access_schedule": {
+            "kind": "daily",
+            "windows": [
+              {
+                "start_s": 36000,
+                "end_s": 79200
+              }
+            ],
+            "label": "太古廣場平台 开放：ED 10:00–22:00",
+            "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1006",
+            "source_rule_id": 290000393,
+            "source_access_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1005",
+            "source_schema_urls": [
+              "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1005?f=pjson",
+              "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1006?f=pjson"
+            ],
+            "timezone": "Asia/Hong_Kong",
+            "week_start": "MON",
+            "source_access_type": "OPEN",
+            "source_access_record": {
+              "OBJECTID": 733,
+              "AccessTimeID": 290000393,
+              "AccessTimeType": "OPEN",
+              "DescriptionTC": "太古廣場平台",
+              "DescriptionEN": "Pacific Place Podium",
+              "CreationDate": 1647302400000,
+              "ModifiedBy": "LANDSD",
+              "LastAmendmentDate": 1653523200000
+            },
+            "source_rows": [
+              {
+                "OBJECTID": 1135,
+                "AccessTimeID": 290000393,
+                "DayCode": "ED",
+                "FromTime": 1000,
+                "ToTime": 2200
+              }
+            ],
+            "source_rule_signature": "eea32f665a5a43504422e61248a253c6d9fb3d0ac1843e8bc45829422ddc922a",
+            "policy_version": "landsd-weekly-access-v1",
+            "limitations": [
+              "Recorded recurring schedule, not live operational status.",
+              "No public-holiday calendar or unscheduled closures are inferred."
+            ]
+          },
+          "lon": 114.16432165,
+          "lat": 22.27762541
+        },
+        "destination": {
+          "id": "pacific-place:floor:250000136",
+          "namedPlaceId": "pacific-place",
+          "name": "太古廣場 · L3",
+          "floorId": "250000136",
+          "floorName": "L3",
+          "coordinates": [
+            114.16432165,
+            22.27762541
+          ],
+          "access_time_id": 290000393,
+          "access_schedule": {
+            "kind": "daily",
+            "windows": [
+              {
+                "start_s": 36000,
+                "end_s": 79200
+              }
+            ],
+            "label": "太古廣場平台 开放：ED 10:00–22:00",
+            "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1006",
+            "source_rule_id": 290000393,
+            "source_access_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1005",
+            "source_schema_urls": [
+              "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1005?f=pjson",
+              "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1006?f=pjson"
+            ],
+            "timezone": "Asia/Hong_Kong",
+            "week_start": "MON",
+            "source_access_type": "OPEN",
+            "source_access_record": {
+              "OBJECTID": 733,
+              "AccessTimeID": 290000393,
+              "AccessTimeType": "OPEN",
+              "DescriptionTC": "太古廣場平台",
+              "DescriptionEN": "Pacific Place Podium",
+              "CreationDate": 1647302400000,
+              "ModifiedBy": "LANDSD",
+              "LastAmendmentDate": 1653523200000
+            },
+            "source_rows": [
+              {
+                "OBJECTID": 1135,
+                "AccessTimeID": 290000393,
+                "DayCode": "ED",
+                "FromTime": 1000,
+                "ToTime": 2200
+              }
+            ],
+            "source_rule_signature": "eea32f665a5a43504422e61248a253c6d9fb3d0ac1843e8bc45829422ddc922a",
+            "policy_version": "landsd-weekly-access-v1",
+            "limitations": [
+              "Recorded recurring schedule, not live operational status.",
+              "No public-holiday calendar or unscheduled closures are inferred."
+            ]
+          },
+          "lon": 114.16432165,
+          "lat": 22.27762541
+        },
+        "departureDate": "2026-10-13",
+        "departureS": 82800
+      }
+    }
+  ],
+  "limitations": [
+    "16 stratified diagnostic cells are not a statistical or Hong Kong-wide success-rate estimate. Preference, departure time and taxi policy co-vary.",
+    "Named floors permit only disclosed resolution to an existing portal on that floor. Exact map/portal points retain their own XYZ and node identity.",
+    "Source graph connectivity is not live facility verification."
+  ],
+  "seed": 20261013,
+  "selectionAlgorithm": "LCG(1664525,1013904223,2^32); sorted source arrays, no route search during selection"
+}

@@ -1,0 +1,217 @@
+{
+  "schema": 1,
+  "title": "EXC B3 official boundary repair: original-request verification",
+  "date": "2026-10-13",
+  "source_base_commit": "8203ccebe01804cf7c3232a9312332be757745d2",
+  "runtime": "b2eb197920d3",
+  "original_fixture_sha256": "fb443eba71d8dd4aab7e990cb6ab4cb4a5e4632d5d0c3fd38f08d4d6e7fd73e0",
+  "scope": "Two unchanged original diagnostic cells; not the complete 16-cell rerun or a Hong Kong-wide success rate.",
+  "change": {
+    "official_indoor_features": [
+      1001097474,
+      1000805010
+    ],
+    "existing_outdoor_feature": 290046359,
+    "added_nodes": 2,
+    "added_directed_edges": 4,
+    "added_original_portals": 1,
+    "paid_edges_added": 0,
+    "rail_edges_added": 0,
+    "source_elevation_change_m": 1.6,
+    "source_data_changed": [
+      "area graph composition",
+      "proved graph-version rebase of unchanged walking cache"
+    ],
+    "unchanged": [
+      "station graph",
+      "Admiralty detail graph",
+      "service data",
+      "original requests and preferences",
+      "all 272 cached connection records"
+    ],
+    "source_urls": [
+      "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0",
+      "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/0"
+    ],
+    "attribution": "Map from Lands Department · © Government of the Hong Kong SAR"
+  },
+  "observations": [
+    {
+      "row_id": "station-portals-1",
+      "origin": {
+        "id": "EXC:portal:B3",
+        "node_id": "EXC:N:faaafc3c73386c",
+        "coordinates": [
+          114.17458227,
+          22.28124078,
+          11.245
+        ]
+      },
+      "destination": {
+        "id": "ADM:portal:C1",
+        "node_id": "ADM:N:31b17842679990",
+        "coordinates": [
+          114.16479351,
+          22.27854757,
+          6.1
+        ]
+      },
+      "date": "2026-10-13",
+      "departure_s": 28800,
+      "timezone": "Asia/Hong_Kong",
+      "preference": "ordinary",
+      "taxi": false,
+      "classification": "completed-with-candidates",
+      "comparison_status": "complete",
+      "full_comparison_ms": 5166.995,
+      "first_result_ms": 3058,
+      "accepted_candidate_count": 2,
+      "candidates": [
+        {
+          "id": "walk",
+          "minutes": 21,
+          "illustrative_quote_hkd": 0,
+          "all_15_invariants_passed": true,
+          "invariants": {
+            "complete": true,
+            "endpoints": true,
+            "continuous": true,
+            "knownForbiddenEdges": true,
+            "strictSourceEligibility": true,
+            "fare": true,
+            "transitStopBoundaries": true,
+            "taxiPolicy": true,
+            "strictTaxi": true,
+            "luggageTaxiConfirmation": true,
+            "fourPassengerPreference": true,
+            "requestedPreference": true,
+            "effectivePreference": true,
+            "paidJourneyClock": true,
+            "unknownWheelchairEvidenceNotPromoted": true
+          },
+          "evidence": "source-backed-not-live-verified",
+          "source_edge_count": 128,
+          "unknown_edge_id_count": 0,
+          "modeled_step_count": 0,
+          "max_gap_m": 0,
+          "max_height_gap_m": 0
+        },
+        {
+          "id": "transit",
+          "minutes": 26,
+          "illustrative_quote_hkd": 3,
+          "all_15_invariants_passed": true,
+          "invariants": {
+            "complete": true,
+            "endpoints": true,
+            "continuous": true,
+            "knownForbiddenEdges": true,
+            "strictSourceEligibility": true,
+            "fare": true,
+            "transitStopBoundaries": true,
+            "taxiPolicy": true,
+            "strictTaxi": true,
+            "luggageTaxiConfirmation": true,
+            "fourPassengerPreference": true,
+            "requestedPreference": true,
+            "effectivePreference": true,
+            "paidJourneyClock": true,
+            "unknownWheelchairEvidenceNotPromoted": true
+          },
+          "evidence": "modeled-or-unverified",
+          "source_edge_count": 114,
+          "unknown_edge_id_count": 4,
+          "modeled_step_count": 5,
+          "max_gap_m": 0,
+          "max_height_gap_m": 0
+        }
+      ],
+      "request_identity_preserved": true,
+      "runtime_stable": true,
+      "worker_error_count": 0,
+      "source_coverage_regression_count": 0,
+      "cancel_check_passed": true,
+      "unavailable": []
+    },
+    {
+      "row_id": "station-portals-4",
+      "origin": {
+        "id": "KOW:platform-area:TCL",
+        "node_id": "KOW:N:0666822338f9f1",
+        "coordinates": [
+          114.16147167,
+          22.30470043,
+          -8.5
+        ]
+      },
+      "destination": {
+        "id": "EXC:portal:B3",
+        "node_id": "EXC:N:faaafc3c73386c",
+        "coordinates": [
+          114.17458227,
+          22.28124078,
+          11.245
+        ]
+      },
+      "date": "2026-10-13",
+      "departure_s": 82800,
+      "timezone": "Asia/Hong_Kong",
+      "preference": "lift",
+      "taxi": true,
+      "classification": "completed-without-candidate-needs-diagnosis",
+      "comparison_status": "complete",
+      "full_comparison_ms": 36293.193,
+      "first_result_ms": null,
+      "accepted_candidate_count": 0,
+      "candidates": [],
+      "request_identity_preserved": true,
+      "runtime_stable": true,
+      "worker_error_count": 0,
+      "source_coverage_regression_count": 0,
+      "cancel_check_passed": true,
+      "unavailable": [
+        {
+          "id": "walk",
+          "failure_status": "NO_ROUTE",
+          "incomplete_reason": null
+        },
+        {
+          "id": "transit-detailed",
+          "failure_status": "NO_ROUTE",
+          "incomplete_reason": null
+        },
+        {
+          "id": "metro",
+          "failure_status": "NO_ROUTE",
+          "incomplete_reason": null
+        },
+        {
+          "id": "taxi-direct",
+          "failure_status": null,
+          "incomplete_reason": "UNVERIFIED_ENDPOINT_ACCESS"
+        },
+        {
+          "id": "taxi-first-metro-AUS:portal:B2",
+          "failure_status": null,
+          "incomplete_reason": "UNVERIFIED_ENDPOINT_ACCESS"
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "targeted_tests_passed": 16,
+    "targeted_tests_failed": 0,
+    "aggregate_tests": "Interrupted to release the shared routing slot; full-suite pass not claimed.",
+    "browser_or_device_qa": false,
+    "wheelchair_accessibility_claim": false,
+    "live_service_verification": false,
+    "cancellation_scope": "Cancel and stale-publication checks were exercised after completed comparisons, not during active EXC computations."
+  },
+  "remaining_issue": {
+    "row_id": "station-portals-4",
+    "classification": "completed-without-candidate-needs-diagnosis",
+    "root_cause_proven": false,
+    "details": "No complete public itinerary accepted under the original 23:00 lift-first request. Taxi scenarios remain unavailable because original platform/curb access is unverified. This does not prove real-world impossibility.",
+    "time_rule_caution": "The morning C1 walking path includes Queensway Plaza feature 250018720 / rule 290000487, open 08:00–22:00. It is not an imported EXC edge and has not been proved to cause the night-time KOW request failure."
+  }
+}

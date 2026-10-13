@@ -193,13 +193,13 @@ function __hkSearchTimingProfile(index,graph,prepared,hasSchedule,isAlwaysOpen){
 /* HK_MODELED_SOURCE_HEIGHT_SNAP_V1 */
 /* HK_PREFERENCE_ADMISSIBLE_HEURISTIC_V1 */
 /* HK_PUBLIC_BAGGAGE_BANS_V1 */
-import {preferenceAllows as __hkPublicAllows} from "./preference-routing.js?v=80559fd92aa0";
+import {preferenceAllows as __hkPublicAllows} from "./preference-routing.js?v=ac80b061436c";
 /* HK_PUBLIC_PREFERENCE_COST_V1 */
-import {preferenceConnectionPenalty as __hkConnectionPenalty} from "./preference-routing.js?v=80559fd92aa0";
+import {preferenceConnectionPenalty as __hkConnectionPenalty} from "./preference-routing.js?v=ac80b061436c";
 /* HK_PREFERENCE_ROUTING_V1 */
-import {preferenceCost as __hkPreferenceCost,preferenceAllows as __hkPreferenceAllows,waitingLabelDominates as __hkWaitingDominates} from "./preference-routing.js?v=80559fd92aa0";
+import {preferenceCost as __hkPreferenceCost,preferenceAllows as __hkPreferenceAllows,waitingLabelDominates as __hkWaitingDominates} from "./preference-routing.js?v=ac80b061436c";
 /* HK_DEMO_SAFE_SNAP_V1 */
-import {createModeledConnectorGuard as __hkConnectorGuard} from "./integrated-navigation.js?v=80559fd92aa0";
+import {createModeledConnectorGuard as __hkConnectorGuard} from "./integrated-navigation.js?v=ac80b061436c";
 function stationOutdoorCandidates(point, legacyPortals, station) {
   if (!point.node_id) return [];
   const origin = station?.nodes?.find(n => n.id === point.node_id);

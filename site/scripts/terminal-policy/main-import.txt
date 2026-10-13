@@ -1,0 +1,5 @@
+/* HK_TERMINAL_PRECHECK_IMPORT_BEGIN */
+import {createExactPublicTerminalPrecheck,runExactPublicTerminalPrecheck} from "./terminal-isolation.js";
+import {TERMINAL_POLICY_ID} from "./terminal-policy-verified.js";
+let terminalPrecheckState;
+/* HK_TERMINAL_PRECHECK_IMPORT_END */
