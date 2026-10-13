@@ -1,0 +1,18 @@
+[
+  {
+    "file": "exact-indoor-features.json",
+    "url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1742809197336_78665/MapServer/0/query?f=geojson&outFields=%2A&outSR=4326&returnZ=true&resultRecordCount=3000&where=PedestrianRouteID+IN+%281001097474%2C1000805010%2C1000547140%2C1000547141%2C1000547143%2C1000547144%2C1000547145%2C1000547161%29",
+    "received_utc": "2026-10-13T14:23:13.087231+00:00",
+    "status": 200,
+    "bytes": 7389,
+    "sha256": "931453db636030832e8ca2a9edc2a70fb70944d747f947643de2b8922c9f6faa"
+  },
+  {
+    "file": "exact-outdoor-b3.json",
+    "url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/0/query?f=geojson&outFields=%2A&outSR=4326&returnZ=true&resultRecordCount=3000&where=PedestrianRouteID%3D290046359",
+    "received_utc": "2026-10-13T14:23:18.862167+00:00",
+    "status": 200,
+    "bytes": 1005,
+    "sha256": "d710096552c6936d362f817f0656fa7eb6c78254099764bb1fb85764a2beb91b"
+  }
+]

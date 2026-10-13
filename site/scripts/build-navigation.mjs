@@ -4,7 +4,7 @@ import {fileURLToPath} from 'node:url';
 const root = fileURLToPath(new URL('../', import.meta.url));
 await copyFile(root + 'src/navigation/taxi-policy.js', root + 'dist/assets/taxi-policy.js');
 await copyFile(root + 'src/navigation/preference-routing.js', root + 'dist/assets/preference-routing.js');
-for (const file of ['origin-opening.js','ticket-page.js','ticket-page.css','journey-3d-model.js','journey-3d-data.js','journey-3d-model.css','highspeed-service.js','highspeed-routing.js','traffic-scenario.js','traffic-clock.js','transit-vehicles.js','map-tiles.js','passenger-preferences.js','transit-stops.js','kow-c1-corridor.js','kow-c1-corridor-data.js','ui-navigation.js','ui-content.js','journey-score.js','taxi-candidates.js','rail-reference.js','routing-queue.js','score-parameters.js','place-opening.js','pacific-place-model.js','pacific-place-model.css']) await copyFile(root+'src/navigation/'+file,root+'dist/assets/'+file);
+for (const file of ['terminal-isolation.js','exact-boundary-selection.js','origin-opening.js','ticket-page.js','ticket-page.css','journey-3d-model.js','journey-3d-data.js','journey-3d-model.css','highspeed-service.js','highspeed-routing.js','traffic-scenario.js','traffic-clock.js','transit-vehicles.js','map-tiles.js','passenger-preferences.js','transit-stops.js','kow-c1-corridor.js','kow-c1-corridor-data.js','ui-navigation.js','ui-content.js','journey-score.js','taxi-candidates.js','rail-reference.js','routing-queue.js','score-parameters.js','place-opening.js','pacific-place-model.js','pacific-place-model.css']) await copyFile(root+'src/navigation/'+file,root+'dist/assets/'+file);
 await copyFile(root + 'src/navigation/route-quote.js', root + 'dist/assets/route-quote.js');
 await copyFile(root + 'src/navigation/demo-fallback.js', root + 'dist/assets/demo-fallback.js');
 await copyFile(root + 'src/navigation/public-coverage.js', root + 'dist/assets/public-coverage.js');
@@ -51,4 +51,6 @@ execFileSync(process.execPath,[root+'scripts/repair-intermodal-endpoint-region.m
 await import('./split-map-display.mjs');
 await import('./repair-highspeed-navigation.mjs');
 await (await import('./repair-region-refusal-message.mjs')).repairRegionRefusalMessages();
+execFileSync(process.execPath,[root+'scripts/augment-exc-b3.mjs',root],{stdio:'inherit'});
+await (await import('./terminal-policy/emit-policy.mjs')).emitTerminalPolicy(root);
 await import('./version-runtime.mjs');

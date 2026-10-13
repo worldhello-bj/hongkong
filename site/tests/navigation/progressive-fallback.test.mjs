@@ -7,6 +7,8 @@ import{PASSENGER_NEEDS}from'../../src/navigation/passenger-preferences.js';
 import{normalizeNavigationState}from'../../src/navigation/ui-navigation.js';
 import{handlesHighSpeedRequest}from'../../src/navigation/highspeed-routing.js';
 import{createTrafficClock}from'../../src/navigation/traffic-clock.js';
+import {createExactPublicTerminalPrecheck,runExactPublicTerminalPrecheck,TERMINAL_RESOLVER_POLICY_ID} from '../../src/navigation/terminal-isolation.js';
+function createS1Context(ctx) { Object.assign(ctx,{createExactPublicTerminalPrecheck,runExactPublicTerminalPrecheck,TERMINAL_POLICY_ID:TERMINAL_RESOLVER_POLICY_ID,terminalPrecheckState:undefined}); return vm.createContext(ctx); }
 const source=readFileSync(new URL('../../src/navigation/main.recovered.js',import.meta.url),'utf8');
 const code=source.slice(source.indexOf('async function S1() {'),source.indexOf('\nfunction ',source.indexOf('async function S1() {')));
 const deferred=()=>{let resolve;const promise=new Promise(r=>resolve=r);return{promise,resolve}};
@@ -23,7 +25,7 @@ for(const {inputNeed,need,migrated,label} of passengerCases)test(`actual S1 pres
  f2:async(req,L,Q,router)=>{if(req.mode==='walk'){calls.push('walk');return walk.promise}if(router.demo){assert.equal(req.need,need);assert.equal(req.destination,ctx.r.destination);assert.equal(req.destination.node_id,'source-lift');assert.deepEqual(req.destination.coordinates,[114.17,22.28,13.8]);calls.push('demo');return ok}if(router===fast){calls.push('fast');return{message:'missing access',warnings:[]}}calls.push('detail');return detail.promise},
  };
  const originalEndpoints=structuredClone({origin:ctx.r.origin,destination:ctx.r.destination});
- ctx.u1=()=>{ctx.h1++;ctx.G1?.abort()};ctx.trafficClock=createTrafficClock({date:ctx.w1,timeS:Number(ctx.c1.slice(0,2))*3600+Number(ctx.c1.slice(3))*60});ctx.trafficScenarioKey=()=>ctx.trafficClock.baseDate+':'+ctx.trafficClock.timeS;ctx.syncTraffic=()=>{};vm.createContext(ctx);vm.runInContext("const evaluateOriginOpening=()=>null,canTraverseSource=()=>true;\n"+code,ctx);const pending=ctx.S1();
+ ctx.u1=()=>{ctx.h1++;ctx.G1?.abort()};ctx.trafficClock=createTrafficClock({date:ctx.w1,timeS:Number(ctx.c1.slice(0,2))*3600+Number(ctx.c1.slice(3))*60});ctx.trafficScenarioKey=()=>ctx.trafficClock.baseDate+':'+ctx.trafficClock.timeS;ctx.syncTraffic=()=>{};createS1Context(ctx);vm.runInContext("const evaluateOriginOpening=()=>null,canTraverseSource=()=>true;\n"+code,ctx);const pending=ctx.S1();
  for(let i=0;i<8;i++)await tick();
  assert.equal(ctx.r.need,need,'requests enter routing only under one of the four current preferences');
  assert.equal(ctx.trafficClock.playing,false);assert.equal(ctx.routeSnapshot.departureS,ctx.trafficClock.timeS);assert.equal(ctx.routeSnapshot.departureDate,ctx.w1);assert.equal(Object.isFrozen(ctx.routeSnapshot),true);
@@ -45,7 +47,7 @@ test('actual S1 gives taxi the exact base owner and waits for its dependent quer
  f2:async(req,L,Q,router)=>{calls.push(req.mode==='walk'?'walk':router.demo?'demo':router===fast?'base':'detail');return router===fast?{warnings:[],message:'missing'}:ok},
  n3:async(request,signal,queue,shared)=>{assert.equal(shared,fast);assert.equal(request.departureS,28800);assert.equal(request.need,'luggage');calls.push('taxi-direct');await taxi.promise;if(signal.aborted)return;await queue.run(()=>{calls.push('taxi-last');return ok},shared);await queue.run(()=>{calls.push('taxi-first');return ok},shared)},
  };
- ctx.u1=()=>{ctx.h1++;ctx.G1?.abort()};ctx.trafficClock=createTrafficClock({date:ctx.w1,timeS:Number(ctx.c1.slice(0,2))*3600+Number(ctx.c1.slice(3))*60});ctx.trafficScenarioKey=()=>ctx.trafficClock.baseDate+':'+ctx.trafficClock.timeS;ctx.syncTraffic=()=>{};vm.createContext(ctx);vm.runInContext("const evaluateOriginOpening=()=>null,canTraverseSource=()=>true;\n"+code,ctx);const pending=ctx.S1();
+ ctx.u1=()=>{ctx.h1++;ctx.G1?.abort()};ctx.trafficClock=createTrafficClock({date:ctx.w1,timeS:Number(ctx.c1.slice(0,2))*3600+Number(ctx.c1.slice(3))*60});ctx.trafficScenarioKey=()=>ctx.trafficClock.baseDate+':'+ctx.trafficClock.timeS;ctx.syncTraffic=()=>{};createS1Context(ctx);vm.runInContext("const evaluateOriginOpening=()=>null,canTraverseSource=()=>true;\n"+code,ctx);const pending=ctx.S1();
  for(let i=0;i<6;i++)await tick();assert(calls.includes('base'));assert(calls.includes('taxi-direct'));assert(!calls.includes('demo'));assert(!calls.includes('detail'));assert(!calls.includes('dispose-base'),'shared worker cannot be disposed after base public alone');
  taxi.resolve();await pending;
  assert(calls.indexOf('taxi-first')<calls.indexOf('demo'));assert(calls.indexOf('demo')<calls.indexOf('detail'));assert(calls.indexOf('detail')<calls.indexOf('walk'));assert.equal(ctx.d1,false);assert(ctx.C.some(choice=>choice.available));
@@ -62,7 +64,7 @@ test('actual S1 keeps usable candidates and marks Worker/refinement errors incom
  f2:async(req,L,Q,router)=>{calls.push(req.mode==='walk'?'walk':router.demo?'demo':router===fast?'base':'detail');if(router===detail&&req.mode!=='walk')throw Error('Worker memory limit');return router===fast?{warnings:[],message:'missing'}:ok},
  n3:async(request,signal,queue,shared)=>{assert.equal(shared,fast);assert.equal(request.departureS,28800);assert.equal(request.need,'luggage');calls.push('taxi-direct');await taxi.promise;if(signal.aborted)return;await queue.run(()=>{calls.push('taxi-last');return ok},shared);await queue.run(()=>{calls.push('taxi-first');return ok},shared)},
  };
- ctx.u1=()=>{ctx.h1++;ctx.G1?.abort()};ctx.trafficClock=createTrafficClock({date:ctx.w1,timeS:Number(ctx.c1.slice(0,2))*3600+Number(ctx.c1.slice(3))*60});ctx.trafficScenarioKey=()=>ctx.trafficClock.baseDate+':'+ctx.trafficClock.timeS;ctx.syncTraffic=()=>{};vm.createContext(ctx);vm.runInContext("const evaluateOriginOpening=()=>null,canTraverseSource=()=>true;\n"+code,ctx);const pending=ctx.S1();
+ ctx.u1=()=>{ctx.h1++;ctx.G1?.abort()};ctx.trafficClock=createTrafficClock({date:ctx.w1,timeS:Number(ctx.c1.slice(0,2))*3600+Number(ctx.c1.slice(3))*60});ctx.trafficScenarioKey=()=>ctx.trafficClock.baseDate+':'+ctx.trafficClock.timeS;ctx.syncTraffic=()=>{};createS1Context(ctx);vm.runInContext("const evaluateOriginOpening=()=>null,canTraverseSource=()=>true;\n"+code,ctx);const pending=ctx.S1();
  for(let i=0;i<6;i++)await tick();assert(calls.includes('base'));assert(calls.includes('taxi-direct'));assert(!calls.includes('demo'));assert(!calls.includes('detail'));assert(!calls.includes('dispose-base'),'shared worker cannot be disposed after base public alone');
  taxi.resolve();await pending;
  assert(calls.indexOf('taxi-first')<calls.indexOf('demo'));assert(calls.indexOf('demo')<calls.indexOf('detail'));assert(calls.indexOf('detail')<calls.indexOf('walk'));assert.equal(ctx.d1,false);assert(ctx.C.some(choice=>choice.available));assert.equal(ctx.routePerformance.comparisonStatus,'incomplete-error');assert(ctx.routePerformance.failedStages.includes('transit-detailed'));assert.equal(ctx.C.find(c=>c.id==='transit-detailed').result.failureStatus,'SEARCH_ERROR');assert.match(ctx.lastMessage,/比较未完成/);assert.doesNotMatch(ctx.lastMessage,/方案已更新|不可达/);
@@ -81,7 +83,7 @@ for(const scenario of ['cache-miss','cache-hit','cancel-at-precheck'])test(`actu
  f2:async(request,L,Q,router)=>{calls.push(request.mode==='walk'?'walk':router===fast?'base':'detail');assert.equal(request.origin,origin);assert.equal(request.destination,destination);return router===fast?{warnings:[],message:'needs-detail'}:ok},
  };
  if(scenario==='cache-hit')ctx.routeResultCache.set(JSON.stringify(['guarded-demo',{origin,destination,mode:'transit',need:'ordinary',departureDate:'2026-10-12',departureS:39600,allowedTransitModes:['metro','bus','tram']}]),cached);
- ctx.u1=()=>{ctx.h1++;ctx.G1?.abort()};ctx.trafficClock=createTrafficClock({date:ctx.w1,timeS:Number(ctx.c1.slice(0,2))*3600+Number(ctx.c1.slice(3))*60});ctx.trafficScenarioKey=()=>ctx.trafficClock.baseDate+':'+ctx.trafficClock.timeS;ctx.syncTraffic=()=>{};vm.createContext(ctx);vm.runInContext("const evaluateOriginOpening=()=>null,canTraverseSource=()=>true;\n"+code,ctx);await ctx.S1();
+ ctx.u1=()=>{ctx.h1++;ctx.G1?.abort()};ctx.trafficClock=createTrafficClock({date:ctx.w1,timeS:Number(ctx.c1.slice(0,2))*3600+Number(ctx.c1.slice(3))*60});ctx.trafficScenarioKey=()=>ctx.trafficClock.baseDate+':'+ctx.trafficClock.timeS;ctx.syncTraffic=()=>{};createS1Context(ctx);vm.runInContext("const evaluateOriginOpening=()=>null,canTraverseSource=()=>true;\n"+code,ctx);await ctx.S1();
  assert.deepEqual({origin,destination},original,'the original named floor is never replaced');
  assert(calls.includes('dispose-base'));assert(calls.includes('dispose-walk'),'finally cleanup is retained');
  if(scenario==='cancel-at-precheck'){
@@ -97,7 +99,7 @@ test('planning captures and pauses click-time before data loading, and rejects s
  const ctx={normalizeNavigationState,handlesHighSpeedRequest,performance,AbortController,Date,Number,Set,Map,Promise,
  r:{origin:{id:'a'},destination:{id:'b'},need:'ordinary'},publicDataReady:false,publicDataPromise:ready.promise,h1:0,y1:false,
  trafficClock:createTrafficClock({date:'2026-10-13',timeS:45296.9}),syncTraffic(){},Z:message=>messages.push(message)};
- vm.createContext(ctx);vm.runInContext("const evaluateOriginOpening=()=>null,canTraverseSource=()=>true;\n"+code,ctx);const planning=ctx.S1();
+ createS1Context(ctx);vm.runInContext("const evaluateOriginOpening=()=>null,canTraverseSource=()=>true;\n"+code,ctx);const planning=ctx.S1();
  assert.equal(ctx.trafficClock.playing,false);assert.equal(ctx.trafficClock.timeS,45296);ctx.trafficClock.tick(100000);assert.equal(ctx.trafficClock.timeS,45296);
  ctx.trafficClock.seek({date:'2026-10-14',timeS:28800});ctx.publicDataReady=true;ready.resolve();await planning;
  assert.equal(ctx.trafficClock.timeS,28800);assert.equal(ctx.trafficClock.date,'2026-10-14');assert.equal(messages.length,1,'stale request exits before publishing or calculating with the new clock');
