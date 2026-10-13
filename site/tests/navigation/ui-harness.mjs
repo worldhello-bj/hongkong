@@ -15,7 +15,7 @@ globalThis.fetch=async url=>{const path=new URL(url,'http://localhost').pathname
 globalThis.Worker=class {constructor(url){const path=base+new URL(url).pathname.replace(base,'');workers.push(this);this.w=new NodeWorker(`const {parentPort}=require('node:worker_threads');globalThis.self=globalThis;globalThis.postMessage=x=>parentPort.postMessage(x);parentPort.on('message',x=>globalThis.onmessage({data:x}));require(${JSON.stringify(path)});`,{eval:true,resourceLimits:{maxOldGenerationSizeMb:384}});this.w.on('message',data=>this.onmessage?.({data}));this.w.on('error',e=>{console.error('WORKER ERROR',e);this.onerror?.(e)});}postMessage(x){this.w.postMessage(x)}terminate(){this.w.terminate()}};
 const version=JSON.parse(readFileSync(base+'/build-meta.json')).version;
 console.log('TEST_RUNTIME',version);
-let api;try{let source=readFileSync(base+'/assets/main-integrated.js','utf8').replace(/from\s*["'](\.\/[^"']+)["']/g,(_,p)=>'from '+JSON.stringify(new URL(p,'file://'+base+'/assets/main-integrated.js').href)).replace(/import\("(\.\.?\/[^"]+)"\)/g,(_,p)=>'import('+JSON.stringify(new URL(p,'file://'+base+'/assets/main-integrated.js').href)+')').replaceAll('import.meta.url',JSON.stringify('file://'+base+'/assets/main-integrated.js'));if(process.env.HK_DEBUG)source=source.replace('const accept=raw=>compatibleWithOverlay(raw,demoArea,demoBlock)?annotateDemoFallback(annotatePreferenceResult(raw,request),request):null;','const accept=raw=>{console.log("RAW_DEMO",JSON.stringify({message:raw.message,complete:raw.journey?.complete,blocked:raw.journey?.steps?.filter(s=>s.blocked),connectors:raw.journey?.steps?.filter(s=>s.kind==="access_connector"||s.guidance?.geometry_mode==="schematic"),routedEndpoints:raw.routedEndpoints}));return compatibleWithOverlay(raw,demoArea,demoBlock)?annotateDemoFallback(annotatePreferenceResult(raw,request),request):null;};');api=await import('data:text/javascript;base64,'+Buffer.from(source+'\nexport {r,S1,C,d1,V,f,D1,n1,publicDataPromise,f2,L1,Q,b2,z,O,t1};').toString('base64'));console.log('IMPORT OK')}catch(e){console.error('BOOT ERROR',e.stack);process.exitCode=1}
+let api;try{let source=readFileSync(base+'/assets/main-integrated.js','utf8').replace(/from\s*["'](\.\/[^"']+)["']/g,(_,p)=>'from '+JSON.stringify(new URL(p,'file://'+base+'/assets/main-integrated.js').href)).replace(/import\("(\.\.?\/[^"]+)"\)/g,(_,p)=>'import('+JSON.stringify(new URL(p,'file://'+base+'/assets/main-integrated.js').href)+')').replaceAll('import.meta.url',JSON.stringify('file://'+base+'/assets/main-integrated.js'));if(process.env.HK_DEBUG)source=source.replace('const accept=raw=>compatibleWithOverlay(raw,demoArea,demoBlock)?annotateDemoFallback(annotatePreferenceResult(raw,request),request):null;','const accept=raw=>{console.log("RAW_DEMO",JSON.stringify({message:raw.message,complete:raw.journey?.complete,blocked:raw.journey?.steps?.filter(s=>s.blocked),connectors:raw.journey?.steps?.filter(s=>s.kind==="access_connector"||s.guidance?.geometry_mode==="schematic"),routedEndpoints:raw.routedEndpoints}));return compatibleWithOverlay(raw,demoArea,demoBlock)?annotateDemoFallback(annotatePreferenceResult(raw,request),request):null;};');api=await import('data:text/javascript;base64,'+Buffer.from(source+'\nexport {r,S1,C,d1,V,f,D1,n1,publicDataPromise,f2,L1,Q,b2,z,O,t1,trafficClock,trafficModel,taxiSimulation,trafficLayers,renderTraffic,syncTraffic,selectDeparture,ensureTaxi,routeSnapshot,taxiOffers,taxiSelectedQuote};').toString('base64'));console.log('IMPORT OK')}catch(e){console.error('BOOT ERROR',e.stack);process.exitCode=1}
 await api.publicDataPromise;
 assert.equal(window.__navigationLoad.status,'ready');
 assert.ok(el('[data-app="panel"]').innerHTML.includes('公交'));
@@ -30,6 +30,116 @@ if(process.env.HK_STOPS_ONLY){
  for(const side of ['origin','destination']){listeners.get('[data-app="stop-card"]:click')({target:{closest:()=>({dataset:{stopSide:side},hasAttribute:()=>false})}});assert.equal(api.r[side].id,stop.id);assert.deepEqual(api.r[side].coordinates,stop.coordinates);}
  assert.equal(api.r.need,'ordinary');assert.equal(api.t1.has('taxi'),false);
  console.log('STOP ENTRY PASS: default markers, card, both exact stop endpoints, preference/taxi unchanged');process.exit(0);
+}
+if(process.env.HK_BOOT_CASE==='traffic'){
+ await api.publicDataPromise;
+ for(let i=0;i<100&&!api.taxiSimulation;i++)await new Promise(resolve=>setTimeout(resolve,20));
+ assert.ok(api.taxiSimulation,'default fleet loads without enabling taxi route policy');assert.equal(api.t1.has('taxi'),false);
+ const modes=new Set(api.trafficModel.at(api.trafficClock.timeS,'2026-10-13').filter(v=>v.mode!=='highspeed').map(v=>v.mode));assert.deepEqual([...modes].sort(),['bus','metro','tram']);
+ const click=dataset=>listeners.get('#navigation-app:click')({target:{closest:()=>({dataset})}});
+ click({action:'traffic-play'});assert.equal(api.trafficClock.playing,false);const before=api.trafficClock.timeS;await new Promise(resolve=>setTimeout(resolve,220));assert.equal(api.trafficClock.timeS,before);
+ click({action:'traffic-step'});assert.equal(api.trafficClock.timeS,before+60);
+ const vehicle=api.trafficModel.at(before,'2026-10-13')[0],later=api.trafficModel.at(before+60,'2026-10-13').find(v=>v.id===vehicle.id);if(later)assert.notDeepEqual(vehicle.position,later.position);
+ const frozenClock=api.trafficClock.timeS,frozenView={...api.f},frozenFleet=api.taxiSimulation;
+ click({taxiPolicy:'with'});await new Promise(resolve=>setTimeout(resolve,30));assert.ok(api.taxiSimulation);assert.equal(api.t1.has('taxi'),true);
+ click({taxiPolicy:'without'});await new Promise(resolve=>setTimeout(resolve,30));assert.ok(api.taxiSimulation);assert.equal(api.t1.has('taxi'),false);assert.equal(api.trafficClock.timeS,frozenClock);assert.deepEqual(api.f,frozenView);assert.equal(api.taxiSimulation,frozenFleet);
+ for(const mode of ['metro','bus','tram','taxi']){click({trafficLayer:mode});assert.equal(api.trafficLayers[mode],false);assert.equal(api.t1.has('taxi'),false);assert.equal(api.trafficClock.timeS,frozenClock);assert.deepEqual(api.f,frozenView);click({trafficLayer:mode});assert.equal(api.trafficLayers[mode],true);}
+ click({action:'traffic-play'});api.r.stage='station';const hiddenTime=api.trafficClock.timeS;await new Promise(resolve=>setTimeout(resolve,250));assert.equal(api.trafficClock.timeS,hiddenTime);api.r.stage='home';await new Promise(resolve=>setTimeout(resolve,250));assert.ok(api.trafficClock.timeS>hiddenTime);
+ console.log('TRAFFIC ENTRY PASS: all public modes, default taxis, independent policy, pause/step, hidden view pause and resume');process.exit(0);
+}
+if(process.env.HK_BOOT_CASE==='highspeed'){
+ const click=dataset=>listeners.get('#navigation-app:click')({target:{closest:()=>({dataset})}});
+ const waitFor=async(predicate,label)=>{const until=Date.now()+65000;while(!predicate()&&Date.now()<until)await new Promise(resolve=>setTimeout(resolve,40));assert.ok(predicate(),label+': '+el('[data-app="status"]').textContent);};
+ await waitFor(()=>window.__navigationLoad.block==='ready','detail graph loaded for source-backed local transfers');
+ const wek=api.V.find(p=>p.id==='HSR:WEK'),fut=api.V.find(p=>p.id==='HSR:FUT'),adm=api.V.find(p=>p.id==='ADM:portal:E2');
+ assert.ok(wek&&fut&&adm);click({action:'home'});assert.match(el('[data-app="panel"]').innerHTML,/data-demo-preset="highspeed"/);
+ const records=[];
+ for(const time of ['08:00','08:03','08:00']){
+  api.selectDeparture('2026-10-13',time);assert.equal(api.C.length,0);api.r.origin=wek;api.r.destination=fut;
+  await api.S1();const choice=api.C.find(c=>c.id==='highspeed');assert.ok(choice?.available,choice?.result.message);assert.ok(choice.modeChain.includes('highspeed'));assert.equal(choice.quote.available,false);assert.equal(choice.quote.pricingUnavailable,true);assert.equal(api.routeSnapshot.departureS,api.trafficClock.timeS);
+  assert.match(el('[data-app="panel"]').innerHTML,/高铁票价与余票未接入/);assert.match(el('[data-app="panel"]').innerHTML,/data-action="start"/);
+  const result=choice.result,ride=result.timedLegs.find(leg=>leg.kind==='highspeed');assert.ok(ride.departureS>=api.trafficClock.timeS+2700);assert.equal(result.lines.filter(line=>line.kind==='highspeed').length,1);
+  records.push({time,minutes:choice.minutes,waitMinutes:result.waitMinutes,processingMinutes:result.processingMinutes,train:result.highSpeedTrip.trainCode,departureS:ride.departureS,arrivalS:result.arrivalS});
+ }
+ assert.deepEqual(records[0],records[2]);assert.notEqual(records[0].waitMinutes,records[1].waitMinutes);assert.notEqual(records[0].minutes,records[1].minutes);
+ const frozen=api.trafficClock.snapshot(),flags={...api.trafficLayers};click({trafficLayer:'highspeed'});assert.equal(api.trafficLayers.highspeed,false);for(const mode of ['metro','bus','tram','taxi'])assert.equal(api.trafficLayers[mode],flags[mode]);assert.deepEqual(api.trafficClock.snapshot(),frozen);click({trafficLayer:'highspeed'});
+ click({region:'HSR'});await new Promise(resolve=>setTimeout(resolve,20));assert.match(el('[data-app="network"]').innerHTML,/na-network highspeed/);assert.match(el('[data-app="transit-stops"]').innerHTML,/highspeed/);
+ const departures=api.trafficModel.departures('HSR:WEK',28800,'2026-10-13',{limit:3});assert.equal(departures.length,3);assert.ok(departures.every(d=>d.mode==='highspeed'&&d.departureS>=28800));
+ const at=api.trafficModel.at(29520,'2026-10-13').filter(v=>v.mode==='highspeed'),later=api.trafficModel.at(29580,'2026-10-13').filter(v=>v.mode==='highspeed');assert.ok(at.length);assert.ok(at.some(vehicle=>later.some(next=>next.id===vehicle.id&&JSON.stringify(next.position)!==JSON.stringify(vehicle.position))));
+ api.selectDeparture('2026-10-13','08:00');api.r.origin=adm;api.r.destination=fut;await api.S1();let choice=api.C.find(c=>c.id==='highspeed');assert.ok(choice?.available,choice?.result.message+' '+JSON.stringify(choice?.result.warnings));assert.ok(choice.result.needsFacilityConfirmation);assert.ok(choice.result.journey.steps.some(step=>step.guidance?.edge_ids?.length),'HK leg uses real source edges');assert.ok(choice.modeChain.includes('metro'));records.push({direction:'ADM→FUT',minutes:choice.minutes,train:choice.result.highSpeedTrip.trainCode,arrivalS:choice.result.arrivalS,departureS:choice.result.departureS});
+ api.selectDeparture('2026-10-13','08:00');api.r.origin=fut;api.r.destination=adm;await api.S1();choice=api.C.find(c=>c.id==='highspeed');assert.ok(choice?.available,choice?.result.message+' '+JSON.stringify(choice?.result.warnings));const result=choice.result,ride=result.timedLegs.find(leg=>leg.kind==='highspeed'),immigration=result.timedLegs.find(leg=>leg.procedure==='immigration');assert.ok(immigration.departureS>=ride.arrivalS);assert.ok(result.arrivalS>immigration.arrivalS);records.push({direction:'FUT→ADM',minutes:choice.minutes,train:result.highSpeedTrip.trainCode,arrivalS:result.arrivalS,immigrationEndS:immigration.arrivalS});
+ const pending=api.S1();api.selectDeparture('2026-10-13','10:00');await pending;assert.equal(api.C.length,0);assert.equal(api.routeSnapshot,undefined);
+ console.log('HIGHSPEED_INTEGRATION_OBSERVATIONS',JSON.stringify(records));console.log('High-speed real Worker integration passed: global time, same-time replay, source-backed HK prefix/suffix, border procedures, map/stops and independent fifth layer');for(const worker of workers)worker.terminate();process.exit(0);
+}
+if(process.env.HK_BOOT_CASE==='departure-time'){
+ const {journeyScore}=await import('../../src/navigation/journey-score.js');
+ const click=dataset=>listeners.get('#navigation-app:click')({target:{closest:()=>({dataset})}});
+ const change=(app,value)=>listeners.get('#navigation-app:change')({target:{dataset:{},value,matches:selector=>selector===`[data-app="${app}"]`}});
+ const waitFor=async(predicate,label,timeout=65000)=>{const until=Date.now()+timeout;while(!predicate()&&Date.now()<until)await new Promise(resolve=>setTimeout(resolve,50));assert.ok(predicate(),label);};
+ const defaultDate=api.trafficClock.date,selectedDate='2026-10-13';
+ change('departure-date',selectedDate);change('departure','08:01');change('departure','08:03');
+ await waitFor(()=>api.taxiSimulation?.inputKey===selectedDate+':28980','latest selection owns the asynchronous fleet');
+ assert.equal(api.trafficClock.timeS,28980,'fleet loading never rewinds or advances chosen time');assert.equal(api.trafficClock.playing,false);
+ api.renderTraffic();assert.equal(el('[data-app="departure"]').value,'08:03:00');assert.equal(el('[data-app="departure-date"]').value,selectedDate);assert.equal(el('[data-app="traffic-clock"]').textContent,'08:03:00');
+ assert.equal(api.O.now(),api.trafficClock.epochMs,'simulated orders use the same global clock');
+ assert.ok(!el('[data-app="panel"]').innerHTML.includes('data-action="taxi-play"'),'no second playback controls in taxi panel');
+ click({action:'traffic-step'});assert.equal(api.trafficClock.timeS,29040);assert.equal(el('[data-app="departure"]').value,'08:04:00');assert.equal(el('[data-app="traffic-clock"]').textContent,'08:04:00');assert.equal(api.O.now(),api.trafficClock.epochMs);
+ click({action:'traffic-play'});await new Promise(resolve=>setTimeout(resolve,350));click({action:'traffic-play'});api.renderTraffic();
+ assert.ok(api.trafficClock.timeS>29040,'global playback actually advances');assert.equal(el('[data-app="departure"]').value,api.trafficClock.time);assert.equal(el('[data-app="traffic-clock"]').textContent,api.trafficClock.time);
+ const focus={matches:selector=>selector==='[data-app="departure-date"], [data-app="departure"]'};click({action:'traffic-play'});listeners.get('#navigation-app:focusin')({target:focus});assert.equal(api.trafficClock.playing,false,'editing the sole clock pauses playback');
+ const paused=api.trafficClock.snapshot(),pausedFleet=api.taxiSimulation.simulateAt(api.trafficClock.timeS),pausedTransit=api.trafficModel.at(api.trafficClock.timeS,api.trafficClock.baseDate);
+ await new Promise(resolve=>setTimeout(resolve,250));assert.deepEqual(api.trafficClock.snapshot(),paused,'paused dates, inputs, orders and vehicles use an unchanged snapshot');assert.deepEqual(api.taxiSimulation.simulateAt(api.trafficClock.timeS),pausedFleet);assert.deepEqual(api.trafficModel.at(api.trafficClock.timeS,api.trafficClock.baseDate),pausedTransit);assert.equal(api.O.now(),paused.epochMs);
+ const clockQuote=api.O.createQuote({title:'时钟回归',origin:'a',destination:'b',segments:[{mode:'walk',label:'walk',durationMinutes:1,distanceM:10}]});assert.equal(clockQuote.createdAt,paused.epochMs);
+ const clockOrder=api.O.reserve(clockQuote.id,'clock-regression');api.trafficClock.step(300);api.renderTraffic();assert.equal(api.O.snapshot().orders.find(order=>order.id===clockOrder.id).status,'expired','global advance controls simulated order expiry');
+
+ await waitFor(()=>window.__navigationLoad.block==='ready','detail data loads before repeated-time comparison');
+ const panel=()=>el('[data-app="panel"]').innerHTML;
+ assert.ok(panel().indexOf('data-app="departure"')<panel().indexOf('data-app="route-settings"'),'departure is visible outside collapsed preferences');
+ api.r.origin=api.V.find(place=>place.id==='ADM:portal:E2');api.r.destination=api.V.find(place=>place.id==='AUS:portal:B2');
+ const observations=[];
+ for(const time of ['08:00','08:03','08:00']){
+  change('departure',time);
+  assert.equal(api.C.length,0);assert.equal(api.routeSnapshot,undefined);assert.equal(api.taxiOffers.length,0);assert.equal(api.taxiSelectedQuote,undefined);
+  const seconds=Number(time.slice(0,2))*3600+Number(time.slice(3))*60;
+  const sim=await api.ensureTaxi(seconds);const before=api.trafficClock.timeS;
+  assert.equal(before,seconds);assert.equal(api.trafficClock.playing,false);
+  const fleet=sim.simulateAt(seconds),quotes=sim.offerQuotes({passengerReadyS:seconds,nowS:seconds});
+  assert.ok(quotes.length);for(const q of quotes.filter(q=>q.currentState==='existingorder'))assert.ok(q.availableAtS>=q.previousOrder.dropoffS-1e-7,'prior passenger must finish first');
+  const vehicles=api.trafficModel.at(seconds,selectedDate),services=api.trafficModel.departures('RAIL:ADM:EAL',seconds,selectedDate,{limit:3});
+  click({action:'plan'});await waitFor(()=>api.C.some(choice=>choice.available&&!choice.result.taxiQuote),'source-backed public route at '+time);
+  click({action:'cancel-plan'});
+  const choice=api.C.find(choice=>choice.available&&!choice.result.taxiQuote);
+  assert.equal(api.trafficClock.timeS,seconds);assert.equal(api.O.now(),api.trafficClock.epochMs);assert.equal(api.routeSnapshot.departureDate,selectedDate);assert.equal(api.routeSnapshot.departureS,seconds);
+  for(const result of api.C){assert.equal(result.result.navigationSnapshot.departureS,seconds);assert.equal(result.result.navigationSnapshot.departureDate,selectedDate);}
+  assert.match(panel(),/data-action="start"/);assert.match(panel(),/班次/);assert.match(el('[data-app="planning-clock"]').textContent||panel(),new RegExp(time));
+  const record={time,departureS:seconds,scenario:sim.scenario.id,busy:fleet.filter(car=>car.state==='existingorder').length,fleet:fleet.map(car=>({id:car.id,state:car.state,position:car.position})),vehicles:vehicles.map(vehicle=>({id:vehicle.id,position:vehicle.position})),nextServices:services.map(row=>({id:row.id,waitS:row.waitS})),taxi:{car:quotes[0].carId,waitS:quotes[0].passengerWaitS,availableAtS:quotes[0].availableAtS},route:{id:choice.id,minutes:choice.minutes,waitMinutes:choice.result.waitMinutes,score:journeyScore(choice).total}};
+  observations.push(record);
+  const choices=api.C;click({action:'home'});assert.equal(api.C,choices);click({action:'resume-route'});assert.equal(api.C,choices,'home retains unchanged snapshot');
+  if(observations.length===3){
+   click({action:'traffic-step'});assert.equal(api.C.length,0);assert.equal(api.routeSnapshot,undefined);assert.equal(api.taxiOffers.length,0);assert.equal(api.trafficClock.timeS,seconds+60);assert.equal(api.taxiSimulation,sim,'advancing invalidates results but retains the physical fleet');
+  }else{
+   click({taxiPolicy:'with'});assert.equal(api.taxiSimulation,sim);assert.equal(api.trafficClock.timeS,seconds);click({taxiPolicy:'without'});assert.equal(api.taxiSimulation,sim);
+  }
+ }
+ assert.notDeepEqual(observations[0].fleet,observations[1].fleet,'time selection changes modeled taxi states/positions');
+ assert.deepEqual(observations[0].fleet,observations[2].fleet,'same explicit selection replays deterministically');
+ assert.notDeepEqual(observations[0].vehicles,observations[1].vehicles,'public vehicles follow selected time');
+ assert.notDeepEqual(observations[0].nextServices,observations[1].nextServices,'next departures/countdown follow selected time');
+ assert.notEqual(observations[0].route.score,observations[1].route.score,'route scoring includes changed wait/time');
+ assert.deepEqual(observations[0].route,observations[2].route,'same OD/date/time result is reproducible');
+ // In-flight old requests cannot restore results after a new time choice.
+ click({action:'plan'});change('departure','08:05');await new Promise(resolve=>setTimeout(resolve,300));assert.equal(api.C.length,0);assert.equal(api.d1,false);assert.equal(api.routeSnapshot,undefined);
+ // A fresh recomputation uses the map's stepped clock without resetting its fleet.
+ const beforeStep=await api.ensureTaxi(29100);click({action:'traffic-step'});assert.equal(api.trafficClock.timeS,29160);assert.equal(api.taxiSimulation,beforeStep);
+ change('departure','23:59');click({action:'traffic-step'});assert.match(el('[data-app="planning-clock"]').textContent,/2026-10-14 00:00:00/);assert.equal(el('[data-app="departure-date"]').value,'2026-10-14');assert.equal(el('[data-app="departure"]').value,'00:00:00');
+ change('departure-date',defaultDate);change('departure','08:00');
+ const resetFleet=await api.ensureTaxi(28800),resetQuote=resetFleet.offerQuotes({passengerReadyS:28800,nowS:28800})[0];resetFleet.reserveQuote(resetQuote.id);
+ assert.ok(resetFleet.getCars().some(car=>car.reservation));click({action:'confirm-reset'});
+ await waitFor(()=>api.taxiSimulation&&api.taxiSimulation!==resetFleet,'delete local data rebuilds even the unchanged default-time fleet');
+ assert.ok(api.taxiSimulation.getCars().every(car=>!car.reservation),'delete local data clears simulated passenger reservations');
+ console.log('DEPARTURE_TIME_OBSERVATIONS' ,JSON.stringify(observations.map(({fleet,vehicles,...row})=>({...row,taxiCount:fleet.length,publicVehicleCount:vehicles.length}))));
+ console.log('DEPARTURE TIME PASS: exact paused selection, race isolation, same-OD waits/scores, source vehicles/services, deterministic fleet, prior-order eligibility, old snapshots cleared, policy/home preserved and midnight labeled');
+ for(const worker of workers)worker.terminate();process.exit(0);
 }
 if(process.env.HK_BOOT_CASE==='quote-failure')api.O.createQuote=()=>{throw new Error('simulated pricing outage')};
 const click=dataset=>listeners.get('#navigation-app:click')({target:{closest:()=>({dataset})}});
@@ -98,6 +208,7 @@ try{
   assert.ok(/data-action="start"(?![^>]*disabled)/.test(el('[data-app="panel"]').innerHTML),'complete migrated route remains startable after cancellation');
   console.log('Retired preference migration passed: four visible preferences, ordinary selected, original coordinates retained, usable unverified ordinary route, safe cancel and enabled Start');
  }
+ const retained=api.C;click({action:'home'});assert.equal(api.r.stage,'home');assert.equal(api.C,retained);assert.match(el('[data-app="panel"]').innerHTML,/data-action="resume-route"/);click({action:'resume-route'});assert.equal(api.r.stage,'routes');assert.equal(api.C,retained);assert.equal(api.d1,false,'resuming a route does not rerun routing');
  console.log('Full entry + real Worker + rendered public route passed:',process.env.HK_BOOT_CASE??'metadata','stalled; legacy stored taxi-only policy and navigation hash');
 }finally{for(const worker of workers)worker.terminate();}
 

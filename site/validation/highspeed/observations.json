@@ -1,0 +1,43 @@
+[
+  {
+    "time": "08:00",
+    "minutes": 62,
+    "waitMinutes": 8,
+    "processingMinutes": 40,
+    "train": "G924",
+    "departureS": 31680,
+    "arrivalS": 32520
+  },
+  {
+    "time": "08:03",
+    "minutes": 59,
+    "waitMinutes": 5,
+    "processingMinutes": 40,
+    "train": "G924",
+    "departureS": 31680,
+    "arrivalS": 32520
+  },
+  {
+    "time": "08:00",
+    "minutes": 62,
+    "waitMinutes": 8,
+    "processingMinutes": 40,
+    "train": "G924",
+    "departureS": 31680,
+    "arrivalS": 32520
+  },
+  {
+    "direction": "ADM→FUT",
+    "minutes": 97,
+    "train": "G5812",
+    "arrivalS": 34620,
+    "departureS": 28800
+  },
+  {
+    "direction": "FUT→ADM",
+    "minutes": 144,
+    "train": "G5821",
+    "arrivalS": 37429.69992,
+    "immigrationEndS": 35160
+  }
+]

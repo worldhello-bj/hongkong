@@ -1,0 +1,101 @@
+[
+  {
+    "time": "08:00",
+    "departureS": 28800,
+    "scenario": "selected-time-taxi-v1|42|2026-10-13|28800",
+    "busy": 27,
+    "nextServices": [
+      {
+        "id": "scheduled:RAIL:EAL:2026-10-13:29040",
+        "waitS": 240
+      },
+      {
+        "id": "scheduled:RAIL:EAL:2026-10-13:29400",
+        "waitS": 600
+      },
+      {
+        "id": "scheduled:RAIL:EAL:2026-10-13:29760",
+        "waitS": 960
+      }
+    ],
+    "taxi": {
+      "car": "DEMO-43",
+      "waitS": 72.32850203132693,
+      "availableAtS": 28801.458502031328
+    },
+    "route": {
+      "id": "transit",
+      "minutes": 28,
+      "waitMinutes": 5,
+      "score": 48.370000000000005
+    },
+    "taxiCount": 48,
+    "publicVehicleCount": 16
+  },
+  {
+    "time": "08:03",
+    "departureS": 28980,
+    "scenario": "selected-time-taxi-v1|42|2026-10-13|28980",
+    "busy": 21,
+    "nextServices": [
+      {
+        "id": "scheduled:RAIL:EAL:2026-10-13:29040",
+        "waitS": 60
+      },
+      {
+        "id": "scheduled:RAIL:EAL:2026-10-13:29400",
+        "waitS": 420
+      },
+      {
+        "id": "scheduled:RAIL:EAL:2026-10-13:29760",
+        "waitS": 780
+      }
+    ],
+    "taxi": {
+      "car": "DEMO-19",
+      "waitS": 133.4772684609161,
+      "availableAtS": 28981.012268460916
+    },
+    "route": {
+      "id": "transit",
+      "minutes": 31,
+      "waitMinutes": 8,
+      "score": 52.870000000000005
+    },
+    "taxiCount": 48,
+    "publicVehicleCount": 16
+  },
+  {
+    "time": "08:00",
+    "departureS": 28800,
+    "scenario": "selected-time-taxi-v1|42|2026-10-13|28800",
+    "busy": 27,
+    "nextServices": [
+      {
+        "id": "scheduled:RAIL:EAL:2026-10-13:29040",
+        "waitS": 240
+      },
+      {
+        "id": "scheduled:RAIL:EAL:2026-10-13:29400",
+        "waitS": 600
+      },
+      {
+        "id": "scheduled:RAIL:EAL:2026-10-13:29760",
+        "waitS": 960
+      }
+    ],
+    "taxi": {
+      "car": "DEMO-43",
+      "waitS": 72.32850203132693,
+      "availableAtS": 28801.458502031328
+    },
+    "route": {
+      "id": "transit",
+      "minutes": 28,
+      "waitMinutes": 5,
+      "score": 48.370000000000005
+    },
+    "taxiCount": 48,
+    "publicVehicleCount": 16
+  }
+]

@@ -67,7 +67,7 @@ test('full source shell: tabs, repeated open/close, hash and back/forward stay u
   assert.ok(source.includes('m as S2,'));source=source.replace('m as S2,','m as originalMobileNavigation,')+'\nconst S2=globalThis.__createMobileNavigation;';
   source=source.replace(/from\s*["'](\.\/[^"']+)["']/g,(_,path)=>{const own=new URL(path,new URL('../../src/navigation/main.recovered.js',import.meta.url));const target=existsSync(fileURLToPath(own))?own:new URL(path,new URL('../../dist/assets/main-integrated.js',import.meta.url));return 'from '+JSON.stringify(target.href)});
   source=source.replaceAll('import.meta.url',JSON.stringify(new URL('../../dist/assets/main-integrated.js',import.meta.url).href));
-  source+='\nexport {r,x,H,writeAppHistory,O,activeScoreWeights,z2,P2,H2,u2,currentUiSnapshot};export function uiTestLegacyHistory(need){Q1.get(history.state.navigationApp).need=need;restoreAppLocation({state:history.state})} export function uiTestRememberOrder(id,value){_1.set(id,value)}export function uiTestGraph(graph){L1=graph} export function uiTestPreference(value){r.need=value;x()} export function uiTestBlock(graph){z=graph;V=j1({id:"pacific-place"},graph)} export function uiTestJourney(journey){$={journey,lines:[]};H("navigation")} ';
+  source+='\nexport {r,x,H,writeAppHistory,O,activeScoreWeights,z2,P2,H2,u2,currentUiSnapshot,trafficClock,selectDeparture,routeSnapshot,C,$};export function uiTestLegacyHistory(need){Q1.get(history.state.navigationApp).need=need;restoreAppLocation({state:history.state})} export function uiTestRememberOrder(id,value){_1.set(id,value)}export function uiTestTaxiSimulation(value){taxiSimulation=value}export function uiTestGraph(graph){L1=graph} export function uiTestPreference(value){r.need=value;x()} export function uiTestBlock(graph){z=graph;V=j1({id:"pacific-place"},graph)} export function uiTestJourney(journey){$={journey,lines:[],warnings:[]};H("navigation")} ';
   const app=await import('data:text/javascript;base64,'+Buffer.from(source).toString('base64'));
   const panel=()=>el('[data-app="panel"]').innerHTML;
   const click=dataset=>listeners.get('#navigation-app:click')({target:{closest:()=>({dataset})}});
@@ -108,7 +108,7 @@ test('full source shell: tabs, repeated open/close, hash and back/forward stay u
   click({tab:'station'});assert.match(panel(),/站内 3D/);assert.doesNotMatch(el('[data-app="station-model"]').innerHTML,/pp-model/);
 
   const inspectedStep={guidance:{edge_ids:['e'],geometry_mode:'official',geometry:{type:'LineString',coordinates:mall.edges[0].coordinates}}};
-  const inspectedJourney={graph:{edges:[]},steps:Array.from({length:12},()=>inspectedStep),complete:true};
+  const inspectedJourney={phases:[],graph:{edges:[]},steps:Array.from({length:12},()=>inspectedStep),complete:true};
   app.uiTestJourney(inspectedJourney);Object.assign(navigationState,{index:8,progress:.35});const setCount=navigationSetCount;
   navigationCallbacks.onStepChange(inspectedStep,8);assert.match(el('[data-nav="inspect"]').textContent,/查看太古广场模型/);
   navigationCallbacks.onInspectModel(inspectedStep);
@@ -117,6 +117,7 @@ test('full source shell: tabs, repeated open/close, hash and back/forward stay u
   assert.equal(navigationState.suspended,true);assert.equal(navigationState.index,8);assert.equal(navigationState.progress,.35);
   click({action:'close-secondary'});assert.equal(app.r.stage,'navigation');assert.equal(location.hash,'#navigation');
   assert.equal(navigationState.index,8);assert.equal(navigationState.progress,.35);assert.equal(navigationSetCount,setCount,'return resumes rather than resets the navigation journey');
+  navigationCallbacks.onClose();assert.equal(app.r.stage,'routes');click({action:'start'});assert.equal(app.r.stage,'navigation');assert.equal(navigationState.index,8);assert.equal(navigationState.progress,.35);assert.equal(navigationSetCount,setCount,'return to planning and reenter preserves current step');
   navigationCallbacks.onInspectModel(inspectedStep);travel(-1);
   assert.equal(app.r.stage,'navigation');assert.equal(navigationState.index,8);assert.equal(navigationState.progress,.35);assert.equal(navigationSetCount,setCount,'browser Back also retains the instruction position');
   const stationStep={guidance:{edge_ids:['HUH:indoor'],geometry_mode:'official',geometry:{type:'LineString',coordinates:[[114.182,22.303,4.6],[114.1821,22.3031,4.6]]}}};
@@ -184,6 +185,24 @@ test('full source shell: tabs, repeated open/close, hash and back/forward stay u
     assert.equal(app.r.need,'ordinary');assert.equal(app.r.stage,'home');assert.equal(app.r.origin,origin);assert.equal(app.r.destination,destination);
     assert.equal(app.O.snapshot().orders.find(order=>order.id===appOrder.id).status,'paid');assert.match(el('[data-app="status"]').textContent,/旧订单不会再次扣款/);
   }
+  const orderOrigin={id:'time-origin',name:'原起点',coordinates:[114.165,22.278]},orderDestination={id:'time-destination',name:'原终点',coordinates:[114.166,22.279]};
+  app.selectDeparture('2026-10-13','08:00');app.trafficClock.step(180);
+  app.uiTestRememberOrder(appOrder.id,{need:'ordinary',origin:orderOrigin,destination:orderDestination,choice:{result:{journey:inspectedJourney,navigationSnapshot:{departureDate:'2026-10-13',departureS:28980,scenarioKey:'2026-10-13:28800',trafficRevision:app.trafficClock.revision}}}});
+  app.selectDeparture('2026-10-13','08:03');click({resume:appOrder.id});
+  assert.equal(app.r.stage,'home','same clock time in a new explicit taxi scenario cannot reuse an old paid route');
+  assert.match(el('[data-app="status"]').textContent,/交通情景/);
+  assert.equal(app.O.snapshot().orders.find(order=>order.id===appOrder.id).status,'paid','invalidating route does not erase the existing paid record');
+  const currentSnapshot={departureDate:'2026-10-13',departureS:28980,scenarioKey:'2026-10-13:28980',trafficRevision:app.trafficClock.revision};
+  const reservedTaxi={id:'reserved-test-quote',carId:'DEMO-01'};
+  const reservedChoice=app.u2('taxi-direct',{journey:inspectedJourney,lines:[],warnings:[],navigationSnapshot:currentSnapshot,taxiQuote:reservedTaxi,totalMinutes:1,segments:[{kind:'walk',label:'来源步道',minutes:1,distanceM:20}]});
+  app.uiTestTaxiSimulation({getCars:()=>[{id:reservedTaxi.carId,reservation:reservedTaxi}],simulateAt:()=>[],prepareUntil(){},reserveQuote(){throw Error('Vehicle already reserved; refresh quotes')}});
+  app.uiTestRememberOrder(appOrder.id,{need:'ordinary',origin:orderOrigin,destination:orderDestination,choice:reservedChoice});
+  click({resume:appOrder.id});assert.equal(app.r.stage,'navigation');assert.equal(app.C.length,1);assert.equal(app.routeSnapshot,currentSnapshot);
+  click({action:'home'});click({action:'resume-route'});click({action:'start'});assert.equal(app.r.stage,'navigation','matching live taxi reservation resumes without double-reserving');
+  click({action:'home'});click({action:'traffic-step'});assert.equal(app.C.length,0);assert.equal(app.$,undefined);assert.equal(app.routeSnapshot,undefined,'advancing after paid-order restore clears its active result');
+  app.selectDeparture('2026-10-13','08:03');
+  click({resume:appOrder.id});assert.equal(app.r.stage,'home','reselecting the identical wall time still invalidates old instance-bound taxi quote handles');
+  assert.match(el('[data-app="status"]').textContent,/交通情景/);
   const choice=app.u2('walk',{journey:{complete:true,phases:[],steps:[]},segments:[{kind:'walk',label:'来源步道',minutes:1,distanceM:20}],lines:[],warnings:[]});
   assert.equal(choice.accessibility,'unknown');assert.equal(choice.luggageCompatible,undefined,'absence of stairs does not verify luggage capability');
 });

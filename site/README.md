@@ -28,7 +28,7 @@ The app replaces the initial compatibility URL with its canonical route. Interna
 
 ## Deploy
 
-Build with `npm run build` and publish the complete `dist/` directory. The tracked `.openai/hosting.json` identifies the existing Site; retain its project ID and audience when using the Sites source/package/publish workflow. There is no legacy UI deployment target. A build alone does not publish a new version.
+Build with `npm run build` and publish the complete `dist/` directory to your static host. A build alone does not publish a new version.
 
 ## Included functionality
 
@@ -72,3 +72,30 @@ Map from Lands Department · © Government of the Hong Kong SAR. Government spat
 ### Pacific Place
 
 The integrated mall model has five source-supported levels, existing XYZ passages/facilities and an explicitly selectable station-side F boundary. Floor slabs are schematic display envelopes; LG2 and unverified lifts are not invented. The modeled internal 10:00–22:00 access rule differs from station-side/tenant hours, so the UI offers an explicit time change or separately selected exterior endpoint. See [Pacific Place evidence and 24-case regression](validation/pacific-place/README.md).
+
+### Traffic simulation and next departures
+
+The map starts an explicitly simulated 10× clock with road-graph taxis and metro, bus and tram vehicles. The map fleet is independent of the “include taxi” trip-planning option. Pause or advance the clock from the map; background tabs, station/mall views and navigation pause sampling without wall-clock catch-up. Reduced-motion preference starts paused. The visible “全局模拟时间” controls seek one global Hong Kong clock. The date/time fields mirror playback and one-minute advances, including midnight rollover; they are not an independent future-departure clock. Editing pauses the clock and invalidates old route/quote snapshots. Trip planning freezes and captures the clock at the click, including while data are loading. Routes, transit vehicles, next departures, taxi quotes and simulated order expiry all read this source. Each result retains an immutable planning snapshot; changing the global clock never changes that old snapshot into a new result. Playing or stepping after a result clears it before the clock moves; returning home without changing conditions keeps the selected route and offers a resume button. Endpoint, preference and taxi-policy edits invalidate routes while preserving the current traffic clock and fleet.
+
+Vehicles and station next-departure cards use the same `fastPublicRouter.network` patterns as route planning. Metro uses the existing official first/last-service windows with the existing **6-minute headway and 7-minute interval demonstration assumptions**, not an official individual-train timetable or live feed. Bus movement uses the loaded road shape and headway estimates; tram uses the loaded stop-order schematic shape. Missing modes/routes/stations are not manufactured. Next-arrival cards show direction and subsequent services, with simulation labeling.
+
+Traffic animation samples at 10 updates/second, keeps SVG nodes, culls offscreen vehicles and bounds public vehicle display to 160. Timetable sampling never extends routes; the separate 48-taxi simulation retains its existing one-way/turn restrictions, seeded previous orders, quote and reservation sequence. Sampling and visualization do not modify source graphs or calendars. See `validation/traffic-restoration/` for runtime-specific checks and limitations.
+
+The four compact map-layer buttons independently show/hide metro, bus, tram and taxi markers. Changing the taxi trip-planning preference preserves the simulation time, fleet state and viewport. Leaving 3D guidance for planning and reopening the unchanged journey preserves its current instruction and progress; a genuinely new journey still starts at its beginning.
+
+Explicit departure date/time changes also choose a deterministic 48-taxi demonstration scenario. A bounded 120–300-second warm-up uses the existing directed road graph and prior-order rules; it makes locations, busy vehicles and quotes differ without pretending to be live traffic or a continuous replay of one fleet throughout a day. Selecting the identical date/time reproduces that scenario. Ordinary ticking and route-policy toggles retain its continuous road movement and reservations. Public transport continues to use only the existing loaded calendars, windows and modeled headways. Different waits and scores can retain the same winning route. See `validation/departure-time/` for the repeated-OD checks.
+
+The taxi detail panel has no second playback/step controls. Opening-hours shortcuts seek the global clock, while ordinary view/history navigation does not rewind it. Seek revisions reject late fleet loading and routing completion from an earlier clock position. See `validation/global-clock/` for the single-source, seek-race, paused-consumer and order-expiry checks.
+
+### 西九龙—福田高铁联程示范
+
+新增可搜索的香港西九龙/深圳福田站、双向高铁图层、发车站点卡及三个一键联程示例。高铁、香港侧公共交通、办理手续和换乘均读取唯一 `trafficClock`；规划快照不随播放漂移，重新选时会使旧结果失效。高铁通过独立适配器接入原规划流程，香港侧仍使用原真实路网/Worker，并保留楼层、设施偏好、覆盖与临时关闭校验。
+
+- 班次取自港铁 2026-10-11 起适用的一般时刻表，2026-10-13 核验，含 52 条北行/60 条南行常规记录。车程按每车实际参考时长 14–16 分钟；周六附加班次未纳入。
+- 官方一般查询没有出行日选择；将普通记录重复到模拟日期只是模型假设，不代表该日必开、余票或实时定位。站点卡区分“下一班发车”与“办理手续后最早可规划班次”。
+- 北行在西九龙办理两地出入境；南行在抵达西九龙后办理。北行到站至少提前 45 分钟，福田出发预留 30 分钟，抵港手续预留 45 分钟均为明确模型缓冲；同时检查站点开放/关口窗口及检票截止。
+- 香港侧精细路网缺少柯士甸 C 通道。联程复用已核验月台节点的实际规划，再加 10 分钟站际概览模型（官方两站步行参考约 4 分钟，另 6 分钟内部缓冲）。不补画 C 通道、高差或无障碍路线。
+- 高铁站点质心及轨迹为两点示意，非实测轨道。高铁票价、余票及真实订单未接入；路线可演练，但不计作已知费用评分，也不生成跨境车票。
+- 客户端车辆模型缓存有界的日历/服务日窗口，逐帧位置仍计算；热采样不重复扫描日历，未改车辆位置或班次结果。
+
+核验入口：[北行时刻](https://www.highspeed.mtr.com.hk/en/trip-planner.html?id=WEK2FUT)、[南行时刻](https://www.highspeed.mtr.com.hk/en/trip-planner.html?id=FUT2WEK)、[官方短途表](https://www.highspeed.mtr.com.hk/res/pdf/short-haul-train-timetable.pdf)、[服务指南](https://www.highspeed.mtr.com.hk/res/pdf/Service_Guide_EN.pdf)、[柯士甸站图](https://www.mtr.com.hk/archive/ch/services/layouts/aus.pdf)、[离港流程](https://www.highspeed.mtr.com.hk/en/guide/process-departure.html)、[抵港流程](https://www.highspeed.mtr.com.hk/en/guide/process-arrival.html)、[西九龙开放时间](https://www.highspeed.mtr.com.hk/en/about/wek.html)、[海关管制站时间](https://www.customs.gov.hk/en/service-enforcement-information/passenger-clearance/contact-us/index.html?print=1)。

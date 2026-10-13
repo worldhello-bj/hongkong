@@ -1,0 +1,19 @@
+✔ only existing bus/tram stops, exact coordinate identity and deduplicated route directions (3.964661ms)
+✔ wide view clusters without losing stops; zoom gives individual exact positions (0.939765ms)
+✔ card shows existing route, source, actions and escapes untrusted names (0.389111ms)
+✔ controller single stop, keyboard, endpoint actions, close, clustering and cached redraw (1.635926ms)
+✔ large touch targets, distinct icon shapes, limited labels and source integration (1.822283ms)
+✔ metro catalog uses supplied station coordinates and excludes unsupported or invalid stops (0.449812ms)
+✔ card next arrival and subsequent departures use model times, date, direction and escaping (0.426527ms)
+✔ countdowns roll over correctly and never describe a dwell as a future arrival (1.678229ms)
+✔ unready and out-of-service cards stay honest rather than inventing a countdown (0.258025ms)
+✔ clock updates only the open departure section, preserves controls, and caches within a second (0.772344ms)
+✔ metro card keeps readable direction without internal routing IDs (0.211526ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 114.6549

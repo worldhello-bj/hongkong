@@ -1,0 +1,12 @@
+✔ historical URLs resolve inside one app, with safe standalone navigation states (1.972969ms)
+✔ all historical HTML is replaced, retired UI physically removed, shared 3D retained (15.671286ms)
+✔ station and information screens expose unified actions and evidence boundaries (0.739585ms)
+✔ full source shell: tabs, repeated open/close, hash and back/forward stay unified (109.443571ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 12577.370878

@@ -1,0 +1,11 @@
+✔ seek atomically changes the global clock, pauses and rejects older async revision tokens (0.861647ms)
+✔ application has one live clock and no independent departure or taxi playback controls (11.835061ms)
+✔ full entry and Worker remain usable: navigation departure changes one coherent traffic and result snapshot (17765.406014ms)
+ℹ tests 344
+ℹ suites 0
+ℹ pass 344
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 225200.358208

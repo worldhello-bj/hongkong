@@ -1,0 +1,41 @@
+{
+  "runtime": "0f6587f77445",
+  "builtAt": "2026-10-13T10:18:10.194Z",
+  "baseCommit": "b96fc28c81a2a07fdbd357d0ccd49ca4262d0191",
+  "commands": [
+    "npm run build",
+    "npm test",
+    "node validation/highspeed/performance-parity.mjs"
+  ],
+  "aggregate": {
+    "tests": 379,
+    "pass": 379,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0,
+    "duration_ms": 243375.742525
+  },
+  "sourceBuildMatches": {
+    "src/navigation/main.recovered.js": true,
+    "src/navigation/highspeed-service.js": true,
+    "src/navigation/highspeed-routing.js": true,
+    "src/navigation/transit-vehicles.js": true,
+    "src/navigation/transit-stops.js": true,
+    "src/navigation/traffic-clock.js": true,
+    "src/navigation/integrated.css": true
+  },
+  "missingRuntimeImports": 0,
+  "syntaxAndWhitespaceCheck": "passed",
+  "sourcePreservation": "source-preservation.json",
+  "browserVisualQA": "Not run for this build: cloud browser cannot reach local preview; public deployment paused awaiting authorization.",
+  "deployment": "not performed",
+  "performanceParity": {
+    "version": "0f6587f77445",
+    "equivalentQueries": 4980,
+    "networkPatterns": 16,
+    "networkStops": 119,
+    "matched": "deepStrictEqual pre-change vs cached model"
+  },
+  "performanceBaselineSha256": "e82386da09167567240b5b63d2dc4aea8465031e155bd781972027625d4410d0"
+}

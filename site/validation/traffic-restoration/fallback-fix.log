@@ -1,0 +1,20 @@
+✔ actual S1 preserves exact ordinary endpoints through fallback and rejects cancelled refinements (10.156981ms)
+✔ actual S1 preserves exact luggage endpoints through fallback and rejects cancelled refinements (2.122462ms)
+✔ actual S1 preserves exact escalator endpoints through fallback and rejects cancelled refinements (1.621173ms)
+✔ actual S1 preserves exact lift endpoints through fallback and rejects cancelled refinements (1.295816ms)
+✔ actual S1 preserves exact accessible → ordinary migration endpoints through fallback and rejects cancelled refinements (1.863645ms)
+✔ actual S1 preserves exact strict_accessibility → ordinary migration endpoints through fallback and rejects cancelled refinements (2.991602ms)
+✔ actual S1 preserves exact wheelchair → ordinary migration endpoints through fallback and rejects cancelled refinements (1.489927ms)
+✔ actual S1 gives taxi the exact base owner and waits for its dependent queries before evicting it (2.163103ms)
+✔ actual S1 keeps usable candidates and marks Worker/refinement errors incomplete, never successful or unreachable (2.589841ms)
+✔ actual S1 named-floor evidence precheck cache-miss keeps formal routing and cancellation (2.035102ms)
+✔ actual S1 named-floor evidence precheck cache-hit keeps formal routing and cancellation (0.941577ms)
+✔ actual S1 named-floor evidence precheck cancel-at-precheck keeps formal routing and cancellation (1.006474ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 125.635834

@@ -1,0 +1,21 @@
+✔ lazy map loader coalesces requests, builds existing geometry and does not fetch on module import (53.33644ms)
+✔ official standard XYZ sample is correctly registered at Admiralty (2.479596ms)
+✔ projection round trips actual locations on both shores (0.306298ms)
+✔ LOD gives continuous visible base and label coverage with bounded margins (7.312629ms)
+✔ higher zoom near buildings and invalid/out-of-region inputs stay safe (0.506087ms)
+✔ cache reuses identical tile without new load; all transient payloads released (10.600084ms)
+✔ LRU remains bounded across 40 pans and evicts nonvisible data (88.095775ms)
+✔ concurrency cap and spacing survive repeated view replacement (58.2436ms)
+✔ obsolete response is released even if transport ignores cancellation (6.833323ms)
+✔ fast A-B-A pan recovers an aborted in-flight tile without a ghost hole (8.462429ms)
+✔ failures do not spin and explicit retry is available (8.405253ms)
+✔ suspending/disposal cancels pending and late responses never recreate cache (13.124867ms)
+✔ display modules are isolated from routes and source geometry is lazy (32.908301ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 335.745483

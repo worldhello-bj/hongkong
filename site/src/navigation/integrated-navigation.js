@@ -2,11 +2,11 @@ import {journeyScore} from "./journey-score.js";
 /** All public transport remains enabled. Taxi only widens the search. */
 export const PUBLIC_MODES = Object.freeze(['metro', 'bus', 'tram']);
 export const SEARCH_VARIANTS = Object.freeze(['transit', 'walk', 'metro']);
-const rideModes = new Set(['metro', 'rail', 'bus', 'tram', 'taxi']);
+const rideModes = new Set(['metro', 'rail', 'bus', 'tram', 'taxi', 'highspeed']);
 export function journeyModeChain(segments = []) {
   const chain = [];
   for (const segment of segments) {
-    if (segment.kind === 'wait' || segment.mode === 'wait') continue;
+    if (['wait','procedure'].includes(segment.kind) || ['wait','procedure'].includes(segment.mode)) continue;
     const kind = segment.kind ?? segment.mode;
     const mode = kind === 'rail' ? 'metro' : rideModes.has(kind) ? kind : 'walk';
     if (chain.at(-1) !== mode) chain.push(mode);

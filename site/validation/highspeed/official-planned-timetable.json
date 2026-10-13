@@ -1,0 +1,835 @@
+{
+  "retrievedAtUtc": "2026-10-13T09:58:00Z",
+  "retrievedLocalDate": "2026-10-13",
+  "timeZone": "Asia/Hong_Kong",
+  "effectiveFrom": "2026-10-11",
+  "status": "Official published planned timetable; not date-specific inventory or real-time service data",
+  "operatingDaySemantics": "No travel-date input exists in the observed Journey Planner. Null operatingDayLabel means no restriction was displayed in the general timetable; it is not independently validated daily operation. Saturday extras are explicitly labeled and separated.",
+  "sourceUrls": {
+    "northbound": "https://www.highspeed.mtr.com.hk/en/trip-planner.html?id=WEK2FUT",
+    "southbound": "https://www.highspeed.mtr.com.hk/en/trip-planner.html?id=FUT2WEK",
+    "pdf": "https://www.highspeed.mtr.com.hk/res/pdf/short-haul-train-timetable.pdf",
+    "plannerCaveat": "https://www.highspeed.mtr.com.hk/en/latest-news/trip-planner.html"
+  },
+  "northbound": [
+    {
+      "train": "G5820",
+      "durationMin": 14,
+      "departure": "07:07",
+      "arrival": "07:21",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G388",
+      "durationMin": 14,
+      "departure": "07:20",
+      "arrival": "07:34",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6390",
+      "durationMin": 14,
+      "departure": "07:26",
+      "arrival": "07:40",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5636",
+      "durationMin": 14,
+      "departure": "07:31",
+      "arrival": "07:45",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5822",
+      "durationMin": 14,
+      "departure": "08:12",
+      "arrival": "08:26",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6552",
+      "durationMin": 14,
+      "departure": "08:30",
+      "arrival": "08:44",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G924",
+      "durationMin": 14,
+      "departure": "08:48",
+      "arrival": "09:02",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G914/5",
+      "durationMin": 14,
+      "departure": "09:02",
+      "arrival": "09:16",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6510",
+      "durationMin": 14,
+      "departure": "09:08",
+      "arrival": "09:22",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5812",
+      "durationMin": 14,
+      "departure": "09:23",
+      "arrival": "09:37",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6048/5",
+      "durationMin": 14,
+      "departure": "10:18",
+      "arrival": "10:32",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5816",
+      "durationMin": 14,
+      "departure": "10:23",
+      "arrival": "10:37",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6528",
+      "durationMin": 14,
+      "departure": "10:29",
+      "arrival": "10:43",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6534",
+      "durationMin": 14,
+      "departure": "10:35",
+      "arrival": "10:49",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5630",
+      "durationMin": 14,
+      "departure": "10:46",
+      "arrival": "11:00",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5818",
+      "durationMin": 14,
+      "departure": "11:25",
+      "arrival": "11:39",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5858",
+      "durationMin": 14,
+      "departure": "12:34",
+      "arrival": "12:48",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5644",
+      "durationMin": 14,
+      "departure": "12:46",
+      "arrival": "13:00",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6530",
+      "durationMin": 14,
+      "departure": "13:15",
+      "arrival": "13:29",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5808",
+      "durationMin": 14,
+      "departure": "13:24",
+      "arrival": "13:38",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6536",
+      "durationMin": 15,
+      "departure": "13:32",
+      "arrival": "13:47",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6558",
+      "durationMin": 14,
+      "departure": "13:38",
+      "arrival": "13:52",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G386/3",
+      "durationMin": 14,
+      "departure": "13:58",
+      "arrival": "14:12",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5646",
+      "durationMin": 14,
+      "departure": "14:04",
+      "arrival": "14:18",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6548",
+      "durationMin": 14,
+      "departure": "14:32",
+      "arrival": "14:46",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5810",
+      "durationMin": 14,
+      "departure": "14:38",
+      "arrival": "14:52",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5860",
+      "durationMin": 15,
+      "departure": "14:46",
+      "arrival": "15:01",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5806",
+      "durationMin": 14,
+      "departure": "15:27",
+      "arrival": "15:41",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6580",
+      "durationMin": 14,
+      "departure": "16:04",
+      "arrival": "16:18",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5828",
+      "durationMin": 14,
+      "departure": "16:10",
+      "arrival": "16:24",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6560",
+      "durationMin": 14,
+      "departure": "16:49",
+      "arrival": "17:03",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5814",
+      "durationMin": 14,
+      "departure": "17:10",
+      "arrival": "17:24",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5830",
+      "durationMin": 14,
+      "departure": "17:24",
+      "arrival": "17:38",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6590",
+      "durationMin": 14,
+      "departure": "18:13",
+      "arrival": "18:27",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5862",
+      "durationMin": 15,
+      "departure": "18:19",
+      "arrival": "18:34",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5614",
+      "durationMin": 14,
+      "departure": "18:43",
+      "arrival": "18:57",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5832",
+      "durationMin": 14,
+      "departure": "18:49",
+      "arrival": "19:03",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5652",
+      "durationMin": 14,
+      "departure": "19:13",
+      "arrival": "19:27",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6398",
+      "durationMin": 14,
+      "departure": "19:20",
+      "arrival": "19:34",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6588",
+      "durationMin": 14,
+      "departure": "19:43",
+      "arrival": "19:57",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5824",
+      "durationMin": 16,
+      "departure": "19:54",
+      "arrival": "20:10",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5612",
+      "durationMin": 14,
+      "departure": "20:11",
+      "arrival": "20:25",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5618",
+      "durationMin": 14,
+      "departure": "20:20",
+      "arrival": "20:34",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5654",
+      "durationMin": 14,
+      "departure": "20:39",
+      "arrival": "20:53",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6532",
+      "durationMin": 14,
+      "departure": "20:57",
+      "arrival": "21:11",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5826",
+      "durationMin": 14,
+      "departure": "21:12",
+      "arrival": "21:26",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5660",
+      "durationMin": 14,
+      "departure": "21:44",
+      "arrival": "21:58",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5604",
+      "durationMin": 14,
+      "departure": "22:02",
+      "arrival": "22:16",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6502",
+      "durationMin": 14,
+      "departure": "22:11",
+      "arrival": "22:25",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6506",
+      "durationMin": 14,
+      "departure": "22:26",
+      "arrival": "22:40",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6504",
+      "durationMin": 14,
+      "departure": "22:37",
+      "arrival": "22:51",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5608",
+      "durationMin": 14,
+      "departure": "23:00",
+      "arrival": "23:14",
+      "operatingDayLabel": null
+    }
+  ],
+  "southbound": [
+    {
+      "train": "G5669",
+      "durationMin": 15,
+      "departure": "06:45",
+      "arrival": "07:00",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5801",
+      "durationMin": 14,
+      "departure": "06:52",
+      "arrival": "07:06",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6501",
+      "durationMin": 14,
+      "departure": "07:32",
+      "arrival": "07:46",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5819",
+      "durationMin": 14,
+      "departure": "07:38",
+      "arrival": "07:52",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5625",
+      "durationMin": 14,
+      "departure": "07:45",
+      "arrival": "07:59",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5607",
+      "durationMin": 15,
+      "departure": "07:51",
+      "arrival": "08:06",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5609",
+      "durationMin": 14,
+      "departure": "08:05",
+      "arrival": "08:19",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5603",
+      "durationMin": 14,
+      "departure": "08:15",
+      "arrival": "08:29",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5637",
+      "durationMin": 14,
+      "departure": "08:22",
+      "arrival": "08:36",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5659",
+      "durationMin": 15,
+      "departure": "08:27",
+      "arrival": "08:42",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5821",
+      "durationMin": 16,
+      "departure": "08:45",
+      "arrival": "09:01",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6551",
+      "durationMin": 14,
+      "departure": "08:53",
+      "arrival": "09:07",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5627",
+      "durationMin": 14,
+      "departure": "09:03",
+      "arrival": "09:17",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6517",
+      "durationMin": 14,
+      "departure": "09:08",
+      "arrival": "09:22",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6397",
+      "durationMin": 14,
+      "departure": "09:25",
+      "arrival": "09:39",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6527",
+      "durationMin": 14,
+      "departure": "09:35",
+      "arrival": "09:49",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5617",
+      "durationMin": 15,
+      "departure": "09:45",
+      "arrival": "10:00",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5811",
+      "durationMin": 14,
+      "departure": "09:53",
+      "arrival": "10:07",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6579",
+      "durationMin": 14,
+      "departure": "10:01",
+      "arrival": "10:15",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6545",
+      "durationMin": 14,
+      "departure": "10:07",
+      "arrival": "10:21",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6581",
+      "durationMin": 14,
+      "departure": "10:25",
+      "arrival": "10:39",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5815",
+      "durationMin": 14,
+      "departure": "10:54",
+      "arrival": "11:08",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5641",
+      "durationMin": 14,
+      "departure": "10:59",
+      "arrival": "11:13",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6565",
+      "durationMin": 14,
+      "departure": "11:04",
+      "arrival": "11:18",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6572/3",
+      "durationMin": 15,
+      "departure": "11:19",
+      "arrival": "11:34",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6539",
+      "durationMin": 14,
+      "departure": "11:26",
+      "arrival": "11:40",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5817",
+      "durationMin": 15,
+      "departure": "11:57",
+      "arrival": "12:12",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6519",
+      "durationMin": 14,
+      "departure": "12:06",
+      "arrival": "12:20",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5857",
+      "durationMin": 14,
+      "departure": "13:09",
+      "arrival": "13:23",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6589",
+      "durationMin": 16,
+      "departure": "13:21",
+      "arrival": "13:37",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5807",
+      "durationMin": 14,
+      "departure": "13:54",
+      "arrival": "14:08",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6547",
+      "durationMin": 14,
+      "departure": "13:59",
+      "arrival": "14:13",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G921",
+      "durationMin": 14,
+      "departure": "14:06",
+      "arrival": "14:20",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6507",
+      "durationMin": 15,
+      "departure": "14:22",
+      "arrival": "14:37",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6525",
+      "durationMin": 15,
+      "departure": "14:28",
+      "arrival": "14:43",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5621",
+      "durationMin": 14,
+      "departure": "14:34",
+      "arrival": "14:48",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5647",
+      "durationMin": 14,
+      "departure": "14:56",
+      "arrival": "15:10",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5809",
+      "durationMin": 14,
+      "departure": "15:12",
+      "arrival": "15:26",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5859",
+      "durationMin": 15,
+      "departure": "15:24",
+      "arrival": "15:39",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6533",
+      "durationMin": 15,
+      "departure": "15:30",
+      "arrival": "15:45",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5623",
+      "durationMin": 14,
+      "departure": "15:55",
+      "arrival": "16:09",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5805",
+      "durationMin": 14,
+      "departure": "16:00",
+      "arrival": "16:14",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6557",
+      "durationMin": 14,
+      "departure": "16:17",
+      "arrival": "16:31",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5635",
+      "durationMin": 14,
+      "departure": "16:36",
+      "arrival": "16:50",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5827",
+      "durationMin": 15,
+      "departure": "16:50",
+      "arrival": "17:05",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6559",
+      "durationMin": 14,
+      "departure": "17:10",
+      "arrival": "17:24",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5649",
+      "durationMin": 14,
+      "departure": "17:21",
+      "arrival": "17:35",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6523",
+      "durationMin": 14,
+      "departure": "17:26",
+      "arrival": "17:40",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5813",
+      "durationMin": 14,
+      "departure": "17:45",
+      "arrival": "17:59",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5829",
+      "durationMin": 14,
+      "departure": "17:53",
+      "arrival": "18:07",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5861",
+      "durationMin": 14,
+      "departure": "18:53",
+      "arrival": "19:07",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5831",
+      "durationMin": 14,
+      "departure": "19:20",
+      "arrival": "19:34",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6569",
+      "durationMin": 14,
+      "departure": "19:28",
+      "arrival": "19:42",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5653",
+      "durationMin": 14,
+      "departure": "20:05",
+      "arrival": "20:19",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5823",
+      "durationMin": 15,
+      "departure": "20:35",
+      "arrival": "20:50",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G916/3",
+      "durationMin": 14,
+      "departure": "21:08",
+      "arrival": "21:22",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5655",
+      "durationMin": 14,
+      "departure": "21:32",
+      "arrival": "21:46",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G5825",
+      "durationMin": 15,
+      "departure": "21:52",
+      "arrival": "22:07",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6563",
+      "durationMin": 14,
+      "departure": "22:13",
+      "arrival": "22:27",
+      "operatingDayLabel": null
+    },
+    {
+      "train": "G6587",
+      "durationMin": 14,
+      "departure": "22:19",
+      "arrival": "22:33",
+      "operatingDayLabel": null
+    }
+  ],
+  "excludedSaturdayExtras": {
+    "northbound": [
+      {
+        "train": "G5680",
+        "durationMin": 14,
+        "departure": "19:27",
+        "arrival": "19:41",
+        "operatingDayLabel": "Additional Train on Saturday"
+      },
+      {
+        "train": "G5866",
+        "durationMin": 14,
+        "departure": "20:45",
+        "arrival": "20:59",
+        "operatingDayLabel": "Additional Train on Saturday"
+      }
+    ],
+    "southbound": [
+      {
+        "train": "G5865",
+        "durationMin": 14,
+        "departure": "21:18",
+        "arrival": "21:32",
+        "operatingDayLabel": "Additional Train on Saturday"
+      }
+    ]
+  },
+  "notes": [
+    "Rows extracted from rendered official Journey Planner in cloud browser, count matched displayed 54 forward and 61 reverse results.",
+    "Current official PDF downloaded and visually inspected: 3 pages, effective from 11 Oct 2026; normal schedules on pages 1–2, Saturday additional trains on page 3.",
+    "PDF warns it is reference only; ticketing-system timetable prevails. Additional service details are directed to 12306.",
+    "No ticket availability, selected travel date, fare, cancellation, or realtime-tracking claims are made."
+  ]
+}

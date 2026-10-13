@@ -1,0 +1,31 @@
+✔ shared clock advances at declared speed only while foreground (0.938313ms)
+✔ clock pauses, steps, resets without background catch-up or long-frame leap (0.164586ms)
+✔ only existing bus/tram stops, exact coordinate identity and deduplicated route directions (3.41851ms)
+✔ wide view clusters without losing stops; zoom gives individual exact positions (1.243269ms)
+✔ card shows existing route, source, actions and escapes untrusted names (0.692125ms)
+✔ controller single stop, keyboard, endpoint actions, close, clustering and cached redraw (1.942634ms)
+✔ large touch targets, distinct icon shapes, limited labels and source integration (2.300008ms)
+✔ active interval is departure-inclusive and terminal-arrival-exclusive (6.289461ms)
+✔ movement follows supplied multi-vertex geometry, never a direct endpoint chord (0.792795ms)
+✔ intermediate dwell freezes at shape vertex then departs at scheduled second (0.625956ms)
+✔ reverse-direction pattern follows reversed shape and bearing (1576.562485ms)
+✔ frequency windows merge explicit departures and deduplicate boundaries (0.69571ms)
+✔ departures use stop offsets, retain still-dwelling trains and exclude termini (0.277675ms)
+✔ daily service calendar honors weekdays, date range and exceptions (0.305987ms)
+✔ midnight trips retain prior service date, stable identity and prior calendar (0.231596ms)
+✔ GTFS departures above 24:00 use previous service day even on inactive next day (0.393418ms)
+✔ direction filtering and display cap do not limit departure queries (1.268716ms)
+✔ source shapes and service objects remain untouched and results deterministic (0.331626ms)
+✔ repeated shape vertices stay finite and zero-time calls do not divide by zero (0.291686ms)
+✔ invalid times, dates, windows and geometry fail explicitly; empty input is safe (0.885453ms)
+✔ real network includes all existing modes with honest metro simulation provenance (0.610803ms)
+✔ real positions, dwell, directions and active counts match existing scheduled engine (13.890343ms)
+✔ real metro first/last departures and selected date agree with service windows (0.387319ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1736.499276
