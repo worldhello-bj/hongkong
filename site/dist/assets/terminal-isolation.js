@@ -24,13 +24,16 @@ const exact = point => point && string(point.id) && string(point.node_id) && poi
 // bounded chunks. Their yields are progress boundaries, never partial answers.
 const CHUNK = 2048;
 function createCheckpoint() {
-  let records = 0, started = performance.now();
+  let records = 0, started = performance.now(), resumed = false;
   return () => {
+    // Start the next WORK slice after resumption. Browser task/timer waiting
+    // must not consume its 4 ms budget and collapse it to 64 records per yield.
+    if (resumed) { started = performance.now(); resumed = false; }
     ++records;
     if (records % 64 !== 0) return false;
     const now = performance.now();
     if (records < CHUNK && now - started < 4) return false;
-    records = 0; started = now; return true;
+    records = 0; resumed = true; return true;
   };
 }
 function* immutable(graph, checkpoint) {

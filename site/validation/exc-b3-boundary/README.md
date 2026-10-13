@@ -14,3 +14,5 @@ Source acquisition URLs, original GeoJSON and SHA-256 pins are in `scripts/data/
 - 16 focused tests passed. The later integrated runtime has its own [472-test and 16-cell matrix report](../seeded-routes/v52/README.md); this isolated report does not relabel its earlier measurements. These isolated checks exercise the real entry and Worker bundles with a DOM stand-in; they do not establish visual QA. Post-completion cancellation was checked, not cancellation during active EXC search.
 
 The EXC graph selector only keeps the area composition when every explicit requested node is present there. It therefore cannot discard another station's platform to manufacture a connection. Future broader overlay composition needs separate source and routing validation.
+
+Latest integrated code and unchanged-request validation: [v53 final regression](../seeded-routes/v53/README.md).

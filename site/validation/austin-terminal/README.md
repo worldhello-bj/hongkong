@@ -53,3 +53,5 @@
 此项改善的是已知来源缺口的响应时间。它没有恢复 D2 → F 的实际可用路线，也不应增加成功行程数量；原 16 格路线可用性分母保留。
 
 最终整合版本的472项测试、16格完整重放及实际1.920秒断连结果见[最终回归报告](../seeded-routes/v52/README.md)。
+
+Latest integrated code and unchanged-request validation: [v53 final regression](../seeded-routes/v53/README.md).

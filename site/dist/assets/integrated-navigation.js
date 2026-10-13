@@ -1,4 +1,4 @@
-import {journeyScore} from "./journey-score.js?v=616dc1f931e4";
+import {journeyScore} from "./journey-score.js?v=ac80b061436c";
 /** All public transport remains enabled. Taxi only widens the search. */
 export const PUBLIC_MODES = Object.freeze(['metro', 'bus', 'tram']);
 export const SEARCH_VARIANTS = Object.freeze(['transit', 'walk', 'metro']);

@@ -1,4 +1,4 @@
-import {STATIONS,validStation} from './ui-navigation.js?v=616dc1f931e4';
+import {STATIONS,validStation} from './ui-navigation.js?v=ac80b061436c';
 export function stationPanel(state,ready,escape) {
   const station=STATIONS.find(value=>value.id===validStation(state.station));
   const schematic=station.id.startsWith('HSR:');

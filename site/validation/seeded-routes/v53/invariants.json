@@ -1,0 +1,814 @@
+{
+  "runtime": "ac80b061436c",
+  "completedUtc": "2026-10-13T16:05:29Z",
+  "completedBeijing": "2026-10-14T00:05:29+08:00",
+  "scenarios": 16,
+  "withCandidates": 11,
+  "candidateCount": 23,
+  "candidateAuditPassed": 23,
+  "invariants": [
+    {
+      "id": "station-portals-1",
+      "requestIdentityPreserved": true,
+      "runtimeStable": true,
+      "cancel": {
+        "exercisedWhilePending": false,
+        "observationMs": 502.4490659999992,
+        "planningStopped": true,
+        "pendingBeforeCancel": [],
+        "pendingAfterCancel": [],
+        "noStaleCandidatePublication": true,
+        "pass": true
+      },
+      "workerErrors": [],
+      "candidateChecks": [
+        {
+          "id": "walk",
+          "pass": true,
+          "checks": {
+            "complete": true,
+            "endpoints": true,
+            "continuous": true,
+            "knownForbiddenEdges": true,
+            "strictSourceEligibility": true,
+            "fare": true,
+            "transitStopBoundaries": true,
+            "taxiPolicy": true,
+            "strictTaxi": true,
+            "luggageTaxiConfirmation": true,
+            "fourPassengerPreference": true,
+            "requestedPreference": true,
+            "effectivePreference": true,
+            "paidJourneyClock": true,
+            "unknownWheelchairEvidenceNotPromoted": true
+          }
+        },
+        {
+          "id": "transit",
+          "pass": true,
+          "checks": {
+            "complete": true,
+            "endpoints": true,
+            "continuous": true,
+            "knownForbiddenEdges": true,
+            "strictSourceEligibility": true,
+            "fare": true,
+            "transitStopBoundaries": true,
+            "taxiPolicy": true,
+            "strictTaxi": true,
+            "luggageTaxiConfirmation": true,
+            "fourPassengerPreference": true,
+            "requestedPreference": true,
+            "effectivePreference": true,
+            "paidJourneyClock": true,
+            "unknownWheelchairEvidenceNotPromoted": true
+          }
+        }
+      ],
+      "sourceCoverageReview": [],
+      "bootMs": 5540.9394680000005,
+      "fullCandidateWallMs": 6061.965888
+    },
+    {
+      "id": "station-portals-2",
+      "requestIdentityPreserved": true,
+      "runtimeStable": true,
+      "cancel": {
+        "exercisedWhilePending": false,
+        "observationMs": 502.15833699999894,
+        "planningStopped": true,
+        "pendingBeforeCancel": [],
+        "pendingAfterCancel": [],
+        "noStaleCandidatePublication": true,
+        "pass": true
+      },
+      "workerErrors": [],
+      "candidateChecks": [
+        {
+          "id": "transit",
+          "pass": true,
+          "checks": {
+            "complete": true,
+            "endpoints": true,
+            "continuous": true,
+            "knownForbiddenEdges": true,
+            "strictSourceEligibility": true,
+            "fare": true,
+            "transitStopBoundaries": true,
+            "taxiPolicy": true,
+            "strictTaxi": true,
+            "luggageTaxiConfirmation": true,
+            "fourPassengerPreference": true,
+            "requestedPreference": true,
+            "effectivePreference": true,
+            "paidJourneyClock": true,
+            "unknownWheelchairEvidenceNotPromoted": true
+          }
+        }
+      ],
+      "sourceCoverageReview": [],
+      "bootMs": 5491.423859,
+      "fullCandidateWallMs": 9020.095052
+    },
+    {
+      "id": "station-portals-3",
+      "requestIdentityPreserved": true,
+      "runtimeStable": true,
+      "cancel": {
+        "exercisedWhilePending": false,
+        "observationMs": 501.6599759999999,
+        "planningStopped": true,
+        "pendingBeforeCancel": [],
+        "pendingAfterCancel": [],
+        "noStaleCandidatePublication": true,
+        "pass": true
+      },
+      "workerErrors": [],
+      "candidateChecks": [],
+      "sourceCoverageReview": [],
+      "bootMs": 5515.576800999999,
+      "fullCandidateWallMs": 1902.6809389999999
+    },
+    {
+      "id": "station-portals-4",
+      "requestIdentityPreserved": true,
+      "runtimeStable": true,
+      "cancel": {
+        "exercisedWhilePending": false,
+        "observationMs": 502.0609850000037,
+        "planningStopped": true,
+        "pendingBeforeCancel": [],
+        "pendingAfterCancel": [],
+        "noStaleCandidatePublication": true,
+        "pass": true
+      },
+      "workerErrors": [],
+      "candidateChecks": [],
+      "sourceCoverageReview": [],
+      "bootMs": 5551.925367,
+      "fullCandidateWallMs": 34814.912628
+    },
+    {
+      "id": "surface-stops-1",
+      "requestIdentityPreserved": true,
+      "runtimeStable": true,
+      "cancel": {
+        "exercisedWhilePending": false,
+        "observationMs": 503.4177719999989,
+        "planningStopped": true,
+        "pendingBeforeCancel": [],
+        "pendingAfterCancel": [],
+        "noStaleCandidatePublication": true,
+        "pass": true
+      },
+      "workerErrors": [],
+      "candidateChecks": [
+        {
+          "id": "walk",
+          "pass": true,
+          "checks": {
+            "complete": true,
+            "endpoints": true,
+            "continuous": true,
+            "knownForbiddenEdges": true,
+            "strictSourceEligibility": true,
+            "fare": true,
+            "transitStopBoundaries": true,
+            "taxiPolicy": true,
+            "strictTaxi": true,
+            "luggageTaxiConfirmation": true,
+            "fourPassengerPreference": true,
+            "requestedPreference": true,
+            "effectivePreference": true,
+            "paidJourneyClock": true,
+            "unknownWheelchairEvidenceNotPromoted": true
+          }
+        },
+        {
+          "id": "transit",
+          "pass": true,
+          "checks": {
+            "complete": true,
+            "endpoints": true,
+            "continuous": true,
+            "knownForbiddenEdges": true,
+            "strictSourceEligibility": true,
+            "fare": true,
+            "transitStopBoundaries": true,
+            "taxiPolicy": true,
+            "strictTaxi": true,
+            "luggageTaxiConfirmation": true,
+            "fourPassengerPreference": true,
+            "requestedPreference": true,
+            "effectivePreference": true,
+            "paidJourneyClock": true,
+            "unknownWheelchairEvidenceNotPromoted": true
+          }
+        }
+      ],
+      "sourceCoverageReview": [],
+      "bootMs": 5518.244914,
+      "fullCandidateWallMs": 7392.784565
+    },
+    {
+      "id": "surface-stops-2",
+      "requestIdentityPreserved": true,
+      "runtimeStable": true,
+      "cancel": {
+        "exercisedWhilePending": false,
+        "observationMs": 503.57157000000007,
+        "planningStopped": true,
+        "pendingBeforeCancel": [],
+        "pendingAfterCancel": [],
+        "noStaleCandidatePublication": true,
+        "pass": true
+      },
+      "workerErrors": [],
+      "candidateChecks": [
+        {
+          "id": "taxi-direct",
+          "pass": true,
+          "checks": {
+            "complete": true,
+            "endpoints": true,
+            "continuous": true,
+            "knownForbiddenEdges": true,
+            "strictSourceEligibility": true,
+            "fare": true,
+            "transitStopBoundaries": true,
+            "taxiPolicy": true,
+            "strictTaxi": true,
+            "luggageTaxiConfirmation": true,
+            "fourPassengerPreference": true,
+            "requestedPreference": true,
+            "effectivePreference": true,
+            "paidJourneyClock": true,
+            "unknownWheelchairEvidenceNotPromoted": true
+          }
+        },
+        {
+          "id": "taxi-last-bus-td:4246",
+          "pass": true,
+          "checks": {
+            "complete": true,
+            "endpoints": true,
+            "continuous": true,
+            "knownForbiddenEdges": true,
+            "strictSourceEligibility": true,
+            "fare": true,
+            "transitStopBoundaries": true,
+            "taxiPolicy": true,
+            "strictTaxi": true,
+            "luggageTaxiConfirmation": true,
+            "fourPassengerPreference": true,
+            "requestedPreference": true,
+            "effectivePreference": true,
+            "paidJourneyClock": true,
+            "unknownWheelchairEvidenceNotPromoted": true
+          }
+        },
+        {
+          "id": "taxi-last-metro-AUS:portal:B2",
+          "pass": true,
+          "checks": {
+            "complete": true,
+            "endpoints": true,
+            "continuous": true,
+            "knownForbiddenEdges": true,
+            "strictSourceEligibility": true,
+            "fare": true,
+            "transitStopBoundaries": true,
+            "taxiPolicy": true,
+            "strictTaxi": true,
+            "luggageTaxiConfirmation": true,
+            "fourPassengerPreference": true,
+            "requestedPreference": true,
+            "effectivePreference": true,
+            "paidJourneyClock": true,
+            "unknownWheelchairEvidenceNotPromoted": true
+          }
+        },
+        {
+          "id": "transit",
+          "pass": true,
+          "checks": {
+            "complete": true,
+            "endpoints": true,
+            "continuous": true,
+            "knownForbiddenEdges": true,
+            "strictSourceEligibility": true,
+            "fare": true,
+            "transitStopBoundaries": true,
+            "taxiPolicy": true,
+            "strictTaxi": true,
+            "luggageTaxiConfirmation": true,
+            "fourPassengerPreference": true,
+            "requestedPreference": true,
+            "effectivePreference": true,
+            "paidJourneyClock": true,
+            "unknownWheelchairEvidenceNotPromoted": true
+          }
+        },
+        {
+          "id": "taxi-first-metro-AUS:portal:B2",
+          "pass": true,
+          "checks": {
+            "complete": true,
+            "endpoints": true,
+            "continuous": true,
+            "knownForbiddenEdges": true,
+            "strictSourceEligibility": true,
+            "fare": true,
+            "transitStopBoundaries": true,
+            "taxiPolicy": true,
+            "strictTaxi": true,
+            "luggageTaxiConfirmation": true,
+            "fourPassengerPreference": true,
+            "requestedPreference": true,
+            "effectivePreference": true,
+            "paidJourneyClock": true,
+            "unknownWheelchairEvidenceNotPromoted": true
+          }
+        }
+      ],
+      "sourceCoverageReview": [],
+      "bootMs": 4993.913815,
+      "fullCandidateWallMs": 47176.617333
+    },
+    {
+      "id": "surface-stops-3",
+      "requestIdentityPreserved": true,
+      "runtimeStable": true,
+      "cancel": {
+        "exercisedWhilePending": false,
+        "observationMs": 503.21401200000037,
+        "planningStopped": true,
+        "pendingBeforeCancel": [],
+        "pendingAfterCancel": [],
+        "noStaleCandidatePublication": true,
+        "pass": true
+      },
+      "workerErrors": [],
+      "candidateChecks": [
+        {
+          "id": "transit",
+          "pass": true,
+          "checks": {
+            "complete": true,
+            "endpoints": true,
+            "continuous": true,
+            "knownForbiddenEdges": true,
+            "strictSourceEligibility": true,
+            "fare": true,
+            "transitStopBoundaries": true,
+            "taxiPolicy": true,
+            "strictTaxi": true,
+            "luggageTaxiConfirmation": true,
+            "fourPassengerPreference": true,
+            "requestedPreference": true,
+            "effectivePreference": true,
+            "paidJourneyClock": true,
+            "unknownWheelchairEvidenceNotPromoted": true
+          }
+        }
+      ],
+      "sourceCoverageReview": [],
+      "bootMs": 5313.267944,
+      "fullCandidateWallMs": 14149.261934000002
+    },
+    {
+      "id": "surface-stops-4",
+      "requestIdentityPreserved": true,
+      "runtimeStable": true,
+      "cancel": {
+        "exercisedWhilePending": false,
+        "observationMs": 509.04370800000106,
+        "planningStopped": true,
+        "pendingBeforeCancel": [],
+        "pendingAfterCancel": [],
+        "noStaleCandidatePublication": true,
+        "pass": true
+      },
+      "workerErrors": [],
+      "candidateChecks": [
+        {
+          "id": "taxi-direct",
+          "pass": true,
+          "checks": {
+            "complete": true,
+            "endpoints": true,
+            "continuous": true,
+            "knownForbiddenEdges": true,
+            "strictSourceEligibility": true,
+            "fare": true,
+            "transitStopBoundaries": true,
+            "taxiPolicy": true,
+            "strictTaxi": true,
+            "luggageTaxiConfirmation": true,
+            "fourPassengerPreference": true,
+            "requestedPreference": true,
+            "effectivePreference": true,
+            "paidJourneyClock": true,
+            "unknownWheelchairEvidenceNotPromoted": true
+          }
+        },
+        {
+          "id": "transit",
+          "pass": true,
+          "checks": {
+            "complete": true,
+            "endpoints": true,
+            "continuous": true,
+            "knownForbiddenEdges": true,
+            "strictSourceEligibility": true,
+            "fare": true,
+            "transitStopBoundaries": true,
+            "taxiPolicy": true,
+            "strictTaxi": true,
+            "luggageTaxiConfirmation": true,
+            "fourPassengerPreference": true,
+            "requestedPreference": true,
+            "effectivePreference": true,
+            "paidJourneyClock": true,
+            "unknownWheelchairEvidenceNotPromoted": true
+          }
+        },
+        {
+          "id": "taxi-last-metro-AUS:portal:B2",
+          "pass": true,
+          "checks": {
+            "complete": true,
+            "endpoints": true,
+            "continuous": true,
+            "knownForbiddenEdges": true,
+            "strictSourceEligibility": true,
+            "fare": true,
+            "transitStopBoundaries": true,
+            "taxiPolicy": true,
+            "strictTaxi": true,
+            "luggageTaxiConfirmation": true,
+            "fourPassengerPreference": true,
+            "requestedPreference": true,
+            "effectivePreference": true,
+            "paidJourneyClock": true,
+            "unknownWheelchairEvidenceNotPromoted": true
+          }
+        },
+        {
+          "id": "taxi-first-metro-ADM:portal:E2",
+          "pass": true,
+          "checks": {
+            "complete": true,
+            "endpoints": true,
+            "continuous": true,
+            "knownForbiddenEdges": true,
+            "strictSourceEligibility": true,
+            "fare": true,
+            "transitStopBoundaries": true,
+            "taxiPolicy": true,
+            "strictTaxi": true,
+            "luggageTaxiConfirmation": true,
+            "fourPassengerPreference": true,
+            "requestedPreference": true,
+            "effectivePreference": true,
+            "paidJourneyClock": true,
+            "unknownWheelchairEvidenceNotPromoted": true
+          }
+        },
+        {
+          "id": "taxi-last-metro-KOW:portal:A",
+          "pass": true,
+          "checks": {
+            "complete": true,
+            "endpoints": true,
+            "continuous": true,
+            "knownForbiddenEdges": true,
+            "strictSourceEligibility": true,
+            "fare": true,
+            "transitStopBoundaries": true,
+            "taxiPolicy": true,
+            "strictTaxi": true,
+            "luggageTaxiConfirmation": true,
+            "fourPassengerPreference": true,
+            "requestedPreference": true,
+            "effectivePreference": true,
+            "paidJourneyClock": true,
+            "unknownWheelchairEvidenceNotPromoted": true
+          }
+        }
+      ],
+      "sourceCoverageReview": [],
+      "bootMs": 5387.716996,
+      "fullCandidateWallMs": 20003.536778
+    },
+    {
+      "id": "land-nodes-1",
+      "requestIdentityPreserved": true,
+      "runtimeStable": true,
+      "cancel": {
+        "exercisedWhilePending": false,
+        "observationMs": 500.90411999999924,
+        "planningStopped": true,
+        "pendingBeforeCancel": [],
+        "pendingAfterCancel": [],
+        "noStaleCandidatePublication": true,
+        "pass": true
+      },
+      "workerErrors": [],
+      "candidateChecks": [
+        {
+          "id": "transit",
+          "pass": true,
+          "checks": {
+            "complete": true,
+            "endpoints": true,
+            "continuous": true,
+            "knownForbiddenEdges": true,
+            "strictSourceEligibility": true,
+            "fare": true,
+            "transitStopBoundaries": true,
+            "taxiPolicy": true,
+            "strictTaxi": true,
+            "luggageTaxiConfirmation": true,
+            "fourPassengerPreference": true,
+            "requestedPreference": true,
+            "effectivePreference": true,
+            "paidJourneyClock": true,
+            "unknownWheelchairEvidenceNotPromoted": true
+          }
+        }
+      ],
+      "sourceCoverageReview": [],
+      "bootMs": 5445.752741,
+      "fullCandidateWallMs": 9023.604045
+    },
+    {
+      "id": "land-nodes-2",
+      "requestIdentityPreserved": true,
+      "runtimeStable": true,
+      "cancel": {
+        "exercisedWhilePending": false,
+        "observationMs": 502.7732980000037,
+        "planningStopped": true,
+        "pendingBeforeCancel": [],
+        "pendingAfterCancel": [],
+        "noStaleCandidatePublication": true,
+        "pass": true
+      },
+      "workerErrors": [],
+      "candidateChecks": [
+        {
+          "id": "taxi-direct",
+          "pass": true,
+          "checks": {
+            "complete": true,
+            "endpoints": true,
+            "continuous": true,
+            "knownForbiddenEdges": true,
+            "strictSourceEligibility": true,
+            "fare": true,
+            "transitStopBoundaries": true,
+            "taxiPolicy": true,
+            "strictTaxi": true,
+            "luggageTaxiConfirmation": true,
+            "fourPassengerPreference": true,
+            "requestedPreference": true,
+            "effectivePreference": true,
+            "paidJourneyClock": true,
+            "unknownWheelchairEvidenceNotPromoted": true
+          }
+        },
+        {
+          "id": "transit",
+          "pass": true,
+          "checks": {
+            "complete": true,
+            "endpoints": true,
+            "continuous": true,
+            "knownForbiddenEdges": true,
+            "strictSourceEligibility": true,
+            "fare": true,
+            "transitStopBoundaries": true,
+            "taxiPolicy": true,
+            "strictTaxi": true,
+            "luggageTaxiConfirmation": true,
+            "fourPassengerPreference": true,
+            "requestedPreference": true,
+            "effectivePreference": true,
+            "paidJourneyClock": true,
+            "unknownWheelchairEvidenceNotPromoted": true
+          }
+        }
+      ],
+      "sourceCoverageReview": [],
+      "bootMs": 5239.685829,
+      "fullCandidateWallMs": 27174.421157
+    },
+    {
+      "id": "land-nodes-3",
+      "requestIdentityPreserved": true,
+      "runtimeStable": true,
+      "cancel": {
+        "exercisedWhilePending": false,
+        "observationMs": 503.8334369999975,
+        "planningStopped": true,
+        "pendingBeforeCancel": [],
+        "pendingAfterCancel": [],
+        "noStaleCandidatePublication": true,
+        "pass": true
+      },
+      "workerErrors": [],
+      "candidateChecks": [
+        {
+          "id": "transit",
+          "pass": true,
+          "checks": {
+            "complete": true,
+            "endpoints": true,
+            "continuous": true,
+            "knownForbiddenEdges": true,
+            "strictSourceEligibility": true,
+            "fare": true,
+            "transitStopBoundaries": true,
+            "taxiPolicy": true,
+            "strictTaxi": true,
+            "luggageTaxiConfirmation": true,
+            "fourPassengerPreference": true,
+            "requestedPreference": true,
+            "effectivePreference": true,
+            "paidJourneyClock": true,
+            "unknownWheelchairEvidenceNotPromoted": true
+          }
+        }
+      ],
+      "sourceCoverageReview": [],
+      "bootMs": 5112.912558999999,
+      "fullCandidateWallMs": 13740.51379
+    },
+    {
+      "id": "land-nodes-4",
+      "requestIdentityPreserved": true,
+      "runtimeStable": true,
+      "cancel": {
+        "exercisedWhilePending": false,
+        "observationMs": 501.3851289999984,
+        "planningStopped": true,
+        "pendingBeforeCancel": [],
+        "pendingAfterCancel": [],
+        "noStaleCandidatePublication": true,
+        "pass": true
+      },
+      "workerErrors": [],
+      "candidateChecks": [
+        {
+          "id": "taxi-direct",
+          "pass": true,
+          "checks": {
+            "complete": true,
+            "endpoints": true,
+            "continuous": true,
+            "knownForbiddenEdges": true,
+            "strictSourceEligibility": true,
+            "fare": true,
+            "transitStopBoundaries": true,
+            "taxiPolicy": true,
+            "strictTaxi": true,
+            "luggageTaxiConfirmation": true,
+            "fourPassengerPreference": true,
+            "requestedPreference": true,
+            "effectivePreference": true,
+            "paidJourneyClock": true,
+            "unknownWheelchairEvidenceNotPromoted": true
+          }
+        },
+        {
+          "id": "transit",
+          "pass": true,
+          "checks": {
+            "complete": true,
+            "endpoints": true,
+            "continuous": true,
+            "knownForbiddenEdges": true,
+            "strictSourceEligibility": true,
+            "fare": true,
+            "transitStopBoundaries": true,
+            "taxiPolicy": true,
+            "strictTaxi": true,
+            "luggageTaxiConfirmation": true,
+            "fourPassengerPreference": true,
+            "requestedPreference": true,
+            "effectivePreference": true,
+            "paidJourneyClock": true,
+            "unknownWheelchairEvidenceNotPromoted": true
+          }
+        }
+      ],
+      "sourceCoverageReview": [],
+      "bootMs": 5154.706609,
+      "fullCandidateWallMs": 14745.055020000002
+    },
+    {
+      "id": "source-floors-1",
+      "requestIdentityPreserved": true,
+      "runtimeStable": true,
+      "cancel": {
+        "exercisedWhilePending": false,
+        "observationMs": 584.7377150000002,
+        "planningStopped": true,
+        "pendingBeforeCancel": [],
+        "pendingAfterCancel": [],
+        "noStaleCandidatePublication": true,
+        "pass": true
+      },
+      "workerErrors": [],
+      "candidateChecks": [],
+      "sourceCoverageReview": [],
+      "bootMs": 5255.239392,
+      "fullCandidateWallMs": 4.624622000000272
+    },
+    {
+      "id": "source-floors-2",
+      "requestIdentityPreserved": true,
+      "runtimeStable": true,
+      "cancel": {
+        "exercisedWhilePending": false,
+        "observationMs": 555.1688549999999,
+        "planningStopped": true,
+        "pendingBeforeCancel": [],
+        "pendingAfterCancel": [],
+        "noStaleCandidatePublication": true,
+        "pass": true
+      },
+      "workerErrors": [],
+      "candidateChecks": [],
+      "sourceCoverageReview": [],
+      "bootMs": 5057.138557,
+      "fullCandidateWallMs": 4.646052999999483
+    },
+    {
+      "id": "source-floors-3",
+      "requestIdentityPreserved": true,
+      "runtimeStable": true,
+      "cancel": {
+        "exercisedWhilePending": false,
+        "observationMs": 501.6484419999997,
+        "planningStopped": true,
+        "pendingBeforeCancel": [],
+        "pendingAfterCancel": [],
+        "noStaleCandidatePublication": true,
+        "pass": true
+      },
+      "workerErrors": [],
+      "candidateChecks": [
+        {
+          "id": "transit-detailed",
+          "pass": true,
+          "checks": {
+            "complete": true,
+            "endpoints": true,
+            "continuous": true,
+            "knownForbiddenEdges": true,
+            "strictSourceEligibility": true,
+            "fare": true,
+            "transitStopBoundaries": true,
+            "taxiPolicy": true,
+            "strictTaxi": true,
+            "luggageTaxiConfirmation": true,
+            "fourPassengerPreference": true,
+            "requestedPreference": true,
+            "effectivePreference": true,
+            "paidJourneyClock": true,
+            "unknownWheelchairEvidenceNotPromoted": true
+          }
+        }
+      ],
+      "sourceCoverageReview": [],
+      "bootMs": 5272.250209,
+      "fullCandidateWallMs": 10475.112729999999
+    },
+    {
+      "id": "source-floors-4",
+      "requestIdentityPreserved": true,
+      "runtimeStable": true,
+      "cancel": {
+        "exercisedWhilePending": false,
+        "observationMs": 552.639709,
+        "planningStopped": true,
+        "pendingBeforeCancel": [],
+        "pendingAfterCancel": [],
+        "noStaleCandidatePublication": true,
+        "pass": true
+      },
+      "workerErrors": [],
+      "candidateChecks": [],
+      "sourceCoverageReview": [],
+      "bootMs": 5254.4996980000005,
+      "fullCandidateWallMs": 4.842867999999726
+    }
+  ],
+  "limits": [
+    "Fixed diagnostic cohort, not Hong Kong-wide success estimate.",
+    "Post-completion cancellation is not active-search cancellation.",
+    "Real Worker bundles with DOM stand-in, not browser or phone hardware timing."
+  ]
+}

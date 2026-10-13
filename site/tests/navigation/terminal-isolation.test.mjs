@@ -204,3 +204,47 @@ test('a shallow-frozen graph cannot mutate and freeze an edge after a stale term
   assert.ok(yields>=1);assert.equal(result,null);
   assert.equal(createExactPublicTerminalPrecheck(f.input)(f.request,options),null);
 });
+
+test('4 ms and 100 ms browser scheduling waits never consume the next work slice', async t => {
+  const {runExactPublicTerminalPrecheck:run}=await import('../../src/navigation/terminal-isolation.js');
+  let clock=0;
+  t.mock.method(performance,'now',()=>clock);
+  const execute=async(delay,cancel=false)=>{
+    const f=fixture();for(let i=0;i<10000;i++)f.input.area.nodes.push(node('timer-padding'+i,1000+i));
+    freeze(f.input);const controller=new AbortController();let yields=0,slices=0;
+    const result=await run(createExactPublicTerminalPrecheck(f.input),f.request,options,{
+      signal:controller.signal,onSlice:()=>slices++,yieldControl:async()=>{
+        ++yields;clock+=delay; // The event-loop wait, with zero proof CPU work.
+        if(cancel&&yields===3)controller.abort();
+      },
+    });
+    return {result,yields,slices};
+  };
+  const immediate=await execute(0);
+  assert.equal(immediate.result?.failureStatus,'NO_ROUTE');
+  assert.ok(immediate.yields>10&&immediate.yields<40);
+  for(const delay of [4,100]) {
+    const delayed=await execute(delay);
+    assert.deepEqual(delayed.result,immediate.result);
+    assert.equal(delayed.yields,immediate.yields,'Waiting must not reduce a 2048-record work slice to 64 records');
+    assert.equal(delayed.slices,immediate.slices);
+  }
+  const cancelled=await execute(100,true);
+  assert.equal(cancelled.result,null);assert.equal(cancelled.yields,3);assert.equal(cancelled.slices,3);
+});
+
+test('actual clamped timer tasks keep bounded work chunks and allow cancellation',async()=>{
+  const {runExactPublicTerminalPrecheck:run}=await import('../../src/navigation/terminal-isolation.js');
+  const f=fixture();for(let i=0;i<4096;i++)f.input.area.nodes.push(node('real-timer-padding'+i,1000+i));
+  freeze(f.input);let yields=0;
+  const result=await run(createExactPublicTerminalPrecheck(f.input),f.request,options,{
+    yieldControl:()=>new Promise(resolve=>{yields++;setTimeout(resolve,5)}),
+  });
+  assert.equal(result?.failureStatus,'NO_ROUTE');
+  assert.ok(yields<40,`Timer clamping amplified proof to ${yields} task waits`);
+  const controller=new AbortController();let cancelledYields=0;
+  assert.equal(await run(createExactPublicTerminalPrecheck(f.input),f.request,options,{
+    signal:controller.signal,yieldControl:()=>new Promise(resolve=>setTimeout(()=>{cancelledYields++;controller.abort();resolve()},5)),
+  }),null);
+  assert.equal(cancelledYields,1);
+});

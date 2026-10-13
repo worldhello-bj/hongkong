@@ -1,4 +1,4 @@
-import {normalizePassengerNeed,isRemovedPassengerNeed} from './passenger-preferences.js?v=616dc1f931e4';
+import {normalizePassengerNeed,isRemovedPassengerNeed} from './passenger-preferences.js?v=ac80b061436c';
 /** Four public preferences change cost, never clock time or known closures. */
 export const PREFERENCE_PROFILES=Object.freeze({
  ordinary:{engine:'fast',label:'普通出行'},luggage:{engine:'luggage',label:'行李搬运负担低'},

@@ -1,6 +1,6 @@
-# Final integrated network regression
+# v52 integrated Node/Worker regression
 
-Runtime: **616dc1f931e4**. The same 16 requests from the original seed 20261013 cohort retain identical ordered endpoints, source IDs/XYZ, dates, departure times, passenger preferences and taxi policies.
+Runtime: **616dc1f931e4**. This is a historical Node/Worker record. Subsequent real-browser testing found an excessive timer-scheduling delay despite the correct terminal refusal; see the [browser timer correction](../../austin-terminal/browser-timer-correction.md). These timings do not certify browser performance. The same 16 requests from the original seed 20261013 cohort retain identical ordered endpoints, source IDs/XYZ, dates, departure times, passenger preferences and taxi policies.
 
 ## Completed checks
 
