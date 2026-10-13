@@ -1,0 +1,830 @@
+{
+  "runtime": "4f0a062ef29d",
+  "departureDate": "2026-10-12",
+  "departureS": 39600,
+  "method": "Actual production f2 + routing Worker bundles and seeded 48-car road simulation; not browser QA; all fares/schedules/vehicles remain simulation",
+  "rows": [
+    {
+      "name": "覆盖走廊柯士甸至金钟",
+      "request": {
+        "origin": {
+          "id": "AUS:portal:B2",
+          "region_id": "AUS",
+          "station_id": "AUS",
+          "name": "柯士甸站 B2出口",
+          "level": "G",
+          "level_name": "Exit B Ground Level",
+          "source_feature_id": "mtr_amenity_point.375",
+          "coordinates": [
+            114.16605219,
+            22.30508756,
+            5.6
+          ],
+          "source_coordinates": [
+            114.16605219,
+            22.30508756,
+            5.6
+          ],
+          "node_id": "AUS:N:8982ee41f23b9e",
+          "offset_m": 0,
+          "max_association_distance_m": 12,
+          "max_height_difference_m": 0.75,
+          "source_url": "https://portal.csdi.gov.hk/csdi-webpage/apidoc/3d-indoor-mtr-station-map",
+          "evidence": "OFFICIAL_ENTRY_AMENITY_BOUNDED_SAME_HEIGHT_NODE_ASSOCIATION",
+          "lon": 114.16605219,
+          "lat": 22.30508756
+        },
+        "destination": {
+          "id": "ADM:portal:E2",
+          "region_id": "ADM",
+          "station_id": "ADM",
+          "name": "金鐘站 E2出口",
+          "level": "G",
+          "level_name": "Exit E1 & E2 Ground Level",
+          "source_feature_id": "mtr_amenity_point.221",
+          "coordinates": [
+            114.16624518,
+            22.27888752,
+            6
+          ],
+          "source_coordinates": [
+            114.16624518,
+            22.27888752,
+            6
+          ],
+          "node_id": "ADM:N:15dedbcfbae59e",
+          "offset_m": 0,
+          "max_association_distance_m": 12,
+          "max_height_difference_m": 0.75,
+          "source_url": "https://portal.csdi.gov.hk/csdi-webpage/apidoc/3d-indoor-mtr-station-map",
+          "evidence": "OFFICIAL_ENTRY_AMENITY_BOUNDED_SAME_HEIGHT_NODE_ASSOCIATION",
+          "lon": 114.16624518,
+          "lat": 22.27888752
+        },
+        "departureS": 39600,
+        "departureDate": "2026-10-12",
+        "need": "ordinary",
+        "mode": "transit",
+        "allowedTransitModes": [
+          "metro",
+          "bus",
+          "tram"
+        ]
+      },
+      "candidates": [
+        {
+          "id": "public-all",
+          "breakdown": {
+            "walk": 3.867912,
+            "station": 5.035412,
+            "wait": 6.92500999999999,
+            "ride": 14,
+            "taxi": 0
+          },
+          "legs": [
+            {
+              "kind": "walk",
+              "label": "柯士甸鐵路站B出口地面",
+              "minutes": 0.738322,
+              "distanceM": 53.159
+            },
+            {
+              "kind": "escalator",
+              "label": "柯士甸鐵路站扶手電梯",
+              "minutes": 0.776756,
+              "distanceM": 27.963
+            },
+            {
+              "kind": "walk",
+              "label": "柯士甸鐵路站大堂",
+              "minutes": 0.914389,
+              "distanceM": 65.836
+            },
+            {
+              "kind": "escalator",
+              "label": "柯士甸鐵路站扶手電梯",
+              "minutes": 0.716106,
+              "distanceM": 25.78
+            },
+            {
+              "kind": "walk",
+              "label": "柯士甸鐵路站月台",
+              "minutes": 0.252243,
+              "distanceM": 18.162
+            },
+            {
+              "kind": "wait",
+              "label": "在柯士甸站·屯马线站台候车，11:06出发（所选时钟）",
+              "minutes": 2.602184999999978,
+              "distanceM": 0
+            },
+            {
+              "kind": "rail",
+              "label": "屯马线 柯士甸 → 红磡：柯士甸站·屯马线站台 → 红磡站·屯马线站台（11:06–11:13）",
+              "minutes": 7,
+              "distanceM": 2345.174014282388
+            },
+            {
+              "kind": "walk",
+              "label": "紅磡鐵路站月台(屯馬綫)",
+              "minutes": 0.382324,
+              "distanceM": 27.527
+            },
+            {
+              "kind": "escalator",
+              "label": "紅磡鐵路站扶手電梯",
+              "minutes": 0.901067,
+              "distanceM": 32.438
+            },
+            {
+              "kind": "walk",
+              "label": "紅磡鐵路站月台(東鐵綫)",
+              "minutes": 0.393785,
+              "distanceM": 28.353
+            },
+            {
+              "kind": "wait",
+              "label": "在红磡站·东铁线站台候车，11:19出发（所选时钟）",
+              "minutes": 4.3228250000000115,
+              "distanceM": 0
+            },
+            {
+              "kind": "rail",
+              "label": "东铁线 红磡 → 金钟：红磡站·东铁线站台 → 金钟站·东铁线站台（11:19–11:26）",
+              "minutes": 7,
+              "distanceM": 3396.0022087732223
+            },
+            {
+              "kind": "walk",
+              "label": "金鐘鐵路站月台(東鐵綫)",
+              "minutes": 0.033032,
+              "distanceM": 2.378
+            },
+            {
+              "kind": "escalator",
+              "label": "金鐘鐵路站扶手電梯",
+              "minutes": 0.578225,
+              "distanceM": 20.816
+            },
+            {
+              "kind": "walk",
+              "label": "金鐘鐵路站轉車大堂",
+              "minutes": 0.204571,
+              "distanceM": 14.729
+            },
+            {
+              "kind": "escalator",
+              "label": "金鐘鐵路站扶手電梯",
+              "minutes": 1.3753,
+              "distanceM": 49.511
+            },
+            {
+              "kind": "walk",
+              "label": "金鐘鐵路站大堂",
+              "minutes": 0.487768,
+              "distanceM": 35.119
+            },
+            {
+              "kind": "escalator",
+              "label": "金鐘鐵路站扶手電梯",
+              "minutes": 0.687958,
+              "distanceM": 24.767
+            },
+            {
+              "kind": "walk",
+              "label": "金鐘鐵路站E1及E2出口地面",
+              "minutes": 0.461478,
+              "distanceM": 33.226
+            }
+          ],
+          "kind": "public",
+          "available": true,
+          "minutes": 30,
+          "cost": 15.16,
+          "walkMinutes": 9,
+          "waitMinutes": 7,
+          "transfers": 1,
+          "modes": [
+            "walk",
+            "escalator",
+            "walk",
+            "escalator",
+            "walk",
+            "wait",
+            "rail",
+            "walk",
+            "escalator",
+            "walk",
+            "wait",
+            "rail",
+            "walk",
+            "escalator",
+            "walk",
+            "escalator",
+            "walk",
+            "escalator",
+            "walk"
+          ],
+          "score": 51.02,
+          "simulationOnly": false,
+          "message": "演示班次联程 · 11:00 出发"
+        },
+        {
+          "id": "taxi-direct",
+          "breakdown": {
+            "walk": 0.8117717179333939,
+            "station": 0,
+            "wait": 0.9791371940561172,
+            "ride": 0,
+            "taxi": 10.984483333333328
+          },
+          "legs": [
+            {
+              "kind": "walk",
+              "label": "步行 25 米到预约上客点",
+              "minutes": 0.3447269177876644,
+              "distanceM": 24.820338080711835
+            },
+            {
+              "kind": "wait",
+              "label": "等待 DEMO-07 · 1 分钟",
+              "minutes": 0.9791371940561172,
+              "distanceM": 0
+            },
+            {
+              "kind": "taxi",
+              "label": "乘出租车 DEMO-07 前往 金鐘站 E2出口（经海底隧道）",
+              "minutes": 10.984483333333328,
+              "distanceM": 6847.907
+            },
+            {
+              "kind": "walk",
+              "label": "步行 34 米到金鐘站 E2出口",
+              "minutes": 0.4670448001457294,
+              "distanceM": 33.627225610492516
+            }
+          ],
+          "kind": "direct",
+          "available": true,
+          "minutes": 13,
+          "cost": 92.78,
+          "walkMinutes": 1,
+          "waitMinutes": 0.9791371940561172,
+          "transfers": 0,
+          "modes": [
+            "walk",
+            "wait",
+            "taxi",
+            "walk"
+          ],
+          "score": 83.42456859702806,
+          "simulationOnly": true,
+          "message": "按到达时间接车，继续前往目的地",
+          "title": "出租车直达 · 经海底隧道"
+        },
+        {
+          "id": "taxi-first-metro-KOW:portal:A",
+          "breakdown": {
+            "walk": 22.4217122220615,
+            "station": 5.035412,
+            "wait": 10.350744111271949,
+            "ride": 14,
+            "taxi": 2.0204666666666666
+          },
+          "legs": [
+            {
+              "kind": "walk",
+              "label": "步行 25 米到预约上客点",
+              "minutes": 0.3447269177876644,
+              "distanceM": 24.820338080711835
+            },
+            {
+              "kind": "wait",
+              "label": "等待 DEMO-07 · 1 分钟",
+              "minutes": 0.9791371940561172,
+              "distanceM": 0
+            },
+            {
+              "kind": "taxi",
+              "label": "乘出租车 DEMO-07 前往 九龍站 A出口",
+              "minutes": 2.0204666666666666,
+              "distanceM": 748.66
+            },
+            {
+              "kind": "walk",
+              "label": "步行 127 米接续下一程",
+              "minutes": 1.7599973042738362,
+              "distanceM": 126.71980590771621
+            },
+            {
+              "kind": "walk",
+              "label": "九龍鐵路站市區預辦登機層",
+              "minutes": 0.03761,
+              "distanceM": 2.708
+            },
+            {
+              "kind": "walk",
+              "label": "九龍鐵路站A出口",
+              "minutes": 0.011104,
+              "distanceM": 0.799
+            },
+            {
+              "kind": "walk",
+              "label": "九龍鐵路站市區預辦登機層",
+              "minutes": 3.706324,
+              "distanceM": 266.855
+            },
+            {
+              "kind": "walk",
+              "label": "佐敦道",
+              "minutes": 0.544041,
+              "distanceM": 39.171
+            },
+            {
+              "kind": "crossing",
+              "label": "過路處",
+              "minutes": 0.071292,
+              "distanceM": 5.133
+            },
+            {
+              "kind": "walk",
+              "label": "安全島",
+              "minutes": 0.057663,
+              "distanceM": 4.152
+            },
+            {
+              "kind": "crossing",
+              "label": "過路處",
+              "minutes": 0.07408,
+              "distanceM": 5.334
+            },
+            {
+              "kind": "walk",
+              "label": "佐敦道",
+              "minutes": 1.256804,
+              "distanceM": 90.49
+            },
+            {
+              "kind": "walk",
+              "label": "連翔道",
+              "minutes": 2.474626,
+              "distanceM": 178.173
+            },
+            {
+              "kind": "walk",
+              "label": "連翔道車輛出入口",
+              "minutes": 0.042825,
+              "distanceM": 3.083
+            },
+            {
+              "kind": "access_connector",
+              "label": "道路到终点的估算步行接入（未核验）",
+              "minutes": 0.927004,
+              "distanceM": 66.744
+            },
+            {
+              "kind": "access_connector",
+              "label": "起点步行接驳（直线估算，实际通行待核实）",
+              "minutes": 0.927004,
+              "distanceM": 66.744
+            },
+            {
+              "kind": "walk",
+              "label": "连翔道车辆出入口",
+              "minutes": 0.042825,
+              "distanceM": 3.083
+            },
+            {
+              "kind": "walk",
+              "label": "连翔道",
+              "minutes": 2.491161,
+              "distanceM": 179.364
+            },
+            {
+              "kind": "crossing",
+              "label": "连翔道斑马线",
+              "minutes": 0.10899,
+              "distanceM": 7.847
+            },
+            {
+              "kind": "walk",
+              "label": "连翔道安全岛",
+              "minutes": 0.02959,
+              "distanceM": 2.13
+            },
+            {
+              "kind": "crossing",
+              "label": "连翔道斑马线",
+              "minutes": 0.110023,
+              "distanceM": 7.922
+            },
+            {
+              "kind": "walk",
+              "label": "佐敦道",
+              "minutes": 0.232785,
+              "distanceM": 16.761
+            },
+            {
+              "kind": "crossing",
+              "label": "连翔道斑马线",
+              "minutes": 0.245113,
+              "distanceM": 17.648
+            },
+            {
+              "kind": "walk",
+              "label": "安全岛",
+              "minutes": 0.050378,
+              "distanceM": 3.627
+            },
+            {
+              "kind": "crossing",
+              "label": "佐敦道斑马线",
+              "minutes": 0.166579,
+              "distanceM": 11.994
+            },
+            {
+              "kind": "walk",
+              "label": "佐敦道",
+              "minutes": 1.335899,
+              "distanceM": 96.185
+            },
+            {
+              "kind": "crossing",
+              "label": "汇民道过路处",
+              "minutes": 0.104674,
+              "distanceM": 7.537
+            },
+            {
+              "kind": "walk",
+              "label": "汇民道安全岛",
+              "minutes": 0.030367,
+              "distanceM": 2.186
+            },
+            {
+              "kind": "crossing",
+              "label": "汇民道过路处",
+              "minutes": 0.123279,
+              "distanceM": 8.876
+            },
+            {
+              "kind": "walk",
+              "label": "汇民道安全岛",
+              "minutes": 0.040824,
+              "distanceM": 2.939
+            },
+            {
+              "kind": "crossing",
+              "label": "汇民道过路处",
+              "minutes": 0.203781,
+              "distanceM": 14.672
+            },
+            {
+              "kind": "walk",
+              "label": "柯士甸站",
+              "minutes": 0.127987,
+              "distanceM": 9.215
+            },
+            {
+              "kind": "crossing",
+              "label": "佐敦道过路处",
+              "minutes": 0.135602,
+              "distanceM": 9.763
+            },
+            {
+              "kind": "walk",
+              "label": "柯士甸站",
+              "minutes": 0.083491,
+              "distanceM": 6.011
+            },
+            {
+              "kind": "walk",
+              "label": "行人道",
+              "minutes": 0.947809,
+              "distanceM": 68.242
+            },
+            {
+              "kind": "walk",
+              "label": "香港西九龙站",
+              "minutes": 0.032492,
+              "distanceM": 2.339
+            },
+            {
+              "kind": "walk",
+              "label": "柯士甸铁路站B1出口",
+              "minutes": 0.044112,
+              "distanceM": 3.176
+            },
+            {
+              "kind": "walk",
+              "label": "柯士甸铁路站B出口地面",
+              "minutes": 0.09296,
+              "distanceM": 6.693
+            },
+            {
+              "kind": "walk",
+              "label": "柯士甸鐵路站B出口地面",
+              "minutes": 0.2763,
+              "distanceM": 19.894
+            },
+            {
+              "kind": "escalator",
+              "label": "柯士甸鐵路站扶手電梯",
+              "minutes": 0.776756,
+              "distanceM": 27.963
+            },
+            {
+              "kind": "walk",
+              "label": "柯士甸鐵路站大堂",
+              "minutes": 0.914389,
+              "distanceM": 65.836
+            },
+            {
+              "kind": "escalator",
+              "label": "柯士甸鐵路站扶手電梯",
+              "minutes": 0.716106,
+              "distanceM": 25.78
+            },
+            {
+              "kind": "walk",
+              "label": "柯士甸鐵路站月台",
+              "minutes": 0.252243,
+              "distanceM": 18.162
+            },
+            {
+              "kind": "wait",
+              "label": "在柯士甸站·屯马线站台候车，11:30出发（所选时钟）",
+              "minutes": 5.04878191721582,
+              "distanceM": 0
+            },
+            {
+              "kind": "rail",
+              "label": "屯马线 柯士甸 → 红磡：柯士甸站·屯马线站台 → 红磡站·屯马线站台（11:30–11:37）",
+              "minutes": 7,
+              "distanceM": 2345.174014282388
+            },
+            {
+              "kind": "walk",
+              "label": "紅磡鐵路站月台(屯馬綫)",
+              "minutes": 0.382324,
+              "distanceM": 27.527
+            },
+            {
+              "kind": "escalator",
+              "label": "紅磡鐵路站扶手電梯",
+              "minutes": 0.901067,
+              "distanceM": 32.438
+            },
+            {
+              "kind": "walk",
+              "label": "紅磡鐵路站月台(東鐵綫)",
+              "minutes": 0.393785,
+              "distanceM": 28.353
+            },
+            {
+              "kind": "wait",
+              "label": "在红磡站·东铁线站台候车，11:43出发（所选时钟）",
+              "minutes": 4.3228250000000115,
+              "distanceM": 0
+            },
+            {
+              "kind": "rail",
+              "label": "东铁线 红磡 → 金钟：红磡站·东铁线站台 → 金钟站·东铁线站台（11:43–11:50）",
+              "minutes": 7,
+              "distanceM": 3396.0022087732223
+            },
+            {
+              "kind": "walk",
+              "label": "金鐘鐵路站月台(東鐵綫)",
+              "minutes": 0.033032,
+              "distanceM": 2.378
+            },
+            {
+              "kind": "escalator",
+              "label": "金鐘鐵路站扶手電梯",
+              "minutes": 0.578225,
+              "distanceM": 20.816
+            },
+            {
+              "kind": "walk",
+              "label": "金鐘鐵路站轉車大堂",
+              "minutes": 0.204571,
+              "distanceM": 14.729
+            },
+            {
+              "kind": "escalator",
+              "label": "金鐘鐵路站扶手電梯",
+              "minutes": 1.3753,
+              "distanceM": 49.511
+            },
+            {
+              "kind": "walk",
+              "label": "金鐘鐵路站大堂",
+              "minutes": 0.487768,
+              "distanceM": 35.119
+            },
+            {
+              "kind": "escalator",
+              "label": "金鐘鐵路站扶手電梯",
+              "minutes": 0.687958,
+              "distanceM": 24.767
+            },
+            {
+              "kind": "walk",
+              "label": "金鐘鐵路站E1及E2出口地面",
+              "minutes": 0.461478,
+              "distanceM": 33.226
+            }
+          ],
+          "kind": "first",
+          "available": true,
+          "minutes": 55,
+          "cost": 44.16,
+          "walkMinutes": 29,
+          "waitMinutes": 10.979137194056117,
+          "transfers": 2,
+          "modes": [
+            "walk",
+            "wait",
+            "taxi",
+            "walk",
+            "crossing",
+            "walk",
+            "crossing",
+            "walk",
+            "access_connector",
+            "walk",
+            "crossing",
+            "walk",
+            "crossing",
+            "walk",
+            "crossing",
+            "walk",
+            "crossing",
+            "walk",
+            "crossing",
+            "walk",
+            "crossing",
+            "walk",
+            "crossing",
+            "walk",
+            "crossing",
+            "walk",
+            "escalator",
+            "walk",
+            "escalator",
+            "walk",
+            "wait",
+            "rail",
+            "walk",
+            "escalator",
+            "walk",
+            "wait",
+            "rail",
+            "walk",
+            "escalator",
+            "walk",
+            "escalator",
+            "walk",
+            "escalator",
+            "walk"
+          ],
+          "anchor": {
+            "id": "KOW:portal:A",
+            "name": "九龍站 A出口",
+            "mode": "metro",
+            "coordinates": [
+              114.16227592,
+              22.30504349,
+              6
+            ]
+          },
+          "score": 109.75956859702806,
+          "simulationOnly": true,
+          "message": "按到达时间接车，继续前往目的地",
+          "title": "出租车首程 + 地铁"
+        }
+      ],
+      "diagnostics": [
+        {
+          "side": "first",
+          "id": "KOW:portal:A",
+          "status": "ready",
+          "minutes": 55
+        },
+        {
+          "side": "first",
+          "id": "td:99219",
+          "status": "not-a-shorter-feeder"
+        }
+      ],
+      "shortlist": {
+        "first": [
+          {
+            "id": "KOW:portal:A",
+            "mode": "metro"
+          },
+          {
+            "id": "ETS:portal:N5",
+            "mode": "metro"
+          },
+          {
+            "id": "td:1286",
+            "mode": "bus"
+          },
+          {
+            "id": "td:99219",
+            "mode": "tram"
+          }
+        ],
+        "last": [
+          {
+            "id": "ETS:portal:L3",
+            "mode": "metro"
+          },
+          {
+            "id": "EXC:portal:B3",
+            "mode": "metro"
+          },
+          {
+            "id": "td:10000065",
+            "mode": "bus"
+          },
+          {
+            "id": "td:99216",
+            "mode": "tram"
+          }
+        ]
+      },
+      "taxiStatus": {
+        "status": "ready",
+        "published": 2
+      },
+      "rankings": {
+        "time": [
+          "public-all",
+          "taxi-direct",
+          "taxi-first-metro-KOW:portal:A"
+        ],
+        "cost": [
+          "public-all",
+          "taxi-first-metro-KOW:portal:A",
+          "taxi-direct"
+        ],
+        "walk": [
+          "taxi-direct",
+          "public-all",
+          "taxi-first-metro-KOW:portal:A"
+        ]
+      },
+      "priceWeightSensitivity": [
+        {
+          "costWeight": 0,
+          "winner": "taxi-direct"
+        },
+        {
+          "costWeight": 0.25,
+          "winner": "taxi-direct"
+        },
+        {
+          "costWeight": 0.5,
+          "winner": "public-all"
+        },
+        {
+          "costWeight": 0.75,
+          "winner": "public-all"
+        },
+        {
+          "costWeight": 1,
+          "winner": "public-all"
+        },
+        {
+          "costWeight": 2,
+          "winner": "public-all"
+        }
+      ],
+      "taxiPriceSensitivity": [
+        {
+          "factor": 0.5,
+          "winner": "taxi-direct"
+        },
+        {
+          "factor": 1,
+          "winner": "public-all"
+        },
+        {
+          "factor": 1.5,
+          "winner": "public-all"
+        },
+        {
+          "factor": 2,
+          "winner": "public-all"
+        },
+        {
+          "factor": 3,
+          "winner": "public-all"
+        }
+      ],
+      "ms": 13904
+    }
+  ]
+}

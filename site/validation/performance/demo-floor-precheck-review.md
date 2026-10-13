@@ -1,0 +1,13 @@
+# Named-floor demo precheck boundary
+
+This is a verifier-contract precheck, not a reachability result. No route search, source-node relocation, preference relaxation or closure bypass is authorized by it.
+
+For an original endpoint with truthy floorId, no truthy node_id, and nullish or genuinely empty-array node_ids, demoEndpointEvidence necessarily rejects: its named-floor branch requires the resolved portal's node_id to belong to that original allowed-node set. The set is empty regardless of how complete the computed route is. annotateDemoFallback consequently returns null. The new boolean helper encodes only this sufficient condition; malformed or unknown sets remain on the original execution path.
+
+The current LG1/L4 UI fixture has floor IDs 250000101 and 250000073 and no node_id/node_ids on either original endpoint. f2 resolves the selected floor from trusted block data, then supplies node_ids on a new derived request for r2. It does not mutate the original UI request. After a successful official route, f2 checks the routed endpoint against those actual floor entrances and adds resolvedEndpoints. That is why the formal detailed route can remain valid while the current demo verifier, called with the original request, still rejects the same floor request.
+
+This exposes an existing interface mismatch, not proof that the selected floor is invalid. If a future change supplies a trusted allowed-node set to the demo verifier, this precheck must be updated or removed at the same time. Tests deliberately verify that adding legitimate node_ids restores acceptance, and that the precheck's false result never waives floor/place/source-incidence/XYZ/closure checks.
+
+Safe integration scope: preserve existing guarded-demo cache hits; run the precheck only on a miss. Record precheck-skipped, not success or NO_ROUTE. Keep existing disposal/finally handling, caller stale/signal checks, and all ordinary public/detailed/walk/taxi candidates. Skipped branches do not run and therefore cannot produce their hypothetical worker/search exceptions; the diagnostic event must accurately describe that omission rather than claiming a completed search. S1 cache/cancellation integration tests are separate from the verifier tests in this review.
+
+Targeted verifier coverage: both endpoint positions × five preferences × four absent/nullish/empty forms (40 rejection implications); 30 valid source-set/exact-node restorations; malformed and empty boundaries; unchanged hard constraints; and the actual stored LG1/L4 UI fixture. Only synthetic small-result objects and fixture metadata are inspected; no real graph search is run.

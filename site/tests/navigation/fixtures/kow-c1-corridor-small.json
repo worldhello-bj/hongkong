@@ -1,0 +1,494 @@
+{
+  "version": "KOW-C1-source-fixture",
+  "regions": [
+    {
+      "id": "KOW",
+      "name": "九龍 Kowloon",
+      "center": [
+        114.1615,
+        22.3047
+      ],
+      "radius_m": 500
+    }
+  ],
+  "nodes": [
+    {
+      "id": "KOW:N:7403785221737d",
+      "region_id": "KOW",
+      "coordinates": [
+        114.16176439,
+        22.30482661,
+        13.5
+      ]
+    },
+    {
+      "id": "KOW:N:7a05af17b9a9ae",
+      "region_id": "KOW",
+      "coordinates": [
+        114.16210669,
+        22.3045743,
+        13.5
+      ]
+    },
+    {
+      "id": "KOW:N:80bd652ff86c03",
+      "region_id": "KOW",
+      "coordinates": [
+        114.16228083,
+        22.30464011,
+        13.5
+      ]
+    },
+    {
+      "id": "KOW:N:99f1d9bb27af85",
+      "region_id": "KOW",
+      "coordinates": [
+        114.16228263,
+        22.30464637,
+        13.5
+      ]
+    },
+    {
+      "id": "KOW:N:a257d4094aed13",
+      "region_id": "KOW",
+      "coordinates": [
+        114.16176873,
+        22.30483128,
+        6
+      ]
+    },
+    {
+      "id": "KOW:N:b91f36a71b2d4c",
+      "region_id": "KOW",
+      "coordinates": [
+        114.16216605,
+        22.30455141,
+        13.5
+      ]
+    },
+    {
+      "id": "KOW:N:deb4460e24724f",
+      "region_id": "KOW",
+      "coordinates": [
+        114.16221765,
+        22.30467081,
+        13.5
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "KOW:I:1001056777",
+      "physical_id": "KOW:I:1001056777",
+      "from_id": "KOW:N:a257d4094aed13",
+      "to_id": "KOW:N:7403785221737d",
+      "region_id": "KOW",
+      "kind": "lift",
+      "name": "九龍鐵路站升降機",
+      "length_m": 7.5311,
+      "duration_s": 52.5311,
+      "coordinates": [
+        [
+          114.16176873,
+          22.30483128,
+          6
+        ],
+        [
+          114.16176439,
+          22.30482661,
+          13.5
+        ]
+      ],
+      "source_id": "CSDI-INDOOR",
+      "source_feature_id": 1001056777,
+      "wheelchair_barrier": 2,
+      "access_time_id": null,
+      "location": 2,
+      "direction": 0,
+      "floor_id": 1008130000,
+      "geometry_mode": "official",
+      "snap_eligible": false,
+      "accessible_eligible": true,
+      "disabled": false
+    },
+    {
+      "id": "KOW:I:1001056777:r",
+      "physical_id": "KOW:I:1001056777",
+      "from_id": "KOW:N:7403785221737d",
+      "to_id": "KOW:N:a257d4094aed13",
+      "region_id": "KOW",
+      "kind": "lift",
+      "name": "九龍鐵路站升降機",
+      "length_m": 7.5311,
+      "duration_s": 52.5311,
+      "coordinates": [
+        [
+          114.16176439,
+          22.30482661,
+          13.5
+        ],
+        [
+          114.16176873,
+          22.30483128,
+          6
+        ]
+      ],
+      "source_id": "CSDI-INDOOR",
+      "source_feature_id": 1001056777,
+      "wheelchair_barrier": 2,
+      "access_time_id": null,
+      "location": 2,
+      "direction": 0,
+      "floor_id": 1008130000,
+      "geometry_mode": "official",
+      "snap_eligible": false,
+      "accessible_eligible": true,
+      "disabled": false
+    },
+    {
+      "id": "KOW:I:1001094810",
+      "physical_id": "KOW:I:1001094810",
+      "from_id": "KOW:N:deb4460e24724f",
+      "to_id": "KOW:N:99f1d9bb27af85",
+      "region_id": "KOW",
+      "kind": "walk",
+      "name": "九龍鐵路站C1出口大堂(東涌綫)",
+      "length_m": 7.2161,
+      "duration_s": 6.013417,
+      "coordinates": [
+        [
+          114.16221765,
+          22.30467081,
+          13.5
+        ],
+        [
+          114.16228263,
+          22.30464637,
+          13.5
+        ]
+      ],
+      "source_id": "CSDI-INDOOR",
+      "source_feature_id": 1001094810,
+      "wheelchair_barrier": 2,
+      "access_time_id": null,
+      "location": 2,
+      "direction": 0,
+      "floor_id": 1008130002,
+      "geometry_mode": "official",
+      "snap_eligible": false,
+      "accessible_eligible": true,
+      "disabled": false
+    },
+    {
+      "id": "KOW:I:1001094810:r",
+      "physical_id": "KOW:I:1001094810",
+      "from_id": "KOW:N:99f1d9bb27af85",
+      "to_id": "KOW:N:deb4460e24724f",
+      "region_id": "KOW",
+      "kind": "walk",
+      "name": "九龍鐵路站C1出口大堂(東涌綫)",
+      "length_m": 7.2161,
+      "duration_s": 6.013417,
+      "coordinates": [
+        [
+          114.16228263,
+          22.30464637,
+          13.5
+        ],
+        [
+          114.16221765,
+          22.30467081,
+          13.5
+        ]
+      ],
+      "source_id": "CSDI-INDOOR",
+      "source_feature_id": 1001094810,
+      "wheelchair_barrier": 2,
+      "access_time_id": null,
+      "location": 2,
+      "direction": 0,
+      "floor_id": 1008130002,
+      "geometry_mode": "official",
+      "snap_eligible": false,
+      "accessible_eligible": true,
+      "disabled": false
+    },
+    {
+      "id": "KOW:I:1001095566",
+      "physical_id": "KOW:I:1001095566",
+      "from_id": "KOW:N:80bd652ff86c03",
+      "to_id": "KOW:N:99f1d9bb27af85",
+      "region_id": "KOW",
+      "kind": "walk",
+      "name": "九龍鐵路站C1出口大堂(東涌綫)",
+      "length_m": 0.7203,
+      "duration_s": 0.60025,
+      "coordinates": [
+        [
+          114.16228083,
+          22.30464011,
+          13.5
+        ],
+        [
+          114.16228263,
+          22.30464637,
+          13.5
+        ]
+      ],
+      "source_id": "CSDI-INDOOR",
+      "source_feature_id": 1001095566,
+      "wheelchair_barrier": 2,
+      "access_time_id": null,
+      "location": 2,
+      "direction": 0,
+      "floor_id": 1008130002,
+      "geometry_mode": "official",
+      "snap_eligible": false,
+      "accessible_eligible": true,
+      "disabled": false
+    },
+    {
+      "id": "KOW:I:1001095566:r",
+      "physical_id": "KOW:I:1001095566",
+      "from_id": "KOW:N:99f1d9bb27af85",
+      "to_id": "KOW:N:80bd652ff86c03",
+      "region_id": "KOW",
+      "kind": "walk",
+      "name": "九龍鐵路站C1出口大堂(東涌綫)",
+      "length_m": 0.7203,
+      "duration_s": 0.60025,
+      "coordinates": [
+        [
+          114.16228263,
+          22.30464637,
+          13.5
+        ],
+        [
+          114.16228083,
+          22.30464011,
+          13.5
+        ]
+      ],
+      "source_id": "CSDI-INDOOR",
+      "source_feature_id": 1001095566,
+      "wheelchair_barrier": 2,
+      "access_time_id": null,
+      "location": 2,
+      "direction": 0,
+      "floor_id": 1008130002,
+      "geometry_mode": "official",
+      "snap_eligible": false,
+      "accessible_eligible": true,
+      "disabled": false
+    },
+    {
+      "id": "KOW:I:1001095582",
+      "physical_id": "KOW:I:1001095582",
+      "from_id": "KOW:N:b91f36a71b2d4c",
+      "to_id": "KOW:N:deb4460e24724f",
+      "region_id": "KOW",
+      "kind": "walk",
+      "name": "九龍鐵路站C1出口大堂(東涌綫)",
+      "length_m": 14.2986,
+      "duration_s": 11.9155,
+      "coordinates": [
+        [
+          114.16216605,
+          22.30455141,
+          13.5
+        ],
+        [
+          114.16221765,
+          22.30467081,
+          13.5
+        ]
+      ],
+      "source_id": "CSDI-INDOOR",
+      "source_feature_id": 1001095582,
+      "wheelchair_barrier": 2,
+      "access_time_id": null,
+      "location": 2,
+      "direction": 0,
+      "floor_id": 1008130002,
+      "geometry_mode": "official",
+      "snap_eligible": false,
+      "accessible_eligible": true,
+      "disabled": false
+    },
+    {
+      "id": "KOW:I:1001095582:r",
+      "physical_id": "KOW:I:1001095582",
+      "from_id": "KOW:N:deb4460e24724f",
+      "to_id": "KOW:N:b91f36a71b2d4c",
+      "region_id": "KOW",
+      "kind": "walk",
+      "name": "九龍鐵路站C1出口大堂(東涌綫)",
+      "length_m": 14.2986,
+      "duration_s": 11.9155,
+      "coordinates": [
+        [
+          114.16221765,
+          22.30467081,
+          13.5
+        ],
+        [
+          114.16216605,
+          22.30455141,
+          13.5
+        ]
+      ],
+      "source_id": "CSDI-INDOOR",
+      "source_feature_id": 1001095582,
+      "wheelchair_barrier": 2,
+      "access_time_id": null,
+      "location": 2,
+      "direction": 0,
+      "floor_id": 1008130002,
+      "geometry_mode": "official",
+      "snap_eligible": false,
+      "accessible_eligible": true,
+      "disabled": false
+    },
+    {
+      "id": "KOW:I:1001828770",
+      "physical_id": "KOW:I:1001828770",
+      "from_id": "KOW:N:b91f36a71b2d4c",
+      "to_id": "KOW:N:7a05af17b9a9ae",
+      "region_id": "KOW",
+      "kind": "walk",
+      "name": "九龍鐵路站C1出口大堂(東涌綫)",
+      "length_m": 6.6159,
+      "duration_s": 5.51325,
+      "coordinates": [
+        [
+          114.16216605,
+          22.30455141,
+          13.5
+        ],
+        [
+          114.16210669,
+          22.3045743,
+          13.5
+        ]
+      ],
+      "source_id": "CSDI-INDOOR",
+      "source_feature_id": 1001828770,
+      "wheelchair_barrier": 2,
+      "access_time_id": null,
+      "location": 2,
+      "direction": 0,
+      "floor_id": 1008130002,
+      "geometry_mode": "official",
+      "snap_eligible": false,
+      "accessible_eligible": true,
+      "disabled": false
+    },
+    {
+      "id": "KOW:I:1001828770:r",
+      "physical_id": "KOW:I:1001828770",
+      "from_id": "KOW:N:7a05af17b9a9ae",
+      "to_id": "KOW:N:b91f36a71b2d4c",
+      "region_id": "KOW",
+      "kind": "walk",
+      "name": "九龍鐵路站C1出口大堂(東涌綫)",
+      "length_m": 6.6159,
+      "duration_s": 5.51325,
+      "coordinates": [
+        [
+          114.16210669,
+          22.3045743,
+          13.5
+        ],
+        [
+          114.16216605,
+          22.30455141,
+          13.5
+        ]
+      ],
+      "source_id": "CSDI-INDOOR",
+      "source_feature_id": 1001828770,
+      "wheelchair_barrier": 2,
+      "access_time_id": null,
+      "location": 2,
+      "direction": 0,
+      "floor_id": 1008130002,
+      "geometry_mode": "official",
+      "snap_eligible": false,
+      "accessible_eligible": true,
+      "disabled": false
+    }
+  ],
+  "portals": [
+    {
+      "id": "KOW:N:7403785221737d",
+      "node_id": "KOW:N:7403785221737d",
+      "coordinates": [
+        114.16176439,
+        22.30482661,
+        13.5
+      ],
+      "region_id": "KOW"
+    },
+    {
+      "id": "KOW:N:7a05af17b9a9ae",
+      "node_id": "KOW:N:7a05af17b9a9ae",
+      "coordinates": [
+        114.16210669,
+        22.3045743,
+        13.5
+      ],
+      "region_id": "KOW"
+    },
+    {
+      "id": "KOW:N:80bd652ff86c03",
+      "node_id": "KOW:N:80bd652ff86c03",
+      "coordinates": [
+        114.16228083,
+        22.30464011,
+        13.5
+      ],
+      "region_id": "KOW"
+    },
+    {
+      "id": "KOW:N:99f1d9bb27af85",
+      "node_id": "KOW:N:99f1d9bb27af85",
+      "coordinates": [
+        114.16228263,
+        22.30464637,
+        13.5
+      ],
+      "region_id": "KOW"
+    },
+    {
+      "id": "KOW:N:a257d4094aed13",
+      "node_id": "KOW:N:a257d4094aed13",
+      "coordinates": [
+        114.16176873,
+        22.30483128,
+        6
+      ],
+      "region_id": "KOW"
+    },
+    {
+      "id": "KOW:N:b91f36a71b2d4c",
+      "node_id": "KOW:N:b91f36a71b2d4c",
+      "coordinates": [
+        114.16216605,
+        22.30455141,
+        13.5
+      ],
+      "region_id": "KOW"
+    },
+    {
+      "id": "KOW:N:deb4460e24724f",
+      "node_id": "KOW:N:deb4460e24724f",
+      "coordinates": [
+        114.16221765,
+        22.30467081,
+        13.5
+      ],
+      "region_id": "KOW"
+    }
+  ],
+  "closures": []
+}

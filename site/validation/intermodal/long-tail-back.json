@@ -1,0 +1,148 @@
+{
+  "runtime": "6e52ec3d2521",
+  "departureDate": "2026-10-12",
+  "departureS": 39600,
+  "method": "Actual production f2 + routing Worker bundles and seeded 48-car road simulation; not browser QA; all fares/schedules/vehicles remain simulation",
+  "rows": [
+    {
+      "name": "覆盖长尾西九步道至金钟",
+      "request": {
+        "origin": {
+          "id": "已覆盖西九步道节点 AUS:N:2fdae33416b489",
+          "name": "已覆盖西九步道节点 AUS:N:2fdae33416b489",
+          "coordinates": [
+            114.15615595,
+            22.30294404,
+            4.204
+          ],
+          "lon": 114.15615595,
+          "lat": 22.30294404,
+          "node_id": "AUS:N:2fdae33416b489"
+        },
+        "destination": {
+          "id": "ADM:portal:E2",
+          "region_id": "ADM",
+          "station_id": "ADM",
+          "name": "金鐘站 E2出口",
+          "level": "G",
+          "level_name": "Exit E1 & E2 Ground Level",
+          "source_feature_id": "mtr_amenity_point.221",
+          "coordinates": [
+            114.16624518,
+            22.27888752,
+            6
+          ],
+          "source_coordinates": [
+            114.16624518,
+            22.27888752,
+            6
+          ],
+          "node_id": "ADM:N:15dedbcfbae59e",
+          "offset_m": 0,
+          "max_association_distance_m": 12,
+          "max_height_difference_m": 0.75,
+          "source_url": "https://portal.csdi.gov.hk/csdi-webpage/apidoc/3d-indoor-mtr-station-map",
+          "evidence": "OFFICIAL_ENTRY_AMENITY_BOUNDED_SAME_HEIGHT_NODE_ASSOCIATION",
+          "lon": 114.16624518,
+          "lat": 22.27888752
+        },
+        "departureS": 39600,
+        "departureDate": "2026-10-12",
+        "need": "ordinary",
+        "mode": "transit",
+        "allowedTransitModes": [
+          "metro",
+          "bus",
+          "tram"
+        ]
+      },
+      "candidates": [],
+      "diagnostics": [],
+      "shortlist": {
+        "first": [
+          {
+            "id": "KOW:portal:E1",
+            "mode": "metro"
+          },
+          {
+            "id": "AUS:portal:B2",
+            "mode": "metro"
+          },
+          {
+            "id": "td:1286",
+            "mode": "bus"
+          },
+          {
+            "id": "td:99215",
+            "mode": "tram"
+          }
+        ],
+        "last": [
+          {
+            "id": "EXC:portal:B3",
+            "mode": "metro"
+          },
+          {
+            "id": "ETS:portal:L3",
+            "mode": "metro"
+          },
+          {
+            "id": "td:4246",
+            "mode": "bus"
+          },
+          {
+            "id": "td:99214",
+            "mode": "tram"
+          }
+        ]
+      },
+      "taxiStatus": {
+        "status": "no-road-route",
+        "published": 0
+      },
+      "rankings": {
+        "time": [],
+        "cost": [],
+        "walk": []
+      },
+      "priceWeightSensitivity": [
+        {
+          "costWeight": 0
+        },
+        {
+          "costWeight": 0.25
+        },
+        {
+          "costWeight": 0.5
+        },
+        {
+          "costWeight": 0.75
+        },
+        {
+          "costWeight": 1
+        },
+        {
+          "costWeight": 2
+        }
+      ],
+      "taxiPriceSensitivity": [
+        {
+          "factor": 0.5
+        },
+        {
+          "factor": 1
+        },
+        {
+          "factor": 1.5
+        },
+        {
+          "factor": 2
+        },
+        {
+          "factor": 3
+        }
+      ],
+      "ms": 7802
+    }
+  ]
+}

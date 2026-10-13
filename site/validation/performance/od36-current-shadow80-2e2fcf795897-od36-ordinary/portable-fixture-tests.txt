@@ -1,0 +1,13 @@
+✔ virtual score uses original expression on floored virtual resources, strict comparison and missing-node fallback (1.727284ms)
+✔ actual bundled Dt passive observer preserves full output, accepted/pop trace, callback count/order and receiver (31.237235ms)
+✔ would-prune labels still perform original effectful callbacks and propagate cancellation; wrong owner disables statistics only (41.267952ms)
+✔ OD36 probe flushes bounded events without losing order, latest counters or final lifecycle tail (27.423722ms)
+✔ copied scheduled counters understand both flat and exact-time bucket indexes (31.270547ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 211.766099

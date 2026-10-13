@@ -1,0 +1,17 @@
+{
+  "runtime": "db6aa47e3f35",
+  "signature": "d1d5d126e90fa1b85c2ac95e4af7a4fde25bdfea9f013dcf72264dc7e7912375",
+  "originalReport": "exits-cross-accessible-taxi-off.json",
+  "originalReportSha256": "d786b25fdcb64448eb76aa60eae35eb8ac4e875f17982e039b7db67a81ac4a03",
+  "recordedClassification": "completed-without-candidate-needs-diagnosis",
+  "correctedClassification": "planning-not-started",
+  "recordedWallMs": 17.819978999999876,
+  "correctedFullCandidateWallMs": null,
+  "firstResultMs": null,
+  "workers": 0,
+  "choices": 0,
+  "performanceCreated": false,
+  "reason": "S1 calls exact-aware t2(Q, endpoint) against the area graph only during initial coverage check. A real station-source node absent from Q is rejected before the request, performance record or Workers are created.",
+  "sourceAnchor": "assets/main-integrated.js S1: const outsidePoint=[r.origin,r.destination].find(point=>!t2(Q,point)); if(outsidePoint&&!t1.has(\"taxi\")) return;",
+  "qualification": "No route comparison started. This is not a full-comparison latency or a graph NO_ROUTE result. Original observation is retained; summary applies this correction."
+}

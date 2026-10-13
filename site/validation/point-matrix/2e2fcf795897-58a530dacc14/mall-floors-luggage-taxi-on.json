@@ -1,0 +1,905 @@
+{
+  "schema": 1,
+  "auditProvenance": {
+    "version": "point-strict-source-v2",
+    "files": {
+      "point-matrix-harness.mjs": "eebf77fc8512f208750a9e56d7d9c1f052c865c801b5935a2bb70946a2e248ab",
+      "point-matrix-audit.mjs": "5f9cdfc72e6c0d11e57e9b4cd5d17f9cab8888c2a3feed38c5c32977e6b7dbd3",
+      "point-source-eligibility.mjs": "a424b9710aafc3bf82ab157f6054cb1e62d0eee862df5cf5ab5398272b50c352",
+      "point-matrix-fixture.mjs": "5defc9c9417a73cf2157582405cf05c77220c0122d2a5278d294acff9fc44335"
+    }
+  },
+  "planningStarted": true,
+  "uiStatus": [
+    {
+      "id": "[data-app=\"status\"]",
+      "text": "方案已更新，可以开始这一程。"
+    },
+    {
+      "id": "[data-app=\"taxi-fleet-status\"]",
+      "text": "16 辆游走 · 32 辆执行已有订单 · 0 辆接送本次乘客 · 当前可见 5/48"
+    }
+  ],
+  "rowId": "mall-floors",
+  "label": "太古廣場 LG1 → L4",
+  "tags": [
+    "named-floor",
+    "same-shore",
+    "vertical"
+  ],
+  "need": "luggage",
+  "taxi": true,
+  "runtime": {
+    "version": "2e2fcf795897",
+    "assets": {
+      "area/admiralty-block-graph.json.gz": "388a08977ed80e57295fe1a0d623178e79ecd441cedaa5cfc62fe043385e2298",
+      "area/admiralty-block-manifest.json": "3ca578fed53857bf83cb93c4f51aab5f854656415384f7a869360a983ea07001",
+      "area/area-graph.json.gz": "44901caf6ee1241a23e096eb3d692f96913789fb2c1cbd742da59d8d3730253f",
+      "area/station-graph.json.gz": "446700358a6a56ccb8bbf1e024f6a09da99925e2778331e67c307c135a0f0a1e",
+      "assets/app-transit-worker-CaCMeUxU.js": "f48c152a8b492448503da910e941fbab114db8d130112f0735df27ced9b31f7c",
+      "assets/app-walk-worker-jk5g-BMr.js": "2f5cc55b080f217bcf13901b82be758aa576ad3e7f1ec073372999aabd782cd8",
+      "assets/boot-status.js": "53c430e4c7e6b380f1b3ad694eb75dc5922bc881350e5d42f66102cc595d5817",
+      "assets/demo-fallback.js": "7b88d6ddeebafac049b0b433d44b62d45b71e64a482800d5da41b1f4de11cbf1",
+      "assets/integrated-navigation.js": "a4229bb5f52847bd3bbe834c6c9405c950754031697ce8ca239e27a50bb9856d",
+      "assets/intermodal-routing-D8vKT-lN.js": "a2daa51cd81929e26a1b7cd7e292219b8ea6857039b78cb5037e711e489c1f74",
+      "assets/journey-score.js": "6842becf25178068d4cf682ba2b6a67702f6302f96c9dbe816ff4d2f51d52611",
+      "assets/kow-c1-corridor-data.js": "a2a51a8d0e54cf4b45f2b7df4c3a3bad366e9b9544e9514b2e208fa7b973ea01",
+      "assets/kow-c1-corridor.js": "071ce44f399d2a8bc0597be6a75d8a2984c09c27c8b04835dc5856a827444b5c",
+      "assets/main-integrated.js": "b7e4c421908557e91e52031c03d41f06428cbb31ac2355155834bc4824d6e6a5",
+      "assets/maplibre-gl-_-pAOC5F.js": "f0a214ad8b161ece04da3257f8ca6c4ac288c2899fd765e6e4b15e80a44ec224",
+      "assets/metro-planning-CBAOotPX.js": "f5a70f93a3d5e0be7ae56d02dddc33bd187e4dfcccf18f085eb5cc4ec9a86eb5",
+      "assets/metro-worker-BDEusPKL.js": "766c5a6fad4f1b4cb676db6747be92126136f64e2907e1318252db46fcdc8825",
+      "assets/mobile-navigation-DfEsS_7b.js": "a926bbdd86613ef15f68af7ed35b4baa8d3c78bf384a7a90be6a35cabc6b9cba",
+      "assets/pacific-place-model.js": "c38037acd1a2ae23531b31de9742909d267e821531d3648b1a8f7522d54d73a5",
+      "assets/place-opening.js": "651d8b65cbfbea4f515edf656320de8f94b970a76022e29f45eb602a1ff85a41",
+      "assets/preference-routing.js": "e4fcfd7f6d6d0d7c09e40b59a56af6a85f720c8c8b785536a7ace7692884635c",
+      "assets/preload-helper-BXl3LOEh.js": "d887044e7c17fd90344fc4f74f53cac686584daf2a458ab2136d36f1946e9ab6",
+      "assets/public-coverage.js": "7b9a48c85d3731c18b74c8896a0e7949d2b03b9dffd5878066eecc076f443da3",
+      "assets/rail-reference.js": "d443c08eccb243ab64a57203ff992b2f541cdb1053ff41d3d25b09db920300ae",
+      "assets/route-quote.js": "06e944e179be290edea57e0881e1186896282a41782eab426c4a280cc1477171",
+      "assets/routing-queue.js": "8ac1a97a9e60f93ac08c7e67031f51e7820621a8de20b473c142a9e3448bc761",
+      "assets/score-parameters.js": "8fc22980a58fef2fde081e3196daaa2fa28e2bdbb3266dd2bd86dbc694d464cd",
+      "assets/station-alternatives.js": "8032d4f80d7e87f7748f66a9f1e729e56a19be9186ad2026899fb8ec30ed99be",
+      "assets/taxi-bridge.js": "0bd24c2ae0d049c3da3349cd38bef4840ba17c1d00cc5259289de10425eb9ffc",
+      "assets/taxi-candidates.js": "c293d6062bd77b4afac9fe83071128f1310669ab8e40482266aba2b9422cdb40",
+      "assets/taxi-map.js": "2c9a40cd381f967cec687f7a76c7445e200c8fec180394aeb04daeb1111a0839",
+      "assets/taxi-policy.js": "e72b1cb6aeedae048ceafe99a76cf399c15c1da19eca0298e7a18acfe6af2ee6",
+      "assets/tram-model-DNfzveeh.js": "fa4714334b26dbf47443bb80832988d9a4bad175c9cb43934b63514207fecc09",
+      "assets/transit-stops.js": "39b812021f7e4b098187bc8fcfeca134fddcc6c8b9a70b8a3ff4bc2378cf3dfa",
+      "assets/ui-content.js": "b5004ccf290a7069b0e703de5120beef319688cfecbeb9c5341e30ffbc7f39e0",
+      "assets/ui-navigation.js": "e95235ec7976ea3b06d7fe5f88502eb3a1a70829eb5a86bf6cbf746598859927",
+      "assets/zh-BN2SYn6V.js": "0baa0f4a0af2ee59f48d8f79ea5736143840a3dcef5ab0b3088bd716b2dcd980",
+      "taxi/government-data.json": "755ccae78e10a507fbf0537bd5d0597aa4f7bebe97d7b5825199fb0472fdbafb",
+      "taxi/road-graph.js": "78f3f2d916148f6e2d6ab261906e661072f995a64ca027e5642395bf5d6ac48e",
+      "taxi/roaming.js": "05463f516ff42dec79d837ad193191a2a17cf9a552678380625e6de79ec40fbf",
+      "transit/services.json": "59c1c4faef3fadbf32748b0707231f78c3ec36aa4d2edc47de39b8c39485c542",
+      "transit/tram-stops.json": "4b34355bd7c4cceb4e7afbd73fd2e7c49ecc73d89a01f4082468c693cbc56684",
+      "transit/walk-links.json": "5cdff906f22c51146abc9e6e565f0b07a1d57a739239af403482f2dff2c6658c",
+      "transit/walk-links.json.gz": "9505ee7867641cd5c7bbf2a3c76a4216c7cdc05fdd7a72d7da4cf85eb2f6420b"
+    },
+    "signature": "58a530dacc14c45c5e58342db8aa4ed9337136ab77a68e960a9079cda499c099"
+  },
+  "fixtureSha256": "791197c289bf10787b0104c3d1fc5ba70ec030f305507cc56b924be744588b0e",
+  "date": "2026-10-12T17:36:25.009Z",
+  "request": {
+    "origin": {
+      "id": "pacific-place:floor:250000101",
+      "namedPlaceId": "pacific-place",
+      "name": "太古广场商场 · LG1",
+      "floorId": "250000101",
+      "floorName": "LG1",
+      "coordinates": [
+        114.16432165,
+        22.27762541
+      ],
+      "access_time_id": 290000393,
+      "access_schedule": {
+        "kind": "daily",
+        "windows": [
+          {
+            "start_s": 36000,
+            "end_s": 79200
+          }
+        ],
+        "label": "太古廣場平台 开放：ED 10:00–22:00",
+        "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1006",
+        "source_rule_id": 290000393,
+        "source_access_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1005",
+        "source_schema_urls": [
+          "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1005?f=pjson",
+          "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1006?f=pjson"
+        ],
+        "timezone": "Asia/Hong_Kong",
+        "week_start": "MON",
+        "source_access_type": "OPEN",
+        "source_access_record": {
+          "OBJECTID": 733,
+          "AccessTimeID": 290000393,
+          "AccessTimeType": "OPEN",
+          "DescriptionTC": "太古廣場平台",
+          "DescriptionEN": "Pacific Place Podium",
+          "CreationDate": 1647302400000,
+          "ModifiedBy": "LANDSD",
+          "LastAmendmentDate": 1653523200000
+        },
+        "source_rows": [
+          {
+            "OBJECTID": 1135,
+            "AccessTimeID": 290000393,
+            "DayCode": "ED",
+            "FromTime": 1000,
+            "ToTime": 2200
+          }
+        ],
+        "source_rule_signature": "eea32f665a5a43504422e61248a253c6d9fb3d0ac1843e8bc45829422ddc922a",
+        "policy_version": "landsd-weekly-access-v1",
+        "limitations": [
+          "Recorded recurring schedule, not live operational status.",
+          "No public-holiday calendar or unscheduled closures are inferred."
+        ]
+      },
+      "lon": 114.16432165,
+      "lat": 22.27762541
+    },
+    "destination": {
+      "id": "pacific-place:floor:250000073",
+      "namedPlaceId": "pacific-place",
+      "name": "太古广场商场 · L4",
+      "floorId": "250000073",
+      "floorName": "L4",
+      "coordinates": [
+        114.16432165,
+        22.27762541
+      ],
+      "access_time_id": 290000393,
+      "access_schedule": {
+        "kind": "daily",
+        "windows": [
+          {
+            "start_s": 36000,
+            "end_s": 79200
+          }
+        ],
+        "label": "太古廣場平台 开放：ED 10:00–22:00",
+        "source_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1006",
+        "source_rule_id": 290000393,
+        "source_access_url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1005",
+        "source_schema_urls": [
+          "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1005?f=pjson",
+          "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1006?f=pjson"
+        ],
+        "timezone": "Asia/Hong_Kong",
+        "week_start": "MON",
+        "source_access_type": "OPEN",
+        "source_access_record": {
+          "OBJECTID": 733,
+          "AccessTimeID": 290000393,
+          "AccessTimeType": "OPEN",
+          "DescriptionTC": "太古廣場平台",
+          "DescriptionEN": "Pacific Place Podium",
+          "CreationDate": 1647302400000,
+          "ModifiedBy": "LANDSD",
+          "LastAmendmentDate": 1653523200000
+        },
+        "source_rows": [
+          {
+            "OBJECTID": 1135,
+            "AccessTimeID": 290000393,
+            "DayCode": "ED",
+            "FromTime": 1000,
+            "ToTime": 2200
+          }
+        ],
+        "source_rule_signature": "eea32f665a5a43504422e61248a253c6d9fb3d0ac1843e8bc45829422ddc922a",
+        "policy_version": "landsd-weekly-access-v1",
+        "limitations": [
+          "Recorded recurring schedule, not live operational status.",
+          "No public-holiday calendar or unscheduled closures are inferred."
+        ]
+      },
+      "lon": 114.16432165,
+      "lat": 22.27762541
+    },
+    "departureDate": "2026-10-12",
+    "departureS": 39600
+  },
+  "state": "complete",
+  "comparisonStatus": "complete",
+  "failedStages": [],
+  "windowMs": 60000,
+  "bootMs": 4966.839489,
+  "wallMs": 19533.484792,
+  "firstObservedMs": 16540.866981,
+  "firstResultMs": 16527,
+  "fullCandidateWallMs": 19533.484792,
+  "stoppedWallMs": 19533.484792,
+  "performance": {
+    "warmStart": false,
+    "startedMonotonic": 5103.325907,
+    "startedAt": "2026-10-12T17:36:04.800Z",
+    "origin": "太古广场商场 · LG1",
+    "destination": "太古广场商场 · L4",
+    "stages": [
+      {
+        "id": "public-fast",
+        "durationMs": 4564,
+        "status": "needs-indoor-refinement",
+        "cached": false
+      },
+      {
+        "id": "taxi",
+        "durationMs": 11472,
+        "status": "ready"
+      },
+      {
+        "id": "demo-fallback",
+        "durationMs": 0,
+        "status": "precheck-skipped",
+        "reason": "named-floor-source-evidence-required"
+      },
+      {
+        "id": "transit-detailed",
+        "durationMs": 5038,
+        "status": "ready",
+        "cached": false
+      },
+      {
+        "id": "walk",
+        "durationMs": 2967,
+        "status": "ready",
+        "cached": false
+      }
+    ],
+    "firstResultMs": 16527,
+    "totalMs": 19518,
+    "comparisonStatus": "complete",
+    "failedStages": []
+  },
+  "navigationLoad": {
+    "status": "ready",
+    "durationMs": 3130,
+    "block": "ready"
+  },
+  "candidates": [
+    {
+      "id": "transit-detailed",
+      "kind": "public",
+      "available": true,
+      "scoringInput": {
+        "id": "transit-detailed",
+        "available": true,
+        "minutes": 5,
+        "cost": 0,
+        "walkMinutes": 5,
+        "transfers": 0,
+        "result": {
+          "waitMinutes": 0,
+          "segments": [
+            {
+              "kind": "escalator",
+              "minutes": 0.309017
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.02113
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.582475
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.037973
+            },
+            {
+              "kind": "lift",
+              "minutes": 0.830317
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.636561
+            },
+            {
+              "kind": "escalator",
+              "minutes": 0.872324
+            }
+          ],
+          "luggageCarryRequired": true
+        }
+      },
+      "minutes": 5,
+      "cost": 0,
+      "walkMinutes": 5,
+      "waitMinutes": 0,
+      "transfers": 0,
+      "modes": [
+        "walk"
+      ],
+      "endpoints": {
+        "origin": {
+          "kind": "named-source-floor",
+          "requested": {
+            "id": "pacific-place:floor:250000101",
+            "namedPlaceId": "pacific-place",
+            "floorId": "250000101",
+            "floorName": "LG1",
+            "coordinates": [
+              114.16432165,
+              22.27762541
+            ]
+          },
+          "resolved": {
+            "side": "origin",
+            "placeId": "pacific-place",
+            "placeName": "太古广场商场",
+            "entranceId": "ADM:block:pacific-place:floor:250000101:1",
+            "entranceName": "太古广场 · LG1 官方通道点 1",
+            "coordinates": [
+              114.16609174,
+              22.27773558,
+              1
+            ],
+            "floorName": "LG1"
+          },
+          "allowedPortalCount": 2,
+          "sourceNodeId": "ADM:N:579953c580796b",
+          "actual": [
+            114.16609174,
+            22.27773558,
+            1
+          ],
+          "pass": true
+        },
+        "destination": {
+          "kind": "named-source-floor",
+          "requested": {
+            "id": "pacific-place:floor:250000073",
+            "namedPlaceId": "pacific-place",
+            "floorId": "250000073",
+            "floorName": "L4",
+            "coordinates": [
+              114.16432165,
+              22.27762541
+            ]
+          },
+          "resolved": {
+            "side": "destination",
+            "placeId": "pacific-place",
+            "placeName": "太古广场商场",
+            "entranceId": "ADM:block:pacific-place:floor:250000073:2",
+            "entranceName": "太古广场 · L4 官方通道点 2",
+            "coordinates": [
+              114.1651208,
+              22.27790532,
+              21.145
+            ],
+            "floorName": "L4"
+          },
+          "allowedPortalCount": 5,
+          "sourceNodeId": "ADM:N:45a6c09c656e84",
+          "actual": [
+            114.1651208,
+            22.27790532,
+            21.145
+          ],
+          "pass": true
+        }
+      },
+      "continuity": {
+        "maxGapM": 0,
+        "maxHeightGapM": 0,
+        "gaps": []
+      },
+      "evidence": {
+        "status": "modeled-or-unverified",
+        "modeledSteps": [],
+        "unknownEdgeIds": [],
+        "transitRideBoundaries": [],
+        "usedEdgeCount": 13,
+        "scheduledEdges": [
+          {
+            "id": "ADM:P:250019622",
+            "physicalId": "ADM:P:250019622",
+            "ruleId": 290000393,
+            "kind": "daily",
+            "windows": [
+              {
+                "start_s": 36000,
+                "end_s": 79200
+              }
+            ]
+          },
+          {
+            "id": "ADM:P:250020759",
+            "physicalId": "ADM:P:250020759",
+            "ruleId": 290000393,
+            "kind": "daily",
+            "windows": [
+              {
+                "start_s": 36000,
+                "end_s": 79200
+              }
+            ]
+          },
+          {
+            "id": "ADM:P:250019620",
+            "physicalId": "ADM:P:250019620",
+            "ruleId": 290000393,
+            "kind": "daily",
+            "windows": [
+              {
+                "start_s": 36000,
+                "end_s": 79200
+              }
+            ]
+          },
+          {
+            "id": "ADM:P:250020509:r",
+            "physicalId": "ADM:P:250020509",
+            "ruleId": 290000393,
+            "kind": "daily",
+            "windows": [
+              {
+                "start_s": 36000,
+                "end_s": 79200
+              }
+            ]
+          },
+          {
+            "id": "ADM:P:250020511",
+            "physicalId": "ADM:P:250020511",
+            "ruleId": 290000393,
+            "kind": "daily",
+            "windows": [
+              {
+                "start_s": 36000,
+                "end_s": 79200
+              }
+            ]
+          },
+          {
+            "id": "ADM:P:250020761",
+            "physicalId": "ADM:P:250020761",
+            "ruleId": 290000393,
+            "kind": "daily",
+            "windows": [
+              {
+                "start_s": 36000,
+                "end_s": 79200
+              }
+            ]
+          },
+          {
+            "id": "ADM:P:250020515",
+            "physicalId": "ADM:P:250020515",
+            "ruleId": 290000393,
+            "kind": "daily",
+            "windows": [
+              {
+                "start_s": 36000,
+                "end_s": 79200
+              }
+            ]
+          },
+          {
+            "id": "ADM:P:250020514",
+            "physicalId": "ADM:P:250020514",
+            "ruleId": 290000393,
+            "kind": "daily",
+            "windows": [
+              {
+                "start_s": 36000,
+                "end_s": 79200
+              }
+            ]
+          },
+          {
+            "id": "ADM:P:250020763",
+            "physicalId": "ADM:P:250020763",
+            "ruleId": 290000393,
+            "kind": "daily",
+            "windows": [
+              {
+                "start_s": 36000,
+                "end_s": 79200
+              }
+            ]
+          },
+          {
+            "id": "ADM:P:250020454:r",
+            "physicalId": "ADM:P:250020454",
+            "ruleId": 290000393,
+            "kind": "daily",
+            "windows": [
+              {
+                "start_s": 36000,
+                "end_s": 79200
+              }
+            ]
+          },
+          {
+            "id": "ADM:P:250020494",
+            "physicalId": "ADM:P:250020494",
+            "ruleId": 290000393,
+            "kind": "daily",
+            "windows": [
+              {
+                "start_s": 36000,
+                "end_s": 79200
+              }
+            ]
+          },
+          {
+            "id": "ADM:P:250020495",
+            "physicalId": "ADM:P:250020495",
+            "ruleId": 290000393,
+            "kind": "daily",
+            "windows": [
+              {
+                "start_s": 36000,
+                "end_s": 79200
+              }
+            ]
+          },
+          {
+            "id": "ADM:P:250020497",
+            "physicalId": "ADM:P:250020497",
+            "ruleId": 290000393,
+            "kind": "daily",
+            "windows": [
+              {
+                "start_s": 36000,
+                "end_s": 79200
+              }
+            ]
+          }
+        ],
+        "needsFacilityConfirmation": true,
+        "simulationOnly": false,
+        "scenarioOnly": false
+      },
+      "forbidden": [],
+      "strictSourceAudit": null,
+      "fare": {
+        "basis": "Production illustrative quote, not official live tariffs",
+        "available": true,
+        "pricingUnavailable": false,
+        "compacted": true,
+        "totalCents": 0,
+        "sumLegCents": 0,
+        "legs": [
+          {
+            "index": 0,
+            "mode": "walk",
+            "label": "扶手電梯",
+            "amountCents": 0,
+            "durationMinutes": 4.289797,
+            "distanceM": 211.373,
+            "available": true
+          }
+        ],
+        "expectedCompactedModes": [
+          "walk"
+        ],
+        "legCoverage": true,
+        "pass": true
+      },
+      "checks": {
+        "complete": true,
+        "endpoints": true,
+        "continuous": true,
+        "knownForbiddenEdges": true,
+        "strictSourceEligibility": true,
+        "fare": true,
+        "transitStopBoundaries": true,
+        "taxiPolicy": true,
+        "strictTaxi": true,
+        "luggageTaxiConfirmation": true
+      },
+      "pass": true,
+      "warnings": [
+        "使用资料内演示服务日与所选时刻，不是实时到站。",
+        "仅为离线估算步行连接；首末接驳单独标为未核实示意线，距离和时间已计入。",
+        "车站入口按官方三维节点绑定；楼梯、通道及升降机当前状态未核实。",
+        "连接缓存必须与graph_version一致；不能用旧图缓存拼接新图。",
+        "本文件不提供实时发车或候车预测；列车、巴士和电车的班次模拟必须另行标注来源与假设。",
+        "公交、电车及地铁候车使用所选服务时钟；班次或车程含明确标注的演示/频率估算，不是实时车辆预测。",
+        "设施偏好按时间与搬运负担排序，楼梯或扶梯可能作为备选；扶梯优先允许升降机替代，不为凑扶梯数量绕远。站内、首末接入或未分类高差仍可能含楼梯，不能视为全程无楼梯或全扶梯保证。港铁指引要求携带大件行李使用升降机，勿携大件行李乘扶梯或自动行人道；请选升降机方案并遵循现场指示。",
+        "公交和电车上下车高差、车内行李空间及站内升降机连续连接尚未核验；没有已知楼梯不等于已验证的大件行李可行路线。",
+        "步道採用地政總署官方三維路網；路況、通道開放及升降機運作未經現場核實。",
+        "步行時間按速度假設計算；港鐵車程、候車、站內步行及紅磡轉乘均為估算，不是即時班次。",
+        "保留原始起終點；首末接駁作為未核實的估算段單獨顯示，實際入口、障礙及繞行需確認。",
+        "港鐵跨海線為車站間示意線，不是實測軌道；站內接駁為估算，不提供虛構室內步行線。",
+        "未解析開放時間的通道、停用路段及收費區步道均不納入室外路線。",
+        "区块采用官方三维行人及港铁路网，包含真实天桥、隧道、商场楼层与公园路径；未核验临时围封或设施运行。",
+        "地铁付费区需有效车票；行李偏好不等于已核验无台阶，无障碍条件仍逐段保守处理。",
+        "建筑/场地连接点为来源路网属性边界，不声称完整门扇调查；任意点击的未知接入仍显式保留。",
+        "官方通道开放规则：太古廣場平台 开放：ED 10:00–22:00；按香港本地实际到达及通过该段的模型时间检查，临时关闭和设施运行仍需现场确认。",
+        "所有步行、车内及换乘时间均为估算；未核验即时封闭、班次、站内设施或实际可通行状况。",
+        "按当前时刻和步行权重，可用方案仍为步行；本结果未包含乘车。",
+        "推荐成本按步行权重2.5及每次换乘3分钟的研究假设计分；首次上车不算换乘，这些惩罚不增加真实行程时间或候车时间。"
+      ],
+      "requestedPreference": "luggage",
+      "effectivePreference": "luggage"
+    }
+  ],
+  "unavailable": [
+    {
+      "id": "taxi-direct",
+      "kind": "direct",
+      "available": false,
+      "journeyComplete": false,
+      "incompleteReason": "UNVERIFIED_ENDPOINT_ACCESS",
+      "endpointAccess": [
+        {
+          "side": "origin",
+          "requested": {
+            "id": "pacific-place:floor:250000101",
+            "floorId": "250000101",
+            "coordinates": [
+              114.16432165,
+              22.27762541
+            ]
+          },
+          "status": "unverified-node-or-floor"
+        },
+        {
+          "side": "destination",
+          "requested": {
+            "id": "pacific-place:floor:250000073",
+            "floorId": "250000073",
+            "coordinates": [
+              114.16432165,
+              22.27762541
+            ]
+          },
+          "status": "unverified-node-or-floor"
+        }
+      ],
+      "scenarioOnly": true,
+      "simulationOnly": true,
+      "message": "楼层或节点与车行路缘的接续未核验，保留原地点并仅展示费用情景 行李空间待确认：车型、后备厢容量与装卸条件为演示假设，请确认后再乘车。",
+      "warnings": [
+        "演示数据：车辆、订单、票价与接驳时间为模拟，路线沿公开路网生成。",
+        "路缘连接显示为虚线模型：上客侧人行节点来源高度 未知 米；车行侧高程与实际高差未核验。",
+        "出租车行驶沿 OpenStreetMap 有向道路；车速、既有订单、候车均为演示数据，不是实时调度。",
+        "本方案含未核验路缘连接，只可用于接续情景演练，不保证现实全程可通行或无障碍。",
+        "起点的原始楼层/来源节点已保留，但尚无可核验人行接续至车行路缘；此费用情景不作为完整可导航方案。",
+        "终点的原始楼层/来源节点已保留，但尚无可核验人行接续至车行路缘；此费用情景不作为完整可导航方案。",
+        "行李空间待确认：车型、后备厢容量与装卸条件为演示假设，请确认后再乘车。"
+      ],
+      "minutes": 5,
+      "cost": 29,
+      "modes": [
+        "walk",
+        "taxi",
+        "walk"
+      ],
+      "fareScenario": {
+        "basis": "Production illustrative quote, not official live tariffs",
+        "available": false,
+        "pricingUnavailable": false,
+        "compacted": true,
+        "totalCents": 2900,
+        "sumLegCents": 2900,
+        "legs": [
+          {
+            "index": 0,
+            "mode": "walk",
+            "label": "步行 66 米到预约上客点",
+            "amountCents": 0,
+            "durationMinutes": 3.146876521464544,
+            "distanceM": 65.85970337151387,
+            "available": false
+          },
+          {
+            "index": 1,
+            "mode": "taxi",
+            "label": "乘出租车 DEMO-13 前往 太古广场商场 · L4",
+            "amountCents": 2900,
+            "durationMinutes": 0,
+            "distanceM": 0,
+            "available": false
+          },
+          {
+            "index": 2,
+            "mode": "walk",
+            "label": "步行 66 米到太古广场商场 · L4",
+            "amountCents": 0,
+            "durationMinutes": 0.9147181023821371,
+            "distanceM": 65.85970337151387,
+            "available": false
+          }
+        ],
+        "expectedCompactedModes": [
+          "walk",
+          "taxi",
+          "walk"
+        ],
+        "legCoverage": true,
+        "pass": true
+      },
+      "alternatives": {},
+      "qualification": "Unavailable journey; a retained fare estimate or preserved endpoint metadata does not establish a source-backed physical connection."
+    }
+  ],
+  "sourceCoverageReview": [],
+  "requestIdentityPreserved": true,
+  "runtimeStable": true,
+  "cancel": {
+    "exercisedWhilePending": false,
+    "observationMs": 506.42547299999933,
+    "planningStopped": true,
+    "pendingBeforeCancel": [],
+    "pendingAfterCancel": [],
+    "noStaleCandidatePublication": true,
+    "pass": true
+  },
+  "workerErrors": [],
+  "workers": [
+    {
+      "id": 1,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "posts": 11,
+      "results": 11,
+      "pending": [],
+      "terminateRequested": true,
+      "exited": true,
+      "exitCode": 1
+    },
+    {
+      "id": 2,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "posts": 1,
+      "results": 1,
+      "pending": [],
+      "terminateRequested": true,
+      "exited": true,
+      "exitCode": 1
+    },
+    {
+      "id": 3,
+      "kind": "app-walk-worker-jk5g-BMr.js",
+      "posts": 1,
+      "results": 1,
+      "pending": [],
+      "terminateRequested": true,
+      "exited": true,
+      "exitCode": 1
+    }
+  ],
+  "memory": {
+    "rss": 1459441664,
+    "heapTotal": 459816960,
+    "heapUsed": 326285504,
+    "external": 62093238,
+    "arrayBuffers": 40146291,
+    "maxRSSKiB": 1527024,
+    "samples": [
+      {
+        "routeMs": 2600.357027,
+        "rss": 854048768,
+        "heapUsed": 381556248
+      },
+      {
+        "routeMs": 3600.0365139999994,
+        "rss": 1100365824,
+        "heapUsed": 381597208
+      },
+      {
+        "routeMs": 4600.477552999999,
+        "rss": 1110667264,
+        "heapUsed": 381894400
+      },
+      {
+        "routeMs": 5600.086476999999,
+        "rss": 1147514880,
+        "heapUsed": 382326224
+      },
+      {
+        "routeMs": 6600.376327,
+        "rss": 1212301312,
+        "heapUsed": 382353296
+      },
+      {
+        "routeMs": 7600.548518,
+        "rss": 1243893760,
+        "heapUsed": 382380264
+      },
+      {
+        "routeMs": 8600.834554,
+        "rss": 1232199680,
+        "heapUsed": 382407136
+      },
+      {
+        "routeMs": 9601.518027,
+        "rss": 1241665536,
+        "heapUsed": 382434008
+      },
+      {
+        "routeMs": 10601.83433,
+        "rss": 1256747008,
+        "heapUsed": 382461736
+      },
+      {
+        "routeMs": 12200.024594999999,
+        "rss": 1325400064,
+        "heapUsed": 346401864
+      },
+      {
+        "routeMs": 13200.812781,
+        "rss": 1260761088,
+        "heapUsed": 346427640
+      },
+      {
+        "routeMs": 14200.012536999999,
+        "rss": 1277083648,
+        "heapUsed": 346500512
+      },
+      {
+        "routeMs": 15200.000215,
+        "rss": 1315856384,
+        "heapUsed": 346530168
+      },
+      {
+        "routeMs": 16200.812289999998,
+        "rss": 1267658752,
+        "heapUsed": 346568624
+      },
+      {
+        "routeMs": 17219.716598,
+        "rss": 1321283584,
+        "heapUsed": 289734256
+      },
+      {
+        "routeMs": 18219.823833,
+        "rss": 1452552192,
+        "heapUsed": 290845520
+      },
+      {
+        "routeMs": 19220.72537,
+        "rss": 1516449792,
+        "heapUsed": 290871288
+      }
+    ]
+  },
+  "fetches": [
+    {
+      "path": "/area/station-graph.json.gz",
+      "bytes": 563298,
+      "sha256": "446700358a6a56ccb8bbf1e024f6a09da99925e2778331e67c307c135a0f0a1e"
+    },
+    {
+      "path": "/area/area-graph.json.gz",
+      "bytes": 8036890,
+      "sha256": "44901caf6ee1241a23e096eb3d692f96913789fb2c1cbd742da59d8d3730253f"
+    },
+    {
+      "path": "/transit/services.json",
+      "bytes": 239733,
+      "sha256": "59c1c4faef3fadbf32748b0707231f78c3ec36aa4d2edc47de39b8c39485c542"
+    },
+    {
+      "path": "/transit/walk-links.json.gz",
+      "bytes": 303355,
+      "sha256": "9505ee7867641cd5c7bbf2a3c76a4216c7cdc05fdd7a72d7da4cf85eb2f6420b"
+    },
+    {
+      "path": "/area/admiralty-block-graph.json.gz",
+      "bytes": 686250,
+      "sha256": "388a08977ed80e57295fe1a0d623178e79ecd441cedaa5cfc62fe043385e2298"
+    },
+    {
+      "path": "/preview/station-access-alternatives.json",
+      "status": 404
+    }
+  ],
+  "limitations": [
+    "Production built S1, Worker bundles and pricing code in Node with a DOM stand-in; not actual-browser visual or device-performance QA.",
+    "Data fully ready before plan, fresh process/cold route cache, taxi loaded on demand. Boot cost is separate.",
+    "A 60-second pending observation is never NO_ROUTE. Full comparison time is null unless S1 actually finishes.",
+    "Modeled/schematic geometry is identified separately even when geometrically continuous; source-backed does not mean live verified.",
+    "All costs are the production illustrative model; official tariff correctness is outside this harness."
+  ],
+  "classification": "completed-with-candidates"
+}

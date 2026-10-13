@@ -1,0 +1,17 @@
+✔ same OD has a genuine weighted middle ground without forcing taxi (2.560619ms)
+✔ price sensitivity is monotonic, stable and independent of dominated outliers (1.327598ms)
+✔ wait burden adds no clock time and unknown fares never look free (0.323483ms)
+✔ same pricing model includes distance and declared cross-harbour assumption (0.730146ms)
+✔ shortlist includes real bus and tram stops with directional boarding/alighting (1.554159ms)
+✔ planner composes first and last mile at actual arrival clocks and keeps direct candidate (5.533872ms)
+✔ unsafe road links and cancelled computation never emit phantom routes (0.264619ms)
+✔ unmodeled Tsuen Wan line is a contextual reference, never a made-up navigable connection (0.353917ms)
+✔ luggage carrying is explicitly confirmed before any taxi reservation or navigation (4.883049ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 262.482943

@@ -1,0 +1,38 @@
+[
+  {
+    "fleetSize": 12,
+    "initMs": 291.96,
+    "sampleMeanMs": 0.0052,
+    "quoteMs": 146.25,
+    "cachedQuoteMs": 0.61,
+    "maxSegmentsPerCarDuring4Hours": 667,
+    "retainedRange": {
+      "fromS": 12899.367755503581,
+      "toS": 14746.04792265849
+    }
+  },
+  {
+    "fleetSize": 24,
+    "initMs": 178,
+    "sampleMeanMs": 0.0069,
+    "quoteMs": 49.56,
+    "cachedQuoteMs": 0.12,
+    "maxSegmentsPerCarDuring4Hours": 691,
+    "retainedRange": {
+      "fromS": 12899.495167598563,
+      "toS": 14733.299088437507
+    }
+  },
+  {
+    "fleetSize": 48,
+    "initMs": 326.49,
+    "sampleMeanMs": 0.0126,
+    "quoteMs": 23.14,
+    "cachedQuoteMs": 0.18,
+    "maxSegmentsPerCarDuring4Hours": 747,
+    "retainedRange": {
+      "fromS": 12899.583550325435,
+      "toS": 14714.888047716076
+    }
+  }
+]

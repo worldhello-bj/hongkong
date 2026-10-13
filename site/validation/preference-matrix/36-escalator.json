@@ -1,0 +1,93 @@
+{
+  "runtime": "4f0a062ef29d",
+  "id": 36,
+  "need": "escalator",
+  "state": "diagnostic-window-ended",
+  "wallMs": 60032,
+  "memory": {
+    "rss": 1463951360,
+    "heapTotal": 423206912,
+    "heapUsed": 356883432,
+    "external": 31671691,
+    "arrayBuffers": 9801516,
+    "maxRSSKiB": 1657840
+  },
+  "request": {
+    "origin": {
+      "id": "map:random--1529480317",
+      "name": "地图所选地点",
+      "detail": "用户选择 · 接入待核验",
+      "coordinates": [
+        114.16965086248385,
+        22.293277490710825
+      ],
+      "lon": 114.16965086248385,
+      "lat": 22.293277490710825
+    },
+    "destination": {
+      "id": "map:random-2133651309",
+      "name": "地图所选地点",
+      "detail": "用户选择 · 接入待核验",
+      "coordinates": [
+        114.15007628641142,
+        22.26413857693343
+      ],
+      "lon": 114.15007628641142,
+      "lat": 22.26413857693343
+    }
+  },
+  "performance": {
+    "warmStart": false,
+    "startedMonotonic": 7876.746995,
+    "startedAt": "2026-10-12T11:57:57.194Z",
+    "origin": "地图所选地点",
+    "destination": "地图所选地点",
+    "stages": [
+      {
+        "id": "public-fast",
+        "durationMs": 12320,
+        "status": "needs-indoor-refinement",
+        "cached": false
+      },
+      {
+        "id": "metro",
+        "durationMs": 13427,
+        "status": "no-complete-route",
+        "cached": false
+      }
+    ],
+    "firstResultMs": 1751,
+    "totalMs": null
+  },
+  "candidates": [
+    {
+      "id": "taxi-direct",
+      "kind": "direct",
+      "minutes": 31,
+      "cost": 140.25,
+      "walkMinutes": 2,
+      "waitMinutes": 3.54994526327179,
+      "transfers": 0,
+      "modes": [
+        "walk",
+        "taxi",
+        "walk"
+      ],
+      "endpointsPreserved": true,
+      "forbidden": [],
+      "needsVehicleConfirmation": false,
+      "needsConfirmation": false,
+      "requestedPreference": "escalator",
+      "effectivePreference": "escalator_first"
+    }
+  ],
+  "selected": "taxi-direct",
+  "publicAvailable": false,
+  "taxiAvailable": true,
+  "invariants": {
+    "endpoints": true,
+    "knownEdges": true,
+    "strictTaxiExcluded": true,
+    "luggageTaxiConfirmed": true
+  }
+}

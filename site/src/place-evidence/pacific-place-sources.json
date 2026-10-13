@@ -1,0 +1,548 @@
+{
+  "schema_version": "pacific-place-evidence-v1",
+  "checked_date": "2026-10-12",
+  "place_id": "pacific-place",
+  "building_id": 1103118159,
+  "operator": {
+    "url": "https://www.pacificplace.com.hk/en/locationandparking",
+    "facts": [
+      "Pacific Place is linked to Admiralty MTR Exit F",
+      "Published mall opening hours: 10:00–22:00"
+    ],
+    "map_api_url": "https://www.pacificplace.com.hk/api/sitecore/pacificplacelocationmap/mapdata?lang=en",
+    "map_urls": {
+      "LG1": "https://www.pacificplace.com.hk/-/media/images/pacificplace2/map/newpopuplocations/mapplic-lg1-v2.svg",
+      "L1": "https://www.pacificplace.com.hk/-/media/images/pacificplace2/map/newpopuplocations/mapplic-l1-v4100-en.svg",
+      "L2": "https://www.pacificplace.com.hk/-/media/images/pacificplace2/map/newpopuplocations/mapplic-l2-v4100.svg",
+      "L3": "https://www.pacificplace.com.hk/-/media/images/pacificplace2/map/newpopuplocations/mapplic-l3.svg",
+      "L4": "https://www.pacificplace.com.hk/-/media/images/pacificplace2/map/mapplic-l4-v1.svg"
+    },
+    "map_observation": "LG1 operator diagram labels Admiralty Station Exit F and displays escalator/elevator symbols. It is an illustrated map, not surveyed XYZ geometry or an accessibility certification."
+  },
+  "mtr": {
+    "layout_url": "https://www.mtr.com.hk/archive/en/services/layouts/adm.pdf",
+    "street_map_url": "https://www.mtr.com.hk/archive/ch/services/maps/adm.pdf",
+    "facts": [
+      "Street map associates Pacific Place with Exit F",
+      "Station layout places F at the unpaid concourse level and shows lifts inside Admiralty; it does not certify a continuous step-free mall route"
+    ]
+  },
+  "geometry": {
+    "url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/0",
+    "attribution": "Map from Lands Department; © Government of the Hong Kong SAR",
+    "rule": "Retain the loaded CSDI XYZ nodes, directed edges, floor IDs, schedules and accessibility flags unchanged. Building ID 1103118159 plus the exact F approach physical ID define the display subset. No proximity joins."
+  },
+  "f_connection": {
+    "id": "ADM:block:pacific-place:F-connection",
+    "node_id": "ADM:N:f2f8015eb81bfd",
+    "coordinates": [
+      114.16593711,
+      22.27784825,
+      1
+    ],
+    "physical_ids": [
+      "ADM:P:250019051",
+      "ADM:P:250019621"
+    ],
+    "label": "金钟站 F 通道 · 太古广场 LG1 接点",
+    "meaning": "Exact existing CSDI shared endpoint between the named F pedestrian passage and the mall LG1 passage; not a surveyed door position"
+  },
+  "limitations": [
+    "Floor plates are visual envelopes inferred from source route points, not surveyed walls, shop polygons or walkable areas.",
+    "Displayed vertical positions use source elevation; exploded separation is visual only.",
+    "Five mall lift physical edges exist in the loaded source and are not certified as eligible by the current graph. The model must not change those flags.",
+    "Operator LG2 exists but no LG2 route anchors are loaded; do not invent an LG2 navigation endpoint.",
+    "Three Pacific Place tunnel closure remains enforced; the independent main-mall F link is not that closed branch.",
+    "Walking and facility durations remain the existing modeled values, not surveyed or live times."
+  ],
+  "schedule_scope": {
+    "f_station_side": {
+      "physical_id": "ADM:P:250019051",
+      "access_time_id": null,
+      "meaning": "No independent time rule provided; not evidence of 24-hour operation"
+    },
+    "mall_lg1": {
+      "physical_ids": [
+        "ADM:P:250019621",
+        "ADM:P:250019625",
+        "ADM:P:250020758"
+      ],
+      "access_time_id": 290000393,
+      "recorded_window": "10:00–22:00",
+      "scope": "Rules are explicitly attached to these loaded edges; not a blanket claim that the whole real building is closed"
+    },
+    "operator_counterexample": {
+      "url": "https://www.pacificplace.com.hk/zh-hk/taste/directory/great-food-hall",
+      "level": "LG1",
+      "published_hours": "08:30–22:00",
+      "meaning": "An early-opening tenant disproves treating general mall hours as closure of every possible corridor. Exact early access path has not been verified."
+    }
+  },
+  "online_revalidation": [
+    {
+      "url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/0/query?where=PedestrianRouteID+IN+%28250019051%2C250019621%2C250019625%2C250020758%29&outFields=%2A&returnGeometry=false&f=json",
+      "response": {
+        "displayFieldName": "AliasNameEN",
+        "fieldAliases": {
+          "OBJECTID": "OBJECTID",
+          "PedestrianRouteID": "PedestrianRouteID",
+          "Location": "Location",
+          "FeatureType": "FeatureType",
+          "AliasNameEN": "AliasNameEN",
+          "AliasNameTC": "AliasNameTC",
+          "CrossingFeature": "CrossingFeature",
+          "WeatherProof": "WeatherProof",
+          "WheelchairBarrier": "WheelchairBarrier",
+          "WheelchairAccess": "WheelchairAccess",
+          "ObstaclesType": "ObstaclesType",
+          "Gradient": "Gradient",
+          "Direction": "Direction",
+          "PositionCertainty": "PositionCertainty",
+          "Enabled": "Enabled",
+          "DataSource": "DataSource",
+          "LevelSource": "LevelSource",
+          "StreetNameEN": "StreetNameEN",
+          "StreetNameTC": "StreetNameTC",
+          "ST_CODE": "ST_CODE",
+          "FloorID": "FloorID",
+          "BuildingID_1": "BuildingID_1",
+          "BuildingID_2": "BuildingID_2",
+          "SiteID": "SiteID",
+          "TerminalID": "TerminalID",
+          "AccessTimeID": "AccessTimeID",
+          "CreationDate": "CreationDate",
+          "ModifiedBy": "ModifiedBy",
+          "LastAmendmentDate": "LastAmendmentDate",
+          "Shape_Length": "Shape_Length"
+        },
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID"
+          },
+          {
+            "name": "PedestrianRouteID",
+            "type": "esriFieldTypeInteger",
+            "alias": "PedestrianRouteID"
+          },
+          {
+            "name": "Location",
+            "type": "esriFieldTypeInteger",
+            "alias": "Location"
+          },
+          {
+            "name": "FeatureType",
+            "type": "esriFieldTypeInteger",
+            "alias": "FeatureType"
+          },
+          {
+            "name": "AliasNameEN",
+            "type": "esriFieldTypeString",
+            "alias": "AliasNameEN",
+            "length": 255
+          },
+          {
+            "name": "AliasNameTC",
+            "type": "esriFieldTypeString",
+            "alias": "AliasNameTC",
+            "length": 255
+          },
+          {
+            "name": "CrossingFeature",
+            "type": "esriFieldTypeInteger",
+            "alias": "CrossingFeature"
+          },
+          {
+            "name": "WeatherProof",
+            "type": "esriFieldTypeInteger",
+            "alias": "WeatherProof"
+          },
+          {
+            "name": "WheelchairBarrier",
+            "type": "esriFieldTypeInteger",
+            "alias": "WheelchairBarrier"
+          },
+          {
+            "name": "WheelchairAccess",
+            "type": "esriFieldTypeInteger",
+            "alias": "WheelchairAccess"
+          },
+          {
+            "name": "ObstaclesType",
+            "type": "esriFieldTypeInteger",
+            "alias": "ObstaclesType"
+          },
+          {
+            "name": "Gradient",
+            "type": "esriFieldTypeDouble",
+            "alias": "Gradient"
+          },
+          {
+            "name": "Direction",
+            "type": "esriFieldTypeInteger",
+            "alias": "Direction"
+          },
+          {
+            "name": "PositionCertainty",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "PositionCertainty"
+          },
+          {
+            "name": "Enabled",
+            "type": "esriFieldTypeInteger",
+            "alias": "Enabled"
+          },
+          {
+            "name": "DataSource",
+            "type": "esriFieldTypeInteger",
+            "alias": "DataSource"
+          },
+          {
+            "name": "LevelSource",
+            "type": "esriFieldTypeInteger",
+            "alias": "LevelSource"
+          },
+          {
+            "name": "StreetNameEN",
+            "type": "esriFieldTypeString",
+            "alias": "StreetNameEN",
+            "length": 100
+          },
+          {
+            "name": "StreetNameTC",
+            "type": "esriFieldTypeString",
+            "alias": "StreetNameTC",
+            "length": 100
+          },
+          {
+            "name": "ST_CODE",
+            "type": "esriFieldTypeInteger",
+            "alias": "ST_CODE"
+          },
+          {
+            "name": "FloorID",
+            "type": "esriFieldTypeInteger",
+            "alias": "FloorID"
+          },
+          {
+            "name": "BuildingID_1",
+            "type": "esriFieldTypeInteger",
+            "alias": "BuildingID_1"
+          },
+          {
+            "name": "BuildingID_2",
+            "type": "esriFieldTypeInteger",
+            "alias": "BuildingID_2"
+          },
+          {
+            "name": "SiteID",
+            "type": "esriFieldTypeInteger",
+            "alias": "SiteID"
+          },
+          {
+            "name": "TerminalID",
+            "type": "esriFieldTypeInteger",
+            "alias": "TerminalID"
+          },
+          {
+            "name": "AccessTimeID",
+            "type": "esriFieldTypeInteger",
+            "alias": "AccessTimeID"
+          },
+          {
+            "name": "CreationDate",
+            "type": "esriFieldTypeDate",
+            "alias": "CreationDate",
+            "length": 8
+          },
+          {
+            "name": "ModifiedBy",
+            "type": "esriFieldTypeString",
+            "alias": "ModifiedBy",
+            "length": 255
+          },
+          {
+            "name": "LastAmendmentDate",
+            "type": "esriFieldTypeDate",
+            "alias": "LastAmendmentDate",
+            "length": 8
+          },
+          {
+            "name": "Shape_Length",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape_Length"
+          }
+        ],
+        "features": [
+          {
+            "attributes": {
+              "OBJECTID": 16317,
+              "PedestrianRouteID": 250019051,
+              "Location": 2,
+              "FeatureType": 1,
+              "AliasNameEN": "Admiralty Station Exit F Footway",
+              "AliasNameTC": "金鐘鐵路站F出口行人通道",
+              "CrossingFeature": null,
+              "WeatherProof": 1,
+              "WheelchairBarrier": 2,
+              "WheelchairAccess": 2,
+              "ObstaclesType": null,
+              "Gradient": 0,
+              "Direction": 0,
+              "PositionCertainty": 1,
+              "Enabled": 1,
+              "DataSource": 8,
+              "LevelSource": 7,
+              "StreetNameEN": null,
+              "StreetNameTC": null,
+              "ST_CODE": null,
+              "FloorID": 250000065,
+              "BuildingID_1": null,
+              "BuildingID_2": null,
+              "SiteID": null,
+              "TerminalID": 1810000409,
+              "AccessTimeID": null,
+              "CreationDate": 1614470400000,
+              "ModifiedBy": "LANDSD",
+              "LastAmendmentDate": 1766016000000,
+              "Shape_Length": 9.58830810152202
+            }
+          },
+          {
+            "attributes": {
+              "OBJECTID": 16800,
+              "PedestrianRouteID": 250019621,
+              "Location": 2,
+              "FeatureType": 1,
+              "AliasNameEN": "One Pacific Place Lg1",
+              "AliasNameTC": "太古廣場一座",
+              "CrossingFeature": null,
+              "WeatherProof": 1,
+              "WheelchairBarrier": 2,
+              "WheelchairAccess": 2,
+              "ObstaclesType": null,
+              "Gradient": 0,
+              "Direction": 0,
+              "PositionCertainty": 1,
+              "Enabled": 1,
+              "DataSource": 10,
+              "LevelSource": 9,
+              "StreetNameEN": null,
+              "StreetNameTC": null,
+              "ST_CODE": null,
+              "FloorID": 250000101,
+              "BuildingID_1": 1103118159,
+              "BuildingID_2": null,
+              "SiteID": 1503015450,
+              "TerminalID": null,
+              "AccessTimeID": 290000393,
+              "CreationDate": 1614470400000,
+              "ModifiedBy": "LANDSD",
+              "LastAmendmentDate": 1766016000000,
+              "Shape_Length": 21.968288465125948
+            }
+          },
+          {
+            "attributes": {
+              "OBJECTID": 16804,
+              "PedestrianRouteID": 250019625,
+              "Location": 2,
+              "FeatureType": 1,
+              "AliasNameEN": "One Pacific Place Lg1",
+              "AliasNameTC": "太古廣場一座",
+              "CrossingFeature": null,
+              "WeatherProof": 1,
+              "WheelchairBarrier": 2,
+              "WheelchairAccess": 2,
+              "ObstaclesType": null,
+              "Gradient": 0,
+              "Direction": 0,
+              "PositionCertainty": 1,
+              "Enabled": 1,
+              "DataSource": 10,
+              "LevelSource": 9,
+              "StreetNameEN": null,
+              "StreetNameTC": null,
+              "ST_CODE": null,
+              "FloorID": 250000101,
+              "BuildingID_1": 1103118159,
+              "BuildingID_2": null,
+              "SiteID": 1503015450,
+              "TerminalID": null,
+              "AccessTimeID": 290000393,
+              "CreationDate": 1614470400000,
+              "ModifiedBy": "LANDSD",
+              "LastAmendmentDate": 1766016000000,
+              "Shape_Length": 27.858355189920893
+            }
+          },
+          {
+            "attributes": {
+              "OBJECTID": 17880,
+              "PedestrianRouteID": 250020758,
+              "Location": 2,
+              "FeatureType": 1,
+              "AliasNameEN": "One Pacific Place Lg1",
+              "AliasNameTC": "太古廣場一座",
+              "CrossingFeature": null,
+              "WeatherProof": 1,
+              "WheelchairBarrier": 2,
+              "WheelchairAccess": 2,
+              "ObstaclesType": null,
+              "Gradient": 0,
+              "Direction": 0,
+              "PositionCertainty": 1,
+              "Enabled": 1,
+              "DataSource": 10,
+              "LevelSource": 9,
+              "StreetNameEN": null,
+              "StreetNameTC": null,
+              "ST_CODE": null,
+              "FloorID": 250000101,
+              "BuildingID_1": 1103118159,
+              "BuildingID_2": null,
+              "SiteID": 1503015450,
+              "TerminalID": null,
+              "AccessTimeID": 290000393,
+              "CreationDate": 1614470400000,
+              "ModifiedBy": "LANDSD",
+              "LastAmendmentDate": 1766016000000,
+              "Shape_Length": 1.3652647064289212
+            }
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1005/query?where=AccessTimeID%3D290000393&outFields=%2A&returnGeometry=false&f=json",
+      "response": {
+        "displayFieldName": "AccessTimeType",
+        "fieldAliases": {
+          "OBJECTID": "OBJECTID",
+          "AccessTimeID": "AccessTimeID",
+          "AccessTimeType": "AccessTimeType",
+          "DescriptionTC": "DescriptionTC",
+          "DescriptionEN": "DescriptionEN",
+          "CreationDate": "CreationDate",
+          "ModifiedBy": "ModifiedBy",
+          "LastAmendmentDate": "LastAmendmentDate"
+        },
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID"
+          },
+          {
+            "name": "AccessTimeID",
+            "type": "esriFieldTypeInteger",
+            "alias": "AccessTimeID"
+          },
+          {
+            "name": "AccessTimeType",
+            "type": "esriFieldTypeString",
+            "alias": "AccessTimeType",
+            "length": 10
+          },
+          {
+            "name": "DescriptionTC",
+            "type": "esriFieldTypeString",
+            "alias": "DescriptionTC",
+            "length": 255
+          },
+          {
+            "name": "DescriptionEN",
+            "type": "esriFieldTypeString",
+            "alias": "DescriptionEN",
+            "length": 255
+          },
+          {
+            "name": "CreationDate",
+            "type": "esriFieldTypeDate",
+            "alias": "CreationDate",
+            "length": 8
+          },
+          {
+            "name": "ModifiedBy",
+            "type": "esriFieldTypeString",
+            "alias": "ModifiedBy",
+            "length": 255
+          },
+          {
+            "name": "LastAmendmentDate",
+            "type": "esriFieldTypeDate",
+            "alias": "LastAmendmentDate",
+            "length": 8
+          }
+        ],
+        "features": [
+          {
+            "attributes": {
+              "OBJECTID": 733,
+              "AccessTimeID": 290000393,
+              "AccessTimeType": "OPEN",
+              "DescriptionTC": "太古廣場平台",
+              "DescriptionEN": "Pacific Place Podium",
+              "CreationDate": 1647302400000,
+              "ModifiedBy": "LANDSD",
+              "LastAmendmentDate": 1653523200000
+            }
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://portal.csdi.gov.hk/server/rest/services/common/landsd_rcd_1637222018065_52265/MapServer/1006/query?where=AccessTimeID%3D290000393&outFields=%2A&returnGeometry=false&f=json",
+      "response": {
+        "displayFieldName": "DayCode",
+        "fieldAliases": {
+          "OBJECTID": "OBJECTID",
+          "AccessTimeID": "AccessTimeID",
+          "DayCode": "DayCode",
+          "FromTime": "FromTime",
+          "ToTime": "ToTime"
+        },
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID"
+          },
+          {
+            "name": "AccessTimeID",
+            "type": "esriFieldTypeInteger",
+            "alias": "AccessTimeID"
+          },
+          {
+            "name": "DayCode",
+            "type": "esriFieldTypeString",
+            "alias": "DayCode",
+            "length": 6
+          },
+          {
+            "name": "FromTime",
+            "type": "esriFieldTypeInteger",
+            "alias": "FromTime"
+          },
+          {
+            "name": "ToTime",
+            "type": "esriFieldTypeInteger",
+            "alias": "ToTime"
+          }
+        ],
+        "features": [
+          {
+            "attributes": {
+              "OBJECTID": 1135,
+              "AccessTimeID": 290000393,
+              "DayCode": "ED",
+              "FromTime": 1000,
+              "ToTime": 2200
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

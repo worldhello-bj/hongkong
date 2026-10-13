@@ -1,0 +1,368 @@
+{
+  "od36-current-final120-9e104c614b66-od36-ordinary": {
+    "completedSpans": [
+      {
+        "worker": 1,
+        "span": "graph-validate",
+        "count": 2,
+        "totalMs": 656.4503910000003
+      },
+      {
+        "worker": 1,
+        "span": "graph-prepare",
+        "count": 2,
+        "totalMs": 875.0881930000005
+      },
+      {
+        "worker": 1,
+        "span": "station-build",
+        "count": 1,
+        "totalMs": 1.587956000000304
+      },
+      {
+        "worker": 1,
+        "span": "transit-build",
+        "count": 1,
+        "totalMs": 244.25606400000015
+      },
+      {
+        "worker": 2,
+        "span": "graph-validate",
+        "count": 7,
+        "totalMs": 987.2328649999981
+      },
+      {
+        "worker": 2,
+        "span": "graph-prepare",
+        "count": 7,
+        "totalMs": 1399.3162439999978
+      },
+      {
+        "worker": 2,
+        "span": "station-build",
+        "count": 1,
+        "totalMs": 1.327354999999443
+      },
+      {
+        "worker": 2,
+        "span": "transit-build",
+        "count": 1,
+        "totalMs": 211.18190999999933
+      },
+      {
+        "worker": 2,
+        "span": "walk-index",
+        "count": 5,
+        "totalMs": 249.45275199999742
+      },
+      {
+        "worker": 2,
+        "span": "walk-query",
+        "count": 1613,
+        "totalMs": 7390.952403000059
+      },
+      {
+        "worker": 2,
+        "span": "scheduled-search",
+        "count": 8,
+        "totalMs": 8750.115946
+      },
+      {
+        "worker": 2,
+        "span": "transit-query",
+        "count": 8,
+        "totalMs": 9081.704915999997
+      },
+      {
+        "worker": 4,
+        "span": "graph-validate",
+        "count": 7,
+        "totalMs": 1173.8132390000028
+      },
+      {
+        "worker": 4,
+        "span": "graph-prepare",
+        "count": 7,
+        "totalMs": 1576.8089409999993
+      },
+      {
+        "worker": 4,
+        "span": "station-build",
+        "count": 1,
+        "totalMs": 2.1390879999999015
+      },
+      {
+        "worker": 4,
+        "span": "transit-build",
+        "count": 1,
+        "totalMs": 212.49539200000072
+      },
+      {
+        "worker": 4,
+        "span": "walk-index",
+        "count": 5,
+        "totalMs": 231.181994999999
+      },
+      {
+        "worker": 4,
+        "span": "walk-query",
+        "count": 469,
+        "totalMs": 3062.0041430001074
+      },
+      {
+        "worker": 4,
+        "span": "scheduled-search",
+        "count": 1,
+        "totalMs": 4089.427305000001
+      },
+      {
+        "worker": 4,
+        "span": "transit-query",
+        "count": 1,
+        "totalMs": 4149.228249000003
+      },
+      {
+        "worker": 5,
+        "span": "graph-validate",
+        "count": 9,
+        "totalMs": 2479.964764999997
+      },
+      {
+        "worker": 5,
+        "span": "graph-prepare",
+        "count": 9,
+        "totalMs": 3453.4123279999985
+      },
+      {
+        "worker": 5,
+        "span": "station-merge",
+        "count": 1,
+        "totalMs": 1171.5637209999986
+      },
+      {
+        "worker": 5,
+        "span": "station-build",
+        "count": 1,
+        "totalMs": 14.069527999999991
+      },
+      {
+        "worker": 5,
+        "span": "transit-build",
+        "count": 1,
+        "totalMs": 1515.4287130000012
+      },
+      {
+        "worker": 5,
+        "span": "walk-index",
+        "count": 5,
+        "totalMs": 384.9463820000019
+      },
+      {
+        "worker": 5,
+        "span": "walk-query",
+        "count": 15096,
+        "totalMs": 75746.38930699928
+      }
+    ],
+    "firstGoal": {
+      "t": 46028.233,
+      "worker": 5,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "event": "scheduled-first-goal-generated",
+      "sid": 13,
+      "elapsedMs": 3708.5178490000035,
+      "score": 18315.647129999998,
+      "arrivalS": 37462.16334,
+      "walkS": 6315.65586,
+      "transfers": 1,
+      "facilityPenalty": 0,
+      "acceptedLabels": 2567
+    }
+  },
+  "od36-current-clock120-2e2fcf795897-od36-ordinary": {
+    "completedSpans": [
+      {
+        "worker": 1,
+        "span": "graph-validate",
+        "count": 3,
+        "totalMs": 996.372585000001
+      },
+      {
+        "worker": 1,
+        "span": "graph-prepare",
+        "count": 3,
+        "totalMs": 1382.0953920000002
+      },
+      {
+        "worker": 1,
+        "span": "station-build",
+        "count": 1,
+        "totalMs": 1.552455000000009
+      },
+      {
+        "worker": 1,
+        "span": "transit-build",
+        "count": 1,
+        "totalMs": 289.13465499999984
+      },
+      {
+        "worker": 1,
+        "span": "walk-index",
+        "count": 1,
+        "totalMs": 134.45164400000067
+      },
+      {
+        "worker": 2,
+        "span": "graph-validate",
+        "count": 7,
+        "totalMs": 1323.8095780000021
+      },
+      {
+        "worker": 2,
+        "span": "graph-prepare",
+        "count": 7,
+        "totalMs": 1695.6714260000026
+      },
+      {
+        "worker": 2,
+        "span": "station-build",
+        "count": 1,
+        "totalMs": 1.1250810000001366
+      },
+      {
+        "worker": 2,
+        "span": "transit-build",
+        "count": 1,
+        "totalMs": 268.3553270000011
+      },
+      {
+        "worker": 2,
+        "span": "walk-index",
+        "count": 5,
+        "totalMs": 266.4632419999998
+      },
+      {
+        "worker": 2,
+        "span": "walk-query",
+        "count": 1681,
+        "totalMs": 15159.357214000012
+      },
+      {
+        "worker": 2,
+        "span": "scheduled-search",
+        "count": 8,
+        "totalMs": 16350.401343999998
+      },
+      {
+        "worker": 2,
+        "span": "transit-query",
+        "count": 8,
+        "totalMs": 16741.538474
+      },
+      {
+        "worker": 4,
+        "span": "graph-validate",
+        "count": 7,
+        "totalMs": 823.7473969999992
+      },
+      {
+        "worker": 4,
+        "span": "graph-prepare",
+        "count": 7,
+        "totalMs": 1160.3111189999981
+      },
+      {
+        "worker": 4,
+        "span": "station-build",
+        "count": 1,
+        "totalMs": 1.2106760000024224
+      },
+      {
+        "worker": 4,
+        "span": "transit-build",
+        "count": 1,
+        "totalMs": 181.59284800000023
+      },
+      {
+        "worker": 4,
+        "span": "walk-index",
+        "count": 5,
+        "totalMs": 202.51663400001416
+      },
+      {
+        "worker": 4,
+        "span": "walk-query",
+        "count": 479,
+        "totalMs": 4377.925541000121
+      },
+      {
+        "worker": 4,
+        "span": "scheduled-search",
+        "count": 1,
+        "totalMs": 5204.434036999999
+      },
+      {
+        "worker": 4,
+        "span": "transit-query",
+        "count": 1,
+        "totalMs": 5260.236811999996
+      },
+      {
+        "worker": 5,
+        "span": "graph-validate",
+        "count": 9,
+        "totalMs": 2079.668346000006
+      },
+      {
+        "worker": 5,
+        "span": "graph-prepare",
+        "count": 9,
+        "totalMs": 2871.535248
+      },
+      {
+        "worker": 5,
+        "span": "station-merge",
+        "count": 1,
+        "totalMs": 852.0915660000028
+      },
+      {
+        "worker": 5,
+        "span": "station-build",
+        "count": 1,
+        "totalMs": 11.224954999997863
+      },
+      {
+        "worker": 5,
+        "span": "transit-build",
+        "count": 1,
+        "totalMs": 1123.284811000005
+      },
+      {
+        "worker": 5,
+        "span": "walk-index",
+        "count": 5,
+        "totalMs": 230.5812910000168
+      },
+      {
+        "worker": 5,
+        "span": "walk-query",
+        "count": 15368,
+        "totalMs": 69747.8508029992
+      }
+    ],
+    "firstGoal": {
+      "t": 52121.672,
+      "worker": 5,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "event": "scheduled-first-goal-generated",
+      "sid": 13,
+      "elapsedMs": 2785.702547000001,
+      "score": 18315.647129999998,
+      "arrivalS": 37462.16334,
+      "walkS": 6315.65586,
+      "transfers": 1,
+      "facilityPenalty": 0,
+      "acceptedLabels": 2567
+    }
+  }
+}

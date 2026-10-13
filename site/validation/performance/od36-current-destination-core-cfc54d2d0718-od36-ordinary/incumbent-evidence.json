@@ -1,0 +1,19 @@
+{
+  "examinedRuntimes": [
+    "34c1eabb21cf",
+    "cfc54d2d0718"
+  ],
+  "worker": 5,
+  "scheduledSpan": 13,
+  "fromId": "journey:origin",
+  "toId": "journey:destination",
+  "goalLabelGenerated": "unknown",
+  "incumbentScore": null,
+  "reason": "Preserved scheduled progress records aggregate label/queue/resolver counts only, not label nodes, goal creation or objective scores. The scheduled span did not finish in either observation.",
+  "notProof": [
+    "CONDITIONAL nested walk results do not establish that Dt accepted a goal label.",
+    "Available public/taxi/demo candidates belong to different owners and cannot establish an exact detailed-official-graph incumbent."
+  ],
+  "method": "Read existing streaming aggregation and preserved reports/checkpoints; no repeated large-log scan or routing run.",
+  "nextProbe": "First accepted goal timestamp/score, count of generated goal labels, best generated goal score."
+}

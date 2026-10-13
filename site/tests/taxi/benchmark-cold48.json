@@ -1,0 +1,6 @@
+{
+  "fleetSize": 48,
+  "seed": 42,
+  "coldInitializationMs": 722.3553330000001,
+  "meaning": "Fresh module route caches and bounded state pool, excluding module import/parse time"
+}

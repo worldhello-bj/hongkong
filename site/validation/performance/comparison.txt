@@ -1,0 +1,58 @@
+[
+  {
+    "directory": "baseline-6e52ec3d2521-od7-luggage",
+    "workers": 4,
+    "peakRssGiB": 1.3106002807617188,
+    "workerGraphPrepareMs": 6090.937690999996,
+    "availableCandidates": 3
+  },
+  {
+    "directory": "defer-walk-6e52ec3d2521-od7-luggage",
+    "workers": 4,
+    "peakRssGiB": 1.27374267578125,
+    "workerGraphPrepareMs": 4844.069682999999,
+    "availableCandidates": 5
+  },
+  {
+    "directory": "fifo-guard-6e52ec3d2521-od7-luggage",
+    "workers": 5,
+    "peakRssGiB": 1.2203750610351562,
+    "workerGraphPrepareMs": 8329.590649000014,
+    "availableCandidates": 3
+  },
+  {
+    "directory": "search-states-6e52ec3d2521-od7-luggage",
+    "workers": 4,
+    "peakRssGiB": 1.2079353332519531,
+    "workerGraphPrepareMs": 4468.296063000003,
+    "availableCandidates": 3
+  },
+  {
+    "directory": "baseline-6e52ec3d2521-od36-ordinary",
+    "workers": 7,
+    "peakRssGiB": 1.4673805236816406,
+    "workerGraphPrepareMs": 11680.765306000007,
+    "availableCandidates": 2
+  },
+  {
+    "directory": "defer-walk-6e52ec3d2521-od36-ordinary",
+    "workers": 8,
+    "peakRssGiB": 1.4777755737304688,
+    "workerGraphPrepareMs": 12904.035839,
+    "availableCandidates": 2
+  },
+  {
+    "directory": "fifo-guard-6e52ec3d2521-od36-ordinary",
+    "workers": 8,
+    "peakRssGiB": 1.4841995239257812,
+    "workerGraphPrepareMs": 11705.372474999987,
+    "availableCandidates": 2
+  },
+  {
+    "directory": "shared-base-6e52ec3d2521-od36-ordinary",
+    "workers": 7,
+    "peakRssGiB": 1.5819892883300781,
+    "workerGraphPrepareMs": 10433.371494000017,
+    "availableCandidates": 2
+  }
+]

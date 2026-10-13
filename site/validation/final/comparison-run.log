@@ -1,0 +1,6 @@
+{"name":"覆盖走廊金钟至柯士甸","status":"completed","exitCode":0,"ms":13859,"candidates":3}
+{"name":"覆盖走廊柯士甸至金钟","status":"completed","exitCode":0,"ms":13904,"candidates":3}
+{"name":"覆盖走廊港岛接驳至柯士甸","status":"completed","exitCode":0,"ms":16359,"candidates":5}
+{"name":"覆盖电车走廊","status":"completed","exitCode":0,"ms":16596,"candidates":6}
+{"name":"覆盖九龙公交走廊","status":"completed","exitCode":0,"ms":11880,"candidates":5}
+{"name":"缺失荃湾线诊断金钟至旺角","status":"completed","exitCode":0,"ms":12752,"candidates":5}

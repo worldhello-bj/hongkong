@@ -1,0 +1,682 @@
+{
+  "schema": 1,
+  "auditProvenance": {
+    "version": "point-strict-source-v2",
+    "files": {
+      "point-matrix-harness.mjs": "91789f645bd1eba516984cb2ce8d2b474bf8e58018450a87da1bcb6ff568cdcb",
+      "point-matrix-audit.mjs": "5f9cdfc72e6c0d11e57e9b4cd5d17f9cab8888c2a3feed38c5c32977e6b7dbd3",
+      "point-source-eligibility.mjs": "a424b9710aafc3bf82ab157f6054cb1e62d0eee862df5cf5ab5398272b50c352",
+      "point-matrix-fixture.mjs": "5defc9c9417a73cf2157582405cf05c77220c0122d2a5278d294acff9fc44335"
+    }
+  },
+  "planningStarted": true,
+  "uiStatus": [
+    {
+      "id": "[data-app=\"status\"]",
+      "text": "正在继续计算，可随时取消。"
+    }
+  ],
+  "rowId": "exits-cross",
+  "label": "金鐘 E2 → 紅磡 B2 升降機入口",
+  "tags": [
+    "metro-exit",
+    "cross-harbour",
+    "lift-source"
+  ],
+  "need": "ordinary",
+  "taxi": false,
+  "runtime": {
+    "version": "5a01bcfe74e6",
+    "assets": {
+      "area/admiralty-block-graph.json.gz": "388a08977ed80e57295fe1a0d623178e79ecd441cedaa5cfc62fe043385e2298",
+      "area/admiralty-block-manifest.json": "3ca578fed53857bf83cb93c4f51aab5f854656415384f7a869360a983ea07001",
+      "area/area-graph.json.gz": "44901caf6ee1241a23e096eb3d692f96913789fb2c1cbd742da59d8d3730253f",
+      "area/station-graph.json.gz": "446700358a6a56ccb8bbf1e024f6a09da99925e2778331e67c307c135a0f0a1e",
+      "assets/app-transit-worker-CaCMeUxU.js": "04676aec748b11a9c6cb36518b18565041fd7dfe25d2a698d0be36cc29e59cf4",
+      "assets/app-walk-worker-jk5g-BMr.js": "de2193eba0b0050d0cbbef531b2c309596c516cc49cec1b6b89f9ffb88fb82e3",
+      "assets/boot-status.js": "53c430e4c7e6b380f1b3ad694eb75dc5922bc881350e5d42f66102cc595d5817",
+      "assets/demo-fallback.js": "2457de25b65d71a1b7532c632ba6826671e0e2365defcac7ced646b4980ea1f3",
+      "assets/integrated-navigation.js": "08ac0fa94c0634e73bc552ec784eaee0fdae3f0a6503e5ba63f6db573f36e082",
+      "assets/intermodal-routing-D8vKT-lN.js": "087c098640a19c0f1e697a44ca33bbeca5dcfc32f6fefb466c8b5ca4fb6c18dc",
+      "assets/journey-score.js": "c4edebd7513a7bba937ad1e16331a42955ede8f689847908a4a239adefe9dd80",
+      "assets/kow-c1-corridor-data.js": "a2a51a8d0e54cf4b45f2b7df4c3a3bad366e9b9544e9514b2e208fa7b973ea01",
+      "assets/kow-c1-corridor.js": "23383128556e62ce82c5adbd30022527b988064bfdeb956a662cee5fe29ca03f",
+      "assets/main-integrated.js": "a4f21db73e72b5b04d7908b1adbc91baf46f8355af923d81276bbadd524ec760",
+      "assets/maplibre-gl-_-pAOC5F.js": "f0a214ad8b161ece04da3257f8ca6c4ac288c2899fd765e6e4b15e80a44ec224",
+      "assets/metro-planning-CBAOotPX.js": "52b089d4aa3f8699dbbf04bd9a1d80c494bf7f4953e301a27a638ed86a869751",
+      "assets/metro-worker-BDEusPKL.js": "632e20b336b80abd10c3510a07c83d471132979a6b02b1d7d38d388caa775c48",
+      "assets/mobile-navigation-DfEsS_7b.js": "d0792d2d52aa8b3089fe29ce7afd4bfb6fce8b9c3721358251c25bc57e8853f2",
+      "assets/pacific-place-model.js": "c38037acd1a2ae23531b31de9742909d267e821531d3648b1a8f7522d54d73a5",
+      "assets/place-opening.js": "651d8b65cbfbea4f515edf656320de8f94b970a76022e29f45eb602a1ff85a41",
+      "assets/preference-routing.js": "e4fcfd7f6d6d0d7c09e40b59a56af6a85f720c8c8b785536a7ace7692884635c",
+      "assets/preload-helper-BXl3LOEh.js": "d887044e7c17fd90344fc4f74f53cac686584daf2a458ab2136d36f1946e9ab6",
+      "assets/public-coverage.js": "7b9a48c85d3731c18b74c8896a0e7949d2b03b9dffd5878066eecc076f443da3",
+      "assets/rail-reference.js": "d443c08eccb243ab64a57203ff992b2f541cdb1053ff41d3d25b09db920300ae",
+      "assets/route-quote.js": "06e944e179be290edea57e0881e1186896282a41782eab426c4a280cc1477171",
+      "assets/routing-queue.js": "8ac1a97a9e60f93ac08c7e67031f51e7820621a8de20b473c142a9e3448bc761",
+      "assets/score-parameters.js": "827fcc2bfd95f9e6d13c1e0a95363056cc08691f37726418073dc6268d0f5b02",
+      "assets/station-alternatives.js": "8032d4f80d7e87f7748f66a9f1e729e56a19be9186ad2026899fb8ec30ed99be",
+      "assets/taxi-bridge.js": "0bd24c2ae0d049c3da3349cd38bef4840ba17c1d00cc5259289de10425eb9ffc",
+      "assets/taxi-candidates.js": "d3f813ece972a05a6d3f9a3b61f5f44a3698e75f5cf1740351a8504bf7261d03",
+      "assets/taxi-map.js": "2c9a40cd381f967cec687f7a76c7445e200c8fec180394aeb04daeb1111a0839",
+      "assets/taxi-policy.js": "e72b1cb6aeedae048ceafe99a76cf399c15c1da19eca0298e7a18acfe6af2ee6",
+      "assets/tram-model-DNfzveeh.js": "e9bd602979e8431bf599752f085e644b061b73ee2c6c0595d02c6cd4810e2703",
+      "assets/transit-stops.js": "39b812021f7e4b098187bc8fcfeca134fddcc6c8b9a70b8a3ff4bc2378cf3dfa",
+      "assets/ui-content.js": "a5e235a4339dcae2c2b60d6dbfdacb89476e627150faad6c6e5cc566d478dfdf",
+      "assets/ui-navigation.js": "e95235ec7976ea3b06d7fe5f88502eb3a1a70829eb5a86bf6cbf746598859927",
+      "assets/zh-BN2SYn6V.js": "0baa0f4a0af2ee59f48d8f79ea5736143840a3dcef5ab0b3088bd716b2dcd980",
+      "taxi/government-data.json": "755ccae78e10a507fbf0537bd5d0597aa4f7bebe97d7b5825199fb0472fdbafb",
+      "taxi/road-graph.js": "78f3f2d916148f6e2d6ab261906e661072f995a64ca027e5642395bf5d6ac48e",
+      "taxi/roaming.js": "7cafa93577295a1a5cd8c3dc7c957223998e209f2372fc74d7fb5370f0572a9d",
+      "transit/services.json": "59c1c4faef3fadbf32748b0707231f78c3ec36aa4d2edc47de39b8c39485c542",
+      "transit/tram-stops.json": "4b34355bd7c4cceb4e7afbd73fd2e7c49ecc73d89a01f4082468c693cbc56684",
+      "transit/walk-links.json": "5cdff906f22c51146abc9e6e565f0b07a1d57a739239af403482f2dff2c6658c",
+      "transit/walk-links.json.gz": "9505ee7867641cd5c7bbf2a3c76a4216c7cdc05fdd7a72d7da4cf85eb2f6420b"
+    },
+    "signature": "6e52e23f257d9906df3f40e46d2ab75e62fedf3e446e1df4166f1d50818cdd4d"
+  },
+  "fixtureSha256": "791197c289bf10787b0104c3d1fc5ba70ec030f305507cc56b924be744588b0e",
+  "date": "2026-10-12T16:42:42.707Z",
+  "request": {
+    "origin": {
+      "id": "ADM:portal:E2",
+      "name": "金鐘站 E2出口",
+      "coordinates": [
+        114.16624518,
+        22.27888752,
+        6
+      ],
+      "node_id": "ADM:N:15dedbcfbae59e",
+      "region_id": "ADM",
+      "station_id": "ADM",
+      "level": "G",
+      "level_name": "Exit E1 & E2 Ground Level",
+      "source_feature_id": "mtr_amenity_point.221",
+      "source_url": "https://portal.csdi.gov.hk/csdi-webpage/apidoc/3d-indoor-mtr-station-map",
+      "evidence": "OFFICIAL_ENTRY_AMENITY_BOUNDED_SAME_HEIGHT_NODE_ASSOCIATION",
+      "lon": 114.16624518,
+      "lat": 22.27888752
+    },
+    "destination": {
+      "id": "HUH:portal:B2-lift",
+      "name": "紅磡站 B2 升降機入口",
+      "coordinates": [
+        114.18193105,
+        22.30359537,
+        13.8
+      ],
+      "node_id": "HUH:N:1883cb44eadc07",
+      "region_id": "HUH",
+      "station_id": "HUH",
+      "level": "G",
+      "level_name": "Exit B2 Elevator Ground Level",
+      "source_feature_id": "mtr_amenity_point.2654",
+      "source_url": "https://portal.csdi.gov.hk/csdi-webpage/apidoc/3d-indoor-mtr-station-map",
+      "evidence": "OFFICIAL_ELEVATOR_AMENITY_WITHIN_1CM_OF_EXISTING_GRAPH_NODE_INSIDE_OFFICIAL_ELEVATOR_UNIT",
+      "lon": 114.18193105,
+      "lat": 22.30359537
+    },
+    "departureDate": "2026-10-12",
+    "departureS": 39600
+  },
+  "state": "observation-window-ended",
+  "comparisonStatus": null,
+  "failedStages": [],
+  "windowMs": 60000,
+  "bootMs": 4615.455843000001,
+  "wallMs": 60022.563815999994,
+  "firstObservedMs": null,
+  "firstResultMs": null,
+  "fullCandidateWallMs": null,
+  "stoppedWallMs": null,
+  "performance": {
+    "warmStart": false,
+    "startedMonotonic": 4860.496517,
+    "startedAt": "2026-10-12T16:41:42.029Z",
+    "origin": "金鐘站 E2出口",
+    "destination": "紅磡站 B2 升降機入口",
+    "stages": [
+      {
+        "id": "public-fast",
+        "durationMs": 3609,
+        "status": "needs-indoor-refinement",
+        "cached": false
+      },
+      {
+        "id": "metro",
+        "durationMs": 40148,
+        "status": "no-complete-route",
+        "cached": false
+      },
+      {
+        "id": "demo-public-fast",
+        "durationMs": 3990,
+        "status": "needs-refinement"
+      },
+      {
+        "id": "demo-walk",
+        "durationMs": 2020,
+        "status": "needs-refinement"
+      },
+      {
+        "id": "transit-detailed",
+        "durationMs": 4537,
+        "status": "no-complete-route",
+        "cached": false
+      }
+    ],
+    "firstResultMs": null,
+    "totalMs": null
+  },
+  "navigationLoad": {
+    "status": "ready",
+    "durationMs": 2766,
+    "block": "ready"
+  },
+  "candidates": [],
+  "unavailable": [
+    {
+      "id": "transit-detailed",
+      "kind": "public",
+      "available": false,
+      "journeyComplete": false,
+      "failureStatus": "OUT_OF_REGION",
+      "scenarioOnly": false,
+      "simulationOnly": false,
+      "message": "起终点需位于当前已加载的道路覆盖范围内。",
+      "warnings": [],
+      "minutes": 0,
+      "cost": 5,
+      "modes": [
+        "bus"
+      ],
+      "fareScenario": {
+        "basis": "Production illustrative quote, not official live tariffs",
+        "available": false,
+        "pricingUnavailable": false,
+        "compacted": false,
+        "totalCents": 500,
+        "sumLegCents": 500,
+        "legs": [
+          {
+            "index": 0,
+            "mode": "bus",
+            "label": "起终点需位于当前已加载的道路覆盖范围内。",
+            "amountCents": 500,
+            "available": false
+          }
+        ],
+        "expectedCompactedModes": [],
+        "legCoverage": null,
+        "pass": true
+      },
+      "alternatives": {},
+      "qualification": "Unavailable journey; a retained fare estimate or preserved endpoint metadata does not establish a source-backed physical connection."
+    },
+    {
+      "id": "metro",
+      "kind": "public",
+      "available": false,
+      "journeyComplete": false,
+      "failureStatus": "NO_ROUTE",
+      "scenarioOnly": false,
+      "simulationOnly": false,
+      "message": "未找到符合所选条件且包含轨道乘车路段的地铁行程；步行接驳、出入口或无障碍条件可能不连通。",
+      "warnings": [
+        "站內路線包含付費區，須持有效車票或付款入閘。",
+        "路線為官方三維路網；設施運作、開放狀態及步行時間未經即時核實。",
+        "目的地為官方月台區域內路網節點；未核實月台編號、列車方向或精確上車位置。"
+      ],
+      "minutes": 0,
+      "cost": 6,
+      "modes": [
+        "metro"
+      ],
+      "fareScenario": {
+        "basis": "Production illustrative quote, not official live tariffs",
+        "available": false,
+        "pricingUnavailable": false,
+        "compacted": false,
+        "totalCents": 600,
+        "sumLegCents": 600,
+        "legs": [
+          {
+            "index": 0,
+            "mode": "metro",
+            "label": "未找到符合所选条件且包含轨道乘车路段的地铁行程；步行接驳、出入口或无障碍条件可能不连通。",
+            "amountCents": 600,
+            "available": false
+          }
+        ],
+        "expectedCompactedModes": [],
+        "legCoverage": null,
+        "pass": true
+      },
+      "alternatives": {},
+      "qualification": "Unavailable journey; a retained fare estimate or preserved endpoint metadata does not establish a source-backed physical connection."
+    }
+  ],
+  "requestIdentityPreserved": true,
+  "runtimeStable": true,
+  "cancel": {
+    "exercisedWhilePending": true,
+    "observationMs": 525.6088439999949,
+    "planningStopped": true,
+    "pendingBeforeCancel": [
+      {
+        "id": 7,
+        "kind": "app-walk-worker-jk5g-BMr.js",
+        "pending": [
+          3
+        ]
+      }
+    ],
+    "pendingAfterCancel": [],
+    "noStaleCandidatePublication": true,
+    "pass": true
+  },
+  "workerErrors": [],
+  "workers": [
+    {
+      "id": 1,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "posts": 1,
+      "results": 1,
+      "pending": [],
+      "terminateRequested": true,
+      "exited": true,
+      "exitCode": 1
+    },
+    {
+      "id": 2,
+      "kind": "app-walk-worker-jk5g-BMr.js",
+      "posts": 1,
+      "results": 1,
+      "pending": [],
+      "terminateRequested": true,
+      "exited": true,
+      "exitCode": 1
+    },
+    {
+      "id": 3,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "posts": 1,
+      "results": 1,
+      "pending": [],
+      "terminateRequested": true,
+      "exited": true,
+      "exitCode": 1
+    },
+    {
+      "id": 4,
+      "kind": "app-walk-worker-jk5g-BMr.js",
+      "posts": 1,
+      "results": 1,
+      "pending": [],
+      "terminateRequested": true,
+      "exited": true,
+      "exitCode": 1
+    },
+    {
+      "id": 5,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "posts": 1,
+      "results": 1,
+      "pending": [],
+      "terminateRequested": true,
+      "exited": true,
+      "exitCode": 1
+    },
+    {
+      "id": 6,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "posts": 1,
+      "results": 1,
+      "pending": [],
+      "terminateRequested": true,
+      "exited": true,
+      "exitCode": 1
+    },
+    {
+      "id": 7,
+      "kind": "app-walk-worker-jk5g-BMr.js",
+      "posts": 1,
+      "results": 0,
+      "pending": [
+        3
+      ],
+      "terminateRequested": true,
+      "exited": true,
+      "exitCode": 1
+    }
+  ],
+  "memory": {
+    "rss": 1133899776,
+    "heapTotal": 327258112,
+    "heapUsed": 271843456,
+    "external": 39524540,
+    "arrayBuffers": 40143799,
+    "maxRSSKiB": 1291860,
+    "samples": [
+      {
+        "routeMs": 1686.5440680000002,
+        "rss": 753364992,
+        "heapUsed": 317811576
+      },
+      {
+        "routeMs": 2686.490678,
+        "rss": 1000026112,
+        "heapUsed": 317845568
+      },
+      {
+        "routeMs": 4379.847812999999,
+        "rss": 1044135936,
+        "heapUsed": 344557928
+      },
+      {
+        "routeMs": 5380.336448999999,
+        "rss": 973504512,
+        "heapUsed": 284239656
+      },
+      {
+        "routeMs": 6380.551162000001,
+        "rss": 1016672256,
+        "heapUsed": 284266728
+      },
+      {
+        "routeMs": 7380.120542,
+        "rss": 1063202816,
+        "heapUsed": 284301312
+      },
+      {
+        "routeMs": 8379.991511,
+        "rss": 1088630784,
+        "heapUsed": 284328184
+      },
+      {
+        "routeMs": 9380.613271000002,
+        "rss": 1104228352,
+        "heapUsed": 284355056
+      },
+      {
+        "routeMs": 10380.820004000001,
+        "rss": 1109667840,
+        "heapUsed": 284381704
+      },
+      {
+        "routeMs": 11381.124558,
+        "rss": 1125658624,
+        "heapUsed": 284409392
+      },
+      {
+        "routeMs": 12380.80154,
+        "rss": 1136144384,
+        "heapUsed": 284436576
+      },
+      {
+        "routeMs": 13381.939032000002,
+        "rss": 979427328,
+        "heapUsed": 222568184
+      },
+      {
+        "routeMs": 14382.176874,
+        "rss": 991092736,
+        "heapUsed": 222870672
+      },
+      {
+        "routeMs": 15383.266818,
+        "rss": 1002364928,
+        "heapUsed": 222900328
+      },
+      {
+        "routeMs": 16383.701941,
+        "rss": 1012850688,
+        "heapUsed": 222938592
+      },
+      {
+        "routeMs": 17384.441109,
+        "rss": 1024778240,
+        "heapUsed": 222964112
+      },
+      {
+        "routeMs": 18384.034504000003,
+        "rss": 1036705792,
+        "heapUsed": 222991000
+      },
+      {
+        "routeMs": 19384.388029,
+        "rss": 1044045824,
+        "heapUsed": 223027680
+      },
+      {
+        "routeMs": 20408.480655,
+        "rss": 1047715840,
+        "heapUsed": 223049744
+      },
+      {
+        "routeMs": 21409.073719,
+        "rss": 1139073024,
+        "heapUsed": 223076632
+      },
+      {
+        "routeMs": 22409.067395000002,
+        "rss": 1063710720,
+        "heapUsed": 223100768
+      },
+      {
+        "routeMs": 23409.737287,
+        "rss": 1087434752,
+        "heapUsed": 223132808
+      },
+      {
+        "routeMs": 24410.759556,
+        "rss": 1090187264,
+        "heapUsed": 223158472
+      },
+      {
+        "routeMs": 25411.347022,
+        "rss": 1104474112,
+        "heapUsed": 223185360
+      },
+      {
+        "routeMs": 26411.081109000002,
+        "rss": 1117057024,
+        "heapUsed": 223212248
+      },
+      {
+        "routeMs": 27411.385562,
+        "rss": 1130688512,
+        "heapUsed": 223252232
+      },
+      {
+        "routeMs": 28411.161437,
+        "rss": 1141567488,
+        "heapUsed": 223300440
+      },
+      {
+        "routeMs": 29411.15044,
+        "rss": 1152970752,
+        "heapUsed": 223327328
+      },
+      {
+        "routeMs": 30411.585537000003,
+        "rss": 1164111872,
+        "heapUsed": 223354216
+      },
+      {
+        "routeMs": 31411.311876000003,
+        "rss": 1172107264,
+        "heapUsed": 223381104
+      },
+      {
+        "routeMs": 32410.790618000003,
+        "rss": 1182593024,
+        "heapUsed": 223407992
+      },
+      {
+        "routeMs": 33411.266927,
+        "rss": 1193603072,
+        "heapUsed": 223434928
+      },
+      {
+        "routeMs": 34411.504188,
+        "rss": 1205137408,
+        "heapUsed": 223461816
+      },
+      {
+        "routeMs": 35411.044851,
+        "rss": 1201631232,
+        "heapUsed": 223487336
+      },
+      {
+        "routeMs": 36411.261140999995,
+        "rss": 1203859456,
+        "heapUsed": 223514224
+      },
+      {
+        "routeMs": 37411.136404,
+        "rss": 1322602496,
+        "heapUsed": 223541112
+      },
+      {
+        "routeMs": 38410.98929,
+        "rss": 1221013504,
+        "heapUsed": 223568000
+      },
+      {
+        "routeMs": 39410.931909,
+        "rss": 1214545920,
+        "heapUsed": 223594888
+      },
+      {
+        "routeMs": 40411.066233,
+        "rss": 1192529920,
+        "heapUsed": 223621776
+      },
+      {
+        "routeMs": 41411.528117999995,
+        "rss": 1229099008,
+        "heapUsed": 223648664
+      },
+      {
+        "routeMs": 42410.762049,
+        "rss": 1226330112,
+        "heapUsed": 223675552
+      },
+      {
+        "routeMs": 43411.429239,
+        "rss": 1230241792,
+        "heapUsed": 223702440
+      },
+      {
+        "routeMs": 46211.463048,
+        "rss": 1172295680,
+        "heapUsed": 319237768
+      },
+      {
+        "routeMs": 47211.233366,
+        "rss": 1056665600,
+        "heapUsed": 226291632
+      },
+      {
+        "routeMs": 48398.951344999994,
+        "rss": 1153679360,
+        "heapUsed": 253011416
+      },
+      {
+        "routeMs": 49399.372887,
+        "rss": 1147424768,
+        "heapUsed": 253037816
+      },
+      {
+        "routeMs": 50544.985902,
+        "rss": 1260724224,
+        "heapUsed": 247371088
+      },
+      {
+        "routeMs": 51545.067772999995,
+        "rss": 1187094528,
+        "heapUsed": 247397480
+      },
+      {
+        "routeMs": 52545.072706,
+        "rss": 1204506624,
+        "heapUsed": 247426776
+      },
+      {
+        "routeMs": 53545.122937,
+        "rss": 1233063936,
+        "heapUsed": 247453664
+      },
+      {
+        "routeMs": 54733.635381,
+        "rss": 1263546368,
+        "heapUsed": 241733360
+      },
+      {
+        "routeMs": 55734.116123,
+        "rss": 1184034816,
+        "heapUsed": 241760992
+      },
+      {
+        "routeMs": 56733.939794,
+        "rss": 1196023808,
+        "heapUsed": 241787880
+      },
+      {
+        "routeMs": 57735.309818999995,
+        "rss": 1223421952,
+        "heapUsed": 241814768
+      },
+      {
+        "routeMs": 59261.324500999996,
+        "rss": 1274671104,
+        "heapUsed": 240177552
+      },
+      {
+        "routeMs": 60261.612777999995,
+        "rss": 1115942912,
+        "heapUsed": 244051584
+      }
+    ]
+  },
+  "fetches": [
+    {
+      "path": "/area/station-graph.json.gz",
+      "bytes": 563298,
+      "sha256": "446700358a6a56ccb8bbf1e024f6a09da99925e2778331e67c307c135a0f0a1e"
+    },
+    {
+      "path": "/area/area-graph.json.gz",
+      "bytes": 8036890,
+      "sha256": "44901caf6ee1241a23e096eb3d692f96913789fb2c1cbd742da59d8d3730253f"
+    },
+    {
+      "path": "/transit/services.json",
+      "bytes": 239733,
+      "sha256": "59c1c4faef3fadbf32748b0707231f78c3ec36aa4d2edc47de39b8c39485c542"
+    },
+    {
+      "path": "/transit/walk-links.json.gz",
+      "bytes": 303355,
+      "sha256": "9505ee7867641cd5c7bbf2a3c76a4216c7cdc05fdd7a72d7da4cf85eb2f6420b"
+    },
+    {
+      "path": "/area/admiralty-block-graph.json.gz",
+      "bytes": 686250,
+      "sha256": "388a08977ed80e57295fe1a0d623178e79ecd441cedaa5cfc62fe043385e2298"
+    },
+    {
+      "path": "/preview/station-access-alternatives.json",
+      "status": 404
+    }
+  ],
+  "limitations": [
+    "Production built S1, Worker bundles and pricing code in Node with a DOM stand-in; not actual-browser visual or device-performance QA.",
+    "Data fully ready before plan, fresh process/cold route cache, taxi loaded on demand. Boot cost is separate.",
+    "A 60-second pending observation is never NO_ROUTE. Full comparison time is null unless S1 actually finishes.",
+    "Modeled/schematic geometry is identified separately even when geometrically continuous; source-backed does not mean live verified.",
+    "All costs are the production illustrative model; official tariff correctness is outside this harness."
+  ],
+  "classification": "pending-observation-window"
+}

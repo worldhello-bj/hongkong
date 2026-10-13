@@ -1,0 +1,35 @@
+import test from 'node:test';import assert from 'node:assert/strict';import vm from 'node:vm';import{readFileSync,appendFileSync,mkdtempSync,rmSync,cpSync,renameSync,existsSync}from'node:fs';import{tmpdir}from'node:os';import{join,resolve}from'node:path';
+test('OD36 probe flushes bounded events without losing order, latest counters or final lifecycle tail',()=>{
+ const source=readFileSync(new URL('./profile-od36-current.mjs',import.meta.url),'utf8');
+ const flush=source.split('\n').find(line=>line.startsWith('function flushEvents()'));
+ const record=source.split('\n').find(line=>line.startsWith('function record(event)'));
+ assert.ok(flush&&record);assert.doesNotMatch(source,/events\.map|\[\.\.\.events\]/);
+ const out=mkdtempSync(join(tmpdir(),'hk-profile-buffer-'));try{
+  const context={appendFileSync,resolve,out,liveEventsPath:join(out,'live-events.ndjson'),events:[],latestWorkerHeaps:new Map(),destinationKeyIds:new Map(),workerErrors:[],latestScheduled:null,totalEvents:0,time:()=>1};vm.createContext(context);vm.runInContext(flush+'\n'+record,context);
+  for(let i=0;i<5001;i++){context.record({event:'worker-span-end',worker:5,sid:i,heapUsed:i});assert.ok(context.events.length<2048);}
+  context.record({event:'scheduled-hotspot-progress',worker:5,retainedLabels:7});context.flushEvents();
+  const checkpoint=join(out,'events.ndjson');cpSync(context.liveEventsPath,checkpoint);
+  context.record({event:'worker-terminate',worker:5});context.record({event:'worker-exit',worker:5,code:1});context.flushEvents();
+  const terminal=join(out,'followthrough-events.ndjson');renameSync(context.liveEventsPath,terminal);
+  const rows=readFileSync(terminal,'utf8').trim().split('\n').map(JSON.parse);assert.equal(rows.length,5004);assert.deepEqual(rows.slice(0,5001).map(e=>e.sid),Array.from({length:5001},(_,i)=>i));assert.equal(rows.at(-1).event,'worker-exit');assert.equal(readFileSync(checkpoint,'utf8').trim().split('\n').length,5002);assert.equal(context.totalEvents,5004);assert.equal(context.events.length,0);assert.equal(context.latestWorkerHeaps.get(5).heapUsed,5000);assert.equal(context.latestScheduled.retainedLabels,7);assert.equal(existsSync(context.liveEventsPath),false);
+  context.record({event:'destination-bound-preparation',worker:5,coreKey:'exact overlay key'});context.record({event:'destination-bound-preparation',worker:5,coreKey:'exact overlay key'});context.flushEvents();const compressed=readFileSync(context.liveEventsPath,'utf8').trim().split('\n').map(JSON.parse);assert.equal(compressed.length,3);assert.equal(compressed[0].event,'destination-core-key');assert.equal(compressed[0].coreKey,'exact overlay key');assert.equal(compressed[1].coreKeyId,compressed[0].coreKeyId);assert.equal(compressed[2].coreKeyId,compressed[0].coreKeyId);assert.equal(compressed[1].coreKey,undefined);
+ }finally{rmSync(out,{recursive:true,force:true});}
+});
+
+test('copied scheduled counters understand both flat and exact-time bucket indexes',async()=>{
+ const {instrumentOd36Hotspots}=await import('./profile-od36-hotspots.mjs');
+ const {patchScheduledLabelBuckets,restoreScheduledLabelBuckets}=await import('../../scripts/repair-scheduled-label-buckets.mjs');
+ const url=new URL('../../dist/assets/app-transit-worker-CaCMeUxU.js',import.meta.url),raw=restoreScheduledLabelBuckets(readFileSync(url,'utf8'));
+ for(const bucketed of [false,true]){
+  let source=instrumentOd36Hotspots(bucketed?patchScheduledLabelBuckets(raw).source:raw,'app-transit-worker-CaCMeUxU.js');const events=[],context={self:{},setTimeout,clearTimeout,DOMException,console,process,performance,__profile:{currentSpan:1,record:e=>events.push(e)}};
+  for(const match of source.matchAll(/import\s*\{([^}]+)\}\s*from\s*"([^"]+)";/g)){const module=await import(new URL(match[2],url).href);for(const binding of match[1].split(',')){const[name,alias]=binding.trim().split(/\s+as\s+/);context[alias??name]=module[name];}}
+  source=source.replace(/import\s*\{([^}]+)\}\s*from\s*"([^"]+)";/g,'').replace('let tt;self.onmessage','globalThis.engine=Dt;let tt;self.onmessage');vm.createContext(context);vm.runInContext(source,context);
+  const openingExpression=source.match(/ze=(\(\(\)=>\{const stats=[\s\S]*?return values;\}\)\(\))/)?.[1];assert.ok(openingExpression);let openingCalls=0;context.i={departureS:100,departureDate:'2026-10-12',horizonS:30};context.E={edges:[{id:'earlier',region_id:'A',values:[5,10]},...Array.from({length:30},(_,j)=>({id:'max'+j,region_id:'R',values:[25]}))]};context.c={edges:[{id:'last',region_id:'S',values:[20]}]};context.nt=edge=>{openingCalls++;return edge.values};const openings=vm.runInContext(openingExpression,context);assert.deepEqual(structuredClone(openings),[105,110,...Array(30).fill(125),120]);assert.equal(openingCalls,32);assert.equal(context.__profileOpeningSources.maxOpeningS,125);assert.equal(context.__profileOpeningSources.maxSourceCount,30);assert.equal(context.__profileOpeningSources.sources.length,16);events.length=0;
+
+  const network={patterns:[],connections:[{id:'ab5',fromId:'a',toId:'b',kind:'walk',durationS:5},{id:'ab6',fromId:'a',toId:'b',kind:'walk',durationS:6},{id:'bd',fromId:'b',toId:'d',kind:'walk',durationS:7}]};
+  assert.equal(context.engine(network,{fromId:'a',toId:'unreachable',departureS:0,horizonS:30,connectionOpeningTimesS:[20],resolveConnectionAt:edge=>edge}),null);
+  const stats=events.find(e=>e.event==='scheduled-hotspot-end');assert.equal(stats.retainedLabels,5);assert.equal(stats.labelIndex.bucketed,bucketed);assert.equal(stats.labelIndex.nodes,3);assert.equal(stats.labelIndex.labelReferences,5);assert.equal(stats.labelIndex.buckets,bucketed?5:3);assert.equal(stats.labelIndex.maxLabelsPerNode,2);assert.equal(stats.labelIndex.maxLabelsPerBucket,bucketed?1:2);assert.equal(stats.temporalBoundary.delayS,20);assert.equal(stats.labelIndex.topNodes.length,3);assert.equal(stats.labelIndex.topNodes[0].retainedLabels,2);assert.equal(stats.labelIndex.topNodes[0].activeLabels,2);assert.equal(stats.labelIndex.topNodes[0].clockBuckets,bucketed?2:null);
+  events.length=0;const route=context.engine(network,{fromId:'a',toId:'d',departureS:0,horizonS:30,connectionOpeningTimesS:[20],resolveConnectionAt:edge=>edge});const goal=events.find(e=>e.event==='scheduled-first-goal-generated'),end=events.find(e=>e.event==='scheduled-hotspot-end');assert.equal(route.arrivalS,12);assert.equal(goal.score,12);assert.equal(end.goalLabelCount,2);assert.equal(end.bestGeneratedGoalScore,12);assert.ok(end.firstGoalGeneratedAtMs>=0);
+  assert.equal(end.geometry.arrays,0);assert.equal(end.geometry.walkWithoutGeometry,4);events.length=0;const geometric={patterns:[],connections:Array.from({length:100},(_,j)=>({id:'c'+j,fromId:'a',toId:'n'+j,kind:'walk',durationS:1,geometry:[[114.16,22.28],[114.17,22.28]]}))};context.engine(geometric,{fromId:'a',toId:'unreachable',departureS:0,horizonS:10});const geom=events.find(e=>e.event==='scheduled-hotspot-end').geometry;assert.equal(geom.arrays,100);assert.equal(geom.coordinateReferences,200);assert.equal(geom.signatureSamples,2);assert.equal(geom.signatureWindowRepeats,1);assert.equal(geom.signatureWindowUnique,1);
+ }
+});

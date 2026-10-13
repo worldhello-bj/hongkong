@@ -1,0 +1,17 @@
+{
+  "coordination": "Started after a coordinated exclusive-heavy-window confirmation; later corrected by the host scheduling report.",
+  "actualKnownOverlap": [
+    {
+      "task": "Unrelated bounded compute workload",
+      "startedUtc": "2026-10-12T15:29:56Z",
+      "stillRunningAtUtc": "2026-10-12T15:32:00Z",
+      "endedUtc": "2026-10-12T15:33:40Z",
+      "source": "Reported host scheduling at 15:32:52 UTC",
+      "endSource": "Reported workload exit at 15:36:54 UTC"
+    }
+  ],
+  "probeStartedUtc": "2026-10-12T15:31:14Z",
+  "namespaceLimit": "exec PID namespaces prevent this probe from establishing an exhaustive global process inventory.",
+  "wallTimeInterpretation": "Do not treat early wall time as an exclusive-host strict speed A/B. Actual Worker errors, measured per-process RSS/heap, route outputs and original checkpoint states remain evidence, subject to host pressure.",
+  "labelCaveat": "The exclusive run label records intended scheduling, not verified absence of overlapping host work. No restart was made after this correction."
+}

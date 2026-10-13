@@ -1,0 +1,3563 @@
+{
+  "schema": 1,
+  "generatedAt": "2026-10-12T17:18:01.538Z",
+  "runtime": {
+    "version": "b702b6920092",
+    "assets": {
+      "area/admiralty-block-graph.json.gz": "388a08977ed80e57295fe1a0d623178e79ecd441cedaa5cfc62fe043385e2298",
+      "area/admiralty-block-manifest.json": "3ca578fed53857bf83cb93c4f51aab5f854656415384f7a869360a983ea07001",
+      "area/area-graph.json.gz": "44901caf6ee1241a23e096eb3d692f96913789fb2c1cbd742da59d8d3730253f",
+      "area/station-graph.json.gz": "446700358a6a56ccb8bbf1e024f6a09da99925e2778331e67c307c135a0f0a1e",
+      "assets/app-transit-worker-CaCMeUxU.js": "806f2989505389582d744a1b477a8d19bd6121ffa7d23ecd828574d98d6a6095",
+      "assets/app-walk-worker-jk5g-BMr.js": "6a2c4f41d260875ff8987bca135f71375108c5a3f82508501661676184681765",
+      "assets/boot-status.js": "53c430e4c7e6b380f1b3ad694eb75dc5922bc881350e5d42f66102cc595d5817",
+      "assets/demo-fallback.js": "ea101eb11b54b55110d78f07a98834d19cf2cb4bfe1e2ee2cfe3d86b5988d7bd",
+      "assets/integrated-navigation.js": "f4ed3e1f82e823893508be824bf52caa6aaa4b32514da1684fe2767ac9f9dd8c",
+      "assets/intermodal-routing-D8vKT-lN.js": "07d500788ab8d8a8384d0ef6e0c4b9d2e21f006e41bbeba1c5513f0ca94178cf",
+      "assets/journey-score.js": "03ffa12a0cd2b1ae354458f0a8cfe2c46358d58438d6016f272749f42ae751ab",
+      "assets/kow-c1-corridor-data.js": "a2a51a8d0e54cf4b45f2b7df4c3a3bad366e9b9544e9514b2e208fa7b973ea01",
+      "assets/kow-c1-corridor.js": "9ccb3c5c3717ee4a7266ea145278f471b5e9358770ff1756b81980bc300df221",
+      "assets/main-integrated.js": "e020a70c2e82435528adfdde85c0b9ae3942299f693d0eee4e92526b78fc8b0e",
+      "assets/maplibre-gl-_-pAOC5F.js": "f0a214ad8b161ece04da3257f8ca6c4ac288c2899fd765e6e4b15e80a44ec224",
+      "assets/metro-planning-CBAOotPX.js": "2052981567b7c30aae34edceaed46bd9501c3984aa1b5fd5ba23b0738e1af992",
+      "assets/metro-worker-BDEusPKL.js": "e052ada3a46f4d70b8392f271ab43dfd1b92a1a673cc53fab53407bd985431f3",
+      "assets/mobile-navigation-DfEsS_7b.js": "be740bb256712eb6af7a864d6b2b3b231a504fe99326c80695053899f3464c2b",
+      "assets/pacific-place-model.js": "c38037acd1a2ae23531b31de9742909d267e821531d3648b1a8f7522d54d73a5",
+      "assets/place-opening.js": "651d8b65cbfbea4f515edf656320de8f94b970a76022e29f45eb602a1ff85a41",
+      "assets/preference-routing.js": "e4fcfd7f6d6d0d7c09e40b59a56af6a85f720c8c8b785536a7ace7692884635c",
+      "assets/preload-helper-BXl3LOEh.js": "d887044e7c17fd90344fc4f74f53cac686584daf2a458ab2136d36f1946e9ab6",
+      "assets/public-coverage.js": "7b9a48c85d3731c18b74c8896a0e7949d2b03b9dffd5878066eecc076f443da3",
+      "assets/rail-reference.js": "d443c08eccb243ab64a57203ff992b2f541cdb1053ff41d3d25b09db920300ae",
+      "assets/route-quote.js": "06e944e179be290edea57e0881e1186896282a41782eab426c4a280cc1477171",
+      "assets/routing-queue.js": "8ac1a97a9e60f93ac08c7e67031f51e7820621a8de20b473c142a9e3448bc761",
+      "assets/score-parameters.js": "9012ff8ae06ab23b993f1875160c45a58ea4537ff660900554f1d6e28cf0dd16",
+      "assets/station-alternatives.js": "8032d4f80d7e87f7748f66a9f1e729e56a19be9186ad2026899fb8ec30ed99be",
+      "assets/taxi-bridge.js": "0bd24c2ae0d049c3da3349cd38bef4840ba17c1d00cc5259289de10425eb9ffc",
+      "assets/taxi-candidates.js": "0b111d34183d3f3ac00c220a7f11d4cbf8f42ee48db996f5c3f79d779ca5396b",
+      "assets/taxi-map.js": "2c9a40cd381f967cec687f7a76c7445e200c8fec180394aeb04daeb1111a0839",
+      "assets/taxi-policy.js": "e72b1cb6aeedae048ceafe99a76cf399c15c1da19eca0298e7a18acfe6af2ee6",
+      "assets/tram-model-DNfzveeh.js": "caf935edc3e381a59acaf62f1166dd23d23a119a51a77dd1caa32d42acc7047d",
+      "assets/transit-stops.js": "39b812021f7e4b098187bc8fcfeca134fddcc6c8b9a70b8a3ff4bc2378cf3dfa",
+      "assets/ui-content.js": "42434d27f692a5385a52526c978cb539e115d0e32ad5a08c8ffe521eefbed8ef",
+      "assets/ui-navigation.js": "e95235ec7976ea3b06d7fe5f88502eb3a1a70829eb5a86bf6cbf746598859927",
+      "assets/zh-BN2SYn6V.js": "0baa0f4a0af2ee59f48d8f79ea5736143840a3dcef5ab0b3088bd716b2dcd980",
+      "taxi/government-data.json": "755ccae78e10a507fbf0537bd5d0597aa4f7bebe97d7b5825199fb0472fdbafb",
+      "taxi/road-graph.js": "78f3f2d916148f6e2d6ab261906e661072f995a64ca027e5642395bf5d6ac48e",
+      "taxi/roaming.js": "0a73374b8482399f122bba7483b66cc7b76fd32b855d2c313e0ee801646c8d13",
+      "transit/services.json": "59c1c4faef3fadbf32748b0707231f78c3ec36aa4d2edc47de39b8c39485c542",
+      "transit/tram-stops.json": "4b34355bd7c4cceb4e7afbd73fd2e7c49ecc73d89a01f4082468c693cbc56684",
+      "transit/walk-links.json": "5cdff906f22c51146abc9e6e565f0b07a1d57a739239af403482f2dff2c6658c",
+      "transit/walk-links.json.gz": "9505ee7867641cd5c7bbf2a3c76a4216c7cdc05fdd7a72d7da4cf85eb2f6420b"
+    },
+    "signature": "f32dfcc1a1ba60f3987b03f198560960bd23364aeb86d8600395d1ea86313fc3"
+  },
+  "fixtureSha256": "791197c289bf10787b0104c3d1fc5ba70ec030f305507cc56b924be744588b0e",
+  "expectedCells": 60,
+  "observedCells": 60,
+  "completedComparisonCells": 60,
+  "completedAndAuditedCells": 48,
+  "classificationCounts": {
+    "completed-with-candidates": 48,
+    "completed-without-candidate-needs-diagnosis": 12
+  },
+  "firstResult": {
+    "count": 48,
+    "minMs": 2592,
+    "medianMs": 7951,
+    "p90Ms": 27948,
+    "p95Ms": 28308,
+    "percentileMethod": "nearest-rank",
+    "maxMs": 33005
+  },
+  "fullCandidateComparison": {
+    "count": 60,
+    "minMs": 7978.345272999999,
+    "medianMs": 20219.4187295,
+    "p90Ms": 39564.798253,
+    "p95Ms": 48965.852247,
+    "percentileMethod": "nearest-rank",
+    "maxMs": 59782.581389
+  },
+  "rows": [
+    {
+      "id": "exits-cross-ordinary-taxi-off",
+      "rowId": "exits-cross",
+      "stage": "A",
+      "need": "ordinary",
+      "taxi": false,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 7978.345272999999,
+      "completeAndAudited": true,
+      "report": "exits-cross-ordinary-taxi-off.json",
+      "firstResultMs": 5717,
+      "fullCandidateWallMs": 7978.345272999999,
+      "stoppedWallMs": 7978.345272999999,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 24,
+          "cost": 7.87,
+          "walkMinutes": 16,
+          "waitMinutes": 1,
+          "transfers": 0,
+          "modes": [
+            "walk",
+            "metro",
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": [
+        {
+          "id": "walk",
+          "failureStatus": "NO_ROUTE",
+          "cost": 0,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        }
+      ]
+    },
+    {
+      "id": "exits-cross-ordinary-taxi-on",
+      "rowId": "exits-cross",
+      "stage": "A",
+      "need": "ordinary",
+      "taxi": true,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 15521.696714999998,
+      "completeAndAudited": true,
+      "report": "exits-cross-ordinary-taxi-on.json",
+      "firstResultMs": 6649,
+      "fullCandidateWallMs": 15521.696714999998,
+      "stoppedWallMs": 15521.696714999998,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 24,
+          "cost": 7.87,
+          "walkMinutes": 16,
+          "waitMinutes": 1,
+          "transfers": 0,
+          "modes": [
+            "walk",
+            "metro",
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": [
+        {
+          "id": "walk",
+          "failureStatus": "NO_ROUTE",
+          "cost": 0,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        },
+        {
+          "id": "taxi-direct",
+          "incompleteReason": "UNVERIFIED_ENDPOINT_ACCESS",
+          "endpointAccess": [
+            {
+              "side": "origin",
+              "requested": {
+                "id": "ADM:portal:E2",
+                "node_id": "ADM:N:15dedbcfbae59e",
+                "coordinates": [
+                  114.16624518,
+                  22.27888752,
+                  6
+                ]
+              },
+              "status": "unverified-node-or-floor"
+            },
+            {
+              "side": "destination",
+              "requested": {
+                "id": "HUH:portal:B2-lift",
+                "node_id": "HUH:N:1883cb44eadc07",
+                "coordinates": [
+                  114.18193105,
+                  22.30359537,
+                  13.8
+                ]
+              },
+              "status": "unverified-node-or-floor"
+            }
+          ],
+          "cost": 78.8,
+          "scenarioOnly": true,
+          "simulationOnly": true
+        }
+      ]
+    },
+    {
+      "id": "exits-cross-luggage-taxi-off",
+      "rowId": "exits-cross",
+      "stage": "A",
+      "need": "luggage",
+      "taxi": false,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 11757.524199,
+      "completeAndAudited": true,
+      "report": "exits-cross-luggage-taxi-off.json",
+      "firstResultMs": 9349,
+      "fullCandidateWallMs": 11757.524199,
+      "stoppedWallMs": 11757.524199,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 31,
+          "cost": 7.87,
+          "walkMinutes": 22,
+          "waitMinutes": 3,
+          "transfers": 0,
+          "modes": [
+            "walk",
+            "metro",
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": [
+        {
+          "id": "walk",
+          "failureStatus": "NO_ROUTE",
+          "cost": 0,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        }
+      ]
+    },
+    {
+      "id": "exits-cross-luggage-taxi-on",
+      "rowId": "exits-cross",
+      "stage": "A",
+      "need": "luggage",
+      "taxi": true,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 19459.110426,
+      "completeAndAudited": true,
+      "report": "exits-cross-luggage-taxi-on.json",
+      "firstResultMs": 10004,
+      "fullCandidateWallMs": 19459.110426,
+      "stoppedWallMs": 19459.110426,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 31,
+          "cost": 7.87,
+          "walkMinutes": 22,
+          "waitMinutes": 3,
+          "transfers": 0,
+          "modes": [
+            "walk",
+            "metro",
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": [
+        {
+          "id": "walk",
+          "failureStatus": "NO_ROUTE",
+          "cost": 0,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        },
+        {
+          "id": "taxi-direct",
+          "incompleteReason": "UNVERIFIED_ENDPOINT_ACCESS",
+          "endpointAccess": [
+            {
+              "side": "origin",
+              "requested": {
+                "id": "ADM:portal:E2",
+                "node_id": "ADM:N:15dedbcfbae59e",
+                "coordinates": [
+                  114.16624518,
+                  22.27888752,
+                  6
+                ]
+              },
+              "status": "unverified-node-or-floor"
+            },
+            {
+              "side": "destination",
+              "requested": {
+                "id": "HUH:portal:B2-lift",
+                "node_id": "HUH:N:1883cb44eadc07",
+                "coordinates": [
+                  114.18193105,
+                  22.30359537,
+                  13.8
+                ]
+              },
+              "status": "unverified-node-or-floor"
+            }
+          ],
+          "cost": 78.8,
+          "scenarioOnly": true,
+          "simulationOnly": true
+        }
+      ]
+    },
+    {
+      "id": "exits-cross-escalator-taxi-off",
+      "rowId": "exits-cross",
+      "stage": "A",
+      "need": "escalator",
+      "taxi": false,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 14332.245321999999,
+      "completeAndAudited": true,
+      "report": "exits-cross-escalator-taxi-off.json",
+      "firstResultMs": 11442,
+      "fullCandidateWallMs": 14332.245321999999,
+      "stoppedWallMs": 14332.245321999999,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 24,
+          "cost": 7.87,
+          "walkMinutes": 16,
+          "waitMinutes": 1,
+          "transfers": 0,
+          "modes": [
+            "walk",
+            "metro",
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": [
+        {
+          "id": "walk",
+          "failureStatus": "NO_ROUTE",
+          "cost": 0,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        }
+      ]
+    },
+    {
+      "id": "exits-cross-escalator-taxi-on",
+      "rowId": "exits-cross",
+      "stage": "A",
+      "need": "escalator",
+      "taxi": true,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 16593.770335,
+      "completeAndAudited": true,
+      "report": "exits-cross-escalator-taxi-on.json",
+      "firstResultMs": 9141,
+      "fullCandidateWallMs": 16593.770335,
+      "stoppedWallMs": 16593.770335,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 24,
+          "cost": 7.87,
+          "walkMinutes": 16,
+          "waitMinutes": 1,
+          "transfers": 0,
+          "modes": [
+            "walk",
+            "metro",
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": [
+        {
+          "id": "walk",
+          "failureStatus": "NO_ROUTE",
+          "cost": 0,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        },
+        {
+          "id": "taxi-direct",
+          "incompleteReason": "UNVERIFIED_ENDPOINT_ACCESS",
+          "endpointAccess": [
+            {
+              "side": "origin",
+              "requested": {
+                "id": "ADM:portal:E2",
+                "node_id": "ADM:N:15dedbcfbae59e",
+                "coordinates": [
+                  114.16624518,
+                  22.27888752,
+                  6
+                ]
+              },
+              "status": "unverified-node-or-floor"
+            },
+            {
+              "side": "destination",
+              "requested": {
+                "id": "HUH:portal:B2-lift",
+                "node_id": "HUH:N:1883cb44eadc07",
+                "coordinates": [
+                  114.18193105,
+                  22.30359537,
+                  13.8
+                ]
+              },
+              "status": "unverified-node-or-floor"
+            }
+          ],
+          "cost": 78.8,
+          "scenarioOnly": true,
+          "simulationOnly": true
+        }
+      ]
+    },
+    {
+      "id": "exits-cross-lift-taxi-off",
+      "rowId": "exits-cross",
+      "stage": "A",
+      "need": "lift",
+      "taxi": false,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 12451.739205999998,
+      "completeAndAudited": true,
+      "report": "exits-cross-lift-taxi-off.json",
+      "firstResultMs": 10138,
+      "fullCandidateWallMs": 12451.739205999998,
+      "stoppedWallMs": 12451.739205999998,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 24,
+          "cost": 7.87,
+          "walkMinutes": 17,
+          "waitMinutes": 1,
+          "transfers": 0,
+          "modes": [
+            "walk",
+            "metro",
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": [
+        {
+          "id": "walk",
+          "failureStatus": "NO_ROUTE",
+          "cost": 0,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        }
+      ]
+    },
+    {
+      "id": "exits-cross-lift-taxi-on",
+      "rowId": "exits-cross",
+      "stage": "A",
+      "need": "lift",
+      "taxi": true,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 37743.977267999995,
+      "completeAndAudited": true,
+      "report": "exits-cross-lift-taxi-on.json",
+      "firstResultMs": 9879,
+      "fullCandidateWallMs": 37743.977267999995,
+      "stoppedWallMs": 37743.977267999995,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 24,
+          "cost": 7.87,
+          "walkMinutes": 17,
+          "waitMinutes": 1,
+          "transfers": 0,
+          "modes": [
+            "walk",
+            "metro",
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": [
+        {
+          "id": "walk",
+          "failureStatus": "NO_ROUTE",
+          "cost": 0,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        },
+        {
+          "id": "taxi-direct",
+          "incompleteReason": "UNVERIFIED_ENDPOINT_ACCESS",
+          "endpointAccess": [
+            {
+              "side": "origin",
+              "requested": {
+                "id": "ADM:portal:E2",
+                "node_id": "ADM:N:15dedbcfbae59e",
+                "coordinates": [
+                  114.16624518,
+                  22.27888752,
+                  6
+                ]
+              },
+              "status": "unverified-node-or-floor"
+            },
+            {
+              "side": "destination",
+              "requested": {
+                "id": "HUH:portal:B2-lift",
+                "node_id": "HUH:N:1883cb44eadc07",
+                "coordinates": [
+                  114.18193105,
+                  22.30359537,
+                  13.8
+                ]
+              },
+              "status": "unverified-node-or-floor"
+            }
+          ],
+          "cost": 78.8,
+          "scenarioOnly": true,
+          "simulationOnly": true
+        }
+      ]
+    },
+    {
+      "id": "exits-cross-accessible-taxi-off",
+      "rowId": "exits-cross",
+      "stage": "A",
+      "need": "accessible",
+      "taxi": false,
+      "classification": "completed-without-candidate-needs-diagnosis",
+      "recordedClassification": "completed-without-candidate-needs-diagnosis",
+      "recordedFullCandidateWallMs": 49002.24524800001,
+      "completeAndAudited": false,
+      "report": "exits-cross-accessible-taxi-off.json",
+      "firstResultMs": null,
+      "fullCandidateWallMs": 49002.24524800001,
+      "stoppedWallMs": 49002.24524800001,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [],
+      "unavailable": [
+        {
+          "id": "walk",
+          "failureStatus": "NO_ROUTE",
+          "cost": 0,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        },
+        {
+          "id": "transit-detailed",
+          "failureStatus": "NO_ROUTE",
+          "cost": 5,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        },
+        {
+          "id": "metro",
+          "failureStatus": "NO_ROUTE",
+          "cost": 6,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        }
+      ]
+    },
+    {
+      "id": "exits-cross-accessible-taxi-on",
+      "rowId": "exits-cross",
+      "stage": "A",
+      "need": "accessible",
+      "taxi": true,
+      "classification": "completed-without-candidate-needs-diagnosis",
+      "recordedClassification": "completed-without-candidate-needs-diagnosis",
+      "recordedFullCandidateWallMs": 47903.092592,
+      "completeAndAudited": false,
+      "report": "exits-cross-accessible-taxi-on.json",
+      "firstResultMs": null,
+      "fullCandidateWallMs": 47903.092592,
+      "stoppedWallMs": 47903.092592,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [],
+      "unavailable": [
+        {
+          "id": "walk",
+          "failureStatus": "NO_ROUTE",
+          "cost": 0,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        },
+        {
+          "id": "transit-detailed",
+          "failureStatus": "NO_ROUTE",
+          "cost": 5,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        },
+        {
+          "id": "metro",
+          "failureStatus": "NO_ROUTE",
+          "cost": 6,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        }
+      ]
+    },
+    {
+      "id": "stops-cross-ordinary-taxi-off",
+      "rowId": "stops-cross",
+      "stage": "A",
+      "need": "ordinary",
+      "taxi": false,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 9025.566979000001,
+      "completeAndAudited": true,
+      "report": "stops-cross-ordinary-taxi-off.json",
+      "firstResultMs": 6790,
+      "fullCandidateWallMs": 9025.566979000001,
+      "stoppedWallMs": 9025.566979000001,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 57,
+          "cost": 13.57,
+          "walkMinutes": 16,
+          "waitMinutes": 23,
+          "transfers": 1,
+          "modes": [
+            "bus",
+            "walk",
+            "metro",
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": [
+        {
+          "id": "walk",
+          "failureStatus": "NO_ROUTE",
+          "cost": 0,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        }
+      ]
+    },
+    {
+      "id": "stops-cross-ordinary-taxi-on",
+      "rowId": "stops-cross",
+      "stage": "A",
+      "need": "ordinary",
+      "taxi": true,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 13205.765268,
+      "completeAndAudited": true,
+      "report": "stops-cross-ordinary-taxi-on.json",
+      "firstResultMs": 2674,
+      "fullCandidateWallMs": 13205.765268,
+      "stoppedWallMs": 13205.765268,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 57,
+          "cost": 13.57,
+          "walkMinutes": 16,
+          "waitMinutes": 23,
+          "transfers": 1,
+          "modes": [
+            "bus",
+            "walk",
+            "metro",
+            "walk"
+          ],
+          "failedChecks": []
+        },
+        {
+          "id": "taxi-direct",
+          "pass": true,
+          "minutes": 18,
+          "cost": 95.23,
+          "walkMinutes": 1,
+          "waitMinutes": 3.9172020278686737,
+          "transfers": 0,
+          "modes": [
+            "walk",
+            "taxi",
+            "walk"
+          ],
+          "failedChecks": []
+        },
+        {
+          "id": "taxi-last-metro-ADM:portal:E2",
+          "pass": true,
+          "minutes": 57,
+          "cost": 42.57,
+          "walkMinutes": 14,
+          "waitMinutes": 23,
+          "transfers": 2,
+          "modes": [
+            "bus",
+            "walk",
+            "metro",
+            "walk",
+            "taxi",
+            "walk"
+          ],
+          "failedChecks": []
+        },
+        {
+          "id": "taxi-last-bus-td:1279",
+          "pass": true,
+          "minutes": 35,
+          "cost": 95.53,
+          "walkMinutes": 1,
+          "waitMinutes": 20,
+          "transfers": 1,
+          "modes": [
+            "bus",
+            "walk",
+            "taxi",
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": [
+        {
+          "id": "walk",
+          "failureStatus": "NO_ROUTE",
+          "cost": 0,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        }
+      ]
+    },
+    {
+      "id": "stops-cross-luggage-taxi-off",
+      "rowId": "stops-cross",
+      "stage": "A",
+      "need": "luggage",
+      "taxi": false,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 9954.930545000001,
+      "completeAndAudited": true,
+      "report": "stops-cross-luggage-taxi-off.json",
+      "firstResultMs": 7797,
+      "fullCandidateWallMs": 9954.930545000001,
+      "stoppedWallMs": 9954.930545000001,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 60,
+          "cost": 13.57,
+          "walkMinutes": 19,
+          "waitMinutes": 23,
+          "transfers": 1,
+          "modes": [
+            "bus",
+            "walk",
+            "metro",
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": [
+        {
+          "id": "walk",
+          "failureStatus": "NO_ROUTE",
+          "cost": 0,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        }
+      ]
+    },
+    {
+      "id": "stops-cross-luggage-taxi-on",
+      "rowId": "stops-cross",
+      "stage": "A",
+      "need": "luggage",
+      "taxi": true,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 16142.48358,
+      "completeAndAudited": true,
+      "report": "stops-cross-luggage-taxi-on.json",
+      "firstResultMs": 2592,
+      "fullCandidateWallMs": 16142.48358,
+      "stoppedWallMs": 16142.48358,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "taxi-direct",
+          "pass": true,
+          "minutes": 18,
+          "cost": 95.23,
+          "walkMinutes": 1,
+          "waitMinutes": 3.9172020278686737,
+          "transfers": 0,
+          "modes": [
+            "walk",
+            "taxi",
+            "walk"
+          ],
+          "failedChecks": []
+        },
+        {
+          "id": "taxi-last-bus-td:1279",
+          "pass": true,
+          "minutes": 35,
+          "cost": 95.53,
+          "walkMinutes": 1,
+          "waitMinutes": 20,
+          "transfers": 1,
+          "modes": [
+            "bus",
+            "walk",
+            "taxi",
+            "walk"
+          ],
+          "failedChecks": []
+        },
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 60,
+          "cost": 13.57,
+          "walkMinutes": 19,
+          "waitMinutes": 23,
+          "transfers": 1,
+          "modes": [
+            "bus",
+            "walk",
+            "metro",
+            "walk"
+          ],
+          "failedChecks": []
+        },
+        {
+          "id": "taxi-last-metro-ADM:portal:E2",
+          "pass": true,
+          "minutes": 61,
+          "cost": 42.57,
+          "walkMinutes": 19,
+          "waitMinutes": 23,
+          "transfers": 2,
+          "modes": [
+            "bus",
+            "walk",
+            "metro",
+            "walk",
+            "taxi",
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": [
+        {
+          "id": "walk",
+          "failureStatus": "NO_ROUTE",
+          "cost": 0,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        }
+      ]
+    },
+    {
+      "id": "stops-cross-escalator-taxi-off",
+      "rowId": "stops-cross",
+      "stage": "A",
+      "need": "escalator",
+      "taxi": false,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 10466.648345999998,
+      "completeAndAudited": true,
+      "report": "stops-cross-escalator-taxi-off.json",
+      "firstResultMs": 8095,
+      "fullCandidateWallMs": 10466.648345999998,
+      "stoppedWallMs": 10466.648345999998,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 57,
+          "cost": 13.57,
+          "walkMinutes": 16,
+          "waitMinutes": 23,
+          "transfers": 1,
+          "modes": [
+            "bus",
+            "walk",
+            "metro",
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": [
+        {
+          "id": "walk",
+          "failureStatus": "NO_ROUTE",
+          "cost": 0,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        }
+      ]
+    },
+    {
+      "id": "stops-cross-escalator-taxi-on",
+      "rowId": "stops-cross",
+      "stage": "A",
+      "need": "escalator",
+      "taxi": true,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 14804.381415,
+      "completeAndAudited": true,
+      "report": "stops-cross-escalator-taxi-on.json",
+      "firstResultMs": 3068,
+      "fullCandidateWallMs": 14804.381415,
+      "stoppedWallMs": 14804.381415,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 57,
+          "cost": 13.57,
+          "walkMinutes": 16,
+          "waitMinutes": 23,
+          "transfers": 1,
+          "modes": [
+            "bus",
+            "walk",
+            "metro",
+            "walk"
+          ],
+          "failedChecks": []
+        },
+        {
+          "id": "taxi-direct",
+          "pass": true,
+          "minutes": 18,
+          "cost": 95.23,
+          "walkMinutes": 1,
+          "waitMinutes": 3.9172020278686737,
+          "transfers": 0,
+          "modes": [
+            "walk",
+            "taxi",
+            "walk"
+          ],
+          "failedChecks": []
+        },
+        {
+          "id": "taxi-last-metro-ADM:portal:E2",
+          "pass": true,
+          "minutes": 57,
+          "cost": 42.57,
+          "walkMinutes": 14,
+          "waitMinutes": 23,
+          "transfers": 2,
+          "modes": [
+            "bus",
+            "walk",
+            "metro",
+            "walk",
+            "taxi",
+            "walk"
+          ],
+          "failedChecks": []
+        },
+        {
+          "id": "taxi-last-bus-td:1279",
+          "pass": true,
+          "minutes": 35,
+          "cost": 95.53,
+          "walkMinutes": 1,
+          "waitMinutes": 20,
+          "transfers": 1,
+          "modes": [
+            "bus",
+            "walk",
+            "taxi",
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": [
+        {
+          "id": "walk",
+          "failureStatus": "NO_ROUTE",
+          "cost": 0,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        }
+      ]
+    },
+    {
+      "id": "stops-cross-lift-taxi-off",
+      "rowId": "stops-cross",
+      "stage": "A",
+      "need": "lift",
+      "taxi": false,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 11893.172869999999,
+      "completeAndAudited": true,
+      "report": "stops-cross-lift-taxi-off.json",
+      "firstResultMs": 10004,
+      "fullCandidateWallMs": 11893.172869999999,
+      "stoppedWallMs": 11893.172869999999,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 57,
+          "cost": 13.57,
+          "walkMinutes": 16,
+          "waitMinutes": 23,
+          "transfers": 1,
+          "modes": [
+            "bus",
+            "walk",
+            "metro",
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": [
+        {
+          "id": "walk",
+          "failureStatus": "NO_ROUTE",
+          "cost": 0,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        }
+      ]
+    },
+    {
+      "id": "stops-cross-lift-taxi-on",
+      "rowId": "stops-cross",
+      "stage": "A",
+      "need": "lift",
+      "taxi": true,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 16049.485579999999,
+      "completeAndAudited": true,
+      "report": "stops-cross-lift-taxi-on.json",
+      "firstResultMs": 2680,
+      "fullCandidateWallMs": 16049.485579999999,
+      "stoppedWallMs": 16049.485579999999,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "taxi-direct",
+          "pass": true,
+          "minutes": 18,
+          "cost": 95.23,
+          "walkMinutes": 1,
+          "waitMinutes": 3.9172020278686737,
+          "transfers": 0,
+          "modes": [
+            "walk",
+            "taxi",
+            "walk"
+          ],
+          "failedChecks": []
+        },
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 57,
+          "cost": 13.57,
+          "walkMinutes": 16,
+          "waitMinutes": 23,
+          "transfers": 1,
+          "modes": [
+            "bus",
+            "walk",
+            "metro",
+            "walk"
+          ],
+          "failedChecks": []
+        },
+        {
+          "id": "taxi-last-metro-ADM:portal:E2",
+          "pass": true,
+          "minutes": 57,
+          "cost": 42.57,
+          "walkMinutes": 14,
+          "waitMinutes": 23,
+          "transfers": 2,
+          "modes": [
+            "bus",
+            "walk",
+            "metro",
+            "walk",
+            "taxi",
+            "walk"
+          ],
+          "failedChecks": []
+        },
+        {
+          "id": "taxi-last-bus-td:1279",
+          "pass": true,
+          "minutes": 35,
+          "cost": 95.53,
+          "walkMinutes": 1,
+          "waitMinutes": 20,
+          "transfers": 1,
+          "modes": [
+            "bus",
+            "walk",
+            "taxi",
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": [
+        {
+          "id": "walk",
+          "failureStatus": "NO_ROUTE",
+          "cost": 0,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        }
+      ]
+    },
+    {
+      "id": "stops-cross-accessible-taxi-off",
+      "rowId": "stops-cross",
+      "stage": "A",
+      "need": "accessible",
+      "taxi": false,
+      "classification": "completed-without-candidate-needs-diagnosis",
+      "recordedClassification": "completed-without-candidate-needs-diagnosis",
+      "recordedFullCandidateWallMs": 23391.331086000002,
+      "completeAndAudited": false,
+      "report": "stops-cross-accessible-taxi-off.json",
+      "firstResultMs": null,
+      "fullCandidateWallMs": 23391.331086000002,
+      "stoppedWallMs": 23391.331086000002,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [],
+      "unavailable": [
+        {
+          "id": "walk",
+          "failureStatus": "NO_ROUTE",
+          "cost": 0,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        },
+        {
+          "id": "transit-detailed",
+          "failureStatus": "NO_ROUTE",
+          "cost": 5,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        },
+        {
+          "id": "metro",
+          "cost": 14.6,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        }
+      ]
+    },
+    {
+      "id": "stops-cross-accessible-taxi-on",
+      "rowId": "stops-cross",
+      "stage": "A",
+      "need": "accessible",
+      "taxi": true,
+      "classification": "completed-without-candidate-needs-diagnosis",
+      "recordedClassification": "completed-without-candidate-needs-diagnosis",
+      "recordedFullCandidateWallMs": 29608.016017,
+      "completeAndAudited": false,
+      "report": "stops-cross-accessible-taxi-on.json",
+      "firstResultMs": null,
+      "fullCandidateWallMs": 29608.016017,
+      "stoppedWallMs": 29608.016017,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [],
+      "unavailable": [
+        {
+          "id": "walk",
+          "failureStatus": "NO_ROUTE",
+          "cost": 0,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        },
+        {
+          "id": "transit-detailed",
+          "failureStatus": "NO_ROUTE",
+          "cost": 5,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        },
+        {
+          "id": "metro",
+          "cost": 14.6,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        }
+      ]
+    },
+    {
+      "id": "mall-floors-ordinary-taxi-off",
+      "rowId": "mall-floors",
+      "stage": "A",
+      "need": "ordinary",
+      "taxi": false,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 30775.989255,
+      "completeAndAudited": true,
+      "report": "mall-floors-ordinary-taxi-off.json",
+      "firstResultMs": 26080,
+      "fullCandidateWallMs": 30775.989255,
+      "stoppedWallMs": 30775.989255,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "transit-detailed",
+          "pass": true,
+          "minutes": 5,
+          "cost": 0,
+          "walkMinutes": 5,
+          "waitMinutes": 0,
+          "transfers": 0,
+          "modes": [
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": []
+    },
+    {
+      "id": "mall-floors-ordinary-taxi-on",
+      "rowId": "mall-floors",
+      "stage": "A",
+      "need": "ordinary",
+      "taxi": true,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 31110.931078,
+      "completeAndAudited": true,
+      "report": "mall-floors-ordinary-taxi-on.json",
+      "firstResultMs": 27948,
+      "fullCandidateWallMs": 31110.931078,
+      "stoppedWallMs": 31110.931078,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "transit-detailed",
+          "pass": true,
+          "minutes": 5,
+          "cost": 0,
+          "walkMinutes": 5,
+          "waitMinutes": 0,
+          "transfers": 0,
+          "modes": [
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": [
+        {
+          "id": "taxi-direct",
+          "incompleteReason": "UNVERIFIED_ENDPOINT_ACCESS",
+          "endpointAccess": [
+            {
+              "side": "origin",
+              "requested": {
+                "id": "pacific-place:floor:250000101",
+                "floorId": "250000101",
+                "coordinates": [
+                  114.16432165,
+                  22.27762541
+                ]
+              },
+              "status": "unverified-node-or-floor"
+            },
+            {
+              "side": "destination",
+              "requested": {
+                "id": "pacific-place:floor:250000073",
+                "floorId": "250000073",
+                "coordinates": [
+                  114.16432165,
+                  22.27762541
+                ]
+              },
+              "status": "unverified-node-or-floor"
+            }
+          ],
+          "cost": 29,
+          "scenarioOnly": true,
+          "simulationOnly": true
+        }
+      ]
+    },
+    {
+      "id": "mall-floors-luggage-taxi-off",
+      "rowId": "mall-floors",
+      "stage": "A",
+      "need": "luggage",
+      "taxi": false,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 25622.742952,
+      "completeAndAudited": true,
+      "report": "mall-floors-luggage-taxi-off.json",
+      "firstResultMs": 22692,
+      "fullCandidateWallMs": 25622.742952,
+      "stoppedWallMs": 25622.742952,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "transit-detailed",
+          "pass": true,
+          "minutes": 5,
+          "cost": 0,
+          "walkMinutes": 5,
+          "waitMinutes": 0,
+          "transfers": 0,
+          "modes": [
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": []
+    },
+    {
+      "id": "mall-floors-luggage-taxi-on",
+      "rowId": "mall-floors",
+      "stage": "A",
+      "need": "luggage",
+      "taxi": true,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 32010.675899,
+      "completeAndAudited": true,
+      "report": "mall-floors-luggage-taxi-on.json",
+      "firstResultMs": 28402,
+      "fullCandidateWallMs": 32010.675899,
+      "stoppedWallMs": 32010.675899,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "transit-detailed",
+          "pass": true,
+          "minutes": 5,
+          "cost": 0,
+          "walkMinutes": 5,
+          "waitMinutes": 0,
+          "transfers": 0,
+          "modes": [
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": [
+        {
+          "id": "taxi-direct",
+          "incompleteReason": "UNVERIFIED_ENDPOINT_ACCESS",
+          "endpointAccess": [
+            {
+              "side": "origin",
+              "requested": {
+                "id": "pacific-place:floor:250000101",
+                "floorId": "250000101",
+                "coordinates": [
+                  114.16432165,
+                  22.27762541
+                ]
+              },
+              "status": "unverified-node-or-floor"
+            },
+            {
+              "side": "destination",
+              "requested": {
+                "id": "pacific-place:floor:250000073",
+                "floorId": "250000073",
+                "coordinates": [
+                  114.16432165,
+                  22.27762541
+                ]
+              },
+              "status": "unverified-node-or-floor"
+            }
+          ],
+          "cost": 29,
+          "scenarioOnly": true,
+          "simulationOnly": true
+        }
+      ]
+    },
+    {
+      "id": "mall-floors-escalator-taxi-off",
+      "rowId": "mall-floors",
+      "stage": "A",
+      "need": "escalator",
+      "taxi": false,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 30470.562871000002,
+      "completeAndAudited": true,
+      "report": "mall-floors-escalator-taxi-off.json",
+      "firstResultMs": 27169,
+      "fullCandidateWallMs": 30470.562871000002,
+      "stoppedWallMs": 30470.562871000002,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "transit-detailed",
+          "pass": true,
+          "minutes": 5,
+          "cost": 0,
+          "walkMinutes": 5,
+          "waitMinutes": 0,
+          "transfers": 0,
+          "modes": [
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": []
+    },
+    {
+      "id": "mall-floors-escalator-taxi-on",
+      "rowId": "mall-floors",
+      "stage": "A",
+      "need": "escalator",
+      "taxi": true,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 31632.201832,
+      "completeAndAudited": true,
+      "report": "mall-floors-escalator-taxi-on.json",
+      "firstResultMs": 28115,
+      "fullCandidateWallMs": 31632.201832,
+      "stoppedWallMs": 31632.201832,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "transit-detailed",
+          "pass": true,
+          "minutes": 5,
+          "cost": 0,
+          "walkMinutes": 5,
+          "waitMinutes": 0,
+          "transfers": 0,
+          "modes": [
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": [
+        {
+          "id": "taxi-direct",
+          "incompleteReason": "UNVERIFIED_ENDPOINT_ACCESS",
+          "endpointAccess": [
+            {
+              "side": "origin",
+              "requested": {
+                "id": "pacific-place:floor:250000101",
+                "floorId": "250000101",
+                "coordinates": [
+                  114.16432165,
+                  22.27762541
+                ]
+              },
+              "status": "unverified-node-or-floor"
+            },
+            {
+              "side": "destination",
+              "requested": {
+                "id": "pacific-place:floor:250000073",
+                "floorId": "250000073",
+                "coordinates": [
+                  114.16432165,
+                  22.27762541
+                ]
+              },
+              "status": "unverified-node-or-floor"
+            }
+          ],
+          "cost": 29,
+          "scenarioOnly": true,
+          "simulationOnly": true
+        }
+      ]
+    },
+    {
+      "id": "mall-floors-lift-taxi-off",
+      "rowId": "mall-floors",
+      "stage": "A",
+      "need": "lift",
+      "taxi": false,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 32060.732985,
+      "completeAndAudited": true,
+      "report": "mall-floors-lift-taxi-off.json",
+      "firstResultMs": 28308,
+      "fullCandidateWallMs": 32060.732985,
+      "stoppedWallMs": 32060.732985,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "transit-detailed",
+          "pass": true,
+          "minutes": 5,
+          "cost": 0,
+          "walkMinutes": 5,
+          "waitMinutes": 0,
+          "transfers": 0,
+          "modes": [
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": []
+    },
+    {
+      "id": "mall-floors-lift-taxi-on",
+      "rowId": "mall-floors",
+      "stage": "A",
+      "need": "lift",
+      "taxi": true,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 37031.859486,
+      "completeAndAudited": true,
+      "report": "mall-floors-lift-taxi-on.json",
+      "firstResultMs": 33005,
+      "fullCandidateWallMs": 37031.859486,
+      "stoppedWallMs": 37031.859486,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "transit-detailed",
+          "pass": true,
+          "minutes": 5,
+          "cost": 0,
+          "walkMinutes": 5,
+          "waitMinutes": 0,
+          "transfers": 0,
+          "modes": [
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": [
+        {
+          "id": "taxi-direct",
+          "incompleteReason": "UNVERIFIED_ENDPOINT_ACCESS",
+          "endpointAccess": [
+            {
+              "side": "origin",
+              "requested": {
+                "id": "pacific-place:floor:250000101",
+                "floorId": "250000101",
+                "coordinates": [
+                  114.16432165,
+                  22.27762541
+                ]
+              },
+              "status": "unverified-node-or-floor"
+            },
+            {
+              "side": "destination",
+              "requested": {
+                "id": "pacific-place:floor:250000073",
+                "floorId": "250000073",
+                "coordinates": [
+                  114.16432165,
+                  22.27762541
+                ]
+              },
+              "status": "unverified-node-or-floor"
+            }
+          ],
+          "cost": 29,
+          "scenarioOnly": true,
+          "simulationOnly": true
+        }
+      ]
+    },
+    {
+      "id": "mall-floors-accessible-taxi-off",
+      "rowId": "mall-floors",
+      "stage": "A",
+      "need": "accessible",
+      "taxi": false,
+      "classification": "completed-without-candidate-needs-diagnosis",
+      "recordedClassification": "completed-without-candidate-needs-diagnosis",
+      "recordedFullCandidateWallMs": 22393.079093,
+      "completeAndAudited": false,
+      "report": "mall-floors-accessible-taxi-off.json",
+      "firstResultMs": null,
+      "fullCandidateWallMs": 22393.079093,
+      "stoppedWallMs": 22393.079093,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [],
+      "unavailable": [
+        {
+          "id": "walk",
+          "failureStatus": "NO_ROUTE",
+          "cost": 0,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        },
+        {
+          "id": "transit-detailed",
+          "failureStatus": "NO_ROUTE",
+          "cost": 5,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        }
+      ]
+    },
+    {
+      "id": "mall-floors-accessible-taxi-on",
+      "rowId": "mall-floors",
+      "stage": "A",
+      "need": "accessible",
+      "taxi": true,
+      "classification": "completed-without-candidate-needs-diagnosis",
+      "recordedClassification": "completed-without-candidate-needs-diagnosis",
+      "recordedFullCandidateWallMs": 32811.685913999994,
+      "completeAndAudited": false,
+      "report": "mall-floors-accessible-taxi-on.json",
+      "firstResultMs": null,
+      "fullCandidateWallMs": 32811.685913999994,
+      "stoppedWallMs": 32811.685913999994,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [],
+      "unavailable": [
+        {
+          "id": "walk",
+          "failureStatus": "NO_ROUTE",
+          "cost": 0,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        },
+        {
+          "id": "transit-detailed",
+          "failureStatus": "NO_ROUTE",
+          "cost": 5,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        }
+      ]
+    },
+    {
+      "id": "kowloon-local-ordinary-taxi-off",
+      "rowId": "kowloon-local",
+      "stage": "B",
+      "need": "ordinary",
+      "taxi": false,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 10906.061507,
+      "completeAndAudited": true,
+      "report": "kowloon-local-ordinary-taxi-off.json",
+      "firstResultMs": 5687,
+      "fullCandidateWallMs": 10906.061507,
+      "stoppedWallMs": 10906.061507,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "walk",
+          "pass": true,
+          "minutes": 12,
+          "cost": 0,
+          "walkMinutes": 12,
+          "waitMinutes": 0,
+          "transfers": 0,
+          "modes": [
+            "walk"
+          ],
+          "failedChecks": []
+        },
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 10,
+          "cost": 5.4,
+          "walkMinutes": 6,
+          "waitMinutes": 4,
+          "transfers": 0,
+          "modes": [
+            "walk",
+            "bus"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": []
+    },
+    {
+      "id": "kowloon-local-ordinary-taxi-on",
+      "rowId": "kowloon-local",
+      "stage": "B",
+      "need": "ordinary",
+      "taxi": true,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 14967.967213000002,
+      "completeAndAudited": true,
+      "report": "kowloon-local-ordinary-taxi-on.json",
+      "firstResultMs": 6121,
+      "fullCandidateWallMs": 14967.967213000002,
+      "stoppedWallMs": 14967.967213000002,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "walk",
+          "pass": true,
+          "minutes": 12,
+          "cost": 0,
+          "walkMinutes": 12,
+          "waitMinutes": 0,
+          "transfers": 0,
+          "modes": [
+            "walk"
+          ],
+          "failedChecks": []
+        },
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 10,
+          "cost": 5.4,
+          "walkMinutes": 6,
+          "waitMinutes": 4,
+          "transfers": 0,
+          "modes": [
+            "walk",
+            "bus"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": [
+        {
+          "id": "taxi-direct",
+          "incompleteReason": "UNVERIFIED_ENDPOINT_ACCESS",
+          "endpointAccess": [
+            {
+              "side": "origin",
+              "requested": {
+                "id": "KOW:portal:C1",
+                "node_id": "KOW:N:80bd652ff86c03",
+                "coordinates": [
+                  114.16228083,
+                  22.30464011,
+                  13.5
+                ]
+              },
+              "status": "unverified-node-or-floor"
+            },
+            {
+              "side": "destination",
+              "requested": {
+                "id": "td:4246",
+                "coordinates": [
+                  114.16287,
+                  22.30489
+                ]
+              },
+              "status": "xy-scenario"
+            }
+          ],
+          "cost": 29,
+          "scenarioOnly": true,
+          "simulationOnly": true
+        }
+      ]
+    },
+    {
+      "id": "kowloon-local-luggage-taxi-off",
+      "rowId": "kowloon-local",
+      "stage": "B",
+      "need": "luggage",
+      "taxi": false,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 38232.814596000004,
+      "completeAndAudited": true,
+      "report": "kowloon-local-luggage-taxi-off.json",
+      "firstResultMs": 5116,
+      "fullCandidateWallMs": 38232.814596000004,
+      "stoppedWallMs": 38232.814596000004,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 10,
+          "cost": 5.4,
+          "walkMinutes": 6,
+          "waitMinutes": 4,
+          "transfers": 0,
+          "modes": [
+            "walk",
+            "bus"
+          ],
+          "failedChecks": []
+        },
+        {
+          "id": "walk",
+          "pass": true,
+          "minutes": 12,
+          "cost": 0,
+          "walkMinutes": 12,
+          "waitMinutes": 0,
+          "transfers": 0,
+          "modes": [
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": []
+    },
+    {
+      "id": "kowloon-local-luggage-taxi-on",
+      "rowId": "kowloon-local",
+      "stage": "B",
+      "need": "luggage",
+      "taxi": true,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 39564.798253,
+      "completeAndAudited": true,
+      "report": "kowloon-local-luggage-taxi-on.json",
+      "firstResultMs": 8534,
+      "fullCandidateWallMs": 39564.798253,
+      "stoppedWallMs": 39564.798253,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 10,
+          "cost": 5.4,
+          "walkMinutes": 6,
+          "waitMinutes": 4,
+          "transfers": 0,
+          "modes": [
+            "walk",
+            "bus"
+          ],
+          "failedChecks": []
+        },
+        {
+          "id": "walk",
+          "pass": true,
+          "minutes": 12,
+          "cost": 0,
+          "walkMinutes": 12,
+          "waitMinutes": 0,
+          "transfers": 0,
+          "modes": [
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": [
+        {
+          "id": "taxi-direct",
+          "incompleteReason": "UNVERIFIED_ENDPOINT_ACCESS",
+          "endpointAccess": [
+            {
+              "side": "origin",
+              "requested": {
+                "id": "KOW:portal:C1",
+                "node_id": "KOW:N:80bd652ff86c03",
+                "coordinates": [
+                  114.16228083,
+                  22.30464011,
+                  13.5
+                ]
+              },
+              "status": "unverified-node-or-floor"
+            },
+            {
+              "side": "destination",
+              "requested": {
+                "id": "td:4246",
+                "coordinates": [
+                  114.16287,
+                  22.30489
+                ]
+              },
+              "status": "xy-scenario"
+            }
+          ],
+          "cost": 29,
+          "scenarioOnly": true,
+          "simulationOnly": true
+        }
+      ]
+    },
+    {
+      "id": "kowloon-local-escalator-taxi-off",
+      "rowId": "kowloon-local",
+      "stage": "B",
+      "need": "escalator",
+      "taxi": false,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 48965.852247,
+      "completeAndAudited": true,
+      "report": "kowloon-local-escalator-taxi-off.json",
+      "firstResultMs": 8242,
+      "fullCandidateWallMs": 48965.852247,
+      "stoppedWallMs": 48965.852247,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "walk",
+          "pass": true,
+          "minutes": 12,
+          "cost": 0,
+          "walkMinutes": 12,
+          "waitMinutes": 0,
+          "transfers": 0,
+          "modes": [
+            "walk"
+          ],
+          "failedChecks": []
+        },
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 10,
+          "cost": 5.4,
+          "walkMinutes": 6,
+          "waitMinutes": 4,
+          "transfers": 0,
+          "modes": [
+            "walk",
+            "bus"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": []
+    },
+    {
+      "id": "kowloon-local-escalator-taxi-on",
+      "rowId": "kowloon-local",
+      "stage": "B",
+      "need": "escalator",
+      "taxi": true,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 59782.581389,
+      "completeAndAudited": true,
+      "report": "kowloon-local-escalator-taxi-on.json",
+      "firstResultMs": 6248,
+      "fullCandidateWallMs": 59782.581389,
+      "stoppedWallMs": 59782.581389,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "walk",
+          "pass": true,
+          "minutes": 12,
+          "cost": 0,
+          "walkMinutes": 12,
+          "waitMinutes": 0,
+          "transfers": 0,
+          "modes": [
+            "walk"
+          ],
+          "failedChecks": []
+        },
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 10,
+          "cost": 5.4,
+          "walkMinutes": 6,
+          "waitMinutes": 4,
+          "transfers": 0,
+          "modes": [
+            "walk",
+            "bus"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": [
+        {
+          "id": "taxi-direct",
+          "incompleteReason": "UNVERIFIED_ENDPOINT_ACCESS",
+          "endpointAccess": [
+            {
+              "side": "origin",
+              "requested": {
+                "id": "KOW:portal:C1",
+                "node_id": "KOW:N:80bd652ff86c03",
+                "coordinates": [
+                  114.16228083,
+                  22.30464011,
+                  13.5
+                ]
+              },
+              "status": "unverified-node-or-floor"
+            },
+            {
+              "side": "destination",
+              "requested": {
+                "id": "td:4246",
+                "coordinates": [
+                  114.16287,
+                  22.30489
+                ]
+              },
+              "status": "xy-scenario"
+            }
+          ],
+          "cost": 29,
+          "scenarioOnly": true,
+          "simulationOnly": true
+        }
+      ]
+    },
+    {
+      "id": "kowloon-local-lift-taxi-off",
+      "rowId": "kowloon-local",
+      "stage": "B",
+      "need": "lift",
+      "taxi": false,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 47412.920054,
+      "completeAndAudited": true,
+      "report": "kowloon-local-lift-taxi-off.json",
+      "firstResultMs": 7895,
+      "fullCandidateWallMs": 47412.920054,
+      "stoppedWallMs": 47412.920054,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "walk",
+          "pass": true,
+          "minutes": 12,
+          "cost": 0,
+          "walkMinutes": 12,
+          "waitMinutes": 0,
+          "transfers": 0,
+          "modes": [
+            "walk"
+          ],
+          "failedChecks": []
+        },
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 10,
+          "cost": 5.4,
+          "walkMinutes": 6,
+          "waitMinutes": 4,
+          "transfers": 0,
+          "modes": [
+            "walk",
+            "bus"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": []
+    },
+    {
+      "id": "kowloon-local-lift-taxi-on",
+      "rowId": "kowloon-local",
+      "stage": "B",
+      "need": "lift",
+      "taxi": true,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 53811.75214900001,
+      "completeAndAudited": true,
+      "report": "kowloon-local-lift-taxi-on.json",
+      "firstResultMs": 5450,
+      "fullCandidateWallMs": 53811.75214900001,
+      "stoppedWallMs": 53811.75214900001,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "walk",
+          "pass": true,
+          "minutes": 12,
+          "cost": 0,
+          "walkMinutes": 12,
+          "waitMinutes": 0,
+          "transfers": 0,
+          "modes": [
+            "walk"
+          ],
+          "failedChecks": []
+        },
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 10,
+          "cost": 5.4,
+          "walkMinutes": 6,
+          "waitMinutes": 4,
+          "transfers": 0,
+          "modes": [
+            "walk",
+            "bus"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": [
+        {
+          "id": "taxi-direct",
+          "incompleteReason": "UNVERIFIED_ENDPOINT_ACCESS",
+          "endpointAccess": [
+            {
+              "side": "origin",
+              "requested": {
+                "id": "KOW:portal:C1",
+                "node_id": "KOW:N:80bd652ff86c03",
+                "coordinates": [
+                  114.16228083,
+                  22.30464011,
+                  13.5
+                ]
+              },
+              "status": "unverified-node-or-floor"
+            },
+            {
+              "side": "destination",
+              "requested": {
+                "id": "td:4246",
+                "coordinates": [
+                  114.16287,
+                  22.30489
+                ]
+              },
+              "status": "xy-scenario"
+            }
+          ],
+          "cost": 29,
+          "scenarioOnly": true,
+          "simulationOnly": true
+        }
+      ]
+    },
+    {
+      "id": "kowloon-local-accessible-taxi-off",
+      "rowId": "kowloon-local",
+      "stage": "B",
+      "need": "accessible",
+      "taxi": false,
+      "classification": "completed-without-candidate-needs-diagnosis",
+      "recordedClassification": "completed-without-candidate-needs-diagnosis",
+      "recordedFullCandidateWallMs": 21175.183882999998,
+      "completeAndAudited": false,
+      "report": "kowloon-local-accessible-taxi-off.json",
+      "firstResultMs": null,
+      "fullCandidateWallMs": 21175.183882999998,
+      "stoppedWallMs": 21175.183882999998,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [],
+      "unavailable": [
+        {
+          "id": "walk",
+          "failureStatus": "NO_ROUTE",
+          "cost": 0,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        },
+        {
+          "id": "transit-detailed",
+          "failureStatus": "NO_ROUTE",
+          "cost": 5,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        }
+      ]
+    },
+    {
+      "id": "kowloon-local-accessible-taxi-on",
+      "rowId": "kowloon-local",
+      "stage": "B",
+      "need": "accessible",
+      "taxi": true,
+      "classification": "completed-without-candidate-needs-diagnosis",
+      "recordedClassification": "completed-without-candidate-needs-diagnosis",
+      "recordedFullCandidateWallMs": 24493.863395,
+      "completeAndAudited": false,
+      "report": "kowloon-local-accessible-taxi-on.json",
+      "firstResultMs": null,
+      "fullCandidateWallMs": 24493.863395,
+      "stoppedWallMs": 24493.863395,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [],
+      "unavailable": [
+        {
+          "id": "walk",
+          "failureStatus": "NO_ROUTE",
+          "cost": 0,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        },
+        {
+          "id": "transit-detailed",
+          "failureStatus": "NO_ROUTE",
+          "cost": 5,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        }
+      ]
+    },
+    {
+      "id": "land-island-ordinary-taxi-off",
+      "rowId": "land-island",
+      "stage": "B",
+      "need": "ordinary",
+      "taxi": false,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 9544.21723,
+      "completeAndAudited": true,
+      "report": "land-island-ordinary-taxi-off.json",
+      "firstResultMs": 6381,
+      "fullCandidateWallMs": 9544.21723,
+      "stoppedWallMs": 9544.21723,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 60,
+          "cost": 0,
+          "walkMinutes": 60,
+          "waitMinutes": 0,
+          "transfers": 0,
+          "modes": [
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": []
+    },
+    {
+      "id": "land-island-ordinary-taxi-on",
+      "rowId": "land-island",
+      "stage": "B",
+      "need": "ordinary",
+      "taxi": true,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 12683.083186,
+      "completeAndAudited": true,
+      "report": "land-island-ordinary-taxi-on.json",
+      "firstResultMs": 3634,
+      "fullCandidateWallMs": 12683.083186,
+      "stoppedWallMs": 12683.083186,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "taxi-direct",
+          "pass": true,
+          "minutes": 14,
+          "cost": 34.76,
+          "walkMinutes": 2,
+          "waitMinutes": 5.344375230383473,
+          "transfers": 0,
+          "modes": [
+            "walk",
+            "taxi",
+            "walk"
+          ],
+          "failedChecks": []
+        },
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 60,
+          "cost": 0,
+          "walkMinutes": 60,
+          "waitMinutes": 0,
+          "transfers": 0,
+          "modes": [
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": []
+    },
+    {
+      "id": "land-island-luggage-taxi-off",
+      "rowId": "land-island",
+      "stage": "B",
+      "need": "luggage",
+      "taxi": false,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 11633.584587,
+      "completeAndAudited": true,
+      "report": "land-island-luggage-taxi-off.json",
+      "firstResultMs": 8007,
+      "fullCandidateWallMs": 11633.584587,
+      "stoppedWallMs": 11633.584587,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 65,
+          "cost": 0,
+          "walkMinutes": 65,
+          "waitMinutes": 0,
+          "transfers": 0,
+          "modes": [
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": []
+    },
+    {
+      "id": "land-island-luggage-taxi-on",
+      "rowId": "land-island",
+      "stage": "B",
+      "need": "luggage",
+      "taxi": true,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 13800.463893,
+      "completeAndAudited": true,
+      "report": "land-island-luggage-taxi-on.json",
+      "firstResultMs": 2904,
+      "fullCandidateWallMs": 13800.463893,
+      "stoppedWallMs": 13800.463893,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "taxi-direct",
+          "pass": true,
+          "minutes": 14,
+          "cost": 34.76,
+          "walkMinutes": 2,
+          "waitMinutes": 5.344375230383473,
+          "transfers": 0,
+          "modes": [
+            "walk",
+            "taxi",
+            "walk"
+          ],
+          "failedChecks": []
+        },
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 65,
+          "cost": 0,
+          "walkMinutes": 65,
+          "waitMinutes": 0,
+          "transfers": 0,
+          "modes": [
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": []
+    },
+    {
+      "id": "land-island-escalator-taxi-off",
+      "rowId": "land-island",
+      "stage": "B",
+      "need": "escalator",
+      "taxi": false,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 14102.689369000002,
+      "completeAndAudited": true,
+      "report": "land-island-escalator-taxi-off.json",
+      "firstResultMs": 10581,
+      "fullCandidateWallMs": 14102.689369000002,
+      "stoppedWallMs": 14102.689369000002,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 60,
+          "cost": 0,
+          "walkMinutes": 60,
+          "waitMinutes": 0,
+          "transfers": 0,
+          "modes": [
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": []
+    },
+    {
+      "id": "land-island-escalator-taxi-on",
+      "rowId": "land-island",
+      "stage": "B",
+      "need": "escalator",
+      "taxi": true,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 15137.038895000002,
+      "completeAndAudited": true,
+      "report": "land-island-escalator-taxi-on.json",
+      "firstResultMs": 3541,
+      "fullCandidateWallMs": 15137.038895000002,
+      "stoppedWallMs": 15137.038895000002,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "taxi-direct",
+          "pass": true,
+          "minutes": 14,
+          "cost": 34.76,
+          "walkMinutes": 2,
+          "waitMinutes": 5.344375230383473,
+          "transfers": 0,
+          "modes": [
+            "walk",
+            "taxi",
+            "walk"
+          ],
+          "failedChecks": []
+        },
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 60,
+          "cost": 0,
+          "walkMinutes": 60,
+          "waitMinutes": 0,
+          "transfers": 0,
+          "modes": [
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": []
+    },
+    {
+      "id": "land-island-lift-taxi-off",
+      "rowId": "land-island",
+      "stage": "B",
+      "need": "lift",
+      "taxi": false,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 17772.163594999998,
+      "completeAndAudited": true,
+      "report": "land-island-lift-taxi-off.json",
+      "firstResultMs": 14190,
+      "fullCandidateWallMs": 17772.163594999998,
+      "stoppedWallMs": 17772.163594999998,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 65,
+          "cost": 0,
+          "walkMinutes": 65,
+          "waitMinutes": 0,
+          "transfers": 0,
+          "modes": [
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": []
+    },
+    {
+      "id": "land-island-lift-taxi-on",
+      "rowId": "land-island",
+      "stage": "B",
+      "need": "lift",
+      "taxi": true,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 12915.73777,
+      "completeAndAudited": true,
+      "report": "land-island-lift-taxi-on.json",
+      "firstResultMs": 3330,
+      "fullCandidateWallMs": 12915.73777,
+      "stoppedWallMs": 12915.73777,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "taxi-direct",
+          "pass": true,
+          "minutes": 14,
+          "cost": 34.76,
+          "walkMinutes": 2,
+          "waitMinutes": 5.344375230383473,
+          "transfers": 0,
+          "modes": [
+            "walk",
+            "taxi",
+            "walk"
+          ],
+          "failedChecks": []
+        },
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 65,
+          "cost": 0,
+          "walkMinutes": 65,
+          "waitMinutes": 0,
+          "transfers": 0,
+          "modes": [
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": []
+    },
+    {
+      "id": "land-island-accessible-taxi-off",
+      "rowId": "land-island",
+      "stage": "B",
+      "need": "accessible",
+      "taxi": false,
+      "classification": "completed-without-candidate-needs-diagnosis",
+      "recordedClassification": "completed-without-candidate-needs-diagnosis",
+      "recordedFullCandidateWallMs": 24228.031213000002,
+      "completeAndAudited": false,
+      "report": "land-island-accessible-taxi-off.json",
+      "firstResultMs": null,
+      "fullCandidateWallMs": 24228.031213000002,
+      "stoppedWallMs": 24228.031213000002,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [],
+      "unavailable": [
+        {
+          "id": "walk",
+          "failureStatus": "NO_ROUTE",
+          "cost": 0,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        },
+        {
+          "id": "transit-detailed",
+          "failureStatus": "NO_ROUTE",
+          "cost": 5,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        }
+      ]
+    },
+    {
+      "id": "land-island-accessible-taxi-on",
+      "rowId": "land-island",
+      "stage": "B",
+      "need": "accessible",
+      "taxi": true,
+      "classification": "completed-without-candidate-needs-diagnosis",
+      "recordedClassification": "completed-without-candidate-needs-diagnosis",
+      "recordedFullCandidateWallMs": 20979.727033000003,
+      "completeAndAudited": false,
+      "report": "land-island-accessible-taxi-on.json",
+      "firstResultMs": null,
+      "fullCandidateWallMs": 20979.727033000003,
+      "stoppedWallMs": 20979.727033000003,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [],
+      "unavailable": [
+        {
+          "id": "walk",
+          "failureStatus": "NO_ROUTE",
+          "cost": 0,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        },
+        {
+          "id": "transit-detailed",
+          "failureStatus": "NO_ROUTE",
+          "cost": 5,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        }
+      ]
+    },
+    {
+      "id": "land-cross-ordinary-taxi-off",
+      "rowId": "land-cross",
+      "stage": "B",
+      "need": "ordinary",
+      "taxi": false,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 8432.976586,
+      "completeAndAudited": true,
+      "report": "land-cross-ordinary-taxi-off.json",
+      "firstResultMs": 6462,
+      "fullCandidateWallMs": 8432.976586,
+      "stoppedWallMs": 8432.976586,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 107,
+          "cost": 18.16,
+          "walkMinutes": 74,
+          "waitMinutes": 6,
+          "transfers": 2,
+          "modes": [
+            "walk",
+            "metro",
+            "walk",
+            "metro",
+            "walk",
+            "tram",
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": [
+        {
+          "id": "walk",
+          "failureStatus": "NO_ROUTE",
+          "cost": 0,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        }
+      ]
+    },
+    {
+      "id": "land-cross-ordinary-taxi-on",
+      "rowId": "land-cross",
+      "stage": "B",
+      "need": "ordinary",
+      "taxi": true,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 16070.319771999999,
+      "completeAndAudited": true,
+      "report": "land-cross-ordinary-taxi-on.json",
+      "firstResultMs": 2805,
+      "fullCandidateWallMs": 16070.319771999999,
+      "stoppedWallMs": 16070.319771999999,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "taxi-direct",
+          "pass": true,
+          "minutes": 16,
+          "cost": 87.9,
+          "walkMinutes": 3,
+          "waitMinutes": 1.8212506887151296,
+          "transfers": 0,
+          "modes": [
+            "walk",
+            "taxi",
+            "walk"
+          ],
+          "failedChecks": []
+        },
+        {
+          "id": "taxi-first-tram-td:99226",
+          "pass": true,
+          "minutes": 66,
+          "cost": 84.18,
+          "walkMinutes": 50,
+          "waitMinutes": 3.8212506887151294,
+          "transfers": 1,
+          "modes": [
+            "walk",
+            "taxi",
+            "walk",
+            "tram",
+            "walk"
+          ],
+          "failedChecks": []
+        },
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 107,
+          "cost": 18.16,
+          "walkMinutes": 74,
+          "waitMinutes": 6,
+          "transfers": 2,
+          "modes": [
+            "walk",
+            "metro",
+            "walk",
+            "metro",
+            "walk",
+            "tram",
+            "walk"
+          ],
+          "failedChecks": []
+        },
+        {
+          "id": "taxi-first-metro-HUH:portal:A2",
+          "pass": true,
+          "minutes": 99,
+          "cost": 39.87,
+          "walkMinutes": 65,
+          "waitMinutes": 11.82125068871513,
+          "transfers": 2,
+          "modes": [
+            "walk",
+            "taxi",
+            "walk",
+            "metro",
+            "walk",
+            "tram",
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": [
+        {
+          "id": "walk",
+          "failureStatus": "NO_ROUTE",
+          "cost": 0,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        }
+      ]
+    },
+    {
+      "id": "land-cross-luggage-taxi-off",
+      "rowId": "land-cross",
+      "stage": "B",
+      "need": "luggage",
+      "taxi": false,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 13068.014339999998,
+      "completeAndAudited": true,
+      "report": "land-cross-luggage-taxi-off.json",
+      "firstResultMs": 10912,
+      "fullCandidateWallMs": 13068.014339999998,
+      "stoppedWallMs": 13068.014339999998,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 124,
+          "cost": 16.17,
+          "walkMinutes": 76,
+          "waitMinutes": 24,
+          "transfers": 2,
+          "modes": [
+            "walk",
+            "bus",
+            "walk",
+            "metro",
+            "walk",
+            "tram",
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": [
+        {
+          "id": "walk",
+          "failureStatus": "NO_ROUTE",
+          "cost": 0,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        }
+      ]
+    },
+    {
+      "id": "land-cross-luggage-taxi-on",
+      "rowId": "land-cross",
+      "stage": "B",
+      "need": "luggage",
+      "taxi": true,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 29917.039705000003,
+      "completeAndAudited": true,
+      "report": "land-cross-luggage-taxi-on.json",
+      "firstResultMs": 3239,
+      "fullCandidateWallMs": 29917.039705000003,
+      "stoppedWallMs": 29917.039705000003,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "taxi-direct",
+          "pass": true,
+          "minutes": 16,
+          "cost": 87.9,
+          "walkMinutes": 3,
+          "waitMinutes": 1.8212506887151296,
+          "transfers": 0,
+          "modes": [
+            "walk",
+            "taxi",
+            "walk"
+          ],
+          "failedChecks": []
+        },
+        {
+          "id": "taxi-first-tram-td:99226",
+          "pass": true,
+          "minutes": 69,
+          "cost": 84.18,
+          "walkMinutes": 55,
+          "waitMinutes": 3.8212506887151294,
+          "transfers": 1,
+          "modes": [
+            "walk",
+            "taxi",
+            "walk",
+            "tram",
+            "walk"
+          ],
+          "failedChecks": []
+        },
+        {
+          "id": "taxi-first-metro-HUH:portal:A2",
+          "pass": true,
+          "minutes": 102,
+          "cost": 39.87,
+          "walkMinutes": 71,
+          "waitMinutes": 8.82125068871513,
+          "transfers": 2,
+          "modes": [
+            "walk",
+            "taxi",
+            "walk",
+            "metro",
+            "walk",
+            "tram",
+            "walk"
+          ],
+          "failedChecks": []
+        },
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 124,
+          "cost": 16.17,
+          "walkMinutes": 76,
+          "waitMinutes": 24,
+          "transfers": 2,
+          "modes": [
+            "walk",
+            "bus",
+            "walk",
+            "metro",
+            "walk",
+            "tram",
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": [
+        {
+          "id": "walk",
+          "failureStatus": "NO_ROUTE",
+          "cost": 0,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        }
+      ]
+    },
+    {
+      "id": "land-cross-escalator-taxi-off",
+      "rowId": "land-cross",
+      "stage": "B",
+      "need": "escalator",
+      "taxi": false,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 14213.473170999998,
+      "completeAndAudited": true,
+      "report": "land-cross-escalator-taxi-off.json",
+      "firstResultMs": 10740,
+      "fullCandidateWallMs": 14213.473170999998,
+      "stoppedWallMs": 14213.473170999998,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 110,
+          "cost": 18.16,
+          "walkMinutes": 77,
+          "waitMinutes": 6,
+          "transfers": 2,
+          "modes": [
+            "walk",
+            "metro",
+            "walk",
+            "metro",
+            "walk",
+            "tram",
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": [
+        {
+          "id": "walk",
+          "failureStatus": "NO_ROUTE",
+          "cost": 0,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        }
+      ]
+    },
+    {
+      "id": "land-cross-escalator-taxi-on",
+      "rowId": "land-cross",
+      "stage": "B",
+      "need": "escalator",
+      "taxi": true,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 30879.130921,
+      "completeAndAudited": true,
+      "report": "land-cross-escalator-taxi-on.json",
+      "firstResultMs": 3077,
+      "fullCandidateWallMs": 30879.130921,
+      "stoppedWallMs": 30879.130921,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "taxi-direct",
+          "pass": true,
+          "minutes": 16,
+          "cost": 87.9,
+          "walkMinutes": 3,
+          "waitMinutes": 1.8212506887151296,
+          "transfers": 0,
+          "modes": [
+            "walk",
+            "taxi",
+            "walk"
+          ],
+          "failedChecks": []
+        },
+        {
+          "id": "taxi-first-tram-td:99226",
+          "pass": true,
+          "minutes": 67,
+          "cost": 84.18,
+          "walkMinutes": 53,
+          "waitMinutes": 3.8212506887151294,
+          "transfers": 1,
+          "modes": [
+            "walk",
+            "taxi",
+            "walk",
+            "tram",
+            "walk"
+          ],
+          "failedChecks": []
+        },
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 110,
+          "cost": 18.16,
+          "walkMinutes": 77,
+          "waitMinutes": 6,
+          "transfers": 2,
+          "modes": [
+            "walk",
+            "metro",
+            "walk",
+            "metro",
+            "walk",
+            "tram",
+            "walk"
+          ],
+          "failedChecks": []
+        },
+        {
+          "id": "taxi-first-metro-HUH:portal:A2",
+          "pass": true,
+          "minutes": 102,
+          "cost": 39.87,
+          "walkMinutes": 68,
+          "waitMinutes": 11.82125068871513,
+          "transfers": 2,
+          "modes": [
+            "walk",
+            "taxi",
+            "walk",
+            "metro",
+            "walk",
+            "tram",
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": [
+        {
+          "id": "walk",
+          "failureStatus": "NO_ROUTE",
+          "cost": 0,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        }
+      ]
+    },
+    {
+      "id": "land-cross-lift-taxi-off",
+      "rowId": "land-cross",
+      "stage": "B",
+      "need": "lift",
+      "taxi": false,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 17458.485781999996,
+      "completeAndAudited": true,
+      "report": "land-cross-lift-taxi-off.json",
+      "firstResultMs": 14987,
+      "fullCandidateWallMs": 17458.485781999996,
+      "stoppedWallMs": 17458.485781999996,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 110,
+          "cost": 18.16,
+          "walkMinutes": 77,
+          "waitMinutes": 6,
+          "transfers": 2,
+          "modes": [
+            "walk",
+            "metro",
+            "walk",
+            "metro",
+            "walk",
+            "tram",
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": [
+        {
+          "id": "walk",
+          "failureStatus": "NO_ROUTE",
+          "cost": 0,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        }
+      ]
+    },
+    {
+      "id": "land-cross-lift-taxi-on",
+      "rowId": "land-cross",
+      "stage": "B",
+      "need": "lift",
+      "taxi": true,
+      "classification": "completed-with-candidates",
+      "recordedClassification": "completed-with-candidates",
+      "recordedFullCandidateWallMs": 25600.746779,
+      "completeAndAudited": true,
+      "report": "land-cross-lift-taxi-on.json",
+      "firstResultMs": 3247,
+      "fullCandidateWallMs": 25600.746779,
+      "stoppedWallMs": 25600.746779,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [
+        {
+          "id": "taxi-direct",
+          "pass": true,
+          "minutes": 16,
+          "cost": 87.9,
+          "walkMinutes": 3,
+          "waitMinutes": 1.8212506887151296,
+          "transfers": 0,
+          "modes": [
+            "walk",
+            "taxi",
+            "walk"
+          ],
+          "failedChecks": []
+        },
+        {
+          "id": "taxi-first-tram-td:99226",
+          "pass": true,
+          "minutes": 68,
+          "cost": 84.18,
+          "walkMinutes": 52,
+          "waitMinutes": 3.8212506887151294,
+          "transfers": 1,
+          "modes": [
+            "walk",
+            "taxi",
+            "walk",
+            "tram",
+            "walk"
+          ],
+          "failedChecks": []
+        },
+        {
+          "id": "transit",
+          "pass": true,
+          "minutes": 110,
+          "cost": 18.16,
+          "walkMinutes": 77,
+          "waitMinutes": 6,
+          "transfers": 2,
+          "modes": [
+            "walk",
+            "metro",
+            "walk",
+            "metro",
+            "walk",
+            "tram",
+            "walk"
+          ],
+          "failedChecks": []
+        },
+        {
+          "id": "taxi-first-metro-HUH:portal:A2",
+          "pass": true,
+          "minutes": 102,
+          "cost": 39.87,
+          "walkMinutes": 68,
+          "waitMinutes": 11.82125068871513,
+          "transfers": 2,
+          "modes": [
+            "walk",
+            "taxi",
+            "walk",
+            "metro",
+            "walk",
+            "tram",
+            "walk"
+          ],
+          "failedChecks": []
+        }
+      ],
+      "unavailable": [
+        {
+          "id": "walk",
+          "failureStatus": "NO_ROUTE",
+          "cost": 0,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        }
+      ]
+    },
+    {
+      "id": "land-cross-accessible-taxi-off",
+      "rowId": "land-cross",
+      "stage": "B",
+      "need": "accessible",
+      "taxi": false,
+      "classification": "completed-without-candidate-needs-diagnosis",
+      "recordedClassification": "completed-without-candidate-needs-diagnosis",
+      "recordedFullCandidateWallMs": 23640.602174,
+      "completeAndAudited": false,
+      "report": "land-cross-accessible-taxi-off.json",
+      "firstResultMs": null,
+      "fullCandidateWallMs": 23640.602174,
+      "stoppedWallMs": 23640.602174,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [],
+      "unavailable": [
+        {
+          "id": "walk",
+          "failureStatus": "NO_ROUTE",
+          "cost": 0,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        },
+        {
+          "id": "transit-detailed",
+          "failureStatus": "NO_ROUTE",
+          "cost": 5,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        },
+        {
+          "id": "metro",
+          "cost": 14.6,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        }
+      ]
+    },
+    {
+      "id": "land-cross-accessible-taxi-on",
+      "rowId": "land-cross",
+      "stage": "B",
+      "need": "accessible",
+      "taxi": true,
+      "classification": "completed-without-candidate-needs-diagnosis",
+      "recordedClassification": "completed-without-candidate-needs-diagnosis",
+      "recordedFullCandidateWallMs": 26129.117019,
+      "completeAndAudited": false,
+      "report": "land-cross-accessible-taxi-on.json",
+      "firstResultMs": null,
+      "fullCandidateWallMs": 26129.117019,
+      "stoppedWallMs": 26129.117019,
+      "comparisonCompleted": true,
+      "comparisonStatus": "complete",
+      "failedStages": [],
+      "requestIdentityPreserved": true,
+      "cancellationPass": true,
+      "candidates": [],
+      "unavailable": [
+        {
+          "id": "walk",
+          "failureStatus": "NO_ROUTE",
+          "cost": 0,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        },
+        {
+          "id": "transit-detailed",
+          "failureStatus": "NO_ROUTE",
+          "cost": 5,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        },
+        {
+          "id": "metro",
+          "cost": 14.6,
+          "scenarioOnly": false,
+          "simulationOnly": false
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Pending observation windows and stopped/error outcomes are not completed comparisons or evidence of NO_ROUTE.",
+    "Times are one fresh-process Node S1 observation, not repeated browser/device latency benchmarks.",
+    "Source geometry, facility eligibility and illustrative fares retain the qualifications in each original report.",
+    "Unavailable endpoint-access fare scenarios remain excluded from complete navigation candidates."
+  ]
+}

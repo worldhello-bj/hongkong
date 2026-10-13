@@ -1,0 +1,118 @@
+{
+  "runtime": "4f0a062ef29d",
+  "id": 36,
+  "need": "accessible",
+  "state": "usable-public-and-taxi-comparison",
+  "wallMs": 21710,
+  "memory": {
+    "rss": 1292713984,
+    "heapTotal": 421285888,
+    "heapUsed": 285286248,
+    "external": 9106331,
+    "arrayBuffers": 9801516,
+    "maxRSSKiB": 1341740
+  },
+  "request": {
+    "origin": {
+      "id": "map:random--1529480317",
+      "name": "地图所选地点",
+      "detail": "用户选择 · 接入待核验",
+      "coordinates": [
+        114.16965086248385,
+        22.293277490710825
+      ],
+      "lon": 114.16965086248385,
+      "lat": 22.293277490710825
+    },
+    "destination": {
+      "id": "map:random-2133651309",
+      "name": "地图所选地点",
+      "detail": "用户选择 · 接入待核验",
+      "coordinates": [
+        114.15007628641142,
+        22.26413857693343
+      ],
+      "lon": 114.15007628641142,
+      "lat": 22.26413857693343
+    }
+  },
+  "performance": {
+    "warmStart": false,
+    "startedMonotonic": 6840.716057,
+    "startedAt": "2026-10-12T12:00:06.481Z",
+    "origin": "地图所选地点",
+    "destination": "地图所选地点",
+    "stages": [
+      {
+        "id": "taxi",
+        "durationMs": 1779,
+        "status": "ready"
+      },
+      {
+        "id": "public-fast",
+        "durationMs": 3445,
+        "status": "needs-indoor-refinement",
+        "cached": false
+      },
+      {
+        "id": "walk",
+        "durationMs": 3831,
+        "status": "no-complete-route",
+        "cached": false
+      },
+      {
+        "id": "metro",
+        "durationMs": 5581,
+        "status": "no-complete-route",
+        "cached": false
+      },
+      {
+        "id": "demo-public-fast",
+        "durationMs": 7549,
+        "status": "modeled"
+      },
+      {
+        "id": "demo-fallback",
+        "durationMs": 7872,
+        "status": "modeled"
+      }
+    ],
+    "firstResultMs": 17655,
+    "totalMs": null
+  },
+  "candidates": [
+    {
+      "id": "transit-demo-review",
+      "kind": "public",
+      "minutes": 153,
+      "cost": 18.16,
+      "walkMinutes": 121,
+      "waitMinutes": 15,
+      "transfers": 2,
+      "modes": [
+        "walk",
+        "metro",
+        "walk",
+        "metro",
+        "walk",
+        "tram",
+        "walk"
+      ],
+      "endpointsPreserved": true,
+      "forbidden": [],
+      "needsVehicleConfirmation": false,
+      "needsConfirmation": true,
+      "requestedPreference": "accessible",
+      "effectivePreference": "fast-filtered-accessibility"
+    }
+  ],
+  "selected": "transit-demo-review",
+  "publicAvailable": true,
+  "taxiAvailable": false,
+  "invariants": {
+    "endpoints": true,
+    "knownEdges": true,
+    "strictTaxiExcluded": true,
+    "luggageTaxiConfirmed": true
+  }
+}

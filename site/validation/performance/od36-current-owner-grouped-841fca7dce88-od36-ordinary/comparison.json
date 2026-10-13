@@ -1,0 +1,1682 @@
+{
+  "baseline": {
+    "runtime": "d701fed258cc",
+    "state": "observation-window-ended",
+    "windowMs": 60000,
+    "wallMs": 60108.52163999999,
+    "request": {
+      "origin": {
+        "id": "map:random--1529480317",
+        "name": "地图所选地点",
+        "detail": "用户选择 · 接入待核验",
+        "coordinates": [
+          114.16965086248385,
+          22.293277490710825
+        ],
+        "lon": 114.16965086248385,
+        "lat": 22.293277490710825
+      },
+      "destination": {
+        "id": "map:random-2133651309",
+        "name": "地图所选地点",
+        "detail": "用户选择 · 接入待核验",
+        "coordinates": [
+          114.15007628641142,
+          22.26413857693343
+        ],
+        "lon": 114.15007628641142,
+        "lat": 22.26413857693343
+      }
+    },
+    "departure": {
+      "departureS": 28800,
+      "departureDate": "2026-10-12"
+    },
+    "stages": [
+      {
+        "id": "public-fast",
+        "durationMs": 12302,
+        "status": "needs-indoor-refinement",
+        "cached": false
+      },
+      {
+        "id": "metro",
+        "durationMs": 10742,
+        "status": "no-complete-route",
+        "cached": false
+      },
+      {
+        "id": "demo-public-fast",
+        "durationMs": 23738,
+        "status": "modeled"
+      },
+      {
+        "id": "demo-fallback",
+        "durationMs": 23756,
+        "status": "modeled"
+      }
+    ],
+    "firstResultMs": 1783,
+    "stageGenerationStartsAfterClickS": 4.383417,
+    "maxRSSGiB": 1.2602615356445312,
+    "workerCount": 8,
+    "queue": {
+      "starts": 8,
+      "ownerSwitches": 6,
+      "continuedOwnerQueries": 0,
+      "distinctOwners": 4
+    },
+    "cloneSendMs": 7661.117360999997,
+    "graphPrepareCompletedMs": 14147.48806799998,
+    "scheduledSearchCompletedMs": 22735.512676000006,
+    "walkQueryCompletedMs": 14799.761574999844,
+    "walkQueryStarted": 1533,
+    "workers": [
+      {
+        "worker": 1,
+        "owner": 1,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "createdAfterClickS": 0.37146100000000026,
+        "posts": [
+          {
+            "afterClickS": 1.265295,
+            "id": 1,
+            "cloneSendMs": 879.9805909999995,
+            "initializes": true,
+            "request": {
+              "origin": {
+                "id": "map:random--1529480317",
+                "coordinates": [
+                  114.16965086248385,
+                  22.293277490710825
+                ]
+              },
+              "destination": {
+                "id": "map:random-2133651309",
+                "coordinates": [
+                  114.15007628641142,
+                  22.26413857693343
+                ]
+              },
+              "preference": "fast",
+              "allowedModes": [
+                "metro",
+                "bus",
+                "tram"
+              ],
+              "departureS": 28800,
+              "departureDate": "2026-10-12"
+            },
+            "graphs": [
+              {
+                "gid": 2,
+                "version": "814b03c9c2d7e3c5",
+                "nodes": 61055,
+                "edges": 135514,
+                "regions": [
+                  "ADM",
+                  "AUS"
+                ]
+              },
+              {
+                "gid": 1,
+                "version": "b1e24d8ef9214320",
+                "nodes": 5405,
+                "edges": 11387,
+                "regions": [
+                  "ADM",
+                  "AUS",
+                  "HUH",
+                  "EXC",
+                  "ETS",
+                  "KOW"
+                ]
+              }
+            ]
+          }
+        ],
+        "terminateRequestedAfterClickS": 4.383252000000001,
+        "terminationAfterObservation": false,
+        "pendingAtTermination": [
+          {
+            "origin": {
+              "id": "map:random--1529480317",
+              "coordinates": [
+                114.16965086248385,
+                22.293277490710825
+              ]
+            },
+            "destination": {
+              "id": "map:random-2133651309",
+              "coordinates": [
+                114.15007628641142,
+                22.26413857693343
+              ]
+            },
+            "preference": "fast",
+            "allowedModes": [
+              "metro",
+              "bus",
+              "tram"
+            ],
+            "departureS": 28800,
+            "departureDate": "2026-10-12"
+          }
+        ],
+        "exitAfterClickS": 6.191029,
+        "sourceRole": "official-base"
+      },
+      {
+        "worker": 2,
+        "owner": 1,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "createdAfterClickS": 5.389380000000001,
+        "posts": [
+          {
+            "afterClickS": 6.147556000000001,
+            "id": 2,
+            "cloneSendMs": 756.889056,
+            "initializes": true,
+            "request": {
+              "origin": {
+                "id": "map:random--1529480317",
+                "coordinates": [
+                  114.16965086248385,
+                  22.293277490710825
+                ]
+              },
+              "destination": {
+                "id": "map:random-2133651309",
+                "coordinates": [
+                  114.15007628641142,
+                  22.26413857693343
+                ]
+              },
+              "preference": "fast",
+              "allowedModes": [
+                "metro",
+                "bus",
+                "tram"
+              ],
+              "departureS": 28800,
+              "departureDate": "2026-10-12"
+            },
+            "graphs": [
+              {
+                "gid": 2,
+                "version": "814b03c9c2d7e3c5",
+                "nodes": 61055,
+                "edges": 135514,
+                "regions": [
+                  "ADM",
+                  "AUS"
+                ]
+              },
+              {
+                "gid": 1,
+                "version": "b1e24d8ef9214320",
+                "nodes": 5405,
+                "edges": 11387,
+                "regions": [
+                  "ADM",
+                  "AUS",
+                  "HUH",
+                  "EXC",
+                  "ETS",
+                  "KOW"
+                ]
+              }
+            ]
+          }
+        ],
+        "results": [
+          {
+            "afterClickS": 16.130374000000003,
+            "id": 2,
+            "status": "CONDITIONAL"
+          }
+        ],
+        "terminateRequestedAfterClickS": 16.697881999999996,
+        "terminationAfterObservation": false,
+        "pendingAtTermination": [],
+        "exitAfterClickS": 17.854602,
+        "sourceRole": "official-base"
+      },
+      {
+        "worker": 3,
+        "owner": 3,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "createdAfterClickS": 16.705548000000004,
+        "posts": [
+          {
+            "afterClickS": 17.839718,
+            "id": 1,
+            "cloneSendMs": 1132.8981410000015,
+            "initializes": true,
+            "request": {
+              "origin": {
+                "id": "map:random--1529480317",
+                "coordinates": [
+                  114.16965086248385,
+                  22.293277490710825
+                ]
+              },
+              "destination": {
+                "id": "ADM:portal:E2",
+                "node_id": "ADM:N:15dedbcfbae59e",
+                "coordinates": [
+                  114.16624518,
+                  22.27888752,
+                  6
+                ]
+              },
+              "preference": "fast",
+              "allowedModes": [
+                "metro",
+                "bus",
+                "tram"
+              ],
+              "departureS": 28800,
+              "departureDate": "2026-10-12"
+            },
+            "graphs": [
+              {
+                "gid": 2,
+                "version": "814b03c9c2d7e3c5",
+                "nodes": 61055,
+                "edges": 135514,
+                "regions": [
+                  "ADM",
+                  "AUS"
+                ]
+              },
+              {
+                "gid": 1,
+                "version": "b1e24d8ef9214320",
+                "nodes": 5405,
+                "edges": 11387,
+                "regions": [
+                  "ADM",
+                  "AUS",
+                  "HUH",
+                  "EXC",
+                  "ETS",
+                  "KOW"
+                ]
+              }
+            ]
+          }
+        ],
+        "results": [
+          {
+            "afterClickS": 22.114887000000003,
+            "id": 1,
+            "status": "CONDITIONAL"
+          }
+        ],
+        "terminateRequestedAfterClickS": 22.478906000000002,
+        "terminationAfterObservation": false,
+        "pendingAtTermination": [],
+        "exitAfterClickS": 23.225866999999997,
+        "sourceRole": "official-base"
+      },
+      {
+        "worker": 4,
+        "owner": 4,
+        "kind": "metro-worker-BDEusPKL.js",
+        "createdAfterClickS": 22.480097999999998,
+        "posts": [
+          {
+            "afterClickS": 23.213483999999998,
+            "id": 1,
+            "cloneSendMs": 730.8654459999998,
+            "initializes": true,
+            "request": {
+              "origin": {
+                "id": "map:random--1529480317",
+                "coordinates": [
+                  114.16965086248385,
+                  22.293277490710825
+                ]
+              },
+              "destination": {
+                "id": "map:random-2133651309",
+                "coordinates": [
+                  114.15007628641142,
+                  22.26413857693343
+                ]
+              },
+              "preference": "ordinary",
+              "departureS": 28800,
+              "departureDate": "2026-10-12"
+            },
+            "graphs": [
+              {
+                "gid": 5,
+                "version": "b1e24d8ef9214320",
+                "nodes": 65304,
+                "edges": 144603,
+                "regions": [
+                  "ADM",
+                  "AUS",
+                  "HUH",
+                  "EXC",
+                  "ETS",
+                  "KOW"
+                ]
+              }
+            ]
+          }
+        ],
+        "results": [
+          {
+            "afterClickS": 28.512272000000003,
+            "id": 1
+          }
+        ],
+        "terminateRequestedAfterClickS": 28.607718000000002,
+        "terminationAfterObservation": false,
+        "pendingAtTermination": [],
+        "exitAfterClickS": 29.329417000000003,
+        "sourceRole": "merged-metro"
+      },
+      {
+        "worker": 5,
+        "owner": 3,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "createdAfterClickS": 28.612362,
+        "posts": [
+          {
+            "afterClickS": 29.304361000000004,
+            "id": 2,
+            "cloneSendMs": 691.352601999999,
+            "initializes": true,
+            "request": {
+              "origin": {
+                "id": "map:random--1529480317",
+                "coordinates": [
+                  114.16965086248385,
+                  22.293277490710825
+                ]
+              },
+              "destination": {
+                "id": "EXC:portal:B3",
+                "node_id": "EXC:N:faaafc3c73386c",
+                "coordinates": [
+                  114.17458227,
+                  22.28124078,
+                  11.245
+                ]
+              },
+              "preference": "fast",
+              "allowedModes": [
+                "metro",
+                "bus",
+                "tram"
+              ],
+              "departureS": 28800,
+              "departureDate": "2026-10-12"
+            },
+            "graphs": [
+              {
+                "gid": 2,
+                "version": "814b03c9c2d7e3c5",
+                "nodes": 61055,
+                "edges": 135514,
+                "regions": [
+                  "ADM",
+                  "AUS"
+                ]
+              },
+              {
+                "gid": 1,
+                "version": "b1e24d8ef9214320",
+                "nodes": 5405,
+                "edges": 11387,
+                "regions": [
+                  "ADM",
+                  "AUS",
+                  "HUH",
+                  "EXC",
+                  "ETS",
+                  "KOW"
+                ]
+              }
+            ]
+          }
+        ],
+        "results": [
+          {
+            "afterClickS": 34.994751,
+            "id": 2,
+            "status": "NO_ROUTE"
+          }
+        ],
+        "terminateRequestedAfterClickS": 34.995224,
+        "terminationAfterObservation": false,
+        "pendingAtTermination": [],
+        "exitAfterClickS": 38.583279000000005,
+        "sourceRole": "official-base"
+      },
+      {
+        "worker": 6,
+        "owner": 5,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "createdAfterClickS": 37.532695,
+        "posts": [
+          {
+            "afterClickS": 38.57203500000001,
+            "id": 1,
+            "cloneSendMs": 1038.5118199999997,
+            "initializes": true,
+            "request": {
+              "origin": {
+                "id": "map:random--1529480317",
+                "coordinates": [
+                  114.16965086248385,
+                  22.293277490710825
+                ]
+              },
+              "destination": {
+                "id": "map:random-2133651309",
+                "coordinates": [
+                  114.15007628641142,
+                  22.26413857693343
+                ]
+              },
+              "preference": "fast",
+              "allowedModes": [
+                "metro",
+                "bus",
+                "tram"
+              ],
+              "departureS": 28800,
+              "departureDate": "2026-10-12"
+            },
+            "graphs": [
+              {
+                "gid": 6,
+                "version": "814b03c9c2d7e3c5",
+                "nodes": 61055,
+                "edges": 135514,
+                "regions": [
+                  "ADM",
+                  "AUS"
+                ]
+              },
+              {
+                "gid": 1,
+                "version": "b1e24d8ef9214320",
+                "nodes": 5405,
+                "edges": 11387,
+                "regions": [
+                  "ADM",
+                  "AUS",
+                  "HUH",
+                  "EXC",
+                  "ETS",
+                  "KOW"
+                ]
+              }
+            ]
+          }
+        ],
+        "results": [
+          {
+            "afterClickS": 52.423134000000005,
+            "id": 1,
+            "status": "CONDITIONAL"
+          }
+        ],
+        "terminateRequestedAfterClickS": 53.086395,
+        "terminationAfterObservation": false,
+        "pendingAtTermination": [],
+        "exitAfterClickS": 54.030693,
+        "sourceRole": "isolated-demo-area"
+      },
+      {
+        "worker": 7,
+        "owner": 3,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "createdAfterClickS": 53.086781,
+        "posts": [
+          {
+            "afterClickS": 54.018698,
+            "id": 3,
+            "cloneSendMs": 930.8194599999988,
+            "initializes": true,
+            "request": {
+              "origin": {
+                "id": "map:random--1529480317",
+                "coordinates": [
+                  114.16965086248385,
+                  22.293277490710825
+                ]
+              },
+              "destination": {
+                "id": "td:99139",
+                "coordinates": [
+                  114.15296,
+                  22.28629
+                ]
+              },
+              "preference": "fast",
+              "allowedModes": [
+                "tram"
+              ],
+              "departureS": 28800,
+              "departureDate": "2026-10-12"
+            },
+            "graphs": [
+              {
+                "gid": 2,
+                "version": "814b03c9c2d7e3c5",
+                "nodes": 61055,
+                "edges": 135514,
+                "regions": [
+                  "ADM",
+                  "AUS"
+                ]
+              },
+              {
+                "gid": 1,
+                "version": "b1e24d8ef9214320",
+                "nodes": 5405,
+                "edges": 11387,
+                "regions": [
+                  "ADM",
+                  "AUS",
+                  "HUH",
+                  "EXC",
+                  "ETS",
+                  "KOW"
+                ]
+              }
+            ]
+          }
+        ],
+        "results": [
+          {
+            "afterClickS": 56.258992,
+            "id": 3,
+            "status": "NO_ROUTE"
+          }
+        ],
+        "terminateRequestedAfterClickS": 56.261496,
+        "terminationAfterObservation": false,
+        "pendingAtTermination": [],
+        "exitAfterClickS": 57.813774,
+        "sourceRole": "official-base"
+      },
+      {
+        "worker": 8,
+        "owner": 4,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "createdAfterClickS": 56.261863000000005,
+        "posts": [
+          {
+            "afterClickS": 57.762373,
+            "id": 1,
+            "cloneSendMs": 1499.8002449999985,
+            "initializes": true,
+            "request": {
+              "origin": {
+                "id": "map:random--1529480317",
+                "coordinates": [
+                  114.16965086248385,
+                  22.293277490710825
+                ]
+              },
+              "destination": {
+                "id": "map:random-2133651309",
+                "coordinates": [
+                  114.15007628641142,
+                  22.26413857693343
+                ]
+              },
+              "preference": "fast",
+              "allowedModes": [
+                "metro",
+                "bus",
+                "tram"
+              ],
+              "departureS": 28800,
+              "departureDate": "2026-10-12"
+            },
+            "graphs": [
+              {
+                "gid": 2,
+                "version": "814b03c9c2d7e3c5",
+                "nodes": 61055,
+                "edges": 135514,
+                "regions": [
+                  "ADM",
+                  "AUS"
+                ]
+              },
+              {
+                "gid": 1,
+                "version": "b1e24d8ef9214320",
+                "nodes": 5405,
+                "edges": 11387,
+                "regions": [
+                  "ADM",
+                  "AUS",
+                  "HUH",
+                  "EXC",
+                  "ETS",
+                  "KOW"
+                ]
+              },
+              {
+                "gid": 4,
+                "version": "814b03c9c2d7e3c5+block:19aebcac62f227eb:pacific-f-anchor-v1",
+                "nodes": 62479,
+                "edges": 138703,
+                "regions": [
+                  "ADM",
+                  "AUS"
+                ]
+              }
+            ]
+          }
+        ],
+        "terminateRequestedAfterClickS": 60.113009999999996,
+        "terminationAfterObservation": true,
+        "pendingAtTermination": [
+          {
+            "origin": {
+              "id": "map:random--1529480317",
+              "coordinates": [
+                114.16965086248385,
+                22.293277490710825
+              ]
+            },
+            "destination": {
+              "id": "map:random-2133651309",
+              "coordinates": [
+                114.15007628641142,
+                22.26413857693343
+              ]
+            },
+            "preference": "fast",
+            "allowedModes": [
+              "metro",
+              "bus",
+              "tram"
+            ],
+            "departureS": 28800,
+            "departureDate": "2026-10-12"
+          }
+        ],
+        "exitAfterClickS": 60.146796,
+        "sourceRole": "official-detailed"
+      }
+    ],
+    "pendingWorkerSpans": [
+      {
+        "t": 64798.299,
+        "worker": 8,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "event": "worker-span-start",
+        "sid": 5,
+        "name": "graph-prepare",
+        "graph": {
+          "version": "814b03c9c2d7e3c5+block:19aebcac62f227eb:pacific-f-anchor-v1",
+          "nodes": 62479,
+          "edges": 138703,
+          "regions": [
+            "ADM",
+            "AUS"
+          ]
+        }
+      }
+    ],
+    "candidates": [
+      {
+        "id": "taxi-direct",
+        "kind": "direct",
+        "minutes": 31,
+        "cost": 140.25,
+        "modes": [
+          "walk",
+          "taxi",
+          "walk"
+        ],
+        "endpointsPreserved": true,
+        "forbidden": [],
+        "needsVehicleConfirmation": false
+      },
+      {
+        "id": "transit-demo-review",
+        "kind": "public",
+        "minutes": 151,
+        "cost": 16.56,
+        "modes": [
+          "walk",
+          "bus",
+          "walk",
+          "metro",
+          "walk",
+          "tram",
+          "walk"
+        ],
+        "endpointsPreserved": true,
+        "forbidden": [],
+        "needsVehicleConfirmation": false
+      }
+    ]
+  },
+  "candidate": {
+    "runtime": "841fca7dce88",
+    "state": "observation-window-ended",
+    "windowMs": 60000,
+    "wallMs": 60154.23450200001,
+    "request": {
+      "origin": {
+        "id": "map:random--1529480317",
+        "name": "地图所选地点",
+        "detail": "用户选择 · 接入待核验",
+        "coordinates": [
+          114.16965086248385,
+          22.293277490710825
+        ],
+        "lon": 114.16965086248385,
+        "lat": 22.293277490710825
+      },
+      "destination": {
+        "id": "map:random-2133651309",
+        "name": "地图所选地点",
+        "detail": "用户选择 · 接入待核验",
+        "coordinates": [
+          114.15007628641142,
+          22.26413857693343
+        ],
+        "lon": 114.15007628641142,
+        "lat": 22.26413857693343
+      }
+    },
+    "departure": {
+      "departureS": 28800,
+      "departureDate": "2026-10-12"
+    },
+    "stages": [
+      {
+        "id": "public-fast",
+        "durationMs": 8641,
+        "status": "needs-indoor-refinement",
+        "cached": false
+      },
+      {
+        "id": "taxi",
+        "durationMs": 13518,
+        "status": "ready"
+      },
+      {
+        "id": "metro",
+        "durationMs": 6380,
+        "status": "no-complete-route",
+        "cached": false
+      },
+      {
+        "id": "demo-public-fast",
+        "durationMs": 9307,
+        "status": "modeled"
+      },
+      {
+        "id": "demo-fallback",
+        "durationMs": 9329,
+        "status": "modeled"
+      }
+    ],
+    "firstResultMs": 1826,
+    "stageGenerationStartsAfterClickS": 3.6727509999999994,
+    "maxRSSGiB": 1.2276535034179688,
+    "workerCount": 5,
+    "queue": {
+      "starts": 12,
+      "ownerSwitches": 3,
+      "continuedOwnerQueries": 7,
+      "distinctOwners": 3
+    },
+    "cloneSendMs": 3881.3373209999963,
+    "graphPrepareCompletedMs": 7895.60760999998,
+    "scheduledSearchCompletedMs": 11715.312194999995,
+    "walkQueryCompletedMs": 29604.9297869999,
+    "walkQueryStarted": 1803,
+    "workers": [
+      {
+        "worker": 1,
+        "owner": 1,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "createdAfterClickS": 0.3186030000000001,
+        "posts": [
+          {
+            "afterClickS": 1.062076,
+            "id": 1,
+            "cloneSendMs": 735.0595000000003,
+            "initializes": true,
+            "request": {
+              "origin": {
+                "id": "map:random--1529480317",
+                "coordinates": [
+                  114.16965086248385,
+                  22.293277490710825
+                ]
+              },
+              "destination": {
+                "id": "map:random-2133651309",
+                "coordinates": [
+                  114.15007628641142,
+                  22.26413857693343
+                ]
+              },
+              "preference": "fast",
+              "allowedModes": [
+                "metro",
+                "bus",
+                "tram"
+              ],
+              "departureS": 28800,
+              "departureDate": "2026-10-12"
+            },
+            "graphs": [
+              {
+                "gid": 2,
+                "version": "814b03c9c2d7e3c5",
+                "nodes": 61055,
+                "edges": 135514,
+                "regions": [
+                  "ADM",
+                  "AUS"
+                ]
+              },
+              {
+                "gid": 1,
+                "version": "b1e24d8ef9214320",
+                "nodes": 5405,
+                "edges": 11387,
+                "regions": [
+                  "ADM",
+                  "AUS",
+                  "HUH",
+                  "EXC",
+                  "ETS",
+                  "KOW"
+                ]
+              }
+            ]
+          }
+        ],
+        "terminateRequestedAfterClickS": 3.672535,
+        "terminationAfterObservation": false,
+        "pendingAtTermination": [
+          {
+            "origin": {
+              "id": "map:random--1529480317",
+              "coordinates": [
+                114.16965086248385,
+                22.293277490710825
+              ]
+            },
+            "destination": {
+              "id": "map:random-2133651309",
+              "coordinates": [
+                114.15007628641142,
+                22.26413857693343
+              ]
+            },
+            "preference": "fast",
+            "allowedModes": [
+              "metro",
+              "bus",
+              "tram"
+            ],
+            "departureS": 28800,
+            "departureDate": "2026-10-12"
+          }
+        ],
+        "exitAfterClickS": 5.533753,
+        "sourceRole": "official-base"
+      },
+      {
+        "worker": 2,
+        "owner": 1,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "createdAfterClickS": 4.727900999999999,
+        "posts": [
+          {
+            "afterClickS": 5.4745789999999985,
+            "id": 2,
+            "cloneSendMs": 744.7552839999989,
+            "initializes": true,
+            "request": {
+              "origin": {
+                "id": "map:random--1529480317",
+                "coordinates": [
+                  114.16965086248385,
+                  22.293277490710825
+                ]
+              },
+              "destination": {
+                "id": "map:random-2133651309",
+                "coordinates": [
+                  114.15007628641142,
+                  22.26413857693343
+                ]
+              },
+              "preference": "fast",
+              "allowedModes": [
+                "metro",
+                "bus",
+                "tram"
+              ],
+              "departureS": 28800,
+              "departureDate": "2026-10-12"
+            },
+            "graphs": [
+              {
+                "gid": 2,
+                "version": "814b03c9c2d7e3c5",
+                "nodes": 61055,
+                "edges": 135514,
+                "regions": [
+                  "ADM",
+                  "AUS"
+                ]
+              },
+              {
+                "gid": 1,
+                "version": "b1e24d8ef9214320",
+                "nodes": 5405,
+                "edges": 11387,
+                "regions": [
+                  "ADM",
+                  "AUS",
+                  "HUH",
+                  "EXC",
+                  "ETS",
+                  "KOW"
+                ]
+              }
+            ]
+          },
+          {
+            "afterClickS": 12.335313000000001,
+            "id": 3,
+            "cloneSendMs": 0.07670099999813829,
+            "initializes": false,
+            "request": {
+              "origin": {
+                "id": "map:random--1529480317",
+                "coordinates": [
+                  114.16965086248385,
+                  22.293277490710825
+                ]
+              },
+              "destination": {
+                "id": "ADM:portal:E2",
+                "node_id": "ADM:N:15dedbcfbae59e",
+                "coordinates": [
+                  114.16624518,
+                  22.27888752,
+                  6
+                ]
+              },
+              "preference": "fast",
+              "allowedModes": [
+                "metro",
+                "bus",
+                "tram"
+              ],
+              "departureS": 28800,
+              "departureDate": "2026-10-12"
+            },
+            "graphs": []
+          },
+          {
+            "afterClickS": 12.709102,
+            "id": 4,
+            "cloneSendMs": 0.07937800000217976,
+            "initializes": false,
+            "request": {
+              "origin": {
+                "id": "map:random--1529480317",
+                "coordinates": [
+                  114.16965086248385,
+                  22.293277490710825
+                ]
+              },
+              "destination": {
+                "id": "EXC:portal:B3",
+                "node_id": "EXC:N:faaafc3c73386c",
+                "coordinates": [
+                  114.17458227,
+                  22.28124078,
+                  11.245
+                ]
+              },
+              "preference": "fast",
+              "allowedModes": [
+                "metro",
+                "bus",
+                "tram"
+              ],
+              "departureS": 28800,
+              "departureDate": "2026-10-12"
+            },
+            "graphs": []
+          },
+          {
+            "afterClickS": 13.843176,
+            "id": 5,
+            "cloneSendMs": 0.046102000000246335,
+            "initializes": false,
+            "request": {
+              "origin": {
+                "id": "map:random--1529480317",
+                "coordinates": [
+                  114.16965086248385,
+                  22.293277490710825
+                ]
+              },
+              "destination": {
+                "id": "td:99139",
+                "coordinates": [
+                  114.15296,
+                  22.28629
+                ]
+              },
+              "preference": "fast",
+              "allowedModes": [
+                "tram"
+              ],
+              "departureS": 28800,
+              "departureDate": "2026-10-12"
+            },
+            "graphs": []
+          },
+          {
+            "afterClickS": 13.905747999999999,
+            "id": 6,
+            "cloneSendMs": 0.05166499999904772,
+            "initializes": false,
+            "request": {
+              "origin": {
+                "id": "ADM:portal:E2",
+                "node_id": "ADM:N:15dedbcfbae59e",
+                "coordinates": [
+                  114.16624518,
+                  22.27888752,
+                  6
+                ]
+              },
+              "destination": {
+                "id": "map:random-2133651309",
+                "coordinates": [
+                  114.15007628641142,
+                  22.26413857693343
+                ]
+              },
+              "preference": "fast",
+              "allowedModes": [
+                "metro",
+                "bus",
+                "tram"
+              ],
+              "departureS": 29806.419913006546,
+              "departureDate": "2026-10-12"
+            },
+            "graphs": []
+          },
+          {
+            "afterClickS": 15.713818999999999,
+            "id": 7,
+            "cloneSendMs": 0.06768899999951827,
+            "initializes": false,
+            "request": {
+              "origin": {
+                "id": "ETS:portal:L3",
+                "node_id": "ETS:N:1a819a0efc3797",
+                "coordinates": [
+                  114.1720811,
+                  22.29564962,
+                  4.1
+                ]
+              },
+              "destination": {
+                "id": "map:random-2133651309",
+                "coordinates": [
+                  114.15007628641142,
+                  22.26413857693343
+                ]
+              },
+              "preference": "fast",
+              "allowedModes": [
+                "metro",
+                "bus",
+                "tram"
+              ],
+              "departureS": 29157.55903994801,
+              "departureDate": "2026-10-12"
+            },
+            "graphs": []
+          },
+          {
+            "afterClickS": 15.796877,
+            "id": 8,
+            "cloneSendMs": 0.04337200000009034,
+            "initializes": false,
+            "request": {
+              "origin": {
+                "id": "td:1286",
+                "coordinates": [
+                  114.17423,
+                  22.29471
+                ]
+              },
+              "destination": {
+                "id": "map:random-2133651309",
+                "coordinates": [
+                  114.15007628641142,
+                  22.26413857693343
+                ]
+              },
+              "preference": "fast",
+              "allowedModes": [
+                "bus"
+              ],
+              "departureS": 29201.375149805124,
+              "departureDate": "2026-10-12"
+            },
+            "graphs": []
+          },
+          {
+            "afterClickS": 16.009955,
+            "id": 9,
+            "cloneSendMs": 0.06784499999776017,
+            "initializes": false,
+            "request": {
+              "origin": {
+                "id": "td:99215",
+                "coordinates": [
+                  114.15566,
+                  22.2847
+                ]
+              },
+              "destination": {
+                "id": "map:random-2133651309",
+                "coordinates": [
+                  114.15007628641142,
+                  22.26413857693343
+                ]
+              },
+              "preference": "fast",
+              "allowedModes": [
+                "tram"
+              ],
+              "departureS": 29917.122224997802,
+              "departureDate": "2026-10-12"
+            },
+            "graphs": []
+          }
+        ],
+        "results": [
+          {
+            "afterClickS": 11.831230999999999,
+            "id": 2,
+            "status": "CONDITIONAL"
+          },
+          {
+            "afterClickS": 12.386294000000001,
+            "id": 3,
+            "status": "CONDITIONAL"
+          },
+          {
+            "afterClickS": 13.841269,
+            "id": 4,
+            "status": "NO_ROUTE"
+          },
+          {
+            "afterClickS": 13.885144,
+            "id": 5,
+            "status": "NO_ROUTE"
+          },
+          {
+            "afterClickS": 15.317860000000001,
+            "id": 6,
+            "status": "CONDITIONAL"
+          },
+          {
+            "afterClickS": 15.795226,
+            "id": 7,
+            "status": "NO_ROUTE"
+          },
+          {
+            "afterClickS": 15.987846000000001,
+            "id": 8,
+            "status": "NO_ROUTE"
+          },
+          {
+            "afterClickS": 16.693304,
+            "id": 9,
+            "status": "CONDITIONAL"
+          }
+        ],
+        "terminateRequestedAfterClickS": 17.223403,
+        "terminationAfterObservation": false,
+        "pendingAtTermination": [],
+        "exitAfterClickS": 18.12677,
+        "sourceRole": "official-base"
+      },
+      {
+        "worker": 3,
+        "owner": 2,
+        "kind": "metro-worker-BDEusPKL.js",
+        "createdAfterClickS": 17.224387,
+        "posts": [
+          {
+            "afterClickS": 18.106582000000003,
+            "id": 1,
+            "cloneSendMs": 880.2323529999994,
+            "initializes": true,
+            "request": {
+              "origin": {
+                "id": "map:random--1529480317",
+                "coordinates": [
+                  114.16965086248385,
+                  22.293277490710825
+                ]
+              },
+              "destination": {
+                "id": "map:random-2133651309",
+                "coordinates": [
+                  114.15007628641142,
+                  22.26413857693343
+                ]
+              },
+              "preference": "ordinary",
+              "departureS": 28800,
+              "departureDate": "2026-10-12"
+            },
+            "graphs": [
+              {
+                "gid": 5,
+                "version": "b1e24d8ef9214320",
+                "nodes": 65304,
+                "edges": 144603,
+                "regions": [
+                  "ADM",
+                  "AUS",
+                  "HUH",
+                  "EXC",
+                  "ETS",
+                  "KOW"
+                ]
+              }
+            ]
+          }
+        ],
+        "results": [
+          {
+            "afterClickS": 23.462521000000002,
+            "id": 1
+          }
+        ],
+        "terminateRequestedAfterClickS": 23.636923,
+        "terminationAfterObservation": false,
+        "pendingAtTermination": [],
+        "exitAfterClickS": 26.404353,
+        "sourceRole": "merged-metro"
+      },
+      {
+        "worker": 4,
+        "owner": 3,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "createdAfterClickS": 25.671215,
+        "posts": [
+          {
+            "afterClickS": 26.403663,
+            "id": 1,
+            "cloneSendMs": 731.2897469999989,
+            "initializes": true,
+            "request": {
+              "origin": {
+                "id": "map:random--1529480317",
+                "coordinates": [
+                  114.16965086248385,
+                  22.293277490710825
+                ]
+              },
+              "destination": {
+                "id": "map:random-2133651309",
+                "coordinates": [
+                  114.15007628641142,
+                  22.26413857693343
+                ]
+              },
+              "preference": "fast",
+              "allowedModes": [
+                "metro",
+                "bus",
+                "tram"
+              ],
+              "departureS": 28800,
+              "departureDate": "2026-10-12"
+            },
+            "graphs": [
+              {
+                "gid": 6,
+                "version": "814b03c9c2d7e3c5",
+                "nodes": 61055,
+                "edges": 135514,
+                "regions": [
+                  "ADM",
+                  "AUS"
+                ]
+              },
+              {
+                "gid": 1,
+                "version": "b1e24d8ef9214320",
+                "nodes": 5405,
+                "edges": 11387,
+                "regions": [
+                  "ADM",
+                  "AUS",
+                  "HUH",
+                  "EXC",
+                  "ETS",
+                  "KOW"
+                ]
+              }
+            ]
+          }
+        ],
+        "results": [
+          {
+            "afterClickS": 32.437521,
+            "id": 1,
+            "status": "CONDITIONAL"
+          }
+        ],
+        "terminateRequestedAfterClickS": 32.996750999999996,
+        "terminationAfterObservation": false,
+        "pendingAtTermination": [],
+        "exitAfterClickS": 33.788411,
+        "sourceRole": "isolated-demo-area"
+      },
+      {
+        "worker": 5,
+        "owner": 2,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "createdAfterClickS": 32.997719,
+        "posts": [
+          {
+            "afterClickS": 33.788157,
+            "id": 1,
+            "cloneSendMs": 789.5676850000018,
+            "initializes": true,
+            "request": {
+              "origin": {
+                "id": "map:random--1529480317",
+                "coordinates": [
+                  114.16965086248385,
+                  22.293277490710825
+                ]
+              },
+              "destination": {
+                "id": "map:random-2133651309",
+                "coordinates": [
+                  114.15007628641142,
+                  22.26413857693343
+                ]
+              },
+              "preference": "fast",
+              "allowedModes": [
+                "metro",
+                "bus",
+                "tram"
+              ],
+              "departureS": 28800,
+              "departureDate": "2026-10-12"
+            },
+            "graphs": [
+              {
+                "gid": 2,
+                "version": "814b03c9c2d7e3c5",
+                "nodes": 61055,
+                "edges": 135514,
+                "regions": [
+                  "ADM",
+                  "AUS"
+                ]
+              },
+              {
+                "gid": 1,
+                "version": "b1e24d8ef9214320",
+                "nodes": 5405,
+                "edges": 11387,
+                "regions": [
+                  "ADM",
+                  "AUS",
+                  "HUH",
+                  "EXC",
+                  "ETS",
+                  "KOW"
+                ]
+              },
+              {
+                "gid": 4,
+                "version": "814b03c9c2d7e3c5+block:19aebcac62f227eb:pacific-f-anchor-v1",
+                "nodes": 62479,
+                "edges": 138703,
+                "regions": [
+                  "ADM",
+                  "AUS"
+                ]
+              }
+            ]
+          }
+        ],
+        "terminateRequestedAfterClickS": 60.15593199999999,
+        "terminationAfterObservation": true,
+        "pendingAtTermination": [
+          {
+            "origin": {
+              "id": "map:random--1529480317",
+              "coordinates": [
+                114.16965086248385,
+                22.293277490710825
+              ]
+            },
+            "destination": {
+              "id": "map:random-2133651309",
+              "coordinates": [
+                114.15007628641142,
+                22.26413857693343
+              ]
+            },
+            "preference": "fast",
+            "allowedModes": [
+              "metro",
+              "bus",
+              "tram"
+            ],
+            "departureS": 28800,
+            "departureDate": "2026-10-12"
+          }
+        ],
+        "exitAfterClickS": 60.490068,
+        "sourceRole": "official-detailed"
+      }
+    ],
+    "pendingWorkerSpans": [
+      {
+        "t": 42316.098,
+        "worker": 5,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "event": "worker-span-start",
+        "sid": 12,
+        "name": "transit-query",
+        "request": {
+          "origin": {
+            "coordinates": [
+              114.16965086248385,
+              22.293277490710825
+            ]
+          },
+          "destination": {
+            "coordinates": [
+              114.15007628641142,
+              22.26413857693343
+            ]
+          },
+          "preference": "fast",
+          "allowedModes": [
+            "metro",
+            "bus",
+            "tram"
+          ],
+          "departureS": 28800,
+          "departureDate": "2026-10-12"
+        }
+      },
+      {
+        "t": 42393.152,
+        "worker": 5,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "event": "worker-span-start",
+        "sid": 13,
+        "name": "scheduled-search",
+        "parentSid": 12
+      },
+      {
+        "t": 64514.812,
+        "worker": 5,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "event": "worker-span-start",
+        "sid": 561,
+        "name": "walk-query",
+        "request": {
+          "origin": {
+            "coordinates": [
+              114.16454,
+              22.27827
+            ]
+          },
+          "destination": {
+            "node_id": "ADM:N:15dedbcfbae59e",
+            "coordinates": [
+              114.16624518,
+              22.27888752
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureS": 32304.7569,
+          "departureDate": "2026-10-12"
+        },
+        "graph": {
+          "version": "814b03c9c2d7e3c5+block:19aebcac62f227eb:pacific-f-anchor-v1",
+          "nodes": 27512,
+          "edges": 60514,
+          "regions": [
+            "ADM"
+          ]
+        },
+        "parentSid": 13
+      }
+    ],
+    "candidates": [
+      {
+        "id": "taxi-direct",
+        "kind": "direct",
+        "minutes": 31,
+        "cost": 140.25,
+        "modes": [
+          "walk",
+          "taxi",
+          "walk"
+        ],
+        "endpointsPreserved": true,
+        "forbidden": [],
+        "needsVehicleConfirmation": false
+      },
+      {
+        "id": "taxi-first-tram-td:99215",
+        "kind": "first",
+        "minutes": 103,
+        "cost": 98.89,
+        "modes": [
+          "walk",
+          "taxi",
+          "walk",
+          "tram",
+          "walk"
+        ],
+        "endpointsPreserved": true,
+        "forbidden": [],
+        "needsVehicleConfirmation": false
+      },
+      {
+        "id": "taxi-first-metro-ADM:portal:E2",
+        "kind": "first",
+        "minutes": 109,
+        "cost": 96.73,
+        "modes": [
+          "walk",
+          "taxi",
+          "walk",
+          "tram",
+          "walk"
+        ],
+        "endpointsPreserved": true,
+        "forbidden": [],
+        "needsVehicleConfirmation": false
+      },
+      {
+        "id": "transit-demo-review",
+        "kind": "public",
+        "minutes": 151,
+        "cost": 16.56,
+        "modes": [
+          "walk",
+          "bus",
+          "walk",
+          "metro",
+          "walk",
+          "tram",
+          "walk"
+        ],
+        "endpointsPreserved": true,
+        "forbidden": [],
+        "needsVehicleConfirmation": false
+      }
+    ]
+  },
+  "matchingCandidates": [
+    {
+      "id": "taxi-direct",
+      "present": true,
+      "sameTravelValues": true,
+      "sameEndpointAndForbiddenChecks": true
+    },
+    {
+      "id": "transit-demo-review",
+      "present": true,
+      "sameTravelValues": true,
+      "sameEndpointAndForbiddenChecks": true
+    }
+  ],
+  "addedCandidateIds": [
+    "taxi-first-tram-td:99215",
+    "taxi-first-metro-ADM:portal:E2"
+  ],
+  "caveats": [
+    "Single serial measurements, not p95 or a stable speed ratio.",
+    "Stage durations may include queue wait; parent/child Worker spans overlap.",
+    "Source-role inference uses graph object identity and known frozen main-source construction; equal versions/counts do not imply equivalent semantics.",
+    "DOM stand-in does not validate browser painting. Original 60-second observation and 384 MiB Worker old-generation cap remain.",
+    "Pending at observation cutoff is never NO_ROUTE."
+  ]
+}

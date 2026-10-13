@@ -1,0 +1,104 @@
+{
+  "graph": [
+    27512,
+    60514
+  ],
+  "checkpoints": [
+    {
+      "seconds": 60.0,
+      "lookups": 400,
+      "distinct": 52,
+      "hits": 348,
+      "misses": 52,
+      "buildMs": 8413.647465999988,
+      "newSincePrior": 52
+    },
+    {
+      "seconds": 120.0,
+      "lookups": 1620,
+      "distinct": 100,
+      "hits": 1354,
+      "misses": 266,
+      "buildMs": 51770.434414000054,
+      "newSincePrior": 48
+    },
+    {
+      "seconds": 180.0,
+      "lookups": 2976,
+      "distinct": 111,
+      "hits": 2454,
+      "misses": 522,
+      "buildMs": 97081.18859699991,
+      "newSincePrior": 11
+    },
+    {
+      "seconds": 240.0,
+      "lookups": 3972,
+      "distinct": 114,
+      "hits": 3192,
+      "misses": 780,
+      "buildMs": 145609.73711799996,
+      "newSincePrior": 3
+    },
+    {
+      "seconds": 300.0,
+      "lookups": 4971,
+      "distinct": 114,
+      "hits": 3956,
+      "misses": 1015,
+      "buildMs": 196078.56042999992,
+      "newSincePrior": 0
+    },
+    {
+      "seconds": 360.0,
+      "lookups": 5948,
+      "distinct": 116,
+      "hits": 4690,
+      "misses": 1258,
+      "buildMs": 245053.9389320001,
+      "newSincePrior": 2
+    },
+    {
+      "seconds": 420.0,
+      "lookups": 7043,
+      "distinct": 116,
+      "hits": 5512,
+      "misses": 1531,
+      "buildMs": 294507.6087679998,
+      "newSincePrior": 0
+    },
+    {
+      "seconds": 480.0,
+      "lookups": 8004,
+      "distinct": 116,
+      "hits": 6215,
+      "misses": 1789,
+      "buildMs": 344818.1630019998,
+      "newSincePrior": 0
+    },
+    {
+      "seconds": 540.0,
+      "lookups": 8821,
+      "distinct": 116,
+      "hits": 6827,
+      "misses": 1994,
+      "buildMs": 394855.8797070002,
+      "newSincePrior": 0
+    },
+    {
+      "seconds": 600.0,
+      "lookups": 9623,
+      "distinct": 116,
+      "hits": 7438,
+      "misses": 2185,
+      "buildMs": 446060.60350799945,
+      "newSincePrior": 0
+    }
+  ],
+  "latestEventMs": 605041.741,
+  "latestDistinct": 116,
+  "latestLookups": 9623,
+  "conservativeDistinctUpperBound": 307,
+  "upperBoundBasis": "One fixed request, 307 immutable R connections; each dynamic resolver has one fixed ft origin/destination pair and mode. Departure/date are not part of the lower-bound key. This is a conservative upper bound across all those resolver pairs, not an assertion that all 307 need timed lower bounds or fit an affordable cache.",
+  "source": "Actual retained checkpoint event cutoffs (60.139 / 120.086 / 600.110 seconds), excluding cleanup after terminal observation."
+}

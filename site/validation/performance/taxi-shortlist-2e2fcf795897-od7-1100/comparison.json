@@ -1,0 +1,4208 @@
+{
+  "schema": 1,
+  "config": {
+    "od": 7,
+    "need": "ordinary",
+    "departureDate": "2026-10-12",
+    "departureS": 39600,
+    "timezone": "Asia/Hong_Kong",
+    "landSeed": 20261011,
+    "taxiSeed": 42,
+    "windowMs": 60000,
+    "watchdogMs": 90000,
+    "costWeights": [
+      0.25,
+      0.75,
+      2
+    ]
+  },
+  "runtimeVersion": "2e2fcf795897",
+  "sameInputs": true,
+  "bothComplete": true,
+  "conclusion": "completed-candidate-ready-for-tradeoff-review",
+  "target": {
+    "id": "taxi-last-tram-td:99133",
+    "status": "published-complete",
+    "trial": {
+      "side": "last",
+      "point": {
+        "id": "td:99133",
+        "name": "金钟港铁站 (西行方向)",
+        "mode": "tram",
+        "coordinates": [
+          114.16454,
+          22.27827
+        ],
+        "distanceM": 533.3186693254714,
+        "selectionScore": 62.601622664035304
+      },
+      "choiceId": "taxi-last-tram-td:99133",
+      "status": "published-complete",
+      "feeder95": {
+        "status": "passed",
+        "passengerDistanceM": 2340.183,
+        "directDistanceM": 6307.040000000002,
+        "thresholdM": 5991.688000000001,
+        "ratio": 0.3710429932266165
+      },
+      "curb": {
+        "roadId": "601280459",
+        "roadCoordinate": [
+          114.1646855,
+          22.2781735
+        ],
+        "linkDistanceM": 18.427100012442253,
+        "linkDurationS": 15.35591667703521,
+        "guardPassed": true,
+        "qualification": "Production modeled curb connector; no physical accessibility/elevation certification"
+      },
+      "publicQuery": {
+        "origin": {
+          "id": "map:random--2138587087",
+          "coordinates": [
+            114.19780266014673,
+            22.27037983652672
+          ]
+        },
+        "destination": {
+          "id": "td:99133",
+          "coordinates": [
+            114.16454,
+            22.27827
+          ]
+        },
+        "departureS": 39600,
+        "mode": "tram"
+      },
+      "publicRaw": {
+        "query": {
+          "origin": {
+            "id": "map:random--2138587087",
+            "coordinates": [
+              114.19780266014673,
+              22.27037983652672
+            ]
+          },
+          "destination": {
+            "id": "td:99133",
+            "coordinates": [
+              114.16454,
+              22.27827
+            ]
+          },
+          "departureS": 39600,
+          "departureDate": "2026-10-12",
+          "need": "ordinary",
+          "allowedTransitModes": [
+            "tram"
+          ]
+        },
+        "result": {
+          "complete": true,
+          "message": "演示班次联程 · 11:00 出发",
+          "totalMinutes": 61,
+          "arrivalS": 43243,
+          "walkMinutes": 46,
+          "waitMinutes": 4,
+          "transfers": 0,
+          "warnings": [
+            "使用资料内演示服务日与所选时刻，不是实时到站。",
+            "仅为离线估算步行连接；首末接驳单独标为未核实示意线，距离和时间已计入。",
+            "车站入口按官方三维节点绑定；楼梯、通道及升降机当前状态未核实。",
+            "连接缓存必须与graph_version一致；不能用旧图缓存拼接新图。",
+            "本文件不提供实时发车或候车预测；列车、巴士和电车的班次模拟必须另行标注来源与假设。",
+            "公交、电车及地铁候车使用所选服务时钟；班次或车程含明确标注的演示/频率估算，不是实时车辆预测。",
+            "步道採用地政總署官方三維路網；路況、通道開放及升降機運作未經現場核實。",
+            "步行時間按速度假設計算；港鐵車程、候車、站內步行及紅磡轉乘均為估算，不是即時班次。",
+            "保留原始起終點；首末接駁作為未核實的估算段單獨顯示，實際入口、障礙及繞行需確認。",
+            "港鐵跨海線為車站間示意線，不是實測軌道；站內接駁為估算，不提供虛構室內步行線。",
+            "未解析開放時間的通道、停用路段及收費區步道均不納入室外路線。",
+            "所有步行、车内及换乘时间均为估算；未核验即时封闭、班次、站内设施或实际可通行状况。",
+            "首末步行接入为未核验的直线距离估算，已计入总距离与时间；虚线只表示道路关联，可能跨越建筑、水面、围栏或其他障碍，不代表可照直线行走，实际入口和绕行需现场确认。",
+            "站台最后1.6米的入口位置待核实，请按现场过街设施通行。",
+            "官方班距推算模拟班次；中途时分按站距和每站15秒停车估算。全线参考时长3120秒；裁剪起点相对原总站发车偏移1012秒。",
+            "schematic：官方站点顺序折线，不是实际道路或轨道路径。",
+            "推荐成本按步行权重2.5及每次换乘3分钟的研究假设计分；首次上车不算换乘，这些惩罚不增加真实行程时间或候车时间。"
+          ],
+          "publicRide": true,
+          "segments": [
+            {
+              "kind": "access_connector",
+              "minutes": 0.014569,
+              "distanceM": 1.049
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.582064,
+              "distanceM": 113.909
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.086069,
+              "distanceM": 6.197
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.656178,
+              "distanceM": 47.245
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.663796,
+              "distanceM": 119.793
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.19917,
+              "distanceM": 14.34
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.89636,
+              "distanceM": 64.538
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.629403,
+              "distanceM": 22.659
+            },
+            {
+              "kind": "walk",
+              "minutes": 2.051407,
+              "distanceM": 147.701
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.154315,
+              "distanceM": 11.111
+            },
+            {
+              "kind": "walk",
+              "minutes": 2.84727,
+              "distanceM": 205.003
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.526763,
+              "distanceM": 109.927
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.081285,
+              "distanceM": 5.853
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.704086,
+              "distanceM": 50.694
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.237939,
+              "distanceM": 17.132
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.359521,
+              "distanceM": 97.885
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.068937,
+              "distanceM": 4.963
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.015729,
+              "distanceM": 1.133
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.083405,
+              "distanceM": 6.005
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.361222,
+              "distanceM": 26.008
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.08015,
+              "distanceM": 5.771
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.874052,
+              "distanceM": 62.932
+            },
+            {
+              "kind": "stairs",
+              "minutes": 2.957525,
+              "distanceM": 106.471
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.311395,
+              "distanceM": 22.42
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.100917,
+              "distanceM": 7.266
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.054934,
+              "distanceM": 3.955
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.021226,
+              "distanceM": 1.528
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.053651,
+              "distanceM": 3.863
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.404441,
+              "distanceM": 29.12
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.07241,
+              "distanceM": 5.214
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.383631,
+              "distanceM": 27.621
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.06531,
+              "distanceM": 4.702
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.497608,
+              "distanceM": 35.828
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.519524,
+              "distanceM": 18.703
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.162179,
+              "distanceM": 11.677
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.054992,
+              "distanceM": 3.959
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.293059,
+              "distanceM": 21.1
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.08272,
+              "distanceM": 5.956
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.0521,
+              "distanceM": 3.751
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.144011,
+              "distanceM": 10.369
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.023789,
+              "distanceM": 1.713
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.919844,
+              "distanceM": 66.229
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.012867,
+              "distanceM": 0.926
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.098029,
+              "distanceM": 7.058
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.023423,
+              "distanceM": 1.686
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.717219,
+              "distanceM": 51.64
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.101627,
+              "distanceM": 7.317
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.424132,
+              "distanceM": 30.537
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.048784,
+              "distanceM": 3.512
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.113741,
+              "distanceM": 8.189
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.04827,
+              "distanceM": 3.475
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.371954,
+              "distanceM": 26.781
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.075675,
+              "distanceM": 5.449
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.060683,
+              "distanceM": 4.369
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.044659,
+              "distanceM": 3.215
+            },
+            {
+              "kind": "walk",
+              "minutes": 2.254097,
+              "distanceM": 162.295
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.025626,
+              "distanceM": 1.845
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.077173,
+              "distanceM": 5.556
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.025803,
+              "distanceM": 1.858
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.5189,
+              "distanceM": 109.361
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.130435,
+              "distanceM": 9.391
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.595876,
+              "distanceM": 42.903
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.136819,
+              "distanceM": 9.851
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.106534,
+              "distanceM": 79.67
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.431109,
+              "distanceM": 31.04
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.164665,
+              "distanceM": 11.856
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.911575,
+              "distanceM": 65.633
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.075253,
+              "distanceM": 5.418
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.580153,
+              "distanceM": 41.771
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.521938,
+              "distanceM": 37.58
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.306079,
+              "distanceM": 11.019
+            },
+            {
+              "kind": "footbridge",
+              "minutes": 0.370371,
+              "distanceM": 26.667
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.305093,
+              "distanceM": 10.983
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.089781,
+              "distanceM": 6.464
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.003948,
+              "distanceM": 72.284
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.01162,
+              "distanceM": 0.837
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.045572,
+              "distanceM": 3.281
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.101808,
+              "distanceM": 7.33
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.083797,
+              "distanceM": 6.033
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.080405,
+              "distanceM": 5.789
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.027794,
+              "distanceM": 2.001
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.027501,
+              "distanceM": 1.98
+            },
+            {
+              "kind": "walk",
+              "minutes": 2.622219,
+              "distanceM": 188.8
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.05692,
+              "distanceM": 4.098
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.219427,
+              "distanceM": 15.799
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.04924,
+              "distanceM": 3.545
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.543551,
+              "distanceM": 111.136
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.057566,
+              "distanceM": 4.145
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.043607,
+              "distanceM": 3.14
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.023322,
+              "distanceM": 1.679
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.043408,
+              "distanceM": 3.125
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.148149,
+              "distanceM": 10.667
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.497938,
+              "distanceM": 35.852
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.081054,
+              "distanceM": 5.836
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.084441,
+              "distanceM": 6.08
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.105498,
+              "distanceM": 7.596
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.109629,
+              "distanceM": 7.893
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.212079,
+              "distanceM": 15.27
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.099458,
+              "distanceM": 7.161
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.038069,
+              "distanceM": 2.741
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.194167,
+              "distanceM": 13.98
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.497281,
+              "distanceM": 107.804
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.229115,
+              "distanceM": 16.496
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.092501,
+              "distanceM": 6.66
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.059685,
+              "distanceM": 4.297
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.012885,
+              "distanceM": 0.928
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.184284,
+              "distanceM": 13.268
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.016649,
+              "distanceM": 1.199
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.075666,
+              "distanceM": 5.448
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.090984,
+              "distanceM": 6.551
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.097402,
+              "distanceM": 7.013
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.022126,
+              "distanceM": 1.593
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.071947,
+              "distanceM": 5.18
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.221387,
+              "distanceM": 15.94
+            },
+            {
+              "kind": "access_connector",
+              "minutes": 0.022566,
+              "distanceM": 1.625
+            },
+            {
+              "kind": "wait",
+              "minutes": 3.442704666666638,
+              "distanceM": 0
+            },
+            {
+              "kind": "tram",
+              "minutes": 11.85,
+              "distanceM": 1817.7080499765827
+            }
+          ],
+          "timedLegs": [
+            {
+              "kind": "walk",
+              "fromId": "journey:origin",
+              "toId": "td:99125",
+              "departureS": 39600,
+              "arrivalS": 42325.43772,
+              "durationS": 2725.4377200000004,
+              "geometrySha256": null
+            },
+            {
+              "kind": "wait",
+              "patternId": "td:4005:1:287",
+              "fromId": "td:99125",
+              "toId": "td:99125",
+              "departureS": 42325.43772,
+              "arrivalS": 42532,
+              "durationS": 206.56227999999828,
+              "geometrySha256": null
+            },
+            {
+              "kind": "tram",
+              "patternId": "td:4005:1:287",
+              "fromId": "td:99125",
+              "toId": "td:99133",
+              "departureS": 42532,
+              "arrivalS": 43243,
+              "durationS": 711,
+              "geometrySha256": "5118e5ab5017cc63c6a8a84c4bdca3ba8a5bf15fe40edf755fe4e4897b3f3837"
+            },
+            {
+              "kind": "walk",
+              "fromId": "td:99133",
+              "toId": "journey:destination",
+              "departureS": 43243,
+              "arrivalS": 43243,
+              "durationS": 0,
+              "geometrySha256": null
+            }
+          ]
+        },
+        "overlayCompatible": true
+      },
+      "publicResult": {
+        "complete": true,
+        "message": "演示班次联程 · 11:00 出发",
+        "totalMinutes": 61,
+        "arrivalS": 43243,
+        "walkMinutes": 46,
+        "waitMinutes": 4,
+        "transfers": 0,
+        "warnings": [
+          "使用资料内演示服务日与所选时刻，不是实时到站。",
+          "仅为离线估算步行连接；首末接驳单独标为未核实示意线，距离和时间已计入。",
+          "车站入口按官方三维节点绑定；楼梯、通道及升降机当前状态未核实。",
+          "连接缓存必须与graph_version一致；不能用旧图缓存拼接新图。",
+          "本文件不提供实时发车或候车预测；列车、巴士和电车的班次模拟必须另行标注来源与假设。",
+          "公交、电车及地铁候车使用所选服务时钟；班次或车程含明确标注的演示/频率估算，不是实时车辆预测。",
+          "步道採用地政總署官方三維路網；路況、通道開放及升降機運作未經現場核實。",
+          "步行時間按速度假設計算；港鐵車程、候車、站內步行及紅磡轉乘均為估算，不是即時班次。",
+          "保留原始起終點；首末接駁作為未核實的估算段單獨顯示，實際入口、障礙及繞行需確認。",
+          "港鐵跨海線為車站間示意線，不是實測軌道；站內接駁為估算，不提供虛構室內步行線。",
+          "未解析開放時間的通道、停用路段及收費區步道均不納入室外路線。",
+          "所有步行、车内及换乘时间均为估算；未核验即时封闭、班次、站内设施或实际可通行状况。",
+          "首末步行接入为未核验的直线距离估算，已计入总距离与时间；虚线只表示道路关联，可能跨越建筑、水面、围栏或其他障碍，不代表可照直线行走，实际入口和绕行需现场确认。",
+          "站台最后1.6米的入口位置待核实，请按现场过街设施通行。",
+          "官方班距推算模拟班次；中途时分按站距和每站15秒停车估算。全线参考时长3120秒；裁剪起点相对原总站发车偏移1012秒。",
+          "schematic：官方站点顺序折线，不是实际道路或轨道路径。",
+          "推荐成本按步行权重2.5及每次换乘3分钟的研究假设计分；首次上车不算换乘，这些惩罚不增加真实行程时间或候车时间。"
+        ],
+        "publicRide": true,
+        "segments": [
+          {
+            "kind": "access_connector",
+            "minutes": 0.014569,
+            "distanceM": 1.049
+          },
+          {
+            "kind": "walk",
+            "minutes": 1.582064,
+            "distanceM": 113.909
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.086069,
+            "distanceM": 6.197
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.656178,
+            "distanceM": 47.245
+          },
+          {
+            "kind": "walk",
+            "minutes": 1.663796,
+            "distanceM": 119.793
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.19917,
+            "distanceM": 14.34
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.89636,
+            "distanceM": 64.538
+          },
+          {
+            "kind": "stairs",
+            "minutes": 0.629403,
+            "distanceM": 22.659
+          },
+          {
+            "kind": "walk",
+            "minutes": 2.051407,
+            "distanceM": 147.701
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.154315,
+            "distanceM": 11.111
+          },
+          {
+            "kind": "walk",
+            "minutes": 2.84727,
+            "distanceM": 205.003
+          },
+          {
+            "kind": "walk",
+            "minutes": 1.526763,
+            "distanceM": 109.927
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.081285,
+            "distanceM": 5.853
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.704086,
+            "distanceM": 50.694
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.237939,
+            "distanceM": 17.132
+          },
+          {
+            "kind": "walk",
+            "minutes": 1.359521,
+            "distanceM": 97.885
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.068937,
+            "distanceM": 4.963
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.015729,
+            "distanceM": 1.133
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.083405,
+            "distanceM": 6.005
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.361222,
+            "distanceM": 26.008
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.08015,
+            "distanceM": 5.771
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.874052,
+            "distanceM": 62.932
+          },
+          {
+            "kind": "stairs",
+            "minutes": 2.957525,
+            "distanceM": 106.471
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.311395,
+            "distanceM": 22.42
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.100917,
+            "distanceM": 7.266
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.054934,
+            "distanceM": 3.955
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.021226,
+            "distanceM": 1.528
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.053651,
+            "distanceM": 3.863
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.404441,
+            "distanceM": 29.12
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.07241,
+            "distanceM": 5.214
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.383631,
+            "distanceM": 27.621
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.06531,
+            "distanceM": 4.702
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.497608,
+            "distanceM": 35.828
+          },
+          {
+            "kind": "stairs",
+            "minutes": 0.519524,
+            "distanceM": 18.703
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.162179,
+            "distanceM": 11.677
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.054992,
+            "distanceM": 3.959
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.293059,
+            "distanceM": 21.1
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.08272,
+            "distanceM": 5.956
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.0521,
+            "distanceM": 3.751
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.144011,
+            "distanceM": 10.369
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.023789,
+            "distanceM": 1.713
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.919844,
+            "distanceM": 66.229
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.012867,
+            "distanceM": 0.926
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.098029,
+            "distanceM": 7.058
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.023423,
+            "distanceM": 1.686
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.717219,
+            "distanceM": 51.64
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.101627,
+            "distanceM": 7.317
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.424132,
+            "distanceM": 30.537
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.048784,
+            "distanceM": 3.512
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.113741,
+            "distanceM": 8.189
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.04827,
+            "distanceM": 3.475
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.371954,
+            "distanceM": 26.781
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.075675,
+            "distanceM": 5.449
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.060683,
+            "distanceM": 4.369
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.044659,
+            "distanceM": 3.215
+          },
+          {
+            "kind": "walk",
+            "minutes": 2.254097,
+            "distanceM": 162.295
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.025626,
+            "distanceM": 1.845
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.077173,
+            "distanceM": 5.556
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.025803,
+            "distanceM": 1.858
+          },
+          {
+            "kind": "walk",
+            "minutes": 1.5189,
+            "distanceM": 109.361
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.130435,
+            "distanceM": 9.391
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.595876,
+            "distanceM": 42.903
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.136819,
+            "distanceM": 9.851
+          },
+          {
+            "kind": "walk",
+            "minutes": 1.106534,
+            "distanceM": 79.67
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.431109,
+            "distanceM": 31.04
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.164665,
+            "distanceM": 11.856
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.911575,
+            "distanceM": 65.633
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.075253,
+            "distanceM": 5.418
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.580153,
+            "distanceM": 41.771
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.521938,
+            "distanceM": 37.58
+          },
+          {
+            "kind": "stairs",
+            "minutes": 0.306079,
+            "distanceM": 11.019
+          },
+          {
+            "kind": "footbridge",
+            "minutes": 0.370371,
+            "distanceM": 26.667
+          },
+          {
+            "kind": "stairs",
+            "minutes": 0.305093,
+            "distanceM": 10.983
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.089781,
+            "distanceM": 6.464
+          },
+          {
+            "kind": "walk",
+            "minutes": 1.003948,
+            "distanceM": 72.284
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.01162,
+            "distanceM": 0.837
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.045572,
+            "distanceM": 3.281
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.101808,
+            "distanceM": 7.33
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.083797,
+            "distanceM": 6.033
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.080405,
+            "distanceM": 5.789
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.027794,
+            "distanceM": 2.001
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.027501,
+            "distanceM": 1.98
+          },
+          {
+            "kind": "walk",
+            "minutes": 2.622219,
+            "distanceM": 188.8
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.05692,
+            "distanceM": 4.098
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.219427,
+            "distanceM": 15.799
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.04924,
+            "distanceM": 3.545
+          },
+          {
+            "kind": "walk",
+            "minutes": 1.543551,
+            "distanceM": 111.136
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.057566,
+            "distanceM": 4.145
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.043607,
+            "distanceM": 3.14
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.023322,
+            "distanceM": 1.679
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.043408,
+            "distanceM": 3.125
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.148149,
+            "distanceM": 10.667
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.497938,
+            "distanceM": 35.852
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.081054,
+            "distanceM": 5.836
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.084441,
+            "distanceM": 6.08
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.105498,
+            "distanceM": 7.596
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.109629,
+            "distanceM": 7.893
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.212079,
+            "distanceM": 15.27
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.099458,
+            "distanceM": 7.161
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.038069,
+            "distanceM": 2.741
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.194167,
+            "distanceM": 13.98
+          },
+          {
+            "kind": "walk",
+            "minutes": 1.497281,
+            "distanceM": 107.804
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.229115,
+            "distanceM": 16.496
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.092501,
+            "distanceM": 6.66
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.059685,
+            "distanceM": 4.297
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.012885,
+            "distanceM": 0.928
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.184284,
+            "distanceM": 13.268
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.016649,
+            "distanceM": 1.199
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.075666,
+            "distanceM": 5.448
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.090984,
+            "distanceM": 6.551
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.097402,
+            "distanceM": 7.013
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.022126,
+            "distanceM": 1.593
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.071947,
+            "distanceM": 5.18
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.221387,
+            "distanceM": 15.94
+          },
+          {
+            "kind": "access_connector",
+            "minutes": 0.022566,
+            "distanceM": 1.625
+          },
+          {
+            "kind": "wait",
+            "minutes": 3.442704666666638,
+            "distanceM": 0
+          },
+          {
+            "kind": "tram",
+            "minutes": 11.85,
+            "distanceM": 1817.7080499765827
+          }
+        ],
+        "timedLegs": [
+          {
+            "kind": "walk",
+            "fromId": "journey:origin",
+            "toId": "td:99125",
+            "departureS": 39600,
+            "arrivalS": 42325.43772,
+            "durationS": 2725.4377200000004,
+            "geometrySha256": null
+          },
+          {
+            "kind": "wait",
+            "patternId": "td:4005:1:287",
+            "fromId": "td:99125",
+            "toId": "td:99125",
+            "departureS": 42325.43772,
+            "arrivalS": 42532,
+            "durationS": 206.56227999999828,
+            "geometrySha256": null
+          },
+          {
+            "kind": "tram",
+            "patternId": "td:4005:1:287",
+            "fromId": "td:99125",
+            "toId": "td:99133",
+            "departureS": 42532,
+            "arrivalS": 43243,
+            "durationS": 711,
+            "geometrySha256": "5118e5ab5017cc63c6a8a84c4bdca3ba8a5bf15fe40edf755fe4e4897b3f3837"
+          },
+          {
+            "kind": "walk",
+            "fromId": "td:99133",
+            "toId": "journey:destination",
+            "departureS": 43243,
+            "arrivalS": 43243,
+            "durationS": 0,
+            "geometrySha256": null
+          }
+        ]
+      },
+      "ask": {
+        "pickup": {
+          "id": "601280459",
+          "coordinate": [
+            114.1646855,
+            22.2781735
+          ],
+          "distanceM": 18.419434613756007,
+          "covered": true,
+          "approximate": true
+        },
+        "destination": {
+          "id": "5087188609",
+          "coordinate": [
+            114.1640758,
+            22.2736775
+          ],
+          "distanceM": 26.490298926970844,
+          "covered": true,
+          "approximate": true
+        },
+        "passengerReadyS": 43258.355916677036,
+        "quote": {
+          "carId": "DEMO-17",
+          "passengerReadyS": 43258.355916677036,
+          "carArrivalS": 39925.96725114254,
+          "pickupS": 43258.355916677036,
+          "dropoffS": 43592.669916677034,
+          "passengerWaitS": 0,
+          "vehicleWaitS": 3332.3886655344977,
+          "passengerDistanceM": 2340.183,
+          "passengerDurationS": 334.31399999999996,
+          "harbourTunnel": false
+        }
+      },
+      "taxiQuote": {
+        "carId": "DEMO-17",
+        "passengerReadyS": 43258.355916677036,
+        "carArrivalS": 39925.96725114254,
+        "pickupS": 43258.355916677036,
+        "dropoffS": 43592.669916677034,
+        "passengerWaitS": 0,
+        "vehicleWaitS": 3332.3886655344977,
+        "passengerDistanceM": 2340.183,
+        "passengerDurationS": 334.31399999999996,
+        "harbourTunnel": false
+      },
+      "published": true,
+      "publishedComplete": true,
+      "diagnostic": {
+        "side": "last",
+        "id": "td:99133",
+        "status": "ready",
+        "minutes": 67
+      }
+    },
+    "candidate": {
+      "id": "taxi-last-tram-td:99133",
+      "kind": "last",
+      "available": true,
+      "scoringInput": {
+        "id": "taxi-last-tram-td:99133",
+        "available": true,
+        "minutes": 67,
+        "cost": 34.72,
+        "walkMinutes": 47,
+        "transfers": 1,
+        "result": {
+          "waitMinutes": 4,
+          "segments": [
+            {
+              "kind": "access_connector",
+              "minutes": 0.014569
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.582064
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.086069
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.656178
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.663796
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.19917
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.89636
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.629403
+            },
+            {
+              "kind": "walk",
+              "minutes": 2.051407
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.154315
+            },
+            {
+              "kind": "walk",
+              "minutes": 2.84727
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.526763
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.081285
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.704086
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.237939
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.359521
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.068937
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.015729
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.083405
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.361222
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.08015
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.874052
+            },
+            {
+              "kind": "stairs",
+              "minutes": 2.957525
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.311395
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.100917
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.054934
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.021226
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.053651
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.404441
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.07241
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.383631
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.06531
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.497608
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.519524
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.162179
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.054992
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.293059
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.08272
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.0521
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.144011
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.023789
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.919844
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.012867
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.098029
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.023423
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.717219
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.101627
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.424132
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.048784
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.113741
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.04827
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.371954
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.075675
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.060683
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.044659
+            },
+            {
+              "kind": "walk",
+              "minutes": 2.254097
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.025626
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.077173
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.025803
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.5189
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.130435
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.595876
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.136819
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.106534
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.431109
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.164665
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.911575
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.075253
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.580153
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.521938
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.306079
+            },
+            {
+              "kind": "footbridge",
+              "minutes": 0.370371
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.305093
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.089781
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.003948
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.01162
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.045572
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.101808
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.083797
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.080405
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.027794
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.027501
+            },
+            {
+              "kind": "walk",
+              "minutes": 2.622219
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.05692
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.219427
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.04924
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.543551
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.057566
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.043607
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.023322
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.043408
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.148149
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.497938
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.081054
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.084441
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.105498
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.109629
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.212079
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.099458
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.038069
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.194167
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.497281
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.229115
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.092501
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.059685
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.012885
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.184284
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.016649
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.075666
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.090984
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.097402
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.022126
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.071947
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.221387
+            },
+            {
+              "kind": "access_connector",
+              "minutes": 0.022566
+            },
+            {
+              "kind": "wait",
+              "minutes": 3.442704666666638
+            },
+            {
+              "kind": "tram",
+              "minutes": 11.85
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.2559319446172535
+            },
+            {
+              "kind": "taxi",
+              "minutes": 5.571899999999999
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.36811123836016246
+            }
+          ],
+          "luggageCarryRequired": false
+        }
+      },
+      "minutes": 67,
+      "cost": 34.72,
+      "walkMinutes": 47,
+      "waitMinutes": 4,
+      "transfers": 1,
+      "modes": [
+        "walk",
+        "tram",
+        "walk",
+        "taxi",
+        "walk"
+      ],
+      "endpoints": {
+        "origin": {
+          "kind": "exact-map-or-stop-xy",
+          "requested": {
+            "id": "map:random--2138587087",
+            "coordinates": [
+              114.19780266014673,
+              22.27037983652672
+            ]
+          },
+          "actual": [
+            114.19780266014673,
+            22.27037983652672
+          ],
+          "sourceNodeMatches": null,
+          "nodeTraceable": null,
+          "pass": true
+        },
+        "destination": {
+          "kind": "exact-map-or-stop-xy",
+          "requested": {
+            "id": "map:random-892708869",
+            "coordinates": [
+              114.16388501171271,
+              22.2735175495032
+            ]
+          },
+          "actual": [
+            114.16388501171271,
+            22.2735175495032
+          ],
+          "sourceNodeMatches": null,
+          "nodeTraceable": null,
+          "pass": true
+        }
+      },
+      "continuity": {
+        "maxGapM": 0,
+        "maxHeightGapM": 0,
+        "gaps": []
+      },
+      "evidence": {
+        "status": "modeled-or-unverified",
+        "modeledSteps": [
+          {
+            "step": 0,
+            "kind": "access_connector",
+            "geometryMode": "schematic",
+            "blocked": false
+          },
+          {
+            "step": 165,
+            "kind": "access_connector",
+            "geometryMode": "schematic",
+            "blocked": false
+          },
+          {
+            "step": 167,
+            "kind": "tram",
+            "geometryMode": "schematic",
+            "blocked": false
+          },
+          {
+            "step": 168,
+            "kind": "walk",
+            "geometryMode": "schematic",
+            "blocked": false
+          },
+          {
+            "step": 169,
+            "kind": "taxi",
+            "geometryMode": "schematic",
+            "blocked": false
+          },
+          {
+            "step": 170,
+            "kind": "walk",
+            "geometryMode": "schematic",
+            "blocked": false
+          }
+        ],
+        "unknownEdgeIds": [
+          "ACCESS:origin",
+          "ACCESS:destination",
+          "WAIT:td:99125:42325.43772",
+          "RIDE:td:4005:1:287:0:42532:td:99125:td:99133"
+        ],
+        "transitRideBoundaries": [],
+        "usedEdgeCount": 233,
+        "scheduledEdges": [],
+        "needsFacilityConfirmation": false,
+        "simulationOnly": true,
+        "scenarioOnly": true
+      },
+      "forbidden": [],
+      "strictSourceAudit": null,
+      "fare": {
+        "basis": "Production illustrative quote, not official live tariffs",
+        "available": true,
+        "pricingUnavailable": false,
+        "compacted": true,
+        "totalCents": 3472,
+        "sumLegCents": 3472,
+        "legs": [
+          {
+            "index": 0,
+            "mode": "walk",
+            "label": "起点到道路的估算步行接入（未核验）",
+            "amountCents": 0,
+            "durationMinutes": 48.86666866666661,
+            "distanceM": 3100.687999999999,
+            "available": true
+          },
+          {
+            "index": 1,
+            "mode": "tram",
+            "label": "电车 中环—湾仔（常规班距模拟）：坚拿道西 (西行方向) → 金钟港铁站 (西行方向)（11:48–12:00）",
+            "amountCents": 300,
+            "durationMinutes": 11.85,
+            "distanceM": 1817.7080499765827,
+            "available": true
+          },
+          {
+            "index": 2,
+            "mode": "walk",
+            "label": "步行 19 米到预约上客点",
+            "amountCents": 0,
+            "durationMinutes": 0.2559319446172535,
+            "distanceM": 18.427100012442253,
+            "available": true
+          },
+          {
+            "index": 3,
+            "mode": "taxi",
+            "label": "乘出租车 DEMO-17 前往 地图所选地点",
+            "amountCents": 3172,
+            "durationMinutes": 5.571899999999999,
+            "distanceM": 2340.183,
+            "available": true
+          },
+          {
+            "index": 4,
+            "mode": "walk",
+            "label": "步行 27 米到地图所选地点",
+            "amountCents": 0,
+            "durationMinutes": 0.36811123836016246,
+            "distanceM": 26.504009161931695,
+            "available": true
+          }
+        ],
+        "expectedCompactedModes": [
+          "walk",
+          "tram",
+          "walk",
+          "taxi",
+          "walk"
+        ],
+        "legCoverage": true,
+        "pass": true
+      },
+      "checks": {
+        "complete": true,
+        "endpoints": true,
+        "continuous": true,
+        "knownForbiddenEdges": true,
+        "strictSourceEligibility": true,
+        "fare": true,
+        "transitStopBoundaries": true,
+        "taxiPolicy": true,
+        "strictTaxi": true,
+        "luggageTaxiConfirmation": true
+      },
+      "pass": true,
+      "warnings": [
+        "使用资料内演示服务日与所选时刻，不是实时到站。",
+        "仅为离线估算步行连接；首末接驳单独标为未核实示意线，距离和时间已计入。",
+        "车站入口按官方三维节点绑定；楼梯、通道及升降机当前状态未核实。",
+        "连接缓存必须与graph_version一致；不能用旧图缓存拼接新图。",
+        "本文件不提供实时发车或候车预测；列车、巴士和电车的班次模拟必须另行标注来源与假设。",
+        "公交、电车及地铁候车使用所选服务时钟；班次或车程含明确标注的演示/频率估算，不是实时车辆预测。",
+        "步道採用地政總署官方三維路網；路況、通道開放及升降機運作未經現場核實。",
+        "步行時間按速度假設計算；港鐵車程、候車、站內步行及紅磡轉乘均為估算，不是即時班次。",
+        "保留原始起終點；首末接駁作為未核實的估算段單獨顯示，實際入口、障礙及繞行需確認。",
+        "港鐵跨海線為車站間示意線，不是實測軌道；站內接駁為估算，不提供虛構室內步行線。",
+        "未解析開放時間的通道、停用路段及收費區步道均不納入室外路線。",
+        "所有步行、车内及换乘时间均为估算；未核验即时封闭、班次、站内设施或实际可通行状况。",
+        "首末步行接入为未核验的直线距离估算，已计入总距离与时间；虚线只表示道路关联，可能跨越建筑、水面、围栏或其他障碍，不代表可照直线行走，实际入口和绕行需现场确认。",
+        "站台最后1.6米的入口位置待核实，请按现场过街设施通行。",
+        "官方班距推算模拟班次；中途时分按站距和每站15秒停车估算。全线参考时长3120秒；裁剪起点相对原总站发车偏移1012秒。",
+        "schematic：官方站点顺序折线，不是实际道路或轨道路径。",
+        "推荐成本按步行权重2.5及每次换乘3分钟的研究假设计分；首次上车不算换乘，这些惩罚不增加真实行程时间或候车时间。",
+        "演示数据：车辆、订单、票价与接驳时间为模拟，路线沿公开路网生成。",
+        "路缘连接显示为虚线模型：上客侧人行节点来源高度 未知 米；车行侧高程与实际高差未核验。",
+        "出租车行驶沿 OpenStreetMap 有向道路；车速、既有订单、候车均为演示数据，不是实时调度。",
+        "本方案含未核验路缘连接，只可用于接续情景演练，不保证现实全程可通行或无障碍。"
+      ],
+      "endpointAccess": [
+        {
+          "side": "origin",
+          "requested": {
+            "id": "map:random--2138587087",
+            "coordinates": [
+              114.19780266014673,
+              22.27037983652672
+            ]
+          },
+          "status": "xy-scenario"
+        },
+        {
+          "side": "destination",
+          "requested": {
+            "id": "map:random-892708869",
+            "coordinates": [
+              114.16388501171271,
+              22.2735175495032
+            ]
+          },
+          "status": "xy-scenario"
+        }
+      ],
+      "requestedPreference": "ordinary",
+      "effectivePreference": "fast",
+      "retainedByProductionDedup": true,
+      "taxiQuote": {
+        "carId": "DEMO-17",
+        "passengerReadyS": 43258.355916677036,
+        "carArrivalS": 39925.96725114254,
+        "pickupS": 43258.355916677036,
+        "dropoffS": 43592.669916677034,
+        "passengerWaitS": 0,
+        "vehicleWaitS": 3332.3886655344977,
+        "passengerDistanceM": 2340.183,
+        "passengerDurationS": 334.31399999999996,
+        "harbourTunnel": false
+      },
+      "transferAnchor": {
+        "id": "td:99133",
+        "name": "金钟港铁站 (西行方向)",
+        "mode": "tram",
+        "coordinates": [
+          114.16454,
+          22.27827
+        ]
+      },
+      "timing": {
+        "complete": true,
+        "message": "按到达时间接车，继续前往目的地",
+        "totalMinutes": 67,
+        "arrivalS": 43614.75659097864,
+        "walkMinutes": 47,
+        "waitMinutes": 4,
+        "transfers": 1,
+        "endpointAccess": [
+          {
+            "side": "origin",
+            "requested": {
+              "id": "map:random--2138587087",
+              "coordinates": [
+                114.19780266014673,
+                22.27037983652672
+              ]
+            },
+            "status": "xy-scenario"
+          },
+          {
+            "side": "destination",
+            "requested": {
+              "id": "map:random-892708869",
+              "coordinates": [
+                114.16388501171271,
+                22.2735175495032
+              ]
+            },
+            "status": "xy-scenario"
+          }
+        ],
+        "warnings": [
+          "使用资料内演示服务日与所选时刻，不是实时到站。",
+          "仅为离线估算步行连接；首末接驳单独标为未核实示意线，距离和时间已计入。",
+          "车站入口按官方三维节点绑定；楼梯、通道及升降机当前状态未核实。",
+          "连接缓存必须与graph_version一致；不能用旧图缓存拼接新图。",
+          "本文件不提供实时发车或候车预测；列车、巴士和电车的班次模拟必须另行标注来源与假设。",
+          "公交、电车及地铁候车使用所选服务时钟；班次或车程含明确标注的演示/频率估算，不是实时车辆预测。",
+          "步道採用地政總署官方三維路網；路況、通道開放及升降機運作未經現場核實。",
+          "步行時間按速度假設計算；港鐵車程、候車、站內步行及紅磡轉乘均為估算，不是即時班次。",
+          "保留原始起終點；首末接駁作為未核實的估算段單獨顯示，實際入口、障礙及繞行需確認。",
+          "港鐵跨海線為車站間示意線，不是實測軌道；站內接駁為估算，不提供虛構室內步行線。",
+          "未解析開放時間的通道、停用路段及收費區步道均不納入室外路線。",
+          "所有步行、车内及换乘时间均为估算；未核验即时封闭、班次、站内设施或实际可通行状况。",
+          "首末步行接入为未核验的直线距离估算，已计入总距离与时间；虚线只表示道路关联，可能跨越建筑、水面、围栏或其他障碍，不代表可照直线行走，实际入口和绕行需现场确认。",
+          "站台最后1.6米的入口位置待核实，请按现场过街设施通行。",
+          "官方班距推算模拟班次；中途时分按站距和每站15秒停车估算。全线参考时长3120秒；裁剪起点相对原总站发车偏移1012秒。",
+          "schematic：官方站点顺序折线，不是实际道路或轨道路径。",
+          "推荐成本按步行权重2.5及每次换乘3分钟的研究假设计分；首次上车不算换乘，这些惩罚不增加真实行程时间或候车时间。",
+          "演示数据：车辆、订单、票价与接驳时间为模拟，路线沿公开路网生成。",
+          "路缘连接显示为虚线模型：上客侧人行节点来源高度 未知 米；车行侧高程与实际高差未核验。",
+          "出租车行驶沿 OpenStreetMap 有向道路；车速、既有订单、候车均为演示数据，不是实时调度。",
+          "本方案含未核验路缘连接，只可用于接续情景演练，不保证现实全程可通行或无障碍。"
+        ],
+        "publicRide": true,
+        "segments": [
+          {
+            "kind": "access_connector",
+            "minutes": 0.014569,
+            "distanceM": 1.049
+          },
+          {
+            "kind": "walk",
+            "minutes": 1.582064,
+            "distanceM": 113.909
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.086069,
+            "distanceM": 6.197
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.656178,
+            "distanceM": 47.245
+          },
+          {
+            "kind": "walk",
+            "minutes": 1.663796,
+            "distanceM": 119.793
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.19917,
+            "distanceM": 14.34
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.89636,
+            "distanceM": 64.538
+          },
+          {
+            "kind": "stairs",
+            "minutes": 0.629403,
+            "distanceM": 22.659
+          },
+          {
+            "kind": "walk",
+            "minutes": 2.051407,
+            "distanceM": 147.701
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.154315,
+            "distanceM": 11.111
+          },
+          {
+            "kind": "walk",
+            "minutes": 2.84727,
+            "distanceM": 205.003
+          },
+          {
+            "kind": "walk",
+            "minutes": 1.526763,
+            "distanceM": 109.927
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.081285,
+            "distanceM": 5.853
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.704086,
+            "distanceM": 50.694
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.237939,
+            "distanceM": 17.132
+          },
+          {
+            "kind": "walk",
+            "minutes": 1.359521,
+            "distanceM": 97.885
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.068937,
+            "distanceM": 4.963
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.015729,
+            "distanceM": 1.133
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.083405,
+            "distanceM": 6.005
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.361222,
+            "distanceM": 26.008
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.08015,
+            "distanceM": 5.771
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.874052,
+            "distanceM": 62.932
+          },
+          {
+            "kind": "stairs",
+            "minutes": 2.957525,
+            "distanceM": 106.471
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.311395,
+            "distanceM": 22.42
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.100917,
+            "distanceM": 7.266
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.054934,
+            "distanceM": 3.955
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.021226,
+            "distanceM": 1.528
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.053651,
+            "distanceM": 3.863
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.404441,
+            "distanceM": 29.12
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.07241,
+            "distanceM": 5.214
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.383631,
+            "distanceM": 27.621
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.06531,
+            "distanceM": 4.702
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.497608,
+            "distanceM": 35.828
+          },
+          {
+            "kind": "stairs",
+            "minutes": 0.519524,
+            "distanceM": 18.703
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.162179,
+            "distanceM": 11.677
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.054992,
+            "distanceM": 3.959
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.293059,
+            "distanceM": 21.1
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.08272,
+            "distanceM": 5.956
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.0521,
+            "distanceM": 3.751
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.144011,
+            "distanceM": 10.369
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.023789,
+            "distanceM": 1.713
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.919844,
+            "distanceM": 66.229
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.012867,
+            "distanceM": 0.926
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.098029,
+            "distanceM": 7.058
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.023423,
+            "distanceM": 1.686
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.717219,
+            "distanceM": 51.64
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.101627,
+            "distanceM": 7.317
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.424132,
+            "distanceM": 30.537
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.048784,
+            "distanceM": 3.512
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.113741,
+            "distanceM": 8.189
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.04827,
+            "distanceM": 3.475
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.371954,
+            "distanceM": 26.781
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.075675,
+            "distanceM": 5.449
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.060683,
+            "distanceM": 4.369
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.044659,
+            "distanceM": 3.215
+          },
+          {
+            "kind": "walk",
+            "minutes": 2.254097,
+            "distanceM": 162.295
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.025626,
+            "distanceM": 1.845
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.077173,
+            "distanceM": 5.556
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.025803,
+            "distanceM": 1.858
+          },
+          {
+            "kind": "walk",
+            "minutes": 1.5189,
+            "distanceM": 109.361
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.130435,
+            "distanceM": 9.391
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.595876,
+            "distanceM": 42.903
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.136819,
+            "distanceM": 9.851
+          },
+          {
+            "kind": "walk",
+            "minutes": 1.106534,
+            "distanceM": 79.67
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.431109,
+            "distanceM": 31.04
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.164665,
+            "distanceM": 11.856
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.911575,
+            "distanceM": 65.633
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.075253,
+            "distanceM": 5.418
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.580153,
+            "distanceM": 41.771
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.521938,
+            "distanceM": 37.58
+          },
+          {
+            "kind": "stairs",
+            "minutes": 0.306079,
+            "distanceM": 11.019
+          },
+          {
+            "kind": "footbridge",
+            "minutes": 0.370371,
+            "distanceM": 26.667
+          },
+          {
+            "kind": "stairs",
+            "minutes": 0.305093,
+            "distanceM": 10.983
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.089781,
+            "distanceM": 6.464
+          },
+          {
+            "kind": "walk",
+            "minutes": 1.003948,
+            "distanceM": 72.284
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.01162,
+            "distanceM": 0.837
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.045572,
+            "distanceM": 3.281
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.101808,
+            "distanceM": 7.33
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.083797,
+            "distanceM": 6.033
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.080405,
+            "distanceM": 5.789
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.027794,
+            "distanceM": 2.001
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.027501,
+            "distanceM": 1.98
+          },
+          {
+            "kind": "walk",
+            "minutes": 2.622219,
+            "distanceM": 188.8
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.05692,
+            "distanceM": 4.098
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.219427,
+            "distanceM": 15.799
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.04924,
+            "distanceM": 3.545
+          },
+          {
+            "kind": "walk",
+            "minutes": 1.543551,
+            "distanceM": 111.136
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.057566,
+            "distanceM": 4.145
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.043607,
+            "distanceM": 3.14
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.023322,
+            "distanceM": 1.679
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.043408,
+            "distanceM": 3.125
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.148149,
+            "distanceM": 10.667
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.497938,
+            "distanceM": 35.852
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.081054,
+            "distanceM": 5.836
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.084441,
+            "distanceM": 6.08
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.105498,
+            "distanceM": 7.596
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.109629,
+            "distanceM": 7.893
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.212079,
+            "distanceM": 15.27
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.099458,
+            "distanceM": 7.161
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.038069,
+            "distanceM": 2.741
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.194167,
+            "distanceM": 13.98
+          },
+          {
+            "kind": "walk",
+            "minutes": 1.497281,
+            "distanceM": 107.804
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.229115,
+            "distanceM": 16.496
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.092501,
+            "distanceM": 6.66
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.059685,
+            "distanceM": 4.297
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.012885,
+            "distanceM": 0.928
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.184284,
+            "distanceM": 13.268
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.016649,
+            "distanceM": 1.199
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.075666,
+            "distanceM": 5.448
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.090984,
+            "distanceM": 6.551
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.097402,
+            "distanceM": 7.013
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.022126,
+            "distanceM": 1.593
+          },
+          {
+            "kind": "crossing",
+            "minutes": 0.071947,
+            "distanceM": 5.18
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.221387,
+            "distanceM": 15.94
+          },
+          {
+            "kind": "access_connector",
+            "minutes": 0.022566,
+            "distanceM": 1.625
+          },
+          {
+            "kind": "wait",
+            "minutes": 3.442704666666638,
+            "distanceM": 0
+          },
+          {
+            "kind": "tram",
+            "minutes": 11.85,
+            "distanceM": 1817.7080499765827
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.2559319446172535,
+            "distanceM": 18.427100012442253
+          },
+          {
+            "kind": "taxi",
+            "minutes": 5.571899999999999,
+            "distanceM": 2340.183
+          },
+          {
+            "kind": "walk",
+            "minutes": 0.36811123836016246,
+            "distanceM": 26.504009161931695
+          }
+        ],
+        "timedLegs": []
+      }
+    },
+    "unavailable": null,
+    "completeAndAuditPassing": true,
+    "qualifiedAsImprovement": false
+  },
+  "commonCandidateMetrics": [
+    {
+      "id": "taxi-direct",
+      "observedInBoth": true,
+      "metricsIdentical": true,
+      "baseline": {
+        "minutes": 24,
+        "cost": 63.46,
+        "walkMinutes": 2,
+        "waitMinutes": 6.95899677267868,
+        "transfers": 0
+      },
+      "extra": {
+        "minutes": 24,
+        "cost": 63.46,
+        "walkMinutes": 2,
+        "waitMinutes": 6.95899677267868,
+        "transfers": 0
+      }
+    },
+    {
+      "id": "taxi-last-metro-ADM:portal:E2",
+      "observedInBoth": true,
+      "metricsIdentical": true,
+      "baseline": {
+        "minutes": 73,
+        "cost": 37.45,
+        "walkMinutes": 52,
+        "waitMinutes": 4,
+        "transfers": 1
+      },
+      "extra": {
+        "minutes": 73,
+        "cost": 37.45,
+        "walkMinutes": 52,
+        "waitMinutes": 4,
+        "transfers": 1
+      }
+    },
+    {
+      "id": "taxi-last-tram-td:99126",
+      "observedInBoth": true,
+      "metricsIdentical": true,
+      "baseline": {
+        "minutes": 60,
+        "cost": 41.28,
+        "walkMinutes": 47,
+        "waitMinutes": 4,
+        "transfers": 1
+      },
+      "extra": {
+        "minutes": 60,
+        "cost": 41.28,
+        "walkMinutes": 47,
+        "waitMinutes": 4,
+        "transfers": 1
+      }
+    },
+    {
+      "id": "taxi-first-tram-td:99125",
+      "observedInBoth": true,
+      "metricsIdentical": true,
+      "baseline": {
+        "minutes": 50,
+        "cost": 43.69,
+        "walkMinutes": 24,
+        "waitMinutes": 8.958996772678681,
+        "transfers": 1
+      },
+      "extra": {
+        "minutes": 50,
+        "cost": 43.69,
+        "walkMinutes": 24,
+        "waitMinutes": 8.958996772678681,
+        "transfers": 1
+      }
+    },
+    {
+      "id": "walk",
+      "observedInBoth": true,
+      "metricsIdentical": true,
+      "baseline": {
+        "minutes": 82,
+        "cost": 0,
+        "walkMinutes": 82,
+        "waitMinutes": 0,
+        "transfers": 0
+      },
+      "extra": {
+        "minutes": 82,
+        "cost": 0,
+        "walkMinutes": 82,
+        "waitMinutes": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "id": "transit",
+      "observedInBoth": true,
+      "metricsIdentical": true,
+      "baseline": {
+        "minutes": 85,
+        "cost": 3,
+        "walkMinutes": 70,
+        "waitMinutes": 4,
+        "transfers": 0
+      },
+      "extra": {
+        "minutes": 85,
+        "cost": 3,
+        "walkMinutes": 70,
+        "waitMinutes": 4,
+        "transfers": 0
+      }
+    }
+  ],
+  "priceComparisons": [
+    {
+      "costWeight": 0.25,
+      "baseline": {
+        "costWeight": 0.25,
+        "priority": "time",
+        "need": "ordinary",
+        "choices": [
+          {
+            "id": "taxi-direct",
+            "auditPass": true,
+            "total": 44.04449838633934,
+            "terms": {
+              "minutes": 24,
+              "cost": 15.865,
+              "walkMinutes": 0.7,
+              "waitMinutes": 3.47949838633934,
+              "transfers": 0,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 0.25,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 24,
+              "cost": 63.46,
+              "walkMinutes": 2,
+              "waitMinutes": 6.95899677267868,
+              "transfers": 0
+            },
+            "pricingPending": false
+          },
+          {
+            "id": "taxi-first-tram-td:99125",
+            "auditPass": true,
+            "total": 76.80199838633933,
+            "terms": {
+              "minutes": 50,
+              "cost": 10.9225,
+              "walkMinutes": 8.399999999999999,
+              "waitMinutes": 4.4794983863393405,
+              "transfers": 3,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 0.25,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 50,
+              "cost": 43.69,
+              "walkMinutes": 24,
+              "waitMinutes": 8.958996772678681,
+              "transfers": 1
+            },
+            "pricingPending": false
+          },
+          {
+            "id": "taxi-last-tram-td:99126",
+            "auditPass": true,
+            "total": 91.77,
+            "terms": {
+              "minutes": 60,
+              "cost": 10.32,
+              "walkMinutes": 16.45,
+              "waitMinutes": 2,
+              "transfers": 3,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 0.25,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 60,
+              "cost": 41.28,
+              "walkMinutes": 47,
+              "waitMinutes": 4,
+              "transfers": 1
+            },
+            "pricingPending": false
+          },
+          {
+            "id": "taxi-last-metro-ADM:portal:E2",
+            "auditPass": true,
+            "total": 105.5625,
+            "terms": {
+              "minutes": 73,
+              "cost": 9.3625,
+              "walkMinutes": 18.2,
+              "waitMinutes": 2,
+              "transfers": 3,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 0.25,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 73,
+              "cost": 37.45,
+              "walkMinutes": 52,
+              "waitMinutes": 4,
+              "transfers": 1
+            },
+            "pricingPending": false
+          },
+          {
+            "id": "walk",
+            "auditPass": true,
+            "total": 110.7,
+            "terms": {
+              "minutes": 82,
+              "cost": 0,
+              "walkMinutes": 28.7,
+              "waitMinutes": 0,
+              "transfers": 0,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 0.25,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 82,
+              "cost": 0,
+              "walkMinutes": 82,
+              "waitMinutes": 0,
+              "transfers": 0
+            },
+            "pricingPending": false
+          },
+          {
+            "id": "transit",
+            "auditPass": true,
+            "total": 112.25,
+            "terms": {
+              "minutes": 85,
+              "cost": 0.75,
+              "walkMinutes": 24.5,
+              "waitMinutes": 2,
+              "transfers": 0,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 0.25,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 85,
+              "cost": 3,
+              "walkMinutes": 70,
+              "waitMinutes": 4,
+              "transfers": 0
+            },
+            "pricingPending": false
+          }
+        ]
+      },
+      "extra": {
+        "costWeight": 0.25,
+        "priority": "time",
+        "need": "ordinary",
+        "choices": [
+          {
+            "id": "taxi-direct",
+            "auditPass": true,
+            "total": 44.04449838633934,
+            "terms": {
+              "minutes": 24,
+              "cost": 15.865,
+              "walkMinutes": 0.7,
+              "waitMinutes": 3.47949838633934,
+              "transfers": 0,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 0.25,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 24,
+              "cost": 63.46,
+              "walkMinutes": 2,
+              "waitMinutes": 6.95899677267868,
+              "transfers": 0
+            },
+            "pricingPending": false
+          },
+          {
+            "id": "taxi-first-tram-td:99125",
+            "auditPass": true,
+            "total": 76.80199838633933,
+            "terms": {
+              "minutes": 50,
+              "cost": 10.9225,
+              "walkMinutes": 8.399999999999999,
+              "waitMinutes": 4.4794983863393405,
+              "transfers": 3,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 0.25,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 50,
+              "cost": 43.69,
+              "walkMinutes": 24,
+              "waitMinutes": 8.958996772678681,
+              "transfers": 1
+            },
+            "pricingPending": false
+          },
+          {
+            "id": "taxi-last-tram-td:99126",
+            "auditPass": true,
+            "total": 91.77,
+            "terms": {
+              "minutes": 60,
+              "cost": 10.32,
+              "walkMinutes": 16.45,
+              "waitMinutes": 2,
+              "transfers": 3,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 0.25,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 60,
+              "cost": 41.28,
+              "walkMinutes": 47,
+              "waitMinutes": 4,
+              "transfers": 1
+            },
+            "pricingPending": false
+          },
+          {
+            "id": "taxi-last-tram-td:99133",
+            "auditPass": true,
+            "total": 97.13000000000001,
+            "terms": {
+              "minutes": 67,
+              "cost": 8.68,
+              "walkMinutes": 16.45,
+              "waitMinutes": 2,
+              "transfers": 3,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 0.25,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 67,
+              "cost": 34.72,
+              "walkMinutes": 47,
+              "waitMinutes": 4,
+              "transfers": 1
+            },
+            "pricingPending": false
+          },
+          {
+            "id": "taxi-last-metro-ADM:portal:E2",
+            "auditPass": true,
+            "total": 105.5625,
+            "terms": {
+              "minutes": 73,
+              "cost": 9.3625,
+              "walkMinutes": 18.2,
+              "waitMinutes": 2,
+              "transfers": 3,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 0.25,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 73,
+              "cost": 37.45,
+              "walkMinutes": 52,
+              "waitMinutes": 4,
+              "transfers": 1
+            },
+            "pricingPending": false
+          },
+          {
+            "id": "walk",
+            "auditPass": true,
+            "total": 110.7,
+            "terms": {
+              "minutes": 82,
+              "cost": 0,
+              "walkMinutes": 28.7,
+              "waitMinutes": 0,
+              "transfers": 0,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 0.25,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 82,
+              "cost": 0,
+              "walkMinutes": 82,
+              "waitMinutes": 0,
+              "transfers": 0
+            },
+            "pricingPending": false
+          },
+          {
+            "id": "transit",
+            "auditPass": true,
+            "total": 112.25,
+            "terms": {
+              "minutes": 85,
+              "cost": 0.75,
+              "walkMinutes": 24.5,
+              "waitMinutes": 2,
+              "transfers": 0,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 0.25,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 85,
+              "cost": 3,
+              "walkMinutes": 70,
+              "waitMinutes": 4,
+              "transfers": 0
+            },
+            "pricingPending": false
+          }
+        ]
+      }
+    },
+    {
+      "costWeight": 0.75,
+      "baseline": {
+        "costWeight": 0.75,
+        "priority": "time",
+        "need": "ordinary",
+        "choices": [
+          {
+            "id": "taxi-direct",
+            "auditPass": true,
+            "total": 75.77449838633935,
+            "terms": {
+              "minutes": 24,
+              "cost": 47.595,
+              "walkMinutes": 0.7,
+              "waitMinutes": 3.47949838633934,
+              "transfers": 0,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 0.75,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 24,
+              "cost": 63.46,
+              "walkMinutes": 2,
+              "waitMinutes": 6.95899677267868,
+              "transfers": 0
+            },
+            "pricingPending": false
+          },
+          {
+            "id": "taxi-first-tram-td:99125",
+            "auditPass": true,
+            "total": 98.64699838633933,
+            "terms": {
+              "minutes": 50,
+              "cost": 32.7675,
+              "walkMinutes": 8.399999999999999,
+              "waitMinutes": 4.4794983863393405,
+              "transfers": 3,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 0.75,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 50,
+              "cost": 43.69,
+              "walkMinutes": 24,
+              "waitMinutes": 8.958996772678681,
+              "transfers": 1
+            },
+            "pricingPending": false
+          },
+          {
+            "id": "walk",
+            "auditPass": true,
+            "total": 110.7,
+            "terms": {
+              "minutes": 82,
+              "cost": 0,
+              "walkMinutes": 28.7,
+              "waitMinutes": 0,
+              "transfers": 0,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 0.75,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 82,
+              "cost": 0,
+              "walkMinutes": 82,
+              "waitMinutes": 0,
+              "transfers": 0
+            },
+            "pricingPending": false
+          },
+          {
+            "id": "taxi-last-tram-td:99126",
+            "auditPass": true,
+            "total": 112.41000000000001,
+            "terms": {
+              "minutes": 60,
+              "cost": 30.96,
+              "walkMinutes": 16.45,
+              "waitMinutes": 2,
+              "transfers": 3,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 0.75,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 60,
+              "cost": 41.28,
+              "walkMinutes": 47,
+              "waitMinutes": 4,
+              "transfers": 1
+            },
+            "pricingPending": false
+          },
+          {
+            "id": "transit",
+            "auditPass": true,
+            "total": 113.75,
+            "terms": {
+              "minutes": 85,
+              "cost": 2.25,
+              "walkMinutes": 24.5,
+              "waitMinutes": 2,
+              "transfers": 0,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 0.75,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 85,
+              "cost": 3,
+              "walkMinutes": 70,
+              "waitMinutes": 4,
+              "transfers": 0
+            },
+            "pricingPending": false
+          },
+          {
+            "id": "taxi-last-metro-ADM:portal:E2",
+            "auditPass": true,
+            "total": 124.28750000000001,
+            "terms": {
+              "minutes": 73,
+              "cost": 28.087500000000002,
+              "walkMinutes": 18.2,
+              "waitMinutes": 2,
+              "transfers": 3,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 0.75,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 73,
+              "cost": 37.45,
+              "walkMinutes": 52,
+              "waitMinutes": 4,
+              "transfers": 1
+            },
+            "pricingPending": false
+          }
+        ]
+      },
+      "extra": {
+        "costWeight": 0.75,
+        "priority": "time",
+        "need": "ordinary",
+        "choices": [
+          {
+            "id": "taxi-direct",
+            "auditPass": true,
+            "total": 75.77449838633935,
+            "terms": {
+              "minutes": 24,
+              "cost": 47.595,
+              "walkMinutes": 0.7,
+              "waitMinutes": 3.47949838633934,
+              "transfers": 0,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 0.75,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 24,
+              "cost": 63.46,
+              "walkMinutes": 2,
+              "waitMinutes": 6.95899677267868,
+              "transfers": 0
+            },
+            "pricingPending": false
+          },
+          {
+            "id": "taxi-first-tram-td:99125",
+            "auditPass": true,
+            "total": 98.64699838633933,
+            "terms": {
+              "minutes": 50,
+              "cost": 32.7675,
+              "walkMinutes": 8.399999999999999,
+              "waitMinutes": 4.4794983863393405,
+              "transfers": 3,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 0.75,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 50,
+              "cost": 43.69,
+              "walkMinutes": 24,
+              "waitMinutes": 8.958996772678681,
+              "transfers": 1
+            },
+            "pricingPending": false
+          },
+          {
+            "id": "walk",
+            "auditPass": true,
+            "total": 110.7,
+            "terms": {
+              "minutes": 82,
+              "cost": 0,
+              "walkMinutes": 28.7,
+              "waitMinutes": 0,
+              "transfers": 0,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 0.75,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 82,
+              "cost": 0,
+              "walkMinutes": 82,
+              "waitMinutes": 0,
+              "transfers": 0
+            },
+            "pricingPending": false
+          },
+          {
+            "id": "taxi-last-tram-td:99126",
+            "auditPass": true,
+            "total": 112.41000000000001,
+            "terms": {
+              "minutes": 60,
+              "cost": 30.96,
+              "walkMinutes": 16.45,
+              "waitMinutes": 2,
+              "transfers": 3,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 0.75,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 60,
+              "cost": 41.28,
+              "walkMinutes": 47,
+              "waitMinutes": 4,
+              "transfers": 1
+            },
+            "pricingPending": false
+          },
+          {
+            "id": "transit",
+            "auditPass": true,
+            "total": 113.75,
+            "terms": {
+              "minutes": 85,
+              "cost": 2.25,
+              "walkMinutes": 24.5,
+              "waitMinutes": 2,
+              "transfers": 0,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 0.75,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 85,
+              "cost": 3,
+              "walkMinutes": 70,
+              "waitMinutes": 4,
+              "transfers": 0
+            },
+            "pricingPending": false
+          },
+          {
+            "id": "taxi-last-tram-td:99133",
+            "auditPass": true,
+            "total": 114.49,
+            "terms": {
+              "minutes": 67,
+              "cost": 26.04,
+              "walkMinutes": 16.45,
+              "waitMinutes": 2,
+              "transfers": 3,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 0.75,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 67,
+              "cost": 34.72,
+              "walkMinutes": 47,
+              "waitMinutes": 4,
+              "transfers": 1
+            },
+            "pricingPending": false
+          },
+          {
+            "id": "taxi-last-metro-ADM:portal:E2",
+            "auditPass": true,
+            "total": 124.28750000000001,
+            "terms": {
+              "minutes": 73,
+              "cost": 28.087500000000002,
+              "walkMinutes": 18.2,
+              "waitMinutes": 2,
+              "transfers": 3,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 0.75,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 73,
+              "cost": 37.45,
+              "walkMinutes": 52,
+              "waitMinutes": 4,
+              "transfers": 1
+            },
+            "pricingPending": false
+          }
+        ]
+      }
+    },
+    {
+      "costWeight": 2,
+      "baseline": {
+        "costWeight": 2,
+        "priority": "time",
+        "need": "ordinary",
+        "choices": [
+          {
+            "id": "walk",
+            "auditPass": true,
+            "total": 110.7,
+            "terms": {
+              "minutes": 82,
+              "cost": 0,
+              "walkMinutes": 28.7,
+              "waitMinutes": 0,
+              "transfers": 0,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 2,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 82,
+              "cost": 0,
+              "walkMinutes": 82,
+              "waitMinutes": 0,
+              "transfers": 0
+            },
+            "pricingPending": false
+          },
+          {
+            "id": "transit",
+            "auditPass": true,
+            "total": 117.5,
+            "terms": {
+              "minutes": 85,
+              "cost": 6,
+              "walkMinutes": 24.5,
+              "waitMinutes": 2,
+              "transfers": 0,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 2,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 85,
+              "cost": 3,
+              "walkMinutes": 70,
+              "waitMinutes": 4,
+              "transfers": 0
+            },
+            "pricingPending": false
+          },
+          {
+            "id": "taxi-first-tram-td:99125",
+            "auditPass": true,
+            "total": 153.25949838633935,
+            "terms": {
+              "minutes": 50,
+              "cost": 87.38,
+              "walkMinutes": 8.399999999999999,
+              "waitMinutes": 4.4794983863393405,
+              "transfers": 3,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 2,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 50,
+              "cost": 43.69,
+              "walkMinutes": 24,
+              "waitMinutes": 8.958996772678681,
+              "transfers": 1
+            },
+            "pricingPending": false
+          },
+          {
+            "id": "taxi-direct",
+            "auditPass": true,
+            "total": 155.09949838633935,
+            "terms": {
+              "minutes": 24,
+              "cost": 126.92,
+              "walkMinutes": 0.7,
+              "waitMinutes": 3.47949838633934,
+              "transfers": 0,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 2,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 24,
+              "cost": 63.46,
+              "walkMinutes": 2,
+              "waitMinutes": 6.95899677267868,
+              "transfers": 0
+            },
+            "pricingPending": false
+          },
+          {
+            "id": "taxi-last-tram-td:99126",
+            "auditPass": true,
+            "total": 164.01,
+            "terms": {
+              "minutes": 60,
+              "cost": 82.56,
+              "walkMinutes": 16.45,
+              "waitMinutes": 2,
+              "transfers": 3,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 2,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 60,
+              "cost": 41.28,
+              "walkMinutes": 47,
+              "waitMinutes": 4,
+              "transfers": 1
+            },
+            "pricingPending": false
+          },
+          {
+            "id": "taxi-last-metro-ADM:portal:E2",
+            "auditPass": true,
+            "total": 171.1,
+            "terms": {
+              "minutes": 73,
+              "cost": 74.9,
+              "walkMinutes": 18.2,
+              "waitMinutes": 2,
+              "transfers": 3,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 2,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 73,
+              "cost": 37.45,
+              "walkMinutes": 52,
+              "waitMinutes": 4,
+              "transfers": 1
+            },
+            "pricingPending": false
+          }
+        ]
+      },
+      "extra": {
+        "costWeight": 2,
+        "priority": "time",
+        "need": "ordinary",
+        "choices": [
+          {
+            "id": "walk",
+            "auditPass": true,
+            "total": 110.7,
+            "terms": {
+              "minutes": 82,
+              "cost": 0,
+              "walkMinutes": 28.7,
+              "waitMinutes": 0,
+              "transfers": 0,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 2,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 82,
+              "cost": 0,
+              "walkMinutes": 82,
+              "waitMinutes": 0,
+              "transfers": 0
+            },
+            "pricingPending": false
+          },
+          {
+            "id": "transit",
+            "auditPass": true,
+            "total": 117.5,
+            "terms": {
+              "minutes": 85,
+              "cost": 6,
+              "walkMinutes": 24.5,
+              "waitMinutes": 2,
+              "transfers": 0,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 2,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 85,
+              "cost": 3,
+              "walkMinutes": 70,
+              "waitMinutes": 4,
+              "transfers": 0
+            },
+            "pricingPending": false
+          },
+          {
+            "id": "taxi-first-tram-td:99125",
+            "auditPass": true,
+            "total": 153.25949838633935,
+            "terms": {
+              "minutes": 50,
+              "cost": 87.38,
+              "walkMinutes": 8.399999999999999,
+              "waitMinutes": 4.4794983863393405,
+              "transfers": 3,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 2,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 50,
+              "cost": 43.69,
+              "walkMinutes": 24,
+              "waitMinutes": 8.958996772678681,
+              "transfers": 1
+            },
+            "pricingPending": false
+          },
+          {
+            "id": "taxi-direct",
+            "auditPass": true,
+            "total": 155.09949838633935,
+            "terms": {
+              "minutes": 24,
+              "cost": 126.92,
+              "walkMinutes": 0.7,
+              "waitMinutes": 3.47949838633934,
+              "transfers": 0,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 2,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 24,
+              "cost": 63.46,
+              "walkMinutes": 2,
+              "waitMinutes": 6.95899677267868,
+              "transfers": 0
+            },
+            "pricingPending": false
+          },
+          {
+            "id": "taxi-last-tram-td:99133",
+            "auditPass": true,
+            "total": 157.89,
+            "terms": {
+              "minutes": 67,
+              "cost": 69.44,
+              "walkMinutes": 16.45,
+              "waitMinutes": 2,
+              "transfers": 3,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 2,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 67,
+              "cost": 34.72,
+              "walkMinutes": 47,
+              "waitMinutes": 4,
+              "transfers": 1
+            },
+            "pricingPending": false
+          },
+          {
+            "id": "taxi-last-tram-td:99126",
+            "auditPass": true,
+            "total": 164.01,
+            "terms": {
+              "minutes": 60,
+              "cost": 82.56,
+              "walkMinutes": 16.45,
+              "waitMinutes": 2,
+              "transfers": 3,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 2,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 60,
+              "cost": 41.28,
+              "walkMinutes": 47,
+              "waitMinutes": 4,
+              "transfers": 1
+            },
+            "pricingPending": false
+          },
+          {
+            "id": "taxi-last-metro-ADM:portal:E2",
+            "auditPass": true,
+            "total": 171.1,
+            "terms": {
+              "minutes": 73,
+              "cost": 74.9,
+              "walkMinutes": 18.2,
+              "waitMinutes": 2,
+              "transfers": 3,
+              "facilities": 0
+            },
+            "weights": {
+              "label": "综合推荐",
+              "minutes": 1,
+              "cost": 2,
+              "walkMinutes": 0.35,
+              "waitMinutes": 0.5,
+              "transfers": 3
+            },
+            "metrics": {
+              "minutes": 73,
+              "cost": 37.45,
+              "walkMinutes": 52,
+              "waitMinutes": 4,
+              "transfers": 1
+            },
+            "pricingPending": false
+          }
+        ]
+      }
+    }
+  ],
+  "runs": [
+    {
+      "arm": "baseline",
+      "reportPath": "/workspace/scratch/0cc388d3824f/previews/hongkong/validation/performance/taxi-shortlist-2e2fcf795897-od7-1100/baseline.json",
+      "code": 0,
+      "watchdog": false,
+      "classification": "completed-with-candidates",
+      "state": "complete"
+    },
+    {
+      "arm": "extra-last-99133",
+      "reportPath": "/workspace/scratch/0cc388d3824f/previews/hongkong/validation/performance/taxi-shortlist-2e2fcf795897-od7-1100/extra-last-99133.json",
+      "code": 0,
+      "watchdog": false,
+      "classification": "completed-with-candidates",
+      "state": "complete"
+    }
+  ],
+  "qualification": "Only completed audited journeys can be compared. No omitted/pending route is assigned an infinite score or declared dominated. A completed target does not by itself establish benefit."
+}

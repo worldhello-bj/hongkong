@@ -1,0 +1,86 @@
+{
+  "runtime": "cfc54d2d0718",
+  "routingObservationWindowMs": 600000,
+  "routingState": "extended-observation-window-ended",
+  "productionWorkerErrors": [],
+  "lastDurableRawAtProcessMs": 595117.591,
+  "rawLines": 520302,
+  "lastScheduledFrom600Checkpoint": {
+    "t": 600913.355,
+    "worker": 5,
+    "kind": "app-transit-worker-CaCMeUxU.js",
+    "event": "scheduled-hotspot-progress",
+    "sid": 13,
+    "request": {
+      "fromId": "journey:origin",
+      "toId": "journey:destination",
+      "departureS": 28800,
+      "horizonS": 21600,
+      "walkPenalty": 2.5,
+      "transferPenaltyS": 180
+    },
+    "elapsedMs": 555973.578878,
+    "acceptedLabels": 120704,
+    "activeLabels": 119324,
+    "retainedLabels": 120704,
+    "invalidations": 1380,
+    "expanded": 54272,
+    "settled": 53781,
+    "queue": 66432,
+    "peakQueue": 66436,
+    "connectionResolveCalls": 232945,
+    "routeMemos": [
+      {
+        "memoId": 1,
+        "kind": "station",
+        "capacity": 64,
+        "connectionCount": 0,
+        "duplicateIds": 0,
+        "duplicateIdExamples": [],
+        "lookups": 39272,
+        "hits": 9,
+        "misses": 39263,
+        "sets": 39263,
+        "nullSets": 0,
+        "evictions": 39199,
+        "size": 64,
+        "maxSize": 64,
+        "pairedSize": 0,
+        "pinnedSize": 0
+      },
+      {
+        "memoId": 2,
+        "kind": "connection-pair",
+        "capacity": 64,
+        "connectionCount": 307,
+        "duplicateIds": 0,
+        "duplicateIdExamples": [],
+        "lookups": 232945,
+        "hits": 0,
+        "misses": 232945,
+        "sets": 232945,
+        "nullSets": 1,
+        "evictions": 232881,
+        "size": 64,
+        "maxSize": 64,
+        "pairedSize": 64,
+        "pinnedSize": 0
+      }
+    ],
+    "heapUsed": 387947072
+  },
+  "termination": {
+    "worker5TerminateAtProcessMs": 604751.713,
+    "worker5ExitAtProcessMs": 605011.429,
+    "worker5ExitCode": 1,
+    "mainExitCode": 137,
+    "phase": "after explicit Worker cleanup, during whole-history raw-event serialization",
+    "killCause": "not established; do not label as production Worker OOM"
+  },
+  "rawLogs": "gzip archived with decompression SHA256 verification in ../log-compression-20261012.json",
+  "caveats": [
+    "600-second report and checkpoint exist; raw live stream ends about 9 seconds earlier.",
+    "Original 120-second followthrough raw was not overwritten by final whole-stream serialization.",
+    "Old probe retained all events. Its growing main heap contributes to total process RSS."
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "runtime": "cfc54d2d0718",
+  "label": "od36-current-destination-core",
+  "pid": 5,
+  "pidScope": "exec namespace; not a global host PID",
+  "startedUtc": "2026-10-12T15:56:56.982Z",
+  "workerOldGenerationCapMiB": 384,
+  "followThroughMs": 600000
+}

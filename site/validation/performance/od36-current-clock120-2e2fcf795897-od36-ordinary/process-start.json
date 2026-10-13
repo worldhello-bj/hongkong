@@ -1,0 +1,9 @@
+{
+  "runtime": "2e2fcf795897",
+  "label": "od36-current-clock120",
+  "pid": 11,
+  "pidScope": "exec namespace; not a global host PID",
+  "startedUtc": "2026-10-12T17:39:27.818Z",
+  "workerOldGenerationCapMiB": 384,
+  "followThroughMs": 120000
+}

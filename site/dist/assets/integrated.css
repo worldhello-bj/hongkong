@@ -1,0 +1,71 @@
+@import url("./pacific-place-model.css");
+/* Integrated public-mode policy: the only transport selectors. */
+.na-modes.na-integrated-modes{grid-template-columns:repeat(2,minmax(0,1fr));margin-bottom:6px}.na-public-modes{font-size:11px;color:#587069;line-height:1.5;margin:0 0 12px}.na-taxi-status{padding:10px;background:#fff8e8;border-radius:8px}.na-choice p{line-height:1.6}
+.na-taxi-panel{margin:10px 0;padding:12px;border:1px solid #e2e8df;border-radius:12px;background:#fafcf8}.na-taxi-panel h2{font-size:14px;margin:0}.na-taxi-panel>p{font-size:11px;color:#647468}.na-taxi-buttons{display:flex;gap:5px;margin:8px 0}.na-taxi-buttons button,.na-taxi-offer button{padding:5px 9px;border:1px solid #cad7cf;border-radius:6px;background:#fff;font-size:11px}.na-taxi-offer{display:grid;gap:4px;padding:8px 0;border-top:1px solid #e1e8df;font-size:11px}.na-taxi-offer small{color:#697768}.na-taxi-deadhead{fill:none;stroke:#dc9a24;stroke-width:3;stroke-dasharray:5 4;vector-effect:non-scaling-stroke}.na-taxi-drive{fill:none;stroke:#138068;stroke-width:4;vector-effect:non-scaling-stroke}.na-route.taxi{stroke:#dc8b16}
+.na-taxi-presets{display:grid;gap:5px}.na-taxi-presets button{background:#fff;border:1px solid #ccd9d1;border-radius:7px;text-align:left;padding:7px 9px;font-size:11px}.na-taxi-coverage{line-height:1.5}
+.na-demo-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px}.na-demo-grid h2{grid-column:1/-1;margin-bottom:2px}.na-demo-grid>button{margin:0!important;padding:10px!important;min-width:0}.na-demo-grid b{font-size:12px}.na-demo-grid small{font-size:10px;line-height:1.45}.na-performance{font-size:11px;color:#6b776f;margin:10px 0}.na-performance p{margin:5px 0}
+.na-route.taxi-tunnel{stroke:#394964;stroke-width:5;stroke-dasharray:4 5;vector-effect:non-scaling-stroke}
+.na-long-wait{padding:8px 10px;background:#fff3da;border-radius:7px;color:#78570b;font-size:12px}
+/* Vehicles and road context share one clipped SVG coordinate system. */
+.na-map [data-app=map]{overflow:hidden}.na-road-context{fill:none;stroke:#9daebb;stroke-width:1.3;opacity:.56;vector-effect:non-scaling-stroke}.na-road-context-tunnel{fill:none;stroke:#758797;stroke-width:1.4;stroke-dasharray:3 4;opacity:.65;vector-effect:non-scaling-stroke}.na-fleet-region{fill:none;stroke:#aebeb4;stroke-width:1.2;stroke-dasharray:5 6;vector-effect:non-scaling-stroke;pointer-events:none}.na-fleet-label{font-size:11px;fill:#6f8777;paint-order:stroke;stroke:#f4f7f4;stroke-width:3px;pointer-events:none}
+.na-station-alternatives{margin:18px 0;padding:16px;border:1px solid #d9b968;border-radius:16px;background:#fffaf0;color:#243746}.na-station-alternatives h2{font-size:18px;margin:0 0 8px}.na-station-alternatives p{font-size:13px;line-height:1.55}.na-station-alternative{padding-top:12px;margin-top:12px;border-top:1px solid #e9ddc0}.na-station-alternative button{width:100%;white-space:normal;min-height:44px}
+.na-public-coverage{fill:none;stroke:#477668;stroke-width:1.2;stroke-dasharray:7 5;vector-effect:non-scaling-stroke;opacity:.65;pointer-events:none}
+/* Public stops are projected once per viewport frame; taxi animation does not redraw them. */
+.na-transit-stop{cursor:pointer;outline:none}.na-transit-stop rect{fill:#1266b3;stroke:white;stroke-width:2}.na-transit-stop.tram rect{fill:#007b69}.na-transit-stop text{font-size:13px;font-weight:800;fill:white;pointer-events:none}.na-transit-stop .na-stop-hit{fill:transparent;stroke:none;pointer-events:all}.na-transit-stop:focus rect,.na-transit-stop:hover rect{stroke:#ffbb38;stroke-width:4}.na-transit-stop .na-stop-label{fill:#25354a;paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round;font-size:12px;font-weight:600}.na-stop-card{position:absolute;z-index:14;right:74px;top:120px;width:min(320px,calc(100% - 100px));padding:16px;border:1px solid #dce6ee;border-radius:16px;background:#fffffff5;box-shadow:0 8px 28px #132c4d25;color:#172e43}.na-stop-card[hidden]{display:none}.na-stop-card h3{margin:5px 25px 10px 0;font-size:18px}.na-stop-card small{color:#526777}.na-stop-close{position:absolute;right:8px;top:6px;width:44px;height:44px;border:0;background:none;font-size:26px}.na-stop-lines{max-height:140px;overflow:auto}.na-stop-lines p{margin:7px 0;font-size:13px}.na-stop-source{font-size:11px;line-height:1.5;color:#66798a}.na-stop-actions{display:flex;gap:8px}.na-stop-actions button{flex:1;min-height:44px;border:1px solid #b6cddf;border-radius:10px;background:#eef6fc;color:#154e79;font-weight:700}.na-stop-legend b{background:#1266b3;color:#fff;border-radius:3px;font-size:10px;padding:2px}.na-stop-legend b:last-child{background:#007b69}@media(max-width:760px){.na-stop-card{top:112px;left:14px;right:auto;width:calc(100% - 95px);max-height:calc(100dvh - 350px);overflow:auto}.na-stop-lines{max-height:90px}.na-stop-legend{font-size:10px}}
+
+/* Unified navigation chrome: every public entry mounts this same app. */
+.na-header .na-brand{display:flex;align-items:center;text-align:left;border:0;background:transparent;color:inherit;cursor:pointer;padding:0;min-height:44px;font-family:inherit}
+.na-header nav>button{display:flex;align-items:center;justify-content:center;gap:5px;min-height:44px;padding:0 12px;border:0;border-radius:10px;background:transparent;color:#476386;font:inherit;font-size:11px;font-weight:600;cursor:pointer}
+.na-header nav>button[aria-pressed=true]{color:#2468ed;background:#edf4ff}
+.na-header nav .na-icon{width:17px;height:17px}
+.na-station-workspace{position:absolute;inset:60px 0 0 360px;z-index:2;background:#edf3fa;border-radius:18px 0 0 0;overflow:hidden}
+.na-station-workspace[hidden]{display:none}
+.na-station-workspace>[data-app=station-model]{width:100%;height:100%;min-height:0}
+.na-station-workspace .am-canvas{width:100%;height:100%;touch-action:none}
+.na-station-workspace .am-heading{top:22px;left:22px;right:230px}
+.na-station-workspace .am-floor-picker{top:20px;right:20px}
+.na-station-workspace .am-controls{bottom:82px}
+.na-station-workspace .am-legend{bottom:16px}
+.na-station-loading{display:grid;place-content:center;padding:24px;height:100%;text-align:center;font-size:14px;color:#56718f}
+#navigation-app[data-stage=station] .na-sheet,#navigation-app[data-stage=info] .na-sheet{top:64px;max-height:calc(100dvh - 84px)}
+#navigation-app[data-stage=station] .na-map{visibility:hidden;pointer-events:none}
+#navigation-app[data-stage=station] .na-status{left:auto;right:20px;max-width:calc(100vw - 420px)}
+.na-station-picker{display:flex;gap:5px;flex-wrap:wrap;margin:12px 0}
+.na-station-picker button{flex:1;min-width:46px;min-height:44px;border:1px solid #dce5f0;border-radius:9px;background:#f7faff;color:#526c8d;font-size:12px;cursor:pointer}
+.na-station-picker button[aria-pressed=true]{border-color:#2468ed;background:#eaf2ff;color:#2468ed;font-weight:700}
+.na-station-actions,.na-service-shortcuts{display:flex;gap:8px;margin:8px 0}
+.na-station-actions>button,.na-service-shortcuts>button{flex:1;margin:0;min-width:0}
+.na-station-trip{padding:10px;border-radius:9px;background:#f2f6fc;font-size:11px;line-height:1.6;color:#536e8e}
+.na-info-section{padding:14px 0;border-bottom:1px solid #e6edf5;font-size:12px;line-height:1.8;color:#526b88}
+.na-info-section h2{font-size:14px;color:#233e5e;margin:0 0 7px}
+.na-info-section p{margin:7px 0}
+.na-info-section>a{display:block;padding:8px 0;color:#2468ed;min-height:44px}
+.na-source-links{display:flex;flex-wrap:wrap;gap:0 12px}
+.na-source-links a{display:inline-flex;align-items:center;min-height:44px;color:#2468ed}
+.na-taxi-panel>summary{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:44px;cursor:pointer;list-style:none;font-size:11px;font-weight:700;color:#577493}
+.na-taxi-panel>summary:after{content:'⌄';font-size:15px}.na-taxi-panel[open]>summary:after{content:'⌃'}
+.na-taxi-panel>summary::-webkit-details-marker{display:none}
+.na-taxi-panel{padding:0 10px;border-color:#e0e8f2;background:#f7faff}
+.na-taxi-panel[open]{padding-bottom:10px}
+.na-taxi-buttons button,.na-taxi-offer button,.na-taxi-presets button{min-height:44px}
+@media(max-width:760px){
+  .na-header{gap:8px;align-items:center}.na-header nav{gap:3px;display:flex}.na-header .na-demo{display:none}
+  .na-header nav>button{padding:0 9px;min-height:36px;font-size:10px;background:#fffffff2;box-shadow:0 2px 10px #243b5b0c}
+  .na-header nav .na-icon{width:15px;height:15px}.na-header .na-brand{min-height:36px}
+  .na-station-workspace{inset:58px 0 235px;border-radius:0;min-height:0}
+  .na-station-workspace .am-heading{top:12px;left:12px;right:160px;gap:3px}.na-station-workspace .am-heading>span{font-size:9px}.na-station-workspace .am-title{font-size:14px}.na-station-workspace .am-status{font-size:9px;line-height:1.5}
+  .na-station-workspace .am-floor-picker{top:12px;right:10px;width:142px;padding:7px}.na-station-workspace .am-floor-picker select{min-height:36px}
+  .na-station-workspace .am-controls{bottom:8px;left:8px;right:8px;gap:4px}.na-station-workspace .am-controls button{min-height:40px;font-size:10px;padding:5px 8px}
+  .na-station-workspace .am-legend{bottom:58px;left:12px;font-size:8px;gap:5px}.na-station-workspace .am-legend>small{display:none}
+  #navigation-app[data-stage=station] .na-sheet{top:auto;max-height:235px;min-height:235px}
+  #navigation-app[data-stage=station].na-expanded .na-sheet{max-height:min(65dvh,440px)}
+  #navigation-app[data-stage=station] .na-panel-heading{margin-bottom:5px}#navigation-app[data-stage=station] .na-panel-heading h1{font-size:17px}
+  .na-station-picker{margin:5px 0;gap:4px}.na-station-picker button{min-height:40px}
+  #navigation-app[data-stage=info] .na-sheet{top:auto;max-height:calc(100dvh - 70px);min-height:58dvh}
+  #navigation-app[data-stage=station] .na-status{bottom:245px;left:10px;right:10px;max-width:none;font-size:9px;pointer-events:none}
+  .na-station-actions{gap:6px}.na-info-section{font-size:12px}.na-taxi-panel{margin:5px 0}.na-public-modes{font-size:10px;margin-bottom:6px}
+}
+@media(max-width:380px){.na-header .na-brand{font-size:16px}.na-header .na-brand small{font-size:7px}.na-header nav>button{padding:0 7px}}
+.na-weight-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:12px 0}.na-weight-grid label{font-size:12px;font-weight:650;min-width:0}.na-weight-grid input{display:block;width:100%;box-sizing:border-box;min-height:38px;margin:4px 0;border:1px solid #d9e1ef;border-radius:8px;padding:7px;background:#fff;color:#17263d}.na-weight-grid small{display:block;font-size:10px;color:#6d7b91;font-weight:400}.na-score-breakdown{list-style:none;padding:0;display:grid;gap:8px}.na-score-breakdown li{display:grid;gap:3px;padding:9px;border-radius:9px;background:#f3f6fc;font-size:12px}.na-score-breakdown li>span{color:#2468ed;font-weight:650}.na-score-breakdown small{line-height:1.5;color:#687990}.na-score-parameters summary{min-height:32px;cursor:pointer}
+
+.na-place-notice{margin:10px 0;padding:9px;border:1px solid #d9e7f6;border-radius:12px;background:#f5f9ff}.na-place-notice p,.na-place-notice summary{font-size:12px;line-height:1.5}.na-place-notice .na-secondary{margin:4px 0}

@@ -1,0 +1,1553 @@
+{
+  "runtime": "d701fed258cc",
+  "label": "od36-current-baseline",
+  "variant": "baseline",
+  "cpuSampling": false,
+  "id": 36,
+  "need": "ordinary",
+  "departure": {
+    "departureS": 28800,
+    "departureDate": "2026-10-12"
+  },
+  "windowMs": 60000,
+  "state": "observation-window-ended",
+  "wallMs": 60108.52163999999,
+  "routePerformance": {
+    "warmStart": false,
+    "startedMonotonic": 9910.246506,
+    "startedAt": "2026-10-12T14:22:12.047Z",
+    "origin": "地图所选地点",
+    "destination": "地图所选地点",
+    "stages": [
+      {
+        "id": "public-fast",
+        "durationMs": 12302,
+        "status": "needs-indoor-refinement",
+        "cached": false
+      },
+      {
+        "id": "metro",
+        "durationMs": 10742,
+        "status": "no-complete-route",
+        "cached": false
+      },
+      {
+        "id": "demo-public-fast",
+        "durationMs": 23738,
+        "status": "modeled"
+      },
+      {
+        "id": "demo-fallback",
+        "durationMs": 23756,
+        "status": "modeled"
+      }
+    ],
+    "firstResultMs": 1783,
+    "totalMs": null
+  },
+  "memory": {
+    "maxRSSKiB": 1321480,
+    "maxRSSGiB": 1.2602615356445312,
+    "finalRssBytes": 1267249152
+  },
+  "workers": [
+    {
+      "worker": 1,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "createdAt": 5815.862,
+      "cloneSendMs": 879.9805909999995,
+      "initializations": 1,
+      "results": 0,
+      "exitAt": 11635.43
+    },
+    {
+      "worker": 2,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "createdAt": 10833.781,
+      "cloneSendMs": 756.889056,
+      "initializations": 1,
+      "results": 1,
+      "exitAt": 23299.003
+    },
+    {
+      "worker": 3,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "createdAt": 22149.949,
+      "cloneSendMs": 1132.8981410000015,
+      "initializations": 1,
+      "results": 1,
+      "exitAt": 28670.268
+    },
+    {
+      "worker": 4,
+      "kind": "metro-worker-BDEusPKL.js",
+      "createdAt": 27924.499,
+      "cloneSendMs": 730.8654459999998,
+      "initializations": 1,
+      "results": 1,
+      "exitAt": 34773.818
+    },
+    {
+      "worker": 5,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "createdAt": 34056.763,
+      "cloneSendMs": 691.352601999999,
+      "initializations": 1,
+      "results": 1,
+      "exitAt": 44027.68
+    },
+    {
+      "worker": 6,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "createdAt": 42977.096,
+      "cloneSendMs": 1038.5118199999997,
+      "initializations": 1,
+      "results": 1,
+      "exitAt": 59475.094
+    },
+    {
+      "worker": 7,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "createdAt": 58531.182,
+      "cloneSendMs": 930.8194599999988,
+      "initializations": 1,
+      "results": 1,
+      "exitAt": 63258.175
+    },
+    {
+      "worker": 8,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "createdAt": 61706.264,
+      "cloneSendMs": 1499.8002449999985,
+      "initializations": 1,
+      "results": 0
+    }
+  ],
+  "cloneSendMs": 7661.117360999997,
+  "workerSpanTotals": {
+    "app-transit-worker-CaCMeUxU.js:graph-prepare": {
+      "completed": 33,
+      "totalMs": 14147.48806799998,
+      "maxMs": 1930.4493099999963
+    },
+    "app-transit-worker-CaCMeUxU.js:graph-validate": {
+      "completed": 35,
+      "totalMs": 11738.655038000024,
+      "maxMs": 1719.5197249999983
+    },
+    "app-transit-worker-CaCMeUxU.js:transit-build": {
+      "completed": 6,
+      "totalMs": 2414.8774080000076,
+      "maxMs": 686.3039600000047
+    },
+    "app-transit-worker-CaCMeUxU.js:station-build": {
+      "completed": 6,
+      "totalMs": 12.967345999995814,
+      "maxMs": 6.024135999999999
+    },
+    "app-transit-worker-CaCMeUxU.js:transit-query": {
+      "completed": 5,
+      "totalMs": 23042.561688000013,
+      "maxMs": 10111.637043000002
+    },
+    "app-transit-worker-CaCMeUxU.js:scheduled-search": {
+      "completed": 5,
+      "totalMs": 22735.512676000006,
+      "maxMs": 10056.547835000005
+    },
+    "app-transit-worker-CaCMeUxU.js:walk-query": {
+      "completed": 1533,
+      "totalMs": 14799.761574999844,
+      "maxMs": 1267.8935609999971
+    },
+    "app-transit-worker-CaCMeUxU.js:walk-index": {
+      "completed": 19,
+      "totalMs": 1813.2629430000052,
+      "maxMs": 480.6746940000012
+    }
+  },
+  "scheduledAttribution": [
+    {
+      "worker": 2,
+      "sid": 8,
+      "totalMs": 6663.656625999998,
+      "directNestedMs": {
+        "graph-prepare": 2236.573603999994,
+        "walk-query": 3984.3415209999403
+      },
+      "exclusiveResidualMs": 442.7415010000641
+    },
+    {
+      "worker": 3,
+      "sid": 8,
+      "totalMs": 2094.3161729999993,
+      "directNestedMs": {
+        "graph-prepare": 922.5831880000005,
+        "walk-query": 1044.2070950000016
+      },
+      "exclusiveResidualMs": 127.52588999999716
+    },
+    {
+      "worker": 5,
+      "sid": 8,
+      "totalMs": 3916.3862240000017,
+      "directNestedMs": {
+        "graph-prepare": 771.6254309999931,
+        "walk-query": 2899.6079899998876
+      },
+      "exclusiveResidualMs": 245.1528030001209
+    },
+    {
+      "worker": 6,
+      "sid": 8,
+      "totalMs": 10056.547835000005,
+      "directNestedMs": {
+        "graph-prepare": 2825.3308340000003,
+        "walk-query": 6869.247066000018
+      },
+      "exclusiveResidualMs": 361.96993499998644
+    },
+    {
+      "worker": 7,
+      "sid": 8,
+      "totalMs": 4.605818000003637,
+      "directNestedMs": {
+        "walk-query": 2.3579029999964405
+      },
+      "exclusiveResidualMs": 2.247915000007197
+    }
+  ],
+  "pendingWorkerSpans": [
+    {
+      "t": 64798.299,
+      "worker": 8,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "event": "worker-span-start",
+      "sid": 5,
+      "name": "graph-prepare",
+      "graph": {
+        "version": "814b03c9c2d7e3c5+block:19aebcac62f227eb:pacific-f-anchor-v1",
+        "nodes": 62479,
+        "edges": 138703,
+        "regions": [
+          "ADM",
+          "AUS"
+        ]
+      }
+    }
+  ],
+  "timeSemanticsPreparation": {
+    "calls": 1524,
+    "totalMs": 799.478815000035,
+    "maxMs": 51.55181699999957,
+    "groups": [
+      {
+        "worker": 2,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "graphNodes": 34965,
+        "graphEdges": 78179,
+        "graphRuleEdges": 0,
+        "graphNontrivialRuleEdges": 0,
+        "timed": false,
+        "fifo": true,
+        "calls": 4,
+        "totalMs": 75.36160799999925,
+        "maxMs": 21.460049000001163
+      },
+      {
+        "worker": 2,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "graphNodes": 945,
+        "graphEdges": 1948,
+        "graphRuleEdges": 0,
+        "graphNontrivialRuleEdges": 0,
+        "timed": false,
+        "fifo": true,
+        "calls": 104,
+        "totalMs": 30.641468000012537,
+        "maxMs": 1.6300410000003467
+      },
+      {
+        "worker": 2,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "graphNodes": 678,
+        "graphEdges": 1447,
+        "graphRuleEdges": 0,
+        "graphNontrivialRuleEdges": 0,
+        "timed": false,
+        "fifo": true,
+        "calls": 210,
+        "totalMs": 45.6737900000262,
+        "maxMs": 1.9667069999995874
+      },
+      {
+        "worker": 2,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "graphNodes": 1300,
+        "graphEdges": 2745,
+        "graphRuleEdges": 0,
+        "graphNontrivialRuleEdges": 0,
+        "timed": false,
+        "fifo": true,
+        "calls": 80,
+        "totalMs": 28.451629999988654,
+        "maxMs": 1.0305789999983972
+      },
+      {
+        "worker": 2,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "graphNodes": 26088,
+        "graphEdges": 57325,
+        "graphRuleEdges": 0,
+        "graphNontrivialRuleEdges": 0,
+        "timed": false,
+        "fifo": true,
+        "calls": 4,
+        "totalMs": 42.54484699999375,
+        "maxMs": 16.88897399999769
+      },
+      {
+        "worker": 3,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "graphNodes": 34965,
+        "graphEdges": 78179,
+        "graphRuleEdges": 0,
+        "graphNontrivialRuleEdges": 0,
+        "timed": false,
+        "fifo": true,
+        "calls": 4,
+        "totalMs": 49.766350000001694,
+        "maxMs": 17.31673000000228
+      },
+      {
+        "worker": 3,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "graphNodes": 945,
+        "graphEdges": 1948,
+        "graphRuleEdges": 0,
+        "graphNontrivialRuleEdges": 0,
+        "timed": false,
+        "fifo": true,
+        "calls": 12,
+        "totalMs": 2.970569000000978,
+        "maxMs": 0.774849000001268
+      },
+      {
+        "worker": 3,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "graphNodes": 678,
+        "graphEdges": 1447,
+        "graphRuleEdges": 0,
+        "graphNontrivialRuleEdges": 0,
+        "timed": false,
+        "fifo": true,
+        "calls": 24,
+        "totalMs": 3.4241259999871545,
+        "maxMs": 0.3231159999995725
+      },
+      {
+        "worker": 3,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "graphNodes": 1300,
+        "graphEdges": 2745,
+        "graphRuleEdges": 0,
+        "graphNontrivialRuleEdges": 0,
+        "timed": false,
+        "fifo": true,
+        "calls": 6,
+        "totalMs": 4.527145000003657,
+        "maxMs": 2.8570790000012494
+      },
+      {
+        "worker": 5,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "graphNodes": 34965,
+        "graphEdges": 78179,
+        "graphRuleEdges": 0,
+        "graphNontrivialRuleEdges": 0,
+        "timed": false,
+        "fifo": true,
+        "calls": 4,
+        "totalMs": 34.12673099998938,
+        "maxMs": 9.422353999994812
+      },
+      {
+        "worker": 5,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "graphNodes": 945,
+        "graphEdges": 1948,
+        "graphRuleEdges": 0,
+        "graphNontrivialRuleEdges": 0,
+        "timed": false,
+        "fifo": true,
+        "calls": 178,
+        "totalMs": 45.16104600001563,
+        "maxMs": 1.575354000000516
+      },
+      {
+        "worker": 5,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "graphNodes": 678,
+        "graphEdges": 1447,
+        "graphRuleEdges": 0,
+        "graphNontrivialRuleEdges": 0,
+        "timed": false,
+        "fifo": true,
+        "calls": 348,
+        "totalMs": 66.05316900003527,
+        "maxMs": 2.016575000001467
+      },
+      {
+        "worker": 5,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "graphNodes": 1300,
+        "graphEdges": 2745,
+        "graphRuleEdges": 0,
+        "graphNontrivialRuleEdges": 0,
+        "timed": false,
+        "fifo": true,
+        "calls": 144,
+        "totalMs": 50.37910999998712,
+        "maxMs": 1.4540049999995972
+      },
+      {
+        "worker": 6,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "graphNodes": 34965,
+        "graphEdges": 78179,
+        "graphRuleEdges": 0,
+        "graphNontrivialRuleEdges": 0,
+        "timed": false,
+        "fifo": true,
+        "calls": 4,
+        "totalMs": 60.036633999989135,
+        "maxMs": 23.00811099999555
+      },
+      {
+        "worker": 6,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "graphNodes": 945,
+        "graphEdges": 1948,
+        "graphRuleEdges": 0,
+        "graphNontrivialRuleEdges": 0,
+        "timed": false,
+        "fifo": true,
+        "calls": 104,
+        "totalMs": 59.139109999945504,
+        "maxMs": 8.384506000002148
+      },
+      {
+        "worker": 6,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "graphNodes": 678,
+        "graphEdges": 1447,
+        "graphRuleEdges": 0,
+        "graphNontrivialRuleEdges": 0,
+        "timed": false,
+        "fifo": true,
+        "calls": 210,
+        "totalMs": 72.13435400005983,
+        "maxMs": 9.400452000001678
+      },
+      {
+        "worker": 6,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "graphNodes": 1300,
+        "graphEdges": 2745,
+        "graphRuleEdges": 0,
+        "graphNontrivialRuleEdges": 0,
+        "timed": false,
+        "fifo": true,
+        "calls": 80,
+        "totalMs": 50.91212899999664,
+        "maxMs": 7.206704999996873
+      },
+      {
+        "worker": 6,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "graphNodes": 26088,
+        "graphEdges": 57325,
+        "graphRuleEdges": 0,
+        "graphNontrivialRuleEdges": 0,
+        "timed": false,
+        "fifo": true,
+        "calls": 4,
+        "totalMs": 78.17499900000257,
+        "maxMs": 51.55181699999957
+      }
+    ]
+  },
+  "ancestry": {
+    "queriesWithCounters": 1524,
+    "scanCalls": 0,
+    "scanHops": 0,
+    "fifoScanCalls": 0,
+    "fifoScanHops": 0,
+    "cycles": 0,
+    "sampleCount": 0,
+    "sampleHops": 0,
+    "sampleElapsedMs": 0,
+    "sampleEvery": 64,
+    "timingCaveat": "Only 1/64 scans are timed, counts/hops are exact at the latest progress/end. Sample elapsed time is not total scan wall-time. Instrumentation overhead and JIT/GC/host scheduling remain."
+  },
+  "walkLabels": {
+    "queries": 1524,
+    "acceptedTotal": 1273190,
+    "timedLabelsAllocated": 0,
+    "activeTotal": 1236121,
+    "retainedTotal": 1236121,
+    "predecessorsTotal": 1234597,
+    "maxRetained": 24916,
+    "maxActive": 24916,
+    "maxQueue": 151,
+    "maxAllocatedPerBaseState": 0,
+    "largest": [
+      {
+        "t": 19619.373,
+        "worker": 2,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "event": "walk-hotspot-end",
+        "sid": 80,
+        "request": {
+          "origin": {
+            "node_id": "ADM:N:423d9c94cd1e0b",
+            "coordinates": [
+              114.16478974,
+              22.27904296
+            ]
+          },
+          "destination": {
+            "coordinates": [
+              114.15007628641142,
+              22.26413857693343
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureS": 32092.42626,
+          "departureDate": "2026-10-12"
+        },
+        "timed": false,
+        "fifo": true,
+        "elapsedMs": 402.11199900000065,
+        "expanded": 26424,
+        "acceptedLabels": 26439,
+        "activeLabels": 24916,
+        "retainedLabels": 24916,
+        "predecessors": 24915,
+        "baseStates": 1,
+        "invalidated": 0,
+        "queue": 15,
+        "peakQueue": 148,
+        "maxComparable": 0,
+        "maxAllocatedPerBaseState": 0,
+        "ancestorScanCalls": 0,
+        "ancestorScanHops": 0,
+        "ancestorCycles": 0,
+        "ancestorSampleCount": 0,
+        "ancestorSampleHops": 0,
+        "ancestorSampleMs": 0,
+        "ancestorSampleEvery": 64,
+        "heapUsed": 268700760,
+        "timedLabelsAllocated": 0,
+        "acceptedCountMethod": "exact initial+accepted-relaxation pushes = popped+remaining queue"
+      },
+      {
+        "t": 19840.337,
+        "worker": 2,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "event": "walk-hotspot-end",
+        "sid": 83,
+        "request": {
+          "origin": {
+            "node_id": "ADM:N:31b17842679990",
+            "coordinates": [
+              114.16479351,
+              22.27854757
+            ]
+          },
+          "destination": {
+            "coordinates": [
+              114.15007628641142,
+              22.26413857693343
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureS": 32113.49958,
+          "departureDate": "2026-10-12"
+        },
+        "timed": false,
+        "fifo": true,
+        "elapsedMs": 196.7566110000007,
+        "expanded": 26427,
+        "acceptedLabels": 26442,
+        "activeLabels": 24916,
+        "retainedLabels": 24916,
+        "predecessors": 24915,
+        "baseStates": 1,
+        "invalidated": 0,
+        "queue": 15,
+        "peakQueue": 138,
+        "maxComparable": 0,
+        "maxAllocatedPerBaseState": 0,
+        "ancestorScanCalls": 0,
+        "ancestorScanHops": 0,
+        "ancestorCycles": 0,
+        "ancestorSampleCount": 0,
+        "ancestorSampleHops": 0,
+        "ancestorSampleMs": 0,
+        "ancestorSampleEvery": 64,
+        "heapUsed": 326423856,
+        "timedLabelsAllocated": 0,
+        "acceptedCountMethod": "exact initial+accepted-relaxation pushes = popped+remaining queue"
+      },
+      {
+        "t": 54064.043,
+        "worker": 6,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "event": "walk-hotspot-end",
+        "sid": 80,
+        "request": {
+          "origin": {
+            "node_id": "ADM:N:423d9c94cd1e0b",
+            "coordinates": [
+              114.16478974,
+              22.27904296
+            ]
+          },
+          "destination": {
+            "coordinates": [
+              114.15007628641142,
+              22.26413857693343
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureS": 32092.42626,
+          "departureDate": "2026-10-12"
+        },
+        "timed": false,
+        "fifo": true,
+        "elapsedMs": 372.6325519999955,
+        "expanded": 26424,
+        "acceptedLabels": 26439,
+        "activeLabels": 24916,
+        "retainedLabels": 24916,
+        "predecessors": 24915,
+        "baseStates": 1,
+        "invalidated": 0,
+        "queue": 15,
+        "peakQueue": 148,
+        "maxComparable": 0,
+        "maxAllocatedPerBaseState": 0,
+        "ancestorScanCalls": 0,
+        "ancestorScanHops": 0,
+        "ancestorCycles": 0,
+        "ancestorSampleCount": 0,
+        "ancestorSampleHops": 0,
+        "ancestorSampleMs": 0,
+        "ancestorSampleEvery": 64,
+        "heapUsed": 268655560,
+        "timedLabelsAllocated": 0,
+        "acceptedCountMethod": "exact initial+accepted-relaxation pushes = popped+remaining queue"
+      },
+      {
+        "t": 54299.25,
+        "worker": 6,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "event": "walk-hotspot-end",
+        "sid": 83,
+        "request": {
+          "origin": {
+            "node_id": "ADM:N:31b17842679990",
+            "coordinates": [
+              114.16479351,
+              22.27854757
+            ]
+          },
+          "destination": {
+            "coordinates": [
+              114.15007628641142,
+              22.26413857693343
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureS": 32113.49958,
+          "departureDate": "2026-10-12"
+        },
+        "timed": false,
+        "fifo": true,
+        "elapsedMs": 217.55143300000054,
+        "expanded": 26427,
+        "acceptedLabels": 26442,
+        "activeLabels": 24916,
+        "retainedLabels": 24916,
+        "predecessors": 24915,
+        "baseStates": 1,
+        "invalidated": 0,
+        "queue": 15,
+        "peakQueue": 138,
+        "maxComparable": 0,
+        "maxAllocatedPerBaseState": 0,
+        "ancestorScanCalls": 0,
+        "ancestorScanHops": 0,
+        "ancestorCycles": 0,
+        "ancestorSampleCount": 0,
+        "ancestorSampleHops": 0,
+        "ancestorSampleMs": 0,
+        "ancestorSampleEvery": 64,
+        "heapUsed": 326571832,
+        "timedLabelsAllocated": 0,
+        "acceptedCountMethod": "exact initial+accepted-relaxation pushes = popped+remaining queue"
+      },
+      {
+        "t": 20243.388,
+        "worker": 2,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "event": "walk-hotspot-end",
+        "sid": 127,
+        "request": {
+          "origin": {
+            "coordinates": [
+              114.15965,
+              22.28062
+            ]
+          },
+          "destination": {
+            "coordinates": [
+              114.15007628641142,
+              22.26413857693343
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureS": 33027,
+          "departureDate": "2026-10-12"
+        },
+        "timed": false,
+        "fifo": true,
+        "elapsedMs": 151.936311999998,
+        "expanded": 26313,
+        "acceptedLabels": 26351,
+        "activeLabels": 24833,
+        "retainedLabels": 24833,
+        "predecessors": 24832,
+        "baseStates": 1,
+        "invalidated": 0,
+        "queue": 38,
+        "peakQueue": 145,
+        "maxComparable": 0,
+        "maxAllocatedPerBaseState": 0,
+        "ancestorScanCalls": 0,
+        "ancestorScanHops": 0,
+        "ancestorCycles": 0,
+        "ancestorSampleCount": 0,
+        "ancestorSampleHops": 0,
+        "ancestorSampleMs": 0,
+        "ancestorSampleEvery": 64,
+        "heapUsed": 321930216,
+        "timedLabelsAllocated": 0,
+        "acceptedCountMethod": "exact initial+accepted-relaxation pushes = popped+remaining queue"
+      },
+      {
+        "t": 54730.339,
+        "worker": 6,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "event": "walk-hotspot-end",
+        "sid": 127,
+        "request": {
+          "origin": {
+            "coordinates": [
+              114.15965,
+              22.28062
+            ]
+          },
+          "destination": {
+            "coordinates": [
+              114.15007628641142,
+              22.26413857693343
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureS": 33027,
+          "departureDate": "2026-10-12"
+        },
+        "timed": false,
+        "fifo": true,
+        "elapsedMs": 171.13915499999712,
+        "expanded": 26313,
+        "acceptedLabels": 26351,
+        "activeLabels": 24833,
+        "retainedLabels": 24833,
+        "predecessors": 24832,
+        "baseStates": 1,
+        "invalidated": 0,
+        "queue": 38,
+        "peakQueue": 145,
+        "maxComparable": 0,
+        "maxAllocatedPerBaseState": 0,
+        "ancestorScanCalls": 0,
+        "ancestorScanHops": 0,
+        "ancestorCycles": 0,
+        "ancestorSampleCount": 0,
+        "ancestorSampleHops": 0,
+        "ancestorSampleMs": 0,
+        "ancestorSampleEvery": 64,
+        "heapUsed": 327687744,
+        "timedLabelsAllocated": 0,
+        "acceptedCountMethod": "exact initial+accepted-relaxation pushes = popped+remaining queue"
+      },
+      {
+        "t": 20471.06,
+        "worker": 2,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "event": "walk-hotspot-end",
+        "sid": 138,
+        "request": {
+          "origin": {
+            "coordinates": [
+              114.15861,
+              22.28103
+            ]
+          },
+          "destination": {
+            "coordinates": [
+              114.15007628641142,
+              22.26413857693343
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureS": 33148.2603,
+          "departureDate": "2026-10-12"
+        },
+        "timed": false,
+        "fifo": true,
+        "elapsedMs": 154.53479499999958,
+        "expanded": 26088,
+        "acceptedLabels": 26153,
+        "activeLabels": 24656,
+        "retainedLabels": 24656,
+        "predecessors": 24655,
+        "baseStates": 1,
+        "invalidated": 0,
+        "queue": 65,
+        "peakQueue": 151,
+        "maxComparable": 0,
+        "maxAllocatedPerBaseState": 0,
+        "ancestorScanCalls": 0,
+        "ancestorScanHops": 0,
+        "ancestorCycles": 0,
+        "ancestorSampleCount": 0,
+        "ancestorSampleHops": 0,
+        "ancestorSampleMs": 0,
+        "ancestorSampleEvery": 64,
+        "heapUsed": 339767952,
+        "timedLabelsAllocated": 0,
+        "acceptedCountMethod": "exact initial+accepted-relaxation pushes = popped+remaining queue"
+      },
+      {
+        "t": 55143.309,
+        "worker": 6,
+        "kind": "app-transit-worker-CaCMeUxU.js",
+        "event": "walk-hotspot-end",
+        "sid": 138,
+        "request": {
+          "origin": {
+            "coordinates": [
+              114.15861,
+              22.28103
+            ]
+          },
+          "destination": {
+            "coordinates": [
+              114.15007628641142,
+              22.26413857693343
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureS": 33148.2603,
+          "departureDate": "2026-10-12"
+        },
+        "timed": false,
+        "fifo": true,
+        "elapsedMs": 279.42362200000207,
+        "expanded": 26088,
+        "acceptedLabels": 26153,
+        "activeLabels": 24656,
+        "retainedLabels": 24656,
+        "predecessors": 24655,
+        "baseStates": 1,
+        "invalidated": 0,
+        "queue": 65,
+        "peakQueue": 151,
+        "maxComparable": 0,
+        "maxAllocatedPerBaseState": 0,
+        "ancestorScanCalls": 0,
+        "ancestorScanHops": 0,
+        "ancestorCycles": 0,
+        "ancestorSampleCount": 0,
+        "ancestorSampleHops": 0,
+        "ancestorSampleMs": 0,
+        "ancestorSampleEvery": 64,
+        "heapUsed": 293387472,
+        "timedLabelsAllocated": 0,
+        "acceptedCountMethod": "exact initial+accepted-relaxation pushes = popped+remaining queue"
+      }
+    ]
+  },
+  "scheduledLabels": [
+    {
+      "t": 21567.109,
+      "worker": 2,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "event": "scheduled-hotspot-end",
+      "sid": 8,
+      "request": {
+        "fromId": "journey:origin",
+        "toId": "journey:destination",
+        "departureS": 28800,
+        "horizonS": 21600,
+        "walkPenalty": 2.5,
+        "transferPenaltyS": 180
+      },
+      "elapsedMs": 6660.237339999998,
+      "acceptedLabels": 1550,
+      "activeLabels": 1365,
+      "retainedLabels": 1550,
+      "invalidations": 185,
+      "expanded": 1415,
+      "settled": 1229,
+      "queue": 135,
+      "peakQueue": 303,
+      "connectionResolveCalls": 3699,
+      "heapUsed": 289681104
+    },
+    {
+      "t": 27557.175,
+      "worker": 3,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "event": "scheduled-hotspot-end",
+      "sid": 8,
+      "request": {
+        "fromId": "journey:origin",
+        "toId": "journey:destination",
+        "departureS": 28800,
+        "horizonS": 21600,
+        "walkPenalty": 2.5,
+        "transferPenaltyS": 180
+      },
+      "elapsedMs": 2093.5754750000015,
+      "acceptedLabels": 407,
+      "activeLabels": 322,
+      "retainedLabels": 407,
+      "invalidations": 85,
+      "expanded": 201,
+      "settled": 170,
+      "queue": 206,
+      "peakQueue": 216,
+      "connectionResolveCalls": 487,
+      "heapUsed": 265766176
+    },
+    {
+      "t": 40438.865,
+      "worker": 5,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "event": "scheduled-hotspot-end",
+      "sid": 8,
+      "request": {
+        "fromId": "journey:origin",
+        "toId": "journey:destination",
+        "departureS": 28800,
+        "horizonS": 21600,
+        "walkPenalty": 2.5,
+        "transferPenaltyS": 180
+      },
+      "elapsedMs": 3915.1242280000006,
+      "acceptedLabels": 1709,
+      "activeLabels": 1524,
+      "retainedLabels": 1709,
+      "invalidations": 185,
+      "expanded": 1709,
+      "settled": 1524,
+      "queue": 0,
+      "peakQueue": 300,
+      "connectionResolveCalls": 4588,
+      "heapUsed": 337493152
+    },
+    {
+      "t": 57863.406,
+      "worker": 6,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "event": "scheduled-hotspot-end",
+      "sid": 8,
+      "request": {
+        "fromId": "journey:origin",
+        "toId": "journey:destination",
+        "departureS": 28800,
+        "horizonS": 21600,
+        "walkPenalty": 2.5,
+        "transferPenaltyS": 180
+      },
+      "elapsedMs": 10055.55992,
+      "acceptedLabels": 1550,
+      "activeLabels": 1365,
+      "retainedLabels": 1550,
+      "invalidations": 185,
+      "expanded": 1415,
+      "settled": 1229,
+      "queue": 135,
+      "peakQueue": 303,
+      "connectionResolveCalls": 3699,
+      "heapUsed": 318599584
+    },
+    {
+      "t": 61703.346,
+      "worker": 7,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "event": "scheduled-hotspot-end",
+      "sid": 8,
+      "request": {
+        "fromId": "journey:origin",
+        "toId": "journey:destination",
+        "departureS": 28800,
+        "horizonS": 21600,
+        "walkPenalty": 2.5,
+        "transferPenaltyS": 180
+      },
+      "elapsedMs": 3.9358110000030138,
+      "acceptedLabels": 1,
+      "activeLabels": 1,
+      "retainedLabels": 1,
+      "invalidations": 0,
+      "expanded": 1,
+      "settled": 1,
+      "queue": 0,
+      "peakQueue": 1,
+      "connectionResolveCalls": 1,
+      "heapUsed": 210313056
+    }
+  ],
+  "walkSubqueries": {
+    "started": 1533,
+    "sameWorkerExactRepeats": [],
+    "sameWorkerSpatialKeys": 135,
+    "top": [
+      {
+        "worker": 6,
+        "requestWithoutDeparture": {
+          "origin": {
+            "node_id": "ADM:N:423d9c94cd1e0b",
+            "coordinates": [
+              114.16478974,
+              22.27904296
+            ]
+          },
+          "destination": {
+            "coordinates": [
+              114.15007628641142,
+              22.26413857693343
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureDate": "2026-10-12"
+        },
+        "graph": {
+          "version": "814b03c9c2d7e3c5",
+          "nodes": 26088,
+          "edges": 57325,
+          "regions": [
+            "ADM"
+          ]
+        },
+        "count": 1,
+        "departures": [
+          32092.42626
+        ],
+        "completedMs": 1267.8935609999971
+      },
+      {
+        "worker": 2,
+        "requestWithoutDeparture": {
+          "origin": {
+            "node_id": "ADM:N:423d9c94cd1e0b",
+            "coordinates": [
+              114.16478974,
+              22.27904296
+            ]
+          },
+          "destination": {
+            "coordinates": [
+              114.15007628641142,
+              22.26413857693343
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureDate": "2026-10-12"
+        },
+        "graph": {
+          "version": "814b03c9c2d7e3c5",
+          "nodes": 26088,
+          "edges": 57325,
+          "regions": [
+            "ADM"
+          ]
+        },
+        "count": 1,
+        "departures": [
+          32092.42626
+        ],
+        "completedMs": 1082.0225819999978
+      },
+      {
+        "worker": 6,
+        "requestWithoutDeparture": {
+          "origin": {
+            "coordinates": [
+              114.16965086248385,
+              22.293277490710825
+            ]
+          },
+          "destination": {
+            "coordinates": [
+              114.16906,
+              22.29411
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureDate": "2026-10-12"
+        },
+        "graph": {
+          "version": "814b03c9c2d7e3c5",
+          "nodes": 34965,
+          "edges": 78179,
+          "regions": [
+            "AUS"
+          ]
+        },
+        "count": 1,
+        "departures": [
+          28800
+        ],
+        "completedMs": 1079.897984999996
+      },
+      {
+        "worker": 2,
+        "requestWithoutDeparture": {
+          "origin": {
+            "coordinates": [
+              114.16965086248385,
+              22.293277490710825
+            ]
+          },
+          "destination": {
+            "coordinates": [
+              114.16906,
+              22.29411
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureDate": "2026-10-12"
+        },
+        "graph": {
+          "version": "814b03c9c2d7e3c5",
+          "nodes": 34965,
+          "edges": 78179,
+          "regions": [
+            "AUS"
+          ]
+        },
+        "count": 1,
+        "departures": [
+          28800
+        ],
+        "completedMs": 580.5789839999998
+      },
+      {
+        "worker": 3,
+        "requestWithoutDeparture": {
+          "origin": {
+            "coordinates": [
+              114.16965086248385,
+              22.293277490710825
+            ]
+          },
+          "destination": {
+            "coordinates": [
+              114.16906,
+              22.29411
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureDate": "2026-10-12"
+        },
+        "graph": {
+          "version": "814b03c9c2d7e3c5",
+          "nodes": 34965,
+          "edges": 78179,
+          "regions": [
+            "AUS"
+          ]
+        },
+        "count": 1,
+        "departures": [
+          28800
+        ],
+        "completedMs": 528.4594140000008
+      },
+      {
+        "worker": 6,
+        "requestWithoutDeparture": {
+          "origin": {
+            "coordinates": [
+              114.15861,
+              22.28103
+            ]
+          },
+          "destination": {
+            "coordinates": [
+              114.15007628641142,
+              22.26413857693343
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureDate": "2026-10-12"
+        },
+        "graph": {
+          "version": "814b03c9c2d7e3c5",
+          "nodes": 26088,
+          "edges": 57325,
+          "regions": [
+            "ADM"
+          ]
+        },
+        "count": 1,
+        "departures": [
+          33148.2603
+        ],
+        "completedMs": 349.6440680000014
+      },
+      {
+        "worker": 6,
+        "requestWithoutDeparture": {
+          "origin": {
+            "coordinates": [
+              114.16965086248385,
+              22.293277490710825
+            ]
+          },
+          "destination": {
+            "node_id": "AUS:N:7144fc7f1bf80b",
+            "coordinates": [
+              114.16673881,
+              22.30339902
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureDate": "2026-10-12"
+        },
+        "graph": {
+          "version": "814b03c9c2d7e3c5",
+          "nodes": 34965,
+          "edges": 78179,
+          "regions": [
+            "AUS"
+          ]
+        },
+        "count": 1,
+        "departures": [
+          28800
+        ],
+        "completedMs": 340.11230400000204
+      },
+      {
+        "worker": 5,
+        "requestWithoutDeparture": {
+          "origin": {
+            "coordinates": [
+              114.16965086248385,
+              22.293277490710825
+            ]
+          },
+          "destination": {
+            "coordinates": [
+              114.16906,
+              22.29411
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureDate": "2026-10-12"
+        },
+        "graph": {
+          "version": "814b03c9c2d7e3c5",
+          "nodes": 34965,
+          "edges": 78179,
+          "regions": [
+            "AUS"
+          ]
+        },
+        "count": 1,
+        "departures": [
+          28800
+        ],
+        "completedMs": 323.5072469999941
+      },
+      {
+        "worker": 6,
+        "requestWithoutDeparture": {
+          "origin": {
+            "coordinates": [
+              114.16965086248385,
+              22.293277490710825
+            ]
+          },
+          "destination": {
+            "coordinates": [
+              114.17423,
+              22.29471
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureDate": "2026-10-12"
+        },
+        "graph": {
+          "version": "814b03c9c2d7e3c5",
+          "nodes": 34965,
+          "edges": 78179,
+          "regions": [
+            "AUS"
+          ]
+        },
+        "count": 1,
+        "departures": [
+          28800
+        ],
+        "completedMs": 322.9862890000004
+      },
+      {
+        "worker": 6,
+        "requestWithoutDeparture": {
+          "origin": {
+            "node_id": "ADM:N:bb37f9214497f5",
+            "coordinates": [
+              114.16668057,
+              22.27906096
+            ]
+          },
+          "destination": {
+            "node_id": "ADM:N:31b17842679990",
+            "coordinates": [
+              114.16479351,
+              22.27854757
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureDate": "2026-10-12"
+        },
+        "graph": {
+          "version": "b1e24d8ef9214320",
+          "nodes": 1300,
+          "edges": 2745,
+          "regions": [
+            "ADM"
+          ]
+        },
+        "count": 19,
+        "departures": [
+          31800,
+          32264.331599999998,
+          32880,
+          33240,
+          33960,
+          34320,
+          35040,
+          35400,
+          36120,
+          36480,
+          37200,
+          37560,
+          38280,
+          38640,
+          39360,
+          39720,
+          40440,
+          40800,
+          41520
+        ],
+        "completedMs": 293.11687200001325
+      },
+      {
+        "worker": 6,
+        "requestWithoutDeparture": {
+          "origin": {
+            "node_id": "HUH:N:fbb2cd1f0d461a",
+            "coordinates": [
+              114.18229474,
+              22.3029085
+            ]
+          },
+          "destination": {
+            "node_id": "HUH:N:0fe5b92f02be54",
+            "coordinates": [
+              114.18149112,
+              22.30410369
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureDate": "2026-10-12"
+        },
+        "graph": {
+          "version": "b1e24d8ef9214320",
+          "nodes": 945,
+          "edges": 1948,
+          "regions": [
+            "HUH"
+          ]
+        },
+        "count": 30,
+        "departures": [
+          31168.45106,
+          31020,
+          32100,
+          32460,
+          33180,
+          33900,
+          33540,
+          34260,
+          34980,
+          34620,
+          35340,
+          36060,
+          35700,
+          36420,
+          37140,
+          36780,
+          37500,
+          38220,
+          37860,
+          38580,
+          39300,
+          38940,
+          39660,
+          40380,
+          40020,
+          40740,
+          41460,
+          41100,
+          41820,
+          42540
+        ],
+        "completedMs": 292.6912110000121
+      },
+      {
+        "worker": 6,
+        "requestWithoutDeparture": {
+          "origin": {
+            "node_id": "ADM:N:bb37f9214497f5",
+            "coordinates": [
+              114.16668057,
+              22.27906096
+            ]
+          },
+          "destination": {
+            "node_id": "ADM:N:423d9c94cd1e0b",
+            "coordinates": [
+              114.16478974,
+              22.27904296
+            ]
+          },
+          "preference": "fast",
+          "mode": "walk",
+          "departureDate": "2026-10-12"
+        },
+        "graph": {
+          "version": "b1e24d8ef9214320",
+          "nodes": 1300,
+          "edges": 2745,
+          "regions": [
+            "ADM"
+          ]
+        },
+        "count": 19,
+        "departures": [
+          31800,
+          32264.331599999998,
+          32880,
+          33240,
+          33960,
+          34320,
+          35040,
+          35400,
+          36120,
+          36480,
+          37200,
+          37560,
+          38280,
+          38640,
+          39360,
+          39720,
+          40440,
+          40800,
+          41520
+        ],
+        "completedMs": 290.6164499999868
+      }
+    ],
+    "caveat": "The original raw acceptedLabels field counted only timed labels; this summary derives exact accepted pushes from expanded+queue for all queries. Worker + descriptive graph metadata define these groups; cross-Worker identities are not assumed equivalent. Different departureS are time-dependent queries, not duplicates."
+  },
+  "candidates": [
+    {
+      "id": "taxi-direct",
+      "kind": "direct",
+      "minutes": 31,
+      "cost": 140.25,
+      "modes": [
+        "walk",
+        "taxi",
+        "walk"
+      ],
+      "endpointsPreserved": true,
+      "forbidden": [],
+      "needsVehicleConfirmation": false
+    },
+    {
+      "id": "transit-demo-review",
+      "kind": "public",
+      "minutes": 151,
+      "cost": 16.56,
+      "modes": [
+        "walk",
+        "bus",
+        "walk",
+        "metro",
+        "walk",
+        "tram",
+        "walk"
+      ],
+      "endpointsPreserved": true,
+      "forbidden": [],
+      "needsVehicleConfirmation": false
+    }
+  ],
+  "limitations": [
+    "Node worker_threads executes instrumented production S1 and production Worker bundles.",
+    "DOM stand-ins measure JS/string work, not browser layout, paint or visual acceptance.",
+    "CPU collection slightly delays physical Worker termination; timing is diagnostic, compare with same probe.",
+    "The original matrix stopped accessible runs as soon as public comparison was usable; this probe observes full completion or the unchanged 60-second window."
+  ]
+}

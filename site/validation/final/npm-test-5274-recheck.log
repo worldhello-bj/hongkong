@@ -1,0 +1,19 @@
+✔ expanded data and public selectors retain all original72 test endpoints (3.34277ms)
+KOW full f2 with detail 56 138
+✔ KOW C1 reaches outside land with Admiralty detail loaded and exact boundary identity (63676.649491ms)
+✔ all public modes enabled without taxi; no private-car or bike fiction (1.768148ms)
+✔ route chain preserves middle and final taxi, excludes waits (0.375236ms)
+✔ ranking respects actual user priority rather than former mode tab (0.642657ms)
+✔ arrival bridge uses timed service geometry, never a made-up pickup (0.326937ms)
+✔ entry retains detailed routes and Web Workers but exposes exactly two selectors (10.077149ms)
+✔ identical route results collapse; distinct steps remain (0.495667ms)
+✔ two policy controls render and preserve facility/date preferences (3.840773ms)
+✔ user-requested calculation cap removal retains cancel and progress (30.884796ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 68981.290944

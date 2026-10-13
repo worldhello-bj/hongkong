@@ -1,0 +1,9 @@
+{
+  "baselineRuntime": "10e14b8593db",
+  "candidateRuntime": "8e5a3cbed130",
+  "comparison": "Byte comparison of all 113 frozen files after normalizing runtime IDs and the expected helper defaults (32 entries/8 MiB to 64 entries/16 MiB).",
+  "remainingDifferences": [
+    "build-meta.json"
+  ],
+  "graphDataAndSearchLogicOtherwiseIdentical": true
+}

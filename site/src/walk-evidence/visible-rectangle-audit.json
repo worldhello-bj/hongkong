@@ -1,0 +1,664 @@
+{
+  "preserved_existing_nodes": true,
+  "preserved_existing_edges": true,
+  "added_directed_edges": 12950,
+  "new_edges_touching_existing_node": 212,
+  "all_new_edges_official": true,
+  "new_node_count": 5812,
+  "fixed_cases_coverage": [
+    {
+      "id": 1,
+      "coverage": {
+        "origin": [
+          "ADM"
+        ],
+        "destination": [
+          "ADM"
+        ]
+      },
+      "previous": {
+        "origin": [
+          "ADM"
+        ],
+        "destination": [
+          "ADM"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "coverage": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": [
+          "AUS"
+        ]
+      },
+      "previous": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": [
+          "AUS"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "coverage": {
+        "origin": [
+          "ADM"
+        ],
+        "destination": [
+          "ADM"
+        ]
+      },
+      "previous": {
+        "origin": [],
+        "destination": [
+          "ADM"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "coverage": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": [
+          "AUS"
+        ]
+      },
+      "previous": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": [
+          "AUS"
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "coverage": {
+        "origin": [
+          "ADM"
+        ],
+        "destination": [
+          "ADM"
+        ]
+      },
+      "previous": {
+        "origin": [
+          "ADM"
+        ],
+        "destination": [
+          "ADM"
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "coverage": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": [
+          "AUS"
+        ]
+      },
+      "previous": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": [
+          "AUS"
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "coverage": {
+        "origin": [
+          "ADM"
+        ],
+        "destination": [
+          "ADM"
+        ]
+      },
+      "previous": {
+        "origin": [],
+        "destination": [
+          "ADM"
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "coverage": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": [
+          "AUS"
+        ]
+      },
+      "previous": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": [
+          "AUS"
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "coverage": {
+        "origin": [
+          "ADM"
+        ],
+        "destination": [
+          "ADM"
+        ]
+      },
+      "previous": {
+        "origin": [
+          "ADM"
+        ],
+        "destination": [
+          "ADM"
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "coverage": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": [
+          "AUS"
+        ]
+      },
+      "previous": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": [
+          "AUS"
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "coverage": {
+        "origin": [
+          "ADM"
+        ],
+        "destination": [
+          "AUS"
+        ]
+      },
+      "previous": {
+        "origin": [
+          "ADM"
+        ],
+        "destination": [
+          "AUS"
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "coverage": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": [
+          "ADM"
+        ]
+      },
+      "previous": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": []
+      }
+    },
+    {
+      "id": 13,
+      "coverage": {
+        "origin": [
+          "ADM"
+        ],
+        "destination": [
+          "AUS"
+        ]
+      },
+      "previous": {
+        "origin": [],
+        "destination": [
+          "AUS"
+        ]
+      }
+    },
+    {
+      "id": 14,
+      "coverage": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": [
+          "ADM"
+        ]
+      },
+      "previous": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": []
+      }
+    },
+    {
+      "id": 15,
+      "coverage": {
+        "origin": [
+          "ADM"
+        ],
+        "destination": [
+          "AUS"
+        ]
+      },
+      "previous": {
+        "origin": [
+          "ADM"
+        ],
+        "destination": [
+          "AUS"
+        ]
+      }
+    },
+    {
+      "id": 16,
+      "coverage": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": [
+          "ADM"
+        ]
+      },
+      "previous": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": []
+      }
+    },
+    {
+      "id": 17,
+      "coverage": {
+        "origin": [
+          "ADM"
+        ],
+        "destination": [
+          "AUS"
+        ]
+      },
+      "previous": {
+        "origin": [
+          "ADM"
+        ],
+        "destination": [
+          "AUS"
+        ]
+      }
+    },
+    {
+      "id": 18,
+      "coverage": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": [
+          "ADM"
+        ]
+      },
+      "previous": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": [
+          "ADM"
+        ]
+      }
+    },
+    {
+      "id": 19,
+      "coverage": {
+        "origin": [
+          "ADM"
+        ],
+        "destination": [
+          "AUS"
+        ]
+      },
+      "previous": {
+        "origin": [],
+        "destination": [
+          "AUS"
+        ]
+      }
+    },
+    {
+      "id": 20,
+      "coverage": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": [
+          "ADM"
+        ]
+      },
+      "previous": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": []
+      }
+    },
+    {
+      "id": 21,
+      "coverage": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": [
+          "AUS"
+        ]
+      },
+      "previous": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": [
+          "AUS"
+        ]
+      }
+    },
+    {
+      "id": 22,
+      "coverage": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": [
+          "AUS"
+        ]
+      },
+      "previous": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": [
+          "AUS"
+        ]
+      }
+    },
+    {
+      "id": 23,
+      "coverage": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": [
+          "ADM"
+        ]
+      },
+      "previous": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": []
+      }
+    },
+    {
+      "id": 24,
+      "coverage": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": [
+          "AUS"
+        ]
+      },
+      "previous": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": [
+          "AUS"
+        ]
+      }
+    },
+    {
+      "id": 25,
+      "coverage": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": [
+          "AUS"
+        ]
+      },
+      "previous": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": [
+          "AUS"
+        ]
+      }
+    },
+    {
+      "id": 26,
+      "coverage": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": [
+          "ADM"
+        ]
+      },
+      "previous": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": [
+          "ADM"
+        ]
+      }
+    },
+    {
+      "id": 27,
+      "coverage": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": [
+          "ADM"
+        ]
+      },
+      "previous": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": []
+      }
+    },
+    {
+      "id": 28,
+      "coverage": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": [
+          "ADM"
+        ]
+      },
+      "previous": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": []
+      }
+    },
+    {
+      "id": 29,
+      "coverage": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": [
+          "ADM"
+        ]
+      },
+      "previous": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": []
+      }
+    },
+    {
+      "id": 30,
+      "coverage": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": [
+          "ADM"
+        ]
+      },
+      "previous": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": [
+          "ADM"
+        ]
+      }
+    },
+    {
+      "id": 31,
+      "coverage": {
+        "origin": [
+          "ADM"
+        ],
+        "destination": [
+          "ADM"
+        ]
+      },
+      "previous": {
+        "origin": [],
+        "destination": [
+          "ADM"
+        ]
+      }
+    },
+    {
+      "id": 32,
+      "coverage": {
+        "origin": [
+          "ADM"
+        ],
+        "destination": [
+          "AUS"
+        ]
+      },
+      "previous": {
+        "origin": [],
+        "destination": [
+          "AUS"
+        ]
+      }
+    },
+    {
+      "id": 33,
+      "coverage": {
+        "origin": [
+          "ADM"
+        ],
+        "destination": [
+          "ADM"
+        ]
+      },
+      "previous": {
+        "origin": [
+          "ADM"
+        ],
+        "destination": [
+          "ADM"
+        ]
+      }
+    },
+    {
+      "id": 34,
+      "coverage": {
+        "origin": [
+          "ADM"
+        ],
+        "destination": [
+          "ADM"
+        ]
+      },
+      "previous": {
+        "origin": [
+          "ADM"
+        ],
+        "destination": [
+          "ADM"
+        ]
+      }
+    },
+    {
+      "id": 35,
+      "coverage": {
+        "origin": [
+          "ADM"
+        ],
+        "destination": [
+          "ADM"
+        ]
+      },
+      "previous": {
+        "origin": [
+          "ADM"
+        ],
+        "destination": [
+          "ADM"
+        ]
+      }
+    },
+    {
+      "id": 36,
+      "coverage": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": [
+          "ADM"
+        ]
+      },
+      "previous": {
+        "origin": [
+          "AUS"
+        ],
+        "destination": []
+      }
+    }
+  ]
+}

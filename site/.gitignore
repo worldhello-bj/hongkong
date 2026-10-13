@@ -1,0 +1,12 @@
+# Reproducible diagnostic working copies; original data live only in dist/.
+__pycache__/
+*.pyc
+validation/performance/runtime-*/
+validation/performance/*/instrumented/
+validation/performance/*/events.ndjson
+validation/performance/*/*.cpuprofile*
+validation/performance/*/summary.json
+validation/performance/*/summary.txt
+validation/performance/*/events.ndjson.gz
+validation/point-matrix/runtime-*/
+validation/performance/local-coordination/

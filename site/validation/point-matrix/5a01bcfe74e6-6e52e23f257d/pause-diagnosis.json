@@ -1,0 +1,13 @@
+{
+  "runtime": "5a01bcfe74e6",
+  "cause": "Explicit pause for source-identity OUT_OF_REGION regression",
+  "terminatedRunnerSession": 16833,
+  "runnerExitCode": 130,
+  "observedFiles": [
+    "exits-cross-accessible-taxi-off.json",
+    "exits-cross-ordinary-taxi-off.json",
+    "exits-cross-ordinary-taxi-on.json"
+  ],
+  "interruptedWithoutObservation": "exits-cross-luggage-taxi-off",
+  "qualification": "The interrupted cell has no persisted terminal observation and is not counted as tested. The old runtime is not resumed without diagnosis."
+}

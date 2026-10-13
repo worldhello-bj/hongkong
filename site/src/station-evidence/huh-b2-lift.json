@@ -1,0 +1,51 @@
+{
+  "source_url": "https://mapapi.hkmapservice.gov.hk/ogc/wfs/indoor/mtr_amenity_point?service=WFS&version=1.1.0&request=GetFeature&outputFormat=application%2Fjson&cql_filter=venue_id%3D%278769ac7e-21b4-4e9f-b776-7490f7689f32%27",
+  "retrieved_date": "2026-10-11",
+  "feature": {
+    "type": "Feature",
+    "id": "mtr_amenity_point.2654",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        114.18193104000011,
+        22.303595380000047,
+        13.80000000000291
+      ]
+    },
+    "geometry_name": "shape",
+    "properties": {
+      "amenity_id": "520646C3-DA0C-4BEC-B495-DA8D10D32216",
+      "amenity_category": "elevator",
+      "amenity_name_en": "Elevator",
+      "amenity_name_zh": "升降機",
+      "amenity_alt_name": null,
+      "amenity_accessibility": null,
+      "amenity_phone": null,
+      "amenity_website": null,
+      "amenity_hours": null,
+      "amenity_correlation_id": null,
+      "unit_id": "b36d70ba-1a8a-4972-883d-0308d2c03424",
+      "level_id": "b0b62bd4-6a79-456d-89e6-40f9640337da",
+      "level_floorpolyid": "F3680718213T2005043002000004",
+      "level_ordinal": 0,
+      "level_z_value": 13.8,
+      "level_name_en": "Exit B2 Elevator Ground Level",
+      "level_name_zh": "B2出口 地面升降機",
+      "level_short_name_en": "G",
+      "venue_id": "8769ac7e-21b4-4e9f-b776-7490f7689f32",
+      "venue_name_en": "Hung Hom Station",
+      "venue_name_zh": "紅磡鐵路站",
+      "venue_alt_name": null,
+      "building_id": "40229e74-0724-4da8-bed0-556ac632bf38",
+      "building_name_en": "Hung Hom Station",
+      "building_name_zh": "紅磡鐵路站",
+      "building_alt_name": null,
+      "bbox": [
+        114.18193104000011,
+        22.303595380000047,
+        114.18193104000011,
+        22.303595380000047
+      ]
+    }
+  }
+}

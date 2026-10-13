@@ -1,0 +1,128 @@
+{
+  "runtime": "4f0a062ef29d",
+  "id": 1,
+  "need": "luggage",
+  "state": "complete",
+  "wallMs": 39343,
+  "memory": {
+    "rss": 1049894912,
+    "heapTotal": 409042944,
+    "heapUsed": 358865640,
+    "external": 31671691,
+    "arrayBuffers": 9801516,
+    "maxRSSKiB": 1284300
+  },
+  "request": {
+    "origin": {
+      "id": "map:random--611574659",
+      "name": "地图所选地点",
+      "detail": "用户选择 · 接入待核验",
+      "coordinates": [
+        114.16666226277333,
+        22.270987023264027
+      ],
+      "lon": 114.16666226277333,
+      "lat": 22.270987023264027
+    },
+    "destination": {
+      "id": "map:random--1875245999",
+      "name": "地图所选地点",
+      "detail": "用户选择 · 接入待核验",
+      "coordinates": [
+        114.1510242122139,
+        22.26650677116623
+      ],
+      "lon": 114.1510242122139,
+      "lat": 22.26650677116623
+    }
+  },
+  "performance": {
+    "warmStart": false,
+    "startedMonotonic": 11921.514728,
+    "startedAt": "2026-10-12T11:40:29.082Z",
+    "origin": "地图所选地点",
+    "destination": "地图所选地点",
+    "stages": [
+      {
+        "id": "public-fast",
+        "durationMs": 10172,
+        "status": "ready",
+        "cached": false
+      },
+      {
+        "id": "walk",
+        "durationMs": 11831,
+        "status": "ready",
+        "cached": false
+      },
+      {
+        "id": "taxi",
+        "durationMs": 31060,
+        "status": "ready"
+      }
+    ],
+    "firstResultMs": 1868,
+    "totalMs": 31084,
+    "taxiCandidates": [
+      {
+        "side": "last",
+        "id": "td:99134",
+        "status": "not-a-shorter-feeder"
+      },
+      {
+        "side": "first",
+        "id": "td:99133",
+        "status": "not-a-shorter-feeder"
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "id": "taxi-direct",
+      "kind": "direct",
+      "minutes": 14,
+      "cost": 34.76,
+      "walkMinutes": 2,
+      "waitMinutes": 5.344375230383533,
+      "transfers": 0,
+      "modes": [
+        "walk",
+        "taxi",
+        "walk"
+      ],
+      "endpointsPreserved": true,
+      "forbidden": [],
+      "needsVehicleConfirmation": true,
+      "needsConfirmation": true,
+      "requestedPreference": "luggage",
+      "effectivePreference": "luggage"
+    },
+    {
+      "id": "transit",
+      "kind": "public",
+      "minutes": 65,
+      "cost": 0,
+      "walkMinutes": 65,
+      "waitMinutes": 0,
+      "transfers": 0,
+      "modes": [
+        "walk"
+      ],
+      "endpointsPreserved": true,
+      "forbidden": [],
+      "needsVehicleConfirmation": false,
+      "needsConfirmation": false,
+      "requestedPreference": "luggage",
+      "effectivePreference": "luggage"
+    }
+  ],
+  "selected": "taxi-direct",
+  "publicAvailable": true,
+  "taxiAvailable": true,
+  "invariants": {
+    "endpoints": true,
+    "knownEdges": true,
+    "strictTaxiExcluded": true,
+    "luggageTaxiConfirmed": true
+  }
+}

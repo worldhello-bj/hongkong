@@ -1,0 +1,12 @@
+{
+  "name": "hongkong-integrated-navigation",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-navigation.mjs",
+    "test:navigation": "node --test --test-concurrency=1 tests/navigation/*.test.mjs",
+    "test": "node --test --test-concurrency=1 tests/navigation/*.test.mjs tests/taxi/*.test.mjs",
+    "start": "node scripts/serve.mjs",
+    "dev": "node scripts/serve.mjs"
+  }
+}

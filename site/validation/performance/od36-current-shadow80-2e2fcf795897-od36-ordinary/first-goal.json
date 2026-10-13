@@ -1,0 +1,14 @@
+{
+  "t": 53850.18,
+  "worker": 5,
+  "kind": "app-transit-worker-CaCMeUxU.js",
+  "event": "scheduled-first-goal-generated",
+  "sid": 13,
+  "elapsedMs": 3241.4532640000034,
+  "score": 18315.647129999998,
+  "arrivalS": 37462.16334,
+  "walkS": 6315.65586,
+  "transfers": 1,
+  "facilityPenalty": 0,
+  "acceptedLabels": 2567
+}

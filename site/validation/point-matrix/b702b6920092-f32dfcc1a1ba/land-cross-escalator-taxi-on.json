@@ -1,0 +1,2998 @@
+{
+  "schema": 1,
+  "auditProvenance": {
+    "version": "point-strict-source-v2",
+    "files": {
+      "point-matrix-harness.mjs": "eebf77fc8512f208750a9e56d7d9c1f052c865c801b5935a2bb70946a2e248ab",
+      "point-matrix-audit.mjs": "5f9cdfc72e6c0d11e57e9b4cd5d17f9cab8888c2a3feed38c5c32977e6b7dbd3",
+      "point-source-eligibility.mjs": "a424b9710aafc3bf82ab157f6054cb1e62d0eee862df5cf5ab5398272b50c352",
+      "point-matrix-fixture.mjs": "5defc9c9417a73cf2157582405cf05c77220c0122d2a5278d294acff9fc44335"
+    }
+  },
+  "planningStarted": true,
+  "uiStatus": [
+    {
+      "id": "[data-app=\"status\"]",
+      "text": "方案已更新，可以开始这一程。"
+    },
+    {
+      "id": "[data-app=\"taxi-fleet-status\"]",
+      "text": "16 辆游走 · 32 辆执行已有订单 · 0 辆接送本次乘客 · 当前可见 48/48"
+    }
+  ],
+  "rowId": "land-cross",
+  "label": "固定種子陸地 OD 12",
+  "tags": [
+    "fixed-seed-land",
+    "cross-harbour"
+  ],
+  "need": "escalator",
+  "taxi": true,
+  "runtime": {
+    "version": "b702b6920092",
+    "assets": {
+      "area/admiralty-block-graph.json.gz": "388a08977ed80e57295fe1a0d623178e79ecd441cedaa5cfc62fe043385e2298",
+      "area/admiralty-block-manifest.json": "3ca578fed53857bf83cb93c4f51aab5f854656415384f7a869360a983ea07001",
+      "area/area-graph.json.gz": "44901caf6ee1241a23e096eb3d692f96913789fb2c1cbd742da59d8d3730253f",
+      "area/station-graph.json.gz": "446700358a6a56ccb8bbf1e024f6a09da99925e2778331e67c307c135a0f0a1e",
+      "assets/app-transit-worker-CaCMeUxU.js": "806f2989505389582d744a1b477a8d19bd6121ffa7d23ecd828574d98d6a6095",
+      "assets/app-walk-worker-jk5g-BMr.js": "6a2c4f41d260875ff8987bca135f71375108c5a3f82508501661676184681765",
+      "assets/boot-status.js": "53c430e4c7e6b380f1b3ad694eb75dc5922bc881350e5d42f66102cc595d5817",
+      "assets/demo-fallback.js": "ea101eb11b54b55110d78f07a98834d19cf2cb4bfe1e2ee2cfe3d86b5988d7bd",
+      "assets/integrated-navigation.js": "f4ed3e1f82e823893508be824bf52caa6aaa4b32514da1684fe2767ac9f9dd8c",
+      "assets/intermodal-routing-D8vKT-lN.js": "07d500788ab8d8a8384d0ef6e0c4b9d2e21f006e41bbeba1c5513f0ca94178cf",
+      "assets/journey-score.js": "03ffa12a0cd2b1ae354458f0a8cfe2c46358d58438d6016f272749f42ae751ab",
+      "assets/kow-c1-corridor-data.js": "a2a51a8d0e54cf4b45f2b7df4c3a3bad366e9b9544e9514b2e208fa7b973ea01",
+      "assets/kow-c1-corridor.js": "9ccb3c5c3717ee4a7266ea145278f471b5e9358770ff1756b81980bc300df221",
+      "assets/main-integrated.js": "e020a70c2e82435528adfdde85c0b9ae3942299f693d0eee4e92526b78fc8b0e",
+      "assets/maplibre-gl-_-pAOC5F.js": "f0a214ad8b161ece04da3257f8ca6c4ac288c2899fd765e6e4b15e80a44ec224",
+      "assets/metro-planning-CBAOotPX.js": "2052981567b7c30aae34edceaed46bd9501c3984aa1b5fd5ba23b0738e1af992",
+      "assets/metro-worker-BDEusPKL.js": "e052ada3a46f4d70b8392f271ab43dfd1b92a1a673cc53fab53407bd985431f3",
+      "assets/mobile-navigation-DfEsS_7b.js": "be740bb256712eb6af7a864d6b2b3b231a504fe99326c80695053899f3464c2b",
+      "assets/pacific-place-model.js": "c38037acd1a2ae23531b31de9742909d267e821531d3648b1a8f7522d54d73a5",
+      "assets/place-opening.js": "651d8b65cbfbea4f515edf656320de8f94b970a76022e29f45eb602a1ff85a41",
+      "assets/preference-routing.js": "e4fcfd7f6d6d0d7c09e40b59a56af6a85f720c8c8b785536a7ace7692884635c",
+      "assets/preload-helper-BXl3LOEh.js": "d887044e7c17fd90344fc4f74f53cac686584daf2a458ab2136d36f1946e9ab6",
+      "assets/public-coverage.js": "7b9a48c85d3731c18b74c8896a0e7949d2b03b9dffd5878066eecc076f443da3",
+      "assets/rail-reference.js": "d443c08eccb243ab64a57203ff992b2f541cdb1053ff41d3d25b09db920300ae",
+      "assets/route-quote.js": "06e944e179be290edea57e0881e1186896282a41782eab426c4a280cc1477171",
+      "assets/routing-queue.js": "8ac1a97a9e60f93ac08c7e67031f51e7820621a8de20b473c142a9e3448bc761",
+      "assets/score-parameters.js": "9012ff8ae06ab23b993f1875160c45a58ea4537ff660900554f1d6e28cf0dd16",
+      "assets/station-alternatives.js": "8032d4f80d7e87f7748f66a9f1e729e56a19be9186ad2026899fb8ec30ed99be",
+      "assets/taxi-bridge.js": "0bd24c2ae0d049c3da3349cd38bef4840ba17c1d00cc5259289de10425eb9ffc",
+      "assets/taxi-candidates.js": "0b111d34183d3f3ac00c220a7f11d4cbf8f42ee48db996f5c3f79d779ca5396b",
+      "assets/taxi-map.js": "2c9a40cd381f967cec687f7a76c7445e200c8fec180394aeb04daeb1111a0839",
+      "assets/taxi-policy.js": "e72b1cb6aeedae048ceafe99a76cf399c15c1da19eca0298e7a18acfe6af2ee6",
+      "assets/tram-model-DNfzveeh.js": "caf935edc3e381a59acaf62f1166dd23d23a119a51a77dd1caa32d42acc7047d",
+      "assets/transit-stops.js": "39b812021f7e4b098187bc8fcfeca134fddcc6c8b9a70b8a3ff4bc2378cf3dfa",
+      "assets/ui-content.js": "42434d27f692a5385a52526c978cb539e115d0e32ad5a08c8ffe521eefbed8ef",
+      "assets/ui-navigation.js": "e95235ec7976ea3b06d7fe5f88502eb3a1a70829eb5a86bf6cbf746598859927",
+      "assets/zh-BN2SYn6V.js": "0baa0f4a0af2ee59f48d8f79ea5736143840a3dcef5ab0b3088bd716b2dcd980",
+      "taxi/government-data.json": "755ccae78e10a507fbf0537bd5d0597aa4f7bebe97d7b5825199fb0472fdbafb",
+      "taxi/road-graph.js": "78f3f2d916148f6e2d6ab261906e661072f995a64ca027e5642395bf5d6ac48e",
+      "taxi/roaming.js": "0a73374b8482399f122bba7483b66cc7b76fd32b855d2c313e0ee801646c8d13",
+      "transit/services.json": "59c1c4faef3fadbf32748b0707231f78c3ec36aa4d2edc47de39b8c39485c542",
+      "transit/tram-stops.json": "4b34355bd7c4cceb4e7afbd73fd2e7c49ecc73d89a01f4082468c693cbc56684",
+      "transit/walk-links.json": "5cdff906f22c51146abc9e6e565f0b07a1d57a739239af403482f2dff2c6658c",
+      "transit/walk-links.json.gz": "9505ee7867641cd5c7bbf2a3c76a4216c7cdc05fdd7a72d7da4cf85eb2f6420b"
+    },
+    "signature": "f32dfcc1a1ba60f3987b03f198560960bd23364aeb86d8600395d1ea86313fc3"
+  },
+  "fixtureSha256": "791197c289bf10787b0104c3d1fc5ba70ec030f305507cc56b924be744588b0e",
+  "date": "2026-10-12T17:15:29.187Z",
+  "request": {
+    "origin": {
+      "id": "map:random--1386445323",
+      "name": "地图所选地点",
+      "detail": "用户选择 · 接入待核验",
+      "coordinates": [
+        114.17386388874023,
+        22.30366360826388
+      ],
+      "lon": 114.17386388874023,
+      "lat": 22.30366360826388
+    },
+    "destination": {
+      "id": "map:random--2018280993",
+      "name": "地图所选地点",
+      "detail": "用户选择 · 接入待核验",
+      "coordinates": [
+        114.18872616863665,
+        22.27087158388786
+      ],
+      "lon": 114.18872616863665,
+      "lat": 22.27087158388786
+    },
+    "departureDate": "2026-10-12",
+    "departureS": 39600
+  },
+  "state": "complete",
+  "comparisonStatus": "complete",
+  "failedStages": [],
+  "windowMs": 60000,
+  "bootMs": 5542.370175,
+  "wallMs": 30879.130921,
+  "firstObservedMs": 3119.4309540000004,
+  "firstResultMs": 3077,
+  "fullCandidateWallMs": 30879.130921,
+  "stoppedWallMs": 30879.130921,
+  "performance": {
+    "warmStart": false,
+    "startedMonotonic": 5705.147025,
+    "startedAt": "2026-10-12T17:14:57.467Z",
+    "origin": "地图所选地点",
+    "destination": "地图所选地点",
+    "stages": [
+      {
+        "id": "public-fast",
+        "durationMs": 16466,
+        "status": "ready",
+        "cached": false
+      },
+      {
+        "id": "taxi",
+        "durationMs": 28435,
+        "status": "ready"
+      },
+      {
+        "id": "walk",
+        "durationMs": 2376,
+        "status": "no-complete-route",
+        "cached": false
+      }
+    ],
+    "firstResultMs": 3077,
+    "totalMs": 30856,
+    "taxiCandidates": [
+      {
+        "side": "last",
+        "id": "td:1286",
+        "status": "not-a-shorter-feeder"
+      },
+      {
+        "side": "first",
+        "id": "HUH:portal:A2",
+        "status": "ready",
+        "minutes": 102
+      },
+      {
+        "side": "first",
+        "id": "td:99226",
+        "status": "ready",
+        "minutes": 67
+      }
+    ],
+    "comparisonStatus": "complete",
+    "failedStages": []
+  },
+  "navigationLoad": {
+    "status": "ready",
+    "durationMs": 3732,
+    "block": "ready"
+  },
+  "candidates": [
+    {
+      "id": "taxi-direct",
+      "kind": "direct",
+      "available": true,
+      "scoringInput": {
+        "id": "taxi-direct",
+        "available": true,
+        "minutes": 16,
+        "cost": 87.9,
+        "walkMinutes": 3,
+        "transfers": 0,
+        "result": {
+          "waitMinutes": 1.8212506887151296,
+          "segments": [
+            {
+              "kind": "walk",
+              "minutes": 0.6219701959327234
+            },
+            {
+              "kind": "wait",
+              "minutes": 1.8212506887151296
+            },
+            {
+              "kind": "taxi",
+              "minutes": 11.788416666666667
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.6122100934577948
+            }
+          ],
+          "luggageCarryRequired": false
+        }
+      },
+      "minutes": 16,
+      "cost": 87.9,
+      "walkMinutes": 3,
+      "waitMinutes": 1.8212506887151296,
+      "transfers": 0,
+      "modes": [
+        "walk",
+        "taxi",
+        "walk"
+      ],
+      "endpoints": {
+        "origin": {
+          "kind": "exact-map-or-stop-xy",
+          "requested": {
+            "id": "map:random--1386445323",
+            "coordinates": [
+              114.17386388874023,
+              22.30366360826388
+            ]
+          },
+          "actual": [
+            114.17386388874023,
+            22.30366360826388
+          ],
+          "sourceNodeMatches": null,
+          "nodeTraceable": null,
+          "pass": true
+        },
+        "destination": {
+          "kind": "exact-map-or-stop-xy",
+          "requested": {
+            "id": "map:random--2018280993",
+            "coordinates": [
+              114.18872616863665,
+              22.27087158388786
+            ]
+          },
+          "actual": [
+            114.18872616863665,
+            22.27087158388786
+          ],
+          "sourceNodeMatches": null,
+          "nodeTraceable": null,
+          "pass": true
+        }
+      },
+      "continuity": {
+        "maxGapM": 0,
+        "maxHeightGapM": 0,
+        "gaps": []
+      },
+      "evidence": {
+        "status": "modeled-or-unverified",
+        "modeledSteps": [
+          {
+            "step": 0,
+            "kind": "walk",
+            "geometryMode": "schematic",
+            "blocked": false
+          },
+          {
+            "step": 2,
+            "kind": "taxi",
+            "geometryMode": "schematic",
+            "blocked": false
+          },
+          {
+            "step": 3,
+            "kind": "walk",
+            "geometryMode": "schematic",
+            "blocked": false
+          }
+        ],
+        "unknownEdgeIds": [],
+        "transitRideBoundaries": [],
+        "usedEdgeCount": 0,
+        "scheduledEdges": [],
+        "needsFacilityConfirmation": false,
+        "simulationOnly": true,
+        "scenarioOnly": true
+      },
+      "forbidden": [],
+      "strictSourceAudit": null,
+      "fare": {
+        "basis": "Production illustrative quote, not official live tariffs",
+        "available": true,
+        "pricingUnavailable": false,
+        "compacted": true,
+        "totalCents": 8790,
+        "sumLegCents": 8790,
+        "legs": [
+          {
+            "index": 0,
+            "mode": "walk",
+            "label": "步行 45 米到预约上客点",
+            "amountCents": 0,
+            "durationMinutes": 2.443220884647853,
+            "distanceM": 44.781854107156086,
+            "available": true
+          },
+          {
+            "index": 1,
+            "mode": "taxi",
+            "label": "乘出租车 DEMO-19 前往 地图所选地点（经海底隧道）",
+            "amountCents": 8790,
+            "durationMinutes": 11.788416666666667,
+            "distanceM": 6236.927999999998,
+            "available": true
+          },
+          {
+            "index": 2,
+            "mode": "walk",
+            "label": "步行 117 米到地图所选地点",
+            "amountCents": 0,
+            "durationMinutes": 1.6122100934577948,
+            "distanceM": 116.07912672896123,
+            "available": true
+          }
+        ],
+        "expectedCompactedModes": [
+          "walk",
+          "taxi",
+          "walk"
+        ],
+        "legCoverage": true,
+        "pass": true
+      },
+      "checks": {
+        "complete": true,
+        "endpoints": true,
+        "continuous": true,
+        "knownForbiddenEdges": true,
+        "strictSourceEligibility": true,
+        "fare": true,
+        "transitStopBoundaries": true,
+        "taxiPolicy": true,
+        "strictTaxi": true,
+        "luggageTaxiConfirmation": true
+      },
+      "pass": true,
+      "warnings": [
+        "演示数据：车辆、订单、票价与接驳时间为模拟，路线沿公开路网生成。",
+        "路缘连接显示为虚线模型：上客侧人行节点来源高度 未知 米；车行侧高程与实际高差未核验。",
+        "出租车行驶沿 OpenStreetMap 有向道路；车速、既有订单、候车均为演示数据，不是实时调度。",
+        "本方案含未核验路缘连接，只可用于接续情景演练，不保证现实全程可通行或无障碍。"
+      ],
+      "endpointAccess": [
+        {
+          "side": "origin",
+          "requested": {
+            "id": "map:random--1386445323",
+            "coordinates": [
+              114.17386388874023,
+              22.30366360826388
+            ]
+          },
+          "status": "xy-scenario"
+        },
+        {
+          "side": "destination",
+          "requested": {
+            "id": "map:random--2018280993",
+            "coordinates": [
+              114.18872616863665,
+              22.27087158388786
+            ]
+          },
+          "status": "xy-scenario"
+        }
+      ],
+      "requestedPreference": "escalator",
+      "effectivePreference": "escalator_first"
+    },
+    {
+      "id": "taxi-first-tram-td:99226",
+      "kind": "first",
+      "available": true,
+      "scoringInput": {
+        "id": "taxi-first-tram-td:99226",
+        "available": true,
+        "minutes": 67,
+        "cost": 84.18,
+        "walkMinutes": 53,
+        "transfers": 1,
+        "result": {
+          "waitMinutes": 3.8212506887151294,
+          "segments": [
+            {
+              "kind": "walk",
+              "minutes": 0.6219701959327234
+            },
+            {
+              "kind": "wait",
+              "minutes": 1.8212506887151296
+            },
+            {
+              "kind": "taxi",
+              "minutes": 8.972133333333336
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.25
+            },
+            {
+              "kind": "wait",
+              "minutes": 1.1179791153521363
+            },
+            {
+              "kind": "tram",
+              "minutes": 2
+            },
+            {
+              "kind": "access_connector",
+              "minutes": 0.000759
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.128676
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.074311
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.097402
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.090984
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.075666
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.016649
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.184284
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.012885
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.059685
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.092501
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.229115
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.497281
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.194167
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.038069
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.099458
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.212079
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.109629
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.105498
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.084441
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.081054
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.497938
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.148149
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.043408
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.023322
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.043607
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.057566
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.543551
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.04924
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.219427
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.05692
+            },
+            {
+              "kind": "walk",
+              "minutes": 2.622219
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.027501
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.027794
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.080405
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.083797
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.101808
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.045572
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.01162
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.003948
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.089781
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.305093
+            },
+            {
+              "kind": "footbridge",
+              "minutes": 0.370371
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.306079
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.521938
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.580153
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.075253
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.911575
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.164665
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.431109
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.106534
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.136819
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.595876
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.130435
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.5189
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.025803
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.077173
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.025626
+            },
+            {
+              "kind": "walk",
+              "minutes": 2.254097
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.044659
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.060683
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.075675
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.371954
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.04827
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.113741
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.048784
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.424132
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.101627
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.717219
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.023423
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.098029
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.012867
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.919844
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.023789
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.144011
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.033345
+            },
+            {
+              "kind": "walk",
+              "minutes": 2.360436
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.861893
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.101295
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.7851
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.1091
+            },
+            {
+              "kind": "walk",
+              "minutes": 3.644442
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.149128
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.310389
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.11637
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.952433
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.049755
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.019844
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.049088
+            },
+            {
+              "kind": "walk",
+              "minutes": 8.099164
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.167685
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.531404
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.380108
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.386396
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.432204
+            },
+            {
+              "kind": "stairs",
+              "minutes": 4.016314
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.326541
+            },
+            {
+              "kind": "access_connector",
+              "minutes": 0.608329
+            }
+          ],
+          "luggageCarryRequired": false
+        }
+      },
+      "minutes": 67,
+      "cost": 84.18,
+      "walkMinutes": 53,
+      "waitMinutes": 3.8212506887151294,
+      "transfers": 1,
+      "modes": [
+        "walk",
+        "taxi",
+        "walk",
+        "tram",
+        "walk"
+      ],
+      "endpoints": {
+        "origin": {
+          "kind": "exact-map-or-stop-xy",
+          "requested": {
+            "id": "map:random--1386445323",
+            "coordinates": [
+              114.17386388874023,
+              22.30366360826388
+            ]
+          },
+          "actual": [
+            114.17386388874023,
+            22.30366360826388
+          ],
+          "sourceNodeMatches": null,
+          "nodeTraceable": null,
+          "pass": true
+        },
+        "destination": {
+          "kind": "exact-map-or-stop-xy",
+          "requested": {
+            "id": "map:random--2018280993",
+            "coordinates": [
+              114.18872616863665,
+              22.27087158388786
+            ]
+          },
+          "actual": [
+            114.18872616863665,
+            22.27087158388786
+          ],
+          "sourceNodeMatches": null,
+          "nodeTraceable": null,
+          "pass": true
+        }
+      },
+      "continuity": {
+        "maxGapM": 0,
+        "maxHeightGapM": 0,
+        "gaps": []
+      },
+      "evidence": {
+        "status": "modeled-or-unverified",
+        "modeledSteps": [
+          {
+            "step": 0,
+            "kind": "walk",
+            "geometryMode": "schematic",
+            "blocked": false
+          },
+          {
+            "step": 2,
+            "kind": "taxi",
+            "geometryMode": "schematic",
+            "blocked": false
+          },
+          {
+            "step": 3,
+            "kind": "walk",
+            "geometryMode": "schematic",
+            "blocked": false
+          },
+          {
+            "step": 5,
+            "kind": "tram",
+            "geometryMode": "schematic",
+            "blocked": false
+          },
+          {
+            "step": 6,
+            "kind": "access_connector",
+            "geometryMode": "schematic",
+            "blocked": false
+          },
+          {
+            "step": 155,
+            "kind": "access_connector",
+            "geometryMode": "schematic",
+            "blocked": false
+          }
+        ],
+        "unknownEdgeIds": [
+          "WAIT:td:99226:40299.92125307887",
+          "RIDE:td:4005:2:287:0:39028:td:99226:td:99227",
+          "ACCESS:origin",
+          "ACCESS:destination"
+        ],
+        "transitRideBoundaries": [],
+        "usedEdgeCount": 223,
+        "scheduledEdges": [],
+        "needsFacilityConfirmation": false,
+        "simulationOnly": true,
+        "scenarioOnly": true
+      },
+      "forbidden": [],
+      "strictSourceAudit": null,
+      "fare": {
+        "basis": "Production illustrative quote, not official live tariffs",
+        "available": true,
+        "pricingUnavailable": false,
+        "compacted": true,
+        "totalCents": 8418,
+        "sumLegCents": 8418,
+        "legs": [
+          {
+            "index": 0,
+            "mode": "walk",
+            "label": "步行 45 米到预约上客点",
+            "amountCents": 0,
+            "durationMinutes": 2.443220884647853,
+            "distanceM": 44.781854107156086,
+            "available": true
+          },
+          {
+            "index": 1,
+            "mode": "taxi",
+            "label": "乘出租车 DEMO-19 前往 杜老志道 (东行方向)（经海底隧道）",
+            "amountCents": 8118,
+            "durationMinutes": 8.972133333333336,
+            "distanceM": 5397.331,
+            "available": true
+          },
+          {
+            "index": 2,
+            "mode": "walk",
+            "label": "步行 13 米接续下一程",
+            "amountCents": 0,
+            "durationMinutes": 1.3679791153521363,
+            "distanceM": 12.48468214500889,
+            "available": true
+          },
+          {
+            "index": 3,
+            "mode": "tram",
+            "label": "电车 中环—湾仔（常规班距模拟）：杜老志道 (东行方向) → 坚拿道西 (东行方向)（11:12–11:14）",
+            "amountCents": 300,
+            "durationMinutes": 2,
+            "distanceM": 352.0560903064957,
+            "available": true
+          },
+          {
+            "index": 4,
+            "mode": "walk",
+            "label": "前往站台入口（约0.1米）",
+            "amountCents": 0,
+            "durationMinutes": 51.51913499999999,
+            "distanceM": 3528.874,
+            "available": true
+          }
+        ],
+        "expectedCompactedModes": [
+          "walk",
+          "taxi",
+          "walk",
+          "tram",
+          "walk"
+        ],
+        "legCoverage": true,
+        "pass": true
+      },
+      "checks": {
+        "complete": true,
+        "endpoints": true,
+        "continuous": true,
+        "knownForbiddenEdges": true,
+        "strictSourceEligibility": true,
+        "fare": true,
+        "transitStopBoundaries": true,
+        "taxiPolicy": true,
+        "strictTaxi": true,
+        "luggageTaxiConfirmation": true
+      },
+      "pass": true,
+      "warnings": [
+        "使用资料内演示服务日与所选时刻，不是实时到站。",
+        "仅为离线估算步行连接；首末接驳单独标为未核实示意线，距离和时间已计入。",
+        "车站入口按官方三维节点绑定；楼梯、通道及升降机当前状态未核实。",
+        "连接缓存必须与graph_version一致；不能用旧图缓存拼接新图。",
+        "本文件不提供实时发车或候车预测；列车、巴士和电车的班次模拟必须另行标注来源与假设。",
+        "公交、电车及地铁候车使用所选服务时钟；班次或车程含明确标注的演示/频率估算，不是实时车辆预测。",
+        "每段升降机增加90秒推荐成本，只影响选择，不增加到达、候车或步行时间；不奖励扶梯数量。",
+        "设施偏好按时间与搬运负担排序，楼梯或扶梯可能作为备选；扶梯优先允许升降机替代，不为凑扶梯数量绕远。站内、首末接入或未分类高差仍可能含楼梯，不能视为全程无楼梯或全扶梯保证。港铁指引要求携带大件行李使用升降机，勿携大件行李乘扶梯或自动行人道；请选升降机方案并遵循现场指示。",
+        "公交和电车上下车高差、车内行李空间及站内升降机连续连接尚未核验；没有已知楼梯不等于已验证的大件行李可行路线。",
+        "步道採用地政總署官方三維路網；路況、通道開放及升降機運作未經現場核實。",
+        "步行時間按速度假設計算；港鐵車程、候車、站內步行及紅磡轉乘均為估算，不是即時班次。",
+        "保留原始起終點；首末接駁作為未核實的估算段單獨顯示，實際入口、障礙及繞行需確認。",
+        "港鐵跨海線為車站間示意線，不是實測軌道；站內接駁為估算，不提供虛構室內步行線。",
+        "未解析開放時間的通道、停用路段及收費區步道均不納入室外路線。",
+        "所有步行、车内及换乘时间均为估算；未核验即时封闭、班次、站内设施或实际可通行状况。",
+        "每次已核实的连续升降机乘坐增加90秒推荐成本，未分组设施按源路段计算；只影响选择，不增加行程时间；不奖励扶梯数量，不保证全程扶梯。",
+        "官方班距推算模拟班次；中途时分按站距和每站15秒停车估算。全线参考时长3120秒；裁剪起点相对原总站发车偏移628秒。",
+        "schematic：官方站点顺序折线，不是实际道路或轨道路径。",
+        "首末步行接入为未核验的直线距离估算，已计入总距离与时间；虚线只表示道路关联，可能跨越建筑、水面、围栏或其他障碍，不代表可照直线行走，实际入口和绕行需现场确认。",
+        "站台最后0.1米的入口位置待核实，请按现场过街设施通行。",
+        "推荐成本按步行权重2.5及每次换乘3分钟的研究假设计分；首次上车不算换乘，这些惩罚不增加真实行程时间或候车时间。",
+        "演示数据：车辆、订单、票价与接驳时间为模拟，路线沿公开路网生成。",
+        "路缘连接显示为虚线模型：上客侧人行节点来源高度 未知 米；车行侧高程与实际高差未核验。",
+        "出租车行驶沿 OpenStreetMap 有向道路；车速、既有订单、候车均为演示数据，不是实时调度。",
+        "本方案含未核验路缘连接，只可用于接续情景演练，不保证现实全程可通行或无障碍。",
+        "落客侧人行节点来源高度 未知 米；与车行落客点的实际垂直连接未核验。"
+      ],
+      "endpointAccess": [
+        {
+          "side": "origin",
+          "requested": {
+            "id": "map:random--1386445323",
+            "coordinates": [
+              114.17386388874023,
+              22.30366360826388
+            ]
+          },
+          "status": "xy-scenario"
+        },
+        {
+          "side": "destination",
+          "requested": {
+            "id": "map:random--2018280993",
+            "coordinates": [
+              114.18872616863665,
+              22.27087158388786
+            ]
+          },
+          "status": "xy-scenario"
+        }
+      ],
+      "requestedPreference": "escalator",
+      "effectivePreference": "escalator_first"
+    },
+    {
+      "id": "transit",
+      "kind": "public",
+      "available": true,
+      "scoringInput": {
+        "id": "transit",
+        "available": true,
+        "minutes": 110,
+        "cost": 18.16,
+        "walkMinutes": 77,
+        "transfers": 2,
+        "result": {
+          "waitMinutes": 6,
+          "segments": [
+            {
+              "kind": "access_connector",
+              "minutes": 0.315196
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.163648
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.030278
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.110914
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.023975
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.058212
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.377861
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.08256
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.111229
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.075485
+            },
+            {
+              "kind": "walk",
+              "minutes": 2.158438
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.226729
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.10136
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.021301
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.099704
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.153342
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.208783
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.093366
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.033759
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.112614
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.063988
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.144461
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.985135
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.259297
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.707931
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.111955
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.112742
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.058728
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.029547
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.213595
+            },
+            {
+              "kind": "ramp",
+              "minutes": 0.322146
+            },
+            {
+              "kind": "subway",
+              "minutes": 1.568471
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.109076
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.306407
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.291627
+            },
+            {
+              "kind": "ramp",
+              "minutes": 0.617242
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.029573
+            },
+            {
+              "kind": "escalator",
+              "minutes": 0.784105
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.219498
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.280579
+            },
+            {
+              "kind": "escalator",
+              "minutes": 0.784131
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.909607
+            },
+            {
+              "kind": "escalator",
+              "minutes": 0.716575
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.285435
+            },
+            {
+              "kind": "wait",
+              "minutes": 0.5293940000000779
+            },
+            {
+              "kind": "rail",
+              "minutes": 7
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.382324
+            },
+            {
+              "kind": "escalator",
+              "minutes": 0.901067
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.393785
+            },
+            {
+              "kind": "wait",
+              "minutes": 4.3228250000000115
+            },
+            {
+              "kind": "rail",
+              "minutes": 7
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.033032
+            },
+            {
+              "kind": "escalator",
+              "minutes": 0.578225
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.271351
+            },
+            {
+              "kind": "escalator",
+              "minutes": 1.375011
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.822708
+            },
+            {
+              "kind": "escalator",
+              "minutes": 0.220333
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.687472
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.226244
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.010615
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.021231
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.005515
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.089899
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.009149
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.274797
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.181762
+            },
+            {
+              "kind": "access_connector",
+              "minutes": 0.253506
+            },
+            {
+              "kind": "wait",
+              "minutes": 0.955814666666629
+            },
+            {
+              "kind": "tram",
+              "minutes": 13.3
+            },
+            {
+              "kind": "access_connector",
+              "minutes": 0.001255
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.151335
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.527411
+            },
+            {
+              "kind": "footbridge",
+              "minutes": 0.03558
+            },
+            {
+              "kind": "footbridge",
+              "minutes": 0.357355
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.493082
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.083899
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.794581
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.499418
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.116198
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.047235
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.850818
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.031021
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.07224
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.038969
+            },
+            {
+              "kind": "walk",
+              "minutes": 3.6871
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.076318
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.060801
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.116589
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.047642
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.077518
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.637245
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.128256
+            },
+            {
+              "kind": "walk",
+              "minutes": 2.309542
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.580153
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.075253
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.911575
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.164665
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.431109
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.106534
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.136819
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.595876
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.130435
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.5189
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.025803
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.077173
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.025626
+            },
+            {
+              "kind": "walk",
+              "minutes": 2.254097
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.044659
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.060683
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.075675
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.371954
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.04827
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.113741
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.048784
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.424132
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.101627
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.717219
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.023423
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.098029
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.012867
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.919844
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.023789
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.144011
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.033345
+            },
+            {
+              "kind": "walk",
+              "minutes": 2.360436
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.861893
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.101295
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.7851
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.1091
+            },
+            {
+              "kind": "walk",
+              "minutes": 3.644442
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.149128
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.310389
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.11637
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.952433
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.049755
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.019844
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.049088
+            },
+            {
+              "kind": "walk",
+              "minutes": 8.099164
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.167685
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.531404
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.380108
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.386396
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.432204
+            },
+            {
+              "kind": "stairs",
+              "minutes": 4.016314
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.326541
+            },
+            {
+              "kind": "access_connector",
+              "minutes": 0.608329
+            }
+          ],
+          "luggageCarryRequired": false
+        }
+      },
+      "minutes": 110,
+      "cost": 18.16,
+      "walkMinutes": 77,
+      "waitMinutes": 6,
+      "transfers": 2,
+      "modes": [
+        "walk",
+        "metro",
+        "walk",
+        "metro",
+        "walk",
+        "tram",
+        "walk"
+      ],
+      "endpoints": {
+        "origin": {
+          "kind": "exact-map-or-stop-xy",
+          "requested": {
+            "id": "map:random--1386445323",
+            "coordinates": [
+              114.17386388874023,
+              22.30366360826388
+            ]
+          },
+          "actual": [
+            114.17386388874023,
+            22.30366360826388
+          ],
+          "routed": [
+            114.17385658672839,
+            22.303459627248227,
+            7.907365047130881
+          ],
+          "sourceNodeMatches": null,
+          "nodeTraceable": null,
+          "pass": true
+        },
+        "destination": {
+          "kind": "exact-map-or-stop-xy",
+          "requested": {
+            "id": "map:random--2018280993",
+            "coordinates": [
+              114.18872616863665,
+              22.27087158388786
+            ]
+          },
+          "actual": [
+            114.18872616863665,
+            22.27087158388786
+          ],
+          "routed": [
+            114.18913527,
+            22.27076281,
+            41.155
+          ],
+          "sourceNodeMatches": null,
+          "nodeTraceable": null,
+          "pass": true
+        }
+      },
+      "continuity": {
+        "maxGapM": 0,
+        "maxHeightGapM": 0,
+        "gaps": []
+      },
+      "evidence": {
+        "status": "modeled-or-unverified",
+        "modeledSteps": [
+          {
+            "step": 0,
+            "kind": "access_connector",
+            "geometryMode": "schematic",
+            "blocked": false
+          },
+          {
+            "step": 80,
+            "kind": "rail",
+            "geometryMode": "schematic",
+            "blocked": false
+          },
+          {
+            "step": 89,
+            "kind": "rail",
+            "geometryMode": "schematic",
+            "blocked": false
+          },
+          {
+            "step": 116,
+            "kind": "access_connector",
+            "geometryMode": "schematic",
+            "blocked": false
+          },
+          {
+            "step": 118,
+            "kind": "tram",
+            "geometryMode": "schematic",
+            "blocked": false
+          },
+          {
+            "step": 119,
+            "kind": "access_connector",
+            "geometryMode": "schematic",
+            "blocked": false
+          },
+          {
+            "step": 236,
+            "kind": "access_connector",
+            "geometryMode": "schematic",
+            "blocked": false
+          }
+        ],
+        "unknownEdgeIds": [
+          "ACCESS:origin",
+          "WAIT:RAIL:AUS:TML:40648.236359999995",
+          "RIDE:scheduled:RAIL:TML:r:0:40680:RAIL:AUS:TML:RAIL:HUH:TML",
+          "WAIT:RAIL:HUH:EAL:41200.6305",
+          "RIDE:scheduled:RAIL:EAL:r:0:41460:RAIL:HUH:EAL:RAIL:ADM:EAL",
+          "ACCESS:destination",
+          "WAIT:td:99220:42243.65112",
+          "RIDE:td:4005:2:287:0:41548:td:99220:td:99228"
+        ],
+        "transitRideBoundaries": [
+          {
+            "kind": "tram",
+            "patternId": "td:4005:2:287",
+            "fromId": "td:99220",
+            "toId": "td:99228",
+            "departureS": 42301,
+            "arrivalS": 43099,
+            "durationS": 798,
+            "renderedMinutes": 13.3,
+            "sourceShape": {
+              "first": [
+                114.16438,
+                22.2784
+              ],
+              "last": [
+                114.18299,
+                22.28007
+              ],
+              "points": 9,
+              "geometryMode": "schematic",
+              "sourceUrl": "https://static.data.gov.hk/td/pt-headway-en/gtfs.zip"
+            },
+            "renderedBoundary": {
+              "first": [
+                114.16438,
+                22.2784
+              ],
+              "last": [
+                114.18299,
+                22.28007
+              ]
+            },
+            "sourceStops": {
+              "from": [
+                114.16438,
+                22.2784
+              ],
+              "to": [
+                114.18299,
+                22.28007
+              ]
+            },
+            "associations": [],
+            "sourceShapePreserved": true,
+            "timingPreserved": true,
+            "eligible2DSourceService": true,
+            "pass": true,
+            "qualification": "Audit reconstruction from unchanged production timed-leg shape, source service stops and final guidance; does not establish a physical boarding or walking connection."
+          }
+        ],
+        "usedEdgeCount": 384,
+        "scheduledEdges": [],
+        "needsFacilityConfirmation": false,
+        "simulationOnly": true,
+        "scenarioOnly": true
+      },
+      "forbidden": [],
+      "strictSourceAudit": null,
+      "fare": {
+        "basis": "Production illustrative quote, not official live tariffs",
+        "available": true,
+        "pricingUnavailable": false,
+        "compacted": true,
+        "totalCents": 1816,
+        "sumLegCents": 1816,
+        "legs": [
+          {
+            "index": 0,
+            "mode": "walk",
+            "label": "起点到道路的估算步行接入（未核验）",
+            "amountCents": 0,
+            "durationMinutes": 17.999999000000077,
+            "distanceM": 1164.5999999999997,
+            "available": true
+          },
+          {
+            "index": 1,
+            "mode": "metro",
+            "label": "屯马线 柯士甸 → 红磡：柯士甸站·屯马线站台 → 红磡站·屯马线站台（11:18–11:25）",
+            "amountCents": 729,
+            "durationMinutes": 7,
+            "distanceM": 2345.174014282388,
+            "available": true
+          },
+          {
+            "index": 2,
+            "mode": "walk",
+            "label": "紅磡鐵路站月台(屯馬綫)",
+            "amountCents": 0,
+            "durationMinutes": 6.000001000000012,
+            "distanceM": 88.31800000000001,
+            "available": true
+          },
+          {
+            "index": 3,
+            "mode": "metro",
+            "label": "东铁线 红磡 → 金钟：红磡站·东铁线站台 → 金钟站·东铁线站台（11:31–11:38）",
+            "amountCents": 787,
+            "durationMinutes": 7,
+            "distanceM": 3396.0022087732223,
+            "available": true
+          },
+          {
+            "index": 4,
+            "mode": "walk",
+            "label": "金鐘鐵路站月台(東鐵綫)",
+            "amountCents": 0,
+            "durationMinutes": 7.016664666666629,
+            "distanceM": 349.22200000000004,
+            "available": true
+          },
+          {
+            "index": 5,
+            "mode": "tram",
+            "label": "电车 中环—湾仔（常规班距模拟）：金钟港铁站 (东行方向) → 波斯富街 (东行方向)（11:45–11:58）",
+            "amountCents": 300,
+            "durationMinutes": 13.3,
+            "distanceM": 2030.213214221179,
+            "available": true
+          },
+          {
+            "index": 6,
+            "mode": "walk",
+            "label": "前往站台入口（约0.1米）",
+            "amountCents": 0,
+            "durationMinutes": 50.99489599999999,
+            "distanceM": 3476.3929999999996,
+            "available": true
+          }
+        ],
+        "expectedCompactedModes": [
+          "walk",
+          "metro",
+          "walk",
+          "metro",
+          "walk",
+          "tram",
+          "walk"
+        ],
+        "legCoverage": true,
+        "pass": true
+      },
+      "checks": {
+        "complete": true,
+        "endpoints": true,
+        "continuous": true,
+        "knownForbiddenEdges": true,
+        "strictSourceEligibility": true,
+        "fare": true,
+        "transitStopBoundaries": true,
+        "taxiPolicy": true,
+        "strictTaxi": true,
+        "luggageTaxiConfirmation": true
+      },
+      "pass": true,
+      "warnings": [
+        "使用资料内演示服务日与所选时刻，不是实时到站。",
+        "仅为离线估算步行连接；首末接驳单独标为未核实示意线，距离和时间已计入。",
+        "车站入口按官方三维节点绑定；楼梯、通道及升降机当前状态未核实。",
+        "连接缓存必须与graph_version一致；不能用旧图缓存拼接新图。",
+        "本文件不提供实时发车或候车预测；列车、巴士和电车的班次模拟必须另行标注来源与假设。",
+        "公交、电车及地铁候车使用所选服务时钟；班次或车程含明确标注的演示/频率估算，不是实时车辆预测。",
+        "每段升降机增加90秒推荐成本，只影响选择，不增加到达、候车或步行时间；不奖励扶梯数量。",
+        "设施偏好按时间与搬运负担排序，楼梯或扶梯可能作为备选；扶梯优先允许升降机替代，不为凑扶梯数量绕远。站内、首末接入或未分类高差仍可能含楼梯，不能视为全程无楼梯或全扶梯保证。港铁指引要求携带大件行李使用升降机，勿携大件行李乘扶梯或自动行人道；请选升降机方案并遵循现场指示。",
+        "公交和电车上下车高差、车内行李空间及站内升降机连续连接尚未核验；没有已知楼梯不等于已验证的大件行李可行路线。",
+        "步道採用地政總署官方三維路網；路況、通道開放及升降機運作未經現場核實。",
+        "步行時間按速度假設計算；港鐵車程、候車、站內步行及紅磡轉乘均為估算，不是即時班次。",
+        "保留原始起終點；首末接駁作為未核實的估算段單獨顯示，實際入口、障礙及繞行需確認。",
+        "港鐵跨海線為車站間示意線，不是實測軌道；站內接駁為估算，不提供虛構室內步行線。",
+        "未解析開放時間的通道、停用路段及收費區步道均不納入室外路線。",
+        "所有步行、车内及换乘时间均为估算；未核验即时封闭、班次、站内设施或实际可通行状况。",
+        "首末步行接入为未核验的直线距离估算，已计入总距离与时间；虚线只表示道路关联，可能跨越建筑、水面、围栏或其他障碍，不代表可照直线行走，实际入口和绕行需现场确认。",
+        "每次已核实的连续升降机乘坐增加90秒推荐成本，未分组设施按源路段计算；只影响选择，不增加行程时间；不奖励扶梯数量，不保证全程扶梯。",
+        "站內路線包含付費區，須持有效車票或付款入閘。",
+        "路線為官方三維路網；設施運作、開放狀態及步行時間未經即時核實。",
+        "目的地為官方月台區域內路網節點；未核實月台編號、列車方向或精確上車位置。",
+        "站内接驳采用官方有向 XYZ 路段及所选设施条件重新计算，包含付费区；月台方向、登车边缘和设施即时运作仍未核验。",
+        "服务首末时窗来自港铁；窗口内6分钟发车间隔、7分钟区间车程仅为演示假设，候车由所选时钟计算，非实时班次。",
+        "车站间示意线，不是实测轨道。",
+        "C1 的 0.761 米平层大堂段依据官方大堂及开放门口图层解释为步行；原路网分类为楼梯，保留分类冲突提示。C1 门口源资料标有轮椅障碍及高度差，门槛实际情况待核验，请现场确认行李能否通过；此路线不是已核验无台阶路线。",
+        "站台最后18.3米的入口位置待核实，请按现场过街设施通行。",
+        "官方班距推算模拟班次；中途时分按站距和每站15秒停车估算。全线参考时长3120秒；裁剪起点相对原总站发车偏移628秒。",
+        "schematic：官方站点顺序折线，不是实际道路或轨道路径。",
+        "站台最后0.1米的入口位置待核实，请按现场过街设施通行。",
+        "推荐成本按步行权重2.5及每次换乘3分钟的研究假设计分；首次上车不算换乘，这些惩罚不增加真实行程时间或候车时间。"
+      ],
+      "requestedPreference": "escalator",
+      "effectivePreference": "escalator_first"
+    },
+    {
+      "id": "taxi-first-metro-HUH:portal:A2",
+      "kind": "first",
+      "available": true,
+      "scoringInput": {
+        "id": "taxi-first-metro-HUH:portal:A2",
+        "available": true,
+        "minutes": 102,
+        "cost": 39.87,
+        "walkMinutes": 68,
+        "transfers": 2,
+        "result": {
+          "waitMinutes": 11.82125068871513,
+          "segments": [
+            {
+              "kind": "walk",
+              "minutes": 0.6219701959327234
+            },
+            {
+              "kind": "wait",
+              "minutes": 1.8212506887151296
+            },
+            {
+              "kind": "taxi",
+              "minutes": 3.0034333333333336
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.519058478244025
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.001211
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.024275
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.240014
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.603503
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.299167
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.060106
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.000531
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.000531
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.060106
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.299167
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.834135
+            },
+            {
+              "kind": "escalator",
+              "minutes": 0.475175
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.824493
+            },
+            {
+              "kind": "escalator",
+              "minutes": 1.415444
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.285154
+            },
+            {
+              "kind": "wait",
+              "minutes": 4.6112773037747194
+            },
+            {
+              "kind": "rail",
+              "minutes": 7
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.033032
+            },
+            {
+              "kind": "escalator",
+              "minutes": 0.578225
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.271351
+            },
+            {
+              "kind": "escalator",
+              "minutes": 1.375011
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.822708
+            },
+            {
+              "kind": "escalator",
+              "minutes": 0.220333
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.687472
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.226244
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.010615
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.021231
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.005515
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.089899
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.009149
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.274797
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.181762
+            },
+            {
+              "kind": "access_connector",
+              "minutes": 0.253506
+            },
+            {
+              "kind": "wait",
+              "minutes": 4.955814666666629
+            },
+            {
+              "kind": "tram",
+              "minutes": 13.3
+            },
+            {
+              "kind": "access_connector",
+              "minutes": 0.001255
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.151335
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.527411
+            },
+            {
+              "kind": "footbridge",
+              "minutes": 0.03558
+            },
+            {
+              "kind": "footbridge",
+              "minutes": 0.357355
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.493082
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.083899
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.794581
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.499418
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.116198
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.047235
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.850818
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.031021
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.07224
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.038969
+            },
+            {
+              "kind": "walk",
+              "minutes": 3.6871
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.076318
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.060801
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.116589
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.047642
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.077518
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.637245
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.128256
+            },
+            {
+              "kind": "walk",
+              "minutes": 2.309542
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.580153
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.075253
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.911575
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.164665
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.431109
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.106534
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.136819
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.595876
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.130435
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.5189
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.025803
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.077173
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.025626
+            },
+            {
+              "kind": "walk",
+              "minutes": 2.254097
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.044659
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.060683
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.075675
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.371954
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.04827
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.113741
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.048784
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.424132
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.101627
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.717219
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.023423
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.098029
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.012867
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.919844
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.023789
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.144011
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.033345
+            },
+            {
+              "kind": "walk",
+              "minutes": 2.360436
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.861893
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.101295
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.7851
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.1091
+            },
+            {
+              "kind": "walk",
+              "minutes": 3.644442
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.149128
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.310389
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.11637
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.952433
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.049755
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.019844
+            },
+            {
+              "kind": "crossing",
+              "minutes": 0.049088
+            },
+            {
+              "kind": "walk",
+              "minutes": 8.099164
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.167685
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.531404
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.380108
+            },
+            {
+              "kind": "stairs",
+              "minutes": 0.386396
+            },
+            {
+              "kind": "walk",
+              "minutes": 1.432204
+            },
+            {
+              "kind": "stairs",
+              "minutes": 4.016314
+            },
+            {
+              "kind": "walk",
+              "minutes": 0.326541
+            },
+            {
+              "kind": "access_connector",
+              "minutes": 0.608329
+            }
+          ],
+          "luggageCarryRequired": false
+        }
+      },
+      "minutes": 102,
+      "cost": 39.87,
+      "walkMinutes": 68,
+      "waitMinutes": 11.82125068871513,
+      "transfers": 2,
+      "modes": [
+        "walk",
+        "taxi",
+        "walk",
+        "metro",
+        "walk",
+        "tram",
+        "walk"
+      ],
+      "endpoints": {
+        "origin": {
+          "kind": "exact-map-or-stop-xy",
+          "requested": {
+            "id": "map:random--1386445323",
+            "coordinates": [
+              114.17386388874023,
+              22.30366360826388
+            ]
+          },
+          "actual": [
+            114.17386388874023,
+            22.30366360826388
+          ],
+          "sourceNodeMatches": null,
+          "nodeTraceable": null,
+          "pass": true
+        },
+        "destination": {
+          "kind": "exact-map-or-stop-xy",
+          "requested": {
+            "id": "map:random--2018280993",
+            "coordinates": [
+              114.18872616863665,
+              22.27087158388786
+            ]
+          },
+          "actual": [
+            114.18872616863665,
+            22.27087158388786
+          ],
+          "sourceNodeMatches": null,
+          "nodeTraceable": null,
+          "pass": true
+        }
+      },
+      "continuity": {
+        "maxGapM": 0,
+        "maxHeightGapM": 0,
+        "gaps": []
+      },
+      "evidence": {
+        "status": "modeled-or-unverified",
+        "modeledSteps": [
+          {
+            "step": 0,
+            "kind": "walk",
+            "geometryMode": "schematic",
+            "blocked": false
+          },
+          {
+            "step": 2,
+            "kind": "taxi",
+            "geometryMode": "schematic",
+            "blocked": false
+          },
+          {
+            "step": 3,
+            "kind": "walk",
+            "geometryMode": "schematic",
+            "blocked": false
+          },
+          {
+            "step": 40,
+            "kind": "rail",
+            "geometryMode": "schematic",
+            "blocked": false
+          },
+          {
+            "step": 67,
+            "kind": "access_connector",
+            "geometryMode": "schematic",
+            "blocked": false
+          },
+          {
+            "step": 69,
+            "kind": "tram",
+            "geometryMode": "schematic",
+            "blocked": false
+          },
+          {
+            "step": 70,
+            "kind": "access_connector",
+            "geometryMode": "schematic",
+            "blocked": false
+          },
+          {
+            "step": 187,
+            "kind": "access_connector",
+            "geometryMode": "schematic",
+            "blocked": false
+          }
+        ],
+        "unknownEdgeIds": [
+          "WAIT:RAIL:HUH:EAL:40463.32336177352",
+          "RIDE:scheduled:RAIL:EAL:r:0:40740:RAIL:HUH:EAL:RAIL:ADM:EAL",
+          "ACCESS:destination",
+          "WAIT:td:99220:41523.65112",
+          "RIDE:td:4005:2:287:0:41068:td:99220:td:99228",
+          "ACCESS:origin"
+        ],
+        "transitRideBoundaries": [],
+        "usedEdgeCount": 305,
+        "scheduledEdges": [],
+        "needsFacilityConfirmation": false,
+        "simulationOnly": true,
+        "scenarioOnly": true
+      },
+      "forbidden": [],
+      "strictSourceAudit": null,
+      "fare": {
+        "basis": "Production illustrative quote, not official live tariffs",
+        "available": true,
+        "pricingUnavailable": false,
+        "compacted": true,
+        "totalCents": 3987,
+        "sumLegCents": 3987,
+        "legs": [
+          {
+            "index": 0,
+            "mode": "walk",
+            "label": "步行 45 米到预约上客点",
+            "amountCents": 0,
+            "durationMinutes": 2.443220884647853,
+            "distanceM": 44.781854107156086,
+            "available": true
+          },
+          {
+            "index": 1,
+            "mode": "taxi",
+            "label": "乘出租车 DEMO-19 前往 紅磡站 A2出口",
+            "amountCents": 2900,
+            "durationMinutes": 3.0034333333333336,
+            "distanceM": 1552.4030000000005,
+            "available": true
+          },
+          {
+            "index": 2,
+            "mode": "walk",
+            "label": "步行 38 米接续下一程",
+            "amountCents": 0,
+            "durationMinutes": 13.553347782018744,
+            "distanceM": 540.3022104335698,
+            "available": true
+          },
+          {
+            "index": 3,
+            "mode": "metro",
+            "label": "东铁线 红磡 → 金钟：红磡站·东铁线站台 → 金钟站·东铁线站台（11:19–11:26）",
+            "amountCents": 787,
+            "durationMinutes": 7,
+            "distanceM": 3396.0022087732223,
+            "available": true
+          },
+          {
+            "index": 4,
+            "mode": "walk",
+            "label": "金鐘鐵路站月台(東鐵綫)",
+            "amountCents": 0,
+            "durationMinutes": 11.016664666666628,
+            "distanceM": 349.22200000000004,
+            "available": true
+          },
+          {
+            "index": 5,
+            "mode": "tram",
+            "label": "电车 中环—湾仔（常规班距模拟）：金钟港铁站 (东行方向) → 波斯富街 (东行方向)（11:37–11:50）",
+            "amountCents": 300,
+            "durationMinutes": 13.3,
+            "distanceM": 2030.213214221179,
+            "available": true
+          },
+          {
+            "index": 6,
+            "mode": "walk",
+            "label": "前往站台入口（约0.1米）",
+            "amountCents": 0,
+            "durationMinutes": 50.99489599999999,
+            "distanceM": 3476.3929999999996,
+            "available": true
+          }
+        ],
+        "expectedCompactedModes": [
+          "walk",
+          "taxi",
+          "walk",
+          "metro",
+          "walk",
+          "tram",
+          "walk"
+        ],
+        "legCoverage": true,
+        "pass": true
+      },
+      "checks": {
+        "complete": true,
+        "endpoints": true,
+        "continuous": true,
+        "knownForbiddenEdges": true,
+        "strictSourceEligibility": true,
+        "fare": true,
+        "transitStopBoundaries": true,
+        "taxiPolicy": true,
+        "strictTaxi": true,
+        "luggageTaxiConfirmation": true
+      },
+      "pass": true,
+      "warnings": [
+        "使用资料内演示服务日与所选时刻，不是实时到站。",
+        "仅为离线估算步行连接；首末接驳单独标为未核实示意线，距离和时间已计入。",
+        "车站入口按官方三维节点绑定；楼梯、通道及升降机当前状态未核实。",
+        "连接缓存必须与graph_version一致；不能用旧图缓存拼接新图。",
+        "本文件不提供实时发车或候车预测；列车、巴士和电车的班次模拟必须另行标注来源与假设。",
+        "公交、电车及地铁候车使用所选服务时钟；班次或车程含明确标注的演示/频率估算，不是实时车辆预测。",
+        "每段升降机增加90秒推荐成本，只影响选择，不增加到达、候车或步行时间；不奖励扶梯数量。",
+        "设施偏好按时间与搬运负担排序，楼梯或扶梯可能作为备选；扶梯优先允许升降机替代，不为凑扶梯数量绕远。站内、首末接入或未分类高差仍可能含楼梯，不能视为全程无楼梯或全扶梯保证。港铁指引要求携带大件行李使用升降机，勿携大件行李乘扶梯或自动行人道；请选升降机方案并遵循现场指示。",
+        "公交和电车上下车高差、车内行李空间及站内升降机连续连接尚未核验；没有已知楼梯不等于已验证的大件行李可行路线。",
+        "站內路線包含付費區，須持有效車票或付款入閘。",
+        "路線為官方三維路網；設施運作、開放狀態及步行時間未經即時核實。",
+        "目的地為官方月台區域內路網節點；未核實月台編號、列車方向或精確上車位置。",
+        "所有步行、车内及换乘时间均为估算；未核验即时封闭、班次、站内设施或实际可通行状况。",
+        "每次已核实的连续升降机乘坐增加90秒推荐成本，未分组设施按源路段计算；只影响选择，不增加行程时间；不奖励扶梯数量，不保证全程扶梯。",
+        "站内接驳采用官方有向 XYZ 路段及所选设施条件重新计算，包含付费区；月台方向、登车边缘和设施即时运作仍未核验。",
+        "服务首末时窗来自港铁；窗口内6分钟发车间隔、7分钟区间车程仅为演示假设，候车由所选时钟计算，非实时班次。",
+        "车站间示意线，不是实测轨道。",
+        "C1 的 0.761 米平层大堂段依据官方大堂及开放门口图层解释为步行；原路网分类为楼梯，保留分类冲突提示。C1 门口源资料标有轮椅障碍及高度差，门槛实际情况待核验，请现场确认行李能否通过；此路线不是已核验无台阶路线。",
+        "步道採用地政總署官方三維路網；路況、通道開放及升降機運作未經現場核實。",
+        "步行時間按速度假設計算；港鐵車程、候車、站內步行及紅磡轉乘均為估算，不是即時班次。",
+        "保留原始起終點；首末接駁作為未核實的估算段單獨顯示，實際入口、障礙及繞行需確認。",
+        "港鐵跨海線為車站間示意線，不是實測軌道；站內接駁為估算，不提供虛構室內步行線。",
+        "未解析開放時間的通道、停用路段及收費區步道均不納入室外路線。",
+        "首末步行接入为未核验的直线距离估算，已计入总距离与时间；虚线只表示道路关联，可能跨越建筑、水面、围栏或其他障碍，不代表可照直线行走，实际入口和绕行需现场确认。",
+        "站台最后18.3米的入口位置待核实，请按现场过街设施通行。",
+        "官方班距推算模拟班次；中途时分按站距和每站15秒停车估算。全线参考时长3120秒；裁剪起点相对原总站发车偏移628秒。",
+        "schematic：官方站点顺序折线，不是实际道路或轨道路径。",
+        "站台最后0.1米的入口位置待核实，请按现场过街设施通行。",
+        "推荐成本按步行权重2.5及每次换乘3分钟的研究假设计分；首次上车不算换乘，这些惩罚不增加真实行程时间或候车时间。",
+        "演示数据：车辆、订单、票价与接驳时间为模拟，路线沿公开路网生成。",
+        "路缘连接显示为虚线模型：上客侧人行节点来源高度 未知 米；车行侧高程与实际高差未核验。",
+        "出租车行驶沿 OpenStreetMap 有向道路；车速、既有订单、候车均为演示数据，不是实时调度。",
+        "本方案含未核验路缘连接，只可用于接续情景演练，不保证现实全程可通行或无障碍。",
+        "落客侧人行节点来源高度 13.8 米；与车行落客点的实际垂直连接未核验。"
+      ],
+      "endpointAccess": [
+        {
+          "side": "origin",
+          "requested": {
+            "id": "map:random--1386445323",
+            "coordinates": [
+              114.17386388874023,
+              22.30366360826388
+            ]
+          },
+          "status": "xy-scenario"
+        },
+        {
+          "side": "destination",
+          "requested": {
+            "id": "map:random--2018280993",
+            "coordinates": [
+              114.18872616863665,
+              22.27087158388786
+            ]
+          },
+          "status": "xy-scenario"
+        }
+      ],
+      "requestedPreference": "escalator",
+      "effectivePreference": "escalator_first"
+    }
+  ],
+  "unavailable": [
+    {
+      "id": "walk",
+      "kind": "public",
+      "available": false,
+      "journeyComplete": false,
+      "failureStatus": "NO_ROUTE",
+      "scenarioOnly": false,
+      "simulationOnly": false,
+      "message": "当前两区之间没有可用的跨海步行路线，请选择“乘地铁”或将起终点设在同一区域。",
+      "warnings": [
+        "站內路線包含付費區，須持有效車票或付款入閘。",
+        "路線為官方三維路網；設施運作、開放狀態及步行時間未經即時核實。",
+        "目的地為官方月台區域內路網節點；未核實月台編號、列車方向或精確上車位置。"
+      ],
+      "minutes": 0,
+      "cost": 0,
+      "modes": [
+        "walk"
+      ],
+      "fareScenario": {
+        "basis": "Production illustrative quote, not official live tariffs",
+        "available": false,
+        "pricingUnavailable": false,
+        "compacted": false,
+        "totalCents": 0,
+        "sumLegCents": 0,
+        "legs": [
+          {
+            "index": 0,
+            "mode": "walk",
+            "label": "当前两区之间没有可用的跨海步行路线，请选择“乘地铁”或将起终点设在同一区域。",
+            "amountCents": 0,
+            "available": false
+          }
+        ],
+        "expectedCompactedModes": [],
+        "legCoverage": null,
+        "pass": true
+      },
+      "alternatives": {},
+      "qualification": "Unavailable journey; a retained fare estimate or preserved endpoint metadata does not establish a source-backed physical connection."
+    }
+  ],
+  "sourceCoverageReview": [],
+  "requestIdentityPreserved": true,
+  "runtimeStable": true,
+  "cancel": {
+    "exercisedWhilePending": false,
+    "observationMs": 508.1363249999995,
+    "planningStopped": true,
+    "pendingBeforeCancel": [],
+    "pendingAfterCancel": [],
+    "noStaleCandidatePublication": true,
+    "pass": true
+  },
+  "workerErrors": [],
+  "workers": [
+    {
+      "id": 1,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "posts": 9,
+      "results": 9,
+      "pending": [],
+      "terminateRequested": true,
+      "exited": true,
+      "exitCode": 1
+    },
+    {
+      "id": 2,
+      "kind": "app-walk-worker-jk5g-BMr.js",
+      "posts": 1,
+      "results": 1,
+      "pending": [],
+      "terminateRequested": true,
+      "exited": true,
+      "exitCode": 1
+    }
+  ],
+  "memory": {
+    "rss": 1356525568,
+    "heapTotal": 571244544,
+    "heapUsed": 372776312,
+    "external": 62090372,
+    "arrayBuffers": 40144271,
+    "maxRSSKiB": 1450868,
+    "samples": [
+      {
+        "routeMs": 3119.489698999999,
+        "rss": 977793024,
+        "heapUsed": 312876344
+      },
+      {
+        "routeMs": 4119.7997399999995,
+        "rss": 1067798528,
+        "heapUsed": 312902088
+      },
+      {
+        "routeMs": 5119.782765999999,
+        "rss": 1119600640,
+        "heapUsed": 312927832
+      },
+      {
+        "routeMs": 6119.848950999999,
+        "rss": 1140666368,
+        "heapUsed": 312952384
+      },
+      {
+        "routeMs": 7119.542418,
+        "rss": 1159188480,
+        "heapUsed": 312978336
+      },
+      {
+        "routeMs": 8147.648677,
+        "rss": 1186193408,
+        "heapUsed": 313006888
+      },
+      {
+        "routeMs": 9147.676210000001,
+        "rss": 1205440512,
+        "heapUsed": 313032416
+      },
+      {
+        "routeMs": 10147.451956,
+        "rss": 1216053248,
+        "heapUsed": 313058168
+      },
+      {
+        "routeMs": 11147.342732999998,
+        "rss": 1175187456,
+        "heapUsed": 313083920
+      },
+      {
+        "routeMs": 12147.118613999999,
+        "rss": 1033699328,
+        "heapUsed": 287368664
+      },
+      {
+        "routeMs": 13147.720571999998,
+        "rss": 1012998144,
+        "heapUsed": 287103344
+      },
+      {
+        "routeMs": 14148.012289999999,
+        "rss": 1018388480,
+        "heapUsed": 287168736
+      },
+      {
+        "routeMs": 15147.093927999998,
+        "rss": 1025085440,
+        "heapUsed": 287197272
+      },
+      {
+        "routeMs": 16522.726777,
+        "rss": 1179639808,
+        "heapUsed": 387578784
+      },
+      {
+        "routeMs": 17522.904733,
+        "rss": 1195913216,
+        "heapUsed": 387616944
+      },
+      {
+        "routeMs": 18522.050337,
+        "rss": 1207971840,
+        "heapUsed": 387642712
+      },
+      {
+        "routeMs": 19522.957688,
+        "rss": 1221210112,
+        "heapUsed": 387770656
+      },
+      {
+        "routeMs": 20523.677521999998,
+        "rss": 1229524992,
+        "heapUsed": 387808808
+      },
+      {
+        "routeMs": 21524.02815,
+        "rss": 1236209664,
+        "heapUsed": 387835096
+      },
+      {
+        "routeMs": 22524.672042,
+        "rss": 1244991488,
+        "heapUsed": 387869776
+      },
+      {
+        "routeMs": 24666.201590999997,
+        "rss": 1304633344,
+        "heapUsed": 447672960
+      },
+      {
+        "routeMs": 25667.617455,
+        "rss": 1314459648,
+        "heapUsed": 396797432
+      },
+      {
+        "routeMs": 26667.547544999998,
+        "rss": 1320751104,
+        "heapUsed": 396823200
+      },
+      {
+        "routeMs": 27667.226826000002,
+        "rss": 1404256256,
+        "heapUsed": 505156488
+      },
+      {
+        "routeMs": 29212.098923,
+        "rss": 1482543104,
+        "heapUsed": 574637848
+      },
+      {
+        "routeMs": 30212.661273,
+        "rss": 1301323776,
+        "heapUsed": 298003440
+      },
+      {
+        "routeMs": 31212.957474,
+        "rss": 1302536192,
+        "heapUsed": 327326520
+      }
+    ]
+  },
+  "fetches": [
+    {
+      "path": "/area/station-graph.json.gz",
+      "bytes": 563298,
+      "sha256": "446700358a6a56ccb8bbf1e024f6a09da99925e2778331e67c307c135a0f0a1e"
+    },
+    {
+      "path": "/area/area-graph.json.gz",
+      "bytes": 8036890,
+      "sha256": "44901caf6ee1241a23e096eb3d692f96913789fb2c1cbd742da59d8d3730253f"
+    },
+    {
+      "path": "/transit/services.json",
+      "bytes": 239733,
+      "sha256": "59c1c4faef3fadbf32748b0707231f78c3ec36aa4d2edc47de39b8c39485c542"
+    },
+    {
+      "path": "/transit/walk-links.json.gz",
+      "bytes": 303355,
+      "sha256": "9505ee7867641cd5c7bbf2a3c76a4216c7cdc05fdd7a72d7da4cf85eb2f6420b"
+    },
+    {
+      "path": "/area/admiralty-block-graph.json.gz",
+      "bytes": 686250,
+      "sha256": "388a08977ed80e57295fe1a0d623178e79ecd441cedaa5cfc62fe043385e2298"
+    },
+    {
+      "path": "/preview/station-access-alternatives.json",
+      "status": 404
+    }
+  ],
+  "limitations": [
+    "Production built S1, Worker bundles and pricing code in Node with a DOM stand-in; not actual-browser visual or device-performance QA.",
+    "Data fully ready before plan, fresh process/cold route cache, taxi loaded on demand. Boot cost is separate.",
+    "A 60-second pending observation is never NO_ROUTE. Full comparison time is null unless S1 actually finishes.",
+    "Modeled/schematic geometry is identified separately even when geometrically continuous; source-backed does not mean live verified.",
+    "All costs are the production illustrative model; official tariff correctness is outside this harness."
+  ],
+  "classification": "completed-with-candidates"
+}

@@ -4,10 +4,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite --host 0.0.0.0 --port 5174",
-    "build": "tsc --noEmit && vite build",
-    "preview": "vite preview --host 0.0.0.0 --port 4174",
-    "test": "vitest run"
+    "dev": "npm --prefix ../site run dev --",
+    "build": "npm --prefix ../site run build",
+    "preview": "npm --prefix ../site start --",
+    "test": "npm --prefix ../site test",
+    "test:historical": "vitest run"
   },
   "dependencies": {
     "maplibre-gl": "5.7.1"

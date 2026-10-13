@@ -1,0 +1,4265 @@
+{
+  "version": 1,
+  "generatedAt": "2026-10-10",
+  "coordinateSystem": "EPSG:2326 Hong Kong 1980 Grid, metres; source height datum retained without reinterpretation",
+  "gltfAxes": "X east, Y source height, Z south. Local origin = group.originHK80; no geometric rotation or scale change.",
+  "attribution": "Map from Lands Department. Copyright Hong Kong SAR Government.",
+  "attributionLogo": "/tram-models/landsd-logo.svg",
+  "sourceCatalogue": "https://data.gov.hk/en-data/dataset/hk-landsd-openmap-3d-visualisation-map-individualised-models",
+  "publicApiDocumentation": "https://3d.map.gov.hk/download-api",
+  "limitations": [
+    "Official 3D infrastructure is geographically cropped around exact TD stop IDs; the source mesh does not semantically name individual shelters.",
+    "Stops are identified by exact TD stopId join and compared between GTFS and official TD GeoJSON, not inferred from model appearance.",
+    "Only INFRASTRUCTURE(TB) source geometry is shown. Missing buildings or ground surfaces are excluded categories, not evidence of physical absence.",
+    "Model capture date was not established. HTTP Last-Modified is not the survey date.",
+    "Track topology, gauge and access connections are not derived from these visual meshes. Do not use them as routable or accessibility-certified geometry.",
+    "Crops use an oriented envelope extending 55 m along and 16 m across each exact stop anchor. Perimeter triangles are clipped with interpolated original UVs; interior geometry is unchanged. Canopy completeness is not semantically certified by source metadata.",
+    "Texture atlases are cropped to used UV bounds and downsampled to at most 1024 px with JPEG quality 86 or lossless PNG alpha. Source transparency, tiled-UV repeat behavior and material factors retained. Normals are normalized with inverse-transpose transforms; invalid zero source normals use geometric face normals. Interior geometry is losslessly indexed, without collapse decimation; only outer context is clipped."
+  ],
+  "groups": [
+    {
+      "id": "admiralty",
+      "name": "金钟港铁站 (西行方向) / 金钟港铁站 (东行方向)",
+      "stopIds": [
+        "td:99133",
+        "td:99220"
+      ],
+      "originHK80": [
+        834988.5839895497,
+        815496.7329572635,
+        0.0
+      ],
+      "originWgs84": [
+        114.16445999999999,
+        22.278335
+      ],
+      "status": "available",
+      "matchConfidence": "official-stop-point-spatial-crop",
+      "sourceTiles": [
+        "11-SW-14A"
+      ],
+      "sources": [
+        {
+          "tile": "11-SW-14A",
+          "sourcePath": "11-SW-14A/INFRASTRUCTURE(TB)/I345001500001062A1/I345001500001062A1.gltf",
+          "sourceGltfSha256": "1551f4bb962e8efdfd0c5e2db8af7c46854d0b2c199e7916adda781c6a580744",
+          "nativeRootMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            834874.9375,
+            3.0691070556640625,
+            -815299.875,
+            1
+          ],
+          "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-14A.zip"
+        }
+      ],
+      "notes": [
+        "Station-vicinity source crop; individual shelter semantic IDs are not present.",
+        "Original geometry remains unchanged inside the crop; outer context triangles are clipped at the crop perimeter with source UV interpolation.",
+        "Raised canopy/platform-like geometry is visible in the source crop and texture-free inspection; stop association remains geographic, not a semantic object ID."
+      ],
+      "crop": {
+        "alongHalfLengthM": 55,
+        "acrossHalfWidthM": 16,
+        "tangentEN": [
+          0.9576684410905826,
+          -0.28787350857474425
+        ],
+        "anchorsHK80": [
+          [
+            834996.8281607138,
+            815489.5345644116
+          ],
+          [
+            834980.3398183857,
+            815503.9313501155
+          ]
+        ]
+      },
+      "primitiveStats": [
+        {
+          "tile": "11-SW-14A",
+          "sourceMaterial": 0,
+          "triangles": 2680,
+          "vertices": 4858
+        },
+        {
+          "tile": "11-SW-14A",
+          "sourceMaterial": 1,
+          "triangles": 802,
+          "vertices": 1584
+        },
+        {
+          "tile": "11-SW-14A",
+          "sourceMaterial": 5,
+          "triangles": 104,
+          "vertices": 190
+        },
+        {
+          "tile": "11-SW-14A",
+          "sourceMaterial": 6,
+          "triangles": 88,
+          "vertices": 168
+        },
+        {
+          "tile": "11-SW-14A",
+          "sourceMaterial": 11,
+          "triangles": 7,
+          "vertices": 15
+        },
+        {
+          "tile": "11-SW-14A",
+          "sourceMaterial": 13,
+          "triangles": 271,
+          "vertices": 196
+        },
+        {
+          "tile": "11-SW-14A",
+          "sourceMaterial": 14,
+          "triangles": 915,
+          "vertices": 711
+        }
+      ],
+      "boundsHK80": {
+        "min": [
+          834923.9120273809,
+          815464.6661238237,
+          5.4595947265625
+        ],
+        "max": [
+          835056.7085051537,
+          815535.0870881445,
+          19.07239532470703
+        ]
+      },
+      "triangles": 4867,
+      "vertices": 7722,
+      "url": "/tram-models/admiralty.glb",
+      "bytes": 694908,
+      "sha256": "896c73c24c5dac5dd1685c55f67608648f86c3db1b60740838bae21c1f209d93",
+      "shelterStatus": "visible-in-geometry",
+      "visualVerification": {
+        "method": "Blender 4.3.2 rendered original color textures and separate texture-free clay comparison",
+        "geometryStatus": "source geometry in vicinity verified",
+        "shelterStatus": "visible-in-geometry",
+        "semanticStopIdInMesh": false
+      },
+      "performance": {
+        "primitives": 7,
+        "textureImages": 7,
+        "alphaTextureImages": 1,
+        "estimatedTextureRgbaBytes": 10318664
+      }
+    },
+    {
+      "id": "arsenal-street",
+      "name": "军器厂街 (西行方向) / 军器厂街 (东行方向)",
+      "stopIds": [
+        "td:99132",
+        "td:99221"
+      ],
+      "originHK80": [
+        835388.4515621917,
+        815438.0162912416,
+        0.0
+      ],
+      "originWgs84": [
+        114.16834,
+        22.277805
+      ],
+      "status": "available",
+      "matchConfidence": "official-stop-point-spatial-crop",
+      "sourceTiles": [
+        "11-SW-14B"
+      ],
+      "sources": [
+        {
+          "tile": "11-SW-14B",
+          "sourcePath": "11-SW-14B/INFRASTRUCTURE(TB)/I352501500001062A1/I352501500001062A1.gltf",
+          "sourceGltfSha256": "a349433b1ef1eae1bfd880c8b807dad87819a64b83b8662f619610cf9f24b616",
+          "nativeRootMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            835624.9375,
+            0.8167991638183594,
+            -815300,
+            1
+          ],
+          "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-14B.zip"
+        }
+      ],
+      "notes": [
+        "Station-vicinity source crop; individual shelter semantic IDs are not present.",
+        "Original geometry remains unchanged inside the crop; outer context triangles are clipped at the crop perimeter with source UV interpolation.",
+        "Raised canopy/platform-like geometry is visible in the source crop and texture-free inspection; stop association remains geographic, not a semantic object ID."
+      ],
+      "crop": {
+        "alongHalfLengthM": 55,
+        "acrossHalfWidthM": 16,
+        "tangentEN": [
+          0.9767388939269895,
+          -0.21443211767429107
+        ],
+        "anchorsHK80": [
+          [
+            835405.9714635783,
+            815433.032272074
+          ],
+          [
+            835370.9316608051,
+            815443.0003104091
+          ]
+        ]
+      },
+      "primitiveStats": [
+        {
+          "tile": "11-SW-14B",
+          "sourceMaterial": 9,
+          "triangles": 1058,
+          "vertices": 1812
+        },
+        {
+          "tile": "11-SW-14B",
+          "sourceMaterial": 11,
+          "triangles": 12,
+          "vertices": 24
+        },
+        {
+          "tile": "11-SW-14B",
+          "sourceMaterial": 12,
+          "triangles": 68,
+          "vertices": 127
+        },
+        {
+          "tile": "11-SW-14B",
+          "sourceMaterial": 25,
+          "triangles": 918,
+          "vertices": 703
+        },
+        {
+          "tile": "11-SW-14B",
+          "sourceMaterial": 26,
+          "triangles": 58,
+          "vertices": 49
+        },
+        {
+          "tile": "11-SW-14B",
+          "sourceMaterial": 29,
+          "triangles": 557,
+          "vertices": 428
+        },
+        {
+          "tile": "11-SW-14B",
+          "sourceMaterial": 30,
+          "triangles": 934,
+          "vertices": 694
+        }
+      ],
+      "boundsHK80": {
+        "min": [
+          835313.3035298818,
+          815420.69921875,
+          3.281902313232422
+        ],
+        "max": [
+          835463.5995945017,
+          815463.1728515625,
+          18.540700912475586
+        ]
+      },
+      "triangles": 3605,
+      "vertices": 3837,
+      "url": "/tram-models/arsenal-street.glb",
+      "bytes": 459104,
+      "sha256": "4b9009dc3c4ae70b2c6f4fd5d0632682557d73a723e3dad3d3285cde6dc5dd50",
+      "shelterStatus": "visible-in-geometry",
+      "visualVerification": {
+        "method": "Blender 4.3.2 rendered original color textures and separate texture-free clay comparison",
+        "geometryStatus": "source geometry in vicinity verified",
+        "shelterStatus": "visible-in-geometry",
+        "semanticStopIdInMesh": false
+      },
+      "performance": {
+        "primitives": 7,
+        "textureImages": 7,
+        "alphaTextureImages": 1,
+        "estimatedTextureRgbaBytes": 8786712
+      }
+    },
+    {
+      "id": "gresson-fenwick",
+      "name": "机利臣街 (西行方向) / 分域街 (东行方向)",
+      "stopIds": [
+        "td:99130",
+        "td:99131"
+      ],
+      "originHK80": [
+        835571.3797882542,
+        815368.7982627575,
+        0.0
+      ],
+      "originWgs84": [
+        114.17011500000001,
+        22.27718
+      ],
+      "status": "available",
+      "matchConfidence": "official-stop-point-spatial-crop",
+      "sourceTiles": [
+        "11-SW-14B"
+      ],
+      "sources": [
+        {
+          "tile": "11-SW-14B",
+          "sourcePath": "11-SW-14B/INFRASTRUCTURE(TB)/I352501500001062A1/I352501500001062A1.gltf",
+          "sourceGltfSha256": "a349433b1ef1eae1bfd880c8b807dad87819a64b83b8662f619610cf9f24b616",
+          "nativeRootMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            835624.9375,
+            0.8167991638183594,
+            -815300,
+            1
+          ],
+          "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-14B.zip"
+        }
+      ],
+      "notes": [
+        "Station-vicinity source crop; individual shelter semantic IDs are not present.",
+        "Original geometry remains unchanged inside the crop; outer context triangles are clipped at the crop perimeter with source UV interpolation.",
+        "Raised canopy/platform-like geometry is visible in the source crop and texture-free inspection; stop association remains geographic, not a semantic object ID."
+      ],
+      "crop": {
+        "alongHalfLengthM": 55,
+        "acrossHalfWidthM": 16,
+        "tangentEN": [
+          0.9272854191335,
+          -0.37435511411280226
+        ],
+        "anchorsHK80": [
+          [
+            835574.986556145,
+            815361.0467149888
+          ],
+          [
+            835567.7730203632,
+            815376.5498105261
+          ]
+        ]
+      },
+      "primitiveStats": [
+        {
+          "tile": "11-SW-14B",
+          "sourceMaterial": 9,
+          "triangles": 4218,
+          "vertices": 7816
+        },
+        {
+          "tile": "11-SW-14B",
+          "sourceMaterial": 10,
+          "triangles": 14,
+          "vertices": 28
+        },
+        {
+          "tile": "11-SW-14B",
+          "sourceMaterial": 11,
+          "triangles": 4,
+          "vertices": 8
+        },
+        {
+          "tile": "11-SW-14B",
+          "sourceMaterial": 12,
+          "triangles": 18,
+          "vertices": 36
+        },
+        {
+          "tile": "11-SW-14B",
+          "sourceMaterial": 16,
+          "triangles": 56,
+          "vertices": 96
+        },
+        {
+          "tile": "11-SW-14B",
+          "sourceMaterial": 25,
+          "triangles": 4,
+          "vertices": 8
+        },
+        {
+          "tile": "11-SW-14B",
+          "sourceMaterial": 28,
+          "triangles": 1612,
+          "vertices": 1249
+        },
+        {
+          "tile": "11-SW-14B",
+          "sourceMaterial": 29,
+          "triangles": 684,
+          "vertices": 530
+        }
+      ],
+      "boundsHK80": {
+        "min": [
+          835517.9771015008,
+          815329.5242530376,
+          0.8167991638183594
+        ],
+        "max": [
+          835635.2299345194,
+          815411.9759085084,
+          14.142501831054688
+        ]
+      },
+      "triangles": 6610,
+      "vertices": 9771,
+      "url": "/tram-models/gresson-fenwick.glb",
+      "bytes": 664652,
+      "sha256": "a784925bf4a31b05b2b96009baca38ddacf15751d8fcbca5000c6953e3672801",
+      "shelterStatus": "visible-in-geometry",
+      "visualVerification": {
+        "method": "Blender 4.3.2 rendered original color textures and separate texture-free clay comparison",
+        "geometryStatus": "source geometry in vicinity verified",
+        "shelterStatus": "visible-in-geometry",
+        "semanticStopIdInMesh": false
+      },
+      "performance": {
+        "primitives": 8,
+        "textureImages": 8,
+        "alphaTextureImages": 1,
+        "estimatedTextureRgbaBytes": 11513856
+      }
+    },
+    {
+      "id": "swatow-luard",
+      "name": "汕头街 (西行方向) / 卢押道 (东行方向)",
+      "stopIds": [
+        "td:99129",
+        "td:99222"
+      ],
+      "originHK80": [
+        835768.7376803085,
+        815284.632829875,
+        0.0
+      ],
+      "originWgs84": [
+        114.17203,
+        22.27642
+      ],
+      "status": "available",
+      "matchConfidence": "official-stop-point-spatial-crop",
+      "sourceTiles": [
+        "11-SW-14B"
+      ],
+      "sources": [
+        {
+          "tile": "11-SW-14B",
+          "sourcePath": "11-SW-14B/INFRASTRUCTURE(TB)/I352501500001062A1/I352501500001062A1.gltf",
+          "sourceGltfSha256": "a349433b1ef1eae1bfd880c8b807dad87819a64b83b8662f619610cf9f24b616",
+          "nativeRootMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            835624.9375,
+            0.8167991638183594,
+            -815300,
+            1
+          ],
+          "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-14B.zip"
+        }
+      ],
+      "notes": [
+        "Station-vicinity source crop; individual shelter semantic IDs are not present.",
+        "Original geometry remains unchanged inside the crop; outer context triangles are clipped at the crop perimeter with source UV interpolation.",
+        "Raised canopy/platform-like geometry is visible in the source crop and texture-free inspection; stop association remains geographic, not a semantic object ID."
+      ],
+      "crop": {
+        "alongHalfLengthM": 55,
+        "acrossHalfWidthM": 16,
+        "tangentEN": [
+          0.9787302509883935,
+          -0.20515139726601037
+        ],
+        "anchorsHK80": [
+          [
+            835771.8294019757,
+            815281.3107088172
+          ],
+          [
+            835765.6459586412,
+            815287.9549509328
+          ]
+        ]
+      },
+      "primitiveStats": [
+        {
+          "tile": "11-SW-14B",
+          "sourceMaterial": 1,
+          "triangles": 53,
+          "vertices": 128
+        },
+        {
+          "tile": "11-SW-14B",
+          "sourceMaterial": 2,
+          "triangles": 2196,
+          "vertices": 1793
+        },
+        {
+          "tile": "11-SW-14B",
+          "sourceMaterial": 9,
+          "triangles": 1360,
+          "vertices": 2288
+        },
+        {
+          "tile": "11-SW-14B",
+          "sourceMaterial": 10,
+          "triangles": 20,
+          "vertices": 38
+        },
+        {
+          "tile": "11-SW-14B",
+          "sourceMaterial": 11,
+          "triangles": 4,
+          "vertices": 8
+        },
+        {
+          "tile": "11-SW-14B",
+          "sourceMaterial": 12,
+          "triangles": 16,
+          "vertices": 32
+        },
+        {
+          "tile": "11-SW-14B",
+          "sourceMaterial": 13,
+          "triangles": 74,
+          "vertices": 137
+        },
+        {
+          "tile": "11-SW-14B",
+          "sourceMaterial": 31,
+          "triangles": 237,
+          "vertices": 186
+        }
+      ],
+      "boundsHK80": {
+        "min": [
+          835708.0476999352,
+          815260.6181937649,
+          2.8496017456054688
+        ],
+        "max": [
+          835830.0158282432,
+          815314.8979617982,
+          14.198001861572266
+        ]
+      },
+      "triangles": 3960,
+      "vertices": 4610,
+      "url": "/tram-models/swatow-luard.glb",
+      "bytes": 593836,
+      "sha256": "94ca90d42908746b685b9147663849d6e65e5ad4fc5f2e44102514b341dcebda",
+      "shelterStatus": "visible-in-geometry",
+      "visualVerification": {
+        "method": "Blender 4.3.2 rendered original color textures and separate texture-free clay comparison",
+        "geometryStatus": "source geometry in vicinity verified",
+        "shelterStatus": "visible-in-geometry",
+        "semanticStopIdInMesh": false
+      },
+      "performance": {
+        "primitives": 8,
+        "textureImages": 8,
+        "alphaTextureImages": 1,
+        "estimatedTextureRgbaBytes": 9282076
+      }
+    },
+    {
+      "id": "obrien-road",
+      "name": "柯布连道 (西行方向) / 柯布连道 (东行方向)",
+      "stopIds": [
+        "td:99128",
+        "td:99223"
+      ],
+      "originHK80": [
+        835899.6253905696,
+        815300.1320030901,
+        0.0
+      ],
+      "originWgs84": [
+        114.17330000000001,
+        22.27656
+      ],
+      "status": "available",
+      "matchConfidence": "official-stop-point-spatial-crop",
+      "sourceTiles": [
+        "11-SW-14B"
+      ],
+      "sources": [
+        {
+          "tile": "11-SW-14B",
+          "sourcePath": "11-SW-14B/INFRASTRUCTURE(TB)/I352501500001062A1/I352501500001062A1.gltf",
+          "sourceGltfSha256": "a349433b1ef1eae1bfd880c8b807dad87819a64b83b8662f619610cf9f24b616",
+          "nativeRootMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            835624.9375,
+            0.8167991638183594,
+            -815300,
+            1
+          ],
+          "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-14B.zip"
+        }
+      ],
+      "notes": [
+        "Station-vicinity source crop; individual shelter semantic IDs are not present.",
+        "Original geometry remains unchanged inside the crop; outer context triangles are clipped at the crop perimeter with source UV interpolation.",
+        "Raised canopy/platform-like geometry is visible in the source crop and texture-free inspection; stop association remains geographic, not a semantic object ID."
+      ],
+      "crop": {
+        "alongHalfLengthM": 55,
+        "acrossHalfWidthM": 16,
+        "tangentEN": [
+          0.9777840453875885,
+          0.20961479095112132
+        ],
+        "anchorsHK80": [
+          [
+            835910.9620269834,
+            815297.9170565471
+          ],
+          [
+            835888.2887541557,
+            815302.3469496331
+          ]
+        ]
+      },
+      "primitiveStats": [
+        {
+          "tile": "11-SW-14B",
+          "sourceMaterial": 1,
+          "triangles": 50,
+          "vertices": 101
+        },
+        {
+          "tile": "11-SW-14B",
+          "sourceMaterial": 2,
+          "triangles": 533,
+          "vertices": 433
+        },
+        {
+          "tile": "11-SW-14B",
+          "sourceMaterial": 3,
+          "triangles": 1578,
+          "vertices": 1309
+        },
+        {
+          "tile": "11-SW-14B",
+          "sourceMaterial": 9,
+          "triangles": 5388,
+          "vertices": 9826
+        },
+        {
+          "tile": "11-SW-14B",
+          "sourceMaterial": 10,
+          "triangles": 22,
+          "vertices": 40
+        },
+        {
+          "tile": "11-SW-14B",
+          "sourceMaterial": 11,
+          "triangles": 8,
+          "vertices": 16
+        },
+        {
+          "tile": "11-SW-14B",
+          "sourceMaterial": 12,
+          "triangles": 26,
+          "vertices": 52
+        },
+        {
+          "tile": "11-SW-14B",
+          "sourceMaterial": 13,
+          "triangles": 64,
+          "vertices": 117
+        },
+        {
+          "tile": "11-SW-14B",
+          "sourceMaterial": 31,
+          "triangles": 1794,
+          "vertices": 1329
+        }
+      ],
+      "boundsHK80": {
+        "min": [
+          835831.721327876,
+          815267.6779215408,
+          2.7992019653320312
+        ],
+        "max": [
+          835965.7299607955,
+          815324.9860414921,
+          14.562301635742188
+        ]
+      },
+      "triangles": 9463,
+      "vertices": 13223,
+      "url": "/tram-models/obrien-road.glb",
+      "bytes": 1031404,
+      "sha256": "9e111311e55605014d61b7b8e59ebe35007baafdd266fc523e8a9c9bce11ba34",
+      "shelterStatus": "visible-in-geometry",
+      "visualVerification": {
+        "method": "Blender 4.3.2 rendered original color textures and separate texture-free clay comparison",
+        "geometryStatus": "source geometry in vicinity verified",
+        "shelterStatus": "visible-in-geometry",
+        "semanticStopIdInMesh": false
+      },
+      "performance": {
+        "primitives": 9,
+        "textureImages": 9,
+        "alphaTextureImages": 1,
+        "estimatedTextureRgbaBytes": 14057360
+      }
+    },
+    {
+      "id": "burrows-fleming",
+      "name": "巴路士街 (西行方向) / 菲林明道 (东行方向)",
+      "stopIds": [
+        "td:99127",
+        "td:99224"
+      ],
+      "originHK80": [
+        836142.8493650048,
+        815365.4613640424,
+        0.0
+      ],
+      "originWgs84": [
+        114.17566,
+        22.27715
+      ],
+      "status": "available",
+      "matchConfidence": "official-stop-point-spatial-crop",
+      "sourceTiles": [
+        "11-SW-15A"
+      ],
+      "sources": [
+        {
+          "tile": "11-SW-15A",
+          "sourcePath": "11-SW-15A/INFRASTRUCTURE(TB)/I360001500001062A1/I360001500001062A1.gltf",
+          "sourceGltfSha256": "55dcba9badebac8d0e863c42389ec8e186632f877d79e031d0f896decdf9faea",
+          "nativeRootMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            836375,
+            1.4220001697540283,
+            -815300.5,
+            1
+          ],
+          "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-15A.zip"
+        }
+      ],
+      "notes": [
+        "Station-vicinity source crop; individual shelter semantic IDs are not present.",
+        "Original geometry remains unchanged inside the crop; outer context triangles are clipped at the crop perimeter with source UV interpolation.",
+        "Raised canopy/platform-like geometry is visible in the source crop and texture-free inspection; stop association remains geographic, not a semantic object ID."
+      ],
+      "crop": {
+        "alongHalfLengthM": 55,
+        "acrossHalfWidthM": 16,
+        "tangentEN": [
+          0.9280112093712122,
+          0.3725522718778937
+        ],
+        "anchorsHK80": [
+          [
+            836168.61454262,
+            815376.5345757789
+          ],
+          [
+            836117.0841873897,
+            815354.3881523059
+          ]
+        ]
+      },
+      "primitiveStats": [
+        {
+          "tile": "11-SW-15A",
+          "sourceMaterial": 12,
+          "triangles": 42,
+          "vertices": 94
+        },
+        {
+          "tile": "11-SW-15A",
+          "sourceMaterial": 13,
+          "triangles": 2171,
+          "vertices": 1802
+        },
+        {
+          "tile": "11-SW-15A",
+          "sourceMaterial": 14,
+          "triangles": 1738,
+          "vertices": 1481
+        },
+        {
+          "tile": "11-SW-15A",
+          "sourceMaterial": 18,
+          "triangles": 558,
+          "vertices": 1026
+        },
+        {
+          "tile": "11-SW-15A",
+          "sourceMaterial": 19,
+          "triangles": 798,
+          "vertices": 1458
+        },
+        {
+          "tile": "11-SW-15A",
+          "sourceMaterial": 20,
+          "triangles": 679,
+          "vertices": 1371
+        }
+      ],
+      "boundsHK80": {
+        "min": [
+          836059.5781578046,
+          815319.0495980027,
+          2.7200005054473877
+        ],
+        "max": [
+          836219.8818831499,
+          815411.8731300822,
+          14.823999643325806
+        ]
+      },
+      "triangles": 5986,
+      "vertices": 7232,
+      "url": "/tram-models/burrows-fleming.glb",
+      "bytes": 1042172,
+      "sha256": "7b8a1f2f94b14fc5db9b211aab945062dc63c5665d41ca680ba9d46d5b9c0bf5",
+      "shelterStatus": "visible-in-geometry",
+      "visualVerification": {
+        "method": "Blender 4.3.2 rendered original color textures and separate texture-free clay comparison",
+        "geometryStatus": "source geometry in vicinity verified",
+        "shelterStatus": "visible-in-geometry",
+        "semanticStopIdInMesh": false
+      },
+      "performance": {
+        "primitives": 6,
+        "textureImages": 6,
+        "alphaTextureImages": 0,
+        "estimatedTextureRgbaBytes": 22646784
+      }
+    },
+    {
+      "id": "tonnochy-road",
+      "name": "杜老志道 (西行方向) / 杜老志道 (东行方向)",
+      "stopIds": [
+        "td:99126",
+        "td:99226"
+      ],
+      "originHK80": [
+        836353.6071568747,
+        815482.2856318029,
+        0.0
+      ],
+      "originWgs84": [
+        114.177705,
+        22.278205
+      ],
+      "status": "available",
+      "matchConfidence": "official-stop-point-spatial-crop",
+      "sourceTiles": [
+        "11-SW-15A"
+      ],
+      "sources": [
+        {
+          "tile": "11-SW-15A",
+          "sourcePath": "11-SW-15A/INFRASTRUCTURE(TB)/I360001500001062A1/I360001500001062A1.gltf",
+          "sourceGltfSha256": "55dcba9badebac8d0e863c42389ec8e186632f877d79e031d0f896decdf9faea",
+          "nativeRootMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            836375,
+            1.4220001697540283,
+            -815300.5,
+            1
+          ],
+          "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-15A.zip"
+        }
+      ],
+      "notes": [
+        "Station-vicinity source crop; individual shelter semantic IDs are not present.",
+        "Original geometry remains unchanged inside the crop; outer context triangles are clipped at the crop perimeter with source UV interpolation.",
+        "Raised canopy/platform-like geometry is visible in the source crop and texture-free inspection; stop association remains geographic, not a semantic object ID."
+      ],
+      "crop": {
+        "alongHalfLengthM": 55,
+        "acrossHalfWidthM": 16,
+        "tangentEN": [
+          0.9189967196767471,
+          0.394265176275281
+        ],
+        "anchorsHK80": [
+          [
+            836350.0000999807,
+            815477.3025753963
+          ],
+          [
+            836357.2142137687,
+            815487.2686882096
+          ]
+        ]
+      },
+      "primitiveStats": [
+        {
+          "tile": "11-SW-15A",
+          "sourceMaterial": 0,
+          "triangles": 78,
+          "vertices": 176
+        },
+        {
+          "tile": "11-SW-15A",
+          "sourceMaterial": 3,
+          "triangles": 3350,
+          "vertices": 2945
+        },
+        {
+          "tile": "11-SW-15A",
+          "sourceMaterial": 15,
+          "triangles": 241,
+          "vertices": 188
+        },
+        {
+          "tile": "11-SW-15A",
+          "sourceMaterial": 18,
+          "triangles": 1399,
+          "vertices": 2575
+        },
+        {
+          "tile": "11-SW-15A",
+          "sourceMaterial": 19,
+          "triangles": 1066,
+          "vertices": 1972
+        },
+        {
+          "tile": "11-SW-15A",
+          "sourceMaterial": 20,
+          "triangles": 1380,
+          "vertices": 2796
+        },
+        {
+          "tile": "11-SW-15A",
+          "sourceMaterial": 22,
+          "triangles": 18,
+          "vertices": 20
+        },
+        {
+          "tile": "11-SW-15A",
+          "sourceMaterial": 23,
+          "triangles": 12,
+          "vertices": 16
+        },
+        {
+          "tile": "11-SW-15A",
+          "sourceMaterial": 30,
+          "triangles": 6,
+          "vertices": 10
+        }
+      ],
+      "boundsHK80": {
+        "min": [
+          836290.8193808431,
+          815453.2743662675,
+          2.8450005054473877
+        ],
+        "max": [
+          836415.9918083312,
+          815519.2064643122,
+          16.165000200271606
+        ]
+      },
+      "triangles": 7550,
+      "vertices": 10698,
+      "url": "/tram-models/tonnochy-road.glb",
+      "bytes": 1178912,
+      "sha256": "8283041971b4396fa467c7fb9eff40dec8262ce71e441110833cd76c714050ea",
+      "shelterStatus": "visible-in-geometry",
+      "visualVerification": {
+        "method": "Blender 4.3.2 rendered original color textures and separate texture-free clay comparison",
+        "geometryStatus": "source geometry in vicinity verified",
+        "shelterStatus": "visible-in-geometry",
+        "semanticStopIdInMesh": false
+      },
+      "performance": {
+        "primitives": 9,
+        "textureImages": 9,
+        "alphaTextureImages": 1,
+        "estimatedTextureRgbaBytes": 20678996
+      }
+    },
+    {
+      "id": "canal-road-west",
+      "name": "坚拿道西 (西行方向) / 坚拿道西 (东行方向)",
+      "stopIds": [
+        "td:99125",
+        "td:99227"
+      ],
+      "originHK80": [
+        836704.0062697923,
+        815606.3138399143,
+        0.0
+      ],
+      "originWgs84": [
+        114.181105,
+        22.279325
+      ],
+      "status": "available",
+      "matchConfidence": "official-stop-point-spatial-crop",
+      "sourceTiles": [
+        "11-SW-10C",
+        "11-SW-10D",
+        "11-SW-15A"
+      ],
+      "sources": [
+        {
+          "tile": "11-SW-10C",
+          "sourcePath": "11-SW-10C/INFRASTRUCTURE(TB)/I360001560001062A2/I360001560001062A2.gltf",
+          "sourceGltfSha256": "702e0d9063c3798750f1f8537b4b0b22b09c6d2205f78e132ecb3d8a8930ec17",
+          "nativeRootMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            836375.0625,
+            0.46199989318847656,
+            -815881.125,
+            1
+          ],
+          "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-10C.zip"
+        },
+        {
+          "tile": "11-SW-10D",
+          "sourcePath": "11-SW-10D/INFRASTRUCTURE(TB)/I367501560001062A2/I367501560001062A2.gltf",
+          "sourceGltfSha256": "4fb826e34ca0a046a35fb3b203935cf596a3dd04e137b57c3edcd0bb0783eeca",
+          "nativeRootMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            837124.875,
+            -4.440849304199219,
+            -815899.75,
+            1
+          ],
+          "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-10D.zip"
+        },
+        {
+          "tile": "11-SW-15A",
+          "sourcePath": "11-SW-15A/INFRASTRUCTURE(TB)/I360001500001062A1/I360001500001062A1.gltf",
+          "sourceGltfSha256": "55dcba9badebac8d0e863c42389ec8e186632f877d79e031d0f896decdf9faea",
+          "nativeRootMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            836375,
+            1.4220001697540283,
+            -815300.5,
+            1
+          ],
+          "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-15A.zip"
+        }
+      ],
+      "notes": [
+        "Station-vicinity source crop; individual shelter semantic IDs are not present.",
+        "Original geometry remains unchanged inside the crop; outer context triangles are clipped at the crop perimeter with source UV interpolation.",
+        "Raised canopy/platform-like geometry is visible in the source crop and texture-free inspection; stop association remains geographic, not a semantic object ID."
+      ],
+      "crop": {
+        "alongHalfLengthM": 55,
+        "acrossHalfWidthM": 16,
+        "tangentEN": [
+          0.9398900891574952,
+          0.3414771153437896
+        ],
+        "anchorsHK80": [
+          [
+            836718.9497450987,
+            815607.9752749735
+          ],
+          [
+            836689.062794486,
+            815604.6524048549
+          ]
+        ]
+      },
+      "primitiveStats": [
+        {
+          "tile": "11-SW-10C",
+          "sourceMaterial": 2,
+          "triangles": 1194,
+          "vertices": 2304
+        },
+        {
+          "tile": "11-SW-10C",
+          "sourceMaterial": 9,
+          "triangles": 8,
+          "vertices": 16
+        },
+        {
+          "tile": "11-SW-10C",
+          "sourceMaterial": 10,
+          "triangles": 8,
+          "vertices": 16
+        },
+        {
+          "tile": "11-SW-10C",
+          "sourceMaterial": 12,
+          "triangles": 1695,
+          "vertices": 1493
+        },
+        {
+          "tile": "11-SW-10D",
+          "sourceMaterial": 1,
+          "triangles": 229,
+          "vertices": 421
+        },
+        {
+          "tile": "11-SW-10D",
+          "sourceMaterial": 2,
+          "triangles": 94,
+          "vertices": 186
+        },
+        {
+          "tile": "11-SW-10D",
+          "sourceMaterial": 3,
+          "triangles": 99,
+          "vertices": 189
+        },
+        {
+          "tile": "11-SW-10D",
+          "sourceMaterial": 4,
+          "triangles": 8,
+          "vertices": 16
+        },
+        {
+          "tile": "11-SW-10D",
+          "sourceMaterial": 9,
+          "triangles": 14,
+          "vertices": 26
+        },
+        {
+          "tile": "11-SW-10D",
+          "sourceMaterial": 32,
+          "triangles": 269,
+          "vertices": 203
+        },
+        {
+          "tile": "11-SW-15A",
+          "sourceMaterial": 0,
+          "triangles": 51,
+          "vertices": 117
+        },
+        {
+          "tile": "11-SW-15A",
+          "sourceMaterial": 1,
+          "triangles": 2218,
+          "vertices": 1795
+        },
+        {
+          "tile": "11-SW-15A",
+          "sourceMaterial": 18,
+          "triangles": 262,
+          "vertices": 468
+        },
+        {
+          "tile": "11-SW-15A",
+          "sourceMaterial": 19,
+          "triangles": 648,
+          "vertices": 1192
+        },
+        {
+          "tile": "11-SW-15A",
+          "sourceMaterial": 20,
+          "triangles": 324,
+          "vertices": 622
+        },
+        {
+          "tile": "11-SW-15A",
+          "sourceMaterial": 23,
+          "triangles": 8,
+          "vertices": 10
+        },
+        {
+          "tile": "11-SW-15A",
+          "sourceMaterial": 30,
+          "triangles": 8,
+          "vertices": 16
+        }
+      ],
+      "boundsHK80": {
+        "min": [
+          836635.2902606255,
+          815569.2546382204,
+          2.1009998321533203
+        ],
+        "max": [
+          836772.6233956649,
+          815643.8068246178,
+          15.972000122070312
+        ]
+      },
+      "triangles": 7137,
+      "vertices": 9090,
+      "url": "/tram-models/canal-road-west.glb",
+      "bytes": 1895584,
+      "sha256": "e4cc2c831b60b5a7818c4c3c9e5e8f28eca7c6a58701c8bb74e40462c3e8686b",
+      "shelterStatus": "visible-in-geometry",
+      "visualVerification": {
+        "method": "Blender 4.3.2 rendered original color textures and separate texture-free clay comparison",
+        "geometryStatus": "source geometry in vicinity verified",
+        "shelterStatus": "visible-in-geometry",
+        "semanticStopIdInMesh": false
+      },
+      "performance": {
+        "primitives": 17,
+        "textureImages": 17,
+        "alphaTextureImages": 4,
+        "estimatedTextureRgbaBytes": 46306988
+      }
+    },
+    {
+      "id": "percival-street",
+      "name": "波斯富街 (东行方向)",
+      "stopIds": [
+        "td:99228"
+      ],
+      "originHK80": [
+        836898.2686974438,
+        815688.8174790397,
+        0.0
+      ],
+      "originWgs84": [
+        114.18299,
+        22.28007
+      ],
+      "status": "available",
+      "matchConfidence": "official-stop-point-spatial-crop",
+      "sourceTiles": [
+        "11-SW-10D"
+      ],
+      "sources": [
+        {
+          "tile": "11-SW-10D",
+          "sourcePath": "11-SW-10D/INFRASTRUCTURE(TB)/I367501560001062A2/I367501560001062A2.gltf",
+          "sourceGltfSha256": "4fb826e34ca0a046a35fb3b203935cf596a3dd04e137b57c3edcd0bb0783eeca",
+          "nativeRootMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            837124.875,
+            -4.440849304199219,
+            -815899.75,
+            1
+          ],
+          "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-10D.zip"
+        }
+      ],
+      "notes": [
+        "Station-vicinity source crop; individual shelter semantic IDs are not present.",
+        "Original geometry remains unchanged inside the crop; outer context triangles are clipped at the crop perimeter with source UV interpolation.",
+        "Raised canopy/platform-like geometry is visible in the source crop and texture-free inspection; stop association remains geographic, not a semantic object ID."
+      ],
+      "crop": {
+        "alongHalfLengthM": 55,
+        "acrossHalfWidthM": 16,
+        "tangentEN": [
+          0.9277367118269483,
+          0.3732353058440773
+        ],
+        "anchorsHK80": [
+          [
+            836898.2686974438,
+            815688.8174790397
+          ]
+        ]
+      },
+      "primitiveStats": [
+        {
+          "tile": "11-SW-10D",
+          "sourceMaterial": 0,
+          "triangles": 2824,
+          "vertices": 2200
+        },
+        {
+          "tile": "11-SW-10D",
+          "sourceMaterial": 1,
+          "triangles": 150,
+          "vertices": 272
+        },
+        {
+          "tile": "11-SW-10D",
+          "sourceMaterial": 2,
+          "triangles": 116,
+          "vertices": 214
+        },
+        {
+          "tile": "11-SW-10D",
+          "sourceMaterial": 3,
+          "triangles": 278,
+          "vertices": 556
+        },
+        {
+          "tile": "11-SW-10D",
+          "sourceMaterial": 4,
+          "triangles": 40,
+          "vertices": 64
+        },
+        {
+          "tile": "11-SW-10D",
+          "sourceMaterial": 9,
+          "triangles": 18,
+          "vertices": 34
+        },
+        {
+          "tile": "11-SW-10D",
+          "sourceMaterial": 32,
+          "triangles": 607,
+          "vertices": 507
+        }
+      ],
+      "boundsHK80": {
+        "min": [
+          836844.1862036285,
+          815653.810940217,
+          3.48699951171875
+        ],
+        "max": [
+          836955.2659814878,
+          815702.8664328816,
+          6.828000068664551
+        ]
+      },
+      "triangles": 4033,
+      "vertices": 3847,
+      "url": "/tram-models/percival-street.glb",
+      "bytes": 735324,
+      "sha256": "7d19bc826aa839c4edde7249d208335799e358953e5a56269c0bc333507545ac",
+      "shelterStatus": "visible-in-geometry",
+      "visualVerification": {
+        "method": "Blender 4.3.2 rendered original color textures and separate texture-free clay comparison",
+        "geometryStatus": "source geometry in vicinity verified",
+        "shelterStatus": "visible-in-geometry",
+        "semanticStopIdInMesh": false
+      },
+      "performance": {
+        "primitives": 7,
+        "textureImages": 7,
+        "alphaTextureImages": 1,
+        "estimatedTextureRgbaBytes": 18748072
+      }
+    },
+    {
+      "id": "cotton-tree-drive",
+      "name": "红棉道 (西行方向)",
+      "stopIds": [
+        "td:99134"
+      ],
+      "originHK80": [
+        834824.7283253548,
+        815593.6395921604,
+        0.0
+      ],
+      "originWgs84": [
+        114.16287,
+        22.27921
+      ],
+      "status": "available",
+      "matchConfidence": "official-stop-point-spatial-crop",
+      "sourceTiles": [
+        "11-SW-14A",
+        "11-SW-9C"
+      ],
+      "sources": [
+        {
+          "tile": "11-SW-14A",
+          "sourcePath": "11-SW-14A/INFRASTRUCTURE(TB)/I345001500001062A1/I345001500001062A1.gltf",
+          "sourceGltfSha256": "1551f4bb962e8efdfd0c5e2db8af7c46854d0b2c199e7916adda781c6a580744",
+          "nativeRootMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            834874.9375,
+            3.0691070556640625,
+            -815299.875,
+            1
+          ],
+          "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-14A.zip"
+        },
+        {
+          "tile": "11-SW-9C",
+          "sourcePath": "11-SW-9C/INFRASTRUCTURE(TB)/I345001560001062A2/I345001560001062A2.gltf",
+          "sourceGltfSha256": "19cf6d726f7a75b6ede68429902ab8e847726526380a814eca4a1eb129120010",
+          "nativeRootMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            834874.9375,
+            -0.9138002395629883,
+            -815900,
+            1
+          ],
+          "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-9C.zip"
+        }
+      ],
+      "notes": [
+        "Station-vicinity source crop; individual shelter semantic IDs are not present.",
+        "Original geometry remains unchanged inside the crop; outer context triangles are clipped at the crop perimeter with source UV interpolation.",
+        "Raised canopy/platform-like geometry is visible in the source crop and texture-free inspection; stop association remains geographic, not a semantic object ID."
+      ],
+      "crop": {
+        "alongHalfLengthM": 55,
+        "acrossHalfWidthM": 16,
+        "tangentEN": [
+          0.8884908318209969,
+          -0.4588943688584914
+        ],
+        "anchorsHK80": [
+          [
+            834824.7283253548,
+            815593.6395921604
+          ]
+        ]
+      },
+      "primitiveStats": [
+        {
+          "tile": "11-SW-14A",
+          "sourceMaterial": 0,
+          "triangles": 2571,
+          "vertices": 4831
+        },
+        {
+          "tile": "11-SW-14A",
+          "sourceMaterial": 1,
+          "triangles": 328,
+          "vertices": 648
+        },
+        {
+          "tile": "11-SW-14A",
+          "sourceMaterial": 5,
+          "triangles": 34,
+          "vertices": 64
+        },
+        {
+          "tile": "11-SW-14A",
+          "sourceMaterial": 6,
+          "triangles": 24,
+          "vertices": 44
+        },
+        {
+          "tile": "11-SW-14A",
+          "sourceMaterial": 11,
+          "triangles": 24,
+          "vertices": 23
+        },
+        {
+          "tile": "11-SW-14A",
+          "sourceMaterial": 13,
+          "triangles": 1368,
+          "vertices": 1018
+        },
+        {
+          "tile": "11-SW-9C",
+          "sourceMaterial": 1,
+          "triangles": 1273,
+          "vertices": 2427
+        },
+        {
+          "tile": "11-SW-9C",
+          "sourceMaterial": 2,
+          "triangles": 30,
+          "vertices": 44
+        },
+        {
+          "tile": "11-SW-9C",
+          "sourceMaterial": 7,
+          "triangles": 24,
+          "vertices": 44
+        },
+        {
+          "tile": "11-SW-9C",
+          "sourceMaterial": 10,
+          "triangles": 32,
+          "vertices": 60
+        },
+        {
+          "tile": "11-SW-9C",
+          "sourceMaterial": 11,
+          "triangles": 4,
+          "vertices": 8
+        },
+        {
+          "tile": "11-SW-9C",
+          "sourceMaterial": 18,
+          "triangles": 386,
+          "vertices": 716
+        },
+        {
+          "tile": "11-SW-9C",
+          "sourceMaterial": 19,
+          "triangles": 1524,
+          "vertices": 1487
+        }
+      ],
+      "boundsHK80": {
+        "min": [
+          834768.5190197029,
+          815554.184548564,
+          5.2205963134765625
+        ],
+        "max": [
+          834878.6986538189,
+          815633.0946357567,
+          18.400096893310547
+        ]
+      },
+      "triangles": 7622,
+      "vertices": 11414,
+      "url": "/tram-models/cotton-tree-drive.glb",
+      "bytes": 1328700,
+      "sha256": "b9fe752380ec2ce53b8a82cbd29764fe334f960edff090b59600d54a31156163",
+      "shelterStatus": "visible-in-geometry",
+      "visualVerification": {
+        "method": "Blender 4.3.2 rendered original color textures and separate texture-free clay comparison",
+        "geometryStatus": "source geometry in vicinity verified",
+        "shelterStatus": "visible-in-geometry",
+        "semanticStopIdInMesh": false
+      },
+      "performance": {
+        "primitives": 13,
+        "textureImages": 13,
+        "alphaTextureImages": 3,
+        "estimatedTextureRgbaBytes": 17841684
+      }
+    },
+    {
+      "id": "murray-road",
+      "name": "美利道 (东行方向)",
+      "stopIds": [
+        "td:99219"
+      ],
+      "originHK80": [
+        834734.0420717731,
+        815650.1226446518,
+        0.0
+      ],
+      "originWgs84": [
+        114.16199,
+        22.27972
+      ],
+      "status": "available",
+      "matchConfidence": "official-stop-point-spatial-crop",
+      "sourceTiles": [
+        "11-SW-9C"
+      ],
+      "sources": [
+        {
+          "tile": "11-SW-9C",
+          "sourcePath": "11-SW-9C/INFRASTRUCTURE(TB)/I345001560001062A2/I345001560001062A2.gltf",
+          "sourceGltfSha256": "19cf6d726f7a75b6ede68429902ab8e847726526380a814eca4a1eb129120010",
+          "nativeRootMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            834874.9375,
+            -0.9138002395629883,
+            -815900,
+            1
+          ],
+          "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-9C.zip"
+        }
+      ],
+      "notes": [
+        "Station-vicinity source crop; individual shelter semantic IDs are not present.",
+        "Original geometry remains unchanged inside the crop; outer context triangles are clipped at the crop perimeter with source UV interpolation.",
+        "Raised canopy/platform-like geometry is visible in the source crop and texture-free inspection; stop association remains geographic, not a semantic object ID."
+      ],
+      "crop": {
+        "alongHalfLengthM": 55,
+        "acrossHalfWidthM": 16,
+        "tangentEN": [
+          0.8746325163703764,
+          -0.4847865110619552
+        ],
+        "anchorsHK80": [
+          [
+            834734.0420717731,
+            815650.1226446518
+          ]
+        ]
+      },
+      "primitiveStats": [
+        {
+          "tile": "11-SW-9C",
+          "sourceMaterial": 1,
+          "triangles": 849,
+          "vertices": 1419
+        },
+        {
+          "tile": "11-SW-9C",
+          "sourceMaterial": 7,
+          "triangles": 74,
+          "vertices": 142
+        },
+        {
+          "tile": "11-SW-9C",
+          "sourceMaterial": 10,
+          "triangles": 74,
+          "vertices": 142
+        },
+        {
+          "tile": "11-SW-9C",
+          "sourceMaterial": 18,
+          "triangles": 50,
+          "vertices": 99
+        },
+        {
+          "tile": "11-SW-9C",
+          "sourceMaterial": 19,
+          "triangles": 1502,
+          "vertices": 1316
+        }
+      ],
+      "boundsHK80": {
+        "min": [
+          834678.1806991957,
+          815612.3074250807,
+          5.75469970703125
+        ],
+        "max": [
+          834788.4788914466,
+          815684.496956824,
+          18.67629909515381
+        ]
+      },
+      "triangles": 2549,
+      "vertices": 3118,
+      "url": "/tram-models/murray-road.glb",
+      "bytes": 654616,
+      "sha256": "51286698f7a52654416110906f34d07ba81b1a53a78b2fbab995a08eed28abc9",
+      "shelterStatus": "visible-in-geometry",
+      "visualVerification": {
+        "method": "Blender 4.3.2 rendered original color textures and separate texture-free clay comparison",
+        "geometryStatus": "source geometry in vicinity verified",
+        "shelterStatus": "visible-in-geometry",
+        "semanticStopIdInMesh": false
+      },
+      "performance": {
+        "primitives": 5,
+        "textureImages": 5,
+        "alphaTextureImages": 1,
+        "estimatedTextureRgbaBytes": 10027008
+      }
+    },
+    {
+      "id": "bank-street",
+      "name": "银行街 (西行方向) / 银行街 (东行方向)",
+      "stopIds": [
+        "td:99135",
+        "td:99218"
+      ],
+      "originHK80": [
+        834523.81333887,
+        815744.8224364247,
+        0.0
+      ],
+      "originWgs84": [
+        114.15995000000001,
+        22.280575
+      ],
+      "status": "available",
+      "matchConfidence": "official-stop-point-spatial-crop",
+      "sourceTiles": [
+        "11-SW-8D",
+        "11-SW-9C"
+      ],
+      "sources": [
+        {
+          "tile": "11-SW-8D",
+          "sourcePath": "11-SW-8D/INFRASTRUCTURE(TB)/I337501560001062A1/I337501560001062A1.gltf",
+          "sourceGltfSha256": "080f6c9f0b1c33367b92092dc4e9c0893f28665c3ff08baac86d208f6457744b",
+          "nativeRootMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            834125.0625,
+            -2.4557998180389404,
+            -815899.5,
+            1
+          ],
+          "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-8D.zip"
+        },
+        {
+          "tile": "11-SW-9C",
+          "sourcePath": "11-SW-9C/INFRASTRUCTURE(TB)/I345001560001062A2/I345001560001062A2.gltf",
+          "sourceGltfSha256": "19cf6d726f7a75b6ede68429902ab8e847726526380a814eca4a1eb129120010",
+          "nativeRootMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            834874.9375,
+            -0.9138002395629883,
+            -815900,
+            1
+          ],
+          "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-9C.zip"
+        }
+      ],
+      "notes": [
+        "Station-vicinity source crop; individual shelter semantic IDs are not present.",
+        "Original geometry remains unchanged inside the crop; outer context triangles are clipped at the crop perimeter with source UV interpolation.",
+        "Raised canopy/platform-like geometry is visible in the source crop and texture-free inspection; stop association remains geographic, not a semantic object ID."
+      ],
+      "crop": {
+        "alongHalfLengthM": 55,
+        "acrossHalfWidthM": 16,
+        "tangentEN": [
+          0.8999820519241365,
+          -0.43592695054839287
+        ],
+        "anchorsHK80": [
+          [
+            834492.896536634,
+            815749.8089266197
+          ],
+          [
+            834554.7301411061,
+            815739.8359462295
+          ]
+        ]
+      },
+      "primitiveStats": [
+        {
+          "tile": "11-SW-8D",
+          "sourceMaterial": 11,
+          "triangles": 1752,
+          "vertices": 3344
+        },
+        {
+          "tile": "11-SW-8D",
+          "sourceMaterial": 12,
+          "triangles": 14,
+          "vertices": 28
+        },
+        {
+          "tile": "11-SW-8D",
+          "sourceMaterial": 34,
+          "triangles": 1662,
+          "vertices": 1430
+        },
+        {
+          "tile": "11-SW-9C",
+          "sourceMaterial": 1,
+          "triangles": 1379,
+          "vertices": 2431
+        },
+        {
+          "tile": "11-SW-9C",
+          "sourceMaterial": 7,
+          "triangles": 16,
+          "vertices": 32
+        },
+        {
+          "tile": "11-SW-9C",
+          "sourceMaterial": 10,
+          "triangles": 30,
+          "vertices": 60
+        },
+        {
+          "tile": "11-SW-9C",
+          "sourceMaterial": 14,
+          "triangles": 26,
+          "vertices": 52
+        },
+        {
+          "tile": "11-SW-9C",
+          "sourceMaterial": 15,
+          "triangles": 11,
+          "vertices": 17
+        },
+        {
+          "tile": "11-SW-9C",
+          "sourceMaterial": 16,
+          "triangles": 23,
+          "vertices": 41
+        },
+        {
+          "tile": "11-SW-9C",
+          "sourceMaterial": 17,
+          "triangles": 12,
+          "vertices": 24
+        },
+        {
+          "tile": "11-SW-9C",
+          "sourceMaterial": 18,
+          "triangles": 683,
+          "vertices": 721
+        },
+        {
+          "tile": "11-SW-9C",
+          "sourceMaterial": 19,
+          "triangles": 2930,
+          "vertices": 2650
+        }
+      ],
+      "boundsHK80": {
+        "min": [
+          834437.1321471358,
+          815685.2790856595,
+          3.1575005054473877
+        ],
+        "max": [
+          834595.4085782846,
+          815777.0746527293,
+          17.844799995422363
+        ]
+      },
+      "triangles": 8538,
+      "vertices": 10830,
+      "url": "/tram-models/bank-street.glb",
+      "bytes": 1320888,
+      "sha256": "cd1e1602d60760dcc6f84e761842493d476881060af4b8cf9cb68f342d9a5d9f",
+      "shelterStatus": "visible-in-geometry",
+      "visualVerification": {
+        "method": "Blender 4.3.2 rendered original color textures and separate texture-free clay comparison",
+        "geometryStatus": "source geometry in vicinity verified",
+        "shelterStatus": "visible-in-geometry",
+        "semanticStopIdInMesh": false
+      },
+      "performance": {
+        "primitives": 12,
+        "textureImages": 12,
+        "alphaTextureImages": 1,
+        "estimatedTextureRgbaBytes": 19017728
+      }
+    },
+    {
+      "id": "ice-house-street",
+      "name": "雪厂街 (东行方向)",
+      "stopIds": [
+        "td:99217"
+      ],
+      "originHK80": [
+        834385.7218668868,
+        815795.2224852967,
+        0.0
+      ],
+      "originWgs84": [
+        114.15861,
+        22.28103
+      ],
+      "status": "available",
+      "matchConfidence": "official-stop-point-spatial-crop",
+      "sourceTiles": [
+        "11-SW-8D"
+      ],
+      "sources": [
+        {
+          "tile": "11-SW-8D",
+          "sourcePath": "11-SW-8D/INFRASTRUCTURE(TB)/I337501560001062A1/I337501560001062A1.gltf",
+          "sourceGltfSha256": "080f6c9f0b1c33367b92092dc4e9c0893f28665c3ff08baac86d208f6457744b",
+          "nativeRootMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            834125.0625,
+            -2.4557998180389404,
+            -815899.5,
+            1
+          ],
+          "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-8D.zip"
+        }
+      ],
+      "notes": [
+        "Station-vicinity source crop; individual shelter semantic IDs are not present.",
+        "Original geometry remains unchanged inside the crop; outer context triangles are clipped at the crop perimeter with source UV interpolation.",
+        "Raised canopy/platform-like geometry is visible in the source crop and texture-free inspection; stop association remains geographic, not a semantic object ID."
+      ],
+      "crop": {
+        "alongHalfLengthM": 55,
+        "acrossHalfWidthM": 16,
+        "tangentEN": [
+          0.8234027263627606,
+          -0.5674574435306783
+        ],
+        "anchorsHK80": [
+          [
+            834385.7218668868,
+            815795.2224852967
+          ]
+        ]
+      },
+      "primitiveStats": [
+        {
+          "tile": "11-SW-8D",
+          "sourceMaterial": 11,
+          "triangles": 3133,
+          "vertices": 6067
+        },
+        {
+          "tile": "11-SW-8D",
+          "sourceMaterial": 12,
+          "triangles": 41,
+          "vertices": 77
+        },
+        {
+          "tile": "11-SW-8D",
+          "sourceMaterial": 16,
+          "triangles": 52,
+          "vertices": 93
+        },
+        {
+          "tile": "11-SW-8D",
+          "sourceMaterial": 34,
+          "triangles": 2301,
+          "vertices": 2125
+        }
+      ],
+      "boundsHK80": {
+        "min": [
+          834344.6431047799,
+          815762.8263962714,
+          2.846198320388794
+        ],
+        "max": [
+          834440.0883359333,
+          815839.6070883126,
+          7.417800188064575
+        ]
+      },
+      "triangles": 5527,
+      "vertices": 8362,
+      "url": "/tram-models/ice-house-street.glb",
+      "bytes": 660244,
+      "sha256": "49c3cf7d8952bfef1dd9415fcdab656a85aa23a56fe53986f18e06e661ad648c",
+      "shelterStatus": "visible-in-geometry",
+      "visualVerification": {
+        "method": "Blender 4.3.2 rendered original color textures and separate texture-free clay comparison",
+        "geometryStatus": "source geometry in vicinity verified",
+        "shelterStatus": "visible-in-geometry",
+        "semanticStopIdInMesh": false
+      },
+      "performance": {
+        "primitives": 4,
+        "textureImages": 4,
+        "alphaTextureImages": 0,
+        "estimatedTextureRgbaBytes": 9256960
+      }
+    },
+    {
+      "id": "pedder-street",
+      "name": "毕打街 (西行方向) / 毕打街 (东行方向)",
+      "stopIds": [
+        "td:99136",
+        "td:99216"
+      ],
+      "originHK80": [
+        834301.7432579744,
+        815900.4303101624,
+        0.0
+      ],
+      "originWgs84": [
+        114.157795,
+        22.281979999999997
+      ],
+      "status": "available",
+      "matchConfidence": "official-stop-point-spatial-crop",
+      "sourceTiles": [
+        "11-SW-8D"
+      ],
+      "sources": [
+        {
+          "tile": "11-SW-8D",
+          "sourcePath": "11-SW-8D/INFRASTRUCTURE(TB)/I337501560001062A1/I337501560001062A1.gltf",
+          "sourceGltfSha256": "080f6c9f0b1c33367b92092dc4e9c0893f28665c3ff08baac86d208f6457744b",
+          "nativeRootMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            834125.0625,
+            -2.4557998180389404,
+            -815899.5,
+            1
+          ],
+          "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-8D.zip"
+        }
+      ],
+      "notes": [
+        "Station-vicinity source crop; individual shelter semantic IDs are not present.",
+        "Original geometry remains unchanged inside the crop; outer context triangles are clipped at the crop perimeter with source UV interpolation.",
+        "Raised canopy/platform-like geometry is visible in the source crop and texture-free inspection; stop association remains geographic, not a semantic object ID."
+      ],
+      "crop": {
+        "alongHalfLengthM": 55,
+        "acrossHalfWidthM": 16,
+        "tangentEN": [
+          0.6544076551543557,
+          -0.756141931700245
+        ],
+        "anchorsHK80": [
+          [
+            834318.7444275682,
+            815874.9593074427
+          ],
+          [
+            834284.7420883806,
+            815925.9013128821
+          ]
+        ]
+      },
+      "primitiveStats": [
+        {
+          "tile": "11-SW-8D",
+          "sourceMaterial": 1,
+          "triangles": 52,
+          "vertices": 113
+        },
+        {
+          "tile": "11-SW-8D",
+          "sourceMaterial": 2,
+          "triangles": 2205,
+          "vertices": 1802
+        },
+        {
+          "tile": "11-SW-8D",
+          "sourceMaterial": 11,
+          "triangles": 5971,
+          "vertices": 11283
+        },
+        {
+          "tile": "11-SW-8D",
+          "sourceMaterial": 12,
+          "triangles": 66,
+          "vertices": 132
+        },
+        {
+          "tile": "11-SW-8D",
+          "sourceMaterial": 16,
+          "triangles": 116,
+          "vertices": 206
+        },
+        {
+          "tile": "11-SW-8D",
+          "sourceMaterial": 34,
+          "triangles": 667,
+          "vertices": 588
+        },
+        {
+          "tile": "11-SW-8D",
+          "sourceMaterial": 35,
+          "triangles": 1702,
+          "vertices": 1569
+        }
+      ],
+      "boundsHK80": {
+        "min": [
+          834245.9709239021,
+          815827.7465546336,
+          2.589801073074341
+        ],
+        "max": [
+          834360.601145987,
+          815975.9991305242,
+          16.208400011062622
+        ]
+      },
+      "triangles": 10779,
+      "vertices": 15693,
+      "url": "/tram-models/pedder-street.glb",
+      "bytes": 1307140,
+      "sha256": "06adca59049c98c31e7233e66e8f4cd790dbf67fc343894e44c6eb8e72cacc22",
+      "shelterStatus": "visible-in-geometry",
+      "visualVerification": {
+        "method": "Blender 4.3.2 rendered original color textures and separate texture-free clay comparison",
+        "geometryStatus": "source geometry in vicinity verified",
+        "shelterStatus": "visible-in-geometry",
+        "semanticStopIdInMesh": false
+      },
+      "performance": {
+        "primitives": 7,
+        "textureImages": 7,
+        "alphaTextureImages": 0,
+        "estimatedTextureRgbaBytes": 21508096
+      }
+    },
+    {
+      "id": "pottinger-street",
+      "name": "砵甸乍街 (西行方向)",
+      "stopIds": [
+        "td:99137"
+      ],
+      "originHK80": [
+        834175.5210258273,
+        816067.6553386102,
+        0.0
+      ],
+      "originWgs84": [
+        114.15657,
+        22.28349
+      ],
+      "status": "available",
+      "matchConfidence": "official-stop-point-spatial-crop",
+      "sourceTiles": [
+        "11-SW-8D"
+      ],
+      "sources": [
+        {
+          "tile": "11-SW-8D",
+          "sourcePath": "11-SW-8D/INFRASTRUCTURE(TB)/I337501560001062A1/I337501560001062A1.gltf",
+          "sourceGltfSha256": "080f6c9f0b1c33367b92092dc4e9c0893f28665c3ff08baac86d208f6457744b",
+          "nativeRootMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            834125.0625,
+            -2.4557998180389404,
+            -815899.5,
+            1
+          ],
+          "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-8D.zip"
+        }
+      ],
+      "notes": [
+        "Station-vicinity source crop; individual shelter semantic IDs are not present.",
+        "Original geometry remains unchanged inside the crop; outer context triangles are clipped at the crop perimeter with source UV interpolation.",
+        "Raised canopy/platform-like geometry is visible in the source crop and texture-free inspection; stop association remains geographic, not a semantic object ID."
+      ],
+      "crop": {
+        "alongHalfLengthM": 55,
+        "acrossHalfWidthM": 16,
+        "tangentEN": [
+          0.6271161862649419,
+          -0.7789257274763203
+        ],
+        "anchorsHK80": [
+          [
+            834175.5210258273,
+            816067.6553386102
+          ]
+        ]
+      },
+      "primitiveStats": [
+        {
+          "tile": "11-SW-8D",
+          "sourceMaterial": 1,
+          "triangles": 344,
+          "vertices": 294
+        },
+        {
+          "tile": "11-SW-8D",
+          "sourceMaterial": 2,
+          "triangles": 540,
+          "vertices": 447
+        },
+        {
+          "tile": "11-SW-8D",
+          "sourceMaterial": 6,
+          "triangles": 220,
+          "vertices": 206
+        },
+        {
+          "tile": "11-SW-8D",
+          "sourceMaterial": 8,
+          "triangles": 1649,
+          "vertices": 1289
+        },
+        {
+          "tile": "11-SW-8D",
+          "sourceMaterial": 11,
+          "triangles": 4794,
+          "vertices": 9110
+        },
+        {
+          "tile": "11-SW-8D",
+          "sourceMaterial": 12,
+          "triangles": 36,
+          "vertices": 72
+        },
+        {
+          "tile": "11-SW-8D",
+          "sourceMaterial": 19,
+          "triangles": 52,
+          "vertices": 93
+        }
+      ],
+      "boundsHK80": {
+        "min": [
+          834138.3436235937,
+          816020.7054898787,
+          2.327998399734497
+        ],
+        "max": [
+          834217.8371401703,
+          816119.007139817,
+          15.53279995918274
+        ]
+      },
+      "triangles": 7635,
+      "vertices": 11511,
+      "url": "/tram-models/pottinger-street.glb",
+      "bytes": 1127464,
+      "sha256": "5d2b5cdbe5be27334b6b5221315fbede2f4b7b56a545001d54f2bab2d30e06b2",
+      "shelterStatus": "visible-in-geometry",
+      "visualVerification": {
+        "method": "Blender 4.3.2 rendered original color textures and separate texture-free clay comparison",
+        "geometryStatus": "source geometry in vicinity verified",
+        "shelterStatus": "visible-in-geometry",
+        "semanticStopIdInMesh": false
+      },
+      "performance": {
+        "primitives": 7,
+        "textureImages": 7,
+        "alphaTextureImages": 0,
+        "estimatedTextureRgbaBytes": 17617744
+      }
+    },
+    {
+      "id": "jubilee-street",
+      "name": "租庇利街 (东行方向)",
+      "stopIds": [
+        "td:99215"
+      ],
+      "originHK80": [
+        834081.7590851395,
+        816201.6565858466,
+        0.0
+      ],
+      "originWgs84": [
+        114.15566,
+        22.2847
+      ],
+      "status": "available",
+      "matchConfidence": "official-stop-point-spatial-crop",
+      "sourceTiles": [
+        "11-SW-8B",
+        "11-SW-8D"
+      ],
+      "sources": [
+        {
+          "tile": "11-SW-8B",
+          "sourcePath": "11-SW-8B/INFRASTRUCTURE(TB)/I337501620001062A1/I337501620001062A1.gltf",
+          "sourceGltfSha256": "14bd62f507c5f0270c99cb0f847c31ef8679fa2dac90135c606e30bd8ee251eb",
+          "nativeRootMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            834124.125,
+            -2.1385202407836914,
+            -816397.9375,
+            1
+          ],
+          "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-8B.zip"
+        },
+        {
+          "tile": "11-SW-8D",
+          "sourcePath": "11-SW-8D/INFRASTRUCTURE(TB)/I337501560001062A1/I337501560001062A1.gltf",
+          "sourceGltfSha256": "080f6c9f0b1c33367b92092dc4e9c0893f28665c3ff08baac86d208f6457744b",
+          "nativeRootMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            834125.0625,
+            -2.4557998180389404,
+            -815899.5,
+            1
+          ],
+          "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-8D.zip"
+        }
+      ],
+      "notes": [
+        "Station-vicinity source crop; individual shelter semantic IDs are not present.",
+        "Original geometry remains unchanged inside the crop; outer context triangles are clipped at the crop perimeter with source UV interpolation.",
+        "Raised canopy/platform-like geometry is visible in the source crop and texture-free inspection; stop association remains geographic, not a semantic object ID."
+      ],
+      "crop": {
+        "alongHalfLengthM": 55,
+        "acrossHalfWidthM": 16,
+        "tangentEN": [
+          0.6465993225522796,
+          -0.7628298080666048
+        ],
+        "anchorsHK80": [
+          [
+            834081.7590851395,
+            816201.6565858466
+          ]
+        ]
+      },
+      "primitiveStats": [
+        {
+          "tile": "11-SW-8B",
+          "sourceMaterial": 1,
+          "triangles": 612,
+          "vertices": 1092
+        },
+        {
+          "tile": "11-SW-8B",
+          "sourceMaterial": 4,
+          "triangles": 61,
+          "vertices": 107
+        },
+        {
+          "tile": "11-SW-8B",
+          "sourceMaterial": 5,
+          "triangles": 10,
+          "vertices": 22
+        },
+        {
+          "tile": "11-SW-8B",
+          "sourceMaterial": 17,
+          "triangles": 11,
+          "vertices": 17
+        },
+        {
+          "tile": "11-SW-8B",
+          "sourceMaterial": 19,
+          "triangles": 303,
+          "vertices": 256
+        },
+        {
+          "tile": "11-SW-8B",
+          "sourceMaterial": 29,
+          "triangles": 1120,
+          "vertices": 1127
+        },
+        {
+          "tile": "11-SW-8B",
+          "sourceMaterial": 30,
+          "triangles": 282,
+          "vertices": 359
+        },
+        {
+          "tile": "11-SW-8B",
+          "sourceMaterial": 31,
+          "triangles": 78,
+          "vertices": 65
+        },
+        {
+          "tile": "11-SW-8D",
+          "sourceMaterial": 5,
+          "triangles": 121,
+          "vertices": 124
+        },
+        {
+          "tile": "11-SW-8D",
+          "sourceMaterial": 6,
+          "triangles": 37,
+          "vertices": 69
+        },
+        {
+          "tile": "11-SW-8D",
+          "sourceMaterial": 8,
+          "triangles": 1471,
+          "vertices": 1151
+        },
+        {
+          "tile": "11-SW-8D",
+          "sourceMaterial": 11,
+          "triangles": 3225,
+          "vertices": 6195
+        },
+        {
+          "tile": "11-SW-8D",
+          "sourceMaterial": 17,
+          "triangles": 28,
+          "vertices": 56
+        },
+        {
+          "tile": "11-SW-8D",
+          "sourceMaterial": 18,
+          "triangles": 20,
+          "vertices": 40
+        }
+      ],
+      "boundsHK80": {
+        "min": [
+          834037.998159075,
+          816150.2611422155,
+          2.4985992908477783
+        ],
+        "max": [
+          834119.2495989115,
+          816247.6096833283,
+          16.1899995803833
+        ]
+      },
+      "triangles": 7379,
+      "vertices": 10680,
+      "url": "/tram-models/jubilee-street.glb",
+      "bytes": 1444224,
+      "sha256": "a64132d18bc4720f8596c324325de86aae3fb86f456ac9b63d467cb4d9e40ff6",
+      "shelterStatus": "visible-in-geometry",
+      "visualVerification": {
+        "method": "Blender 4.3.2 rendered original color textures and separate texture-free clay comparison",
+        "geometryStatus": "source geometry in vicinity verified",
+        "shelterStatus": "visible-in-geometry",
+        "semanticStopIdInMesh": false
+      },
+      "performance": {
+        "primitives": 14,
+        "textureImages": 14,
+        "alphaTextureImages": 0,
+        "estimatedTextureRgbaBytes": 26943596
+      }
+    },
+    {
+      "id": "gilman-street",
+      "name": "机利文街 (西行方向) / 机利文街 (东行方向)",
+      "stopIds": [
+        "td:99138",
+        "td:99214"
+      ],
+      "originHK80": [
+        833993.1425079595,
+        816274.2001765713,
+        0.0
+      ],
+      "originWgs84": [
+        114.1548,
+        22.285355000000003
+      ],
+      "status": "available",
+      "matchConfidence": "official-stop-point-spatial-crop",
+      "sourceTiles": [
+        "11-SW-8B"
+      ],
+      "sources": [
+        {
+          "tile": "11-SW-8B",
+          "sourcePath": "11-SW-8B/INFRASTRUCTURE(TB)/I337501620001062A1/I337501620001062A1.gltf",
+          "sourceGltfSha256": "14bd62f507c5f0270c99cb0f847c31ef8679fa2dac90135c606e30bd8ee251eb",
+          "nativeRootMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            834124.125,
+            -2.1385202407836914,
+            -816397.9375,
+            1
+          ],
+          "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-8B.zip"
+        }
+      ],
+      "notes": [
+        "Station-vicinity source crop; individual shelter semantic IDs are not present.",
+        "Original geometry remains unchanged inside the crop; outer context triangles are clipped at the crop perimeter with source UV interpolation.",
+        "Raised canopy/platform-like geometry is visible in the source crop and texture-free inspection; stop association remains geographic, not a semantic object ID."
+      ],
+      "crop": {
+        "alongHalfLengthM": 55,
+        "acrossHalfWidthM": 16,
+        "tangentEN": [
+          0.8262017403477989,
+          -0.5633743730826494
+        ],
+        "anchorsHK80": [
+          [
+            834007.5682619308,
+            816261.4636371044
+          ],
+          [
+            833978.7167539882,
+            816286.9367160382
+          ]
+        ]
+      },
+      "primitiveStats": [
+        {
+          "tile": "11-SW-8B",
+          "sourceMaterial": 1,
+          "triangles": 1648,
+          "vertices": 2916
+        },
+        {
+          "tile": "11-SW-8B",
+          "sourceMaterial": 2,
+          "triangles": 2715,
+          "vertices": 5256
+        },
+        {
+          "tile": "11-SW-8B",
+          "sourceMaterial": 4,
+          "triangles": 98,
+          "vertices": 166
+        },
+        {
+          "tile": "11-SW-8B",
+          "sourceMaterial": 5,
+          "triangles": 26,
+          "vertices": 50
+        },
+        {
+          "tile": "11-SW-8B",
+          "sourceMaterial": 17,
+          "triangles": 53,
+          "vertices": 115
+        },
+        {
+          "tile": "11-SW-8B",
+          "sourceMaterial": 19,
+          "triangles": 2895,
+          "vertices": 2320
+        },
+        {
+          "tile": "11-SW-8B",
+          "sourceMaterial": 29,
+          "triangles": 261,
+          "vertices": 360
+        },
+        {
+          "tile": "11-SW-8B",
+          "sourceMaterial": 30,
+          "triangles": 229,
+          "vertices": 265
+        }
+      ],
+      "boundsHK80": {
+        "min": [
+          833925.8269979001,
+          816224.9655109177,
+          2.9609994888305664
+        ],
+        "max": [
+          834059.0147791756,
+          816320.9339588907,
+          15.956999778747559
+        ]
+      },
+      "triangles": 7925,
+      "vertices": 11448,
+      "url": "/tram-models/gilman-street.glb",
+      "bytes": 1139616,
+      "sha256": "441ebe9acd6aa76730b1abd339147e586d979260a20f4f35ca06a6f334cd99e2",
+      "shelterStatus": "visible-in-geometry",
+      "visualVerification": {
+        "method": "Blender 4.3.2 rendered original color textures and separate texture-free clay comparison",
+        "geometryStatus": "source geometry in vicinity verified",
+        "shelterStatus": "visible-in-geometry",
+        "semanticStopIdInMesh": false
+      },
+      "performance": {
+        "primitives": 8,
+        "textureImages": 8,
+        "alphaTextureImages": 0,
+        "estimatedTextureRgbaBytes": 17518592
+      }
+    },
+    {
+      "id": "man-wa-lane",
+      "name": "文华里 (西行方向)",
+      "stopIds": [
+        "td:99139"
+      ],
+      "originHK80": [
+        833803.5388263213,
+        816377.7654788608,
+        0.0
+      ],
+      "originWgs84": [
+        114.15296,
+        22.28629
+      ],
+      "status": "available",
+      "matchConfidence": "official-stop-point-spatial-crop",
+      "sourceTiles": [
+        "11-SW-8A",
+        "11-SW-8B"
+      ],
+      "sources": [
+        {
+          "tile": "11-SW-8A",
+          "sourcePath": "11-SW-8A/INFRASTRUCTURE(TB)/I330001620001062A1/I330001620001062A1.gltf",
+          "sourceGltfSha256": "798251e4d285d97136ed3f63325e47767f448abf5fe54298f2c2d3c77a8cddf6",
+          "nativeRootMatrix": [
+            0.0254,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -0.0254,
+            0,
+            0,
+            0.0254,
+            0,
+            0,
+            833375.1176,
+            2.3052005722045896,
+            -816502.304,
+            1
+          ],
+          "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-8A.zip"
+        },
+        {
+          "tile": "11-SW-8B",
+          "sourcePath": "11-SW-8B/INFRASTRUCTURE(TB)/I337501620001062A1/I337501620001062A1.gltf",
+          "sourceGltfSha256": "14bd62f507c5f0270c99cb0f847c31ef8679fa2dac90135c606e30bd8ee251eb",
+          "nativeRootMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            834124.125,
+            -2.1385202407836914,
+            -816397.9375,
+            1
+          ],
+          "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-8B.zip"
+        }
+      ],
+      "notes": [
+        "Station-vicinity source crop; individual shelter semantic IDs are not present.",
+        "Original geometry remains unchanged inside the crop; outer context triangles are clipped at the crop perimeter with source UV interpolation.",
+        "Raised canopy/platform-like geometry is visible in the source crop and texture-free inspection; stop association remains geographic, not a semantic object ID."
+      ],
+      "crop": {
+        "alongHalfLengthM": 55,
+        "acrossHalfWidthM": 16,
+        "tangentEN": [
+          0.9256384398131238,
+          -0.37840914198830633
+        ],
+        "anchorsHK80": [
+          [
+            833803.5388263213,
+            816377.7654788608
+          ]
+        ]
+      },
+      "primitiveStats": [
+        {
+          "tile": "11-SW-8A",
+          "sourceMaterial": 10,
+          "triangles": 47,
+          "vertices": 45
+        },
+        {
+          "tile": "11-SW-8B",
+          "sourceMaterial": 1,
+          "triangles": 647,
+          "vertices": 1145
+        },
+        {
+          "tile": "11-SW-8B",
+          "sourceMaterial": 2,
+          "triangles": 2388,
+          "vertices": 4602
+        },
+        {
+          "tile": "11-SW-8B",
+          "sourceMaterial": 4,
+          "triangles": 49,
+          "vertices": 83
+        },
+        {
+          "tile": "11-SW-8B",
+          "sourceMaterial": 5,
+          "triangles": 13,
+          "vertices": 27
+        },
+        {
+          "tile": "11-SW-8B",
+          "sourceMaterial": 16,
+          "triangles": 277,
+          "vertices": 230
+        },
+        {
+          "tile": "11-SW-8B",
+          "sourceMaterial": 17,
+          "triangles": 2957,
+          "vertices": 2606
+        }
+      ],
+      "boundsHK80": {
+        "min": [
+          833748.345959267,
+          816348.2688123956,
+          3.4659996032714844
+        ],
+        "max": [
+          833859.2673979102,
+          816413.075298217,
+          14.875998497009277
+        ]
+      },
+      "triangles": 6378,
+      "vertices": 8738,
+      "url": "/tram-models/man-wa-lane.glb",
+      "bytes": 742600,
+      "sha256": "061ff9d5aa9baf109d425607b21185dab1b09d686fbd7ad73f8a96c8c4ab7246",
+      "shelterStatus": "visible-in-geometry",
+      "visualVerification": {
+        "method": "Blender 4.3.2 rendered original color textures and separate texture-free clay comparison",
+        "geometryStatus": "source geometry in vicinity verified",
+        "shelterStatus": "visible-in-geometry",
+        "semanticStopIdInMesh": false
+      },
+      "performance": {
+        "primitives": 7,
+        "textureImages": 7,
+        "alphaTextureImages": 0,
+        "estimatedTextureRgbaBytes": 11551156
+      }
+    },
+    {
+      "id": "hillier-street",
+      "name": "禧利街 (东行方向)",
+      "stopIds": [
+        "td:99213"
+      ],
+      "originHK80": [
+        833694.3079573162,
+        816414.3254199135,
+        0.0
+      ],
+      "originWgs84": [
+        114.1519,
+        22.28662
+      ],
+      "status": "available",
+      "matchConfidence": "official-stop-point-spatial-crop",
+      "sourceTiles": [
+        "11-SW-8A",
+        "11-SW-8B"
+      ],
+      "sources": [
+        {
+          "tile": "11-SW-8A",
+          "sourcePath": "11-SW-8A/INFRASTRUCTURE(TB)/I330001620001062A1/I330001620001062A1.gltf",
+          "sourceGltfSha256": "798251e4d285d97136ed3f63325e47767f448abf5fe54298f2c2d3c77a8cddf6",
+          "nativeRootMatrix": [
+            0.0254,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -0.0254,
+            0,
+            0,
+            0.0254,
+            0,
+            0,
+            833375.1176,
+            2.3052005722045896,
+            -816502.304,
+            1
+          ],
+          "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-8A.zip"
+        },
+        {
+          "tile": "11-SW-8B",
+          "sourcePath": "11-SW-8B/INFRASTRUCTURE(TB)/I337501620001062A1/I337501620001062A1.gltf",
+          "sourceGltfSha256": "14bd62f507c5f0270c99cb0f847c31ef8679fa2dac90135c606e30bd8ee251eb",
+          "nativeRootMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            834124.125,
+            -2.1385202407836914,
+            -816397.9375,
+            1
+          ],
+          "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-8B.zip"
+        }
+      ],
+      "notes": [
+        "Station-vicinity source crop; individual shelter semantic IDs are not present.",
+        "Original geometry remains unchanged inside the crop; outer context triangles are clipped at the crop perimeter with source UV interpolation.",
+        "Shelter geometry not confirmed in inspected source layers. The asset shows official street infrastructure at this stop; it must not be represented as a complete shelter model."
+      ],
+      "crop": {
+        "alongHalfLengthM": 55,
+        "acrossHalfWidthM": 16,
+        "tangentEN": [
+          0.8795309073214597,
+          -0.4758417626336406
+        ],
+        "anchorsHK80": [
+          [
+            833694.3079573162,
+            816414.3254199135
+          ]
+        ]
+      },
+      "primitiveStats": [
+        {
+          "tile": "11-SW-8A",
+          "sourceMaterial": 1,
+          "triangles": 962,
+          "vertices": 1690
+        },
+        {
+          "tile": "11-SW-8A",
+          "sourceMaterial": 2,
+          "triangles": 8,
+          "vertices": 16
+        },
+        {
+          "tile": "11-SW-8A",
+          "sourceMaterial": 3,
+          "triangles": 4519,
+          "vertices": 8739
+        },
+        {
+          "tile": "11-SW-8A",
+          "sourceMaterial": 4,
+          "triangles": 687,
+          "vertices": 1333
+        },
+        {
+          "tile": "11-SW-8A",
+          "sourceMaterial": 5,
+          "triangles": 18,
+          "vertices": 24
+        },
+        {
+          "tile": "11-SW-8A",
+          "sourceMaterial": 6,
+          "triangles": 28,
+          "vertices": 56
+        },
+        {
+          "tile": "11-SW-8A",
+          "sourceMaterial": 9,
+          "triangles": 117,
+          "vertices": 95
+        },
+        {
+          "tile": "11-SW-8A",
+          "sourceMaterial": 10,
+          "triangles": 1656,
+          "vertices": 1411
+        },
+        {
+          "tile": "11-SW-8B",
+          "sourceMaterial": 17,
+          "triangles": 4,
+          "vertices": 6
+        }
+      ],
+      "boundsHK80": {
+        "min": [
+          833638.3202892113,
+          816386.7823158823,
+          3.291999835205078
+        ],
+        "max": [
+          833750.295625421,
+          816436.0129827637,
+          15.07400024871826
+        ]
+      },
+      "triangles": 7999,
+      "vertices": 13370,
+      "url": "/tram-models/hillier-street.glb",
+      "bytes": 1100076,
+      "sha256": "5f037a4a0d563729d333f8ac77ac2ad08c9c8f35f80fd653d1ae5bfd317cb801",
+      "shelterStatus": "not-confirmed",
+      "visualVerification": {
+        "method": "Blender 4.3.2 rendered original color textures and separate texture-free clay comparison",
+        "geometryStatus": "source geometry in vicinity verified",
+        "shelterStatus": "not-confirmed",
+        "semanticStopIdInMesh": false
+      },
+      "performance": {
+        "primitives": 9,
+        "textureImages": 9,
+        "alphaTextureImages": 0,
+        "estimatedTextureRgbaBytes": 17893012
+      }
+    },
+    {
+      "id": "western-market",
+      "name": "上环街市(西港城)总站",
+      "stopIds": [
+        "td:99140"
+      ],
+      "originHK80": [
+        833568.5873643098,
+        816440.922892115,
+        0.0
+      ],
+      "originWgs84": [
+        114.15068,
+        22.28686
+      ],
+      "status": "available",
+      "matchConfidence": "official-stop-point-spatial-crop",
+      "sourceTiles": [
+        "11-SW-8A"
+      ],
+      "sources": [
+        {
+          "tile": "11-SW-8A",
+          "sourcePath": "11-SW-8A/INFRASTRUCTURE(TB)/I330001620001062A1/I330001620001062A1.gltf",
+          "sourceGltfSha256": "798251e4d285d97136ed3f63325e47767f448abf5fe54298f2c2d3c77a8cddf6",
+          "nativeRootMatrix": [
+            0.0254,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -0.0254,
+            0,
+            0,
+            0.0254,
+            0,
+            0,
+            833375.1176,
+            2.3052005722045896,
+            -816502.304,
+            1
+          ],
+          "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-8A.zip"
+        }
+      ],
+      "notes": [
+        "Station-vicinity source crop; individual shelter semantic IDs are not present.",
+        "Original geometry remains unchanged inside the crop; outer context triangles are clipped at the crop perimeter with source UV interpolation.",
+        "Shelter geometry not confirmed in inspected source layers. The asset shows official street infrastructure at this stop; it must not be represented as a complete shelter model."
+      ],
+      "crop": {
+        "alongHalfLengthM": 55,
+        "acrossHalfWidthM": 16,
+        "tangentEN": [
+          0.9657175764971444,
+          -0.25959499695580046
+        ],
+        "anchorsHK80": [
+          [
+            833568.5873643098,
+            816440.922892115
+          ]
+        ]
+      },
+      "primitiveStats": [
+        {
+          "tile": "11-SW-8A",
+          "sourceMaterial": 1,
+          "triangles": 2204,
+          "vertices": 3894
+        },
+        {
+          "tile": "11-SW-8A",
+          "sourceMaterial": 2,
+          "triangles": 17,
+          "vertices": 33
+        },
+        {
+          "tile": "11-SW-8A",
+          "sourceMaterial": 3,
+          "triangles": 4588,
+          "vertices": 8866
+        },
+        {
+          "tile": "11-SW-8A",
+          "sourceMaterial": 4,
+          "triangles": 1999,
+          "vertices": 3885
+        },
+        {
+          "tile": "11-SW-8A",
+          "sourceMaterial": 5,
+          "triangles": 80,
+          "vertices": 122
+        },
+        {
+          "tile": "11-SW-8A",
+          "sourceMaterial": 6,
+          "triangles": 63,
+          "vertices": 125
+        },
+        {
+          "tile": "11-SW-8A",
+          "sourceMaterial": 10,
+          "triangles": 1137,
+          "vertices": 883
+        },
+        {
+          "tile": "11-SW-8A",
+          "sourceMaterial": 11,
+          "triangles": 1219,
+          "vertices": 933
+        }
+      ],
+      "boundsHK80": {
+        "min": [
+          833514.9017316238,
+          816422.2102469726,
+          3.3990001838684076
+        ],
+        "max": [
+          833624.7837841905,
+          816463.9432983927,
+          14.88500093231201
+        ]
+      },
+      "triangles": 11307,
+      "vertices": 18741,
+      "url": "/tram-models/western-market.glb",
+      "bytes": 1480308,
+      "sha256": "ec81eaf7bdcf4df32acd4579d6b93e278945b8ccc8cdb9630ad7d753b85269cf",
+      "shelterStatus": "not-confirmed",
+      "visualVerification": {
+        "method": "Blender 4.3.2 rendered original color textures and separate texture-free clay comparison",
+        "geometryStatus": "source geometry in vicinity verified",
+        "shelterStatus": "not-confirmed",
+        "semanticStopIdInMesh": false
+      },
+      "performance": {
+        "primitives": 8,
+        "textureImages": 8,
+        "alphaTextureImages": 0,
+        "estimatedTextureRgbaBytes": 22958080
+      }
+    },
+    {
+      "id": "macau-ferry-terminal",
+      "name": "港澳码头 (东行方向)",
+      "stopIds": [
+        "td:99211"
+      ],
+      "originHK80": [
+        833509.8646313513,
+        816540.5939992478,
+        0.0
+      ],
+      "originWgs84": [
+        114.15011,
+        22.28776
+      ],
+      "status": "available",
+      "matchConfidence": "official-stop-point-spatial-crop",
+      "sourceTiles": [
+        "11-SW-8A"
+      ],
+      "sources": [
+        {
+          "tile": "11-SW-8A",
+          "sourcePath": "11-SW-8A/INFRASTRUCTURE(TB)/I330001620001062A1/I330001620001062A1.gltf",
+          "sourceGltfSha256": "798251e4d285d97136ed3f63325e47767f448abf5fe54298f2c2d3c77a8cddf6",
+          "nativeRootMatrix": [
+            0.0254,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -0.0254,
+            0,
+            0,
+            0.0254,
+            0,
+            0,
+            833375.1176,
+            2.3052005722045896,
+            -816502.304,
+            1
+          ],
+          "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-8A.zip"
+        }
+      ],
+      "notes": [
+        "Station-vicinity source crop; individual shelter semantic IDs are not present.",
+        "Original geometry remains unchanged inside the crop; outer context triangles are clipped at the crop perimeter with source UV interpolation.",
+        "Shelter geometry not confirmed in inspected source layers. The asset shows official street infrastructure at this stop; it must not be represented as a complete shelter model."
+      ],
+      "crop": {
+        "alongHalfLengthM": 55,
+        "acrossHalfWidthM": 16,
+        "tangentEN": [
+          0.8251602144337603,
+          -0.5648987701488035
+        ],
+        "anchorsHK80": [
+          [
+            833509.8646313513,
+            816540.5939992478
+          ]
+        ]
+      },
+      "primitiveStats": [
+        {
+          "tile": "11-SW-8A",
+          "sourceMaterial": 1,
+          "triangles": 366,
+          "vertices": 660
+        },
+        {
+          "tile": "11-SW-8A",
+          "sourceMaterial": 2,
+          "triangles": 44,
+          "vertices": 88
+        },
+        {
+          "tile": "11-SW-8A",
+          "sourceMaterial": 3,
+          "triangles": 1165,
+          "vertices": 2235
+        },
+        {
+          "tile": "11-SW-8A",
+          "sourceMaterial": 4,
+          "triangles": 110,
+          "vertices": 212
+        },
+        {
+          "tile": "11-SW-8A",
+          "sourceMaterial": 15,
+          "triangles": 1353,
+          "vertices": 1158
+        }
+      ],
+      "boundsHK80": {
+        "min": [
+          833455.442439235,
+          816512.2486224665,
+          2.892000219726562
+        ],
+        "max": [
+          833564.2868234676,
+          816584.6054693158,
+          15.93700106048584
+        ]
+      },
+      "triangles": 3038,
+      "vertices": 4353,
+      "url": "/tram-models/macau-ferry-terminal.glb",
+      "bytes": 640368,
+      "sha256": "360ba024cb068242d4a18054702d9d20efc96e3fddedfea92db53fd8021da528",
+      "shelterStatus": "not-confirmed",
+      "visualVerification": {
+        "method": "Blender 4.3.2 rendered original color textures and separate texture-free clay comparison",
+        "geometryStatus": "source geometry in vicinity verified",
+        "shelterStatus": "not-confirmed",
+        "semanticStopIdInMesh": false
+      },
+      "performance": {
+        "primitives": 5,
+        "textureImages": 5,
+        "alphaTextureImages": 0,
+        "estimatedTextureRgbaBytes": 11321296
+      }
+    }
+  ],
+  "stops": [
+    {
+      "id": "td:99125",
+      "name": "坚拿道西 (西行方向)",
+      "coordinates": [
+        114.18125,
+        22.27934
+      ],
+      "hk80": [
+        836718.9497450987,
+        815607.9752749735
+      ],
+      "officialPointSource": "https://static.data.gov.hk/td/routes-fares-geojson/JSON_TRAM.json",
+      "officialPointDifferenceM": 1.002,
+      "officialNameEn": "Canal Road West (West bound)",
+      "officialCoordinates": [
+        114.18125,
+        22.279349
+      ],
+      "stopIdentityConfidence": "TD stopId exact join; GTFS vs GeoJSON coordinate comparison",
+      "groupId": "canal-road-west",
+      "status": "available",
+      "shelterStatus": "visible-in-geometry"
+    },
+    {
+      "id": "td:99126",
+      "name": "杜老志道 (西行方向)",
+      "coordinates": [
+        114.17767,
+        22.27816
+      ],
+      "hk80": [
+        836350.0000999807,
+        815477.3025753963
+      ],
+      "officialPointSource": "https://static.data.gov.hk/td/routes-fares-geojson/JSON_TRAM.json",
+      "officialPointDifferenceM": 0.668,
+      "officialNameEn": "Tonnochy Road (West bound)",
+      "officialCoordinates": [
+        114.17767,
+        22.278166
+      ],
+      "stopIdentityConfidence": "TD stopId exact join; GTFS vs GeoJSON coordinate comparison",
+      "groupId": "tonnochy-road",
+      "status": "available",
+      "shelterStatus": "visible-in-geometry"
+    },
+    {
+      "id": "td:99127",
+      "name": "巴路士街 (西行方向)",
+      "coordinates": [
+        114.17591,
+        22.27725
+      ],
+      "hk80": [
+        836168.61454262,
+        815376.5345757789
+      ],
+      "officialPointSource": "https://static.data.gov.hk/td/routes-fares-geojson/JSON_TRAM.json",
+      "officialPointDifferenceM": 0.607,
+      "officialNameEn": "Burrows Street (West bound)",
+      "officialCoordinates": [
+        114.175914,
+        22.277254
+      ],
+      "stopIdentityConfidence": "TD stopId exact join; GTFS vs GeoJSON coordinate comparison",
+      "groupId": "burrows-fleming",
+      "status": "available",
+      "shelterStatus": "visible-in-geometry"
+    },
+    {
+      "id": "td:99128",
+      "name": "柯布连道 (西行方向)",
+      "coordinates": [
+        114.17341,
+        22.27654
+      ],
+      "hk80": [
+        835910.9620269834,
+        815297.9170565471
+      ],
+      "officialPointSource": "https://static.data.gov.hk/td/routes-fares-geojson/JSON_TRAM.json",
+      "officialPointDifferenceM": 0.111,
+      "officialNameEn": "O'Brien Road (West bound)",
+      "officialCoordinates": [
+        114.17341,
+        22.276541
+      ],
+      "stopIdentityConfidence": "TD stopId exact join; GTFS vs GeoJSON coordinate comparison",
+      "groupId": "obrien-road",
+      "status": "available",
+      "shelterStatus": "visible-in-geometry"
+    },
+    {
+      "id": "td:99129",
+      "name": "汕头街 (西行方向)",
+      "coordinates": [
+        114.17206,
+        22.27639
+      ],
+      "hk80": [
+        835771.8294019757,
+        815281.3107088172
+      ],
+      "officialPointSource": "https://static.data.gov.hk/td/routes-fares-geojson/JSON_TRAM.json",
+      "officialPointDifferenceM": 0.699,
+      "officialNameEn": "Swatow Street (West bound)",
+      "officialCoordinates": [
+        114.172062,
+        22.276396
+      ],
+      "stopIdentityConfidence": "TD stopId exact join; GTFS vs GeoJSON coordinate comparison",
+      "groupId": "swatow-luard",
+      "status": "available",
+      "shelterStatus": "visible-in-geometry"
+    },
+    {
+      "id": "td:99130",
+      "name": "机利臣街 (西行方向)",
+      "coordinates": [
+        114.17015,
+        22.27711
+      ],
+      "hk80": [
+        835574.986556145,
+        815361.0467149888
+      ],
+      "officialPointSource": "https://static.data.gov.hk/td/routes-fares-geojson/JSON_TRAM.json",
+      "officialPointDifferenceM": 1.437,
+      "officialNameEn": "Gresson Street (West bound)",
+      "officialCoordinates": [
+        114.17016,
+        22.277119
+      ],
+      "stopIdentityConfidence": "TD stopId exact join; GTFS vs GeoJSON coordinate comparison",
+      "groupId": "gresson-fenwick",
+      "status": "available",
+      "shelterStatus": "visible-in-geometry"
+    },
+    {
+      "id": "td:99132",
+      "name": "军器厂街 (西行方向)",
+      "coordinates": [
+        114.16851,
+        22.27776
+      ],
+      "hk80": [
+        835405.9714635783,
+        815433.032272074
+      ],
+      "officialPointSource": "https://static.data.gov.hk/td/routes-fares-geojson/JSON_TRAM.json",
+      "officialPointDifferenceM": 1.002,
+      "officialNameEn": "Arsenal Street (West bound)",
+      "officialCoordinates": [
+        114.16851,
+        22.277769
+      ],
+      "stopIdentityConfidence": "TD stopId exact join; GTFS vs GeoJSON coordinate comparison",
+      "groupId": "arsenal-street",
+      "status": "available",
+      "shelterStatus": "visible-in-geometry"
+    },
+    {
+      "id": "td:99133",
+      "name": "金钟港铁站 (西行方向)",
+      "coordinates": [
+        114.16454,
+        22.27827
+      ],
+      "hk80": [
+        834996.8281607138,
+        815489.5345644116
+      ],
+      "officialPointSource": "https://static.data.gov.hk/td/routes-fares-geojson/JSON_TRAM.json",
+      "officialPointDifferenceM": 0.491,
+      "officialNameEn": "Admiralty MTR Station (West bound)",
+      "officialCoordinates": [
+        114.164542,
+        22.278274
+      ],
+      "stopIdentityConfidence": "TD stopId exact join; GTFS vs GeoJSON coordinate comparison",
+      "groupId": "admiralty",
+      "status": "available",
+      "shelterStatus": "visible-in-geometry"
+    },
+    {
+      "id": "td:99134",
+      "name": "红棉道 (西行方向)",
+      "coordinates": [
+        114.16287,
+        22.27921
+      ],
+      "hk80": [
+        834824.7283253548,
+        815593.6395921604
+      ],
+      "officialPointSource": "https://static.data.gov.hk/td/routes-fares-geojson/JSON_TRAM.json",
+      "officialPointDifferenceM": 0.455,
+      "officialNameEn": "Cotton Tree Drive (West bound)",
+      "officialCoordinates": [
+        114.162873,
+        22.279213
+      ],
+      "stopIdentityConfidence": "TD stopId exact join; GTFS vs GeoJSON coordinate comparison",
+      "groupId": "cotton-tree-drive",
+      "status": "available",
+      "shelterStatus": "visible-in-geometry"
+    },
+    {
+      "id": "td:99135",
+      "name": "银行街 (西行方向)",
+      "coordinates": [
+        114.15965,
+        22.28062
+      ],
+      "hk80": [
+        834492.896536634,
+        815749.8089266197
+      ],
+      "officialPointSource": "https://static.data.gov.hk/td/routes-fares-geojson/JSON_TRAM.json",
+      "officialPointDifferenceM": 0.245,
+      "officialNameEn": "Bank Street (West bound)",
+      "officialCoordinates": [
+        114.159651,
+        22.280622
+      ],
+      "stopIdentityConfidence": "TD stopId exact join; GTFS vs GeoJSON coordinate comparison",
+      "groupId": "bank-street",
+      "status": "available",
+      "shelterStatus": "visible-in-geometry"
+    },
+    {
+      "id": "td:99136",
+      "name": "毕打街 (西行方向)",
+      "coordinates": [
+        114.15796,
+        22.28175
+      ],
+      "hk80": [
+        834318.7444275682,
+        815874.9593074427
+      ],
+      "officialPointSource": "https://static.data.gov.hk/td/routes-fares-geojson/JSON_TRAM.json",
+      "officialPointDifferenceM": 1.023,
+      "officialNameEn": "Pedder Street (West bound)",
+      "officialCoordinates": [
+        114.157962,
+        22.281759
+      ],
+      "stopIdentityConfidence": "TD stopId exact join; GTFS vs GeoJSON coordinate comparison",
+      "groupId": "pedder-street",
+      "status": "available",
+      "shelterStatus": "visible-in-geometry"
+    },
+    {
+      "id": "td:99137",
+      "name": "砵甸乍街 (西行方向)",
+      "coordinates": [
+        114.15657,
+        22.28349
+      ],
+      "hk80": [
+        834175.5210258273,
+        816067.6553386102
+      ],
+      "officialPointSource": "https://static.data.gov.hk/td/routes-fares-geojson/JSON_TRAM.json",
+      "officialPointDifferenceM": 0.614,
+      "officialNameEn": "Pottinger Street (West bound)",
+      "officialCoordinates": [
+        114.156575,
+        22.283493
+      ],
+      "stopIdentityConfidence": "TD stopId exact join; GTFS vs GeoJSON coordinate comparison",
+      "groupId": "pottinger-street",
+      "status": "available",
+      "shelterStatus": "visible-in-geometry"
+    },
+    {
+      "id": "td:99138",
+      "name": "机利文街 (西行方向)",
+      "coordinates": [
+        114.15494,
+        22.28524
+      ],
+      "hk80": [
+        834007.5682619308,
+        816261.4636371044
+      ],
+      "officialPointSource": "https://static.data.gov.hk/td/routes-fares-geojson/JSON_TRAM.json",
+      "officialPointDifferenceM": 0.693,
+      "officialNameEn": "Gilman Street (West bound)",
+      "officialCoordinates": [
+        114.154944,
+        22.285245
+      ],
+      "stopIdentityConfidence": "TD stopId exact join; GTFS vs GeoJSON coordinate comparison",
+      "groupId": "gilman-street",
+      "status": "available",
+      "shelterStatus": "visible-in-geometry"
+    },
+    {
+      "id": "td:99139",
+      "name": "文华里 (西行方向)",
+      "coordinates": [
+        114.15296,
+        22.28629
+      ],
+      "hk80": [
+        833803.5388263213,
+        816377.7654788608
+      ],
+      "officialPointSource": "https://static.data.gov.hk/td/routes-fares-geojson/JSON_TRAM.json",
+      "officialPointDifferenceM": 0.468,
+      "officialNameEn": "Man Wah Lane (West bound)",
+      "officialCoordinates": [
+        114.152964,
+        22.286292
+      ],
+      "stopIdentityConfidence": "TD stopId exact join; GTFS vs GeoJSON coordinate comparison",
+      "groupId": "man-wa-lane",
+      "status": "available",
+      "shelterStatus": "visible-in-geometry"
+    },
+    {
+      "id": "td:99140",
+      "name": "上环街市(西港城)总站",
+      "coordinates": [
+        114.15068,
+        22.28686
+      ],
+      "hk80": [
+        833568.5873643098,
+        816440.922892115
+      ],
+      "officialPointSource": "https://static.data.gov.hk/td/routes-fares-geojson/JSON_TRAM.json",
+      "officialPointDifferenceM": 0.427,
+      "officialNameEn": "Western Market Terminus",
+      "officialCoordinates": [
+        114.150684,
+        22.286861
+      ],
+      "stopIdentityConfidence": "TD stopId exact join; GTFS vs GeoJSON coordinate comparison",
+      "groupId": "western-market",
+      "status": "available",
+      "shelterStatus": "not-confirmed"
+    },
+    {
+      "id": "td:99211",
+      "name": "港澳码头 (东行方向)",
+      "coordinates": [
+        114.15011,
+        22.28776
+      ],
+      "hk80": [
+        833509.8646313513,
+        816540.5939992478
+      ],
+      "officialPointSource": "https://static.data.gov.hk/td/routes-fares-geojson/JSON_TRAM.json",
+      "officialPointDifferenceM": 0.457,
+      "officialNameEn": "Macau Ferry Terminal (East bound)",
+      "officialCoordinates": [
+        114.150111,
+        22.287764
+      ],
+      "stopIdentityConfidence": "TD stopId exact join; GTFS vs GeoJSON coordinate comparison",
+      "groupId": "macau-ferry-terminal",
+      "status": "available",
+      "shelterStatus": "not-confirmed"
+    },
+    {
+      "id": "td:99213",
+      "name": "禧利街 (东行方向)",
+      "coordinates": [
+        114.1519,
+        22.28662
+      ],
+      "hk80": [
+        833694.3079573162,
+        816414.3254199135
+      ],
+      "officialPointSource": "https://static.data.gov.hk/td/routes-fares-geojson/JSON_TRAM.json",
+      "officialPointDifferenceM": 0.983,
+      "officialNameEn": "Hillier Street (East bound)",
+      "officialCoordinates": [
+        114.151907,
+        22.286626
+      ],
+      "stopIdentityConfidence": "TD stopId exact join; GTFS vs GeoJSON coordinate comparison",
+      "groupId": "hillier-street",
+      "status": "available",
+      "shelterStatus": "not-confirmed"
+    },
+    {
+      "id": "td:99214",
+      "name": "机利文街 (东行方向)",
+      "coordinates": [
+        114.15466,
+        22.28547
+      ],
+      "hk80": [
+        833978.7167539882,
+        816286.9367160382
+      ],
+      "officialPointSource": "https://static.data.gov.hk/td/routes-fares-geojson/JSON_TRAM.json",
+      "officialPointDifferenceM": 1.155,
+      "officialNameEn": "Gilman Street (East bound)",
+      "officialCoordinates": [
+        114.154663,
+        22.28548
+      ],
+      "stopIdentityConfidence": "TD stopId exact join; GTFS vs GeoJSON coordinate comparison",
+      "groupId": "gilman-street",
+      "status": "available",
+      "shelterStatus": "visible-in-geometry"
+    },
+    {
+      "id": "td:99215",
+      "name": "租庇利街 (东行方向)",
+      "coordinates": [
+        114.15566,
+        22.2847
+      ],
+      "hk80": [
+        834081.7590851395,
+        816201.6565858466
+      ],
+      "officialPointSource": "https://static.data.gov.hk/td/routes-fares-geojson/JSON_TRAM.json",
+      "officialPointDifferenceM": 0.392,
+      "officialNameEn": "Jubilee Street (East bound)",
+      "officialCoordinates": [
+        114.155662,
+        22.284703
+      ],
+      "stopIdentityConfidence": "TD stopId exact join; GTFS vs GeoJSON coordinate comparison",
+      "groupId": "jubilee-street",
+      "status": "available",
+      "shelterStatus": "visible-in-geometry"
+    },
+    {
+      "id": "td:99216",
+      "name": "毕打街 (东行方向)",
+      "coordinates": [
+        114.15763,
+        22.28221
+      ],
+      "hk80": [
+        834284.7420883806,
+        815925.9013128821
+      ],
+      "officialPointSource": "https://static.data.gov.hk/td/routes-fares-geojson/JSON_TRAM.json",
+      "officialPointDifferenceM": 1.155,
+      "officialNameEn": "Pedder Street (East bound)",
+      "officialCoordinates": [
+        114.157633,
+        22.28222
+      ],
+      "stopIdentityConfidence": "TD stopId exact join; GTFS vs GeoJSON coordinate comparison",
+      "groupId": "pedder-street",
+      "status": "available",
+      "shelterStatus": "visible-in-geometry"
+    },
+    {
+      "id": "td:99217",
+      "name": "雪厂街 (东行方向)",
+      "coordinates": [
+        114.15861,
+        22.28103
+      ],
+      "hk80": [
+        834385.7218668868,
+        815795.2224852967
+      ],
+      "officialPointSource": "https://static.data.gov.hk/td/routes-fares-geojson/JSON_TRAM.json",
+      "officialPointDifferenceM": 0.838,
+      "officialNameEn": "Ice House Street (East bound)",
+      "officialCoordinates": [
+        114.158613,
+        22.281037
+      ],
+      "stopIdentityConfidence": "TD stopId exact join; GTFS vs GeoJSON coordinate comparison",
+      "groupId": "ice-house-street",
+      "status": "available",
+      "shelterStatus": "visible-in-geometry"
+    },
+    {
+      "id": "td:99218",
+      "name": "银行街 (东行方向)",
+      "coordinates": [
+        114.16025,
+        22.28053
+      ],
+      "hk80": [
+        834554.7301411061,
+        815739.8359462295
+      ],
+      "officialPointSource": "https://static.data.gov.hk/td/routes-fares-geojson/JSON_TRAM.json",
+      "officialPointDifferenceM": 0.328,
+      "officialNameEn": "Bank Street (East bound)",
+      "officialCoordinates": [
+        114.160253,
+        22.280531
+      ],
+      "stopIdentityConfidence": "TD stopId exact join; GTFS vs GeoJSON coordinate comparison",
+      "groupId": "bank-street",
+      "status": "available",
+      "shelterStatus": "visible-in-geometry"
+    },
+    {
+      "id": "td:99219",
+      "name": "美利道 (东行方向)",
+      "coordinates": [
+        114.16199,
+        22.27972
+      ],
+      "hk80": [
+        834734.0420717731,
+        815650.1226446518
+      ],
+      "officialPointSource": "https://static.data.gov.hk/td/routes-fares-geojson/JSON_TRAM.json",
+      "officialPointDifferenceM": 1.286,
+      "officialNameEn": "Murray Road (East bound)",
+      "officialCoordinates": [
+        114.161999,
+        22.279728
+      ],
+      "stopIdentityConfidence": "TD stopId exact join; GTFS vs GeoJSON coordinate comparison",
+      "groupId": "murray-road",
+      "status": "available",
+      "shelterStatus": "visible-in-geometry"
+    },
+    {
+      "id": "td:99220",
+      "name": "金钟港铁站 (东行方向)",
+      "coordinates": [
+        114.16438,
+        22.2784
+      ],
+      "hk80": [
+        834980.3398183857,
+        815503.9313501155
+      ],
+      "officialPointSource": "https://static.data.gov.hk/td/routes-fares-geojson/JSON_TRAM.json",
+      "officialPointDifferenceM": 1.273,
+      "officialNameEn": "Admiralty MTR Station (East bound)",
+      "officialCoordinates": [
+        114.164386,
+        22.27841
+      ],
+      "stopIdentityConfidence": "TD stopId exact join; GTFS vs GeoJSON coordinate comparison",
+      "groupId": "admiralty",
+      "status": "available",
+      "shelterStatus": "visible-in-geometry"
+    },
+    {
+      "id": "td:99221",
+      "name": "军器厂街 (东行方向)",
+      "coordinates": [
+        114.16817,
+        22.27785
+      ],
+      "hk80": [
+        835370.9316608051,
+        815443.0003104091
+      ],
+      "officialPointSource": "https://static.data.gov.hk/td/routes-fares-geojson/JSON_TRAM.json",
+      "officialPointDifferenceM": 1.007,
+      "officialNameEn": "Arsenal Street (East bound)",
+      "officialCoordinates": [
+        114.168171,
+        22.277859
+      ],
+      "stopIdentityConfidence": "TD stopId exact join; GTFS vs GeoJSON coordinate comparison",
+      "groupId": "arsenal-street",
+      "status": "available",
+      "shelterStatus": "visible-in-geometry"
+    },
+    {
+      "id": "td:99131",
+      "name": "分域街 (东行方向)",
+      "coordinates": [
+        114.17008,
+        22.27725
+      ],
+      "hk80": [
+        835567.7730203632,
+        815376.5498105261
+      ],
+      "officialPointSource": "https://static.data.gov.hk/td/routes-fares-geojson/JSON_TRAM.json",
+      "officialPointDifferenceM": 0.491,
+      "officialNameEn": "Fenwick Street (East bound)",
+      "officialCoordinates": [
+        114.170082,
+        22.277254
+      ],
+      "stopIdentityConfidence": "TD stopId exact join; GTFS vs GeoJSON coordinate comparison",
+      "groupId": "gresson-fenwick",
+      "status": "available",
+      "shelterStatus": "visible-in-geometry"
+    },
+    {
+      "id": "td:99222",
+      "name": "卢押道 (东行方向)",
+      "coordinates": [
+        114.172,
+        22.27645
+      ],
+      "hk80": [
+        835765.6459586412,
+        815287.9549509328
+      ],
+      "officialPointSource": "https://static.data.gov.hk/td/routes-fares-geojson/JSON_TRAM.json",
+      "officialPointDifferenceM": 1.048,
+      "officialNameEn": "Luard Road (East bound)",
+      "officialCoordinates": [
+        114.172003,
+        22.276459
+      ],
+      "stopIdentityConfidence": "TD stopId exact join; GTFS vs GeoJSON coordinate comparison",
+      "groupId": "swatow-luard",
+      "status": "available",
+      "shelterStatus": "visible-in-geometry"
+    },
+    {
+      "id": "td:99223",
+      "name": "柯布连道 (东行方向)",
+      "coordinates": [
+        114.17319,
+        22.27658
+      ],
+      "hk80": [
+        835888.2887541557,
+        815302.3469496331
+      ],
+      "officialPointSource": "https://static.data.gov.hk/td/routes-fares-geojson/JSON_TRAM.json",
+      "officialPointDifferenceM": 0.983,
+      "officialNameEn": "O'Brien Road (East bound)",
+      "officialCoordinates": [
+        114.173197,
+        22.276586
+      ],
+      "stopIdentityConfidence": "TD stopId exact join; GTFS vs GeoJSON coordinate comparison",
+      "groupId": "obrien-road",
+      "status": "available",
+      "shelterStatus": "visible-in-geometry"
+    },
+    {
+      "id": "td:99224",
+      "name": "菲林明道 (东行方向)",
+      "coordinates": [
+        114.17541,
+        22.27705
+      ],
+      "hk80": [
+        836117.0841873897,
+        815354.3881523059
+      ],
+      "officialPointSource": "https://static.data.gov.hk/td/routes-fares-geojson/JSON_TRAM.json",
+      "officialPointDifferenceM": 1.143,
+      "officialNameEn": "Fleming Road (East bound)",
+      "officialCoordinates": [
+        114.175419,
+        22.277056
+      ],
+      "stopIdentityConfidence": "TD stopId exact join; GTFS vs GeoJSON coordinate comparison",
+      "groupId": "burrows-fleming",
+      "status": "available",
+      "shelterStatus": "visible-in-geometry"
+    },
+    {
+      "id": "td:99226",
+      "name": "杜老志道 (东行方向)",
+      "coordinates": [
+        114.17774,
+        22.27825
+      ],
+      "hk80": [
+        836357.2142137687,
+        815487.2686882096
+      ],
+      "officialPointSource": "https://static.data.gov.hk/td/routes-fares-geojson/JSON_TRAM.json",
+      "officialPointDifferenceM": 1.134,
+      "officialNameEn": "Tonnochy Road (East bound)",
+      "officialCoordinates": [
+        114.177748,
+        22.278257
+      ],
+      "stopIdentityConfidence": "TD stopId exact join; GTFS vs GeoJSON coordinate comparison",
+      "groupId": "tonnochy-road",
+      "status": "available",
+      "shelterStatus": "visible-in-geometry"
+    },
+    {
+      "id": "td:99227",
+      "name": "坚拿道西 (东行方向)",
+      "coordinates": [
+        114.18096,
+        22.27931
+      ],
+      "hk80": [
+        836689.062794486,
+        815604.6524048549
+      ],
+      "officialPointSource": "https://static.data.gov.hk/td/routes-fares-geojson/JSON_TRAM.json",
+      "officialPointDifferenceM": 0.985,
+      "officialNameEn": "Canal Road West (East bound)",
+      "officialCoordinates": [
+        114.180969,
+        22.279313
+      ],
+      "stopIdentityConfidence": "TD stopId exact join; GTFS vs GeoJSON coordinate comparison",
+      "groupId": "canal-road-west",
+      "status": "available",
+      "shelterStatus": "visible-in-geometry"
+    },
+    {
+      "id": "td:99228",
+      "name": "波斯富街 (东行方向)",
+      "coordinates": [
+        114.18299,
+        22.28007
+      ],
+      "hk80": [
+        836898.2686974438,
+        815688.8174790397
+      ],
+      "officialPointSource": "https://static.data.gov.hk/td/routes-fares-geojson/JSON_TRAM.json",
+      "officialPointDifferenceM": 0.755,
+      "officialNameEn": "Percival Street (East bound)",
+      "officialCoordinates": [
+        114.182997,
+        22.280072
+      ],
+      "stopIdentityConfidence": "TD stopId exact join; GTFS vs GeoJSON coordinate comparison",
+      "groupId": "percival-street",
+      "status": "available",
+      "shelterStatus": "visible-in-geometry"
+    }
+  ],
+  "coverage": {
+    "officialStopPoints": 32,
+    "groups": 21,
+    "vicinityGeometryAvailable": 32,
+    "groupsWithVisibleShelterGeometry": 18,
+    "groupsWithUnconfirmedShelterGeometry": 3,
+    "unconfirmedShelterStopIds": [
+      "td:99140",
+      "td:99213",
+      "td:99211"
+    ]
+  },
+  "projectUse": "Academic visualization; no claim of certified survey, current condition, safe access, or routable track topology.",
+  "processing": {
+    "boundaryClipping": "Exact convex clipping of perimeter triangles to oriented group envelope; interior vertex positions unchanged",
+    "decimation": "No collapse decimation, to preserve canopy columns and platform geometry. Spatial crop + lossless attribute welding + bounded UV atlas textures provide reduction.",
+    "sourceNormals": "Inverse-transpose transformed and normalized; zero source normals replaced only with geometric face normals",
+    "textureMaxDimension": 1024,
+    "repeatTextures": "Power-of-two with original repeated UVs",
+    "alpha": "Original alpha-mode and PNG transparency retained",
+    "sourceDate": "Dataset HTTP last-modified varies by tile; not a capture/survey date"
+  },
+  "sourceDownloads": [
+    {
+      "tile": "11-SW-10C",
+      "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-10C.zip",
+      "archiveBytes": 782370596,
+      "httpLastModified": "Mon, 21 Sep 2026 09:44:35 GMT",
+      "range": {
+        "start": 725797239,
+        "endInclusive": 740813905,
+        "bytes": 15016667
+      },
+      "crc32VerifiedFiles": 38,
+      "categories": [
+        "INFRASTRUCTURE(TB)"
+      ]
+    },
+    {
+      "tile": "11-SW-10D",
+      "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-10D.zip",
+      "archiveBytes": 1013564635,
+      "httpLastModified": "Mon, 21 Sep 2026 09:50:06 GMT",
+      "range": {
+        "start": 944885457,
+        "endInclusive": 958442877,
+        "bytes": 13557421
+      },
+      "crc32VerifiedFiles": 36,
+      "categories": [
+        "INFRASTRUCTURE(TB)"
+      ]
+    },
+    {
+      "tile": "11-SW-14A",
+      "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-14A.zip",
+      "reused_verified_source": true,
+      "entries": 23
+    },
+    {
+      "tile": "11-SW-14B",
+      "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-14B.zip",
+      "archiveBytes": 1393988772,
+      "httpLastModified": "Mon, 21 Sep 2026 10:02:31 GMT",
+      "range": {
+        "start": 1302384545,
+        "endInclusive": 1317125497,
+        "bytes": 14740953
+      },
+      "crc32VerifiedFiles": 37,
+      "categories": [
+        "INFRASTRUCTURE(TB)"
+      ]
+    },
+    {
+      "tile": "11-SW-15A",
+      "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-15A.zip",
+      "archiveBytes": 1150355950,
+      "httpLastModified": "Mon, 21 Sep 2026 10:09:09 GMT",
+      "range": {
+        "start": 1051598441,
+        "endInclusive": 1070705756,
+        "bytes": 19107316
+      },
+      "crc32VerifiedFiles": 33,
+      "categories": [
+        "INFRASTRUCTURE(TB)"
+      ]
+    },
+    {
+      "tile": "11-SW-15B",
+      "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-15B.zip",
+      "archiveBytes": 1050266439,
+      "httpLastModified": "Mon, 21 Sep 2026 10:15:00 GMT",
+      "range": {
+        "start": 950428672,
+        "endInclusive": 963659197,
+        "bytes": 13230526
+      },
+      "crc32VerifiedFiles": 47,
+      "categories": [
+        "INFRASTRUCTURE(TB)"
+      ]
+    },
+    {
+      "tile": "11-SW-8A",
+      "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-8A.zip",
+      "archiveBytes": 1504528495,
+      "httpLastModified": "Wed, 08 Jul 2026 14:05:20 GMT",
+      "range": {
+        "start": 1421920776,
+        "endInclusive": 1444518521,
+        "bytes": 22597746
+      },
+      "crc32VerifiedFiles": 45,
+      "categories": [
+        "INFRASTRUCTURE(TB)"
+      ]
+    },
+    {
+      "tile": "11-SW-8B",
+      "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-8B.zip",
+      "archiveBytes": 883129773,
+      "httpLastModified": "Mon, 21 Sep 2026 10:19:25 GMT",
+      "range": {
+        "start": 805625468,
+        "endInclusive": 833945309,
+        "bytes": 28319842
+      },
+      "crc32VerifiedFiles": 35,
+      "categories": [
+        "INFRASTRUCTURE(TB)"
+      ]
+    },
+    {
+      "tile": "11-SW-8D",
+      "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-8D.zip",
+      "archiveBytes": 2636460399,
+      "httpLastModified": "Mon, 21 Sep 2026 10:32:32 GMT",
+      "range": {
+        "start": 2545350265,
+        "endInclusive": 2572295539,
+        "bytes": 26945275
+      },
+      "crc32VerifiedFiles": 52,
+      "categories": [
+        "INFRASTRUCTURE(TB)"
+      ]
+    },
+    {
+      "tile": "11-SW-9C",
+      "url": "https://download.map.gov.hk/api/3d-zip/GLTF/11-SW-9C.zip",
+      "reused_verified_source": true,
+      "entries": 27
+    }
+  ]
+}

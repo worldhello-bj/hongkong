@@ -1,0 +1,106 @@
+{
+  "runtime": "4f0a062ef29d",
+  "id": 7,
+  "need": "accessible",
+  "state": "usable-public-and-taxi-comparison",
+  "wallMs": 14926,
+  "memory": {
+    "rss": 1079136256,
+    "heapTotal": 396103680,
+    "heapUsed": 278207256,
+    "external": 9106331,
+    "arrayBuffers": 9801516,
+    "maxRSSKiB": 1078564
+  },
+  "request": {
+    "origin": {
+      "id": "map:random--2138587087",
+      "name": "地图所选地点",
+      "detail": "用户选择 · 接入待核验",
+      "coordinates": [
+        114.19780266014673,
+        22.27037983652672
+      ],
+      "lon": 114.19780266014673,
+      "lat": 22.27037983652672
+    },
+    "destination": {
+      "id": "map:random-892708869",
+      "name": "地图所选地点",
+      "detail": "用户选择 · 接入待核验",
+      "coordinates": [
+        114.16388501171271,
+        22.2735175495032
+      ],
+      "lon": 114.16388501171271,
+      "lat": 22.2735175495032
+    }
+  },
+  "performance": {
+    "warmStart": false,
+    "startedMonotonic": 5471.789911,
+    "startedAt": "2026-10-12T11:46:20.774Z",
+    "origin": "地图所选地点",
+    "destination": "地图所选地点",
+    "stages": [
+      {
+        "id": "taxi",
+        "durationMs": 1734,
+        "status": "ready"
+      },
+      {
+        "id": "public-fast",
+        "durationMs": 3373,
+        "status": "needs-indoor-refinement",
+        "cached": false
+      },
+      {
+        "id": "walk",
+        "durationMs": 4379,
+        "status": "no-complete-route",
+        "cached": false
+      },
+      {
+        "id": "demo-public-fast",
+        "durationMs": 7270,
+        "status": "modeled"
+      },
+      {
+        "id": "demo-fallback",
+        "durationMs": 7576,
+        "status": "modeled"
+      }
+    ],
+    "firstResultMs": 11733,
+    "totalMs": null
+  },
+  "candidates": [
+    {
+      "id": "transit-demo-review",
+      "kind": "public",
+      "minutes": 98,
+      "cost": 0,
+      "walkMinutes": 98,
+      "waitMinutes": 0,
+      "transfers": 0,
+      "modes": [
+        "walk"
+      ],
+      "endpointsPreserved": true,
+      "forbidden": [],
+      "needsVehicleConfirmation": false,
+      "needsConfirmation": true,
+      "requestedPreference": "accessible",
+      "effectivePreference": "fast-filtered-accessibility"
+    }
+  ],
+  "selected": "transit-demo-review",
+  "publicAvailable": true,
+  "taxiAvailable": false,
+  "invariants": {
+    "endpoints": true,
+    "knownEdges": true,
+    "strictTaxiExcluded": true,
+    "luggageTaxiConfirmed": true
+  }
+}

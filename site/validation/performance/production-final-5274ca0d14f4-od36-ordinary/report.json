@@ -1,0 +1,909 @@
+{
+  "runtime": "5274ca0d14f4",
+  "productionEntrySha256": "b936fe2585cccfdbebba24c189c6e1063307d577d3c8031d6feaf6467541fd4c",
+  "instrumentedEntrySha256": "bad803eb428ddf5444d149cd81744fb872f3e3f6da9a9ba20ac226b0d4998292",
+  "label": "production-final",
+  "variant": "baseline",
+  "cpuSampling": false,
+  "searchStateCounters": false,
+  "id": 36,
+  "need": "ordinary",
+  "state": "observation-window-ended",
+  "windowMs": 60000,
+  "wallMs": 60191.811394,
+  "totalBootAndRouteMs": 66726.01,
+  "request": {
+    "origin": {
+      "id": "map:random--1529480317",
+      "name": "地图所选地点",
+      "detail": "用户选择 · 接入待核验",
+      "coordinates": [
+        114.16965086248385,
+        22.293277490710825
+      ],
+      "lon": 114.16965086248385,
+      "lat": 22.293277490710825
+    },
+    "destination": {
+      "id": "map:random-2133651309",
+      "name": "地图所选地点",
+      "detail": "用户选择 · 接入待核验",
+      "coordinates": [
+        114.15007628641142,
+        22.26413857693343
+      ],
+      "lon": 114.15007628641142,
+      "lat": 22.26413857693343
+    }
+  },
+  "routePerformance": {
+    "warmStart": false,
+    "startedMonotonic": 15669.702201,
+    "startedAt": "2026-10-12T13:09:56.346Z",
+    "origin": "地图所选地点",
+    "destination": "地图所选地点",
+    "stages": [
+      {
+        "id": "public-fast",
+        "durationMs": 9383,
+        "status": "needs-indoor-refinement",
+        "cached": false
+      },
+      {
+        "id": "metro",
+        "durationMs": 13349,
+        "status": "no-complete-route",
+        "cached": false
+      },
+      {
+        "id": "demo-public-fast",
+        "durationMs": 16837,
+        "status": "modeled"
+      },
+      {
+        "id": "demo-fallback",
+        "durationMs": 16858,
+        "status": "modeled"
+      }
+    ],
+    "firstResultMs": 1947,
+    "totalMs": null
+  },
+  "navigationLoad": {
+    "status": "ready",
+    "durationMs": 5963,
+    "block": "ready"
+  },
+  "aggregates": {
+    "n1": {
+      "count": 14,
+      "totalMs": 200.8507709999991,
+      "maxMs": 42.591756999994686
+    },
+    "x": {
+      "count": 9,
+      "totalMs": 169.01955899999825,
+      "maxMs": 43.610398999997415
+    },
+    "K1-load": {
+      "count": 3,
+      "totalMs": 11908.467437,
+      "maxMs": 6661.930694
+    },
+    "r3": {
+      "count": 1,
+      "totalMs": 6001.263784,
+      "maxMs": 6001.263784
+    },
+    "ensureTaxi": {
+      "count": 2,
+      "totalMs": 7659.929208000001,
+      "maxMs": 5762.55328
+    },
+    "m2-prepare": {
+      "count": 2,
+      "totalMs": 3098.5315690000025,
+      "maxMs": 1917.8823159999993
+    },
+    "g2": {
+      "count": 8,
+      "totalMs": 3586.684748999989,
+      "maxMs": 2092.2646579999982
+    },
+    "F1-merge": {
+      "count": 7,
+      "totalMs": 2358.1801480000067,
+      "maxMs": 1183.649443000002
+    },
+    "loadBlockData": {
+      "count": 1,
+      "totalMs": 10980.099447,
+      "maxMs": 10980.099447
+    },
+    "r2": {
+      "count": 7,
+      "totalMs": 52221.868591,
+      "maxMs": 9514.724489
+    },
+    "f2": {
+      "count": 7,
+      "totalMs": 53724.55686,
+      "maxMs": 10433.289719
+    },
+    "n3": {
+      "count": 1,
+      "totalMs": 11010.250801000002,
+      "maxMs": 11010.250801000002
+    },
+    "S1": {
+      "count": 1,
+      "totalMs": 11023.736184000001,
+      "maxMs": 11023.736184000001
+    },
+    "j2": {
+      "count": 6,
+      "totalMs": 1211.2813160000005,
+      "maxMs": 553.5033530000001
+    }
+  },
+  "pendingMain": [
+    {
+      "sid": 25,
+      "name": "S1",
+      "graphs": [],
+      "t": 15581.911
+    },
+    {
+      "sid": 28,
+      "name": "n3",
+      "request": {
+        "origin": {
+          "id": "map:random--1529480317",
+          "coordinates": [
+            114.16965086248385,
+            22.293277490710825
+          ]
+        },
+        "destination": {
+          "id": "map:random-2133651309",
+          "coordinates": [
+            114.15007628641142,
+            22.26413857693343
+          ]
+        },
+        "preference": "ordinary",
+        "mode": "transit",
+        "allowedModes": [
+          "metro",
+          "bus",
+          "tram"
+        ],
+        "departureS": 28800,
+        "departureDate": "2026-10-12"
+      },
+      "graphs": [],
+      "t": 15595.7
+    },
+    {
+      "sid": 70,
+      "name": "f2",
+      "request": {
+        "origin": {
+          "id": "map:random--1529480317",
+          "coordinates": [
+            114.16965086248385,
+            22.293277490710825
+          ]
+        },
+        "destination": {
+          "id": "map:random-2133651309",
+          "coordinates": [
+            114.15007628641142,
+            22.26413857693343
+          ]
+        },
+        "preference": "ordinary",
+        "mode": "transit",
+        "allowedModes": [
+          "metro",
+          "bus",
+          "tram"
+        ],
+        "departureS": 28800,
+        "departureDate": "2026-10-12"
+      },
+      "graphs": [
+        {
+          "gid": 1,
+          "version": "b1e24d8ef9214320",
+          "nodes": 5405,
+          "edges": 11387,
+          "regions": [
+            "ADM",
+            "AUS",
+            "HUH",
+            "EXC",
+            "ETS",
+            "KOW"
+          ]
+        },
+        {
+          "gid": 2,
+          "version": "814b03c9c2d7e3c5",
+          "nodes": 61055,
+          "edges": 135514,
+          "regions": [
+            "ADM",
+            "AUS"
+          ]
+        },
+        {
+          "gid": 3,
+          "version": "19aebcac62f227eb",
+          "nodes": 3326,
+          "edges": 7279,
+          "regions": [
+            "ADM"
+          ]
+        }
+      ],
+      "t": 60023.464
+    },
+    {
+      "sid": 72,
+      "name": "r2",
+      "request": {
+        "origin": {
+          "id": "map:random--1529480317",
+          "coordinates": [
+            114.16965086248385,
+            22.293277490710825
+          ]
+        },
+        "destination": {
+          "id": "map:random-2133651309",
+          "coordinates": [
+            114.15007628641142,
+            22.26413857693343
+          ]
+        },
+        "preference": "ordinary",
+        "mode": "transit",
+        "allowedModes": [
+          "metro",
+          "bus",
+          "tram"
+        ],
+        "departureS": 28800,
+        "departureDate": "2026-10-12"
+      },
+      "graphs": [
+        {
+          "gid": 1,
+          "version": "b1e24d8ef9214320",
+          "nodes": 5405,
+          "edges": 11387,
+          "regions": [
+            "ADM",
+            "AUS",
+            "HUH",
+            "EXC",
+            "ETS",
+            "KOW"
+          ]
+        },
+        {
+          "gid": 4,
+          "version": "814b03c9c2d7e3c5+block:19aebcac62f227eb",
+          "nodes": 62479,
+          "edges": 138703,
+          "regions": [
+            "ADM",
+            "AUS"
+          ]
+        }
+      ],
+      "t": 60023.614
+    }
+  ],
+  "candidates": [
+    {
+      "id": "taxi-direct",
+      "kind": "direct",
+      "minutes": 31,
+      "cost": 140.25,
+      "modes": [
+        "walk",
+        "taxi",
+        "walk"
+      ],
+      "endpointsPreserved": true,
+      "forbidden": [],
+      "needsVehicleConfirmation": false
+    },
+    {
+      "id": "transit-demo-review",
+      "kind": "public",
+      "minutes": 151,
+      "cost": 16.56,
+      "modes": [
+        "walk",
+        "bus",
+        "walk",
+        "metro",
+        "walk",
+        "tram",
+        "walk"
+      ],
+      "endpointsPreserved": true,
+      "forbidden": [],
+      "needsVehicleConfirmation": false
+    }
+  ],
+  "fetched": [
+    {
+      "path": "/area/station-graph.json.gz",
+      "bytes": 563298,
+      "sha256": "446700358a6a56ccb8bbf1e024f6a09da99925e2778331e67c307c135a0f0a1e",
+      "readMs": 1.0734019999999873
+    },
+    {
+      "path": "/area/area-graph.json.gz",
+      "bytes": 8036890,
+      "sha256": "44901caf6ee1241a23e096eb3d692f96913789fb2c1cbd742da59d8d3730253f",
+      "readMs": 19.311889000000065
+    },
+    {
+      "path": "/transit/services.json",
+      "bytes": 239733,
+      "sha256": "59c1c4faef3fadbf32748b0707231f78c3ec36aa4d2edc47de39b8c39485c542",
+      "readMs": 0.9957070000000385
+    },
+    {
+      "path": "/transit/walk-links.json.gz",
+      "bytes": 303355,
+      "sha256": "9505ee7867641cd5c7bbf2a3c76a4216c7cdc05fdd7a72d7da4cf85eb2f6420b",
+      "readMs": 0.6223430000000008
+    },
+    {
+      "path": "/area/admiralty-block-graph.json.gz",
+      "bytes": 685878,
+      "sha256": "072ec16cfc78cbc6c53fc249572791d53e929c07a3db4a824b5dde0331c788d0",
+      "readMs": 7.037796999999955
+    }
+  ],
+  "samples": [
+    {
+      "t": 1052.116,
+      "rss": 183169024,
+      "heapTotal": 104402944,
+      "heapUsed": 35914560,
+      "external": 52197522,
+      "arrayBuffers": 52144710,
+      "maxRSSKiB": 184484
+    },
+    {
+      "t": 2052.166,
+      "rss": 253632512,
+      "heapTotal": 112791552,
+      "heapUsed": 43796520,
+      "external": 111934760,
+      "arrayBuffers": 111885900,
+      "maxRSSKiB": 247688
+    },
+    {
+      "t": 12834.377,
+      "rss": 927805440,
+      "heapTotal": 424271872,
+      "heapUsed": 285417232,
+      "external": 33787508,
+      "arrayBuffers": 11859166,
+      "maxRSSKiB": 979968
+    },
+    {
+      "t": 17567.068,
+      "rss": 1175912448,
+      "heapTotal": 505450496,
+      "heapUsed": 420767168,
+      "external": 71699543,
+      "arrayBuffers": 24709827,
+      "maxRSSKiB": 1174436
+    },
+    {
+      "t": 18565.769,
+      "rss": 1110163456,
+      "heapTotal": 439087104,
+      "heapUsed": 286116880,
+      "external": 46638169,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1174436
+    },
+    {
+      "t": 19566.217,
+      "rss": 1054965760,
+      "heapTotal": 439087104,
+      "heapUsed": 286160304,
+      "external": 46638169,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1174436
+    },
+    {
+      "t": 20566.256,
+      "rss": 1054085120,
+      "heapTotal": 439087104,
+      "heapUsed": 286186016,
+      "external": 46638169,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1174436
+    },
+    {
+      "t": 21567.277,
+      "rss": 1093636096,
+      "heapTotal": 439087104,
+      "heapUsed": 286452392,
+      "external": 46638169,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1174436
+    },
+    {
+      "t": 22567.835,
+      "rss": 1125928960,
+      "heapTotal": 439087104,
+      "heapUsed": 286477888,
+      "external": 46638169,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1174436
+    },
+    {
+      "t": 23567.854,
+      "rss": 1145479168,
+      "heapTotal": 439087104,
+      "heapUsed": 286739128,
+      "external": 46638169,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1174436
+    },
+    {
+      "t": 24567.861,
+      "rss": 1167761408,
+      "heapTotal": 439087104,
+      "heapUsed": 287770128,
+      "external": 46638169,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1174436
+    },
+    {
+      "t": 25757.688,
+      "rss": 1282400256,
+      "heapTotal": 468697088,
+      "heapUsed": 357930712,
+      "external": 31729858,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1252600
+    },
+    {
+      "t": 26757.798,
+      "rss": 1269297152,
+      "heapTotal": 468697088,
+      "heapUsed": 357909312,
+      "external": 31729858,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1257080
+    },
+    {
+      "t": 27757.795,
+      "rss": 1192976384,
+      "heapTotal": 468697088,
+      "heapUsed": 357921832,
+      "external": 31729858,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1257080
+    },
+    {
+      "t": 28759.158,
+      "rss": 1207324672,
+      "heapTotal": 468697088,
+      "heapUsed": 357943344,
+      "external": 31729858,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1257080
+    },
+    {
+      "t": 29758.931,
+      "rss": 1230524416,
+      "heapTotal": 468697088,
+      "heapUsed": 357956352,
+      "external": 31729858,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1257080
+    },
+    {
+      "t": 30759.587,
+      "rss": 1234284544,
+      "heapTotal": 468697088,
+      "heapUsed": 357977888,
+      "external": 31729858,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1257080
+    },
+    {
+      "t": 31759.829,
+      "rss": 1232478208,
+      "heapTotal": 468697088,
+      "heapUsed": 358097304,
+      "external": 31729858,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1257080
+    },
+    {
+      "t": 34026.386,
+      "rss": 1274142720,
+      "heapTotal": 459419648,
+      "heapUsed": 324548192,
+      "external": 31729858,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1289540
+    },
+    {
+      "t": 35027.117,
+      "rss": 1115930624,
+      "heapTotal": 439611392,
+      "heapUsed": 286364440,
+      "external": 31729858,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1289540
+    },
+    {
+      "t": 36026.485,
+      "rss": 1127088128,
+      "heapTotal": 439611392,
+      "heapUsed": 286373688,
+      "external": 31729858,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1289540
+    },
+    {
+      "t": 37026.806,
+      "rss": 1147252736,
+      "heapTotal": 439611392,
+      "heapUsed": 286383216,
+      "external": 31729858,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1289540
+    },
+    {
+      "t": 38026.993,
+      "rss": 1155010560,
+      "heapTotal": 439611392,
+      "heapUsed": 286392744,
+      "external": 31729858,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1289540
+    },
+    {
+      "t": 39765.455,
+      "rss": 1269059584,
+      "heapTotal": 463724544,
+      "heapUsed": 364539416,
+      "external": 31729858,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1289540
+    },
+    {
+      "t": 40766.276,
+      "rss": 1248174080,
+      "heapTotal": 441139200,
+      "heapUsed": 288623456,
+      "external": 31729858,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1289540
+    },
+    {
+      "t": 41766.933,
+      "rss": 1178357760,
+      "heapTotal": 441139200,
+      "heapUsed": 288653664,
+      "external": 31729858,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1289540
+    },
+    {
+      "t": 42766.619,
+      "rss": 1043480576,
+      "heapTotal": 289665024,
+      "heapUsed": 286691728,
+      "external": 31729858,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1289540
+    },
+    {
+      "t": 43766.731,
+      "rss": 1044684800,
+      "heapTotal": 289927168,
+      "heapUsed": 287049368,
+      "external": 31729858,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1289540
+    },
+    {
+      "t": 44766.406,
+      "rss": 1052999680,
+      "heapTotal": 290975744,
+      "heapUsed": 287307936,
+      "external": 31729858,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1289540
+    },
+    {
+      "t": 45766.464,
+      "rss": 1053130752,
+      "heapTotal": 290975744,
+      "heapUsed": 287505976,
+      "external": 31729858,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1289540
+    },
+    {
+      "t": 49578.937,
+      "rss": 1311932416,
+      "heapTotal": 490643456,
+      "heapUsed": 392665264,
+      "external": 31729858,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1289540
+    },
+    {
+      "t": 50578.506,
+      "rss": 1245343744,
+      "heapTotal": 430325760,
+      "heapUsed": 292114040,
+      "external": 31729858,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1289540
+    },
+    {
+      "t": 51579.013,
+      "rss": 1185337344,
+      "heapTotal": 430325760,
+      "heapUsed": 292144064,
+      "external": 31729858,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1289540
+    },
+    {
+      "t": 52578.396,
+      "rss": 1211228160,
+      "heapTotal": 430325760,
+      "heapUsed": 292168864,
+      "external": 31729858,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1289540
+    },
+    {
+      "t": 53578.803,
+      "rss": 1221423104,
+      "heapTotal": 430325760,
+      "heapUsed": 292416768,
+      "external": 31729858,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1289540
+    },
+    {
+      "t": 54579.155,
+      "rss": 1228136448,
+      "heapTotal": 430325760,
+      "heapUsed": 292605624,
+      "external": 31729858,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1289540
+    },
+    {
+      "t": 55578.937,
+      "rss": 1234726912,
+      "heapTotal": 430325760,
+      "heapUsed": 293178088,
+      "external": 31729858,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1289540
+    },
+    {
+      "t": 57340.982,
+      "rss": 1263267840,
+      "heapTotal": 479543296,
+      "heapUsed": 342850520,
+      "external": 31729858,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1289540
+    },
+    {
+      "t": 58340.395,
+      "rss": 1256857600,
+      "heapTotal": 434368512,
+      "heapUsed": 294000544,
+      "external": 31729858,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1289540
+    },
+    {
+      "t": 59341.14,
+      "rss": 1208852480,
+      "heapTotal": 434368512,
+      "heapUsed": 294033192,
+      "external": 31729858,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1289540
+    },
+    {
+      "t": 60839.824,
+      "rss": 1290543104,
+      "heapTotal": 437559296,
+      "heapUsed": 328739144,
+      "external": 31729858,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1289540
+    },
+    {
+      "t": 61839.592,
+      "rss": 1263210496,
+      "heapTotal": 437559296,
+      "heapUsed": 328873480,
+      "external": 31729858,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1289540
+    },
+    {
+      "t": 62839.486,
+      "rss": 1272008704,
+      "heapTotal": 437559296,
+      "heapUsed": 328882952,
+      "external": 31729858,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1289540
+    },
+    {
+      "t": 63840.153,
+      "rss": 1182228480,
+      "heapTotal": 437559296,
+      "heapUsed": 328896120,
+      "external": 31729858,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1289540
+    },
+    {
+      "t": 64839.745,
+      "rss": 1181618176,
+      "heapTotal": 437559296,
+      "heapUsed": 328907680,
+      "external": 31729858,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1289540
+    },
+    {
+      "t": 65840.026,
+      "rss": 1147748352,
+      "heapTotal": 437559296,
+      "heapUsed": 328927696,
+      "external": 31729858,
+      "arrayBuffers": 9801516,
+      "maxRSSKiB": 1289540
+    }
+  ],
+  "memory": {
+    "rss": 1150341120,
+    "heapTotal": 437559296,
+    "heapUsed": 329107640,
+    "external": 32008370,
+    "arrayBuffers": 10080028,
+    "maxRSSKiB": 1289540
+  },
+  "eventLoopDelayMs": {
+    "mean": 32.93778593818544,
+    "max": 10754.195455,
+    "p99": 32.489471
+  },
+  "workers": [
+    {
+      "id": 1,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "terminated": true,
+      "pending": [
+        {
+          "origin": {
+            "id": "map:random--1529480317",
+            "coordinates": [
+              114.16965086248385,
+              22.293277490710825
+            ]
+          },
+          "destination": {
+            "id": "map:random-2133651309",
+            "coordinates": [
+              114.15007628641142,
+              22.26413857693343
+            ]
+          },
+          "preference": "fast",
+          "allowedModes": [
+            "metro",
+            "bus",
+            "tram"
+          ],
+          "departureS": 28800,
+          "departureDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "terminated": true,
+      "pending": []
+    },
+    {
+      "id": 3,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "terminated": true,
+      "pending": []
+    },
+    {
+      "id": 4,
+      "kind": "metro-worker-BDEusPKL.js",
+      "terminated": true,
+      "pending": []
+    },
+    {
+      "id": 5,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "terminated": true,
+      "pending": []
+    },
+    {
+      "id": 6,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "terminated": true,
+      "pending": []
+    },
+    {
+      "id": 7,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "terminated": true,
+      "pending": []
+    },
+    {
+      "id": 8,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "pending": [
+        {
+          "origin": {
+            "id": "map:random--1529480317",
+            "coordinates": [
+              114.16965086248385,
+              22.293277490710825
+            ]
+          },
+          "destination": {
+            "id": "map:random-2133651309",
+            "coordinates": [
+              114.15007628641142,
+              22.26413857693343
+            ]
+          },
+          "preference": "fast",
+          "allowedModes": [
+            "metro",
+            "bus",
+            "tram"
+          ],
+          "departureS": 28800,
+          "departureDate": "2026-10-12"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Node worker_threads executes instrumented production S1 and production Worker bundles.",
+    "DOM stand-ins measure JS/string work, not browser layout, paint or visual acceptance.",
+    "CPU collection slightly delays physical Worker termination; timing is diagnostic, compare with same probe.",
+    "The original matrix stopped accessible runs as soon as public comparison was usable; this probe observes full completion or the unchanged 60-second window."
+  ]
+}

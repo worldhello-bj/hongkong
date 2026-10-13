@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "post-b702-source-input-floor-precheck",
+  "fixtureSha256": "791197c289bf10787b0104c3d1fc5ba70ec030f305507cc56b924be744588b0e",
+  "baselineRuntime": "b702b6920092",
+  "baselineSignature": "f32dfcc1a1ba60f3987b03f198560960bd23364aeb86d8600395d1ea86313fc3",
+  "purpose": "Targeted new-build checks for source-input validation and no-output named-floor demo precheck. Not a replacement for the old runtime full60.",
+  "cellIds": [
+    "exits-cross-ordinary-taxi-off",
+    "exits-cross-ordinary-taxi-on",
+    "exits-cross-accessible-taxi-off",
+    "exits-cross-accessible-taxi-on",
+    "mall-floors-ordinary-taxi-off",
+    "mall-floors-ordinary-taxi-on",
+    "mall-floors-luggage-taxi-off",
+    "mall-floors-luggage-taxi-on",
+    "mall-floors-escalator-taxi-off",
+    "mall-floors-escalator-taxi-on",
+    "mall-floors-lift-taxi-off",
+    "mall-floors-lift-taxi-on",
+    "mall-floors-accessible-taxi-off",
+    "mall-floors-accessible-taxi-on"
+  ],
+  "comparison": "Deep compare all retained candidate/unavailable fields except explicit provenance/observation diagnostics, and rerun all new route assertions. Old raw complete geometry was not stored; byte equality of omitted geometry is not claimed."
+}

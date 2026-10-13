@@ -1,0 +1,240 @@
+{
+  "runtime": "34c1eabb21cf",
+  "elapsedMs": 600362.883,
+  "routePerformance": {
+    "warmStart": false,
+    "startedMonotonic": 10188.485998,
+    "startedAt": "2026-10-12T15:31:23.985Z",
+    "origin": "地图所选地点",
+    "destination": "地图所选地点",
+    "stages": [
+      {
+        "id": "public-fast",
+        "durationMs": 8024,
+        "status": "needs-indoor-refinement",
+        "cached": false
+      },
+      {
+        "id": "taxi",
+        "durationMs": 14912,
+        "status": "ready"
+      },
+      {
+        "id": "metro",
+        "durationMs": 6910,
+        "status": "no-complete-route",
+        "cached": false
+      },
+      {
+        "id": "demo-public-fast",
+        "durationMs": 10927,
+        "status": "modeled"
+      },
+      {
+        "id": "demo-fallback",
+        "durationMs": 10946,
+        "status": "modeled"
+      }
+    ],
+    "firstResultMs": 1885,
+    "totalMs": null,
+    "taxiCandidates": [
+      {
+        "side": "first",
+        "id": "ADM:portal:E2",
+        "status": "ready",
+        "minutes": 109
+      },
+      {
+        "side": "first",
+        "id": "td:99215",
+        "status": "ready",
+        "minutes": 103
+      }
+    ]
+  },
+  "memory": {
+    "rss": 1241309184,
+    "heapTotal": 386207744,
+    "heapUsed": 382044208,
+    "external": 31735002,
+    "arrayBuffers": 9801888,
+    "maxRSSKiB": 1434260
+  },
+  "workers": [
+    {
+      "id": 1,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "terminated": true,
+      "pending": [
+        {
+          "origin": {
+            "id": "map:random--1529480317",
+            "coordinates": [
+              114.16965086248385,
+              22.293277490710825
+            ]
+          },
+          "destination": {
+            "id": "map:random-2133651309",
+            "coordinates": [
+              114.15007628641142,
+              22.26413857693343
+            ]
+          },
+          "preference": "fast",
+          "allowedModes": [
+            "metro",
+            "bus",
+            "tram"
+          ],
+          "departureS": 28800,
+          "departureDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "terminated": true,
+      "pending": []
+    },
+    {
+      "id": 3,
+      "kind": "metro-worker-BDEusPKL.js",
+      "terminated": true,
+      "pending": []
+    },
+    {
+      "id": 4,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "terminated": true,
+      "pending": []
+    },
+    {
+      "id": 5,
+      "kind": "app-transit-worker-CaCMeUxU.js",
+      "pending": [
+        {
+          "origin": {
+            "id": "map:random--1529480317",
+            "coordinates": [
+              114.16965086248385,
+              22.293277490710825
+            ]
+          },
+          "destination": {
+            "id": "map:random-2133651309",
+            "coordinates": [
+              114.15007628641142,
+              22.26413857693343
+            ]
+          },
+          "preference": "fast",
+          "allowedModes": [
+            "metro",
+            "bus",
+            "tram"
+          ],
+          "departureS": 28800,
+          "departureDate": "2026-10-12"
+        }
+      ]
+    }
+  ],
+  "latestWorkerHeaps": [
+    {
+      "worker": 1,
+      "event": "worker-span-end",
+      "name": "transit-build",
+      "t": 12026.41,
+      "heapUsed": 268981248
+    },
+    {
+      "worker": 2,
+      "event": "worker-span-end",
+      "name": "transit-query",
+      "t": 24420.139,
+      "heapUsed": 297826936
+    },
+    {
+      "worker": 4,
+      "event": "worker-span-end",
+      "name": "transit-query",
+      "t": 42408.304,
+      "heapUsed": 313916096
+    },
+    {
+      "worker": 5,
+      "event": "worker-span-end",
+      "name": "walk-query",
+      "t": 600110.798,
+      "heapUsed": 355202152
+    }
+  ],
+  "latestScheduled": {
+    "t": 583682.623,
+    "worker": 5,
+    "kind": "app-transit-worker-CaCMeUxU.js",
+    "event": "scheduled-hotspot-progress",
+    "sid": 13,
+    "request": {
+      "fromId": "journey:origin",
+      "toId": "journey:destination",
+      "departureS": 28800,
+      "horizonS": 21600,
+      "walkPenalty": 2.5,
+      "transferPenaltyS": 180
+    },
+    "elapsedMs": 534781.6261120001,
+    "acceptedLabels": 32228,
+    "activeLabels": 31386,
+    "retainedLabels": 32228,
+    "invalidations": 842,
+    "expanded": 13056,
+    "settled": 12878,
+    "queue": 19172,
+    "peakQueue": 19173,
+    "connectionResolveCalls": 53157,
+    "routeMemos": [
+      {
+        "memoId": 1,
+        "kind": "station",
+        "capacity": 64,
+        "connectionCount": 0,
+        "duplicateIds": 0,
+        "duplicateIdExamples": [],
+        "lookups": 8408,
+        "hits": 1,
+        "misses": 8407,
+        "sets": 8407,
+        "nullSets": 0,
+        "evictions": 8343,
+        "size": 64,
+        "maxSize": 64,
+        "pairedSize": 0,
+        "pinnedSize": 0
+      },
+      {
+        "memoId": 2,
+        "kind": "connection-pair",
+        "capacity": 64,
+        "connectionCount": 307,
+        "duplicateIds": 0,
+        "duplicateIdExamples": [],
+        "lookups": 53157,
+        "hits": 0,
+        "misses": 53157,
+        "sets": 53157,
+        "nullSets": 1,
+        "evictions": 53093,
+        "size": 64,
+        "maxSize": 64,
+        "pairedSize": 64,
+        "pinnedSize": 0
+      }
+    ],
+    "heapUsed": 407429824
+  },
+  "errors": []
+}
