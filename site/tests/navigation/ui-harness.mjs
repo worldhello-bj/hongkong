@@ -44,8 +44,8 @@ if(process.env.HK_BOOT_CASE==='traffic'){
  click({taxiPolicy:'with'});await new Promise(resolve=>setTimeout(resolve,30));assert.ok(api.taxiSimulation);assert.equal(api.t1.has('taxi'),true);
  click({taxiPolicy:'without'});await new Promise(resolve=>setTimeout(resolve,30));assert.ok(api.taxiSimulation);assert.equal(api.t1.has('taxi'),false);assert.equal(api.trafficClock.timeS,frozenClock);assert.deepEqual(api.f,frozenView);assert.equal(api.taxiSimulation,frozenFleet);
  for(const mode of ['metro','bus','tram','taxi']){click({trafficLayer:mode});assert.equal(api.trafficLayers[mode],false);assert.equal(api.t1.has('taxi'),false);assert.equal(api.trafficClock.timeS,frozenClock);assert.deepEqual(api.f,frozenView);click({trafficLayer:mode});assert.equal(api.trafficLayers[mode],true);}
- click({action:'traffic-play'});api.r.stage='station';const hiddenTime=api.trafficClock.timeS;await new Promise(resolve=>setTimeout(resolve,250));assert.equal(api.trafficClock.timeS,hiddenTime);api.r.stage='home';await new Promise(resolve=>setTimeout(resolve,250));assert.ok(api.trafficClock.timeS>hiddenTime);
- console.log('TRAFFIC ENTRY PASS: all public modes, default taxis, independent policy, pause/step, hidden view pause and resume');process.exit(0);
+ click({action:'traffic-play'});api.r.stage='station';const hiddenTime=api.trafficClock.timeS;await new Promise(resolve=>setTimeout(resolve,250));assert.equal(api.trafficClock.timeS,hiddenTime);api.r.stage='home';const resumeDeadline=Date.now()+10000;while(api.trafficClock.timeS<=hiddenTime&&Date.now()<resumeDeadline)await new Promise(resolve=>setTimeout(resolve,50));assert.ok(api.trafficClock.timeS>hiddenTime,'foreground resume advances via the real interval');
+ console.log('TRAFFIC ENTRY PASS: all public modes, default taxis, independent policy, pause/step, hidden view pause and condition-driven resume');process.exit(0);
 }
 if(process.env.HK_BOOT_CASE==='highspeed'){
  const click=dataset=>listeners.get('#navigation-app:click')({target:{closest:()=>({dataset})}});
@@ -84,8 +84,14 @@ if(process.env.HK_BOOT_CASE==='departure-time'){
  assert.equal(api.O.now(),api.trafficClock.epochMs,'simulated orders use the same global clock');
  assert.ok(!el('[data-app="panel"]').innerHTML.includes('data-action="taxi-play"'),'no second playback controls in taxi panel');
  click({action:'traffic-step'});assert.equal(api.trafficClock.timeS,29040);assert.equal(el('[data-app="departure"]').value,'08:04:00');assert.equal(el('[data-app="traffic-clock"]').textContent,'08:04:00');assert.equal(api.O.now(),api.trafficClock.epochMs);
- click({action:'traffic-play'});await new Promise(resolve=>setTimeout(resolve,350));click({action:'traffic-play'});api.renderTraffic();
- assert.ok(api.trafficClock.timeS>29040,'global playback actually advances');assert.equal(el('[data-app="departure"]').value,api.trafficClock.time);assert.equal(el('[data-app="traffic-clock"]').textContent,api.trafficClock.time);
+ const playbackStartS=api.trafficClock.timeS;
+ assert.ok(!document.hidden&&!['station','mall','navigation'].includes(api.r.stage),'playback check runs in an active foreground view');
+ click({action:'traffic-play'});assert.equal(api.trafficClock.playing,true);
+ // play() clears the tick anchor. Under CI load the first real interval callback
+ // may arrive after 350 ms; wait for real progress, not a wall-time callback count.
+ await waitFor(()=>api.trafficClock.playing&&api.trafficClock.timeS>playbackStartS,'global playback actually advances',10000);
+ click({action:'traffic-play'});assert.equal(api.trafficClock.playing,false);api.renderTraffic();
+ assert.ok(api.trafficClock.timeS>playbackStartS,'global playback actually advances');assert.equal(el('[data-app="departure"]').value,api.trafficClock.time);assert.equal(el('[data-app="traffic-clock"]').textContent,api.trafficClock.time);
  const focus={matches:selector=>selector==='[data-app="departure-date"], [data-app="departure"]'};click({action:'traffic-play'});listeners.get('#navigation-app:focusin')({target:focus});assert.equal(api.trafficClock.playing,false,'editing the sole clock pauses playback');
  const paused=api.trafficClock.snapshot(),pausedFleet=api.taxiSimulation.simulateAt(api.trafficClock.timeS),pausedTransit=api.trafficModel.at(api.trafficClock.timeS,api.trafficClock.baseDate);
  await new Promise(resolve=>setTimeout(resolve,250));assert.deepEqual(api.trafficClock.snapshot(),paused,'paused dates, inputs, orders and vehicles use an unchanged snapshot');assert.deepEqual(api.taxiSimulation.simulateAt(api.trafficClock.timeS),pausedFleet);assert.deepEqual(api.trafficModel.at(api.trafficClock.timeS,api.trafficClock.baseDate),pausedTransit);assert.equal(api.O.now(),paused.epochMs);

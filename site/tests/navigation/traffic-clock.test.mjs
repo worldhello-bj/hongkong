@@ -36,3 +36,13 @@ test('application has one live clock and no independent departure or taxi playba
  assert.match(source,/now:\(\)=>trafficClock\.epochMs/);
  assert.match(source,/dateInput\.value=trafficClock\.date/);assert.match(source,/timeInput\.value=trafficClock\.time/);
 });
+
+test('delayed first playback tick primes the clock; the next active tick advances without catch-up',()=>{
+ const clock=createTrafficClock({date:'2026-10-13',timeS:29040,playing:false});
+ clock.play(true);assert.equal(clock.tick(500,true),29040,'a delayed first tick is only an anchor, not simulated elapsed time');
+ assert.equal(clock.tick(600,true),29041,'a second active tick must advance the actual clock');
+ clock.play(false);const paused=clock.snapshot();clock.tick(10000,true);assert.deepEqual(clock.snapshot(),paused);
+ clock.play(true);clock.tick(11000,false);assert.equal(clock.timeS,paused.departureS,'hidden timer work cannot advance time');
+ clock.tick(12000,true);assert.equal(clock.timeS,paused.departureS,'foreground return primes a fresh anchor');
+ assert.equal(clock.tick(12100,true),paused.departureS+1);
+});
