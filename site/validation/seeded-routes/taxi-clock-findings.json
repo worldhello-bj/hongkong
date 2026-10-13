@@ -1,0 +1,265 @@
+{
+  "findings": [
+    {
+      "scenario": "surface-stops-2",
+      "request": {
+        "origin": {
+          "id": "td:10000065",
+          "name": "西隧转车站, 雅翔道",
+          "coordinates": [
+            114.15981,
+            22.30357
+          ],
+          "lon": 114.15981,
+          "lat": 22.30357
+        },
+        "destination": {
+          "id": "td:99215",
+          "name": "租庇利街 (东行方向)",
+          "coordinates": [
+            114.15566,
+            22.2847
+          ],
+          "lon": 114.15566,
+          "lat": 22.2847
+        },
+        "departureDate": "2026-10-13",
+        "departureS": 28980
+      },
+      "need": "luggage",
+      "taxi": true,
+      "candidateId": "taxi-first-metro-AUS:portal:B2",
+      "failedChecks": [
+        "paidJourneyClock"
+      ],
+      "clock": {
+        "departureDate": "2026-10-13",
+        "departureTimezone": "Asia/Hong_Kong",
+        "departureS": 28980,
+        "arrivalS": 32648.941999999995,
+        "durationMinutes": 61.14903333333326,
+        "knownMinutes": 61.22999977505738,
+        "segmentMinutes": 61.14903333333333,
+        "reportedDepartureS": 28980,
+        "reportedArrivalS": 32653.799986503444,
+        "comparisons": {
+          "finiteStepClock": true,
+          "knownJourneyClock": false,
+          "segmentClock": true,
+          "requestedDeparture": true,
+          "reportedArrival": false,
+          "roundedDisplayedMinutes": true,
+          "originOpening": true,
+          "destinationOpening": true,
+          "scheduledFacilities": true
+        },
+        "violations": [],
+        "pass": false
+      },
+      "runtime": {
+        "version": "c1d9f0142f40",
+        "assets": {
+          "area/admiralty-block-graph.json.gz": "388a08977ed80e57295fe1a0d623178e79ecd441cedaa5cfc62fe043385e2298",
+          "area/admiralty-block-manifest.json": "3ca578fed53857bf83cb93c4f51aab5f854656415384f7a869360a983ea07001",
+          "area/area-graph.json.gz": "44901caf6ee1241a23e096eb3d692f96913789fb2c1cbd742da59d8d3730253f",
+          "area/station-graph.json.gz": "446700358a6a56ccb8bbf1e024f6a09da99925e2778331e67c307c135a0f0a1e",
+          "assets/app-transit-worker-CaCMeUxU.js": "0dad8e81b99c0d253dd1ce2b36f6a7226cb570fdbc8e4977a45b96a87b30bcaf",
+          "assets/app-walk-worker-jk5g-BMr.js": "172d0c79c85050eb61b85635f7a3642e3dc714c95895cbc8f2489b51737965d3",
+          "assets/boot-status.js": "53c430e4c7e6b380f1b3ad694eb75dc5922bc881350e5d42f66102cc595d5817",
+          "assets/demo-fallback.js": "ccb23b3a47a9a452a5b8dcc37f531ac9530c7af04633170cb1b82bd4f803baa7",
+          "assets/highspeed-routing.js": "5a43dc28dd3cfb1129b51b2539baf51e99a6f812aabe1b809dcb47d62f0bf4c3",
+          "assets/highspeed-service.js": "8423af29b8bd9f1c1cd5500e7155c0b38bf014ddd79779a35ff722d303cf2538",
+          "assets/integrated-navigation.js": "4a56908c0acafd6b43656fcbcd5a5a674fd76dda8744e0be51e96cfaa23b82cb",
+          "assets/intermodal-routing-D8vKT-lN.js": "8d2324d46864d59119802bf8f2753f5d68b8874c85784b830beea6e47b383e0c",
+          "assets/journey-3d-data.js": "51281f5d1b8dab528487edaa154ccadafabcf8410ba2cc93c44e6b58f30077ec",
+          "assets/journey-3d-model.js": "fc09dd87828c106805534a89b23f636015f4ee9ce76d724821bf8ab46a92a9b4",
+          "assets/journey-score.js": "a42fb33bec49ac8f19b0da0a48b4977c572192d4c6c3bdc7a3677674d8f4b8dc",
+          "assets/kow-c1-corridor-data.js": "a2a51a8d0e54cf4b45f2b7df4c3a3bad366e9b9544e9514b2e208fa7b973ea01",
+          "assets/kow-c1-corridor.js": "45b2d130f7c69d556a89e208fef2712f22141908da82d32b12d65447bfd4291e",
+          "assets/main-integrated.js": "21247d78eaf1c9b7816da77e73fdff9ca1ffc58e3d3e621dfb0a185ae42b7854",
+          "assets/map-tiles.js": "8143f30a83ad7f4bb70f4944068857c31ad6f14db1884c4a3e2203de3375d011",
+          "assets/maplibre-gl-_-pAOC5F.js": "f0a214ad8b161ece04da3257f8ca6c4ac288c2899fd765e6e4b15e80a44ec224",
+          "assets/metro-planning-CBAOotPX.js": "4a071c3d7325c6af92587eb05913b4f21ea52963c44dae9ea3bc9cc6bb655ffd",
+          "assets/metro-worker-BDEusPKL.js": "2583760d21b8ac434471569483373ca7631fdb9d7a740f7ac238e870f8b04f7f",
+          "assets/mobile-navigation-DfEsS_7b.js": "1fcb8b32b241c17fa42eeb976ee007e515839ab980ba1dc2a4eef265b7a705d1",
+          "assets/origin-opening.js": "b6e1bf6b81b5c7866424cb96da090be16e28d7815ad8a8db6ee7cf6e2f199ce9",
+          "assets/pacific-place-model.js": "3da1fdc7b90b610ace1e725a5bfc0fc8976b72e602ab582a04635c7a1030b691",
+          "assets/passenger-preferences.js": "1d5b2cfd9c1dc77993fa1392ea102a733e403ee9f3dee0e5e83fb9d5b257c077",
+          "assets/place-opening.js": "8ca2c3e9a272e61158ad96924ffd1ff0171d23fc3544913c2041dc641f026e57",
+          "assets/preference-routing.js": "7142f4f4b1121985492e8a455f4eaa780eb5f2cc8a0d2682653c58ba7c165a14",
+          "assets/preload-helper-BXl3LOEh.js": "d887044e7c17fd90344fc4f74f53cac686584daf2a458ab2136d36f1946e9ab6",
+          "assets/public-coverage.js": "7b9a48c85d3731c18b74c8896a0e7949d2b03b9dffd5878066eecc076f443da3",
+          "assets/rail-reference.js": "d443c08eccb243ab64a57203ff992b2f541cdb1053ff41d3d25b09db920300ae",
+          "assets/route-quote.js": "06e944e179be290edea57e0881e1186896282a41782eab426c4a280cc1477171",
+          "assets/routing-queue.js": "8ac1a97a9e60f93ac08c7e67031f51e7820621a8de20b473c142a9e3448bc761",
+          "assets/score-parameters.js": "d9c8c0a72edd684131ee2497e02bf3fef3e7ec4f36d8dd0b357eb91fecd1bb92",
+          "assets/station-alternatives.js": "8032d4f80d7e87f7748f66a9f1e729e56a19be9186ad2026899fb8ec30ed99be",
+          "assets/taxi-bridge.js": "0bd24c2ae0d049c3da3349cd38bef4840ba17c1d00cc5259289de10425eb9ffc",
+          "assets/taxi-candidates.js": "82964fb6c399002ccc3e128890c579b1567cc105b322ea2bbbe1d892f8760aa3",
+          "assets/taxi-map.js": "2c9a40cd381f967cec687f7a76c7445e200c8fec180394aeb04daeb1111a0839",
+          "assets/taxi-policy.js": "0849c7cbff47c8b0316eafface03c460adf53a8872024320e651727725f6fb72",
+          "assets/ticket-page.js": "a3f8b8b180d4a935c781a5425e514961d5edff14f60165baaab9f00a405646b1",
+          "assets/traffic-clock.js": "2f51679b842e443f46fe75f3ee10d2bd56841544979777d65c4d53f52f056e64",
+          "assets/traffic-scenario.js": "cb8a76f1cc785e4fcdb0b5f8feac33cc5f397a2dce76650bbe8d433367d9b30d",
+          "assets/tram-model-DNfzveeh.js": "a97d593f5ffbba553f7ee1558d07fe06295791188ab93dd2062483f1802e1bb0",
+          "assets/transit-stops.js": "349e1ffde77e455a13175768edebb203e229b98e5fa8419b6180a0dcb57b5f83",
+          "assets/transit-vehicles.js": "09a9a7f4a78ff79e626c1cd6a928e09125046b56d5f5e3186c529f17bd8e1761",
+          "assets/ui-content.js": "b59d7f455118e8f4262f14ceff31269cde154ce1a5c0809b26989dcb309de8ad",
+          "assets/ui-navigation.js": "12e051e2dfa410bbab9e224cb0aec52d2028e1966746ebb2fd8cb8e5879d98eb",
+          "assets/zh-BN2SYn6V.js": "0baa0f4a0af2ee59f48d8f79ea5736143840a3dcef5ab0b3088bd716b2dcd980",
+          "taxi/government-data.json": "755ccae78e10a507fbf0537bd5d0597aa4f7bebe97d7b5825199fb0472fdbafb",
+          "taxi/road-graph.js": "78f3f2d916148f6e2d6ab261906e661072f995a64ca027e5642395bf5d6ac48e",
+          "taxi/roaming.js": "86e44575676df6b4ebbe824aee4a53dc99163565eed477f2c20da083f357cefa",
+          "transit/services.json": "59c1c4faef3fadbf32748b0707231f78c3ec36aa4d2edc47de39b8c39485c542",
+          "transit/tram-stops.json": "4b34355bd7c4cceb4e7afbd73fd2e7c49ecc73d89a01f4082468c693cbc56684",
+          "transit/walk-links.json": "5cdff906f22c51146abc9e6e565f0b07a1d57a739239af403482f2dff2c6658c",
+          "transit/walk-links.json.gz": "9505ee7867641cd5c7bbf2a3c76a4216c7cdc05fdd7a72d7da4cf85eb2f6420b"
+        },
+        "signature": "8499c4d4b48666257ec12a6919ea87897d1c6f4f124c01038ea575b13109d706"
+      },
+      "auditProvenance": {
+        "version": "seeded-four-preference-source-clock-v1",
+        "files": {
+          "tests/navigation/seeded-route-harness.mjs": "b5b67826bc0d7166280128a92d90f9f3982679fe54af9614d449b6c585f62832",
+          "scripts/seeded-route-audit.mjs": "37bc15f039f940c40027774416f426f402e46c76464ec7f0450836045003f274",
+          "tests/navigation/four-preference-audit.mjs": "2d3d3c6b70d505ff01418d8387433894a476c44482f3124b17c017e90143688c",
+          "tests/navigation/four-preference-fixture.mjs": "1bf4d304b4582d41ba7706fbfc424f30b8e763e2b2eba426ad7a70ca0ca2b9ff",
+          "tests/navigation/point-matrix-audit.mjs": "5f9cdfc72e6c0d11e57e9b4cd5d17f9cab8888c2a3feed38c5c32977e6b7dbd3",
+          "tests/navigation/point-source-eligibility.mjs": "a424b9710aafc3bf82ab157f6054cb1e62d0eee862df5cf5ab5398272b50c352",
+          "tests/navigation/point-matrix-fixture.mjs": "5defc9c9417a73cf2157582405cf05c77220c0122d2a5278d294acff9fc44335"
+        }
+      }
+    },
+    {
+      "scenario": "surface-stops-4",
+      "request": {
+        "origin": {
+          "id": "td:99220",
+          "name": "金钟港铁站 (东行方向)",
+          "coordinates": [
+            114.16438,
+            22.2784
+          ],
+          "lon": 114.16438,
+          "lat": 22.2784
+        },
+        "destination": {
+          "id": "td:193",
+          "name": "油麻地文明里",
+          "coordinates": [
+            114.17083,
+            22.3115
+          ],
+          "lon": 114.17083,
+          "lat": 22.3115
+        },
+        "departureDate": "2026-10-13",
+        "departureS": 82800
+      },
+      "need": "lift",
+      "taxi": true,
+      "candidateId": "taxi-first-metro-ADM:portal:E2",
+      "failedChecks": [
+        "paidJourneyClock"
+      ],
+      "clock": {
+        "departureDate": "2026-10-13",
+        "departureTimezone": "Asia/Hong_Kong",
+        "departureS": 82800,
+        "arrivalS": 85870.04460000001,
+        "durationMinutes": 51.16741000000014,
+        "knownMinutes": 52.07123318559584,
+        "segmentMinutes": 51.16741000000002,
+        "reportedDepartureS": 82800,
+        "reportedArrivalS": 85924.27399113575,
+        "comparisons": {
+          "finiteStepClock": true,
+          "knownJourneyClock": false,
+          "segmentClock": true,
+          "requestedDeparture": true,
+          "reportedArrival": false,
+          "roundedDisplayedMinutes": false,
+          "originOpening": true,
+          "destinationOpening": true,
+          "scheduledFacilities": true
+        },
+        "violations": [],
+        "pass": false
+      },
+      "runtime": {
+        "version": "c1d9f0142f40",
+        "assets": {
+          "area/admiralty-block-graph.json.gz": "388a08977ed80e57295fe1a0d623178e79ecd441cedaa5cfc62fe043385e2298",
+          "area/admiralty-block-manifest.json": "3ca578fed53857bf83cb93c4f51aab5f854656415384f7a869360a983ea07001",
+          "area/area-graph.json.gz": "44901caf6ee1241a23e096eb3d692f96913789fb2c1cbd742da59d8d3730253f",
+          "area/station-graph.json.gz": "446700358a6a56ccb8bbf1e024f6a09da99925e2778331e67c307c135a0f0a1e",
+          "assets/app-transit-worker-CaCMeUxU.js": "0dad8e81b99c0d253dd1ce2b36f6a7226cb570fdbc8e4977a45b96a87b30bcaf",
+          "assets/app-walk-worker-jk5g-BMr.js": "172d0c79c85050eb61b85635f7a3642e3dc714c95895cbc8f2489b51737965d3",
+          "assets/boot-status.js": "53c430e4c7e6b380f1b3ad694eb75dc5922bc881350e5d42f66102cc595d5817",
+          "assets/demo-fallback.js": "ccb23b3a47a9a452a5b8dcc37f531ac9530c7af04633170cb1b82bd4f803baa7",
+          "assets/highspeed-routing.js": "5a43dc28dd3cfb1129b51b2539baf51e99a6f812aabe1b809dcb47d62f0bf4c3",
+          "assets/highspeed-service.js": "8423af29b8bd9f1c1cd5500e7155c0b38bf014ddd79779a35ff722d303cf2538",
+          "assets/integrated-navigation.js": "4a56908c0acafd6b43656fcbcd5a5a674fd76dda8744e0be51e96cfaa23b82cb",
+          "assets/intermodal-routing-D8vKT-lN.js": "8d2324d46864d59119802bf8f2753f5d68b8874c85784b830beea6e47b383e0c",
+          "assets/journey-3d-data.js": "51281f5d1b8dab528487edaa154ccadafabcf8410ba2cc93c44e6b58f30077ec",
+          "assets/journey-3d-model.js": "fc09dd87828c106805534a89b23f636015f4ee9ce76d724821bf8ab46a92a9b4",
+          "assets/journey-score.js": "a42fb33bec49ac8f19b0da0a48b4977c572192d4c6c3bdc7a3677674d8f4b8dc",
+          "assets/kow-c1-corridor-data.js": "a2a51a8d0e54cf4b45f2b7df4c3a3bad366e9b9544e9514b2e208fa7b973ea01",
+          "assets/kow-c1-corridor.js": "45b2d130f7c69d556a89e208fef2712f22141908da82d32b12d65447bfd4291e",
+          "assets/main-integrated.js": "21247d78eaf1c9b7816da77e73fdff9ca1ffc58e3d3e621dfb0a185ae42b7854",
+          "assets/map-tiles.js": "8143f30a83ad7f4bb70f4944068857c31ad6f14db1884c4a3e2203de3375d011",
+          "assets/maplibre-gl-_-pAOC5F.js": "f0a214ad8b161ece04da3257f8ca6c4ac288c2899fd765e6e4b15e80a44ec224",
+          "assets/metro-planning-CBAOotPX.js": "4a071c3d7325c6af92587eb05913b4f21ea52963c44dae9ea3bc9cc6bb655ffd",
+          "assets/metro-worker-BDEusPKL.js": "2583760d21b8ac434471569483373ca7631fdb9d7a740f7ac238e870f8b04f7f",
+          "assets/mobile-navigation-DfEsS_7b.js": "1fcb8b32b241c17fa42eeb976ee007e515839ab980ba1dc2a4eef265b7a705d1",
+          "assets/origin-opening.js": "b6e1bf6b81b5c7866424cb96da090be16e28d7815ad8a8db6ee7cf6e2f199ce9",
+          "assets/pacific-place-model.js": "3da1fdc7b90b610ace1e725a5bfc0fc8976b72e602ab582a04635c7a1030b691",
+          "assets/passenger-preferences.js": "1d5b2cfd9c1dc77993fa1392ea102a733e403ee9f3dee0e5e83fb9d5b257c077",
+          "assets/place-opening.js": "8ca2c3e9a272e61158ad96924ffd1ff0171d23fc3544913c2041dc641f026e57",
+          "assets/preference-routing.js": "7142f4f4b1121985492e8a455f4eaa780eb5f2cc8a0d2682653c58ba7c165a14",
+          "assets/preload-helper-BXl3LOEh.js": "d887044e7c17fd90344fc4f74f53cac686584daf2a458ab2136d36f1946e9ab6",
+          "assets/public-coverage.js": "7b9a48c85d3731c18b74c8896a0e7949d2b03b9dffd5878066eecc076f443da3",
+          "assets/rail-reference.js": "d443c08eccb243ab64a57203ff992b2f541cdb1053ff41d3d25b09db920300ae",
+          "assets/route-quote.js": "06e944e179be290edea57e0881e1186896282a41782eab426c4a280cc1477171",
+          "assets/routing-queue.js": "8ac1a97a9e60f93ac08c7e67031f51e7820621a8de20b473c142a9e3448bc761",
+          "assets/score-parameters.js": "d9c8c0a72edd684131ee2497e02bf3fef3e7ec4f36d8dd0b357eb91fecd1bb92",
+          "assets/station-alternatives.js": "8032d4f80d7e87f7748f66a9f1e729e56a19be9186ad2026899fb8ec30ed99be",
+          "assets/taxi-bridge.js": "0bd24c2ae0d049c3da3349cd38bef4840ba17c1d00cc5259289de10425eb9ffc",
+          "assets/taxi-candidates.js": "82964fb6c399002ccc3e128890c579b1567cc105b322ea2bbbe1d892f8760aa3",
+          "assets/taxi-map.js": "2c9a40cd381f967cec687f7a76c7445e200c8fec180394aeb04daeb1111a0839",
+          "assets/taxi-policy.js": "0849c7cbff47c8b0316eafface03c460adf53a8872024320e651727725f6fb72",
+          "assets/ticket-page.js": "a3f8b8b180d4a935c781a5425e514961d5edff14f60165baaab9f00a405646b1",
+          "assets/traffic-clock.js": "2f51679b842e443f46fe75f3ee10d2bd56841544979777d65c4d53f52f056e64",
+          "assets/traffic-scenario.js": "cb8a76f1cc785e4fcdb0b5f8feac33cc5f397a2dce76650bbe8d433367d9b30d",
+          "assets/tram-model-DNfzveeh.js": "a97d593f5ffbba553f7ee1558d07fe06295791188ab93dd2062483f1802e1bb0",
+          "assets/transit-stops.js": "349e1ffde77e455a13175768edebb203e229b98e5fa8419b6180a0dcb57b5f83",
+          "assets/transit-vehicles.js": "09a9a7f4a78ff79e626c1cd6a928e09125046b56d5f5e3186c529f17bd8e1761",
+          "assets/ui-content.js": "b59d7f455118e8f4262f14ceff31269cde154ce1a5c0809b26989dcb309de8ad",
+          "assets/ui-navigation.js": "12e051e2dfa410bbab9e224cb0aec52d2028e1966746ebb2fd8cb8e5879d98eb",
+          "assets/zh-BN2SYn6V.js": "0baa0f4a0af2ee59f48d8f79ea5736143840a3dcef5ab0b3088bd716b2dcd980",
+          "taxi/government-data.json": "755ccae78e10a507fbf0537bd5d0597aa4f7bebe97d7b5825199fb0472fdbafb",
+          "taxi/road-graph.js": "78f3f2d916148f6e2d6ab261906e661072f995a64ca027e5642395bf5d6ac48e",
+          "taxi/roaming.js": "86e44575676df6b4ebbe824aee4a53dc99163565eed477f2c20da083f357cefa",
+          "transit/services.json": "59c1c4faef3fadbf32748b0707231f78c3ec36aa4d2edc47de39b8c39485c542",
+          "transit/tram-stops.json": "4b34355bd7c4cceb4e7afbd73fd2e7c49ecc73d89a01f4082468c693cbc56684",
+          "transit/walk-links.json": "5cdff906f22c51146abc9e6e565f0b07a1d57a739239af403482f2dff2c6658c",
+          "transit/walk-links.json.gz": "9505ee7867641cd5c7bbf2a3c76a4216c7cdc05fdd7a72d7da4cf85eb2f6420b"
+        },
+        "signature": "8499c4d4b48666257ec12a6919ea87897d1c6f4f124c01038ea575b13109d706"
+      },
+      "auditProvenance": {
+        "version": "seeded-four-preference-source-clock-v1",
+        "files": {
+          "tests/navigation/seeded-route-harness.mjs": "b5b67826bc0d7166280128a92d90f9f3982679fe54af9614d449b6c585f62832",
+          "scripts/seeded-route-audit.mjs": "37bc15f039f940c40027774416f426f402e46c76464ec7f0450836045003f274",
+          "tests/navigation/four-preference-audit.mjs": "2d3d3c6b70d505ff01418d8387433894a476c44482f3124b17c017e90143688c",
+          "tests/navigation/four-preference-fixture.mjs": "1bf4d304b4582d41ba7706fbfc424f30b8e763e2b2eba426ad7a70ca0ca2b9ff",
+          "tests/navigation/point-matrix-audit.mjs": "5f9cdfc72e6c0d11e57e9b4cd5d17f9cab8888c2a3feed38c5c32977e6b7dbd3",
+          "tests/navigation/point-source-eligibility.mjs": "a424b9710aafc3bf82ab157f6054cb1e62d0eee862df5cf5ab5398272b50c352",
+          "tests/navigation/point-matrix-fixture.mjs": "5defc9c9417a73cf2157582405cf05c77220c0122d2a5278d294acff9fc44335"
+        }
+      }
+    }
+  ],
+  "boundary": "Pre-fix evidence; final rerun is reported separately. No raw graph or environment logs included."
+}

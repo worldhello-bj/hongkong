@@ -1,12 +1,14 @@
 import {normalizePassengerNeed,isRemovedPassengerNeed} from "./passenger-preferences.js";
 // One route namespace for current navigation and historical public entry points.
-export const APP_STAGES = Object.freeze(['home','search','routes','navigation','arrival','orders','account','services','checkout','station','info','mall']);
+export const APP_STAGES = Object.freeze(['home','search','routes','navigation','arrival','orders','account','services','checkout','tickets','station','info','mall']);
 export const STATIONS = Object.freeze([
   {id:'ADM',name:'金钟',center:[114.1658,22.2791]},
   {id:'HUH',name:'红磡',center:[114.1817,22.3033]},
   {id:'AUS',name:'柯士甸',center:[114.1668,22.3048]},
   {id:'KOW',name:'九龙',center:[114.1615,22.3048]},
-  {id:'EXC',name:'会展',center:[114.1753,22.282]}
+  {id:'EXC',name:'会展',center:[114.1753,22.282]},
+  {id:'HSR:WEK',name:'西九龙',center:[114.1648,22.3049]},
+  {id:'HSR:FUT',name:'福田',center:[114.0557,22.5383]}
 ]);
 const aliases = Object.freeze({area:'home',map:'home',metro:'station',model:'station',research:'info',about:'info',settings:'account'});
 export function validStation(value) {
@@ -48,7 +50,7 @@ export function navigationUrl(state) {
   return '/#'+stage+(stage==='station'?'?station='+validStation(state.station):'');
 }
 export function primaryAppTab(stage) {
-  if(stage==='checkout')return 'orders';
+  if(stage==='checkout'||stage==='tickets')return 'orders';
   if(stage==='info')return 'services';
   return ['orders','account','services'].includes(stage)?stage:'home';
 }

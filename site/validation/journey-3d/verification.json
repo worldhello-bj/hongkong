@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-13",
+  "tests": 9,
+  "passed": 9,
+  "seededViews": 240,
+  "staticSvgVisualPass": true,
+  "browserVerification": "blocked: Chromium socket() Operation not permitted",
+  "sharedDistBuilt": false,
+  "routingDataChanged": false,
+  "sizes": [
+    {
+      "file": "journey-3d-data.js",
+      "bytes": 7370,
+      "gzipBytes": 3024
+    },
+    {
+      "file": "journey-3d-model.js",
+      "bytes": 18209,
+      "gzipBytes": 6690
+    },
+    {
+      "file": "journey-3d-model.css",
+      "bytes": 6889,
+      "gzipBytes": 2373
+    }
+  ]
+}

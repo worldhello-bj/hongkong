@@ -1,0 +1,442 @@
+{
+  "seed": 20261013,
+  "runtime": "5526e22eeac9",
+  "runtimeSignature": "60673b0c7715931e48119fba8cf1d6e649073b9f77842b2c2fd39c309531844a",
+  "total": 16,
+  "executed": 16,
+  "observations": [
+    {
+      "id": "station-portals-1",
+      "need": "ordinary",
+      "taxi": false,
+      "departureS": 28800,
+      "stratum": "station-portals",
+      "exitCode": 0,
+      "elapsedMs": 27132,
+      "classification": "completed-without-candidate-needs-diagnosis",
+      "comparisonStatus": "complete",
+      "available": 0,
+      "passed": 0,
+      "firstResultMs": null,
+      "fullCandidateWallMs": 21019.352945000002,
+      "checks": [],
+      "messages": [
+        "当前已载入路网未提供这两个来源区域之间的完整步行连接；这不代表现实中必须跨海。可尝试公共交通联程，或明确选择其他已覆盖入口。",
+        "所选时刻、服务范围及可用步行连接中没有找到联程，请调整时间或起终点；不会补造缺失道路或假定地铁通宵运行。",
+        "未找到符合所选条件且包含轨道乘车路段的地铁行程；步行接驳、出入口或无障碍条件可能不连通。"
+      ],
+      "errors": []
+    },
+    {
+      "id": "station-portals-2",
+      "need": "luggage",
+      "taxi": true,
+      "departureS": 28980,
+      "stratum": "station-portals",
+      "exitCode": 0,
+      "elapsedMs": 14030,
+      "classification": "completed-with-candidates",
+      "comparisonStatus": "complete",
+      "available": 1,
+      "passed": 1,
+      "firstResultMs": 4090,
+      "fullCandidateWallMs": 7595.453027,
+      "checks": [
+        {
+          "id": "transit",
+          "pass": true,
+          "failed": []
+        }
+      ],
+      "messages": [
+        "楼层或节点与车行路缘的接续未核验，保留原地点并仅展示费用情景 行李空间待确认：车型、后备厢容量与装卸条件为演示假设，请确认后再乘车。"
+      ],
+      "errors": []
+    },
+    {
+      "id": "station-portals-3",
+      "need": "escalator",
+      "taxi": false,
+      "departureS": 39600,
+      "stratum": "station-portals",
+      "exitCode": 0,
+      "elapsedMs": 66313,
+      "classification": "pending-observation-window",
+      "comparisonStatus": null,
+      "available": 0,
+      "passed": 0,
+      "firstResultMs": null,
+      "fullCandidateWallMs": null,
+      "checks": [],
+      "messages": [],
+      "errors": []
+    },
+    {
+      "id": "station-portals-4",
+      "need": "lift",
+      "taxi": true,
+      "departureS": 82800,
+      "stratum": "station-portals",
+      "exitCode": 0,
+      "elapsedMs": 44728,
+      "classification": "completed-without-candidate-needs-diagnosis",
+      "comparisonStatus": "complete",
+      "available": 0,
+      "passed": 0,
+      "firstResultMs": null,
+      "fullCandidateWallMs": 37835.166481,
+      "checks": [],
+      "messages": [
+        "当前已载入路网未提供这两个来源区域之间的完整步行连接；这不代表现实中必须跨海。可尝试公共交通联程，或明确选择其他已覆盖入口。",
+        "所选时刻、服务范围及可用步行连接中没有找到联程，请调整时间或起终点；不会补造缺失道路或假定地铁通宵运行。",
+        "未找到符合所选条件且包含轨道乘车路段的地铁行程；步行接驳、出入口或无障碍条件可能不连通。",
+        "楼层或节点与车行路缘的接续未核验，保留原地点并仅展示费用情景"
+      ],
+      "errors": []
+    },
+    {
+      "id": "surface-stops-1",
+      "need": "ordinary",
+      "taxi": false,
+      "departureS": 28800,
+      "stratum": "surface-stops",
+      "exitCode": 0,
+      "elapsedMs": 14666,
+      "classification": "completed-with-candidates",
+      "comparisonStatus": "complete",
+      "available": 2,
+      "passed": 2,
+      "firstResultMs": 4656,
+      "fullCandidateWallMs": 7715.730937000001,
+      "checks": [
+        {
+          "id": "walk",
+          "pass": true,
+          "failed": []
+        },
+        {
+          "id": "transit",
+          "pass": true,
+          "failed": []
+        }
+      ],
+      "messages": [],
+      "errors": []
+    },
+    {
+      "id": "surface-stops-2",
+      "need": "luggage",
+      "taxi": true,
+      "departureS": 28980,
+      "stratum": "surface-stops",
+      "exitCode": 0,
+      "elapsedMs": 56226,
+      "classification": "completed-with-candidates",
+      "comparisonStatus": "complete",
+      "available": 5,
+      "passed": 5,
+      "firstResultMs": 2092,
+      "fullCandidateWallMs": 49127.827891,
+      "checks": [
+        {
+          "id": "taxi-direct",
+          "pass": true,
+          "failed": []
+        },
+        {
+          "id": "taxi-last-bus-td:4246",
+          "pass": true,
+          "failed": []
+        },
+        {
+          "id": "taxi-last-metro-AUS:portal:B2",
+          "pass": true,
+          "failed": []
+        },
+        {
+          "id": "transit",
+          "pass": true,
+          "failed": []
+        },
+        {
+          "id": "taxi-first-metro-AUS:portal:B2",
+          "pass": true,
+          "failed": []
+        }
+      ],
+      "messages": [
+        "当前已载入路网未提供这两个来源区域之间的完整步行连接；这不代表现实中必须跨海。可尝试公共交通联程，或明确选择其他已覆盖入口。"
+      ],
+      "errors": []
+    },
+    {
+      "id": "surface-stops-3",
+      "need": "escalator",
+      "taxi": false,
+      "departureS": 39600,
+      "stratum": "surface-stops",
+      "exitCode": 0,
+      "elapsedMs": 22728,
+      "classification": "completed-with-candidates",
+      "comparisonStatus": "complete",
+      "available": 1,
+      "passed": 1,
+      "firstResultMs": 14416,
+      "fullCandidateWallMs": 16105.976541,
+      "checks": [
+        {
+          "id": "transit",
+          "pass": true,
+          "failed": []
+        }
+      ],
+      "messages": [
+        "当前已载入路网未提供这两个来源区域之间的完整步行连接；这不代表现实中必须跨海。可尝试公共交通联程，或明确选择其他已覆盖入口。"
+      ],
+      "errors": []
+    },
+    {
+      "id": "surface-stops-4",
+      "need": "lift",
+      "taxi": true,
+      "departureS": 82800,
+      "stratum": "surface-stops",
+      "exitCode": 0,
+      "elapsedMs": 28067,
+      "classification": "completed-with-candidates",
+      "comparisonStatus": "complete",
+      "available": 5,
+      "passed": 5,
+      "firstResultMs": 1858,
+      "fullCandidateWallMs": 20867.876549999997,
+      "checks": [
+        {
+          "id": "taxi-direct",
+          "pass": true,
+          "failed": []
+        },
+        {
+          "id": "transit",
+          "pass": true,
+          "failed": []
+        },
+        {
+          "id": "taxi-last-metro-AUS:portal:B2",
+          "pass": true,
+          "failed": []
+        },
+        {
+          "id": "taxi-first-metro-ADM:portal:E2",
+          "pass": true,
+          "failed": []
+        },
+        {
+          "id": "taxi-last-metro-KOW:portal:A",
+          "pass": true,
+          "failed": []
+        }
+      ],
+      "messages": [
+        "当前已载入路网未提供这两个来源区域之间的完整步行连接；这不代表现实中必须跨海。可尝试公共交通联程，或明确选择其他已覆盖入口。"
+      ],
+      "errors": []
+    },
+    {
+      "id": "land-nodes-1",
+      "need": "ordinary",
+      "taxi": false,
+      "departureS": 28800,
+      "stratum": "land-nodes",
+      "exitCode": 0,
+      "elapsedMs": 15408,
+      "classification": "completed-with-candidates",
+      "comparisonStatus": "complete",
+      "available": 1,
+      "passed": 1,
+      "firstResultMs": 6266,
+      "fullCandidateWallMs": 9233.860808000001,
+      "checks": [
+        {
+          "id": "transit",
+          "pass": true,
+          "failed": []
+        }
+      ],
+      "messages": [],
+      "errors": []
+    },
+    {
+      "id": "land-nodes-2",
+      "need": "luggage",
+      "taxi": true,
+      "departureS": 28980,
+      "stratum": "land-nodes",
+      "exitCode": 0,
+      "elapsedMs": 35224,
+      "classification": "completed-with-candidates",
+      "comparisonStatus": "complete",
+      "available": 2,
+      "passed": 2,
+      "firstResultMs": 2202,
+      "fullCandidateWallMs": 28700.611021,
+      "checks": [
+        {
+          "id": "taxi-direct",
+          "pass": true,
+          "failed": []
+        },
+        {
+          "id": "transit",
+          "pass": true,
+          "failed": []
+        }
+      ],
+      "messages": [],
+      "errors": []
+    },
+    {
+      "id": "land-nodes-3",
+      "need": "escalator",
+      "taxi": false,
+      "departureS": 39600,
+      "stratum": "land-nodes",
+      "exitCode": 0,
+      "elapsedMs": 20226,
+      "classification": "completed-with-candidates",
+      "comparisonStatus": "complete",
+      "available": 1,
+      "passed": 1,
+      "firstResultMs": 12188,
+      "fullCandidateWallMs": 14077.692298999998,
+      "checks": [
+        {
+          "id": "transit",
+          "pass": true,
+          "failed": []
+        }
+      ],
+      "messages": [
+        "当前已载入路网未提供这两个来源区域之间的完整步行连接；这不代表现实中必须跨海。可尝试公共交通联程，或明确选择其他已覆盖入口。"
+      ],
+      "errors": []
+    },
+    {
+      "id": "land-nodes-4",
+      "need": "lift",
+      "taxi": true,
+      "departureS": 82800,
+      "stratum": "land-nodes",
+      "exitCode": 0,
+      "elapsedMs": 23699,
+      "classification": "completed-with-candidates",
+      "comparisonStatus": "complete",
+      "available": 2,
+      "passed": 2,
+      "firstResultMs": 2190,
+      "fullCandidateWallMs": 17032.175291,
+      "checks": [
+        {
+          "id": "taxi-direct",
+          "pass": true,
+          "failed": []
+        },
+        {
+          "id": "transit",
+          "pass": true,
+          "failed": []
+        }
+      ],
+      "messages": [],
+      "errors": []
+    },
+    {
+      "id": "source-floors-1",
+      "need": "ordinary",
+      "taxi": false,
+      "departureS": 28800,
+      "stratum": "source-floors",
+      "exitCode": 0,
+      "elapsedMs": 6568,
+      "classification": "completed-without-candidate-needs-diagnosis",
+      "comparisonStatus": "complete",
+      "available": 0,
+      "passed": 0,
+      "firstResultMs": null,
+      "fullCandidateWallMs": 5.851383999999598,
+      "checks": [],
+      "messages": [
+        "起点已载入的来源通道在所选香港时刻未开放。开放规则：太古廣場平台 开放：ED 10:00–22:00。请选择开放时刻，或明确另选公共室外地点；原起终点未更改。这不代表整座场地关闭。"
+      ],
+      "errors": []
+    },
+    {
+      "id": "source-floors-2",
+      "need": "luggage",
+      "taxi": true,
+      "departureS": 28980,
+      "stratum": "source-floors",
+      "exitCode": 0,
+      "elapsedMs": 6601,
+      "classification": "completed-without-candidate-needs-diagnosis",
+      "comparisonStatus": "complete",
+      "available": 0,
+      "passed": 0,
+      "firstResultMs": null,
+      "fullCandidateWallMs": 4.542492999999922,
+      "checks": [],
+      "messages": [
+        "起点已载入的来源通道在所选香港时刻未开放。开放规则：太古廣場平台 开放：ED 10:00–22:00。请选择开放时刻，或明确另选公共室外地点；原起终点未更改。这不代表整座场地关闭。"
+      ],
+      "errors": []
+    },
+    {
+      "id": "source-floors-3",
+      "need": "escalator",
+      "taxi": false,
+      "departureS": 39600,
+      "stratum": "source-floors",
+      "exitCode": 0,
+      "elapsedMs": 18152,
+      "classification": "completed-with-candidates",
+      "comparisonStatus": "complete",
+      "available": 1,
+      "passed": 1,
+      "firstResultMs": 9081,
+      "fullCandidateWallMs": 11554.481416000002,
+      "checks": [
+        {
+          "id": "transit-detailed",
+          "pass": true,
+          "failed": []
+        }
+      ],
+      "messages": [],
+      "errors": []
+    },
+    {
+      "id": "source-floors-4",
+      "need": "lift",
+      "taxi": true,
+      "departureS": 82800,
+      "stratum": "source-floors",
+      "exitCode": 0,
+      "elapsedMs": 6145,
+      "classification": "completed-without-candidate-needs-diagnosis",
+      "comparisonStatus": "complete",
+      "available": 0,
+      "passed": 0,
+      "firstResultMs": null,
+      "fullCandidateWallMs": 4.177852000000712,
+      "checks": [],
+      "messages": [
+        "起点已载入的来源通道在所选香港时刻未开放。开放规则：太古廣場平台 开放：ED 10:00–22:00。请选择开放时刻，或明确另选公共室外地点；原起终点未更改。这不代表整座场地关闭。"
+      ],
+      "errors": []
+    }
+  ],
+  "limits": [
+    "Stratified diagnostic cohort, not Hong Kong-wide success-rate estimate.",
+    "One fresh process per cell. 60s comparison observation and 90s external watchdog; pending is never NO_ROUTE.",
+    "Real entry and Worker with DOM stand-in, not browser/device performance."
+  ]
+}

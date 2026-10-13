@@ -1,0 +1,150 @@
+{
+  "seed": 20261013,
+  "method": "Fixed-seed terminal/time procedural model queries; no local walking route claim, no live ticket or exact railway geometry.",
+  "rows": [
+    {
+      "origin": "HSR:WEK",
+      "destination": "HSR:FUT",
+      "need": "ordinary",
+      "departureS": 48120,
+      "arrivalS": 53160,
+      "minutes": 84,
+      "train": "G6548",
+      "waitMinutes": 30,
+      "checks": {
+        "complete": true,
+        "unknownFare": true,
+        "orderedTimes": true,
+        "noFakeWalkGeometry": true,
+        "identifiedHighSpeedModel": true
+      },
+      "pass": true
+    },
+    {
+      "origin": "HSR:FUT",
+      "destination": "HSR:WEK",
+      "need": "luggage",
+      "departureS": 48300,
+      "arrivalS": 53880,
+      "minutes": 93,
+      "train": "G6547",
+      "waitMinutes": 4,
+      "checks": {
+        "complete": true,
+        "unknownFare": true,
+        "orderedTimes": true,
+        "noFakeWalkGeometry": true,
+        "identifiedHighSpeedModel": true
+      },
+      "pass": true
+    },
+    {
+      "origin": "HSR:WEK",
+      "destination": "HSR:FUT",
+      "need": "escalator",
+      "departureS": 19800,
+      "arrivalS": 26460,
+      "minutes": 111,
+      "train": "G5820",
+      "waitMinutes": 57,
+      "checks": {
+        "complete": true,
+        "unknownFare": true,
+        "orderedTimes": true,
+        "noFakeWalkGeometry": true,
+        "identifiedHighSpeedModel": true
+      },
+      "pass": true
+    },
+    {
+      "origin": "HSR:FUT",
+      "destination": "HSR:WEK",
+      "need": "lift",
+      "departureS": 68520,
+      "arrivalS": 75840,
+      "minutes": 122,
+      "train": "G5653",
+      "waitMinutes": 33,
+      "checks": {
+        "complete": true,
+        "unknownFare": true,
+        "orderedTimes": true,
+        "noFakeWalkGeometry": true,
+        "identifiedHighSpeedModel": true
+      },
+      "pass": true
+    },
+    {
+      "origin": "HSR:WEK",
+      "destination": "HSR:FUT",
+      "need": "ordinary",
+      "departureS": 79320,
+      "arrivalS": 83640,
+      "minutes": 72,
+      "train": "G5608",
+      "waitMinutes": 18,
+      "checks": {
+        "complete": true,
+        "unknownFare": true,
+        "orderedTimes": true,
+        "noFakeWalkGeometry": true,
+        "identifiedHighSpeedModel": true
+      },
+      "pass": true
+    },
+    {
+      "origin": "HSR:FUT",
+      "destination": "HSR:WEK",
+      "need": "luggage",
+      "departureS": 33000,
+      "arrivalS": 38700,
+      "minutes": 95,
+      "train": "G5617",
+      "waitMinutes": 5,
+      "checks": {
+        "complete": true,
+        "unknownFare": true,
+        "orderedTimes": true,
+        "noFakeWalkGeometry": true,
+        "identifiedHighSpeedModel": true
+      },
+      "pass": true
+    },
+    {
+      "origin": "HSR:WEK",
+      "destination": "HSR:FUT",
+      "need": "escalator",
+      "departureS": 35640,
+      "arrivalS": 39600,
+      "minutes": 66,
+      "train": "G5630",
+      "waitMinutes": 12,
+      "checks": {
+        "complete": true,
+        "unknownFare": true,
+        "orderedTimes": true,
+        "noFakeWalkGeometry": true,
+        "identifiedHighSpeedModel": true
+      },
+      "pass": true
+    },
+    {
+      "origin": "HSR:FUT",
+      "destination": "HSR:WEK",
+      "need": "lift",
+      "departureS": 66420,
+      "arrivalS": 73140,
+      "minutes": 112,
+      "train": "G5831",
+      "waitMinutes": 23,
+      "checks": {
+        "complete": true,
+        "unknownFare": true,
+        "orderedTimes": true,
+        "noFakeWalkGeometry": true,
+        "identifiedHighSpeedModel": true
+      },
+      "pass": true
+    }
+  ]
+}

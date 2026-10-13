@@ -1,3 +1,5 @@
+@import url("./ticket-page.css");
+@import url("./journey-3d-model.css");
 @import url("./pacific-place-model.css");
 /* Integrated public-mode policy: the only transport selectors. */
 .na-modes.na-integrated-modes{grid-template-columns:repeat(2,minmax(0,1fr));margin-bottom:6px}.na-public-modes{font-size:11px;color:#587069;line-height:1.5;margin:0 0 12px}.na-taxi-status{padding:10px;background:#fff8e8;border-radius:8px}.na-choice p{line-height:1.6}
@@ -100,3 +102,11 @@
 /* Endpoint badges are decorative; co-located stop targets must remain clickable. */
 .na-map [data-app=markers],.na-map [data-app=markers] *{pointer-events:none}
 @media(max-width:760px){.na-highspeed-note{padding:10px 12px}.na-traffic-controls{max-width:calc(100% - 24px)}.na-traffic-layers button{min-width:34px}}
+
+/* A dedicated ticketing page, not a floating map checkout. */
+#navigation-app[data-stage=tickets] .na-map,#navigation-app[data-stage=tickets] .na-map-tools,#navigation-app[data-stage=tickets] .na-traffic-controls{visibility:hidden;pointer-events:none}
+#navigation-app[data-stage=tickets] .na-sheet{left:50%;transform:translateX(-50%);width:min(980px,calc(100% - 40px));max-width:none;top:76px;bottom:28px;max-height:none;border-radius:24px;background:#f6f8fc;box-shadow:0 18px 60px #16375418}
+#navigation-app[data-stage=tickets] .na-status{display:none}
+@media(max-width:760px){#navigation-app[data-stage=tickets] .na-sheet{left:0;right:0;top:60px;bottom:64px;width:100%;transform:none;border-radius:0;max-height:none}}
+
+.na-station-workspace>[data-app=station-model][data-model-kind=procedural]{overflow-y:auto;overscroll-behavior:contain;touch-action:pan-y}
