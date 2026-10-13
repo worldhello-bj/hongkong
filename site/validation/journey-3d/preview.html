@@ -1,0 +1,25 @@
+<!doctype html><html lang="zh-Hans"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Station model verification</title><link rel="stylesheet" href="../../src/navigation/journey-3d-model.css"><style>body{margin:0;background:#091b24;padding:20px}#model{max-width:980px;margin:auto}@media(max-width:540px){body{padding:8px}}</style><div id="model"></div><pre id="report" hidden></pre><script type="module">
+import {createJourney3DModel} from '../../src/navigation/journey-3d-model.js';
+const params = new URLSearchParams(location.search), host=document.getElementById('model');
+const view=createJourney3DModel(host,{stationId:params.get('station')||'HSR:WEK',direction:params.get('direction')||'departure'});window.journeyModel=view;
+if(params.has('test')) {
+ const results=[];const check=(name,value)=>results.push({name,pass:!!value});
+ const click=selector=>host.querySelector(selector).click();
+ const change=(control,value)=>{const el=host.querySelector('[data-j3d-control="'+control+'"]');el.value=value;el.dispatchEvent(new Event('change',{bubbles:true}));};
+ check('initial 4 floors',host.querySelectorAll('[data-model-floor]').length===4);
+ const floor=host.querySelector('[data-j3d-control="floor"]');floor.focus();change('floor','B3');check('floor selector B3',host.querySelectorAll('[data-model-floor]').length===1&&view.getState().floor==='B3');check('focus survives',document.activeElement.dataset.j3dControl==='floor');
+ change('floor','ALL');check('all selection tracks',host.querySelector('[data-j3d-control="floor"]').value==='ALL');
+ click('[data-j3d-action="arrival"]');check('arrival stage',view.getState().direction==='arrival');
+ change('station','HSR:FUT');check('station switching',host.querySelectorAll('[data-model-floor]').length===3);check('arrival no fabricated path',!host.querySelector('[data-procedure-link]'));
+ click('[data-j3d-action="departure"]');change('progress','2');check('range commits',view.getState().stageIndex===2);
+ view.focusStep({kind:'procedure',highSpeedProcedure:'verification'},{trip:{fromStopId:'HSR:WEK',toStopId:'HSR:FUT'}});check('navigation links',view.getState().floor==='B1');
+ view.focusStep({kind:'wait',highSpeedProcedure:'wait'},{trip:{fromStopId:'HSR:WEK',toStopId:'HSR:FUT'}});check('unknown clears',host.querySelectorAll('.j3d-layer.is-active,.j3d-node.is-active').length===0);
+ const details=host.querySelector('details');details.open=true;click('[data-j3d-action="right"]');check('disclosure persists',host.querySelector('details').open);
+ view.setStation('HSR:WEK');check('no horizontal overflow',document.documentElement.scrollWidth<=innerWidth);
+ check('minimum button target',Array.from(host.querySelectorAll('button')).every(b=>b.getBoundingClientRect().height>=44));
+ check('no svg invalid values',!/NaN|Infinity|undefined/.test(host.querySelector('svg').outerHTML));
+ document.getElementById('report').textContent=JSON.stringify({width:innerWidth,reducedMotion:matchMedia('(prefers-reduced-motion: reduce)').matches,results},null,2);
+ document.body.dataset.testResult=results.every(r=>r.pass)?'pass':'fail';
+ host.querySelector('details').open=false;
+}
+</script></html>

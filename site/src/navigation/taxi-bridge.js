@@ -59,7 +59,11 @@ export function composeTaxiJourney({request,prefix,suffix,quote,pickupLink,dropo
     status:!exactPoint(request[side])?'xy-scenario':sourceEndpointAccess(side==='origin'?prefix:suffix,side)?'source-route':'unverified-node-or-floor'}));
   const unverifiedEndpointAccess=endpointAccess.filter(entry=>entry.status==='unverified-node-or-floor');
   const complete=unverifiedEndpointAccess.length===0;
-  const totalMinutes=(quote.dropoffS-request.departureS)/60+(dropoffLink?.durationS??0)/60+(suffix?.totalMinutes??0);
+  // Public totalMinutes is rounded for display. Compose the exact source journey
+  // duration instead, preserving the departure used to route its scheduled legs.
+  const suffixMinutes=Number.isFinite(suffix?.journey?.knownMinutes)?suffix.journey.knownMinutes:
+    (suffix?.journey?.steps??[]).reduce((minutes,step)=>minutes+(step.guidance?.minutes??0),0);
+  const totalMinutes=(quote.dropoffS-request.departureS)/60+(dropoffLink?.durationS??0)/60+suffixMinutes;
   const warnings=[...prefix.warnings,...suffix?.warnings??[],scene.disclaimer,
     '路缘连接显示为虚线模型：上客侧人行节点来源高度 '+(pickupLink.node.coordinates[2]??'未知')+' 米；车行侧高程与实际高差未核验。',
     '出租车行驶沿 OpenStreetMap 有向道路；车速、既有订单、候车均为演示数据，不是实时调度。',
