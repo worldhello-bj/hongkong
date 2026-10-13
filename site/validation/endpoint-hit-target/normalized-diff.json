@@ -1,0 +1,32 @@
+{
+  "baseline": "3cded6a0531f4c4a8d9d9c94243a13c6761bf3eb",
+  "runtime": "d13e16e39f47",
+  "functionalChange": "Decorative endpoint badges no longer intercept co-located transit stop pointer events.",
+  "versionOnlyFiles": [
+    "dist/area.html",
+    "dist/assets/app-transit-worker-CaCMeUxU.js",
+    "dist/assets/app-walk-worker-jk5g-BMr.js",
+    "dist/assets/demo-fallback.js",
+    "dist/assets/highspeed-routing.js",
+    "dist/assets/integrated-navigation.js",
+    "dist/assets/intermodal-routing-D8vKT-lN.js",
+    "dist/assets/journey-score.js",
+    "dist/assets/kow-c1-corridor.js",
+    "dist/assets/main-integrated.js",
+    "dist/assets/metro-planning-CBAOotPX.js",
+    "dist/assets/metro-worker-BDEusPKL.js",
+    "dist/assets/mobile-navigation-DfEsS_7b.js",
+    "dist/assets/preference-routing.js",
+    "dist/assets/score-parameters.js",
+    "dist/assets/taxi-candidates.js",
+    "dist/assets/taxi-policy.js",
+    "dist/assets/tram-model-DNfzveeh.js",
+    "dist/assets/ui-content.js",
+    "dist/assets/ui-navigation.js",
+    "dist/index.html",
+    "dist/metro.html",
+    "dist/research.html",
+    "dist/taxi/roaming.js"
+  ],
+  "unchangedJavaScriptLogic": true
+}
