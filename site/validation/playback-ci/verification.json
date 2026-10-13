@@ -1,0 +1,33 @@
+{
+  "checkedAt": "2026-10-13T10:53:13Z",
+  "sourceBaseline": "0970cf7d0b2c40e3250199906b2b4a3c02ffd707",
+  "runtime": "0f6587f77445",
+  "runtimeBuiltAt": "2026-10-13T10:18:10.194Z",
+  "applicationAndDistUnchanged": true,
+  "fullSuite": {
+    "command": "npm test",
+    "tests": 380,
+    "pass": 380,
+    "fail": 0,
+    "skipped": 0,
+    "durationMs": 229697.734319
+  },
+  "focusedFinalReruns": [
+    {
+      "command": "HK_BOOT_CASE=traffic node tests/navigation/ui-harness.mjs",
+      "passed": true
+    },
+    {
+      "command": "HK_BOOT_CASE=departure-time node tests/navigation/ui-harness.mjs",
+      "passed": true
+    }
+  ],
+  "clockUnitSuite": {
+    "command": "node --test tests/navigation/traffic-clock.test.mjs",
+    "tests": 9,
+    "pass": 9
+  },
+  "nativeTimerReproduction": "native-timer-reproduction.json",
+  "browserVisualQA": "Not rerun: no UI or application runtime changes. This repair was validated through the real entry/worker DOM harness and clock tests.",
+  "publication": "No deployment or new Site version; GitHub synchronization belongs to the parent task."
+}

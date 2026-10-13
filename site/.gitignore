@@ -9,4 +9,5 @@ validation/performance/*/summary.json
 validation/performance/*/summary.txt
 validation/performance/*/events.ndjson.gz
 validation/point-matrix/runtime-*/
+validation/four-preference-*/runtime/
 validation/performance/local-coordination/

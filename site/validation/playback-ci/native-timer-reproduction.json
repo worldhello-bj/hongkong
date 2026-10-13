@@ -1,0 +1,18 @@
+{
+  "runtime": "0f6587f77445",
+  "intervalMs": 100,
+  "eventLoopStallMs": 500,
+  "fixedPauseMs": 350,
+  "oldFixedSleep": {
+    "conditionDriven": false,
+    "ticks": 1,
+    "timeS": 29040,
+    "playing": false
+  },
+  "conditionDriven": {
+    "conditionDriven": true,
+    "ticks": 2,
+    "timeS": 29041.00415297,
+    "playing": false
+  }
+}

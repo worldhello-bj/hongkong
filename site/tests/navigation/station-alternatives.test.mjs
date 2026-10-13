@@ -5,8 +5,8 @@ const version=JSON.parse(readFileSync(root+'dist/build-meta.json')).version;
 const built=path=>pathToFileURL(root+'dist/'+path).href+'?v='+version;
 const source=readFileSync(root+'src/navigation/main.recovered.js','utf8');
 const head=source.slice(0,source.indexOf('// Removed obsolete straight-line demo ride generator.')).replaceAll(/from\s*"\.\/([^"\n]+)"/g,(_,file)=>'from '+JSON.stringify(built('assets/'+file)));
-const {f2,E2}=await import('data:text/javascript;base64,'+Buffer.from(head+'\nexport {f2,E2};').toString('base64'));
-const {p:prepare}=await import(built('assets/mobile-navigation-DfEsS_7b.js'));
+const {f2,E2,F1,g2,x2}=await import('data:text/javascript;base64,'+Buffer.from(head+'\nexport {f2,E2,F1,g2,x2};').toString('base64'));
+const {p:prepare,d:route}=await import(built('assets/mobile-navigation-DfEsS_7b.js'));
 const read=p=>{const b=readFileSync(p);return JSON.parse(p.endsWith('.gz')?gunzipSync(b):b)};
 const graph=read(root+'dist/area/station-graph.json.gz'),station=prepare(graph),area=prepare(read(root+'dist/area/area-graph.json.gz')),block=read(root+'dist/area/admiralty-block-graph.json.gz');
 const router=E2(area,read(root+'dist/transit/services.json'),read(root+'dist/transit/walk-links.json.gz'),station);
@@ -16,12 +16,22 @@ const {stationEntranceCandidates,evaluateStationEntrances,stationEntrancePanel,a
 const {annotatePreferenceResult}=await import('../../src/navigation/preference-routing.js');
 const {reconcileLiftOverlay,CORRECTED_LIFT_IDS}=await import('../../scripts/repair-station-overlay.mjs');
 const manifest=read(root+'dist/preview/station-access-alternatives.json');
-const request=(a,b,need='accessible',departureS=39600)=>({origin:portal(a),destination:portal(b),mode:'walk',need,departureS,departureDate:'2026-10-11',allowedTransitModes:['metro','bus','tram']});
+const request=(a,b,need='lift',departureS=39600)=>({origin:portal(a),destination:portal(b),mode:'walk',need,departureS,departureDate:'2026-10-11',allowedTransitModes:['metro','bus','tram']});
 const plan=req=>f2(req,station,area,router,undefined,block);
-for(const need of ['accessible','luggage'])for(const reverse of [false,true]){
- const req=request(reverse?'ADM:platform-area:EAL':'ADM:portal:C2',reverse?'ADM:portal:C2':'ADM:platform-area:EAL',need),result=await plan(req);
+// Independent source-capability oracle; this internal engine flag is not a UI/API choice.
+const evidencePlan=(req,overlay=block)=>{
+ const merged=F1(station,g2(area,overlay)),region=req.origin.node_id.split(':')[0];
+ const nodes=merged.nodes.filter(n=>n.region_id===region),ids=new Set(nodes.map(n=>n.id));
+ const local=prepare({...merged,regions:merged.regions.filter(r=>r.id===region),nodes,edges:merged.edges.filter(e=>e.region_id===region&&ids.has(e.from_id)&&ids.has(e.to_id)),portals:merged.portals.filter(p=>p.region_id===region&&ids.has(p.node_id))});
+ const r=route(local,{origin:req.origin,destination:req.destination,preference:'accessible',mode:'walk',departureS:req.departureS,departureDate:req.departureDate});
+ if(r.status!=='CONDITIONAL')return {message:r.message};
+ return {journey:x2(local,r,'source evidence probe'),routedEndpoints:{origin:r.snapped_origin.coordinates,destination:r.snapped_destination.coordinates},segments:r.legs.map(l=>({kind:l.kind})),totalMinutes:Math.ceil(r.total_minutes),message:r.message};
+};
+
+for(const need of ['ordinary','luggage','escalator','lift','evidence-only'])for(const reverse of [false,true]){
+ const req=request(reverse?'ADM:platform-area:EAL':'ADM:portal:C2',reverse?'ADM:portal:C2':'ADM:platform-area:EAL',need==='evidence-only'?'lift':need),result=need==='evidence-only'?evidencePlan(req):await plan(req);
  assert.equal(result.journey?.complete,true,result.message);assert.ok(isVerifiedExactConnector(result,req.origin,req.destination));
- const annotated=annotateStationDetour(req,result,graph,manifest);if(need==='accessible'){assert.ok(annotated.stationDetour);assert.match(annotated.message,/保留原/);assert.ok(annotated.stationDetour.minutes>0&&annotated.stationDetour.minutes<6);assert.ok(annotated.totalMinutes>=12);}else{const carries=result.segments.some(s=>['stairs','escalator'].includes(s.kind));if(carries)assert.equal(annotatePreferenceResult(result,req).luggageCarryRequired,true,'soft luggage preference must disclose carrying');}
+ const annotated=annotateStationDetour(req,result,graph,manifest);if(need==='evidence-only'){assert.ok(annotated.stationDetour);assert.match(annotated.message,/保留原/);assert.ok(annotated.stationDetour.minutes>0&&annotated.stationDetour.minutes<6);assert.ok(annotated.totalMinutes>=12);}else if(need==='luggage'){const carries=result.segments.some(s=>['stairs','escalator'].includes(s.kind));if(carries)assert.equal(annotatePreferenceResult(result,req).luggageCarryRequired,true,'soft luggage preference must disclose carrying');}
  console.log('PASS original-endpoint detour',need,reverse,annotated.totalMinutes,annotated.stationDetour?.via);
 }
 const req=request('HUH:portal:B2','HUH:platform-area:EAL'),snapshot=JSON.stringify(req),options=[],detours=[];
@@ -37,7 +47,7 @@ let interrupted=false,published=0,calls=0;
 await evaluateStationEntrances({request:req,graph,manifest,isStale:()=>interrupted,plan:async()=>{calls++;interrupted=true;return {message:'cancelled'};},onOption:()=>published++});
 assert.equal(calls,1);assert.equal(published,0);
 console.log('PASS explicit alternative selection, origin preservation, stale data and cancellation guards');
-const late=request('ADM:portal:C2','ADM:platform-area:EAL','accessible',23*3600);assert.notEqual((await plan(late)).journey?.complete,true);
+const late=request('ADM:portal:C2','ADM:platform-area:EAL','lift',23*3600);assert.notEqual(evidencePlan(late).journey?.complete,true);
 console.log('PASS detour opening-hours exclusion');
 // Restore only the previous false flags in a test copy. Real restrictions must win.
 const uncorrected=()=>{const copy=structuredClone(block);for(const e of copy.edges)if(CORRECTED_LIFT_IDS.has(e.physical_id)){delete e.eligibility_correction;e.accessible_eligible=false;}return copy;};
@@ -46,7 +56,7 @@ for(const field of ['disabled','wheelchair_barrier']){
  const copy=uncorrected(),edge=copy.edges.find(e=>e.id==='ADM:I:1000859480');edge[field]=field==='disabled'?true:1;
  reconcileLiftOverlay(copy,graph);assert.equal(edge.accessible_eligible,false);
  const live=structuredClone(block);for(const e of live.edges)if(e.physical_id==='ADM:I:1000859480')e[field]=field==='disabled'?true:1;
- const result=await f2(request('ADM:portal:C2','ADM:platform-area:EAL'),station,area,router,undefined,live);assert.notEqual(result.journey?.complete,true);
+ const result=evidencePlan(request('ADM:portal:C2','ADM:platform-area:EAL'),live);assert.notEqual(result.journey?.complete,true);
  console.log('PASS overlay safety precedence',field);
 }
 const closed=uncorrected();closed.closures=[{physical_ids:['ADM:I:1000859480']}];reconcileLiftOverlay(closed,graph);assert.equal(closed.edges.find(e=>e.id==='ADM:I:1000859480').accessible_eligible,false);

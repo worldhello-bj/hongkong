@@ -17,10 +17,10 @@ test('cached geometry is reused but every adjusted score and winner is recompute
  const cheapTime={...JOURNEY_WEIGHTS.time,cost:0};assert.equal(rankJourneys(candidates,'time','ordinary',cheapTime)[0],taxi);
  const priceSensitive={...JOURNEY_WEIGHTS.time,cost:2};assert.equal(rankJourneys(candidates,'time','ordinary',priceSensitive)[0],publicRoute);
  const score=journeyScore(taxi,'time','ordinary',priceSensitive);assert.equal(score.terms.cost,100);assert.equal(score.total,Object.values(score.terms).reduce((a,b)=>a+b,0));assert.equal(taxi.minutes,10);assert.equal(taxi.cost,50);
- const blocked={...route('blocked',0,0),available:false};assert.equal(rankJourneys([blocked,publicRoute],'time','accessible',cheapTime)[0],publicRoute,'weights never make an unavailable hard-constrained route available');
+ const blocked={...route('blocked',0,0),available:false};assert.equal(rankJourneys([blocked,publicRoute],'time','ordinary',cheapTime)[0],publicRoute,'weights never make an unavailable hard-constrained route available');
  const carrying={...route('carry',1,0),result:{waitMinutes:0,segments:[],luggageCarryRequired:true}};assert.equal(rankJourneys([carrying,publicRoute],'time','luggage',cheapTime)[0],publicRoute);
 });
 test('compact collapsed panel exposes exact formula, units and route-level production contributions',()=>{
  const html=scoreParameterPanel({choices:[route('<script>',20,7)],escape:s=>s.replaceAll('<','&lt;').replaceAll('>','&gt;')});
- assert.match(html,/全程时间已包含步行、候车/);assert.match(html,/综合分钟 \/ HK\$/);assert.match(html,/data-score-weight="transfers"/);assert.match(html,/价格 5.3/);assert.match(html,/&lt;script&gt;/);assert.doesNotMatch(html,/<script>/);assert.doesNotMatch(html,/<details[^>]*\bopen\b/);assert.match(html,/严格无障碍/);
+ assert.match(html,/全程时间已包含步行、候车/);assert.match(html,/综合分钟 \/ HK\$/);assert.match(html,/data-score-weight="transfers"/);assert.match(html,/价格 5.3/);assert.match(html,/&lt;script&gt;/);assert.doesNotMatch(html,/<script>/);assert.doesNotMatch(html,/<details[^>]*\bopen\b/);assert.doesNotMatch(html,/严格无障碍/);assert.match(html,/未知设施能力不计为已核验可用/);
 });

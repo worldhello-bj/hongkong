@@ -1,0 +1,21 @@
+{
+  "runtime": "59ea6d932726",
+  "siteBaseline": "60ce2f7b56d3f8f3cef2ee0b6800d7b736348f46",
+  "githubBaseline": "ffe723f8dcb8a799dd40d044e327e99f1b482dc2",
+  "githubBaselineTree": "1c5c3bf0d4f161a5248314208ef130f12b1615fe",
+  "productPreferences": [
+    "ordinary",
+    "luggage",
+    "escalator",
+    "lift"
+  ],
+  "sourceDataUnchanged": true,
+  "pointRegression": "../four-preference-59ea6d932726-301671449fc3/REPORT.md",
+  "intermediateRuntime": "2992bb3c68ed",
+  "aggregateTests": 291,
+  "aggregatePassed": 291,
+  "aggregateFailed": 0,
+  "pointCells": 16,
+  "pointPassed": 16,
+  "browserValidation": "Production browser validation is performed after publication; Node tests are not visual QA."
+}

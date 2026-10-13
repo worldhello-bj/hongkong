@@ -1,0 +1,48 @@
+✔ actual S1 preserves exact ordinary endpoints through fallback and rejects cancelled refinements (9.747512ms)
+✔ actual S1 preserves exact luggage endpoints through fallback and rejects cancelled refinements (2.007432ms)
+✔ actual S1 preserves exact escalator endpoints through fallback and rejects cancelled refinements (1.804578ms)
+✔ actual S1 preserves exact lift endpoints through fallback and rejects cancelled refinements (1.994742ms)
+✔ actual S1 preserves exact accessible → ordinary migration endpoints through fallback and rejects cancelled refinements (1.761273ms)
+✔ actual S1 preserves exact strict_accessibility → ordinary migration endpoints through fallback and rejects cancelled refinements (2.981797ms)
+✔ actual S1 preserves exact wheelchair → ordinary migration endpoints through fallback and rejects cancelled refinements (1.390548ms)
+✔ actual S1 gives taxi the exact base owner and waits for its dependent queries before evicting it (1.994682ms)
+✔ actual S1 keeps usable candidates and marks Worker/refinement errors incomplete, never successful or unreachable (2.445716ms)
+✔ actual S1 named-floor evidence precheck cache-miss keeps formal routing and cancellation (1.525871ms)
+✔ actual S1 named-floor evidence precheck cache-hit keeps formal routing and cancellation (0.915439ms)
+✔ actual S1 named-floor evidence precheck cancel-at-precheck keeps formal routing and cancellation (0.867227ms)
+✔ shared clock advances at declared speed only while foreground (0.770643ms)
+✔ clock pauses, steps, resets without background catch-up or long-frame leap (0.333008ms)
+✔ only existing bus/tram stops, exact coordinate identity and deduplicated route directions (3.399192ms)
+✔ wide view clusters without losing stops; zoom gives individual exact positions (0.960766ms)
+✔ card shows existing route, source, actions and escapes untrusted names (0.549041ms)
+✔ controller single stop, keyboard, endpoint actions, close, clustering and cached redraw (1.469046ms)
+✔ large touch targets, distinct icon shapes, limited labels and source integration (1.504149ms)
+✔ metro catalog uses supplied station coordinates and excludes unsupported or invalid stops (0.50868ms)
+✔ card next arrival and subsequent departures use model times, date, direction and escaping (0.436793ms)
+✔ countdowns roll over correctly and never describe a dwell as a future arrival (0.333719ms)
+✔ unready and out-of-service cards stay honest rather than inventing a countdown (1.776135ms)
+✔ clock updates only the open departure section, preserves controls, and caches within a second (0.644163ms)
+✔ active interval is departure-inclusive and terminal-arrival-exclusive (4.455831ms)
+✔ movement follows supplied multi-vertex geometry, never a direct endpoint chord (0.678745ms)
+✔ intermediate dwell freezes at shape vertex then departs at scheduled second (0.503963ms)
+✔ reverse-direction pattern follows reversed shape and bearing (1445.31457ms)
+✔ frequency windows merge explicit departures and deduplicate boundaries (0.519366ms)
+✔ departures use stop offsets, retain still-dwelling trains and exclude termini (0.292988ms)
+✔ daily service calendar honors weekdays, date range and exceptions (0.590643ms)
+✔ midnight trips retain prior service date, stable identity and prior calendar (0.227179ms)
+✔ GTFS departures above 24:00 use previous service day even on inactive next day (0.39437ms)
+✔ direction filtering and display cap do not limit departure queries (1.093905ms)
+✔ source shapes and service objects remain untouched and results deterministic (0.382091ms)
+✔ repeated shape vertices stay finite and zero-time calls do not divide by zero (0.236954ms)
+✔ invalid times, dates, windows and geometry fail explicitly; empty input is safe (6.074029ms)
+✔ real network includes all existing modes with honest metro simulation provenance (0.761418ms)
+✔ real positions, dwell, directions and active counts match existing scheduled engine (15.197948ms)
+✔ real metro first/last departures and selected date agree with service windows (0.546757ms)
+ℹ tests 40
+ℹ suites 0
+ℹ pass 40
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1603.770432

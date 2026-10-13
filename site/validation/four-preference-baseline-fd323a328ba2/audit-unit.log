@@ -1,0 +1,11 @@
+✔ 16 cells preserve the existing exact ODs, five source floors and Hong Kong clock (4.291409ms)
+✔ source lift remains legal while unknown wheelchair suitability is not certified (3.251346ms)
+✔ wrong preference, closed facility, paid clock mismatch and original geometry rules still fail (0.666055ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 110.558262

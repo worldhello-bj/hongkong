@@ -1,0 +1,48 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> build
+> node scripts/build-navigation.mjs
+
+Built navigation entry; preserved original data, geometry and Worker bundles.
+Modeled ground-source snaps retain source height; no graph edges added.
+app-walk-worker-jk5g-BMr.js: 0 guarded snap-cache height changes
+mobile-navigation-DfEsS_7b.js: 0 guarded snap-cache height changes
+metro-worker-BDEusPKL.js: 0 guarded snap-cache height changes
+app-transit-worker-CaCMeUxU.js: 0 guarded snap-cache height changes
+mobile-navigation-DfEsS_7b.js: 0 exact endpoint region changes
+app-walk-worker-jk5g-BMr.js: 0 exact endpoint region changes
+metro-worker-BDEusPKL.js: 0 exact endpoint region changes
+app-transit-worker-CaCMeUxU.js: 1 exact endpoint region changes
+Canonical official station identity patch applied
+Accessible profile permits eligible enabled lifts; barriers, schedules and disabled facilities remain enforced.
+Audited lift overlay eligibility corrections: 0 (seven physical features only; closures and barriers preserved).
+HUH strict directed successes: 4 -> 4 previous_declared 4 entries 8
+KOW strict directed successes: 66 -> 66 previous_declared 66 entries 14
+Applied endpoint-only corrections; graph version b1e24d8ef9214320
+Synthetic endpoint guidance uses only its own local geometry evidence.
+Pacific Place model: {"physicalEdges":110,"levels":5,"entrances":10,"lifts":5,"escalators":11,"wheelchairEvidenceLifts":0}; no route edge or accessibility flag changed.
+mobile-navigation-DfEsS_7b.js: 0 semantics-preserving preparation changes
+app-walk-worker-jk5g-BMr.js: 0 semantics-preserving preparation changes
+metro-worker-BDEusPKL.js: 0 semantics-preserving preparation changes
+app-transit-worker-CaCMeUxU.js: 0 semantics-preserving preparation changes
+mobile-navigation-DfEsS_7b.js: 0 lossless lower-bound cache changes
+app-walk-worker-jk5g-BMr.js: 0 lossless lower-bound cache changes
+metro-worker-BDEusPKL.js: 0 lossless lower-bound cache changes
+app-transit-worker-CaCMeUxU.js: 0 lossless lower-bound cache changes
+mobile-navigation-DfEsS_7b.js: 0 exact destination lower-bound changes
+app-walk-worker-jk5g-BMr.js: 0 exact destination lower-bound changes
+metro-worker-BDEusPKL.js: 0 exact destination lower-bound changes
+app-transit-worker-CaCMeUxU.js: 0 exact destination lower-bound changes
+app-transit-worker-CaCMeUxU.js: 1 route result retention changes
+intermodal-routing-D8vKT-lN.js: 1 route result retention changes
+app-transit-worker-CaCMeUxU.js: 0 owner walk-cache clock changes
+intermodal-routing-D8vKT-lN.js: 0 owner walk-cache clock changes
+app-transit-worker-CaCMeUxU.js: 0 exact scheduled label index changes
+intermodal-routing-D8vKT-lN.js: 0 exact scheduled label index changes
+app-transit-worker-CaCMeUxU.js: 1 disclosed transit stop projection changes
+intermodal-routing-D8vKT-lN.js: 1 disclosed transit stop projection changes
+intermodal-routing-D8vKT-lN.js: 0 intermodal endpoint region union changes
+app-transit-worker-CaCMeUxU.js: 1 intermodal endpoint region union changes
+Display geometry is independently lazy-loaded; route data unchanged.
+High-speed procedural overview labels ready; no pedestrian turn instructions synthesized.
+Runtime cache version: 0f6587f77445

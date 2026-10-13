@@ -1,0 +1,26 @@
+{
+  "baselinePath": "validation/point-matrix/2e2fcf795897-58a530dacc14/mall-floors-escalator-taxi-off.json",
+  "baselineReportSha256": "4a61140b3f401ec9cfe84b71f6fc25df22397041d356b4e1fbbda966854aee86",
+  "pass": true,
+  "baselineRuntime": "2e2fcf795897",
+  "currentRuntime": "2992bb3c68ed",
+  "baselineSignature": "58a530dacc14c45c5e58342db8aa4ed9337136ab77a68e960a9079cda499c099",
+  "currentSignature": "05cca59619f6fad154cec442ac2d70a9d0b83f5164ebc3b335e3243dffdd35e4",
+  "retainedPayloadSha256Before": "b796ca994d1cb68984916e374497ad36a3d3d7eb51a5ae2f0263396f31d90044",
+  "retainedPayloadSha256After": "b796ca994d1cb68984916e374497ad36a3d3d7eb51a5ae2f0263396f31d90044",
+  "differences": [],
+  "classificationBefore": "completed-with-candidates",
+  "classificationAfter": "completed-with-candidates",
+  "newAssertionsPass": true,
+  "timing": {
+    "firstBeforeMs": 11760,
+    "firstAfterMs": 7110,
+    "fullBeforeMs": 16373.199091000002,
+    "fullAfterMs": 9402.554026
+  },
+  "excludedDiagnostics": [
+    "Top-level runtime, observation/performance/Worker/load/cancel timing and audit-file provenance are not candidate data.",
+    "Only candidate.strictSourceAudit.provenance.sha256 is omitted inside retained candidate objects."
+  ],
+  "scope": "All originally retained candidate and unavailable fields, plus exact request/need/taxi/fixture, are compared recursively. Full original raw journey geometry was not saved; its byte equality is not claimed. New routes independently rerun all structural audits."
+}

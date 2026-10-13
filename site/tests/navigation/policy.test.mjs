@@ -30,11 +30,12 @@ test('identical route results collapse; distinct steps remain',()=>{
 test('two policy controls render and preserve facility/date preferences',async()=>{
  const source=await readFile(new URL('../../src/navigation/main.recovered.js',import.meta.url),'utf8');
  const body=source.slice(source.indexOf('function X2()'),source.indexOf('function x()'));
- const render=new Function('t1','Q2','q1','M','w1','c1','J2','r','G',body+';return X2();');
- const args=[()=>'',false,x=>x,'2026-10-11','08:00',{luggage:'大件行李'},{need:'luggage'},'time'];
+ const render=new Function('t1','Q2','q1','M','trafficClock','J2','r','G',body+';return X2();');
+ const args=[()=>'',false,x=>x,{date:'2026-10-11',time:'08:00:00'},{luggage:'大件行李'},{need:'luggage'},'time'];
  for (const taxis of [new Set(),new Set(['taxi'])]) {
   const html=render(taxis,...args);assert.equal((html.match(/data-taxi-policy=/g)||[]).length,2);
   assert.match(html,/data-app="need"/);assert.match(html,/data-app="departure-date"/);assert.match(html,/行李模式优先减少步行与搬运/);
+  assert.match(html,/value="2026-10-11"/);assert.match(html,/value="08:00:00"/);assert.match(html,/全局模拟时间/);
   assert.ok(html.includes(`data-taxi-policy="${taxis.size?'with':'without'}" aria-pressed="true"`));
   assert.equal((html.match(/<div\b/g)||[]).length,(html.match(/<\/div>/g)||[]).length);
  }

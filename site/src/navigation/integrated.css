@@ -69,3 +69,32 @@
 .na-weight-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:12px 0}.na-weight-grid label{font-size:12px;font-weight:650;min-width:0}.na-weight-grid input{display:block;width:100%;box-sizing:border-box;min-height:38px;margin:4px 0;border:1px solid #d9e1ef;border-radius:8px;padding:7px;background:#fff;color:#17263d}.na-weight-grid small{display:block;font-size:10px;color:#6d7b91;font-weight:400}.na-score-breakdown{list-style:none;padding:0;display:grid;gap:8px}.na-score-breakdown li{display:grid;gap:3px;padding:9px;border-radius:9px;background:#f3f6fc;font-size:12px}.na-score-breakdown li>span{color:#2468ed;font-weight:650}.na-score-breakdown small{line-height:1.5;color:#687990}.na-score-parameters summary{min-height:32px;cursor:pointer}
 
 .na-place-notice{margin:10px 0;padding:9px;border:1px solid #d9e7f6;border-radius:12px;background:#f5f9ff}.na-place-notice p,.na-place-notice summary{font-size:12px;line-height:1.5}.na-place-notice .na-secondary{margin:4px 0}
+
+/* Display-only, viewport-streamed basemap. Existing SVG geography stays underneath as fallback. */
+[data-app=basemap]{pointer-events:none}
+.na-basemap-ready [data-app=roads],.na-basemap-ready [data-app=harbour-label]{opacity:0}
+.na-map-details{font-size:10px;line-height:1.5;max-width:320px;pointer-events:auto}.na-map-details summary{cursor:pointer;color:#375b72}.na-map-details p{margin:5px 0}.na-map-details button{border:1px solid #cbd6dd;border-radius:6px;background:white;padding:4px 8px;color:#375b72;font-size:11px}.na-map-details[open]{position:absolute;bottom:24px;right:0;width:min(310px,70vw);padding:10px;background:rgba(255,255,255,.97);border:1px solid #dce5e8;border-radius:10px;box-shadow:0 5px 20px #263f4820}
+/* Timetable and road-graph simulation, independent of trip mode selection. */
+.na-traffic-controls{position:absolute;z-index:5;top:180px;left:368px;display:flex;align-items:center;flex-wrap:wrap;gap:5px 9px;max-width:330px;padding:8px 10px;border:1px solid #dce5ed;border-radius:12px;background:#fffffff2;box-shadow:0 3px 14px #263f4818;font-size:11px;color:#37536c}.na-traffic-controls b{font-size:11px}.na-traffic-controls time{font-variant-numeric:tabular-nums}.na-traffic-controls button{min-height:32px;border:1px solid #d7e0ea;background:#f7faff;color:#205bbd;border-radius:7px;padding:4px 8px;font:inherit;font-weight:650}.na-traffic-controls small{flex-basis:100%;font-size:10px;color:#6d7e8d}
+.na-moving-vehicle{pointer-events:none}.na-moving-vehicle rect{stroke:white;stroke-width:1.7;fill:#d8931d;filter:drop-shadow(0 1px 1px #263f4870)}.na-moving-vehicle path{stroke:white;stroke-width:1.7;fill:none}.na-moving-vehicle.existingorder rect{fill:#6a6f83}.na-moving-vehicle.pickup rect,.na-moving-vehicle.passengertrip rect{fill:#137b67}.na-moving-vehicle.metro rect{fill:#dc4b64}.na-moving-vehicle.bus rect{fill:#236ad9}.na-moving-vehicle.tram rect{fill:#11987a}.na-transit-stop.metro rect{fill:#dc4b64;stroke:white}.na-transit-stop.metro text{fill:white}
+.na-stop-departures{margin:10px 0;padding:10px;border-radius:9px;background:#f2f6fc}.na-stop-clock{font-size:11px;font-variant-numeric:tabular-nums;color:#60758d}.na-stop-next,.na-stop-upcoming{margin:7px 0;display:grid;gap:4px;font-size:12px}.na-stop-next{border-bottom:1px solid #dce5ed;padding-bottom:8px}.na-stop-countdown{font-weight:750;color:#2468ed;font-variant-numeric:tabular-nums}.na-stop-empty,.na-stop-simulation{font-size:10px;line-height:1.5;color:#60758d}.na-stop-card{max-height:min(560px,75vh);overflow:auto}
+@media(max-width:760px){.na-traffic-controls{top:210px;left:10px;max-width:275px;padding:6px 8px;gap:3px 7px}.na-traffic-controls button{min-height:34px}.na-traffic-controls small{font-size:9px}.na-stop-card{max-height:calc(100dvh - 180px);z-index:20}.na-traffic-controls b{font-size:10px}}
+/* Include station labels in the SVG button hit area, rather than only the icon. */
+.na-transit-stop{pointer-events:bounding-box}.na-stop-departures ol{padding:0;list-style:none}.na-stop-next p,.na-stop-upcoming p{margin:2px 0}
+@media(max-width:760px){.na-traffic-controls{right:72px;max-width:none}}
+.na-traffic-layers{display:flex;gap:4px;flex-basis:100%}.na-traffic-layers button{font-size:10px;min-height:32px;padding:3px 7px;background:#eaf2ff;border-color:#b6cff2}.na-traffic-layers button[aria-pressed=false]{background:#fff;color:#8290a0;border-color:#e0e5eb}.na-traffic-layers [data-traffic-layer=metro][aria-pressed=true]{color:#b62a44}.na-traffic-layers [data-traffic-layer=tram][aria-pressed=true]{color:#08775f}.na-traffic-layers [data-traffic-layer=taxi][aria-pressed=true]{color:#986512}
+
+.na-departure-settings{margin:12px 0;padding:12px;border:1px solid #dce5ed;border-radius:12px;background:#f7faff}.na-departure-settings h2{font-size:14px;margin:0}.na-departure-settings .na-section-title>span{font-size:10px;color:#60758d}.na-departure-inputs{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:10px;margin-top:10px}.na-departure-inputs label{display:grid;gap:5px;font-size:11px;color:#52677f}.na-departure-inputs input{box-sizing:border-box;min-width:0;width:100%;font:inherit;font-size:14px;color:#14293f;background:#fff;border:1px solid #ccd9e6;border-radius:7px;padding:8px}.na-departure-settings>p{font-size:10px;line-height:1.5;color:#60758d;margin:9px 0 0}
+
+/* Cross-boundary reference service stays visually distinct from local rail. */
+.na-network.highspeed{stroke:#7c3aed;stroke-dasharray:12 8;stroke-width:5;opacity:.5}
+.na-route.highspeed{stroke:#7c3aed;stroke-dasharray:14 6}
+.na-moving-vehicle.highspeed rect{fill:#7c3aed;stroke:#fff;stroke-width:2}
+.na-moving-vehicle.highspeed path{stroke:#fff;fill:none}
+.na-transit-stop.highspeed rect{fill:#7c3aed;stroke:#fff;stroke-width:2}
+.na-transit-stop.highspeed text{fill:#fff}
+.na-transit-stop.highspeed .na-stop-label{fill:#4c1d95}
+.na-highspeed-note{border:1px solid #ddd6fe;border-radius:14px;background:#faf8ff;padding:12px 14px;margin:14px 0;color:#4c1d95;font-size:12px;line-height:1.55}
+.na-highspeed-note p{margin:5px 0}.na-highspeed-note a{color:#5b21b6;text-decoration:underline}
+.na-traffic-layers{flex-wrap:wrap}
+@media(max-width:760px){.na-highspeed-note{padding:10px 12px}.na-traffic-controls{max-width:calc(100% - 24px)}.na-traffic-layers button{min-width:34px}}

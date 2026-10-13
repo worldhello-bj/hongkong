@@ -1,0 +1,49 @@
+[
+  {
+    "path": "area/area-graph.json.gz",
+    "sha256": "44901caf6ee1241a23e096eb3d692f96913789fb2c1cbd742da59d8d3730253f",
+    "byteIdentical": true
+  },
+  {
+    "path": "area/station-graph.json.gz",
+    "sha256": "446700358a6a56ccb8bbf1e024f6a09da99925e2778331e67c307c135a0f0a1e",
+    "byteIdentical": true
+  },
+  {
+    "path": "area/admiralty-block-graph.json.gz",
+    "sha256": "388a08977ed80e57295fe1a0d623178e79ecd441cedaa5cfc62fe043385e2298",
+    "byteIdentical": true
+  },
+  {
+    "path": "transit/services.json",
+    "sha256": "59c1c4faef3fadbf32748b0707231f78c3ec36aa4d2edc47de39b8c39485c542",
+    "byteIdentical": true
+  },
+  {
+    "path": "transit/walk-links.json.gz",
+    "sha256": "9505ee7867641cd5c7bbf2a3c76a4216c7cdc05fdd7a72d7da4cf85eb2f6420b",
+    "byteIdentical": true
+  },
+  {
+    "path": "taxi/road-graph.js",
+    "sha256": "78f3f2d916148f6e2d6ab261906e661072f995a64ca027e5642395bf5d6ac48e",
+    "byteIdentical": true
+  },
+  {
+    "path": "assets/app-walk-worker-jk5g-BMr.js",
+    "identicalExceptRuntimeVersion": true
+  },
+  {
+    "path": "assets/app-transit-worker-CaCMeUxU.js",
+    "identicalExceptRuntimeVersion": true
+  },
+  {
+    "path": "assets/metro-worker-BDEusPKL.js",
+    "identicalExceptRuntimeVersion": true
+  },
+  {
+    "path": "map-detail/admiralty.json",
+    "identicalToPreviouslyEmbeddedDisplayGeometry": true,
+    "sha256": "4ce740d5e6744a4493b659804918e075e62cc180505c52d40fd8e0d24eee84bc"
+  }
+]

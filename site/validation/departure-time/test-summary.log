@@ -1,0 +1,21 @@
+Command: npm test
+Runtime: ebebc836f058
+
+DEPARTURE TIME PASS: exact paused selection, race isolation, same-OD waits/scores, source vehicles/services, deterministic fleet, prior-order eligibility, old snapshots cleared, policy/home preserved and midnight labeled
+✔ full entry and Worker remain usable: navigation departure changes one coherent traffic and result snapshot (16253.399989ms)
+✔ full entry and Worker remain usable: shared traffic simulation and independent route policy (5088.128539ms)
+✔ full entry and Worker remain usable: optional metadata stalls (9455.940926ms)
+✔ full entry and Worker remain usable: optional block detail stalls (6799.508463ms)
+✔ full entry and Worker remain usable: ordinary map-point access (10682.117071ms)
+✔ full entry and Worker remain usable: retired passenger preference migrates to ordinary (11694.184634ms)
+✔ full entry and Worker remain usable: simulated pricing fails (9411.155093ms)
+✔ full source shell: tabs, repeated open/close, hash and back/forward stay unified (106.007726ms)
+
+ℹ tests 337
+ℹ suites 0
+ℹ pass 337
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 222678.574116

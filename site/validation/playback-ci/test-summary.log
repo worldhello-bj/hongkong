@@ -1,0 +1,28 @@
+npm test (final files; serial suite)
+ℹ tests 380
+ℹ suites 0
+ℹ pass 380
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 229697.734319
+
+Full-suite foreground-resume marker:
+TRAFFIC ENTRY PASS: all public modes, default taxis, independent policy, pause/step, hidden view pause and condition-driven resume
+
+Focused final reruns:
+TEST_RUNTIME 0f6587f77445
+TRAFFIC ENTRY PASS: all public modes, default taxis, independent policy, pause/step, hidden view pause and condition-driven resume
+TEST_RUNTIME 0f6587f77445
+DEPARTURE TIME PASS: exact paused selection, race isolation, same-OD waits/scores, source vehicles/services, deterministic fleet, prior-order eligibility, old snapshots cleared, policy/home preserved and midnight labeled
+
+Clock unit suite:
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 108.06041

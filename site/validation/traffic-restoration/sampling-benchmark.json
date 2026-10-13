@@ -1,0 +1,8 @@
+{
+  "samples": 1000,
+  "maxActiveVehicles": 16,
+  "p50Ms": 0.04816199999982018,
+  "p95Ms": 0.09469100000001163,
+  "maxMs": 8.597661000000016,
+  "scope": "Node pure timetable sampling, not browser FPS or whole-app performance"
+}

@@ -1,0 +1,18 @@
+✔ recognized high-speed terminals enable the adapter; unrelated local trips retain the original planner (0.946445ms)
+✔ direct high-speed route includes procedures and one real scheduled ride; no fake ticket or walking line (1.68514ms)
+✔ seek abort rejects delayed local route before it can compose old high-speed results (0.716391ms)
+✔ high-speed mode chains omit procedural and waiting steps, not the actual train (2.102083ms)
+✔ high-speed station card distinguishes timetable departure from catchable planned service (2.386509ms)
+✔ composed high-speed trip retains only the user-facing resolved HK entrance and floor (0.558996ms)
+✔ each high-speed stop lists only its departing direction, not terminal arrival service (0.604083ms)
+✔ cache reuses identical tile without new load; all transient payloads released (9.788164ms)
+High-speed real Worker integration passed: global time, same-time replay, source-backed HK prefix/suffix, border procedures, map/stops and independent fifth layer
+✔ full entry and Worker remain usable: cross-boundary high-speed timetable and real local connections (12353.623631ms)
+ℹ tests 379
+ℹ suites 0
+ℹ pass 379
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 243375.742525

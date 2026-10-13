@@ -1,0 +1,29 @@
+{
+  "runtime": "c8032ea8c371",
+  "builtAt": "2026-10-13T09:38:57.548Z",
+  "baseCommit": "e748b8e23c94014c6a2e2ba49b476393f6434fd9",
+  "commands": [
+    "npm run build",
+    "npm test"
+  ],
+  "aggregate": {
+    "tests": 344,
+    "pass": 344,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0,
+    "duration_ms": 225200.358208
+  },
+  "sourceBuildMatches": {
+    "src/navigation/main.recovered.js": true,
+    "src/navigation/traffic-clock.js": true,
+    "src/navigation/traffic-scenario.js": true,
+    "src/navigation/integrated.css": true
+  },
+  "missingRuntimeImports": 0,
+  "syntaxAndWhitespaceCheck": "passed",
+  "sourcePreservation": "source-preservation.json",
+  "browserVisualQA": "Not run for this build: cloud browser cannot reach local preview; public deployment paused awaiting authorization.",
+  "deployment": "not performed"
+}

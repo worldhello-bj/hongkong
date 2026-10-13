@@ -1,0 +1,491 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> test
+> node --test --test-concurrency=1 tests/navigation/*.test.mjs tests/taxi/*.test.mjs
+
+✔ successful optional block load refreshes the visible map status, not only internal flags (1.972919ms)
+Taxi public prefix 34 minutes, pickup gap 55 m
+✔ public prefix reaches actual graph node beside pickup, not silently snapped road (2957.855185ms)
+✔ taxi matches real public arrival and explicit curb link; prototype stays scenario-only (539.680334ms)
+✔ in-flight transit Worker is terminated on cancel and next query starts fresh (23.299448ms)
+✔ compact bounds preserve every numeric value, absent entries and synthetic nodes (1.349918ms)
+✔ same graph shares the node index, bounded FIFO retention keeps 64 precise maps (0.587318ms)
+✔ typed array retention adapts to budget while always allowing one result (0.241391ms)
+✔ all four lower-bound transforms are narrow, reversible and idempotent (32.029268ms)
+✔ whole-segment guard rejects water and honors evenodd islands (1.403528ms)
+✔ known disabled edges and explicit physical closures remain barriers (0.395721ms)
+✔ missing or malformed geometry fails closed (0.182623ms)
+✔ 121m ordinary land gap is explicit and timed; no arbitrary100m cut (0.532196ms)
+✔ strict profiles and unknown/blocked geometry never become certified (0.210124ms)
+✔ real rendered Hong Kong water context rejects cross-harbour chords (10.89446ms)
+✔ demo accessibility graph filters known barriers and all closed physical directions (1.568475ms)
+✔ graph filter is cached, source-immutable, and retains all metadata and schedules (0.44141ms)
+✔ ordinary simulation and accessible/luggage pending facilities have explicit non-verified tags (1.13735ms)
+✔ source-graph lookup rejects barriers reintroduced beneath generic walking steps (0.687017ms)
+✔ unused graph barriers do not invalidate the actual safe route (0.195192ms)
+✔ every demo profile rejects disabled or physically closed traversed edges (0.299067ms)
+✔ direct prohibited steps or summary segments cannot be relabelled as accessible (0.861728ms)
+✔ no invented lifts or unresolved official physical source edges (0.282682ms)
+✔ incomplete, missing and blocked journeys never acquire false completion (0.308361ms)
+✔ cached walks reject prohibited or absent source edges and preserve source links (0.874838ms)
+✔ cached legs and geometry both undergo barrier validation, including source aliases (0.395431ms)
+✔ only explicit schematic endpoint access can lack a physical cached source (0.364625ms)
+✔ strict fallback rejects unknown eligibility and official unknown barriers, including split aliases (0.255813ms)
+✔ exact endpoint completion requires actual source incidence, XYZ and routed endpoint agreement (0.557884ms)
+✔ named floors resolve only to an allowed source portal, while ordinary XY keeps explicit scenario access (0.264926ms)
+✔ missing floor evidence implies rejection on either endpoint under all five preferences, despite otherwise correct source evidence (3.862284ms)
+✔ supplying the legitimate floor source set or exact node restores eligibility rather than suppressing a valid floor route (2.146859ms)
+✔ the precheck is limited to nullish or genuinely empty node sets and leaves malformed/unknown sets on the original path (0.289653ms)
+✔ absence of a precheck rejection does not waive floor, source incidence, XYZ or closure constraints (0.413698ms)
+✔ current source-backed LG1/L4 UI fixture matches only the missing-verifier-evidence condition, without changing its selected floor (0.785704ms)
+✔ actual engine chooses a land-safe snap and preserves original coordinates and access time (7.215696ms)
+✔ removed authoritative overlay edges cannot be accepted from a base graph (0.407219ms)
+✔ four-engine key repair is reversible, idempotent, layered and anchor-checked (8.491673ms)
+✔ app-walk-worker-jk5g-BMr.js: reproduce both unsafe warm orders and retain exact cold-height candidates (4.444834ms)
+✔ app-walk-worker-jk5g-BMr.js: unguarded keys and absent/nonfinite filtering are unchanged, equal heights still hit (0.408851ms)
+✔ mobile-navigation-DfEsS_7b.js: reproduce both unsafe warm orders and retain exact cold-height candidates (3.850205ms)
+✔ mobile-navigation-DfEsS_7b.js: unguarded keys and absent/nonfinite filtering are unchanged, equal heights still hit (0.338145ms)
+✔ metro-worker-BDEusPKL.js: reproduce both unsafe warm orders and retain exact cold-height candidates (3.944777ms)
+✔ metro-worker-BDEusPKL.js: unguarded keys and absent/nonfinite filtering are unchanged, equal heights still hit (0.3076ms)
+✔ app-transit-worker-CaCMeUxU.js: reproduce both unsafe warm orders and retain exact cold-height candidates (3.697387ms)
+✔ app-transit-worker-CaCMeUxU.js: unguarded keys and absent/nonfinite filtering are unchanged, equal heights still hit (1.616677ms)
+✔ full actual mobile router with real land guard matches cold outcomes for repeated endpoint heights (21.886807ms)
+paired exact full-engine queries 2616 optimized 1632
+✔ core is reused across origins; fractional shortcuts and exact target metadata stay request-specific (2.610933ms)
+✔ invalid or unproved topology and mutable graphs request the unchanged fallback (11.107244ms)
+✔ missing entries, infinite edges, signed-zero edges and mode exclusions match original strict relaxation (0.624683ms)
+✔ cache ownership, FIFO bounds and graph replacement preserve exact values without retaining query objects (4.586386ms)
+✔ 2000 random exact distance oracles cover zero cycles, fractions, disconnection, candidate order and reserved-ID collisions (103.195671ms)
+✔ all four production transforms are narrow, reversible, layered and idempotent (15.812557ms)
+✔ paired full engines preserve exact outputs and all bounds across preferences, schedules, endpoint forms, no-wait and collisions (1131.887043ms)
+✔ prepared cross-region rail queries preserve metro state, walk filtering and paid lift continuations (14.442589ms)
+✔ legacy fallback and destination caches can coexist and are separately bounded on one prepared owner (6.557091ms)
+✔ source region wins overlapping bounds, unknown/conflicting identities fail closed, mutable snapshots do not stale (1.93278ms)
+✔ all four selector patches are narrow, reversible and idempotent (13.116187ms)
+✔ actual engine reaches exact source lift despite preceding overlapping acquisition region, without changing XYZ/facilities (16.986737ms)
+✔ main coverage checks the union of loaded source graphs without removing endpoint identity (2.58863ms)
+✔ latest city graph retained rather than old small prototype (0.889049ms)
+✔ strict accessibility remains guarded rather than silently substituting ordinary route (1.154146ms)
+✔ cancellation preserved (0.774367ms)
+Verified real graph route: 27.927807 minutes; walk → escalator → walk → escalator → walk → escalator → walk → wait → rail → walk → escalator → walk → wait → rail → walk → stairs → walk → escalator → walk
+✔ public multimodal engine returns clock-aware journey and actual service anchors (1221.334162ms)
+Same-shore preset: 23.576089 walk → escalator → walk → escalator → walk → wait → rail → walk → escalator → walk → escalator → walk → stairs → stairs → stairs → access_connector → walk → walk → walk → access_connector → access_connector → walk → walk → walk → access_connector
+✔ same-shore public preset has a complete route in loaded source graph (1246.4329ms)
+✔ expanded data and public selectors retain all original72 test endpoints (13.365439ms)
+KOW full f2 with detail 56 138
+✔ KOW C1 reaches outside land with Admiralty detail loaded and exact boundary identity (13793.354201ms)
+✔ opening waits respect traversal, closing, midnight, calendar, destination and horizon (2.362972ms)
+✔ deterministic window oracle exhaustively checks 2000 generated cases (68.672883ms)
+✔ real engine reconstructs paid wait and keeps earliest fast arrival (5.539421ms)
+✔ no-wait node preserves later arrival needed for gate (0.876501ms)
+✔ disabled scheduled edge cannot be reopened by waiting (0.708229ms)
+✔ facility preference preserves earlier expensive state needed before closing (0.775309ms)
+✔ unscheduled route retains support beyond scheduled four-hour horizon (0.351465ms)
+✔ seed42 fleet and complete synthetic polylines stay inside display at0,10min,1h (3052.411184ms)
+✔ requested trip outside fleet showcase retains full route and continuous dropoff (1027.073764ms)
+✔ 16 cells preserve the existing exact ODs, five source floors and Hong Kong clock (2.665655ms)
+✔ source lift remains legal while unknown wheelchair suitability is not certified (1.519932ms)
+✔ wrong preference, closed facility, paid clock mismatch and original geometry rules still fail (0.817342ms)
+generated-goal static oracle { count: 240, pruned: 176 }
+✔ experimental patches are narrow, reversible, idempotent, layered and absent from production build (4.176483ms)
+✔ both complete engines prune a strictly losing expansion while preserving all viable accepted states (6.637907ms)
+✔ strict equality counterexample retains the original arrival-time tiebreak (8.819624ms)
+✔ unrounded duration counterexample, signed zero and fractional clock additions retain exact numeric results (10.493305ms)
+✔ random static networks and actual scheduled patterns preserve full results and viable states (197.841418ms)
+✔ uncertified numeric, zero-cost, geometry and resolver cases fall back with exact old state/error/cancellation behavior (8.039437ms)
+✔ history-aware admissibility alone is insufficient: skipping a dead end removes its later dominance (2.534223ms)
+✔ production asynchronous routers remain fallback-only and preserve output plus both existing cancellation boundaries (39.972886ms)
+✔ generic map-picked endpoints allow modeled gaps over40m and keep original selection (1.91396ms)
+✔ interchange shortlist bounded, prefers modeled exits, excludes platform targets (0.28743ms)
+✔ direct taxi includes both endpoint walking connectors, full time and destination name (2.928929ms)
+✔ taxi can be first or last leg, with public journey phase indices preserved (0.4217ms)
+✔ routing branches stay bounded while completed work releases next branch (24.737577ms)
+✔ exact XYZ source endpoints are preserved but cannot be certified by an XY curb scenario (0.820777ms)
+✔ a real public prefix preserves exact source-origin access; unverified named destination floor is still incomplete (1.405641ms)
+✔ explicit source-node group may resolve to one allowed node but never an unrelated node (1.650778ms)
+✔ preference-aware reverse edge bound never exceeds any realizable profile/ride-state cost (12.431713ms)
+✔ admissible A* equals full state/time Dijkstra for all five profiles, opening waits, lift continuity, paid/rail state and zero edges (127.531106ms)
+Actual source route: 12 instructions; 6 exact mall-source instructions resolved
+✔ exact mall edge IDs resolve from block overlay even when journey graph omits building metadata (16.138143ms)
+✔ journey-owned source mall edge works without block lookup; nearby or named points cannot trigger mall (2.645755ms)
+✔ mixed mall/station/outdoor instruction highlights only source mall edges and never projects whole mixed geometry (1.238181ms)
+✔ ordinary indoor railway instructions keep their actual station and mixed stations do not share geometry (2.257945ms)
+✔ actual 10:00 Tamar to Pacific Place L2 instruction selects mall without changing source graphs (152.776767ms)
+✔ both real intermodal owners check existing station identity before rejecting public-area coverage (14.375544ms)
+✔ same OD has a genuine weighted middle ground without forcing taxi (3.755734ms)
+✔ price sensitivity is monotonic, stable and independent of dominated outliers (1.339723ms)
+✔ wait burden adds no clock time and unknown fares never look free (7.004374ms)
+✔ same pricing model includes distance and declared cross-harbour assumption (0.296563ms)
+✔ shortlist includes real bus and tram stops with directional boarding/alighting (3.611648ms)
+✔ planner composes first and last mile at actual arrival clocks and keeps direct candidate (2.131346ms)
+✔ unsafe road links and cancelled computation never emit phantom routes (0.252949ms)
+✔ unmodeled Tsuen Wan line is a contextual reference, never a made-up navigable connection (0.2878ms)
+✔ luggage carrying is explicitly confirmed before any taxi reservation or navigation (2.825093ms)
+✔ 75m modeled bend preserves source XYZ and does not touch known stairs/escalators (7.079512ms)
+✔ wrong elevation, missing source anchors, and a new crossing closure cannot create a modeled connection (0.460108ms)
+✔ actual small source path retains original C1, follows full modeled bends then real lift; strict graph remains blocked (11.216992ms)
+✔ overhead source stairs do not block same-level corridor but same-height crossing does (0.32063ms)
+✔ Kowloon exactXYZ joins preserve original area topology and reject approximate joins (110.164611ms)
+✔ E1 to actual outdoor boundary is strictly accessible in both directions (845.192418ms)
+✔ disabled and wheelchair barrier boundary closures stay rejected (3872.287234ms)
+✔ C1 stairs remain excluded from strict accessibility despite new outdoor links (1.195997ms)
+✔ one-way outdoor boundaries and closed opening hours are preserved (3114.97272ms)
+✔ real cached 18.252m stop access retains its own endpoints after entrance verification downgrade (1.325992ms)
+✔ guidance cannot borrow a later connector sharing ACCESS:destination (0.300929ms)
+✔ internal modeled connector uses local source endpoints, never whole-trip destination, without shifting timetable (0.56839ms)
+✔ missing local intermediate geometry and inconsistent distance both fail closed (0.18769ms)
+✔ lazy map loader coalesces requests, builds existing geometry and does not fetch on module import (52.196978ms)
+✔ official standard XYZ sample is correctly registered at Admiralty (1.888453ms)
+✔ projection round trips actual locations on both shores (0.20735ms)
+✔ LOD gives continuous visible base and label coverage with bounded margins (7.099572ms)
+✔ higher zoom near buildings and invalid/out-of-region inputs stay safe (0.465516ms)
+✔ cache reuses identical tile without new load; all transient payloads released (11.46685ms)
+✔ LRU remains bounded across 40 pans and evicts nonvisible data (89.330159ms)
+✔ concurrency cap and spacing survive repeated view replacement (57.813749ms)
+✔ obsolete response is released even if transport ignores cancellation (6.453707ms)
+✔ fast A-B-A pan recovers an aborted in-flight tile without a ghost hole (9.259811ms)
+✔ failures do not spin and explicit retry is available (9.255895ms)
+✔ suspending/disposal cancels pending and late responses never recreate cache (11.910574ms)
+✔ display modules are isolated from routes and source geometry is lazy (33.052606ms)
+✔ idle metro index is released, active query protected, next request safely rebuilds (3.094136ms)
+✔ farther same-height snap replaces nearer wrong-height snap without moving original G-labelled source (6.263483ms)
+✔ absence of same-height approach does not turn G into elevation zero or invent a lift (2.041751ms)
+✔ modeled connector guidance preserves known source XYZ without changing arrival time (0.607247ms)
+✔ five mall source levels, 5 existing lifts, and F approach render without fabricated LG2 (7.376966ms)
+✔ F source-anchor addition is immutable, idempotent and does not alter one route edge (153.380445ms)
+✔ missing evidence, mismatched elevation and source closure prevent new F anchor (2.251005ms)
+✔ closed Three Pacific Place tunnel is excluded from displayed navigable subset (0.167681ms)
+✔ per-floor model keeps finite source elevations and LG1 F context (2.18049ms)
+✔ floor choice names the requested endpoint, only acts on explicit selection, and disposes cleanly (2.164565ms)
+✔ the public registry contains four preferences, without a hidden strict mode (1.361666ms)
+✔ legacy aliases migrate predictably without claiming facility suitability (0.226889ms)
+✔ normalization leaves physical routing results immutable and removes stale certification (0.457554ms)
+✔ actual product router boundary cannot forward a retired engine preference (4.491323ms)
+✔ four choices and every retired spelling migrate to ordinary, never an advertised mode (2.493968ms)
+✔ retired legacy URL names and hashes migrate without treating transport or ranking controls as passenger modes (1.277009ms)
+✔ stored account and order inputs migrate immutably without changing identities, payment or source evidence (0.982038ms)
+✔ mall retains unknown source lifts visually but never counts missing capability as source-confirmed (3.363758ms)
+✔ opening suggestion is explicit, source-bounded and preserves endpoints (1.98688ms)
+✔ fixed point fixture is reproducible from unchanged real source points (153.580559ms)
+✔ each of six OD rows has exactly the same five preferences × taxi off/on (1.481174ms)
+✔ floors use all five actual source IDs and all 41 source portals; never LG2 (79.274162ms)
+✔ land OD coordinates are copied with original seed and provenance, not resampled or snapped (0.895178ms)
+✔ exact source endpoints preserve XYZ and node identities (1.559452ms)
+✔ named floor centroid is allowed only with explicit same-floor source-portal resolution (0.337704ms)
+✔ known closure and strict forbidden facility cannot pass even on modeled geometry (0.345307ms)
+✔ schematic continuity is reported separately from source-backed evidence (0.207751ms)
+✔ disconnected neighboring legs are detected including vertical jumps (0.353078ms)
+✔ fare covers every compacted leg, preserves middle taxi, and sums to complete total (0.421821ms)
+✔ taxi off, strict taxi, and luggage confirmation policies are independently audited (0.297825ms)
+✔ timeout is pending, OOM separate, completed empty remains diagnostic, never inferred NO_ROUTE (0.228371ms)
+✔ request identity includes named-floor and exact-node selection (0.214992ms)
+✔ unavailable taxi retains endpoint-access reason and complete pricing scenario without implying connectivity (0.308632ms)
+✔ source floor projection preserves existing directed edges without city-sized graph (75.550982ms)
+✔ closed-at-departure destination may be reached after an explicit paid opening wait (0.98389ms)
+✔ stopped S1 with background errors and usable candidates remains incomplete (0.165477ms)
+✔ offline price sweep uses complete available metrics and fixed production contributions (4.987515ms)
+✔ 2D point uses actual boundary geometry while retaining a separate internal road-snap anchor (0.22106ms)
+✔ projected source bus geometry retains exact stops through final production journey guidance (9.741621ms)
+✔ ride boundary audit preserves source centreline and timetable instead of inventing walking time (0.528299ms)
+✔ matrix summary counts observed pending cells without counting them as completed (2.797002ms)
+✔ strict physical source audit uses the exact built eligibility predicate, including unknown evidence (14.972215ms)
+✔ supplement compares all retained candidate and unavailable fields while ignoring only diagnostics (1.556486ms)
+✔ all public modes enabled without taxi; no private-car or bike fiction (1.333513ms)
+✔ route chain preserves middle and final taxi, excludes waits (0.312557ms)
+✔ ranking respects actual user priority rather than former mode tab (0.872063ms)
+✔ arrival bridge uses timed service geometry, never a made-up pickup (0.489111ms)
+✔ entry retains detailed routes and Web Workers but exposes exactly two selectors (7.684807ms)
+✔ identical route results collapse; distinct steps remain (0.263965ms)
+✔ two policy controls render and preserve facility/date preferences (2.680497ms)
+✔ user-requested calculation cap removal retains cancel and progress (5.48574ms)
+✔ all four UI preferences have explicit distinct semantics on a microscopic network (6.402675ms)
+✔ paid waiting cannot falsely dominate a later cheaper facility state (0.172929ms)
+✔ luggage is distinct from wheelchair and known luggage bans remain hard (0.385215ms)
+✔ virtual score uses original expression on floored virtual resources, strict comparison and missing-node fallback (1.211991ms)
+✔ actual bundled Dt passive observer preserves full output, accepted/pop trace, callback count/order and receiver (28.537699ms)
+✔ would-prune labels still perform original effectful callbacks and propagate cancellation; wrong owner disables statistics only (30.650511ms)
+✔ OD36 probe flushes bounded events without losing order, latest counters or final lifecycle tail (26.21562ms)
+✔ copied scheduled counters understand both flat and exact-time bucket indexes (32.134167ms)
+✔ actual S1 preserves exact ordinary endpoints through fallback and rejects cancelled refinements (10.185046ms)
+✔ actual S1 preserves exact luggage endpoints through fallback and rejects cancelled refinements (2.99884ms)
+✔ actual S1 preserves exact escalator endpoints through fallback and rejects cancelled refinements (1.80738ms)
+✔ actual S1 preserves exact lift endpoints through fallback and rejects cancelled refinements (1.409525ms)
+✔ actual S1 preserves exact accessible → ordinary migration endpoints through fallback and rejects cancelled refinements (2.312925ms)
+✔ actual S1 preserves exact strict_accessibility → ordinary migration endpoints through fallback and rejects cancelled refinements (3.549963ms)
+✔ actual S1 preserves exact wheelchair → ordinary migration endpoints through fallback and rejects cancelled refinements (1.656735ms)
+✔ actual S1 gives taxi the exact base owner and waits for its dependent queries before evicting it (1.86741ms)
+✔ actual S1 keeps usable candidates and marks Worker/refinement errors incomplete, never successful or unreachable (5.235351ms)
+✔ actual S1 named-floor evidence precheck cache-miss keeps formal routing and cancellation (1.580731ms)
+✔ actual S1 named-floor evidence precheck cache-hit keeps formal routing and cancellation (4.015159ms)
+✔ actual S1 named-floor evidence precheck cancel-at-precheck keeps formal routing and cancellation (0.835438ms)
+station oracle 1728 successful 400 memo evictions 1712
+✔ bounded memo pairs evidence eviction, retains null hits, and does not mutate referenced results (2.699078ms)
+✔ duplicate IDs retain original memo alias semantics while unique IDs stay bounded (0.684102ms)
+✔ evidence replay uses full floating departure and original endpoints; null/cancel never fall back to stale route (0.875028ms)
+✔ both production bundle transforms are narrow, reversible, configurable and idempotent (10.831061ms)
+✔ sparse indoor graph retains all nodes/edges and drops only edge-isolated synthetic portals (2.571392ms)
+✔ both actual station resolvers preserve all preferences, dates, no-wait rules and isolated same-coordinate node diagnostics (378.398757ms)
+✔ actual walk outputs retain exact isolated-node diagnostics, multi-node anchors and synthetic node collision behavior (58.082258ms)
+full intermodal oracle 288 successful 200 multileg 160 replays 400
+✔ both actual full intermodal engines preserve successful multileg routes under forced paired eviction and replay (1033.259413ms)
+✔ over100 navigation walking segments compact only pricing input (2.615931ms)
+✔ pricing failure does not mutate or invalidate the journey (0.270384ms)
+✔ heavy graph owners serialize and previous worker is released before the next allocation (13.443395ms)
+✔ cancellation releases current graph owner and prevents queued queries starting (1.336628ms)
+✔ base public and dependent taxi queries use one owner before all refinements, preserving request payloads (2.617693ms)
+✔ cancellation while the taxi group is pending prevents all later phases and queued queries (0.931592ms)
+✔ a rejected base or taxi branch does not suppress independent original refinements (0.460909ms)
+retained ride arrays {
+  engine: 'app-transit-worker-CaCMeUxU.js',
+  old: 6,
+  next: 2,
+  oldCoordinateSlots: 1536,
+  newCoordinateSlots: 512
+}
+retained ride arrays {
+  engine: 'intermodal-routing-D8vKT-lN.js',
+  old: 6,
+  next: 2,
+  oldCoordinateSlots: 1536,
+  newCoordinateSlots: 512
+}
+scheduled geometry paired queries 120
+✔ branded mutable ranges are reused only with equal references and hole layout; outputs keep independent outer arrays (1.976044ms)
+✔ bounded FIFO eviction does not lose restoration marks, and static geometry identity is untouched (1.188656ms)
+✔ unknown proxies receive zero preflight traps; frozen getters and custom species decline sharing (0.608309ms)
+✔ late species changes and inherited hole values cannot alter final restoration (2.462672ms)
+✔ both transforms are reversible/idempotent and absent from the production build (4.608789ms)
+✔ actual timed engines retain fewer ride geometry arrays with every label and output unchanged (13.245419ms)
+✔ resolver source mutation preserves old snapshots, new references, nested aliases and independent output slices (2.313608ms)
+✔ raw getters, coercions, custom species and unknown proxies preserve original effects and exceptions (5.188736ms)
+✔ static connection geometry aliases and resolver cancellation prefixes are never changed (1.261966ms)
+✔ random complete-engine outputs and every accepted label remain equal (68.717207ms)
+✔ complete asynchronous routers preserve the existing pre-work and cooperative-yield cancellation boundaries (38.022951ms)
+paired scheduled output/state/call-order oracles 200
+✔ exact-time buckets select precisely the labels eligible in either original comparison direction (2.129052ms)
+✔ the index preserves object identity, inactive entries, insertion order and independent node owners (0.355862ms)
+✔ both production transforms are exactly reversible, idempotent, layered and refreshable (7.337622ms)
+✔ complete scheduled engines preserve all accepted labels, inactive transitions, heap pop order and final itineraries (12.740033ms)
+✔ random complete-engine oracles cover pre/post boundary states, modes, transfers, openings, null resolution and exact fractional clocks (179.304446ms)
+✔ signed zero, exact boundary, horizon edge, invalid finite-clock inputs and resolver validation keep original behavior (8.688337ms)
+✔ resolver cancellation preserves the exact call prefix and state prefix (2.006559ms)
+✔ outer asynchronous routers preserve cancellation before work and at the existing cooperative yield (38.184737ms)
+✔ bounded finite weights, corrupt persistence recovery and reset preserve preset defaults (1.856454ms)
+✔ cached geometry is reused but every adjusted score and winner is recomputed (0.534099ms)
+✔ compact collapsed panel exposes exact formula, units and route-level production contributions (0.481269ms)
+paired exact queries 720 complete 410
+isolated horizon oracle {
+  compared: 1080,
+  success: 160,
+  oldFifoCalls: 480,
+  newFifoCalls: 0,
+  oldNonFifoCalls: 480,
+  newNonFifoCalls: 480
+}
+✔ prepared graph timing metadata is reused; endpoints/date are not cached and graph owners stay isolated (2.570041ms)
+✔ all four production engines are patched narrowly, idempotently and without ancestor/ordering changes (27.615439ms)
+✔ 720 paired full-engine queries preserve exact route/time/geometry across preferences, dynamic dates/endpoints and no-wait graphs (166.786289ms)
+✔ repeated endpoints beyond old eight-entry cache retain exact full-engine outputs (85.497049ms)
+✔ FIFO discarded-opening scan alone preserves all four actual engines, including weekly dates and node/edge no-wait paths (256.857926ms)
+PASS original-endpoint detour ordinary false 5 undefined
+PASS original-endpoint detour ordinary true 5 undefined
+PASS original-endpoint detour luggage false 8 undefined
+PASS original-endpoint detour luggage true 8 金鐘鐵路站升降機
+PASS original-endpoint detour escalator false 5 undefined
+PASS original-endpoint detour escalator true 5 undefined
+PASS original-endpoint detour lift false 5 undefined
+PASS original-endpoint detour lift true 6 undefined
+PASS original-endpoint detour evidence-only false 13 金鐘鐵路站升降機
+PASS original-endpoint detour evidence-only true 13 金鐘鐵路站升降機
+PASS explicit alternative selection, origin preservation, stale data and cancellation guards
+PASS detour opening-hours exclusion
+PASS overlay safety precedence disabled
+PASS overlay safety precedence wheelchair_barrier
+PASS explicit closure is not overwritten
+✔ tests/navigation/station-alternatives.test.mjs (42509.935014ms)
+PASS HUH:portal:B2-lift -> HUH:platform-area:EAL ordinary 10 minutes
+PASS HUH:portal:B2-lift -> HUH:platform-area:EAL luggage 10 minutes
+PASS HUH:portal:B2-lift -> HUH:platform-area:EAL escalator 10 minutes
+PASS HUH:portal:B2-lift -> HUH:platform-area:EAL lift 10 minutes
+PASS HUH:platform-area:EAL -> HUH:portal:B2-lift ordinary 11 minutes
+PASS HUH:platform-area:EAL -> HUH:portal:B2-lift luggage 13 minutes
+PASS HUH:platform-area:EAL -> HUH:portal:B2-lift escalator 11 minutes
+PASS HUH:platform-area:EAL -> HUH:portal:B2-lift lift 11 minutes
+PASS HUH:portal:B2-lift -> HUH:platform-area:TML ordinary 9 minutes
+PASS HUH:portal:B2-lift -> HUH:platform-area:TML luggage 10 minutes
+PASS HUH:portal:B2-lift -> HUH:platform-area:TML escalator 9 minutes
+PASS HUH:portal:B2-lift -> HUH:platform-area:TML lift 9 minutes
+PASS HUH:platform-area:TML -> HUH:portal:B2-lift ordinary 10 minutes
+PASS HUH:platform-area:TML -> HUH:portal:B2-lift luggage 12 minutes
+PASS HUH:platform-area:TML -> HUH:portal:B2-lift escalator 10 minutes
+PASS HUH:platform-area:TML -> HUH:portal:B2-lift lift 10 minutes
+PASS KOW:portal:E1 -> KOW:platform-area:TCL ordinary 5 minutes
+PASS KOW:portal:E1 -> KOW:platform-area:TCL luggage 8 minutes
+PASS KOW:portal:E1 -> KOW:platform-area:TCL escalator 6 minutes
+PASS KOW:portal:E1 -> KOW:platform-area:TCL lift 6 minutes
+PASS KOW:platform-area:TCL -> KOW:portal:E1 ordinary 5 minutes
+PASS KOW:platform-area:TCL -> KOW:portal:E1 luggage 8 minutes
+PASS KOW:platform-area:TCL -> KOW:portal:E1 escalator 6 minutes
+PASS KOW:platform-area:TCL -> KOW:portal:E1 lift 6 minutes
+PASS inaccessible lift safety guard: disabled
+PASS inaccessible lift safety guard: barrier
+PASS lift safety guard: ineligible
+PASS lift safety guard: closed-hours
+PASS lift safety guard: direction
+PASS ordinary/migration/carrying stair policy ordinary
+PASS ordinary/migration/carrying stair policy accessible
+PASS ordinary/migration/carrying stair policy luggage
+✔ tests/navigation/station-endpoints.test.mjs (8434.814803ms)
+PASS actual HUH identity route 11 72 minutes
+PASS actual HUH identity route 15 53 minutes
+PASS actual HUH identity route 21 28 minutes
+PASS actual HUH identity route 25 33 minutes
+✔ tests/navigation/station-identity-engine.test.mjs (9167.248143ms)
+✔ HUH A3 same official amenity canonicalizes obsolete area anchor (1.084841ms)
+✔ different feature, station, source height, nearby node and absent identity are not conflated (256.853527ms)
+✔ bundle patches are narrow, idempotent and fail closed on anchor drift (1.634995ms)
+✔ exact HUH B2 lift and D6 can search existing A3 stop via station graph (1.443418ms)
+✔ actual taxi publisher counts usable first result only: complete=false (2.38123ms)
+✔ actual taxi publisher counts usable first result only: complete=true (0.981687ms)
+✔ unverified endpoint access cannot reserve or start through a programmatic click (0.790201ms)
+✔ fleet display region fits entirely within restored geographic background (0.879445ms)
+✔ viewport culling uses the map projection and leaves vehicle positions unchanged (0.84936ms)
+✔ extended road context renders original polylines, distinguishes tunnels and caches stable views (0.510243ms)
+✔ taxi toggle false respects ordinary (0.817381ms)
+✔ taxi toggle true respects ordinary (0.098748ms)
+✔ taxi toggle false respects luggage (0.114952ms)
+✔ taxi toggle true respects luggage (0.452817ms)
+✔ taxi toggle false respects escalator (0.119339ms)
+✔ taxi toggle true respects escalator (0.08043ms)
+✔ taxi toggle false respects lift (0.058598ms)
+✔ taxi toggle true respects lift (0.055944ms)
+✔ luggage quote carries capacity confirmation without changing geometry, time, or public evidence (0.864572ms)
+✔ removed and unknown preferences do not silently certify taxi capability (0.264195ms)
+✔ shared clock advances at declared speed only while foreground (1.039344ms)
+✔ clock pauses, steps, resets without background catch-up or long-frame leap (0.163304ms)
+✔ actual KMB8 source stops stay exact; both centreline projections remain explicitly unverified (5.268666ms)
+✔ matching shapes add no duplicate points or warnings; rail, unknown source identities and all vertical constraints are not bridged (2.963585ms)
+✔ both ride assemblers patch narrowly, reversibly and idempotently (3.648704ms)
+✔ actual worker and fallback preserve scheduled route, constraints and timing while all rendered boundaries agree (38.910978ms)
+✔ only existing bus/tram stops, exact coordinate identity and deduplicated route directions (2.350914ms)
+✔ wide view clusters without losing stops; zoom gives individual exact positions (0.817742ms)
+✔ card shows existing route, source, actions and escapes untrusted names (0.398195ms)
+✔ controller single stop, keyboard, endpoint actions, close, clustering and cached redraw (1.360364ms)
+✔ large touch targets, distinct icon shapes, limited labels and source integration (1.713952ms)
+✔ metro catalog uses supplied station coordinates and excludes unsupported or invalid stops (0.306799ms)
+✔ card next arrival and subsequent departures use model times, date, direction and escaping (0.446587ms)
+✔ countdowns roll over correctly and never describe a dwell as a future arrival (0.236985ms)
+✔ unready and out-of-service cards stay honest rather than inventing a countdown (0.2941ms)
+✔ clock updates only the open departure section, preserves controls, and caches within a second (0.692075ms)
+✔ metro card keeps readable direction without internal routing IDs (0.248812ms)
+✔ active interval is departure-inclusive and terminal-arrival-exclusive (4.346918ms)
+✔ movement follows supplied multi-vertex geometry, never a direct endpoint chord (0.645004ms)
+✔ intermediate dwell freezes at shape vertex then departs at scheduled second (0.440829ms)
+✔ reverse-direction pattern follows reversed shape and bearing (1603.066331ms)
+✔ frequency windows merge explicit departures and deduplicate boundaries (0.726226ms)
+✔ departures use stop offsets, retain still-dwelling trains and exclude termini (0.552856ms)
+✔ daily service calendar honors weekdays, date range and exceptions (0.323193ms)
+✔ midnight trips retain prior service date, stable identity and prior calendar (0.213169ms)
+✔ GTFS departures above 24:00 use previous service day even on inactive next day (0.282442ms)
+✔ direction filtering and display cap do not limit departure queries (1.128677ms)
+✔ source shapes and service objects remain untouched and results deterministic (0.409953ms)
+✔ repeated shape vertices stay finite and zero-time calls do not divide by zero (0.298696ms)
+✔ invalid times, dates, windows and geometry fail explicitly; empty input is safe (0.859405ms)
+✔ real network includes all existing modes with honest metro simulation provenance (0.808559ms)
+✔ real positions, dwell, directions and active counts match existing scheduled engine (16.319917ms)
+✔ real metro first/last departures and selected date agree with service windows (0.699166ms)
+TEST_RUNTIME a5c465982702
+IMPORT OK
+TRAFFIC ENTRY PASS: all public modes, default taxis, independent policy, pause/step, hidden view pause and resume
+✔ full entry and Worker remain usable: shared traffic simulation and independent route policy (5132.133817ms)
+TEST_RUNTIME a5c465982702
+IMPORT OK
+PROGRESS 0 [] []
+ENDPOINT_DIAGNOSTIC {"id":"transit","first":[114.16624518,22.27888752,6],"last":[114.16605219,22.30508756,5.6],"totalMinutes":28}
+EDGE_AUDIT {"id":"transit","usedCount":96,"forbidden":[],"modeled":[],"sourceIds":["ADM:I:1000928688","ADM:I:1000928678","ADM:I:1000928689","ADM:I:1000928690:r","ADM:I:1000928692:r","ADM:I:1000928681:r","ADM:I:1000859578","ADM:I:1000859620","ADM:I:1000859629:r","ADM:I:1000859487","ADM:I:1000861507:r","ADM:I:1000859928","ADM:I:1000860634","ADM:I:1000860281","ADM:I:1001098066","ADM:I:1000860630","ADM:I:1000860699","ADM:I:1001098144","ADM:I:1000859944:r","ADM:I:1000859943:r","ADM:I:1000860294:r","ADM:I:1000859923:r","ADM:I:1000860963:r","ADM:I:1000860731:r","ADM:I:1000860840","ADM:I:1000860934","ADM:I:1000860935","ADM:I:1000860838","ADM:I:1000860937:r","ADM:I:1000860767","ADM:I:1000862735:r","ADM:I:1000862218","WAIT:RAIL:ADM:EAL:39834.63168","RIDE:scheduled:RAIL:EAL:0:39840:RAIL:ADM:EAL:RAIL:HUH:EAL","HUH:I:1000859034:r","HUH:I:1000859084:r","HUH:I:1000859033:r","HUH:I:1000859032:r","HUH:I:1000859145","HUH:I:1000859113:r","HUH:I:1000858937","HUH:I:1000859256","HUH:I:1000857626:r","HUH:I:1000857792","HUH:I:1000857897","HUH:I:1000857785","HUH:I:1000859405:r","HUH:I:1000857734:r","HUH:I:1000859404:r","HUH:I:1000859403:r","HUH:I:1000859402:r","WAIT:RAIL:HUH:TML:40360.96536","RIDE:scheduled:RAIL:TML:0:40620:RAIL:HUH:TML:RAIL:AUS:TML","AUS:I:1000546480:r","AUS:I:1000546537:r","AUS:I:1000546479:r","AUS:I:1000546536:r","AUS:I:1000546478:r","AUS:I:1000546535:r","AUS:I:1000546477:r","AUS:I:1000546560","AUS:I:1000546521","AUS:I:1000546561","AUS:I:1000546522","AUS:I:1000546455","AUS:I:1000546528:r","AUS:I:1000546453:r","AUS:I:1000546412","AUS:I:1000547157","AUS:I:1000546623:r","AUS:I:1000546740:r","AUS:I:1000546649:r","AUS:I:1000546648:r","AUS:I:1000546678:r","AUS:I:1001098892:r","AUS:I:1000546647:r","AUS:I:1001098870:r","AUS:I:1000546646:r","AUS:I:1000546645:r","AUS:I:1000546644","AUS:I:1000546629:r","AUS:I:1000546685","AUS:I:1000546796:r","AUS:I:1000546822","AUS:I:1000546697","AUS:I:1000546612","AUS:I:1000546841","AUS:I:1000546861","AUS:I:1000546947","AUS:I:1001098906","AUS:I:1000546906","AUS:I:1000546891","AUS:I:1000546892","AUS:I:1000546893","AUS:I:1000546911:r","AUS:I:1000546941:r","AUS:I:1000546905","AUS:I:1000546876","AUS:I:1000546873","AUS:I:1000546938:r"]}
+MEMORY_DIAGNOSTIC {"memory":{"rss":1221779456,"heapTotal":483131392,"heapUsed":337850792,"external":26509054,"arrayBuffers":9801888},"maxRSS":1462380}
+FINAL_DIAGNOSTIC {"departureS":39600,"warmStart":false,"startedMonotonic":5163.963386,"startedAt":"2026-10-13T07:32:04.223Z","origin":"金钟站 E2出口","destination":"柯士甸站 B2出口","stages":[{"id":"public-fast","durationMs":4202,"status":"ready","cached":false}],"firstResultMs":4203,"totalMs":null} [ [ 'transit', true, '演示班次联程 · 11:00 出发' ] ] 已找到可用方案，可直接选择；其他组合继续计算。
+Full entry + real Worker + rendered public route passed: metadata stalled; legacy stored taxi-only policy and navigation hash
+✔ full entry and Worker remain usable: optional metadata stalls (10049.929999ms)
+TEST_RUNTIME a5c465982702
+IMPORT OK
+PROGRESS 0 [] []
+ENDPOINT_DIAGNOSTIC {"id":"transit","first":[114.15011,22.28776],"last":[114.18096,22.27931],"totalMinutes":29}
+EDGE_AUDIT {"id":"transit","usedCount":0,"forbidden":[],"modeled":[],"sourceIds":["WAIT:td:99211:39600","RIDE:td:4005:2:287:0:39868:td:99211:td:99227"]}
+MEMORY_DIAGNOSTIC {"memory":{"rss":1460781056,"heapTotal":513409024,"heapUsed":425137840,"external":351018164,"arrayBuffers":180634220},"maxRSS":1426544}
+FINAL_DIAGNOSTIC {"departureS":39600,"warmStart":false,"startedMonotonic":3218.719222,"startedAt":"2026-10-13T07:32:12.328Z","origin":"港澳码头 (东行方向)","destination":"坚拿道西 (东行方向)","stages":[{"id":"public-fast","durationMs":3395,"status":"ready","cached":false}],"firstResultMs":3399,"totalMs":null} [ [ 'transit', true, '演示班次联程 · 11:00 出发' ] ] 已找到可用方案，可直接选择；其他组合继续计算。
+Full entry + real Worker + rendered public route passed: block stalled; legacy stored taxi-only policy and navigation hash
+✔ full entry and Worker remain usable: optional block detail stalls (7333.36937ms)
+TEST_RUNTIME a5c465982702
+IMPORT OK
+PROGRESS 0 [] []
+ENDPOINT_DIAGNOSTIC {"id":"transit","first":[114.17405457978654,22.312218704929617],"last":[114.1750543331201,22.302091394706313],"totalMinutes":34}
+EDGE_AUDIT {"id":"transit","usedCount":165,"forbidden":[],"modeled":[],"sourceIds":["ACCESS:origin","AUS:P:240009493:r","AUS:P:240009699","AUS:P:240009638","AUS:P:240009532","AUS:P:240009595:r","AUS:P:240009722","AUS:P:240009227","AUS:P:240009653","AUS:P:240009358:r","AUS:P:240009440:r","AUS:P:240009207:r","AUS:P:240009549","AUS:P:240009309:r","AUS:P:240009642:r","AUS:P:240009147:r","AUS:P:240009083:r","AUS:P:240009220:r","AUS:P:240009537:r","AUS:P:240009294:r","AUS:P:240009193:r","AUS:P:240009217","AUS:P:240009562","AUS:P:240009382","AUS:P:240009697","AUS:P:240009717","AUS:P:240009395","AUS:P:240009510","AUS:P:240009151","AUS:P:240009842","AUS:P:240009843","AUS:P:240009844","AUS:P:240009845","AUS:P:240009846","AUS:P:240009847","AUS:P:240010486","AUS:P:240009523","AUS:P:240010983","AUS:P:240009272","AUS:P:240010287","AUS:P:240010520:r","AUS:P:240010521:r","AUS:P:240012929:r","AUS:P:240012930:r","AUS:P:240012931:r","AUS:P:240012932:r","AUS:P:240012933:r","AUS:P:240012711","AUS:P:240012713","AUS:P:240012712","AUS:P:240013071:r","AUS:P:240013072:r","AUS:P:240012834","AUS:P:240012836","AUS:P:240012835","AUS:P:240013061:r","AUS:P:240013062:r","AUS:P:240013060:r","AUS:P:240012489","AUS:P:240012491","AUS:P:240022581","AUS:P:240012490","AUS:P:240013429:r","AUS:P:240013430:r","AUS:P:240022582:r","AUS:P:240012031:r","AUS:P:240013601:r","AUS:P:240012677","AUS:P:240012678","AUS:P:240013371","AUS:P:240012676","AUS:P:240012675","AUS:P:240011959:r","AUS:P:240011824:r","AUS:P:240012348:r","AUS:P:240012349:r","AUS:P:240012350:r","AUS:P:240012547","AUS:P:240013455","AUS:P:240012549","AUS:P:240012548","AUS:P:240013288:r","AUS:P:240021583:r","AUS:P:240011960:r","AUS:P:240013580:r","AUS:P:240012408:r","AUS:P:240012407:r","AUS:P:240011815:r","AUS:P:240013578:r","AUS:P:240012613","AUS:P:240012615","AUS:P:240012614","AUS:P:240013579:r","AUS:P:240011629:r","AUS:P:240013458:r","AUS:P:240013459:r","AUS:P:240011630","AUS:P:240011940:r","AUS:P:240021581:r","AUS:P:240012382","AUS:P:240012384","AUS:P:240012383","AUS:P:240021582","AUS:P:240012234","AUS:P:240013466:r","AUS:P:240011781:r","AUS:P:240013467:r","AUS:P:240021580:r","AUS:P:240014793","AUS:P:240014795","AUS:P:240014794","AUS:P:240015402:r","AUS:P:240014334:r","AUS:P:240015363:r","AUS:P:240014690","AUS:P:240014691","AUS:P:240014689","AUS:P:240021579:r","AUS:P:240014147:r","AUS:P:240014679","AUS:P:240015274","AUS:P:240014681","AUS:P:240015275","AUS:P:240014680","AUS:P:240014338:r","AUS:P:240015431:r","AUS:P:240014586","AUS:P:240014587","AUS:P:240014585","AUS:P:240014577:r","AUS:P:240014578:r","AUS:P:240014579:r","AUS:P:240014580:r","AUS:P:240022593:r","AUS:P:240014581:r","AUS:P:240014525:r","AUS:P:240015246:r","AUS:P:240015247:r","AUS:P:240014526:r","AUS:P:240014294:r","AUS:P:240015237:r","AUS:P:240014588","AUS:P:240014589","AUS:P:240015241","AUS:P:240015240","AUS:P:240015048","AUS:P:240015047","AUS:P:240014903","AUS:P:240014904","AUS:P:240015925","AUS:P:240016785","AUS:P:240016786","AUS:P:240016787","AUS:P:240016788","AUS:P:240016789","AUS:P:240016790","AUS:P:240016791","AUS:P:240016792","AUS:P:240016733","AUS:P:240016732","AUS:P:240016008","AUS:P:240016184","AUS:P:240016236","AUS:P:240016227","AUS:P:240015853","AUS:P:240016016","ACCESS:destination"]}
+MEMORY_DIAGNOSTIC {"memory":{"rss":1189326848,"heapTotal":479666176,"heapUsed":337129232,"external":26509054,"arrayBuffers":9801888},"maxRSS":1451552}
+FINAL_DIAGNOSTIC {"departureS":28800,"warmStart":false,"startedMonotonic":4657.09871,"startedAt":"2026-10-13T07:32:21.100Z","origin":"地图所选地点","destination":"地图所选地点","stages":[{"id":"public-fast","durationMs":4203,"status":"ready","cached":false}],"firstResultMs":4204,"totalMs":null} [ [ 'transit', true, '演示班次联程 · 08:00 出发' ] ] 已找到可用方案，可直接选择；其他组合继续计算。
+Full entry + real Worker + rendered public route passed: land stalled; legacy stored taxi-only policy and navigation hash
+✔ full entry and Worker remain usable: ordinary map-point access (9507.303613ms)
+TEST_RUNTIME a5c465982702
+IMPORT OK
+PROGRESS 0 [] []
+ENDPOINT_DIAGNOSTIC {"id":"transit","first":[114.19220183840672,22.26356158940252],"last":[114.15065798999056,22.2703634423568],"totalMinutes":110}
+EDGE_AUDIT {"id":"transit","usedCount":311,"forbidden":[],"modeled":[],"sourceIds":["ACCESS:origin","ADM:P:280014444","ADM:P:290004368","ADM:P:280011675:r","ADM:P:280011688","ADM:P:280011777","ADM:P:280011804","ADM:P:280011668","ADM:P:280011682","ADM:P:280011749","ADM:P:280011667","ADM:P:280011702","ADM:P:280011747","ADM:P:280011798","ADM:P:280011719","ADM:P:280011726","ADM:P:280012142","ADM:P:280012159","ADM:P:280012176:r","ADM:P:280012143:r","ADM:P:280012198:r","ADM:P:280012197:r","ADM:P:280012196:r","ADM:P:280012195:r","ADM:P:280012221:r","ADM:P:280012213","ADM:P:280012212","ADM:P:280012192","ADM:P:280013932","ADM:P:280013933:r","ADM:P:280013935:r","ADM:P:280013934:r","ADM:P:280013936:r","ADM:P:280013938:r","ADM:P:280013931:r","ADM:P:280013937:r","ADM:P:280011768:r","ADM:P:280011720:r","ADM:P:280011930:r","ADM:P:280011931:r","ADM:P:280011687:r","ADM:P:280011876","ADM:P:280011982","ADM:P:280012069","ADM:P:280011825:r","ADM:P:280011925:r","ADM:P:280011924:r","ADM:P:280011923:r","ADM:P:280011922:r","ADM:P:280012073:r","ADM:P:280011706:r","ADM:P:280011878:r","ADM:P:280011877:r","ADM:P:280012072:r","ADM:P:280011699:r","ADM:P:280012008:r","ADM:P:280012009:r","ADM:P:280012007:r","ADM:P:280011913:r","ADM:P:280011916:r","ADM:P:280011915:r","ADM:P:280011914:r","ADM:P:280011839:r","ADM:P:280011820:r","ADM:P:280011950:r","ADM:P:280011949:r","ADM:P:280011948:r","ADM:P:280011947:r","ADM:P:280011946:r","ADM:P:280011945:r","ADM:P:280013639:r","ADM:P:280013638:r","ADM:P:280011983:r","ADM:P:280011984:r","ADM:P:280013917:r","ADM:P:280011812:r","ADM:P:280014517:r","ADM:P:280014516:r","ADM:P:280014515:r","ADM:P:280014514:r","ADM:P:280014513:r","ADM:P:280014512:r","ADM:P:280011942:r","ADM:P:280011940","ADM:P:280013968","ADM:P:280011941","ADM:P:280011799","ADM:P:280013395","ADM:P:280014402","ADM:P:280013396","ADM:P:280013397","ADM:P:280013152","ADM:P:280013418","ADM:P:280013151","ADM:P:280013420","ADM:P:280013144","ADM:P:280013419","ADM:P:280013145","ADM:P:280012344","ADM:P:280012597","ADM:P:280012588","ADM:P:280012781:r","ADM:P:280012584:r","ADM:P:280012780:r","ADM:P:280012286:r","ADM:P:280012782:r","ADM:P:280012459","ADM:P:280012585","ADM:P:280012341","ADM:P:999000424","ADM:P:280010682","ADM:P:280010513","ADM:P:280010320","ADM:P:280010321","ADM:P:280010466","ADM:P:280010683","ADM:P:280010177","ADM:P:280010366","ADM:P:280010365","ADM:P:280009898:r","ADM:P:280010364:r","ADM:P:280009825:r","ADM:P:280010363:r","ADM:P:280011004:r","ADM:P:280010362:r","ADM:P:280010266","ADM:P:280009809","ADM:P:280010753:r","ADM:P:280010752:r","ADM:P:280010460:r","ADM:P:280010293:r","ADM:P:280014715:r","ADM:P:280009851:r","ADM:P:280010271","ADM:P:280010480","ADM:P:280010652","ADM:P:280010269:r","ADM:P:280010497:r","ADM:P:280010268:r","ADM:P:280010267:r","ADM:P:280010651:r","ADM:P:280010064","ADM:P:280010317","ADM:P:280010316","ADM:P:280010315","ADM:P:280003483","ADM:P:280003196","ADM:P:999001757:r","ADM:P:999001780","ADM:P:999001770","ADM:P:280003961","ADM:P:280003962","ADM:P:280002863","ADM:P:280003065:r","ADM:P:280003960:r","ADM:P:280003286:r","ADM:P:280003150:r","ADM:P:280003051:r","ADM:P:280003964:r","ADM:P:280003963:r","ADM:P:280003965:r","ADM:P:280003010:r","ADM:P:280003966:r","ADM:P:280003301","ADM:P:280003967","ADM:P:280003053","ADM:P:280003968","ADM:P:280003970:r","ADM:P:280014211:r","ADM:P:280004075:r","ADM:P:280014212:r","ADM:P:280003969:r","ADM:P:280004124:r","ADM:P:280004122:r","ADM:P:280003976:r","ADM:P:280004076:r","ADM:P:280000389:r","ADM:P:280000330:r","ADM:P:290035365","ACCESS:destination","WAIT:td:99125:31331.09718","RIDE:td:4005:1:287:0:31372:td:99125:td:99135","ADM:P:250012989","ADM:P:250012988","ADM:P:250013329","ADM:P:250012746","ADM:P:250012745","ADM:P:250012090","ADM:P:250011652","ADM:P:250013080","ADM:P:290062196","ADM:P:290062195","ADM:P:250011236","ADM:P:250012067","ADM:P:250013327","ADM:P:250012317","ADM:P:250012316","ADM:P:250012315:r","ADM:P:250013141:r","ADM:P:290062230:r","ADM:P:290062229:r","ADM:P:250013296:r","ADM:P:250011211:r","ADM:P:250012368","ADM:P:250012370","ADM:P:250012369","ADM:P:250011584:r","ADM:P:250013294:r","ADM:P:250011136:r","ADM:P:290047578:r","ADM:P:250012486:r","ADM:P:250012488:r","ADM:P:250012487:r","ADM:P:250012156","ADM:P:250011140","ADM:P:250013365","ADM:P:250013364","ADM:P:250011408","ADM:P:250012660:r","ADM:P:250012662:r","ADM:P:250012661:r","ADM:P:250013362:r","ADM:P:250013363:r","ADM:P:250012096:r","ADM:P:250012816","ADM:P:250012817","ADM:P:250011610","ADM:P:250014266","ADM:P:250014773","ADM:P:250015438","ADM:P:250015439","ADM:P:250015475","ADM:P:250015474","ADM:P:250015255","ADM:P:250015132","ADM:P:250014810","ADM:P:250015245","ADM:P:250015244","ADM:P:250014832:r","ADM:P:250015327:r","ADM:P:250015329:r","ADM:P:250015328:r","ADM:P:250014665:r","ADM:P:250015473:r","ADM:P:250014800","ADM:P:250019540","ADM:P:250015472","ADM:P:250014563","ADM:P:250015143","ADM:P:250015142","ADM:P:250014881","ADM:P:250015229","ADM:P:250015228","ADM:P:250015493","ADM:P:250015494","ADM:P:250016229","ADM:P:250015150","ADM:P:250015152","ADM:P:250015151","ADM:P:250014861","ADM:P:250015446","ADM:P:250015447","ADM:P:250014811","ADM:P:250015283","ADM:P:250014932","ADM:P:250014846","ADM:P:250014674","ADM:P:250014570","ADM:P:250014653","ADM:P:250015154","ADM:P:250015155","ADM:P:250015760","ADM:P:250015448","ADM:P:250015449","ADM:P:250014777","ADM:P:250015177","ADM:P:250015176","ADM:P:250014836:r","ADM:P:250014847:r","ADM:P:250014760:r","ADM:P:250015360:r","ADM:P:250015359:r","ADM:P:250014829","ADM:P:250014989","ADM:P:250014990","ADM:P:250015016:r","ADM:P:250015394:r","ADM:P:250014497:r","ADM:P:250014494:r","ADM:P:250014519:r","ADM:P:250015663:r","ADM:P:250015647:r","ADM:P:250015646:r","ADM:P:250015684:r","ADM:P:250015686:r","ADM:P:250015685:r","ADM:P:250015657:r","ADM:P:250015658:r","ADM:P:250015699:r","ADM:P:250015700:r","ADM:P:250015702:r","ADM:P:250015701:r","ADM:P:250015718:r","ADM:P:250015719:r","ADM:P:250015720:r","ADM:P:250015721:r","ADM:P:250015715:r","ADM:P:250015714:r","ADM:P:250015716:r","ADM:P:250015717:r","ADM:P:250015713:r","ADM:P:250015707:r","ADM:P:250015708:r","ADM:P:250019173:r","ADM:P:250015706:r"]}
+MEMORY_DIAGNOSTIC {"memory":{"rss":1256361984,"heapTotal":477052928,"heapUsed":335833936,"external":26509054,"arrayBuffers":9801888},"maxRSS":1447936}
+FINAL_DIAGNOSTIC {"departureS":28800,"warmStart":false,"startedMonotonic":5010.605815,"startedAt":"2026-10-13T07:32:30.960Z","origin":"地图所选地点","destination":"地图所选地点","stages":[{"id":"public-fast","durationMs":6483,"status":"ready","cached":false}],"firstResultMs":6484,"totalMs":null} [ [ 'transit', true, '演示班次联程 · 08:00 出发' ] ] 已找到可用方案，可直接选择；其他组合继续计算。
+Retired preference migration passed: four visible preferences, ordinary selected, original coordinates retained, usable unverified ordinary route, safe cancel and enabled Start
+Full entry + real Worker + rendered public route passed: retired-preference stalled; legacy stored taxi-only policy and navigation hash
+✔ full entry and Worker remain usable: retired passenger preference migrates to ordinary (12165.596079ms)
+TEST_RUNTIME a5c465982702
+IMPORT OK
+PROGRESS 0 [] []
+ENDPOINT_DIAGNOSTIC {"id":"transit","first":[114.16624518,22.27888752,6],"last":[114.16605219,22.30508756,5.6],"totalMinutes":28}
+EDGE_AUDIT {"id":"transit","usedCount":96,"forbidden":[],"modeled":[],"sourceIds":["ADM:I:1000928688","ADM:I:1000928678","ADM:I:1000928689","ADM:I:1000928690:r","ADM:I:1000928692:r","ADM:I:1000928681:r","ADM:I:1000859578","ADM:I:1000859620","ADM:I:1000859629:r","ADM:I:1000859487","ADM:I:1000861507:r","ADM:I:1000859928","ADM:I:1000860634","ADM:I:1000860281","ADM:I:1001098066","ADM:I:1000860630","ADM:I:1000860699","ADM:I:1001098144","ADM:I:1000859944:r","ADM:I:1000859943:r","ADM:I:1000860294:r","ADM:I:1000859923:r","ADM:I:1000860963:r","ADM:I:1000860731:r","ADM:I:1000860840","ADM:I:1000860934","ADM:I:1000860935","ADM:I:1000860838","ADM:I:1000860937:r","ADM:I:1000860767","ADM:I:1000862735:r","ADM:I:1000862218","WAIT:RAIL:ADM:EAL:39834.63168","RIDE:scheduled:RAIL:EAL:0:39840:RAIL:ADM:EAL:RAIL:HUH:EAL","HUH:I:1000859034:r","HUH:I:1000859084:r","HUH:I:1000859033:r","HUH:I:1000859032:r","HUH:I:1000859145","HUH:I:1000859113:r","HUH:I:1000858937","HUH:I:1000859256","HUH:I:1000857626:r","HUH:I:1000857792","HUH:I:1000857897","HUH:I:1000857785","HUH:I:1000859405:r","HUH:I:1000857734:r","HUH:I:1000859404:r","HUH:I:1000859403:r","HUH:I:1000859402:r","WAIT:RAIL:HUH:TML:40360.96536","RIDE:scheduled:RAIL:TML:0:40620:RAIL:HUH:TML:RAIL:AUS:TML","AUS:I:1000546480:r","AUS:I:1000546537:r","AUS:I:1000546479:r","AUS:I:1000546536:r","AUS:I:1000546478:r","AUS:I:1000546535:r","AUS:I:1000546477:r","AUS:I:1000546560","AUS:I:1000546521","AUS:I:1000546561","AUS:I:1000546522","AUS:I:1000546455","AUS:I:1000546528:r","AUS:I:1000546453:r","AUS:I:1000546412","AUS:I:1000547157","AUS:I:1000546623:r","AUS:I:1000546740:r","AUS:I:1000546649:r","AUS:I:1000546648:r","AUS:I:1000546678:r","AUS:I:1001098892:r","AUS:I:1000546647:r","AUS:I:1001098870:r","AUS:I:1000546646:r","AUS:I:1000546645:r","AUS:I:1000546644","AUS:I:1000546629:r","AUS:I:1000546685","AUS:I:1000546796:r","AUS:I:1000546822","AUS:I:1000546697","AUS:I:1000546612","AUS:I:1000546841","AUS:I:1000546861","AUS:I:1000546947","AUS:I:1001098906","AUS:I:1000546906","AUS:I:1000546891","AUS:I:1000546892","AUS:I:1000546893","AUS:I:1000546911:r","AUS:I:1000546941:r","AUS:I:1000546905","AUS:I:1000546876","AUS:I:1000546873","AUS:I:1000546938:r"]}
+MEMORY_DIAGNOSTIC {"memory":{"rss":1231998976,"heapTotal":486801408,"heapUsed":337559264,"external":26509054,"arrayBuffers":9801888},"maxRSS":1462832}
+FINAL_DIAGNOSTIC {"departureS":39600,"warmStart":false,"startedMonotonic":4547.65916,"startedAt":"2026-10-13T07:32:42.663Z","origin":"金钟站 E2出口","destination":"柯士甸站 B2出口","stages":[{"id":"public-fast","durationMs":4048,"status":"ready","cached":false}],"firstResultMs":4048,"totalMs":null} [ [ 'transit', true, '演示班次联程 · 11:00 出发' ] ] 已找到可用方案，可直接选择；其他组合继续计算。
+Full entry + real Worker + rendered public route passed: quote-failure stalled; legacy stored taxi-only policy and navigation hash
+✔ full entry and Worker remain usable: simulated pricing fails (9223.199426ms)
+✔ historical URLs resolve inside one app, with safe standalone navigation states (2.126728ms)
+✔ all historical HTML is replaced, retired UI physically removed, shared 3D retained (15.863011ms)
+✔ station and information screens expose unified actions and evidence boundaries (0.526517ms)
+✔ full source shell: tabs, repeated open/close, hash and back/forward stay unified (108.175032ms)
+exact static-disconnection oracle 1296 successful 310 proven early rejections 360
+✔ all four static no-route guards are exact, reversible and idempotent (13.886487ms)
+✔ full engine diagnostics, coordinates, clock rules and reachable paths match across disconnected directed components (179.250443ms)
+✔ repair is reversible, idempotent, layered, capacity-preserving and rejects anchor drift (3.014406ms)
+✔ both actual unmodified routers reproduce stale opening waits and closed-destination acceptance (37.601847ms)
+✔ repaired owners match complete cold results before, during and after destination opening in either query order (95.910186ms)
+✔ weekly endpoint rules use the original departure date, including cold/warm closed-day queries (34.795031ms)
+✔ full endpoint contents retain same-clock schedule changes and exact source-node restrictions (20.155403ms)
+✔ origin opening checks also remain independent of earlier cached closed or open departures (32.925507ms)
+✔ invalid clocks and dates keep validation behavior without populating the owner cache (31.41556ms)
+✔ missing, unknown and malformed endpoint rules remain fail-closed after a valid warm result (123.225977ms)
+✔ same full-precision clock/date hits the existing memo; distinct fractional clocks do not collide (12.61046ms)
+✔ cancellation before work and at the original cooperative yield is preserved with warm and cold owners (18.219829ms)
+PASS repeatable seed, fleet limits and varied synthetic previous orders
+PASS bounded road route reaches approximate pickup and dropoff
+PASS quotes preserve previous order, physical car availability, and waits
+PASS one next trip only; old quotes cannot double-book
+PASS all positions and motion segments remain on directed road edges; no teleport or overlap
+PASS graph excludes pedestrian roads and respects one-way/access
+PASS roaming samples random destination routes and honors turn restrictions across segment boundaries
+PASS render sampling never extends paths; explicit preparation keeps a bounded recent window
+PASS urban fleet is distributed across both shores and all four zones
+PASS cross-harbour journeys use all three real road tunnels
+PASS bounded showcase keeps every synthetic position and polyline vertex inside at 0,10min,1hour
+PASS explicit outside passenger trip stays continuous and available at dropoff without boundary teleport
+PASS bounded turn-aware reachable pool does not strand synthetic cars across fixed seeds
+13 taxi test groups passed.
+✔ tests/taxi/roaming.test.mjs (30425.698964ms)
+ℹ tests 329
+ℹ suites 0
+ℹ pass 329
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 211433.048045
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice

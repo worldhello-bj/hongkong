@@ -1,7 +1,8 @@
+import {PASSENGER_NEEDS} from './passenger-preferences.js';
 /** Passenger policy only; does not change public routing or vehicle road paths. */
 export function taxiPassengerPolicy({enabled=false,need='ordinary'}={}){
  if(!enabled)return {eligible:false,reason:'disabled',needsVehicleConfirmation:false,message:''};
- if(need==='accessible')return {eligible:false,reason:'accessible-vehicle-unverified',needsVehicleConfirmation:true,message:'严格无障碍保留公共交通方案；当前演示车辆的轮椅空间与上落客设施尚未确认。'};
+ if(!PASSENGER_NEEDS.includes(need))return {eligible:false,reason:'unsupported-passenger-preference',needsVehicleConfirmation:true,message:'此出行偏好已不受支持，请明确选择当前四种偏好后重新规划；未知车辆适配能力不计为可用。'};
  return {eligible:true,reason:null,needsVehicleConfirmation:need==='luggage',message:need==='luggage'?'行李空间待确认：车型、后备厢容量与装卸条件为演示假设，请确认后再乘车。':''};
 }
 export function annotateTaxiPassengerResult(result,request={}){

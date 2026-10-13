@@ -1,0 +1,29 @@
+{
+  "runtime": "ebebc836f058",
+  "builtAt": "2026-10-13T09:01:52.742Z",
+  "baselineCommit": "0486c47d2ccdc96fd45bcd2d9f670575406ee6bc",
+  "commands": [
+    "npm run build",
+    "npm test"
+  ],
+  "aggregate": {
+    "tests": 337,
+    "pass": 337,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0,
+    "duration_ms": 222678.574116
+  },
+  "sourceBuildMatches": {
+    "src/navigation/main.recovered.js": true,
+    "src/navigation/traffic-scenario.js": true,
+    "src/navigation/integrated.css": true
+  },
+  "missingRuntimeImports": 0,
+  "syntaxAndWhitespaceCheck": "passed",
+  "sourcePreservation": "source-preservation.json",
+  "browserVisualQA": "not run",
+  "deployment": "not performed",
+  "commits": "not performed"
+}

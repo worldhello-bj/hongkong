@@ -1,0 +1,32 @@
+✔ the public registry contains four preferences, without a hidden strict mode (1.767773ms)
+✔ legacy aliases migrate predictably without claiming facility suitability (0.315231ms)
+✔ normalization leaves physical routing results immutable and removes stale certification (0.637062ms)
+✔ actual product router boundary cannot forward a retired engine preference (6.400689ms)
+✔ four choices and every retired spelling migrate to ordinary, never an advertised mode (3.253925ms)
+✔ retired legacy URL names and hashes migrate without treating transport or ranking controls as passenger modes (1.676306ms)
+✔ stored account and order inputs migrate immutably without changing identities, payment or source evidence (1.288626ms)
+✔ mall retains unknown source lifts visually but never counts missing capability as source-confirmed (4.290194ms)
+✔ actual S1 preserves exact ordinary endpoints through fallback and rejects cancelled refinements (9.760515ms)
+✔ actual S1 preserves exact luggage endpoints through fallback and rejects cancelled refinements (1.902184ms)
+✔ actual S1 preserves exact escalator endpoints through fallback and rejects cancelled refinements (1.795213ms)
+✔ actual S1 preserves exact lift endpoints through fallback and rejects cancelled refinements (1.5318ms)
+✔ actual S1 preserves exact accessible → ordinary migration endpoints through fallback and rejects cancelled refinements (1.782935ms)
+✔ actual S1 preserves exact strict_accessibility → ordinary migration endpoints through fallback and rejects cancelled refinements (2.691985ms)
+✔ actual S1 preserves exact wheelchair → ordinary migration endpoints through fallback and rejects cancelled refinements (1.669335ms)
+✔ actual S1 gives taxi the exact base owner and waits for its dependent queries before evicting it (1.731609ms)
+✔ actual S1 keeps usable candidates and marks Worker/refinement errors incomplete, never successful or unreachable (2.119749ms)
+✔ actual S1 named-floor evidence precheck cache-miss keeps formal routing and cancellation (1.898303ms)
+✔ actual S1 named-floor evidence precheck cache-hit keeps formal routing and cancellation (1.345742ms)
+✔ actual S1 named-floor evidence precheck cancel-at-precheck keeps formal routing and cancellation (1.037511ms)
+✔ historical URLs resolve inside one app, with safe standalone navigation states (2.367169ms)
+✔ all historical HTML is replaced, retired UI physically removed, shared 3D retained (30.554922ms)
+✔ station and information screens expose unified actions and evidence boundaries (0.727988ms)
+✔ full source shell: tabs, repeated open/close, hash and back/forward stay unified (265.833093ms)
+ℹ tests 24
+ℹ suites 0
+ℹ pass 24
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 394.601392
