@@ -1,4 +1,4 @@
-import {planHighSpeedLeg} from './highspeed-service.js?v=0f6587f77445';
+import {planHighSpeedLeg} from './highspeed-service.js?v=d13e16e39f47';
 const WEK='HSR:WEK',FUT='HSR:FUT',TRANSFER_S=600;
 export const handlesHighSpeedRequest=request=>[request?.origin,request?.destination].some(point=>[WEK,FUT].includes(point?.id));
 const unavailable=message=>({highSpeed:true,scenarioOnly:true,message,warnings:[message],lines:[],segments:[],failureStatus:'NO_ROUTE'});

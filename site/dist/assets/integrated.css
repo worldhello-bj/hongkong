@@ -97,4 +97,6 @@
 .na-highspeed-note{border:1px solid #ddd6fe;border-radius:14px;background:#faf8ff;padding:12px 14px;margin:14px 0;color:#4c1d95;font-size:12px;line-height:1.55}
 .na-highspeed-note p{margin:5px 0}.na-highspeed-note a{color:#5b21b6;text-decoration:underline}
 .na-traffic-layers{flex-wrap:wrap}
+/* Endpoint badges are decorative; co-located stop targets must remain clickable. */
+.na-map [data-app=markers],.na-map [data-app=markers] *{pointer-events:none}
 @media(max-width:760px){.na-highspeed-note{padding:10px 12px}.na-traffic-controls{max-width:calc(100% - 24px)}.na-traffic-layers button{min-width:34px}}

@@ -5,6 +5,13 @@ import {stopCatalog,layoutStops,renderStopMarkers,stopCard,stopDepartures,format
 const services=JSON.parse(readFileSync(new URL('../../dist/transit/services.json',import.meta.url)));
 const project=([x,y])=>[(x-114.165)*102900,-(y-22.279)*111320];
 const catalog=stopCatalog(services);
+test('decorative endpoint badges cannot intercept co-located transit stop clicks',()=>{
+ const css=readFileSync(new URL('../../src/navigation/integrated.css',import.meta.url),'utf8');
+ assert.match(css,/\.na-map \[data-app=markers\],\.na-map \[data-app=markers\] \*\{pointer-events:none\}/);
+ assert.match(css,/\.na-transit-stop \.na-stop-hit\{[^}]*pointer-events:all/);
+ const main=readFileSync(new URL('../../src/navigation/main.recovered.js',import.meta.url),'utf8');
+ assert.match(main,/<g data-app="transit-stops"><\/g><g data-app="markers"><\/g>/,'badges stay visibly above stops without capturing input');
+});
 test('only existing bus/tram stops, exact coordinate identity and deduplicated route directions',()=>{assert.ok(catalog.length>50);assert.ok(catalog.some(s=>s.mode==='tram'));assert.ok(catalog.some(s=>s.mode==='bus'));for(const s of catalog){assert.deepEqual(s.coordinates,services.stops.find(x=>x.id===s.id).coordinates);assert.equal(new Set(s.routes.map(x=>JSON.stringify(x))).size,s.routes.length);}});
 test('wide view clusters without losing stops; zoom gives individual exact positions',()=>{const view={x:-5000,y:-8000,w:15000,h:15000};const wide=layoutStops(catalog,view,390,project);assert.equal(wide.reduce((n,g)=>n+g.stops.length,0),catalog.length);assert.ok(wide.length<catalog.length);const s=catalog[0],[x,y]=project(s.coordinates);const close=layoutStops(catalog,{x:x-200,y:y-200,w:1000,h:1000},390,project);assert.ok(close.every(g=>g.stops.length===1));assert.deepEqual([close.find(g=>g.stops[0].id===s.id).x,close.find(g=>g.stops[0].id===s.id).y],[x,y]);});
 test('card shows existing route, source, actions and escapes untrusted names',()=>{const card=stopCard({...catalog[0],name:'<script>x</script>'});assert.ok(card.includes('&lt;script&gt;'));assert.ok(card.includes('data-stop-side="origin"'));assert.ok(card.includes('data-stop-side="destination"'));assert.ok(card.includes('非实时到站'));assert.ok(card.includes(catalog[0].routes[0].label));});
