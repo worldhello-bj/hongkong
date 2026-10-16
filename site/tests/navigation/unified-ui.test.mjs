@@ -42,8 +42,8 @@ test('all historical HTML is replaced, retired UI physically removed, shared 3D 
 test('station and information screens expose unified actions and evidence boundaries',()=>{
   const panel=stationPanel({station:'KOW'},true,String);
   for(const station of STATIONS)assert.ok(panel.includes(`data-station="${station.id}"`));
-  assert.match(panel,/九龙站部分站体为示意/);assert.match(panel,/data-action="close-secondary"/);
-  const info=informationPanel();assert.match(info,/共四种偏好/);assert.doesNotMatch(info,/严格无障碍|共五种偏好/);assert.match(info,/无真实售票、调度或扣款/);assert.doesNotMatch(info,/href="\.\/(area|metro|research)\.html"/);
+  assert.match(panel,/来源路网不代表所有出入口均连通/);assert.match(panel,/不代表通道已核验或设施实时开放/);assert.match(panel,/data-action="close-secondary"/);
+  const info=informationPanel();assert.match(info,/尖东、柯士甸和九龙六站已载入官方楼层与设施几何/);assert.match(info,/九龙 C1 商场补充通道仍是单独标注的模型/);assert.match(info,/共四种偏好/);assert.doesNotMatch(info,/严格无障碍|共五种偏好/);assert.match(info,/无真实售票、调度或扣款/);assert.doesNotMatch(info,/href="\.\/(area|metro|research)\.html"/);
 });
 
 test('full source shell: tabs, repeated open/close, hash and back/forward stay unified',async()=>{

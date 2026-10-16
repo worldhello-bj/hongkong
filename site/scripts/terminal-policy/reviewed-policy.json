@@ -120,6 +120,69 @@
           "sha256": "3d0bae0d30660178ad64f95c2c8f7e80a0046ed3d08c4579f8054654f3022fb7"
         }
       ]
+    },
+    {
+      "id": "reviewed-source-connector-inspection",
+      "reviewedSourceCommit": "f6280f3e1cb5a709a53aaa3690721c4ef93e5e0e + source-only model inspection",
+      "reviewNote": "2026-10-16 independent code review: exact source-edge display selection only; navigation ingress/terminal proof semantics unchanged. Preserves original source geometry and routing constraints. Keyboard focus retention and pending station-path revision invalidation reviewed; focused 13/13 tests pass. No normalization expansion.",
+      "files": [
+        {
+          "path": "src/navigation/main.recovered.js",
+          "sha256": "10c258c77453c9a6e5d5317dc8d0ae61a4d39ceb0e15ed631c9cf103fb2f9c37"
+        },
+        {
+          "path": "src/navigation/integrated-navigation.js",
+          "sha256": "0412a9c1f2b4ce4b1962c519db91160a9b1699969741145c777d0dfd056a800e"
+        },
+        {
+          "path": "src/navigation/station-alternatives.js",
+          "sha256": "8032d4f80d7e87f7748f66a9f1e729e56a19be9186ad2026899fb8ec30ed99be"
+        },
+        {
+          "path": "src/navigation/demo-fallback.js",
+          "sha256": "7d754fe6cf1e02035dc810cb484bfb13c4baf9e4d23862039a93996b9caa5991"
+        },
+        {
+          "path": "src/navigation/station-identity.js",
+          "sha256": "aeecd01841325a900194decc6fb283ab84233e64af05e212cae49df23157086d"
+        },
+        {
+          "path": "dist/assets/intermodal-routing-D8vKT-lN.js",
+          "sha256": "8c9f1a225e4e19030c66d33d1773d9d0b5ed265d1fca1f3d147c0c265b3df05f"
+        },
+        {
+          "path": "dist/assets/mobile-navigation-DfEsS_7b.js",
+          "sha256": "833d8506f816f301606d4a7580b26305b7e92acf27163e1cf67d1cd9ff97ed3a"
+        },
+        {
+          "path": "dist/assets/app-transit-worker-CaCMeUxU.js",
+          "sha256": "f69dd03f359289f5b878dff07db7f68548f9c1a8e73087453292699a4d1da781"
+        },
+        {
+          "path": "dist/assets/app-walk-worker-jk5g-BMr.js",
+          "sha256": "0703aa927452c16f5905375589974bfc6f62ffb6d9cc3ac31f99da0cae02b4fa"
+        },
+        {
+          "path": "dist/assets/metro-planning-CBAOotPX.js",
+          "sha256": "1cf292b7284af54ce814e09c2fee48e152a7c796237cf52b7f793f800d9b2527"
+        },
+        {
+          "path": "dist/assets/metro-worker-BDEusPKL.js",
+          "sha256": "1a7b1c51acbaeb17ca1d9f035860be0a4059ac4a7c363eeab3474c54ad38cd31"
+        },
+        {
+          "path": "dist/assets/main-integrated.js",
+          "sha256": "10c258c77453c9a6e5d5317dc8d0ae61a4d39ceb0e15ed631c9cf103fb2f9c37"
+        },
+        {
+          "path": "src/navigation/exact-boundary-selection.js",
+          "sha256": "3d0bae0d30660178ad64f95c2c8f7e80a0046ed3d08c4579f8054654f3022fb7"
+        },
+        {
+          "path": "dist/assets/exact-boundary-selection.js",
+          "sha256": "3d0bae0d30660178ad64f95c2c8f7e80a0046ed3d08c4579f8054654f3022fb7"
+        }
+      ]
     }
   ]
 }

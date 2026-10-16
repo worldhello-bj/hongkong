@@ -1,4 +1,4 @@
-import {JOURNEY_3D_MODELS, JOURNEY_3D_SOURCES} from './journey-3d-data.js?v=ac80b061436c';
+import {JOURNEY_3D_MODELS, JOURNEY_3D_SOURCES} from './journey-3d-data.js?v=4021be15aa36';
 
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[c]));
 const clamp = (value, low, high, fallback = low) => Number.isFinite(value) ? Math.max(low, Math.min(high, value)) : fallback;

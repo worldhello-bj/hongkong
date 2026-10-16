@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {gunzipSync} from 'node:zlib';
-import {STATIONS} from '../../src/navigation/ui-navigation.js';
+import {STATIONS,validStation,parseNavigationLocation,navigationUrl} from '../../src/navigation/ui-navigation.js';
 import {PACIFIC_PLACE_BUILDING_ID,buildPacificPlaceModel,pacificPlaceModelSvg} from '../../src/navigation/pacific-place-model.js';
 const source=readFileSync(new URL('../../src/navigation/main.recovered.js',import.meta.url),'utf8');
 const start=source.indexOf('function resolveInspectionTarget('),end=source.indexOf('function updateInspectionLabel(',start);
@@ -63,4 +63,33 @@ test('actual 10:00 Tamar to Pacific Place L2 instruction selects mall without ch
   assert.equal(resolveInspectionTarget(journey.steps[8],journey.graph,block)?.stage,'mall','the reported ninth instruction targets Pacific Place, not ADM station');
   for(const step of steps){const result=resolveInspectionTarget(step,journey.graph,block);assert.equal(result.stage,'mall');assert.ok(result.focusIds.length>0)}
   console.log('Actual source route:',journey.steps.length,'instructions;',steps.length,'exact mall-source instructions resolved');
+});
+
+// Every source-backed rail model must be reachable from the shared UI registry.
+test('all bundled official station models are selectable and preserve deep links',()=>{
+  const coverage=JSON.parse(readFileSync(new URL('../../dist/preview/station-model-coverage.json',import.meta.url)));
+  for(const [id,model] of Object.entries(coverage.rail)){
+    assert(STATIONS.some(station=>station.id===id),`${id} source model is missing from the UI registry`);
+    assert.equal(validStation(id),id);
+    assert.equal(parseNavigationLocation({hash:`#station?station=${id}`}).station,id);
+    assert.equal(parseNavigationLocation({pathname:'/metro.html',search:`?station=${id}`}).station,id);
+    assert.equal(navigationUrl({stage:'station',station:id}),`/#station?station=${id}`);
+    assert(model.levelCount>0);
+  }
+});
+
+test('every station source route can inspect its own exact 3D edges, including East Tsim Sha Tsui',()=>{
+  const regions=[...new Set(station.edges.filter(edge=>edge.source_id==='CSDI-INDOOR').map(edge=>edge.region_id))];
+  assert(regions.includes('ETS'));
+  for(const region of regions){
+    for(const kind of ['walk','lift','escalator']){
+      const edge=station.edges.find(edge=>edge.region_id===region&&edge.source_id==='CSDI-INDOOR'&&edge.kind===kind);
+      assert(edge,`${region} missing expected source ${kind}`);
+      const step=guidance([edge]),target=resolveInspectionTarget(step,{edges:[edge]},block);
+      assert.equal(target?.stage,'station');
+      assert.equal(target.station,region);
+      assert.deepEqual(target.focusIds,[edge.id]);
+      assert.equal(target.geometry,step.guidance.geometry);
+    }
+  }
 });

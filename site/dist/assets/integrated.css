@@ -110,3 +110,5 @@
 @media(max-width:760px){#navigation-app[data-stage=tickets] .na-sheet{left:0;right:0;top:60px;bottom:64px;width:100%;transform:none;border-radius:0;max-height:none}}
 
 .na-station-workspace>[data-app=station-model][data-model-kind=procedural]{overflow-y:auto;overscroll-behavior:contain;touch-action:pan-y}
+
+.na-source-connectors{margin-top:16px;padding-top:14px;border-top:1px solid #dde4e4}.na-source-connectors h2{font-size:16px;margin:0 0 8px}.na-source-connectors label{display:flex;flex-direction:column;gap:6px;font-size:12px;min-width:0}.na-source-connectors select{width:100%;min-width:0;min-height:40px;border:1px solid #d4dede;border-radius:8px;background:#fff;color:#163c36;padding:6px;font-size:12px}.na-source-filters{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}.na-source-connectors .na-secondary{margin-top:10px;width:100%}.na-source-selection{font-size:12px;overflow-wrap:anywhere;color:#245e50}

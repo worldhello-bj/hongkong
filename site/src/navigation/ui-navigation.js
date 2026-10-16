@@ -4,6 +4,7 @@ export const APP_STAGES = Object.freeze(['home','search','routes','navigation','
 export const STATIONS = Object.freeze([
   {id:'ADM',name:'金钟',center:[114.1658,22.2791]},
   {id:'HUH',name:'红磡',center:[114.1817,22.3033]},
+  {id:'ETS',name:'尖东',center:[114.1749829461539,22.295487782071056]},
   {id:'AUS',name:'柯士甸',center:[114.1668,22.3048]},
   {id:'KOW',name:'九龙',center:[114.1615,22.3048]},
   {id:'EXC',name:'会展',center:[114.1753,22.282]},
