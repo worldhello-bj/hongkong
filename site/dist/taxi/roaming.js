@@ -1,4 +1,4 @@
-import { ROAD_GRAPH } from './road-graph.js?v=ac80b061436c';
+import { ROAD_GRAPH } from './road-graph.js?v=4021be15aa36';
 export { ROAD_GRAPH };
 export const SCENE = Object.freeze({
   pickup:{id:'12857346894',name:'西九龙站 B 出口外预约上客点（路网近似）',coordinate:[114.1658189,22.3050309]},

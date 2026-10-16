@@ -1,4 +1,4 @@
-import {PREFERENCE_PROFILES, preferenceConnectionPenalty} from './preference-routing.js?v=ac80b061436c';
+import {PREFERENCE_PROFILES, preferenceConnectionPenalty} from './preference-routing.js?v=4021be15aa36';
 /** Absolute generalized minutes. Stable when unrelated alternatives are added.
  * Fares, weights and waiting estimates are demonstration assumptions, not a valuation study.
  * Total clock time already includes walking/waiting; their terms are extra burden only.
